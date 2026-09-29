@@ -1,6 +1,172 @@
-# Hurra Lingo — ana sayfa tasarım önerisi
+# Hurra Lingo — Ana Sayfa Tasarım Önerisi
 
-İnfomedya tarafından hazırlanmış ana sayfa tasarım önerisi (Türkçe + İngilizce). Fiyatlar ve bazı içerikler örnektir; form gerçek başvuru almaz.
+Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa tasarım önerisini içerir. Sayfanın **Türkçe** ve **İngilizce** iki sürümü vardır. Proje statik bir web sitesidir ve GitHub Pages üzerinden yayınlanır.
 
-- Türkçe: https://polat.github.io/hurralingo-oneri/
-- English: https://polat.github.io/hurralingo-oneri/en.html
+> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Sayfadaki fiyatlar ve bazı içerikler **örnek** olarak konmuştur. Sayfadaki form **gerçek başvuru almaz**. Canlı bir ürün olarak kullanılmamalıdır.
+
+---
+
+## 🔗 Canlı Önizleme
+
+| Dil | Bağlantı |
+|-----|----------|
+| 🇹🇷 Türkçe | https://polat.github.io/hurralingo-oneri/ |
+| 🇬🇧 English | https://polat.github.io/hurralingo-oneri/en.html |
+
+---
+
+## 📌 Proje Hakkında
+
+Bu proje, Hurra Lingo markasının yeni ana sayfasının nasıl görünebileceğini ve nasıl çalışabileceğini göstermek için hazırlandı. Amacı, müşteriye ve ekibe çalışan bir tarayıcı prototipi sunmaktır. Böylece tasarım statik görseller yerine gerçek bir sayfa üzerinde değerlendirilebilir.
+
+Sayfanın öne çıkan unsurları şunlardır:
+
+- Ders ortamını gösteren **videolu bir giriş (hero) alanı**
+- Kısa **soru videoları** ile ilgi çeken içerik blokları
+- **Öğretmen tanıtımları** (fotoğraflı)
+- Markaya kişilik katan **maskot** çizimleri
+- Örnek **fiyat** bilgileri ve **başvuru formu** (demo)
+
+---
+
+## ✨ Başlıca Özellikler
+
+- **İki dilli yapı:** Türkçe sürüm `index.html`, İngilizce sürüm `en.html` dosyasındadır. Aynı tasarım iki dilde de kullanılabilir.
+- **Derleme adımı yok:** Paket yöneticisi, framework ya da build aracı gerekmez. Dosyalar olduğu gibi sunulur.
+- **Video ağırlıklı anlatım:**
+  - `hero-ders.mp4`: giriş alanındaki ders videosu
+  - `soru-1` … `soru-6`: altı adet kısa soru videosu
+  - Her videonun aynı adlı bir `.jpg` kapak (poster) görseli vardır. Bu görsel, video yüklenene kadar ekranda görünür.
+- **Öğretmen kadrosu tanıtımı:** 8 öğretmen fotoğrafı, hafif ve hızlı yüklenen `.webp` biçimindedir.
+- **Maskot sistemi:** Farklı duyguları ifade eden 5 SVG maskot varyasyonu vardır. SVG oldukları için her ekranda net görünürler.
+- **Sosyal medya önizlemesi:** Bağlantı WhatsApp, LinkedIn, X gibi platformlarda paylaşıldığında `og.jpg` görseli gösterilir.
+- **Arama motorlarından gizli:** `robots.txt` tüm botları engeller. Bu sayede öneri sayfası Google'da indekslenmez ve gerçek siteyle karışmaz.
+- **GitHub Pages uyumu:** `.nojekyll` dosyası, GitHub Pages'in Jekyll işlemesini kapatır. Böylece tüm dosyalar olduğu gibi yayınlanır.
+
+---
+
+## 🗂️ Dizin ve Dosya Yapısı
+
+```
+hurralingo-oneri/
+├── index.html               # Ana sayfa — Türkçe sürüm
+├── en.html                  # Ana sayfa — İngilizce sürüm
+├── og.jpg                   # Sosyal medya paylaşım görseli (Open Graph)
+├── robots.txt               # Tüm arama motoru botlarını engeller
+├── .nojekyll                # GitHub Pages'te Jekyll işlemesini kapatır
+├── .gitignore               # Git'e eklenmeyecek dosyalar
+├── README.md                # Bu dosya
+│
+├── img/                     # Görseller ve marka varlıkları
+│   ├── favicon.png          # Tarayıcı sekmesi simgesi
+│   ├── logo-clay.webp       # "Clay" (kil / 3B) stilindeki Hurra Lingo logosu
+│   │
+│   ├── maskot-mutlu.svg         # Maskot — mutlu
+│   ├── maskot-mutlu-beyaz.svg   # Maskot — mutlu, beyaz (koyu zeminler için)
+│   ├── maskot-sevinc.svg        # Maskot — sevinçli
+│   ├── maskot-goz-kirp.svg      # Maskot — göz kırpan
+│   ├── maskot-merakli.svg       # Maskot — meraklı
+│   │
+│   ├── t-adam.webp          # Öğretmen fotoğrafları
+│   ├── t-adeniyi.webp       #   (adlandırma kuralı: t-<isim>.webp)
+│   ├── t-alexandra.webp
+│   ├── t-ayzade.webp
+│   ├── t-bengu.webp
+│   ├── t-busra.webp
+│   ├── t-mehtap.webp
+│   └── t-nesrin.webp
+│
+└── media/                   # Videolar ve video kapak görselleri
+    ├── hero-ders.mp4        # Giriş (hero) alanı ders videosu
+    ├── hero-ders.jpg        #   └─ kapak görseli
+    ├── neden-ogretmen.jpg   # "Neden öğretmen?" bölümü görseli
+    ├── soru-1.mp4 / .jpg    # Soru videoları ve kapak görselleri
+    ├── soru-2.mp4 / .jpg
+    ├── soru-3.mp4 / .jpg
+    ├── soru-4.mp4 / .jpg
+    ├── soru-5.mp4 / .jpg
+    └── soru-6.mp4 / .jpg
+```
+
+### Varlık Özeti
+
+| Klasör | İçerik | Biçim | Adet |
+|--------|--------|-------|------|
+| `img/` | Maskot varyasyonları | SVG | 5 |
+| `img/` | Öğretmen fotoğrafları | WebP | 8 |
+| `img/` | Logo ve favicon | WebP / PNG | 2 |
+| `media/` | Videolar (hero + sorular) | MP4 | 7 |
+| `media/` | Video kapakları ve bölüm görselleri | JPG | 8 |
+
+---
+
+## 🚀 Kurulum ve Yerel Çalıştırma
+
+Proje tamamen statiktir. Herhangi bir bağımlılık kurmanıza gerek yoktur.
+
+### 1. Depoyu klonlayın
+
+```bash
+git clone https://github.com/polat/hurralingo-oneri.git
+cd hurralingo-oneri
+```
+
+### 2. Sayfayı açın
+
+**En hızlı yol:** `index.html` dosyasını çift tıklayarak tarayıcıda açın.
+
+**Önerilen yol:** Yerel bir sunucu kullanın. Bazı tarayıcılar `file://` üzerinden açılan sayfalarda video oynatmayı ve bazı özellikleri kısıtlayabilir. Yerel sunucu, sayfanın canlı ortamdaki davranışını daha doğru yansıtır.
+
+```bash
+# Python 3 ile
+python3 -m http.server 8000
+
+# veya Node.js ile
+npx serve .
+```
+
+Ardından tarayıcıda şu adresleri açın:
+
+- Türkçe: http://localhost:8000/
+- İngilizce: http://localhost:8000/en.html
+
+---
+
+## 🌐 Yayınlama (GitHub Pages)
+
+Site GitHub Pages üzerinden yayınlanır:
+
+1. GitHub'da depo sayfasını açın ve **Settings → Pages** bölümüne gidin.
+2. **Source** olarak **Deploy from a branch** seçeneğini seçin.
+3. Dal olarak `main`, klasör olarak `/ (root)` seçin ve kaydedin.
+4. Birkaç dakika içinde site `https://<kullanıcı-adı>.github.io/hurralingo-oneri/` adresinde yayında olur.
+
+`main` dalına gönderilen (push) her değişiklik otomatik olarak yeniden yayınlanır.
+
+---
+
+## 🛠️ Düzenleme İpuçları
+
+- **İki dili birlikte güncelleyin:** `index.html` dosyasında yaptığınız yapısal değişiklikleri (yeni bölüm, yeni görsel vb.) `en.html` dosyasına da uygulayın. Aksi halde iki sürüm birbirinden farklılaşır.
+- **Yeni öğretmen eklemek:** Fotoğrafı `img/t-<isim>.webp` adıyla kaydedin. Türkçe karakter ve boşluk kullanmayın (ör. `t-bengu.webp`). Ardından iki HTML dosyasına da ekleyin.
+- **Yeni video eklemek:**
+  - Videoyu web uyumlu **MP4 (H.264)** biçiminde `media/` klasörüne koyun.
+  - Aynı adla bir `.jpg` kapak görseli oluşturun (ör. `soru-7.mp4` + `soru-7.jpg`).
+  - Otomatik oynatılacak videoların sessiz (`muted`) olması gerekir. Aksi halde tarayıcılar otomatik oynatmayı engeller.
+- **Görsel optimizasyonu:** Fotoğrafları WebP, ikon ve çizimleri SVG olarak kullanmaya devam edin. Sayfanın hızlı yüklenmesi için video boyutlarını mümkün olduğunca küçük tutun.
+- **Dosya boyutu sınırı:** GitHub, 100 MB'tan büyük dosyaları kabul etmez. Büyük videoları eklemeden önce sıkıştırın.
+
+---
+
+## ⚠️ Bilinen Sınırlamalar
+
+- Fiyatlar ve bazı metinler **örnektir**. Gerçek teklif veya fiyat listesi değildir.
+- Başvuru formu **bir sunucuya bağlı değildir**. Gönderilen bilgiler hiçbir yere kaydedilmez.
+- `robots.txt` nedeniyle sayfa **arama motorlarında görünmez**. Bu bilinçli bir tercihtir.
+- Proje bir **tasarım prototipidir**. Canlıya alınmadan önce içerik, form entegrasyonu, analitik ve KVKK/çerez gibi yasal metinlerin eklenmesi gerekir.
+
+---
+
+## 👥 Hazırlayan
+
+**İnfomedya** — Hurra Lingo için ana sayfa tasarım önerisi.
