@@ -2,7 +2,7 @@
 
 Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa tasarım önerisini içerir. Sayfanın **Türkçe** ve **İngilizce** iki sürümü vardır. Proje statik bir web sitesidir ve GitHub Pages üzerinden yayınlanır.
 
-> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Sayfadaki fiyatlar ve bazı içerikler **örnek** olarak konmuştur. Sayfadaki form **gerçek başvuru almaz**. Canlı bir ürün olarak kullanılmamalıdır.
+> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Sayfadaki fiyatlar ve bazı içerikler **örnek** olarak konmuştur. Phase 1 sonrasında deneme dersi başvuruları **[resmî başvuru sayfasına](https://www.hurralingo.app/trial-request)** yönlendirilir; bu depoda başvuru formu bulunmaz. Canlı bir ürün olarak kullanılmamalıdır.
 
 ---
 
@@ -10,8 +10,8 @@ Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa 
 
 | Dil | Bağlantı |
 |-----|----------|
-| 🇹🇷 Türkçe | https://polat.github.io/hurralingo-oneri/ |
-| 🇬🇧 English | https://polat.github.io/hurralingo-oneri/en.html |
+| 🇹🇷 Türkçe | https://hurralingo-landing.pages.dev/ |
+| 🇬🇧 English | https://hurralingo-landing.pages.dev/en.html |
 
 ---
 
@@ -25,7 +25,7 @@ Sayfanın öne çıkan unsurları şunlardır:
 - Kısa **soru videoları** ile ilgi çeken içerik blokları
 - **Öğretmen tanıtımları** (fotoğraflı)
 - Markaya kişilik katan **maskot** çizimleri
-- Örnek **fiyat** bilgileri ve **başvuru formu** (demo)
+- Mevcut örnek **fiyat** bilgileri ve haricî **deneme dersi bağlantıları**
 
 ---
 
@@ -37,7 +37,7 @@ Sayfanın öne çıkan unsurları şunlardır:
   - `hero-ders.mp4`: giriş alanındaki ders videosu
   - `soru-1` … `soru-6`: altı adet kısa soru videosu
   - Her videonun aynı adlı bir `.jpg` kapak (poster) görseli vardır. Bu görsel, video yüklenene kadar ekranda görünür.
-- **Öğretmen kadrosu tanıtımı:** 8 öğretmen fotoğrafı, hafif ve hızlı yüklenen `.webp` biçimindedir.
+- **Öğretmen kadrosu tanıtımı:** Resmî Türkçe ve İngilizce öğretmen listelerinden doğrulanmış 42 isim ve dil. Mevcut 8 WebP fotoğraf korunmuş, 34 resmî fotoğraf eklenmiştir. Bu sayı platformun toplam aktif öğretmen sayısı iddiası değildir.
 - **Maskot sistemi:** Farklı duyguları ifade eden 5 SVG maskot varyasyonu vardır. SVG oldukları için her ekranda net görünürler.
 - **Sosyal medya önizlemesi:** Bağlantı WhatsApp, LinkedIn, X gibi platformlarda paylaşıldığında `og.jpg` görseli gösterilir.
 - **Arama motorlarından gizli:** `robots.txt` tüm botları engeller. Bu sayede öneri sayfası Google'da indekslenmez ve gerçek siteyle karışmaz.
@@ -93,7 +93,7 @@ hurralingo-oneri/
 | Klasör | İçerik | Biçim | Adet |
 |--------|--------|-------|------|
 | `img/` | Maskot varyasyonları | SVG | 5 |
-| `img/` | Öğretmen fotoğrafları | WebP | 8 |
+| `img/` | Öğretmen fotoğrafları | WebP / JPG / PNG | 42 |
 | `img/` | Logo ve favicon | WebP / PNG | 2 |
 | `media/` | Videolar (hero + sorular) | MP4 | 7 |
 | `media/` | Video kapakları ve bölüm görselleri | JPG | 8 |
@@ -161,11 +161,15 @@ Site GitHub Pages üzerinden yayınlanır:
 ## ⚠️ Bilinen Sınırlamalar
 
 - Fiyatlar ve bazı metinler **örnektir**. Gerçek teklif veya fiyat listesi değildir.
-- Başvuru formu **bir sunucuya bağlı değildir**. Gönderilen bilgiler hiçbir yere kaydedilmez.
+- Deneme dersi CTA’ları resmî uygulamanın başvuru sayfasını yeni sekmede açar. Kurumsal teklif CTA’sı resmî WhatsApp numarasına gider.
 - `robots.txt` nedeniyle sayfa **arama motorlarında görünmez**. Bu bilinçli bir tercihtir.
-- Proje bir **tasarım prototipidir**. Canlıya alınmadan önce içerik, form entegrasyonu, analitik ve KVKK/çerez gibi yasal metinlerin eklenmesi gerekir.
+- Proje bir **tasarım prototipidir**. Canlıya alınmadan önce içerik, analitik ve KVKK/çerez gibi yasal metinlerin eklenmesi gerekir.
 
 ---
+
+## Phase 1
+
+Değişiklikler, kaynak karşılaştırmaları, doğrulama sonuçları ve açık maddeler için [PHASE-1-REPORT.md](PHASE-1-REPORT.md) dosyasına bakın. Önizleme bağlantıları mevcut dağıtımı gösterir; bu aşamada dağıtım yapılmamıştır.
 
 ## 👥 Hazırlayan
 

@@ -389,114 +389,6 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 .x:focus-visible{outline:2.5px solid var(--cyan-ink); outline-offset:2px}
 .x:active{transform:scale(.9); transition-duration:var(--dur-fast)}
 
-/* ---------- Tanışma dersi formu (#dlg) ---------- */
-#dlg{width:min(600px, calc(100% - 32px)); max-height:min(900px, calc(100vh - 32px)); max-height:min(900px, calc(100dvh - 32px))}
-.dlg{position:relative; padding:clamp(22px,4vw,36px); display:grid; gap:22px}
-.dlg.is-done .dlg-head{position:absolute; top:clamp(14px,2.4vw,22px); right:clamp(14px,2.4vw,22px); z-index:2}
-.dlg.is-done .dlg-head > div{display:none}
-.dlg-head{display:flex; justify-content:space-between; gap:16px; align-items:flex-start}
-.dlg-head .stamp{margin:0 0 12px -2px; font-size:14px}
-.dlg-head h2{font-size:clamp(26px,3vw,34px)}
-.dlg-head p{color:var(--ink-2); font-size:15.5px; line-height:1.5; margin-top:8px; max-width:46ch}
-#form-fields{display:grid; gap:16px}
-.field{display:grid; gap:8px; min-width:0; align-content:start}
-.field > label, .field > legend, .field .lbl{display:block; font-weight:700; font-size:14.5px; line-height:1.3; color:var(--ink); padding:0}
-.field .opt{font-weight:500; color:var(--muted)}
-.field :is(input:not([type="radio"], [type="checkbox"]), select, textarea){
-  font:inherit; font-size:16px; color:var(--ink); width:100%; min-height:50px;
-  background-color:var(--bg-2); border:1.5px solid transparent; border-radius:var(--r-s); padding:12px 16px;
-  transition:border-color var(--dur-fast) ease, background-color var(--dur-fast) ease, box-shadow var(--dur) var(--ease-out);
-}
-.field select{appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:44px; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23082D56' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 16px center}
-.field ::placeholder{color:var(--muted); opacity:1}
-@media (hover:hover) and (pointer:fine){ .field :is(input:not([type="radio"], [type="checkbox"]), select, textarea):hover{border-color:var(--line-2)} }
-.field :is(input:not([type="radio"], [type="checkbox"]), select, textarea):focus{outline:none; background-color:#fff; border-color:var(--cyan-ink); box-shadow:0 0 0 4px rgb(0 174 208 / .18)}
-.field.invalid :is(input:not([type="radio"], [type="checkbox"]), select, textarea){border-color:var(--coral-ink); background-color:#FFF7F6}
-.field.invalid :is(input:not([type="radio"], [type="checkbox"]), select, textarea):focus{box-shadow:0 0 0 4px rgb(252 105 97 / .2)}
-.err{display:flex; align-items:flex-start; gap:6px; font-size:13.5px; line-height:1.4; font-weight:600; color:var(--coral-ink)}
-.err:empty{display:none}
-.err::before{content:""; flex:none; width:16px; height:16px; margin-top:1px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23C2342B'/%3E%3Cpath d='M8 4.2v4.6' stroke='white' stroke-width='1.8' stroke-linecap='round'/%3E%3Ccircle cx='8' cy='11.4' r='1.1' fill='white'/%3E%3C/svg%3E") center / contain no-repeat}
-.err:not(:empty){animation:hl-err-in var(--dur) var(--ease-out)}
-@keyframes hl-err-in{from{opacity:0; translate:0 -4px}}
-.g2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
-.g2-keep{grid-template-columns:repeat(auto-fit, minmax(140px, 1fr))}
-fieldset{border:0; margin:0; padding:0; min-width:0}
-
-/* Kimin için? (radyo kartları) */
-.seg2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-.seg2 label{
-  position:relative; display:flex; align-items:center; gap:12px; min-height:54px; padding:12px 16px; border-radius:var(--r-s);
-  background:var(--bg-2); box-shadow:inset 0 0 0 1.5px transparent; font-weight:700; line-height:1.25; cursor:pointer; user-select:none; -webkit-user-select:none;
-  transition:background-color var(--dur-fast) ease, box-shadow var(--dur-fast) ease, transform var(--dur) var(--ease-spring);
-}
-@media (hover:hover) and (pointer:fine){ .seg2 label:hover{box-shadow:inset 0 0 0 1.5px var(--line-2)} }
-.seg2 label:has(input:checked){background:var(--cyan-50); box-shadow:inset 0 0 0 2px var(--cyan-ink)}
-.seg2 label:has(input:focus-visible){outline:2.5px solid var(--cyan-ink); outline-offset:2px}
-.seg2 label:active{transform:scale(.98); transition-duration:var(--dur-fast)}
-.seg2 input{appearance:none; -webkit-appearance:none; flex:none; width:20px; height:20px; margin:0; border-radius:50%; background:#fff; box-shadow:inset 0 0 0 1.5px var(--line-2); cursor:pointer; transition:box-shadow var(--dur) var(--ease-spring)}
-.seg2 input:checked{box-shadow:inset 0 0 0 6px var(--cyan-ink)}
-.seg2 input:focus-visible{outline:none}
-
-/* Uygun zaman */
-.slots{display:flex; flex-wrap:wrap; gap:8px}
-.slots button{
-  display:inline-flex; align-items:center; gap:6px; min-height:42px; border:1.5px solid var(--line); background:#fff; color:var(--ink); border-radius:999px; padding:8px 16px;
-  font-size:14.5px; font-weight:700; font-variant-numeric:tabular-nums; touch-action:manipulation;
-  transition:background-color var(--dur-fast) ease, border-color var(--dur-fast) ease, box-shadow var(--dur) var(--ease-out), transform var(--dur) var(--ease-spring);
-}
-@media (hover:hover) and (pointer:fine){ .slots button:hover{border-color:var(--ink); transform:translateY(-2px); box-shadow:var(--shadow-s)} }
-.slots button:focus-visible{outline:2.5px solid var(--cyan-ink); outline-offset:2px}
-.slots button:active{transform:scale(.95); box-shadow:none; transition-duration:var(--dur-fast)}
-.slots button[aria-pressed="true"]{background:var(--sun); border-color:var(--sun); color:var(--ink-deep); animation:hl-press-pop var(--dur-slow) var(--ease-spring)}
-
-/* Onay kutuları */
-.check{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; line-height:1.5; color:var(--ink-2); cursor:pointer}
-.check input{
-  appearance:none; -webkit-appearance:none; flex:none; width:22px; height:22px; margin:0; border-radius:7px; cursor:pointer;
-  background-color:#fff; box-shadow:inset 0 0 0 1.5px var(--line-2);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2305213F' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E");
-  background-repeat:no-repeat; background-position:center; background-size:0 0;
-  transition:background-color var(--dur-fast) ease, box-shadow var(--dur-fast) ease, background-size var(--dur) var(--ease-spring), transform var(--dur) var(--ease-spring);
-}
-@media (hover:hover) and (pointer:fine){ .check:hover input:not(:checked){box-shadow:inset 0 0 0 1.5px var(--ink)} }
-.check input:checked{background-color:var(--green); box-shadow:inset 0 0 0 1.5px var(--green); background-size:15px 15px}
-.check input:active{transform:scale(.88); transition-duration:var(--dur-fast)}
-.check input:focus-visible{outline:2.5px solid var(--cyan-ink); outline-offset:2px}
-.check:has(+ .err:not(:empty)) input{box-shadow:inset 0 0 0 1.5px var(--coral-ink); background-color:#FFF7F6}
-.check a{color:var(--ink); font-weight:700; text-decoration:underline; text-decoration-color:rgb(252 105 97 / .55); text-decoration-thickness:1.5px; text-underline-offset:3px}
-.checks{display:grid; gap:10px}
-
-/* Başarı ekranı */
-.done{text-align:center; display:grid; gap:10px; justify-items:center; padding:0 0 4px}
-.done h2{font-size:clamp(28px,3.4vw,36px); outline:none}
-.done .stamp{--stamp-bg:var(--coral); --stamp-fg:var(--ink-deep); margin-bottom:2px}
-.done-note{font-size:15px; line-height:1.55; color:var(--ink-2); max-width:44ch}
-.done-sum{display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin:4px 0 2px}
-.done-sum li{padding:5px 12px; border-radius:999px; font-size:14px; font-weight:700; line-height:1.3; background:var(--cyan-50); color:var(--ink)}
-.done-sum li:nth-child(2){background:var(--lilac-50)}
-.done-sum li:nth-child(3){background:var(--sun-50)}
-.done .btn{margin-top:10px}
-.yay{position:relative; width:280px; max-width:100%; aspect-ratio:280 / 170; margin-bottom:-6px}
-.yay-fx{position:absolute; inset:0; width:100%; height:100%; overflow:visible}
-.yay .mascot{--mascot-w:104px; position:absolute; left:50%; top:10%; margin-left:-52px}
-.yp{transform-box:fill-box; transform-origin:center}
-@media (prefers-reduced-motion:no-preference){
-  .yay .mascot{animation:hl-pop-in .6s var(--ease-spring) both}
-  .yay .mascot > img + img{animation:hl-wink-once 2s steps(1, end) .2s both}
-  .yp{animation:hl-burst .8s var(--ease-out) calc(.14s + var(--d, 0s)) both}
-  .yp-draw{stroke-dasharray:1; stroke-dashoffset:0; animation:hl-burst .8s var(--ease-out) calc(.14s + var(--d, 0s)) both, hl-dash .6s var(--ease-out) calc(.3s + var(--d, 0s)) both}
-  .done .stamp{animation:hl-stamp .6s var(--ease-spring) .38s both}
-  .done > :is(h2, .done-sum, .done-note, .btn){animation:hl-reveal .5s var(--ease-out) .3s both}
-}
-@keyframes hl-burst{
-  0%{opacity:0; transform:translate(calc(var(--x, 0) * -1px), calc(var(--y, 0) * -1px)) scale(.2) rotate(var(--r, 0deg))}
-  25%{opacity:1}
-  100%{opacity:1; transform:none}
-}
-@keyframes hl-dash{from{stroke-dashoffset:1}}
-@keyframes hl-stamp{from{opacity:0; transform:rotate(-14deg) scale(.6)}}
-@keyframes hl-wink-once{0%{opacity:0} 58%{opacity:1} 66%{opacity:0}}
-
 /* ---------- Video ışık kutusu (#vdlg) ---------- */
 #vdlg{--vw:min(440px, calc(100vw - 32px), calc((100vh - 120px) * 9 / 16)); --vw:min(440px, calc(100vw - 32px), calc((100dvh - 120px) * 9 / 16)); width:var(--vw); background:transparent; box-shadow:none; border-radius:0; overflow:visible}
 #vdlg::backdrop{background:rgb(4 16 32 / .84)}
@@ -513,20 +405,12 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 /* ---------- Duyarlı ---------- */
 @media (max-width:720px){
   body{font-size:16px}
-  .g2:not(.g2-keep){grid-template-columns:1fr}
-  .g2-keep{gap:12px}
   .mbar{display:flex}
   .cookie{left:12px; right:12px; width:auto; max-width:none; bottom:calc(12px + env(safe-area-inset-bottom, 0px))}
   html:not(.mbar-away) .cookie{translate:0 -70px}
   .ck-maskot{width:48px; top:-29px}
 
   /* Form: alttan açılan sayfa */
-  #dlg{width:100%; max-width:100%; margin:auto 0 0; border-radius:var(--r-l) var(--r-l) 0 0; max-height:calc(100vh - 20px); max-height:calc(100dvh - 20px); padding-bottom:env(safe-area-inset-bottom, 0px); transform:translateY(100%)}
-  #dlg[open]{transform:none; transition-timing-function:var(--ease-out), var(--ease-drawer)}
-  @starting-style{ #dlg[open]{opacity:1; transform:translateY(100%)} }
-  .dlg{gap:20px}
-  .seg2{gap:8px}
-  .seg2 label{padding:12px 14px; gap:10px}
   #vdlg{--vw:min(440px, calc(100vw - 16px), calc((100vh - 96px) * 9 / 16)); --vw:min(440px, calc(100vw - 16px), calc((100dvh - 96px) * 9 / 16))}
   .v-frame{border-radius:var(--r-m)}
 }
@@ -784,13 +668,13 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     <span class="an-txt"><strong>Bett UK 2026</strong>’da “En İyi Dil Uygulaması” ödülünü kazandık</span>
     <span class="an-dot" aria-hidden="true"></span>
     <span>İlk tanışma dersi ücretsiz</span>
-    <a class="an-link" href="#top" data-open="trial"><span>Hemen planlayın</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a class="an-link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer"><span>Hemen planlayın</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </p>
   <p class="an-msg an-sm">
     <span class="stamp pop-in">Ödül!</span>
     <span class="an-txt"><strong>Bett UK 2026</strong> ödüllü</span>
     <span class="an-dot" aria-hidden="true"></span>
-    <a class="an-link" href="#top" data-open="trial"><span>İlk ders ücretsiz</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a class="an-link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer"><span>İlk ders ücretsiz</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </p>
   <button class="an-x" type="button" aria-label="Duyuruyu kapat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
 </div>
@@ -814,7 +698,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
             </ul>
             <div class="dd-sep" aria-hidden="true"></div>
             <a class="dd-i c-ink" href="#kurumlar"><span class="dd-b"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span><span class="dd-t">Kurumlar<svg class="icon dd-arr" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="dd-d">Okul ve şirketlere özel grup programları</span></a>
-            <div class="dd-foot"><span><b>6 dil</b> · Grup, mini grup ve bire bir</span><a class="dd-all" href="#programlar">Tüm programlar<svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            <div class="dd-foot"><span><b>7 dil</b> · Grup, mini grup ve bire bir</span><a class="dd-all" href="#programlar">Tüm programlar<svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
           </div>
         </div>
       </div>
@@ -838,8 +722,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
           </div>
         </div>
       </div>
-      <a class="nav-a login" href="#top">Giriş</a>
-      <button class="btn btn-primary btn-sm hd-cta" type="button" data-open="trial">Ücretsiz deneme dersi<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <a class="nav-a login" href="https://www.hurralingo.app/login?lng=tr" target="_blank" rel="noopener noreferrer">Giriş</a>
+      <a class="btn btn-primary btn-sm hd-cta" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz deneme dersi<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <button class="menu-btn" id="hd-menu" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menüyü aç"><span class="mb-l"></span><span class="mb-l"></span><span class="mb-l"></span></button>
     </div>
   </div>
@@ -865,7 +749,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <li class="dr-st" style="--i:8"><a href="#kurumlar" data-spy><span>Kurumlar</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
       </ul>
       <div class="dr-sub dr-st" style="--i:9">
-        <div class="dr-sub-links"><a href="#top">Blog</a><a href="#top">Giriş yap</a></div>
+        <div class="dr-sub-links"><a href="https://www.hurralingo.com/tr/blog/" target="_blank" rel="noopener noreferrer">Blog</a><a href="https://www.hurralingo.app/login?lng=tr" target="_blank" rel="noopener noreferrer">Giriş yap</a></div>
         <div class="dr-langs" role="group" aria-label="Dil seçimi">
           <a href="#top" lang="tr" aria-current="true" aria-label="Türkçe">TR</a><a href="en.html" lang="en" hreflang="en" aria-label="English">EN</a><a href="#top" lang="de" hreflang="de" aria-label="Deutsch">DE</a><a href="#top" lang="az" hreflang="az" aria-label="Azərbaycan">AZ</a>
         </div>
@@ -874,8 +758,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
   </div>
   <div class="dr-foot">
     <div class="dr-wrap">
-      <button class="btn btn-primary dr-cta" type="button" data-open="trial">Ücretsiz deneme dersi<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-      <a class="dr-wa" href="https://wa.me/905395167070" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp <span class="num">+90 539 516 70 70</span></a>
+      <a class="btn btn-primary dr-cta" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz deneme dersi<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="dr-wa" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp <span class="num">+90 539 516 70 70</span></a>
     </div>
   </div>
 </nav>
@@ -1016,7 +900,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     if(restore) menuBtn.focus({preventScroll:true});
   }
   menuBtn.addEventListener('click', function(){ if(drOpen) closeDrawer(true); else openDrawer(); });
-  drawer.addEventListener('click', function(e){ if(e.target.closest('a[href], [data-open]')) closeDrawer(false); });
+  drawer.addEventListener('click', function(e){ if(e.target.closest('a[href]')) closeDrawer(false); });
   document.addEventListener('keydown', function(e){
     if(!drOpen) return;
     if(e.key === 'Escape'){ closeDrawer(true); return; }
@@ -1072,34 +956,18 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 @keyframes hero-stamp{from{opacity:0; transform:rotate(-18deg) scale(.4)}}
 
 .hero .who{margin-top:12px}
-.hero .who legend, .hero .hc-lang label{font-size:13.5px; font-weight:700; color:var(--ink-2); padding:0; margin-bottom:8px}
+.hero .hc-label{font-size:13.5px; font-weight:700; color:var(--ink-2); margin-bottom:8px}
 .hero .who-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px}
-.hero .who-o{--t:var(--bg-2); --s:var(--ink); position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; min-height:56px; padding:8px 4px; border-radius:16px; background:var(--t); cursor:pointer; text-align:center; line-height:1.15; box-shadow:inset 0 0 0 1.5px transparent; transition:transform var(--dur) var(--ease-spring), background-color var(--dur-fast) linear, box-shadow var(--dur-fast) linear; -webkit-tap-highlight-color:transparent}
-/* renk = veri kodlaması (yaş grubu): yalnızca seçili kutuda dolgu, hover'da çerçeve */
-.hero .who-o:nth-child(1){--s:var(--h-orange)}
-.hero .who-o:nth-child(2){--s:var(--cyan)}
-.hero .who-o:nth-child(3){--s:var(--h-lilac)}
-.hero .who-o:nth-child(4){--s:var(--h-green)}
-.hero .who-o input{position:absolute; opacity:0; width:1px; height:1px; pointer-events:none}
-.hero .who-o b{font-family:var(--display); font-weight:800; font-size:18px; letter-spacing:-.01em; font-variant-numeric:tabular-nums; color:var(--ink)}
+.hero .who-o{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; min-height:56px; padding:8px 4px; border-radius:16px; background:var(--bg-2); text-align:center; line-height:1.15}
+/* Static age-group labels. */
+.hero .who-o b{font-family:var(--display); font-weight:800; font-size:18px; white-space:nowrap; letter-spacing:-.01em; font-variant-numeric:tabular-nums; color:var(--ink)}
 .hero .who-o small{font-size:12.5px; font-weight:600; color:var(--ink-2)}
-.hero .who-tick{position:absolute; top:-6px; right:-6px; width:22px; height:22px; border-radius:50%; background:var(--ink); color:#fff; display:grid; place-items:center; box-shadow:0 0 0 2.5px #fff; opacity:0; transform:scale(.3); transition:transform var(--dur) var(--ease-spring), opacity var(--dur-fast) linear}
-.hero .who-tick svg{width:13px; height:13px; stroke-width:3}
-.hero .who-o:has(input:checked){background:var(--s)}
-.hero .who-o:has(input:checked) small{color:var(--ink)}
-.hero .who-o:has(input:checked) .who-tick{opacity:1; transform:scale(1)}
-.hero .who.touched .who-o:has(input:checked){animation:hero-choose 420ms var(--ease-spring)}
-@keyframes hero-choose{0%{transform:scale(.93)} 100%{transform:scale(1)}}
-.hero .who-o:has(input:focus-visible){outline:3px solid var(--cyan-ink); outline-offset:3px}
-.hero .who-o:active{transform:scale(.96)}
 
-.hero .hc-row{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; margin-top:12px}
-.hero .hc-lang{position:relative}
-.hero .hc-lang label{position:absolute; left:18px; top:9px; margin:0; font-size:12px; line-height:1; pointer-events:none}
-.hero .hc-lang select{display:block; width:100%; height:56px; font:inherit; font-size:16.5px; font-weight:700; color:var(--ink); background:var(--bg-2); border:1.5px solid transparent; border-radius:16px; padding:20px 44px 4px 17px; appearance:none; -webkit-appearance:none; cursor:pointer; transition:border-color var(--dur-fast) linear, background-color var(--dur-fast) linear}
-.hero .hc-lang select:focus{outline:none}
-.hero .hc-lang select:focus-visible{border-color:var(--cyan-ink); background:#fff; box-shadow:0 0 0 3px rgba(0,113,138,.18)}
-.hero .hc-chev{position:absolute; right:16px; top:50%; width:16px; height:16px; margin-top:-8px; stroke-width:2.6; pointer-events:none; transition:transform var(--dur) var(--ease-out)}
+.hero .hc-row{display:flex; margin-top:12px}
+.hero .hc-languages{margin-top:14px}
+.hero .hc-badges{display:flex; flex-wrap:wrap; gap:6px}
+.hero .hc-badges li{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:var(--bg-2); font-size:13px; font-weight:700}
+.hero .hc-badges li::before{content:""; width:8px; height:8px; flex:none; border-radius:50%; background:var(--c)}
 .hero .hc-go{height:56px; padding-inline:24px 22px; border-radius:16px}
 
 .hero .hc-notes{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:13px; padding-top:12px; border-top:1.5px dashed var(--line); font-size:14px; font-weight:500; color:var(--ink-2)}
@@ -1165,10 +1033,6 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 @keyframes hero-pop{from{opacity:0; transform:rotate(calc(var(--r) * 2.5)) scale(.35)}}
 
 @media (hover:hover) and (pointer:fine){
-  .hero .who-o:hover{transform:translateY(-2px); box-shadow:inset 0 0 0 1.5px var(--s)}
-  .hero .who-o:has(input:checked):hover{box-shadow:inset 0 0 0 1.5px rgba(8,45,86,.14)}
-  .hero .hc-lang:hover select{border-color:rgba(8,45,86,.16)}
-  .hero .hc-lang:hover .hc-chev{transform:translateY(2px)}
   .hero .hm-pause:hover{transform:scale(1.08); background:#fff}
   .hero .hm-mascot:hover img{transform:rotate(-4deg) translateY(-4px)}
   .hero .hm-mascot:hover .m-wink{opacity:1; animation:none}
@@ -1216,10 +1080,10 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 .proof .pf-av img{width:30px; height:30px; border-radius:50%; object-fit:cover; background:var(--c50); mix-blend-mode:multiply; box-shadow:0 0 0 2px #fff; margin-left:-8px; transition:transform var(--dur) var(--ease-spring)}
 .proof .pf-av img:first-child{margin-left:0}
 .proof .pf-more{font-weight:700; font-size:13px; color:var(--cink); background:var(--c50); padding:4px 9px; border-radius:999px}
-.proof .pf-langs{display:grid; grid-template-columns:repeat(6,1fr); gap:4px; width:100%}
+.proof .pf-langs{display:grid; grid-template-columns:repeat(auto-fit,minmax(28px,1fr)); gap:4px; width:100%}
 .proof .pf-langs span{display:grid; place-items:center; height:26px; border-radius:9px; font-weight:800; font-size:11.5px; letter-spacing:.04em; color:var(--ink); transition:transform var(--dur) var(--ease-spring)}
 .proof .pf-langs .l-en{background:var(--cyan)} .proof .pf-langs .l-de{background:var(--orange, #FB991E)} .proof .pf-langs .l-fr{background:var(--lilac, #C997CB)}
-.proof .pf-langs .l-es{background:var(--sun, #FFC94A)} .proof .pf-langs .l-ru{background:var(--green, #98C33F)} .proof .pf-langs .l-tr{background:var(--coral)}
+.proof .pf-langs .l-es{background:var(--sun, #FFC94A)} .proof .pf-langs .l-ru{background:var(--green, #98C33F)} .proof .pf-langs .l-zh{background:var(--orange)} .proof .pf-langs .l-tr{background:var(--coral)}
 .proof .pf-laurel{width:30px; height:30px; flex:none; color:var(--cink)}
 .proof .pf-note{font-size:13px; line-height:1.3; color:var(--ink-2)}
 .proof .pf-note b{color:var(--ink)}
@@ -1279,10 +1143,6 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
   .hero .who-o b{font-size:16.5px}
   .hero .who-o small{font-size:12px}
   .hero .hc-row{gap:8px; margin-top:10px}
-  .hero .hc-lang select, .hero .hc-go{height:52px}
-  .hero .hc-lang select{padding-left:14px; padding-right:36px; font-size:16px}
-  .hero .hc-lang label{left:15px; top:8px}
-  .hero .hc-chev{right:12px}
   .hero .hc-go{padding-inline:18px 16px; font-size:16px; gap:8px}
   .hero .hc-notes{margin-top:11px; padding-top:10px; font-size:13px; gap:6px 14px}
 
@@ -1314,42 +1174,45 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     <symbol id="hero-i-cert" viewBox="0 0 24 24"><path d="M13 17H4.5a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2V10"/><path d="M6.5 8h9M6.5 11.5h5"/><circle cx="17.5" cy="14" r="3"/><path d="M15.8 16.5V21l1.7-1.2 1.7 1.2v-4.5"/></symbol>
     <symbol id="hero-i-pause" viewBox="0 0 24 24"><path d="M8.5 5.5v13M15.5 5.5v13" stroke-width="3"/></symbol>
     <symbol id="hero-i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.6-6.8a.8.8 0 0 0 0-1.4L9.2 4.5a.8.8 0 0 0-1.2.7z"/></symbol>
-    <symbol id="hero-i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+
   </svg>
 
   <div class="hero-in">
     <div class="hero-copy">
       <p class="hero-tag"><span class="hero-dot" aria-hidden="true"></span><span>Canlı online dil okulu <i aria-hidden="true">·</i> 4 yaştan yetişkine</span></p>
       <h1 id="h1">Okulda<br> öğrendiği dili<br> burada <span class="hero-smile">konuşur<svg viewBox="0 0 360 36" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M6 11 C 90 37, 250 39, 354 6"/></svg></span>.</h1>
-      <p class="hero-sub"><span class="hs-long">Uzman öğretmenlerle canlı ve eğlenceli online dersler. İngilizce, Almanca, Fransızca, İspanyolca, Rusça ve Türkçe; grup ya da bire bir, size uygun saatte.</span><span class="hs-short">Uzman öğretmenlerle canlı online dersler. 6 dil, size uygun saatte.</span></p>
+      <p class="hero-sub"><span class="hs-long">Uzman öğretmenlerle canlı ve eğlenceli online dersler. İngilizce, Almanca, Fransızca, İspanyolca, Rusça, Çince ve Türkçe; grup ya da bire bir, size uygun saatte.</span><span class="hs-short">Uzman öğretmenlerle canlı online dersler. 7 dil, size uygun saatte.</span></p>
 
-      <form class="hero-card" id="lead" novalidate aria-labelledby="lead-t">
+      <div class="hero-card" id="lead" aria-labelledby="lead-t">
         <div class="hc-head">
           <h2 id="lead-t">Tanışma dersi planlayın</h2>
           <span class="hc-stamp">Ücretsiz!</span>
         </div>
-        <fieldset class="who">
-          <legend>Kim için?</legend>
-          <div class="who-grid">
-            <label class="who-o"><input type="radio" name="lw" value="4–6"><b>4–6</b><small>yaş</small><span class="who-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span></label>
-            <label class="who-o"><input type="radio" name="lw" value="7–12" checked><b>7–12</b><small>yaş</small><span class="who-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span></label>
-            <label class="who-o"><input type="radio" name="lw" value="13–18"><b>13–18</b><small>yaş</small><span class="who-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span></label>
-            <label class="who-o"><input type="radio" name="lw" value="yetiskin"><b>Kendim</b><small>yetişkin</small><span class="who-tick" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span></label>
-          </div>
-        </fieldset>
-        <div class="hc-row">
-          <div class="hc-lang">
-            <label for="lead-dil">Hangi dil?</label>
-            <select id="lead-dil"><option>İngilizce</option><option>Almanca</option><option>Fransızca</option><option>İspanyolca</option><option>Rusça</option><option>Türkçe</option></select>
-            <svg class="icon hc-chev" aria-hidden="true"><use href="#hero-i-chev"/></svg>
-          </div>
-          <button class="btn btn-primary hc-go" type="submit">Devam et <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <div class="who">
+          <p class="hc-label">Yaş grupları</p>
+          <ul class="who-grid">
+          <li class="who-o"><b>4–6</b><small>yaş</small></li>
+          <li class="who-o"><b>7–12</b><small>yaş</small></li>
+          <li class="who-o"><b>13–18</b><small>yaş</small></li>
+          <li class="who-o"><b>Yetişkin</b></li></ul>
         </div>
+        <div class="hc-languages">
+        <p class="hc-label">Diller</p>
+        <ul class="hc-badges">
+        <li style="--c:var(--cyan)">İngilizce</li>
+        <li style="--c:var(--orange)">Almanca</li>
+        <li style="--c:var(--lilac)">Fransızca</li>
+        <li style="--c:var(--sun)">İspanyolca</li>
+        <li style="--c:var(--green)">Rusça</li>
+        <li style="--c:var(--orange)">Çince</li>
+        <li style="--c:var(--coral)">Türkçe</li></ul></div>
+        <div class="hc-row">
+        <a class="btn btn-primary hc-go" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Devam et <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
         <ul class="hc-notes">
           <li><span class="ck" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Seviye tanışma dersinde belirlenir</li>
           <li><span class="ck" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Ders saatleri esnek</li>
         </ul>
-      </form>
+      </div>
     </div>
 
     <div class="hero-media">
@@ -1386,15 +1249,15 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 <ul class="proof" aria-label="Rakamlarla Hurra Lingo">
   <li>
     <div class="pf-top"><span class="pf-ic" aria-hidden="true"><svg class="icon"><use href="#hero-i-teach"/></svg></span><span class="stamp pf-tag">Kadro</span></div>
-    <p class="pf-t"><span data-count="38">38</span> öğretmen</p>
-    <p class="pf-d">Türk ve yabancı uzmanlar. <strong>Her birinin tanıtım videosu var.</strong></p>
-    <div class="pf-foot"><span class="pf-av" aria-hidden="true"><img src="img/t-bengu.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-adeniyi.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-mehtap.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-adam.webp" alt="" width="30" height="30" loading="lazy"></span><span class="pf-more">+34</span></div>
+    <p class="pf-t">Öğretmen kadromuz</p>
+    <p class="pf-d">Türk ve yabancı uzmanlar. </p>
+    <div class="pf-foot"><span class="pf-av" aria-hidden="true"><img src="img/t-bengu.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-adeniyi.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-mehtap.webp" alt="" width="30" height="30" loading="lazy"><img src="img/t-adam.webp" alt="" width="30" height="30" loading="lazy"></span></div>
   </li>
   <li>
     <div class="pf-top"><span class="pf-ic" aria-hidden="true"><svg class="icon"><use href="#hero-i-chat"/></svg></span><span class="stamp pf-tag">Diller</span></div>
-    <p class="pf-t"><span data-count="6">6</span> dil</p>
+    <p class="pf-t"><span data-count="7">7</span> dil</p>
     <p class="pf-d">İngilizceden Rusçaya, <strong>çocuklara ve yetişkinlere</strong> tek okulda.</p>
-    <div class="pf-foot"><span class="pf-langs" role="list" aria-label="İngilizce, Almanca, Fransızca, İspanyolca, Rusça, Türkçe"><span class="l-en" role="listitem">EN</span><span class="l-de" role="listitem">DE</span><span class="l-fr" role="listitem">FR</span><span class="l-es" role="listitem">ES</span><span class="l-ru" role="listitem">RU</span><span class="l-tr" role="listitem">TR</span></span></div>
+    <div class="pf-foot"><span class="pf-langs" role="list" aria-label="İngilizce, Almanca, Fransızca, İspanyolca, Rusça, Çince, Türkçe"><span class="l-en" role="listitem">EN</span><span class="l-de" role="listitem">DE</span><span class="l-fr" role="listitem">FR</span><span class="l-es" role="listitem">ES</span><span class="l-ru" role="listitem">RU</span><span class="l-zh" role="listitem">ZH</span><span class="l-tr" role="listitem">TR</span></span></div>
   </li>
   <li>
     <div class="pf-top"><span class="pf-ic" aria-hidden="true"><svg class="icon"><use href="#hero-i-trophy"/></svg></span><span class="stamp pf-tag">Ödül</span></div>
@@ -1432,17 +1295,6 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     } else if(!userPaused){ tryPlay(); }
     sync();
   }
-
-  // Yaş seçici: ilk etkileşimden sonra seçimde yaylanma
-  var who = document.querySelector('.hero .who');
-  if(who) who.addEventListener('change', function(){ who.classList.add('touched'); });
-
-  // Form sözleşmesi: window.HL.openTrial({age, lang})
-  document.getElementById('lead').addEventListener('submit', function(e){
-    e.preventDefault();
-    var w = (document.querySelector('input[name="lw"]:checked') || {}).value;
-    window.HL.openTrial({age: w, lang: document.getElementById('lead-dil').value});
-  });
 
   // Güven şeridi: görünür olunca bir kez sayma (JS yoksa rakamlar zaten doğru)
   var pf = document.querySelector('.proof');
@@ -1507,26 +1359,17 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 #neden .nd-faces img{width:100%; height:100%; object-fit:cover; transform:scale(1.9); transform-origin:50% 21%}
 #neden .nd-faces em{font-style:normal; font-size:13.5px; font-weight:700; color:var(--ink-2); margin-left:10px; font-variant-numeric:tabular-nums}
 
-/* 2 · Altı dil */
+/* 2 · Yedi dil */
 #neden .nd-lang{grid-column:span 2; background:var(--cyan-50); --tilt:-1deg}
 #neden .nd-lang-h{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap}
 #neden .nd-num{position:relative; font-size:clamp(80px,7.6vw,112px); line-height:.8; letter-spacing:-.05em; color:var(--cyan-ink)}
 #neden .nd-spark{position:absolute; right:-24px; top:-10px; width:26px; height:26px; overflow:visible; transform-origin:0 100%; transition:transform var(--dur-slow) var(--ease-spring)}
 #neden .nd-spark path{fill:none; stroke:var(--nd-coral); stroke-width:2.6; stroke-linecap:round}
 #neden .nd-lang p{color:var(--ink-2); max-width:42ch}
-#neden .nd-chips{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:auto; padding-top:14px}
-#neden .nd-chip{position:relative; width:100%; display:flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:999px; padding:12px 16px; background:#fff; color:var(--ink); font-weight:700; font-size:16.5px; line-height:1.2; cursor:pointer;
+#neden .nd-chips{display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin-top:auto; padding-top:14px}
+#neden .nd-chip{position:relative; width:100%; display:flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:999px; padding:12px 16px; background:#fff; color:var(--ink); font-weight:700; font-size:16.5px; line-height:1.2;
   box-shadow:inset 0 0 0 1.5px var(--line); transition:transform var(--dur) var(--ease-spring), box-shadow var(--dur) var(--ease-out)}
 #neden .nd-chip::before{content:""; width:10px; height:10px; flex:none; border-radius:50%; background:var(--c); transition:transform var(--dur) var(--ease-spring)}
-#neden .nd-chip:focus-visible{box-shadow:inset 0 0 0 2px var(--c)}
-#neden .nd-chip:active{transform:scale(.98)}
-#neden .nd-chip:focus-visible{border-radius:999px; z-index:2}
-/* Konuşma balonu: marka maskotu gibi sol altta kuyruk */
-#neden .nd-hi{position:absolute; left:10px; bottom:calc(100% + 12px); padding:8px 14px 9px; border-radius:16px; background:var(--c); color:var(--ink); font-family:var(--nd-poet); font-weight:400; font-size:18px; line-height:1; white-space:nowrap; pointer-events:none;
-  opacity:0; transform:translateY(6px) scale(.6); transform-origin:16px 100%; box-shadow:0 12px 22px -12px rgba(8,45,86,.55);
-  transition:transform var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out)}
-#neden .nd-hi::after{content:""; position:absolute; left:12px; top:calc(100% - 1px); width:16px; height:11px; background:inherit; clip-path:polygon(0 0,100% 0,8% 100%)}
-#neden .nd-chip:focus-visible .nd-hi{opacity:1; transform:none; transition:transform var(--dur-slow) var(--ease-spring), opacity var(--dur-fast) var(--ease-out)}
 
 /* 3 · Fiyat */
 #neden .nd-price{background:var(--coral-50); --tilt:1.5deg}
@@ -1604,10 +1447,6 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
   #neden .nd-link:hover .icon{transform:translateX(4px)}
 
   #neden .nd-lang:hover .nd-spark{transform:rotate(-12deg) scale(1.15)}
-  #neden .nd-chip:hover{z-index:2; transform:translateY(-3px) rotate(-2deg); box-shadow:inset 0 0 0 2px var(--c), 0 12px 20px -12px rgba(8,45,86,.45)}
-  #neden .nd-chip:hover::before{transform:scale(1.3)}
-  #neden .nd-chip:hover .nd-hi{opacity:1; transform:none; transition:transform var(--dur-slow) var(--ease-spring), opacity var(--dur-fast) var(--ease-out)}
-  #neden .nd-chip:active{transform:translateY(-1px) scale(.98)}
 
   #neden .nd-plist li:hover{background:#fff}
   #neden .nd-plist li:hover::before, #neden .nd-plist li:hover + li::before{opacity:0}
@@ -1679,38 +1518,39 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 </style>
 <section class="sec" id="neden" aria-labelledby="h-neden">
   <div class="sec-head"><div>
-    <h2 id="h-neden"><span class="nd-mark">Altı dil<svg class="nd-wave" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 8 C 19 2, 35 3, 51 8 S 84 13, 100 8 S 133 2, 149 7 S 183 13, 197 6"/></svg></span>, <span class="nd-nw">üç sınıf tipi,</span> <span class="nd-nw">tek veli paneli</span></h2>
-    <p class="lead">Çocuğunuz altı dilden birini Türk ve yabancı öğretmenlerle öğrenir. Sınıfı bütçenize göre seçersiniz, gelişimi panelden izlersiniz.</p>
+    <h2 id="h-neden"><span class="nd-mark">Yedi dil<svg class="nd-wave" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 8 C 19 2, 35 3, 51 8 S 84 13, 100 8 S 133 2, 149 7 S 183 13, 197 6"/></svg></span>, <span class="nd-nw">üç sınıf tipi,</span> <span class="nd-nw">tek veli paneli</span></h2>
+    <p class="lead">Çocuğunuz yedi dilden birini Türk ve yabancı öğretmenlerle öğrenir. Sınıfı bütçenize göre seçersiniz, gelişimi panelden izlersiniz.</p>
   </div></div>
 
   <div class="nd-bento">
     <!-- 1 · Öğretmenler -->
     <article class="nd-tile nd-photo">
       <img class="nd-photo-img" src="media/neden-ogretmen.jpg" alt="Hurra Lingo öğretmeni kitaplık önünde, bir veli sorusunu yanıtlıyor" width="900" height="1083" loading="lazy">
-      <span class="nd-stamp">38 öğretmen</span>
+      <span class="nd-stamp">Öğretmenlerimiz</span>
       <div class="nd-cap">
         <h3>Türk ve yabancı uzman öğretmenler</h3>
-        <p>Her öğretmenin tanıtım videosu var. Çocuğunuzun öğretmenini derse başlamadan tanırsınız.</p>
+        <p>Öğretmenlerimizi keşfedin, çocuğunuzun öğretmenini derse başlamadan tanıyın.</p>
         <div class="nd-cap-foot">
           <span class="nd-faces" aria-hidden="true">
-            <span><img src="img/t-bengu.webp" alt="" width="480" height="480"></span><span><img src="img/t-adeniyi.webp" alt="" width="480" height="480"></span><span><img src="img/t-mehtap.webp" alt="" width="480" height="480"></span><span><img src="img/t-adam.webp" alt="" width="480" height="480"></span><em>+34</em>
+            <span><img src="img/t-bengu.webp" alt="" width="480" height="480"></span><span><img src="img/t-adeniyi.webp" alt="" width="480" height="480"></span><span><img src="img/t-mehtap.webp" alt="" width="480" height="480"></span><span><img src="img/t-adam.webp" alt="" width="480" height="480"></span>
           </span>
           <a class="nd-link" href="#ogretmenler">Öğretmenleri tanıyın<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </article>
 
-    <!-- 2 · Altı dil -->
+    <!-- 2 · Yedi dil -->
     <article class="nd-tile nd-lang">
-      <h3 class="nd-lang-h"><span class="nd-num">6<svg class="nd-spark" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><path d="M3 17.5 L10 19"/><path d="M7 6 L13 12.5"/><path d="M19 2 L18.2 10.5"/></svg></span><span>dil seçeneği</span></h3>
-      <p>4 yaştan yetişkine. Bir dile dokunun, o dilde ücretsiz tanışma dersi isteyin.</p>
+      <h3 class="nd-lang-h"><span class="nd-num">7<svg class="nd-spark" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><path d="M3 17.5 L10 19"/><path d="M7 6 L13 12.5"/><path d="M19 2 L18.2 10.5"/></svg></span><span>dil seçeneği</span></h3>
+      <p>4 yaştan yetişkine, 7 dilde canlı online ders seçenekleri.</p>
       <ul class="nd-chips" aria-label="Diller">
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-cyan)" data-open="trial" data-lang-pre="İngilizce" aria-label="İngilizce: ücretsiz tanışma dersi iste">İngilizce<span class="nd-hi" lang="en" aria-hidden="true">Hello!</span></button></li>
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-sun)" data-open="trial" data-lang-pre="Almanca" aria-label="Almanca: ücretsiz tanışma dersi iste">Almanca<span class="nd-hi" lang="de" aria-hidden="true">Hallo!</span></button></li>
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-lilac)" data-open="trial" data-lang-pre="Fransızca" aria-label="Fransızca: ücretsiz tanışma dersi iste">Fransızca<span class="nd-hi" lang="fr" aria-hidden="true">Bonjour !</span></button></li>
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-orange)" data-open="trial" data-lang-pre="İspanyolca" aria-label="İspanyolca: ücretsiz tanışma dersi iste">İspanyolca<span class="nd-hi" lang="es" aria-hidden="true">¡Hola!</span></button></li>
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-green)" data-open="trial" data-lang-pre="Rusça" aria-label="Rusça: ücretsiz tanışma dersi iste">Rusça<span class="nd-hi" lang="ru" aria-hidden="true">Привет!</span></button></li>
-        <li><button type="button" class="nd-chip" style="--c:var(--nd-coral)" data-open="trial" data-lang-pre="Türkçe" aria-label="Türkçe: ücretsiz tanışma dersi iste">Türkçe<span class="nd-hi" lang="tr" aria-hidden="true">Merhaba!</span></button></li>
+        <li><span class="nd-chip" style="--c:var(--cyan)">İngilizce</span></li>
+        <li><span class="nd-chip" style="--c:var(--orange)">Almanca</span></li>
+        <li><span class="nd-chip" style="--c:var(--lilac)">Fransızca</span></li>
+        <li><span class="nd-chip" style="--c:var(--sun)">İspanyolca</span></li>
+        <li><span class="nd-chip" style="--c:var(--green)">Rusça</span></li>
+        <li><span class="nd-chip" style="--c:var(--orange)">Çince</span></li>
+        <li><span class="nd-chip" style="--c:var(--coral)">Türkçe</span></li>
       </ul>
     </article>
 
@@ -1764,7 +1604,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
       <div class="nd-cert-txt">
         <h3>CEFR uyumlu sertifika</h3>
         <p>Ankara Üniversitesi TÖMER iş birliğiyle. Başlangıç seviyesi ücretsiz tanışma dersinde belirlenir.</p>
-        <button type="button" class="nd-link" data-open="trial">Tanışma dersi iste<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+        <a class="nd-link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi iste<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
       </div>
       <div class="nd-steps-wrap">
       <ol class="nd-steps" aria-label="CEFR seviyeleri, Ön A1’den C1’e">
@@ -2015,7 +1855,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <p class="sq-foot-sub">WhatsApp hattımız: <span class="sq-num">+90 539 516 70 70</span></p>
       </div>
       <div class="sq-foot-act">
-        <a class="sq-wa" href="https://wa.me/905395167070" target="_blank" rel="noopener"><span class="sq-wa-ic" aria-hidden="true"><svg class="icon"><use href="#i-wa"/></svg></span>WhatsApp'tan sorun<span class="sr-only"> (yeni sekmede açılır)</span><svg class="icon sq-wa-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="sq-wa" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer"><span class="sq-wa-ic" aria-hidden="true"><svg class="icon"><use href="#i-wa"/></svg></span>WhatsApp'tan sorun<span class="sr-only"> (yeni sekmede açılır)</span><svg class="icon sq-wa-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
   </div>
@@ -2272,7 +2112,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <h2 id="h-prog">Yaşa ve <span class="p-mark">hedefe<svg viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 10C38 3 70 14 104 8S166 3 197 9"/></svg></span> göre programlar</h2>
         <p class="lead">Dört yaş grubu, Ön A1’den C1’e altı basamak. Her çocuk kendi hızında, basamak basamak ilerler.</p>
       </div>
-      <a class="p-head-link" href="#top" data-open="trial">Seviyemi öğrenmek istiyorum <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="p-head-link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Seviyemi öğrenmek istiyorum <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
     <table class="ptable" role="table" aria-describedby="p-note">
       <caption class="vh">Programlar: yaş grubu, odak ve seviye aralığı</caption>
@@ -2283,28 +2123,28 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
           <td role="cell" class="p-age"><span>4–6 yaş</span></td>
           <td role="cell" class="p-focus">Oyunla dinleme ve konuşma</td>
           <td role="cell" class="p-lvl"><span class="vh">Seviye: Ön A1</span><span class="p-stones" aria-hidden="true"><i class="on">Ön A1</i><i>A1</i><i>A2</i><i>B1</i><i>B2</i><i>C1</i></span></td>
-          <td role="cell" class="p-cta"><a class="p-go" href="#top" data-open="trial" data-age="4–6">Tanışma dersi<span class="vh">: Minikler, 4–6 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
+          <td role="cell" class="p-cta"><a class="p-go" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi<span class="vh">: Minikler, 4–6 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
         </tr>
         <tr role="row" class="p-row p-cy">
           <th role="rowheader" scope="row" class="p-name"><span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.5 19.5l1-4.6L15.6 4.8a2.1 2.1 0 0 1 3 0l.6.6a2.1 2.1 0 0 1 0 3L9.1 18.5z"/><path d="M13.6 6.8l3.6 3.6"/></svg></span>Çocuklar</th>
           <td role="cell" class="p-age"><span>7–12 yaş</span></td>
           <td role="cell" class="p-focus">Dört beceri ve günlük kullanım</td>
           <td role="cell" class="p-lvl"><span class="vh">Seviye aralığı: A1 ile B1 arası</span><span class="p-stones" aria-hidden="true"><i>Ön A1</i><i class="on">A1</i><i class="on">A2</i><i class="on">B1</i><i>B2</i><i>C1</i></span></td>
-          <td role="cell" class="p-cta"><a class="p-go" href="#top" data-open="trial" data-age="7–12">Tanışma dersi<span class="vh">: Çocuklar, 7–12 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
+          <td role="cell" class="p-cta"><a class="p-go" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi<span class="vh">: Çocuklar, 7–12 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
         </tr>
         <tr role="row" class="p-row p-li">
           <th role="rowheader" scope="row" class="p-name"><span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-school"/></svg></span>Gençler</th>
           <td role="cell" class="p-age"><span>13–18 yaş</span></td>
           <td role="cell" class="p-focus">Okul müfredatı ve sınav hedefleri</td>
           <td role="cell" class="p-lvl"><span class="vh">Seviye aralığı: A1 ile B2 arası</span><span class="p-stones" aria-hidden="true"><i>Ön A1</i><i class="on">A1</i><i class="on">A2</i><i class="on">B1</i><i class="on">B2</i><i>C1</i></span></td>
-          <td role="cell" class="p-cta"><a class="p-go" href="#top" data-open="trial" data-age="13–18">Tanışma dersi<span class="vh">: Gençler, 13–18 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
+          <td role="cell" class="p-cta"><a class="p-go" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi<span class="vh">: Gençler, 13–18 yaş</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
         </tr>
         <tr role="row" class="p-row p-gr">
           <th role="rowheader" scope="row" class="p-name"><span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5L3.5 10.4l6.6 3 3 6.6z"/><path d="M10.1 13.4l10.4-9.9"/></svg></span>Yetişkinler</th>
           <td role="cell" class="p-age"><span>18+ yaş</span></td>
           <td role="cell" class="p-focus">Kariyer, seyahat ve akıcı konuşma</td>
           <td role="cell" class="p-lvl"><span class="vh">Seviye aralığı: A1 ile C1 arası</span><span class="p-stones" aria-hidden="true"><i>Ön A1</i><i class="on">A1</i><i class="on">A2</i><i class="on">B1</i><i class="on">B2</i><i class="on">C1</i></span></td>
-          <td role="cell" class="p-cta"><a class="p-go" href="#top" data-open="trial" data-age="yetiskin">Tanışma dersi<span class="vh">: Yetişkinler, 18 yaş ve üzeri</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
+          <td role="cell" class="p-cta"><a class="p-go" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi<span class="vh">: Yetişkinler, 18 yaş ve üzeri</span><span class="p-arr" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a></td>
         </tr>
       </tbody>
     </table>
@@ -2522,7 +2362,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>En uygun ders başı ücret</li>
         <li class="shared"><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Uygulama, ders kayıtları ve veli paneli</li>
       </ul>
-      <div class="plan-cta"><button class="btn btn-line btn-block" type="button" data-open="trial" data-plan="Grup dersi">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="plan-cta"><a class="btn btn-line btn-block" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></a></div>
     </article>
 
     <!-- Mini grup dersi -->
@@ -2548,7 +2388,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Öğretmenden daha çok bireysel ilgi</li>
         <li class="shared"><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Uygulama, ders kayıtları ve veli paneli</li>
       </ul>
-      <div class="plan-cta"><button class="btn btn-line btn-block" type="button" data-open="trial" data-plan="Mini grup dersi">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="plan-cta"><a class="btn btn-line btn-block" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></a></div>
     </article>
 
     <!-- Özel ders (öne çıkan) -->
@@ -2576,7 +2416,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Ders saatleri size göre esnek</li>
         <li class="shared"><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Uygulama, ders kayıtları ve veli paneli</li>
       </ul>
-      <div class="plan-cta"><button class="btn btn-primary btn-block" type="button" data-open="trial" data-plan="Özel ders">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="plan-cta"><a class="btn btn-primary btn-block" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz tanışma dersi <svg class="icon"><use href="#i-arrow"/></svg></a></div>
     </article>
   </div>
 
@@ -2624,7 +2464,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
       <strong>Yalnızca konuşma pratiği mi?</strong>
       <span>Konuşma dersi ders başı <b class="num">₺499,75</b></span>
     </p>
-    <button class="link" type="button" data-open="trial" data-plan="Konuşma dersi">Ücretsiz dene <svg class="icon"><use href="#i-arrow"/></svg></button>
+    <a class="link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Ücretsiz dene <svg class="icon"><use href="#i-arrow"/></svg></a>
   </div>
 
 </section>
@@ -2690,6 +2530,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 #ogretmenler [data-tone="fr"]{--tone:var(--l-fr)}
 #ogretmenler [data-tone="es"]{--tone:var(--l-es)}
 #ogretmenler [data-tone="ru"]{--tone:var(--l-ru)}
+#ogretmenler [data-tone="zh"]{--tone:var(--orange)}
 #ogretmenler [data-tone="tr"]{--tone:var(--l-tr)}
 
 /* Başlıktaki el çizimi dalga */
@@ -2715,8 +2556,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 #ogretmenler .teacher:nth-child(3n+2){--rf:53% 47% 52% 48% / 46% 54% 46% 54%; --rb:44% 56% 42% 58% / 57% 43% 57% 43%}
 #ogretmenler .teacher:nth-child(3n){--rf:50% 50% 56% 44% / 52% 44% 56% 48%; --rb:52% 48% 60% 40% / 48% 60% 40% 52%}
 #ogretmenler .teacher:nth-child(even){--tilt:1deg}
-#ogretmenler .t-in{position:relative; cursor:pointer; transform-origin:50% 85%; transition:transform var(--dur-slow) var(--ease-spring)}
-#ogretmenler .t-media{position:relative; aspect-ratio:1/1; margin-bottom:18px}
+#ogretmenler .t-in{height:100%; display:flex; flex-direction:column; position:relative; transform-origin:50% 85%; transition:transform var(--dur-slow) var(--ease-spring)}
+#ogretmenler .t-media{flex:none; width:100%; position:relative; aspect-ratio:1/1; margin-bottom:18px}
 #ogretmenler .t-back{position:absolute; inset:11% 0 0 11%; background:#CCEFF6; background:var(--ph-back); border-radius:var(--rb); transition:transform var(--dur-slow) var(--ease-spring)}
 #ogretmenler .t-ph{position:absolute; inset:0 8% 8% 0; overflow:hidden; isolation:isolate; border-radius:var(--rf); background:var(--ph-bg)}
 #ogretmenler .teacher:nth-child(even) .t-back{inset:11% 11% 0 0}
@@ -2734,9 +2575,9 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 
 /* Ad, dil, eylem */
 #ogretmenler .t-name{font-family:var(--display); font-size:21px; font-weight:700; letter-spacing:-.012em; line-height:1.2}
-#ogretmenler .t-lang{display:inline-flex; align-items:center; gap:7px; margin-top:8px; padding:3px 11px 3px 9px; border-radius:999px; font-size:13.5px; font-weight:700; line-height:1.5; color:var(--ink); background:var(--bg-2)}
+#ogretmenler .t-lang{align-self:flex-start; margin-bottom:14px; display:inline-flex; align-items:center; gap:7px; margin-top:8px; padding:3px 11px 3px 9px; border-radius:999px; font-size:13.5px; font-weight:700; line-height:1.5; color:var(--ink); background:var(--bg-2)}
 #ogretmenler .t-lang i{width:8px; height:8px; border-radius:50%; background:var(--tone); flex:none}
-#ogretmenler .t-cta{display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; margin-top:14px; padding:0; border:0; background:none; font-weight:700; font-size:15px; line-height:1.4; color:var(--coral-ink); text-align:left}
+#ogretmenler .t-cta{text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; margin-top:auto; padding:0; border:0; background:none; font-weight:700; font-size:15px; line-height:1.4; color:var(--coral-ink); text-align:left}
 #ogretmenler .t-roll{display:block; height:1.4em; overflow:hidden; min-width:0}
 #ogretmenler .t-roll > span{display:block; white-space:nowrap; transition:transform var(--dur) var(--ease-out)}
 #ogretmenler .t-arrow{width:34px; height:34px; border-radius:50%; display:grid; place-items:center; flex:none; background:var(--coral-50); color:var(--coral-ink); transition:background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), transform var(--dur) var(--ease-spring)}
@@ -2791,7 +2632,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
   #ogretmenler .t-media{margin-bottom:14px}
   #ogretmenler .t-name{font-size:17.5px}
   #ogretmenler .t-lang{font-size:12.5px; padding:2px 9px 2px 7px; margin-top:6px}
-  #ogretmenler .t-cta{font-size:14px; margin-top:10px}
+  #ogretmenler .t-cta{font-size:14px; margin-top:auto}
   #ogretmenler .t-arrow{width:30px; height:30px}
   #ogretmenler .t-more{margin-top:36px}
 }
@@ -2845,22 +2686,22 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 <section class="sec" id="ogretmenler" aria-labelledby="h-ogr">
     <div class="sec-head">
       <div>
-        <h2 id="h-ogr">Öğretmeninizi <span class="o7-mark">kendiniz seçin<svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 8.5C18 4 33 3.2 50 5.6S86 10.4 117 3.6"/></svg></span></h2>
-        <p class="lead">Türk ve yabancı öğretmenlerimiz altı dilde ders veriyor. Birini seçin, deneme dersini onunla planlayalım.</p>
+        <h2 id="h-ogr">Öğretmenlerimizle <span class="o7-mark">tanışın<svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 8.5C18 4 33 3.2 50 5.6S86 10.4 117 3.6"/></svg></span></h2>
+        <p class="lead">Öğretmenlerimizi dile göre keşfedin. Tanışma dersinizi başvuru sayfasından planlayın.</p>
       </div>
     </div>
     <div class="t-tools">
         <div class="t-filters" role="group" aria-label="Dile göre filtrele">
-          <button class="chip" type="button" data-filter="all" aria-pressed="true">Tümü</button><button class="chip" type="button" data-filter="İngilizce" data-tone="en" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>İngilizce</button><button class="chip" type="button" data-filter="Almanca" data-tone="de" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Almanca</button><button class="chip" type="button" data-filter="Fransızca" data-tone="fr" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Fransızca</button><button class="chip" type="button" data-filter="İspanyolca" data-tone="es" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>İspanyolca</button><button class="chip" type="button" data-filter="Rusça" data-tone="ru" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Rusça</button>
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Tümü</button><button class="chip" type="button" data-filter="İngilizce" data-tone="en" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>İngilizce</button><button class="chip" type="button" data-filter="Almanca" data-tone="de" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Almanca</button><button class="chip" type="button" data-filter="Fransızca" data-tone="fr" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Fransızca</button><button class="chip" type="button" data-filter="İspanyolca" data-tone="es" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>İspanyolca</button><button class="chip" type="button" data-filter="Rusça" data-tone="ru" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Rusça</button><button class="chip" type="button" data-filter="Çince" data-tone="zh" aria-pressed="false"><span class="c-dot" aria-hidden="true"></span>Çince</button>
         </div>
-        <p class="sr-only" id="t-count" aria-live="polite"><b>8</b> öğretmen gösteriliyor</p>
+        <p class="sr-only" id="t-count" aria-live="polite"><b>42</b> öğretmen gösteriliyor</p>
     </div>
     <div class="t-grid" id="teachers"></div>
     <div class="t-empty" id="t-empty" hidden>
       <img src="img/maskot-merakli.svg" alt="" width="120" height="124">
-      <p>Bu dilin öğretmenleri tam listede. <a class="link" href="#ogretmenler">38 öğretmenin tamamını görün <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+      <p>Bu dil için öğretmen bilgileri resmî listede henüz yer almıyor. <a class="link" href="https://www.hurralingo.com/tr/ogretmenlerimiz/" target="_blank" rel="noopener noreferrer">Resmî öğretmen listesini görün <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
     </div>
-    <p class="t-more"><a class="link" href="#ogretmenler">38 öğretmenin tamamını görün <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+    <p class="t-more"><a class="link" href="https://www.hurralingo.com/tr/ogretmenlerimiz/" target="_blank" rel="noopener noreferrer">Resmî öğretmen listesini görün <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
   </section>
 <section class="sec" id="yorumlar" aria-labelledby="h-yorum">
     <div class="sec-head">
@@ -2899,10 +2740,10 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 <script>
 (function(){
   // [ad, dil, görsel, fotoğrafın dikey kaydırması (üst boşluk)]
-  var T = [['Adam Büyükbiçer','İngilizce','t-adam','7%'],['Bengü Kesen','İngilizce','t-bengu','5%'],['Mehtap Taşçıoğlu','Almanca','t-mehtap','3%'],['Büşra Ağca','Fransızca','t-busra','7%'],
-           ['Adeniyi Peace','İngilizce','t-adeniyi','0%'],['Alexandra Çavuş','İspanyolca','t-alexandra','5%'],['Nesrin Yılmaz','Almanca','t-nesrin','5%'],['Ayzade Kahya','Rusça','t-ayzade','6%']];
-  var TONE = {'İngilizce':'en','Almanca':'de','Fransızca':'fr','İspanyolca':'es','Rusça':'ru','Türkçe':'tr'};
-  var HI = {en:'Hello!', de:'Hallo!', fr:'Bonjour !', es:'¡Hola!', ru:'Привет!', tr:'Merhaba!'};
+  // Verified names/languages: official English and Turkish tutor pages; see PHASE-1-REPORT.md.
+  var T = [["Adam Büyükbiçer","İngilizce","img/t-adam.webp","7%"],["Bengü Kesen","İngilizce","img/t-bengu.webp","5%"],["Mehtap Taşçıoğlu","Almanca","img/t-mehtap.webp","3%"],["Büşra Ağca","Fransızca","img/t-busra.webp","7%"],["Adeniyi Peace","İngilizce","img/t-adeniyi.webp","0%"],["Alexandra Çavuş","İspanyolca","img/t-alexandra.webp","5%"],["Nesrin Yılmaz","Almanca","img/t-nesrin.webp","5%"],["Ayzade Kahya","Rusça","img/t-ayzade.webp","6%"],["Ayberk Savaş","İngilizce","img/t-ayberk-savas.jpg","0%"],["Ayşegül Eskikurt","İngilizce","img/t-aysegul-eskikurt.jpg","0%"],["Ayşegül Santur","İngilizce","img/t-aysegul-santur.png","0%"],["Ayşın Yaşa","İngilizce","img/t-aysin-yasa.jpg","0%"],["Betül Beyza","İngilizce","img/t-betul-beyza.png","0%"],["Büşra Sürekçi","İngilizce","img/t-busra-surekci.png","0%"],["Ghazaleh Ghazalifard","İngilizce","img/t-ghazaleh-ghazalifard.png","0%"],["Burak Santur","İngilizce","img/t-burak-santur.png","0%"],["Deniz Özlü","İngilizce","img/t-deniz-ozlu.jpg","0%"],["J. Luis Fernandez Salazar","İspanyolca","img/t-j-luis-fernandez-salazar.png","0%"],["Gizem Kenez","İngilizce","img/t-gizem-kenez.jpg","0%"],["Kayra Ağır","İngilizce","img/t-kayra-agir.jpg","0%"],["Kübra Toral","İngilizce","img/t-kubra-toral.jpg","0%"],["Mustafa Hakan","İngilizce","img/t-mustafa-hakan.png","0%"],["Neslihan Kızılbayır","İngilizce","img/t-neslihan-kizilbayir.jpg","0%"],["Parisa Khalegni","İngilizce","img/t-parisa-khalegni.jpg","0%"],["Saskia Douglas","İngilizce","img/t-saskia-douglas.png","0%"],["Sedef Şen","İngilizce","img/t-sedef-sen.jpg","0%"],["Sibel Bulut","Almanca","img/t-sibel-bulut.jpg","0%"],["Yağmur Irmak Özarslan","İngilizce","img/t-yagmur-irmak-ozarslan.jpg","0%"],["Yasemin Ürer","İngilizce","img/t-yasemin-urer.jpg","0%"],["Yolandi Bezuidenhout","İngilizce","img/t-yolandi-bezuidenhout.jpg","0%"],["Zeynep Akgül","İngilizce","img/t-zeynep-akgul.png","0%"],["Zeynep Sarıibrahimoğlu","İngilizce","img/t-zeynep-sariibrahimoglu.jpg","0%"],["Deniz Okumuş","İngilizce","img/t-deniz-okumus.jpg","0%"],["Elif Gizem Kaya","Almanca","img/t-elif-gizem-kaya.jpg","0%"],["Müge Tınaz","İngilizce","img/t-muge-tinaz.jpg","0%"],["Sultan Ecem Kolluoğlu","İngilizce","img/t-sultan-ecem-kolluoglu.jpg","0%"],["Ezgi Dinç","İngilizce","img/t-ezgi-dinc.jpg","0%"],["Hatice Onar","Almanca","img/t-hatice-onar.jpg","0%"],["Ceyda Sönmez","Almanca","img/t-ceyda-sonmez.jpg","0%"],["Duru Melek","İngilizce","img/t-duru-melek.jpg","0%"],["Yanshan Lin","Çince","img/t-yanshan-lin.jpg","0%"],["Füsun Köse","Fransızca","img/t-fusun-kose.jpg","0%"]];
+  var TONE = {"İngilizce":"en","Almanca":"de","Fransızca":"fr","İspanyolca":"es","Rusça":"ru","Çince":"zh","Türkçe":"tr"};
+  var HI = {en:'Hello!', de:'Hallo!', fr:'Bonjour !', es:'¡Hola!', ru:'Привет!', zh:'你好!', tr:'Merhaba!'};
   var TAIL = '<svg viewBox="20 76 46 40" aria-hidden="true"><path d="M34,80 C33,93 29,103 23,110 C20.5,112.8 22.5,115.4 25.5,113.8 C40,106 54,95 64,80 Z"/></svg>';
   var grid = document.getElementById('teachers'), count = document.getElementById('t-count'), empty = document.getElementById('t-empty');
   var sec = document.getElementById('ogretmenler');
@@ -2912,21 +2753,15 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     var k = TONE[t[1]] || 'tr';
     return '<article class="teacher" data-lang="'+t[1]+'" data-tone="'+k+'"><div class="t-in">' +
       '<div class="t-media"><span class="t-back" aria-hidden="true"></span>' +
-        '<div class="t-ph"><img src="img/'+t[2]+'.webp" alt="'+t[0]+'" width="480" height="480" loading="lazy" style="--oy:'+t[3]+'"></div>' +
+        '<div class="t-ph"><img src="'+t[2]+'" alt="'+t[0]+'" width="480" height="480" loading="lazy" style="--oy:'+t[3]+'"></div>' +
         '<span class="t-hi" lang="'+k+'" aria-hidden="true">'+HI[k]+TAIL+'</span></div>' +
       '<h3 class="t-name">'+t[0]+'</h3>' +
       '<p class="t-lang"><i aria-hidden="true"></i>'+t[1]+'</p>' +
-      '<button class="t-cta" type="button" data-open="trial" data-teacher="'+t[0]+'" data-lang-pre="'+t[1]+'" aria-label="Deneme dersi: '+t[0]+'">' +
-        '<span class="t-roll"><span>Deneme dersi</span><span aria-hidden="true">Bu öğretmenle deneme dersi</span></span>' +
-        '<span class="t-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></button>' +
+      '<a class="t-cta" aria-label="Tanışma dersi iste" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">' +
+        '<span class="t-roll"><span>Deneme dersi</span><span aria-hidden="true">Deneme dersi</span></span>' +
+        '<span class="t-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span></a>' +
     '</div></article>';
   }).join('');
-
-  // Kartın tamamı tıklanabilir: fotoğrafa ya da ada tıklamak da o öğretmenin deneme dersi formunu açar
-  grid.addEventListener('click', function(e){
-    if(e.target.closest('.t-cta')) return;
-    var c = e.target.closest('.t-in'); if(c) c.querySelector('.t-cta').click();
-  });
 
   // Filtre: çıkanlar hızlıca söner, kalanlar yeni yerlerine kayar (FLIP), girenler yumuşakça belirir
   var reduce = window.matchMedia ? matchMedia('(prefers-reduced-motion: reduce)') : {matches:false};
@@ -3193,7 +3028,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
       </ol>
     </div>
     <div class="bs-cta">
-      <button class="btn btn-primary bs-btn" type="button" data-open="trial">İlk adımı atın <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <a class="btn btn-primary bs-btn" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">İlk adımı atın <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <p>Formu doldurun, öğretmenimiz sizi arasın.</p>
     </div>
   </section>
@@ -3210,25 +3045,17 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 #kurumlar .lead{max-width:46ch}
 #kurumlar .kap-items{margin-top:28px}
 #kurumlar .kap-items li + li{border-top:1.5px solid rgba(194,52,43,.14)}
-#kurumlar .kap-item{display:grid; grid-template-columns:48px minmax(0,1fr) 22px; align-items:center; gap:16px; width:calc(100% + 32px); margin-inline:-16px; padding:16px; border:0; border-radius:18px; background:transparent; color:var(--ink); text-align:left; transition:background-color var(--dur) var(--ease-out), transform var(--dur-fast) var(--ease-out)}
-#kurumlar .kap-item:active{transform:scale(.98)}
+#kurumlar .kap-item{display:grid; grid-template-columns:48px minmax(0,1fr); align-items:center; gap:16px; width:calc(100% + 32px); margin-inline:-16px; padding:16px; border:0; border-radius:18px; background:transparent; color:var(--ink); text-align:left; transition:background-color var(--dur) var(--ease-out), transform var(--dur-fast) var(--ease-out)}
 #kurumlar .kap-tile{width:48px; height:48px; border-radius:15px; display:grid; place-items:center; background:#fff; color:var(--c-ink); box-shadow:inset 0 0 0 1.5px rgba(8,45,86,.06); transition:background-color var(--dur) var(--ease-out), color var(--dur-fast), rotate var(--dur-slow) var(--ease-spring), scale var(--dur-slow) var(--ease-spring)}
 #kurumlar .kap-tile .icon{width:26px; height:26px; stroke-width:1.8}
 #kurumlar .kap-items{--c:var(--coral); --c-ink:var(--coral-ink)}
 #kurumlar .kap-item strong{display:block; font-family:var(--display); font-weight:700; font-size:18px; line-height:1.25; letter-spacing:-.01em}
 #kurumlar .kap-item .kap-d{display:block; margin-top:2px; color:var(--ink-2); font-size:15.5px; line-height:1.45}
-#kurumlar .kap-go{width:22px; height:22px; color:var(--coral-ink); opacity:.5; transition:transform var(--dur) var(--ease-out), opacity var(--dur-fast)}
 #kurumlar .kap-cta{margin-top:28px; display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px}
 #kurumlar .kap-cta .btn .icon{transition:transform var(--dur) var(--ease-out)}
 @media (hover:hover) and (pointer:fine){
-  #kurumlar .kap-item:hover{background:rgba(255,255,255,.8)}
-  #kurumlar .kap-item:hover .kap-tile{background:var(--c); color:var(--ink); rotate:-8deg; scale:1.06}
-  #kurumlar .kap-item:hover .kap-go{opacity:1; transform:translateX(4px)}
   #kurumlar .kap-cta .btn:hover .icon{transform:translateX(3px)}
 }
-#kurumlar .kap-item:focus-visible{background:rgba(255,255,255,.8); outline-offset:0}
-#kurumlar .kap-item:focus-visible .kap-tile{background:var(--c); color:var(--ink)}
-#kurumlar .kap-item:focus-visible .kap-go{opacity:1; transform:translateX(4px)}
 
 #kurumlar .kap-plan{background:#fff; border-radius:28px; padding:clamp(22px,3vw,32px); box-shadow:0 1px 2px rgba(8,45,86,.05), 0 28px 56px -32px rgba(194,52,43,.38)}
 #kurumlar .kap-plan h3{font-family:var(--display); font-weight:800; font-size:clamp(20px,1.8vw,23px); line-height:1.15; letter-spacing:-.015em}
@@ -3355,13 +3182,14 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 #son .kap-hi::after{content:""; position:absolute; bottom:-5px; width:13px; height:13px; background:var(--bg-c); border-radius:0 0 4px 0; transform:rotate(45deg)}
 #son .kap-hi.tl::after{left:16px}
 #son .kap-hi.tr::after{right:16px}
-#son .kap-hi[lang="ru"]{font-family:var(--display); font-weight:800; letter-spacing:-.01em}
+#son .kap-hi[lang="zh"], #son .kap-hi[lang="ru"]{font-family:var(--display); font-weight:800; letter-spacing:-.01em}
 #son .kap-hi:nth-of-type(1){--x:2%;  --y:12%; --r:-7deg; --bg-c:#fff}
 #son .kap-hi:nth-of-type(2){--x:66%; --y:2%;  --r:6deg;  --bg-c:var(--ink); --fg-c:#fff}
 #son .kap-hi:nth-of-type(3){--x:0%;  --y:50%; --r:5deg;  --bg-c:#fff}
 #son .kap-hi:nth-of-type(4){--x:74%; --y:44%; --r:-6deg; --bg-c:#fff}
 #son .kap-hi:nth-of-type(5){--x:12%; --y:82%; --r:-4deg; --bg-c:var(--ink); --fg-c:#fff}
 #son .kap-hi:nth-of-type(6){--x:62%; --y:84%; --r:7deg;  --bg-c:#fff}
+#son .kap-hi:nth-of-type(7){--x:36%; --y:0%; --r:-5deg; --bg-c:#fff}
 @media (hover:hover) and (pointer:fine){
   #son .kap-art:hover .kap-f-m{translate:-50% -52%}
   #son .kap-art:hover .kap-f-m .kap-m1{opacity:0}
@@ -3390,7 +3218,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 .footer .kap-links a::after{content:""; position:absolute; left:0; right:0; bottom:-3px; height:2px; border-radius:2px; background:var(--k-sun); transform:scaleX(0); transform-origin:right center; transition:transform var(--dur) var(--ease-out)}
 .footer .kap-links a:focus-visible{outline-color:#fff; color:#fff}
 .footer .kap-links a:focus-visible::after{transform:scaleX(1)}
-.footer .kap-contact{display:grid; gap:10px; line-height:1.45}
+.footer .kap-contact{display:grid; min-width:0; overflow-wrap:anywhere; gap:10px; line-height:1.45}
 .footer .kap-contact b{display:block; color:#fff; font-weight:600; font-variant-numeric:tabular-nums}
 .footer .kap-contact span{display:block; font-size:14px; color:#A9BCD2}
 .footer .kap-sister{margin-top:40px; display:grid; grid-template-columns:48px minmax(0,1fr) auto; align-items:center; gap:16px; padding:16px 22px 16px 16px; border-radius:22px; background:rgba(255,255,255,.06); box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.1); color:#fff; text-decoration:none; transition:background-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), transform var(--dur-fast) var(--ease-out)}
@@ -3458,7 +3286,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 }
 @media (max-width:720px){
   #kurumlar{border-radius:32px}
-  #kurumlar .kap-item{grid-template-columns:44px minmax(0,1fr) 20px; gap:14px; width:calc(100% + 24px); margin-inline:-12px; padding:14px 12px}
+  #kurumlar .kap-cta .btn{max-width:100%; white-space:normal; text-align:center; padding-inline:18px}
+  #kurumlar .kap-item{grid-template-columns:44px minmax(0,1fr); gap:14px; width:calc(100% + 24px); margin-inline:-12px; padding:14px 12px}
   #kurumlar .kap-tile{width:44px; height:44px; border-radius:14px}
   #kurumlar .kap-plan{border-radius:24px}
   #sss .kap-help{padding:22px 20px 20px}
@@ -3516,12 +3345,12 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     <h2 id="h-kurum">Çalışanlarınıza ve ailelerine dil eğitimi</h2>
     <p class="lead">Kamu kurumları, okullar ve şirketler için kişi sayısına ve hedeflere göre program ve teklif hazırlıyoruz.</p>
     <ul class="kap-items">
-      <li><button class="kap-item" type="button" data-open="corp"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-family"/></svg></span><span><strong>Çalışanlar ve aileleri</strong><span class="kap-d">Kurum mensupları ve çocukları için 6 dilde program.</span></span><svg class="icon kap-go" aria-hidden="true"><use href="#i-arrow"/></svg></button></li>
-      <li><button class="kap-item" type="button" data-open="corp"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-school"/></svg></span><span><strong>Okul iş birlikleri</strong><span class="kap-d">Müfredatla uyumlu, sınıf bazlı online dersler.</span></span><svg class="icon kap-go" aria-hidden="true"><use href="#i-arrow"/></svg></button></li>
-      <li><button class="kap-item" type="button" data-open="corp"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-board"/></svg></span><span><strong>Kurumsal eğitim</strong><span class="kap-d">Seviye ölçümüyle başlayan yetişkin programları.</span></span><svg class="icon kap-go" aria-hidden="true"><use href="#i-arrow"/></svg></button></li>
+      <li><div class="kap-item"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-family"/></svg></span><span><strong>Çalışanlar ve aileleri</strong><span class="kap-d">Kurum mensupları ve çocukları için 7 dilde program.</span></span></div></li>
+      <li><div class="kap-item"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-school"/></svg></span><span><strong>Okul iş birlikleri</strong><span class="kap-d">Müfredatla uyumlu, sınıf bazlı online dersler.</span></span></div></li>
+      <li><div class="kap-item"><span class="kap-tile"><svg class="icon" aria-hidden="true"><use href="#kap-i-board"/></svg></span><span><strong>Kurumsal eğitim</strong><span class="kap-d">Seviye ölçümüyle başlayan yetişkin programları.</span></span></div></li>
     </ul>
     <div class="kap-cta">
-      <button class="btn btn-dark" type="button" data-open="corp">Kurumsal teklif isteyin <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <a class="btn btn-dark" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer">Kurumsal Teklif Alın <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg></a>
     </div>
   </div>
   <div class="kap-plan">
@@ -3551,7 +3380,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
             <button class="kap-copy" type="button" data-kap-copy="kap-num" aria-label="Telefon numarasını kopyala"><span class="kap-copy-ic" aria-hidden="true"><svg class="icon kap-cp"><use href="#kap-i-copy"/></svg><svg class="icon kap-ok"><use href="#i-check"/></svg></span><span class="kap-copy-l">Kopyala</span></button>
           </div>
           <p class="kap-mail">E-posta: <b>hello@hurralingo.com</b></p>
-          <a class="btn btn-dark btn-sm" href="https://wa.me/905395167070" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp'tan yaz</a>
+          <a class="btn btn-dark btn-sm" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp'tan yaz</a>
           <span class="kap-sr" id="kap-live" aria-live="polite"></span>
           <svg class="kap-tail" viewBox="0 0 34 26" aria-hidden="true"><path d="M0 0h34C28 8 19 17 6.5 24.6c-2.4 1.5-4.6-.3-3.6-2.8C5.6 15.4 4.6 7.6 0 0z"/></svg>
         </div>
@@ -3563,7 +3392,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     </div>
     <div class="kap-faq">
       <details name="kap-sss" open><summary>Seviye ve program nasıl belirleniyor?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">Ücretsiz tanışma dersinde öğretmeniniz mevcut dil seviyesini ve hedefleri belirler. İçerik, yaş grubu ve öğrenme ihtiyaçları bu görüşmeye göre planlanır.</p></div></details>
-      <details name="kap-sss"><summary>Hangi dillerde ders veriyorsunuz?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">İngilizce, Almanca, Fransızca, İspanyolca, Rusça ve Türkçe. Türk ve yabancı öğretmenlerimiz birlikte çalışır; her öğretmenin bir tanıtım videosu vardır.</p></div></details>
+      <details name="kap-sss"><summary>Hangi dillerde ders veriyorsunuz?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">İngilizce, Almanca, Fransızca, İspanyolca, Rusça, Çince ve Türkçe. Türk ve yabancı öğretmenlerimiz birlikte çalışır.</p></div></details>
       <details name="kap-sss"><summary>Özel ders mi almalıyım, grup dersi mi?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">Grup dersleri 5–8 kişiyle, mini grup dersleri 2–4 kişiyle yapılır ve sosyal öğrenmeyi öne çıkarır. Bire bir ders, hedefe göre kişisel bir program sunar. Tercihi tanışma dersinde birlikte yaparız.</p></div></details>
       <details name="kap-sss"><summary>Ders saatlerini değiştirebilir miyim?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">Evet. Ders saatleri öğretmeninizle birlikte planlanır ve gerektiğinde değiştirilebilir.</p></div></details>
       <details name="kap-sss"><summary>Ödeme seçenekleri neler?<span class="kap-pm" aria-hidden="true"><i></i><i></i></span></summary><div class="kap-a"><p class="kap-a-in">Paketleri peşin ya da taksitle ödeyebilirsiniz. Ödemeler Stripe veya iyzico altyapısıyla alınır. Peşin ödemede ders başı ücret daha düşüktür; örnek paketi <a href="#fiyatlar">fiyatlar bölümünde</a> görebilirsiniz.</p></div></details>
@@ -3579,12 +3408,12 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     <h2 id="h-final">İlk tanışma dersi <span class="kap-u">ücretsiz<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 9.5C40 4 92 2.5 197 6.5"/></svg></span></h2>
     <p>Çocuğunuz öğretmeniyle tanışsın, seviyesini birlikte belirleyelim. Size en uygun programı sonra rahatça seçersiniz.</p>
     <div class="kap-ctas">
-      <button class="btn btn-dark" type="button" data-open="trial">Tanışma dersi planla <svg class="icon kap-arr" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-      <a class="btn kap-btn-light" href="https://wa.me/905395167070" target="_blank" rel="noopener"><svg class="icon kap-wa" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp'tan yaz</a>
+      <a class="btn btn-dark" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer">Tanışma dersi planla <svg class="icon kap-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn kap-btn-light" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer"><svg class="icon kap-wa" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp'tan yaz</a>
     </div>
     <a class="kap-team" href="#ogretmenler">
       <span class="kap-ava" aria-hidden="true"><img src="img/t-bengu.webp" alt="" width="44" height="44" loading="lazy" style="--i:0"><img src="img/t-adeniyi.webp" alt="" width="44" height="44" loading="lazy" style="--i:1"><img src="img/t-mehtap.webp" alt="" width="44" height="44" loading="lazy" style="--i:2"><img src="img/t-alexandra.webp" alt="" width="44" height="44" loading="lazy" style="--i:3"><img src="img/t-adam.webp" alt="" width="44" height="44" loading="lazy" style="--i:4"></span>
-      <span class="kap-team-t"><b>38 öğretmen, 6 dil</b><span>Öğretmenlerle tanışın <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+      <span class="kap-team-t"><b>Öğretmenlerimiz, 7 dil</b><span>Öğretmenlerle tanışın <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
     </a>
   </div>
   <div class="kap-art" aria-hidden="true">
@@ -3596,6 +3425,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     <span class="kap-hi tl" lang="es">¡Hola!</span>
     <span class="kap-hi tr" lang="de">Hallo!</span>
     <span class="kap-hi tl" lang="ru">Привет!</span>
+    <span class="kap-hi tr" lang="zh">你好!</span>
   </div>
 </section>
 </main>
@@ -3607,21 +3437,22 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
       <div class="kap-f-top">
         <div class="kap-brand">
           <img src="img/logo-clay.webp" alt="Hurra Lingo" width="1200" height="198" loading="lazy">
-          <p>Çocuklar ve yetişkinler için canlı online dil okulu. 6 dil, 38 öğretmen.</p>
+          <p>Çocuklar ve yetişkinler için canlı online dil okulu. 7 dilde öğretmenlerimizle.</p>
           <ul class="kap-social" aria-label="Sosyal medya">
-            <li><a href="#top" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#kap-s-ig"/></svg></a></li>
-            <li><a href="#top" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#kap-s-fb"/></svg></a></li>
-            <li><a href="#top" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#kap-s-yt"/></svg></a></li>
-            <li><a href="#top" aria-label="TikTok"><svg class="icon" aria-hidden="true"><use href="#kap-s-tt"/></svg></a></li>
-            <li><a href="#top" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#kap-s-in"/></svg></a></li>
+            <li><a href="https://www.instagram.com/HurraLingo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#kap-s-ig"/></svg></a></li>
+            <li><a href="https://www.facebook.com/HurraLingo/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#kap-s-fb"/></svg></a></li>
+            <li><a href="https://www.youtube.com/@hurralingo1796" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#kap-s-yt"/></svg></a></li>
+            <li><a href="https://www.tiktok.com/@hurra_lingo" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon" aria-hidden="true"><use href="#kap-s-tt"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/company/hurraglobal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#kap-s-in"/></svg></a></li>
           </ul>
         </div>
         <nav aria-labelledby="kap-fh-1"><h2 class="kap-fh" id="kap-fh-1">Programlar</h2><ul class="kap-links"><li><a href="#programlar">Minikler (4–6)</a></li><li><a href="#programlar">Çocuklar (7–12)</a></li><li><a href="#programlar">Gençler (13–18)</a></li><li><a href="#programlar">Yetişkinler</a></li></ul></nav>
         <nav aria-labelledby="kap-fh-2"><h2 class="kap-fh" id="kap-fh-2">Keşfet</h2><ul class="kap-links"><li><a href="#sorular">Veli soruları</a></li><li><a href="#ogretmenler">Öğretmenler</a></li><li><a href="#fiyatlar">Fiyatlar</a></li><li><a href="#kurumlar">Kurumlar</a></li><li><a href="#sss">SSS</a></li></ul></nav>
-        <nav aria-labelledby="kap-fh-3"><h2 class="kap-fh" id="kap-fh-3">Yasal</h2><ul class="kap-links"><li><a href="#top">KVKK aydınlatma metni</a></li><li><a href="#top">Çerez politikası</a></li><li><a href="#top">Mesafeli satış sözleşmesi</a></li><li><a href="#top">Şartlar ve koşullar</a></li></ul></nav>
+        <!-- TODO(owner): supply verified URLs for the legal documents below. -->
+        <nav aria-labelledby="kap-fh-3"><h2 class="kap-fh" id="kap-fh-3">Yasal</h2><ul class="kap-links"><li><span>KVKK aydınlatma metni</span></li><li><span>Çerez politikası</span></li><li><span>Mesafeli satış sözleşmesi</span></li><li><span>Şartlar ve koşullar</span></li></ul></nav>
         <div><h2 class="kap-fh">İletişim</h2><ul class="kap-contact"><li><b>+90 539 516 70 70</b><span>WhatsApp ve telefon</span></li><li><b>hello@hurralingo.com</b><span>E-posta</span></li><li>Ankara Üniversitesi Teknokent, Gölbaşı / Ankara</li></ul></div>
       </div>
-      <a class="kap-sister" href="https://www.hurraturkiye.com" target="_blank" rel="noopener">
+      <a class="kap-sister" href="https://www.hurraturkiye.com" target="_blank" rel="noopener noreferrer">
         <span class="kap-s-ic" aria-hidden="true"><svg class="icon"><use href="#i-globe"/></svg></span>
         <span><span class="kap-s-tag">Hurra ailesinden</span><span class="kap-s-t"><b>Hurra Türkiye</b>Yurt dışında yaşayan çocuklar için Türkçe dersleri.</span></span>
         <span class="kap-s-go">hurraturkiye.com <svg class="icon" aria-hidden="true"><use href="#kap-i-ext"/></svg></span>
@@ -3717,8 +3548,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
 </script>
 
 <div class="mbar" role="region" aria-label="Hızlı iletişim">
-  <button class="btn btn-primary" type="button" data-open="trial"><img class="mbar-face" src="img/maskot-mutlu-beyaz.svg" alt="" width="26" height="27">Ücretsiz deneme dersi</button>
-  <a class="wa" href="https://wa.me/905395167070" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın: +90 539 516 70 70"><svg class="icon" style="width:24px;height:24px" aria-hidden="true"><use href="#i-wa"/></svg></a>
+  <a class="btn btn-primary" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer"><img class="mbar-face" src="img/maskot-mutlu-beyaz.svg" alt="" width="26" height="27">Ücretsiz deneme dersi</a>
+  <a class="wa" href="https://wa.me/905395167070" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın: +90 539 516 70 70"><svg class="icon" style="width:24px;height:24px" aria-hidden="true"><use href="#i-wa"/></svg></a>
 </div>
 
 <div class="cookie" id="cookie" role="region" aria-labelledby="ck-t">
@@ -3742,49 +3573,8 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
   <p class="v-cap" id="vcap" hidden></p>
 </dialog>
 
-<dialog id="dlg" aria-labelledby="dlg-title">
-  <form class="dlg" id="trial-form" novalidate>
-    <div class="dlg-head">
-      <div>
-        <span class="stamp" id="dlg-stamp">İlk ders bizden</span>
-        <h2 id="dlg-title">Ücretsiz tanışma dersi</h2>
-        <p id="dlg-sub">Bilgilerinizi bırakın, uygun saatinizi seçin; öğretmenimiz sizi arasın.</p>
-      </div>
-      <button class="x" type="button" data-close aria-label="Kapat"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
-    </div>
-    <div id="form-fields">
-      <fieldset class="field" id="kim-set"><legend>Kimin için?</legend>
-        <div class="seg2"><label><input type="radio" name="kim" value="cocuk" id="kim-cocuk" checked> Çocuğum için</label><label><input type="radio" name="kim" value="kendim" id="kim-kendim"> Kendim için</label></div>
-      </fieldset>
-      <div class="g2 g2-keep">
-        <div class="field"><label for="f-dil">Öğrenilecek dil</label><select id="f-dil" aria-describedby="e-dil"><option value="">Seçin</option><option>İngilizce</option><option>Almanca</option><option>Fransızca</option><option>İspanyolca</option><option>Rusça</option><option>Türkçe</option></select><span class="err" id="e-dil" aria-live="polite"></span></div>
-        <div class="field" id="age-field"><label for="f-yas">Çocuğun yaşı</label><select id="f-yas" aria-describedby="e-yas"><option value="">Seçin</option><option>4–6</option><option>7–12</option><option>13–18</option></select><span class="err" id="e-yas" aria-live="polite"></span></div>
-      </div>
-      <div class="g2">
-        <div class="field"><label for="f-ad" id="l-ad">Veli adı soyadı</label><input id="f-ad" autocomplete="name" aria-describedby="e-ad"><span class="err" id="e-ad" aria-live="polite"></span></div>
-        <div class="field"><label for="f-tel">Telefon</label><input id="f-tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="+90 5__ ___ __ __" aria-describedby="e-tel"><span class="err" id="e-tel" aria-live="polite"></span></div>
-      </div>
-      <div class="field"><label for="f-mail">E-posta</label><input id="f-mail" type="email" autocomplete="email" inputmode="email" placeholder="ad@ornek.com" aria-describedby="e-mail"><span class="err" id="e-mail" aria-live="polite"></span></div>
-      <div class="field"><span class="lbl" id="l-slot">Size uygun zaman <span class="opt">(isteğe bağlı)</span></span>
-        <div class="slots" role="group" aria-labelledby="l-slot"><button type="button" aria-pressed="false">Bugün 18:00</button><button type="button" aria-pressed="false">Yarın 10:00</button><button type="button" aria-pressed="false">Yarın 19:30</button><button type="button" aria-pressed="false">Cumartesi 11:00</button></div>
-      </div>
-      <div class="checks">
-        <label class="check"><input type="checkbox" id="f-kvkk" aria-describedby="e-kvkk"> <span><a href="#top">KVKK Aydınlatma Metni</a>'ni okudum; verilerimin tanışma dersi için işlenmesini kabul ediyorum.</span></label>
-        <span class="err" id="e-kvkk" aria-live="polite"></span>
-        <label class="check"><input type="checkbox" id="f-ileti"> <span>Kampanya ve duyurular için e-posta ve SMS almak istiyorum (isteğe bağlı).</span></label>
-      </div>
-    </div>
-    <button class="btn btn-primary" type="submit" id="f-submit">Tanışma dersimi planla <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-  </form>
-</dialog>
-
 <script>
-/* Ortak çekirdek: yalnızca Ajan 0 (tasarım sistemi) düzenler.
-   Sözleşme: window.HL.openTrial({age, lang, teacher, plan, corp, trigger}) ve window.HL.openVideo(src, title[, poster]).
-   Sayfadaki herhangi bir öğe data-open="trial|corp" (+ data-age, data-lang-pre, data-teacher, data-plan) ile formu açar.
-   Ek: HL.reduced() -> kullanıcı azaltılmış hareket istiyor mu.
-       .pop-in öğeleri ekrana ilk girdiklerinde .is-in alır (CSS pop animasyonu).
-       .mbar, #lead ya da [data-mbar-hide] ekrandayken gizlenir. */
+/* Shared video, cookie preferences, mobile CTA visibility and entrance animations. */
 (function(){
   'use strict';
   var doc = document, root = doc.documentElement;
@@ -3857,139 +3647,6 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     });
   }
 
-  /* ---------- Tanışma dersi formu ---------- */
-  var dlg = $('dlg'), form = $('trial-form'), fields = $('form-fields'), submit = $('f-submit'),
-      title = $('dlg-title'), sub = $('dlg-sub'), stamp = $('dlg-stamp');
-  var original = fields ? fields.innerHTML : '';
-  var mode = {corp:false};
-  function setKim(){
-    var k = $('kim-kendim').checked;
-    $('age-field').hidden = k;
-    $('l-ad').textContent = k ? 'Adınız soyadınız' : 'Veli adı soyadı';
-  }
-  function bindFields(){
-    fields.querySelectorAll('input[name="kim"]').forEach(function(r){ r.addEventListener('change', setKim); });
-    var slots = fields.querySelectorAll('.slots button');
-    slots.forEach(function(s){
-      s.addEventListener('click', function(){
-        var on = s.getAttribute('aria-pressed') !== 'true';
-        slots.forEach(function(x){ x.setAttribute('aria-pressed', String(on && x === s)); });
-      });
-    });
-  }
-  HL.openTrial = function(o){
-    if(!dlg) return;
-    o = o || {};
-    mode.corp = !!o.corp;
-    remember(dlg, o.trigger);
-    fields.innerHTML = original; submit.hidden = false; submit.removeAttribute('aria-busy'); form.classList.remove('is-done');
-    title.textContent = o.corp ? 'Kurumsal teklif' : 'Ücretsiz tanışma dersi';
-    if(stamp) stamp.textContent = o.corp ? 'Kurumlar için' : 'İlk ders bizden';
-    sub.textContent = o.corp ? 'Kurumunuzu ve ihtiyacınızı yazın; size özel teklifle dönelim.'
-      : o.teacher ? o.teacher + ' ile tanışma dersi için bilgilerinizi bırakın.'
-      : o.plan ? o.plan + ' için tanışma dersinizi planlayalım. Bilgilerinizi bırakın, öğretmenimiz sizi arasın.'
-      : 'Bilgilerinizi bırakın, uygun saatinizi seçin; öğretmenimiz sizi arasın.';
-    bindFields();
-    if(o.corp){ $('kim-set').hidden = true; $('age-field').hidden = true; $('l-ad').textContent = 'Kurum ve yetkili adı'; }
-    if(o.age === 'yetiskin'){ $('kim-kendim').checked = true; setKim(); }
-    else if(o.age){ $('f-yas').value = o.age; }
-    if(o.lang){ $('f-dil').value = o.lang; }
-    openModal(dlg);
-  };
-  document.addEventListener('click', function(e){
-    var b = e.target.closest('[data-open]');
-    if(b){
-      e.preventDefault();
-      HL.openTrial({corp: b.dataset.open === 'corp', teacher: b.dataset.teacher, lang: b.dataset.langPre, age: b.dataset.age, plan: b.dataset.plan, trigger: b});
-    }
-    if(dlg && e.target.closest('[data-close]')) closeModal(dlg);
-  });
-
-  var rules = {
-    dil: function(){ return $('f-dil').value ? '' : 'Öğrenmek istediğiniz dili seçin.'; },
-    yas: function(){ return $('age-field').hidden || $('f-yas').value ? '' : 'Çocuğunuzun yaş grubunu seçin.'; },
-    ad: function(){ return $('f-ad').value.trim().length > 2 ? '' : 'Adınızı ve soyadınızı yazın.'; },
-    tel: function(){ return $('f-tel').value.replace(/\D/g, '').length >= 10 ? '' : 'Telefon numarası en az 10 haneli olmalı.'; },
-    mail: function(){ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('f-mail').value.trim()) ? '' : 'Geçerli bir e-posta adresi yazın (ör. ad@ornek.com).'; },
-    kvkk: function(){ return $('f-kvkk').checked ? '' : 'Devam etmek için aydınlatma metnini onaylayın.'; }
-  };
-  var fieldOf = {'f-dil':'dil', 'f-yas':'yas', 'f-ad':'ad', 'f-tel':'tel', 'f-mail':'mail', 'f-kvkk':'kvkk'};
-  function err(id, msg){
-    var el = $('e-' + id); if(!el) return !msg;
-    el.textContent = msg || '';
-    var f = el.closest('.field'); if(f) f.classList.toggle('invalid', !!msg);
-    var input = $('f-' + id); if(input) input.setAttribute('aria-invalid', msg ? 'true' : 'false');
-    return !msg;
-  }
-  function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]; }); }
-
-  if(form){
-    // Hata gösterilen alan düzeltildiği anda hata kalkar
-    var live = function(e){
-      var key = fieldOf[e.target.id]; if(!key) return;
-      var el = $('e-' + key);
-      if(el && el.textContent) err(key, rules[key]());
-    };
-    form.addEventListener('input', live);
-    form.addEventListener('change', live);
-
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      if(submit.getAttribute('aria-busy') === 'true') return;
-      var ok = true;
-      Object.keys(rules).forEach(function(k){ ok = err(k, rules[k]()) && ok; });
-      if(!ok){
-        var first = form.querySelector('[aria-invalid="true"]');
-        if(first) first.focus();
-        return;
-      }
-      var summary = [$('f-dil').value];
-      if(!mode.corp && !$('age-field').hidden && $('f-yas').value) summary.push($('f-yas').value + ' yaş');
-      if(!mode.corp && $('kim-kendim').checked) summary.push('Yetişkin');
-      var slot = fields.querySelector('.slots [aria-pressed="true"]');
-      if(slot) summary.push(slot.textContent);
-      submit.setAttribute('aria-busy', 'true');
-      setTimeout(function(){ showDone(summary); }, HL.reduced() ? 0 : 750);
-    });
-  }
-
-  // Başarı ekranı: maskot + marka şekillerinden tek seferlik kutlama
-  var YAY = '<svg class="yay-fx" viewBox="0 0 280 170" aria-hidden="true">'
-    + '<circle class="yp" cx="46" cy="58" r="7" fill="#FFC94A" style="--x:-94;--y:-28;--d:0s"/>'
-    + '<circle class="yp" cx="234" cy="40" r="6" fill="#98C33F" style="--x:94;--y:-46;--d:.04s"/>'
-    + '<circle class="yp" cx="242" cy="116" r="8" fill="#C997CB" style="--x:102;--y:30;--d:.08s"/>'
-    + '<circle class="yp" cx="36" cy="124" r="5" fill="#FB991E" style="--x:-104;--y:38;--d:.06s"/>'
-    + '<circle class="yp" cx="88" cy="16" r="4.5" fill="#FC6961" style="--x:-52;--y:-70;--d:.1s"/>'
-    + '<circle class="yp" cx="204" cy="152" r="4.5" fill="#00AED0" style="--x:64;--y:66;--d:.12s"/>'
-    + '<g class="yp" fill="none" stroke="#FB991E" stroke-width="4" stroke-linecap="round" style="--x:-58;--y:-46;--r:-30deg;--d:.02s"><path d="M80 44l-12-10M76 58l-16 0M88 34l-4-14"/></g>'
-    + '<g class="yp" fill="none" stroke="#FC6961" stroke-width="4" stroke-linecap="round" style="--x:58;--y:-46;--r:30deg;--d:.05s"><path d="M200 44l12-10M204 58l16 0M192 34l4-14"/></g>'
-    + '<path class="yp" d="M214 78c1.6 6 3 7.4 9 9-6 1.6-7.4 3-9 9-1.6-6-3-7.4-9-9 6-1.6 7.4-3 9-9z" fill="#FFC94A" style="--x:74;--y:0;--r:90deg;--d:.09s"/>'
-    + '<path class="yp" d="M62 86c1.2 4.6 2.3 5.7 7 7-4.7 1.3-5.8 2.4-7 7-1.2-4.6-2.3-5.7-7-7 4.7-1.3 5.8-2.4 7-7z" fill="#00AED0" style="--x:-78;--y:8;--r:-90deg;--d:.11s"/>'
-    + '<path class="yp yp-draw" pathLength="1" d="M20 94c6 9 18 9 24 0" fill="none" stroke="#00AED0" stroke-width="4.5" stroke-linecap="round" style="--x:-120;--y:10;--r:-20deg;--d:.07s"/>'
-    + '<path class="yp yp-draw" pathLength="1" d="M236 80c6 9 18 9 24 0" fill="none" stroke="#FC6961" stroke-width="4.5" stroke-linecap="round" style="--x:108;--y:-4;--r:20deg;--d:.03s"/>'
-    + '<path class="yp yp-draw" pathLength="1" d="M150 150c12 8 26 8 38 0" fill="none" stroke="#98C33F" stroke-width="4.5" stroke-linecap="round" style="--x:30;--y:64;--r:10deg;--d:.13s"/>'
-    + '</svg>';
-  function showDone(summary){
-    var corp = mode.corp;
-    var sum = summary.filter(Boolean).map(function(s){ return '<li>' + esc(s) + '</li>'; }).join('');
-    fields.innerHTML = '<div class="done" role="status">'
-      + '<div class="yay" aria-hidden="true">' + YAY + '<span class="mascot"><img src="img/maskot-sevinc.svg" alt=""><img src="img/maskot-goz-kirp.svg" alt=""></span></div>'
-      + '<span class="stamp">Yaşasın!</span>'
-      + '<h2 id="done-title" tabindex="-1">' + (corp ? 'Teklif talebiniz alındı' : 'Talebiniz alındı') + '</h2>'
-      + (sum ? '<ul class="done-sum" aria-label="Seçimleriniz">' + sum + '</ul>' : '')
-      + '<p class="done-note">Bu bir tasarım örneğidir; form gerçek bir gönderim yapmaz. '
-      + (corp ? 'Canlı sitede ekibimiz size özel teklifle döner.' : 'Canlı sitede öğretmenimiz seçtiğiniz saat için sizi arar.') + '</p>'
-      + '<button class="btn btn-line" type="button" data-close>Kapat</button></div>';
-    submit.hidden = true; submit.removeAttribute('aria-busy'); form.classList.add('is-done');
-    var h = $('done-title'); if(h){ try { h.focus({preventScroll:true}); } catch(_){ h.focus(); } }
-    if(dlg.scrollTo) dlg.scrollTo(0, 0);
-  }
-
-  if(dlg){
-    dlg.addEventListener('click', function(e){ if(e.target === dlg) closeModal(dlg); });
-    dlg.addEventListener('close', function(){ afterClose(dlg); });
-  }
-
   /* ---------- Çerez kartı ---------- */
   var ck = $('cookie'), prefs = $('ck-prefs');
   function ckDismiss(){
@@ -4024,7 +3681,7 @@ fieldset{border:0; margin:0; padding:0; min-width:0}
     if('inert' in mbar) mbar.inert = a; else mbar.setAttribute('aria-hidden', String(a));
   }
   if(mbar && 'IntersectionObserver' in window){
-    var zones = doc.querySelectorAll('#lead [type="submit"], [data-mbar-hide]');
+    var zones = doc.querySelectorAll('#lead .hc-go, [data-mbar-hide]');
     if(!zones.length) zones = doc.querySelectorAll('#lead');
     if(zones.length){
       var seen = [];
