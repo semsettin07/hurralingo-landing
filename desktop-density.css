@@ -1,0 +1,156 @@
+/* Shared desktop sizing for both languages. Load after the section styles.
+   The existing 1240px cap is already reached at 1440px: 90% browser zoom
+   renders it at about 1116px. Keep that composition, without page scaling.
+   Mobile/tablet rules and the existing grid/navigation breakpoints stay intact. */
+@media (min-width: 1024px) {
+  :root {
+    --wrap: 1120px;
+    --space-section: clamp(80px, 7vw, 100px);
+    --space-heading: clamp(28px, 3.2vw, 40px);
+    --font-h1: clamp(48px, 4.8vw, 68px);
+    --font-h2: clamp(36px, 3.8vw, 48px);
+    --font-body: 16px;
+    --r-xl: 36px;
+    --r-l: 28px;
+    --r-m: 22px;
+  }
+
+  body { font-size: var(--font-body); }
+  html { scroll-padding-top: 88px; }
+  .sec { padding-top: var(--space-section); }
+  .sec-head { margin-bottom: var(--space-heading); }
+  h2 { font-size: var(--font-h2); }
+  .lead { font-size: 18px; margin-top: 14px; }
+  .btn { min-height: 48px; padding: 12px 23px; font-size: 15.5px; gap: 9px; }
+  .btn-sm { min-height: 42px; padding: 9px 16px; font-size: 14px; gap: 8px; }
+  .chip { font-size: 15px; padding: 7px 14px; }
+  .stamp { font-size: 14px; padding: 6px 12px 7px; }
+
+  .announce { min-height: 40px; padding-block: 6px; font-size: 14px; }
+  .header { --hd-h: 68px; --hd-shrink: 8px; }
+  .header .bar { gap: 16px; }
+  .header .brand img { height: 43px; }
+  .header .nav-a { font-size: 14px; padding-inline: 8px; }
+  .header .nav .nav-a::after { left: 8px; right: 8px; }
+  .header .nav .nav-a.has-caret::after { right: 26px; }
+
+  .hero { padding-top: 32px; padding-bottom: 88px; }
+  .hero .hero-in { gap: clamp(28px, 3.4vw, 48px); }
+  .hero h1 { font-size: var(--font-h1); }
+  .hero .hero-tag { font-size: 13.5px; padding: 6px 14px 6px 11px; margin-bottom: 16px; }
+  .hero .hero-sub { font-size: 17.5px; max-width: 47ch; margin-top: 22px; }
+  .hero .hero-card { max-width: 504px; margin-top: 22px; padding: 18px 20px 14px; }
+  .hero .hero-card h2 { font-size: 19px; padding-right: 88px; }
+  .hero .hc-stamp { font-size: 15px; right: 20px; padding: 8px 12px 9px; }
+  .hero .who { margin-top: 10px; }
+  .hero .who-o { min-height: 52px; padding-block: 7px; border-radius: 14px; }
+  .hero .who-o b { font-size: 16.5px; }
+  .hero .hc-languages { margin-top: 12px; }
+  .hero .hc-badges li { padding: 5px 9px; }
+  .hero .hc-go { height: 50px; padding-inline: 22px 20px; }
+  .hero .hc-notes { font-size: 13px; margin-top: 11px; padding-top: 10px; gap: 6px 16px; }
+  .hero .hero-media { padding: 42px 30px 4px; }
+  .hero .hm-stage { max-width: 414px; }
+  .hero .hm-frame { border-radius: 28px; }
+  .hero .hm-live { font-size: 13px; padding: 6px 12px 6px 10px; }
+  .hero .hm-quote { padding: 12px 16px 11px 14px; border-radius: 20px; }
+  .hero .hm-quote p { font-size: 19px; }
+  .hero .hm-quote figcaption { font-size: 13px; margin-top: 8px; }
+  .hero .hm-mascot { width: 84px; }
+  .hero .hm-hi li { font-size: 16px; padding: 9px 13px 10px; border-radius: 16px; }
+
+  .proof { --pf-gap: 14px; }
+  .proof > li { padding: 16px 16px 14px; gap: 9px; border-radius: 24px; }
+  .proof .pf-ic { width: 42px; height: 42px; }
+  .proof .pf-t { font-size: 24px; }
+  .proof .pf-d { font-size: 14px; }
+  .proof .pf-tag { font-size: 13px; padding: 5px 10px 6px; }
+
+  #neden .nd-tile { padding: 24px; gap: 10px; }
+  #neden .nd-tile h3 { font-size: 23px; }
+  #neden .nd-tile p { font-size: 15px; }
+  #neden .nd-photo { padding: 0; gap: 0; min-height: 504px; }
+  #neden .nd-cap { padding: 20px 22px; }
+  #neden .nd-num { font-size: clamp(76px, 7vw, 100px); }
+  #neden .nd-chips { gap: 8px; padding-top: 12px; }
+  #neden .nd-chip { padding: 11px 14px; font-size: 15px; }
+
+  #sorular { --gap: 20px; padding-block: var(--space-section) 92px; }
+  #sorular .reel-card { gap: 12px; }
+  #sorular .reel-q { font-size: 19px; }
+  #sorular .sq-foot { margin-top: 36px; padding-top: 28px; }
+  #sorular .sq-foot-q { font-size: 25px; }
+  #programlar .p-row { padding: 20px 20px 20px 90px; column-gap: 24px; }
+  #programlar .p-name { font-size: 22px; }
+  #programlar .p-focus { font-size: 15.5px; }
+  #programlar .p-stones { padding-top: 12px; }
+
+  #fiyatlar .plans { column-gap: 18px; }
+  #fiyatlar .plan { padding-bottom: 24px; }
+  #fiyatlar .plan > :is(.plan-top, .plan-price, .plan-cta) { padding-inline: 24px; }
+  #fiyatlar .plan-band { height: 108px; }
+  #fiyatlar .plan-top { padding-top: 20px; }
+  #fiyatlar .plan h3 { font-size: 22px; }
+  #fiyatlar .plan-price { padding-top: 20px; }
+  #fiyatlar .price .amt { font-size: 60px; }
+  #fiyatlar .feat { margin-top: 20px; margin-inline: 24px; padding-top: 18px; gap: 10px; font-size: 15px; }
+  #fiyatlar .plan-cta { padding-top: 24px; }
+  #fiyatlar .calc { margin-top: 48px; padding: 32px; gap: 28px 40px; }
+
+  #ogretmenler .sec-head { margin-bottom: 24px; }
+  #ogretmenler .t-tools { margin-bottom: var(--space-heading); }
+  #ogretmenler .t-grid { gap: 42px 24px; }
+  #ogretmenler .t-media { margin-bottom: 16px; }
+  #ogretmenler .t-name { font-size: 19px; }
+  #ogretmenler .t-lang { margin-top: 7px; margin-bottom: 12px; }
+  #yorumlar .rv-grid { gap: 22px 28px; }
+  #yorumlar .rv-col { gap: 22px; }
+  #yorumlar .rv-bub { padding: 24px 28px 27px; border-radius: 32px; }
+  #yorumlar .rv-main .rv-bub { padding: 36px 42px 42px; min-height: 306px; }
+  #yorumlar blockquote p { font-size: 18.5px; }
+  #yorumlar .rv-main blockquote p { font-size: clamp(28px, 2.8vw, 40px); }
+  #yorumlar .rv-by { margin-top: 30px; }
+
+  #baslangic .bs-steps { gap: 22px; }
+  #baslangic .bs-step { gap: 18px; }
+  #baslangic .bs-card { padding-bottom: 22px; }
+  #baslangic .bs-card h3 { font-size: 22px; }
+  #baslangic .bs-mini { min-height: 150px; }
+  #baslangic .bs-m3 { height: 150px; }
+  #baslangic .bs-cta { margin-top: 48px; }
+
+  #kurumlar, #son { margin-top: var(--space-section); border-radius: 36px; padding: clamp(32px, 4vw, 58px); }
+  #kurumlar { gap: clamp(28px, 4vw, 64px); }
+  #kurumlar .kap-items, #kurumlar .kap-cta { margin-top: 24px; }
+  #kurumlar .kap-item { padding-block: 14px; }
+  #kurumlar .kap-item strong { font-size: 17px; }
+  #kurumlar .kap-plan { padding: 28px; border-radius: 26px; }
+  #kurumlar .kap-steps { margin-top: 22px; gap: 20px; }
+  #sss .kap-faq-grid { gap: clamp(28px, 4.5vw, 72px); }
+  #sss .kap-help { margin-top: 28px; padding: 22px; }
+  #sss .kap-faq summary { font-size: 17.5px; padding: 16px 16px 16px 22px; }
+  #son h2 { font-size: clamp(36px, 4.7vw, 61px); }
+  #son .kap-f-copy > p { margin-top: 18px; font-size: 17.5px; }
+  #son .kap-ctas { margin-top: 24px; }
+  .footer { margin-top: var(--space-section); }
+  .footer .kap-f-in { padding-top: 42px; padding-bottom: 32px; }
+  .footer .kap-f-top { gap: 28px; }
+  .footer .kap-brand img { height: 47px; }
+  .footer .kap-social { gap: 8px; }
+  .footer .kap-links { gap: 8px; }
+  .footer .kap-sister { margin-top: 36px; padding: 14px 20px 14px 14px; }
+  .footer .kap-legal { margin-top: 24px; padding-top: 18px; }
+}
+
+/* Existing narrow-screen footer CTA clips its tutor link at 320px.
+   Allow a second line instead of reducing mobile type or touch targets. */
+@media (max-width: 400px) {
+  #son .kap-team { max-width: 100%; flex-wrap: wrap; }
+  #son .kap-team-t { min-width: 0; }
+  #son .kap-team-t b, #son .kap-team-t span { white-space: normal; }
+}
+
+/* Keep complete price amounts readable on the narrowest mobile screens. */
+@media (max-width: 360px) {
+  #fiyatlar .calc-m { grid-template-columns: minmax(0, 1fr); }
+}
