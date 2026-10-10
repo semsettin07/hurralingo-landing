@@ -1,0 +1,68 @@
+﻿/* Text fitting for localized content; original design and density rules remain. */
+html:lang(de), html:lang(az) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+html:lang(de) #fiyatlar .fy-bl {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 360px) {
+  #ogretmenler .t-name { overflow-wrap: anywhere; }
+  .mbar .btn { white-space: normal; text-align: center; line-height: 1.2; }
+  html:lang(de) #son .kap-u { max-width: 100%; white-space: normal; }
+}
+
+@media (max-width: 720px) {
+  html:lang(de) .hero .who-o:last-child b,
+  html:lang(az) .hero .who-o:last-child b { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  html:lang(de) #baslangic .bs-opt,
+  html:lang(az) #baslangic .bs-opt { flex-wrap: wrap; min-width: 0; }
+  html:lang(de) #baslangic .bs-opt em,
+  html:lang(az) #baslangic .bs-opt em { margin-left: 26px; }
+}
+html:lang(de) #neden .nd-panel-txt,
+html:lang(az) #neden .nd-panel-txt,
+html:lang(de) #fiyatlar .plan,
+html:lang(az) #fiyatlar .plan,
+html:lang(de) #fiyatlar .calc-in,
+html:lang(az) #fiyatlar .calc-in,
+html:lang(de) #fiyatlar .calc-out,
+html:lang(az) #fiyatlar .calc-out { min-width: 0; }
+html:lang(de) #fiyatlar .plan-cta .btn,
+html:lang(az) #fiyatlar .plan-cta .btn { white-space: normal; text-align: center; }
+html:lang(de) #fiyatlar .fy-seg button,
+html:lang(az) #fiyatlar .fy-seg button { min-width: 0; padding-inline: 8px; }
+@media (max-width: 720px) {
+  html:lang(de) #fiyatlar .calc,
+  html:lang(az) #fiyatlar .calc { grid-template-columns: minmax(0, 1fr); }
+}
+@media (min-width: 721px) and (max-width: 960px) {
+  html:lang(de) .header .login,
+  html:lang(az) .header .login { display: none; }
+}
+html:lang(de) #neden .nd-panel-txt,
+html:lang(az) #neden .nd-panel-txt { width: 100%; }
+html:lang(de) #fiyatlar .plan,
+html:lang(az) #fiyatlar .plan { grid-template-columns: minmax(0, 1fr); }
+html:lang(de) #neden .nd-panel-txt,
+html:lang(az) #neden .nd-panel-txt { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 360px) {
+  #fiyatlar .plan { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  #fiyatlar .plan-cta .btn { white-space: normal; text-align: center; }
+}
+@media (min-width: 721px) and (max-width: 800px) {
+  html:lang(en) .header .brand img { height: 44px; }
+}
+
+@media (max-width: 720px) {
+  html:lang(de) .hero .who-grid { grid-template-columns: repeat(3, minmax(0, .8fr)) minmax(0, 1.6fr); }
+}
+@media (max-width: 360px) {
+  html:lang(de) .hero .who-o:last-child b,
+  html:lang(az) .hero .who-o:last-child b { font-size: 14px; }
+}
+@media (max-width: 360px) {
+  #ogretmenler .t-roll { height: 3.42em; }
+}
+
+@media (max-width: 360px) { html:lang(de) .hero .who-o:last-child b { font-size: 13px; white-space: nowrap; } }

@@ -1,8 +1,8 @@
 # Hurra Lingo — Ana Sayfa Tasarım Önerisi
 
-Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa tasarım önerisini içerir. Sayfanın **Türkçe** ve **İngilizce** iki sürümü vardır. Proje statik bir web sitesidir ve GitHub Pages üzerinden yayınlanır.
+Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa tasarım önerisini içerir. Sayfanın **Türkçe, İngilizce, Almanca ve Azerbaycanca** dört sürümü vardır. Proje derleme adımı gerektirmeyen statik bir web sitesidir. Mevcut hazırlık önizlemesi Cloudflare Pages üzerindedir; Phase 5 değişiklikleri yereldir ve otomatik dağıtım yapılmamıştır.
 
-> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Sayfadaki fiyatlar ve bazı içerikler **örnek** olarak konmuştur. Phase 1 sonrasında deneme dersi başvuruları **[resmî başvuru sayfasına](https://www.hurralingo.app/trial-request)** yönlendirilir; bu depoda başvuru formu bulunmaz. Canlı bir ürün olarak kullanılmamalıdır.
+> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Güncel fiyatlar önceki aşamalarda onaylanmıştır ve tüm dillerde Türk lirası (TRY) olarak korunur. Paket hesaplama alanı örnek bir ders planını gösterir. Phase 1 sonrasında deneme dersi başvuruları **[resmî başvuru sayfasına](https://www.hurralingo.app/trial-request)** yönlendirilir; bu depoda başvuru formu bulunmaz. Canlı bir ürün olarak kullanılmamalıdır.
 
 ---
 
@@ -12,6 +12,10 @@ Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa 
 |-----|----------|
 | 🇹🇷 Türkçe | https://hurralingo-landing.pages.dev/ |
 | 🇬🇧 English | https://hurralingo-landing.pages.dev/en.html |
+| 🇩🇪 Deutsch | https://hurralingo-landing.pages.dev/de.html |
+| 🇦🇿 Azərbaycanca | https://hurralingo-landing.pages.dev/az.html |
+
+DE/AZ dosyaları Phase 5 kapsamında oluşturulmuştur. Yukarıdaki yeni dil adresleri, ayrıca onaylanıp dağıtım yapılana kadar mevcut uzak önizlemede bulunmayabilir. Dört sayfa yerel sunucuda kullanılabilir.
 
 ---
 
@@ -31,13 +35,13 @@ Sayfanın öne çıkan unsurları şunlardır:
 
 ## ✨ Başlıca Özellikler
 
-- **İki dilli yapı:** Türkçe sürüm `index.html`, İngilizce sürüm `en.html` dosyasındadır. Aynı tasarım iki dilde de kullanılabilir.
+- **Dört dilli yapı:** Türkçe `index.html` (`/`), İngilizce `en.html`, Almanca `de.html`, Azerbaycanca `az.html`. Masaüstü ve mobil dil seçiciler aynı dört yerel hedefe gider. Almanca iletişimde resmî “Sie”, Azerbaycancada Azerbaycan Latin alfabesi kullanılır.
 - **Derleme adımı yok:** Paket yöneticisi, framework ya da build aracı gerekmez. Dosyalar olduğu gibi sunulur.
 - **Video ağırlıklı anlatım:**
   - `hero-ders.mp4`: giriş alanındaki ders videosu
   - `soru-1` … `soru-6`: altı adet kısa soru videosu
   - Her videonun aynı adlı bir `.jpg` kapak (poster) görseli vardır. Bu görsel, video yüklenene kadar ekranda görünür.
-- **Öğretmen kadrosu tanıtımı:** Resmî Türkçe ve İngilizce öğretmen listelerinden doğrulanmış 42 isim ve dil. Mevcut 8 WebP fotoğraf korunmuş, 34 resmî fotoğraf eklenmiştir. Bu sayı platformun toplam aktif öğretmen sayısı iddiası değildir.
+- **Öğretmen kadrosu tanıtımı:** Dört sayfada aynı 38 öğretmen gösterilir. Phase 4’te çıkarılan dört öğretmen yeni dillere eklenmez; Yanshan Lin ve Çince filtresi korunur. 42 fotoğraf varlığı tutulur; gösterilen kadro ile varlık sayısı farklıdır. Bu sayı platformun toplam aktif öğretmen sayısı iddiası değildir.
 - **Maskot sistemi:** Farklı duyguları ifade eden 5 SVG maskot varyasyonu vardır. SVG oldukları için her ekranda net görünürler.
 - **Sosyal medya önizlemesi:** Bağlantı WhatsApp, LinkedIn, X gibi platformlarda paylaşıldığında `og.jpg` görseli gösterilir.
 - **Arama motorlarından gizli:** `robots.txt` tüm botları engeller. Bu sayede öneri sayfası Google'da indekslenmez ve gerçek siteyle karışmaz.
@@ -51,6 +55,11 @@ Sayfanın öne çıkan unsurları şunlardır:
 hurralingo-oneri/
 ├── index.html               # Ana sayfa — Türkçe sürüm
 ├── en.html                  # Ana sayfa — İngilizce sürüm
+├── de.html                  # Ana sayfa — Almanca sürüm
+├── az.html                  # Ana sayfa — Azerbaycanca sürüm
+├── desktop-density.css      # Onaylı masaüstü yoğunluk ayarları
+├── localization.css         # Uzun çeviriler ve dar ekranlar için metin sığdırma
+├── PHASE-5-REPORT.md         # Yerelleştirme ve QA raporu
 ├── og.jpg                   # Sosyal medya paylaşım görseli (Open Graph)
 ├── robots.txt               # Tüm arama motoru botlarını engeller
 ├── .nojekyll                # GitHub Pages'te Jekyll işlemesini kapatır
@@ -129,12 +138,16 @@ Ardından tarayıcıda şu adresleri açın:
 
 - Türkçe: http://localhost:8000/
 - İngilizce: http://localhost:8000/en.html
+- Almanca: http://localhost:8000/de.html
+- Azerbaycanca: http://localhost:8000/az.html
 
 ---
 
-## 🌐 Yayınlama (GitHub Pages)
+## 🌐 Yayınlama (isteğe bağlı GitHub Pages)
 
-Site GitHub Pages üzerinden yayınlanır:
+Mevcut önizleme Cloudflare Pages üzerindedir. Aşağıdaki GitHub Pages adımları yalnızca alternatif barındırma için eski proje notlarıdır. Phase 5 kapsamında push, dağıtım, Cloudflare veya DNS değişikliği yapılmaz.
+
+Alternatif GitHub Pages kurulumu:
 
 1. GitHub'da depo sayfasını açın ve **Settings → Pages** bölümüne gidin.
 2. **Source** olarak **Deploy from a branch** seçeneğini seçin.
@@ -147,8 +160,8 @@ Site GitHub Pages üzerinden yayınlanır:
 
 ## 🛠️ Düzenleme İpuçları
 
-- **İki dili birlikte güncelleyin:** `index.html` dosyasında yaptığınız yapısal değişiklikleri (yeni bölüm, yeni görsel vb.) `en.html` dosyasına da uygulayın. Aksi halde iki sürüm birbirinden farklılaşır.
-- **Yeni öğretmen eklemek:** Fotoğrafı `img/t-<isim>.webp` adıyla kaydedin. Türkçe karakter ve boşluk kullanmayın (ör. `t-bengu.webp`). Ardından iki HTML dosyasına da ekleyin.
+- **Dört dili birlikte güncelleyin:** Yapısal değişiklikleri `index.html`, `en.html`, `de.html` ve `az.html` dosyalarında birlikte ele alın. Dil etiketleri, erişilebilirlik metinleri ve dinamik JavaScript mesajları da yerelleştirilmelidir.
+- **Yeni öğretmen eklemek:** Fotoğrafı `img/t-<isim>.webp` adıyla kaydedin. Türkçe karakter ve boşluk kullanmayın (ör. `t-bengu.webp`). Ardından dört HTML dosyasındaki kadroya aynı kayıt ve dil atamasını ekleyin.
 - **Yeni video eklemek:**
   - Videoyu web uyumlu **MP4 (H.264)** biçiminde `media/` klasörüne koyun.
   - Aynı adla bir `.jpg` kapak görseli oluşturun (ör. `soru-7.mp4` + `soru-7.jpg`).
@@ -160,7 +173,7 @@ Site GitHub Pages üzerinden yayınlanır:
 
 ## ⚠️ Bilinen Sınırlamalar
 
-- Fiyatlar ve bazı metinler **örnektir**. Gerçek teklif veya fiyat listesi değildir.
+- Fiyatlar onaylanan TRY değerlerini korur; kur dönüşümü yapılmaz. Üretime geçiş öncesinde teklif ve yasal metinler sahibince doğrulanmalıdır.
 - Deneme dersi CTA’ları resmî uygulamanın başvuru sayfasını yeni sekmede açar. Kurumsal teklif CTA’sı resmî WhatsApp numarasına gider.
 - `robots.txt` nedeniyle sayfa **arama motorlarında görünmez**. Bu bilinçli bir tercihtir.
 - Proje bir **tasarım prototipidir**. Canlıya alınmadan önce içerik, analitik ve KVKK/çerez gibi yasal metinlerin eklenmesi gerekir.
@@ -170,6 +183,12 @@ Site GitHub Pages üzerinden yayınlanır:
 ## Phase 1
 
 Değişiklikler, kaynak karşılaştırmaları, doğrulama sonuçları ve açık maddeler için [PHASE-1-REPORT.md](PHASE-1-REPORT.md) dosyasına bakın. Önizleme bağlantıları mevcut dağıtımı gösterir; bu aşamada dağıtım yapılmamıştır.
+
+## Phase 5
+
+Yerelleştirme, kadro/fiyat eşliği, dil seçici, SEO ve doğrulama sonuçları için [PHASE-5-REPORT.md](PHASE-5-REPORT.md) dosyasına bakın. Dört sayfada `noindex, nofollow`, hazırlık alanına ait canonical ve karşılıklı TR/EN/DE/AZ `hreflang` bağlantıları bulunur. `x-default` Türkçe ana sayfayı gösterir; `robots.txt` botları engellemeye devam eder. Üretim alan adına geçiş yapılmamıştır.
+
+Production TODO: Integrate approved Hurra Lingo chatbots after provider, embed script, consent/privacy requirements and deployment scope are confirmed.
 
 ## 👥 Hazırlayan
 
