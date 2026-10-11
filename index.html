@@ -1170,6 +1170,14 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   .proof{grid-auto-columns:76%; margin-top:-34px; --pf-gap:12px}
 }
 
+.campaign-banner{max-width:var(--wrap); margin:clamp(28px,4vw,48px) auto 0}
+.campaign-banner a{display:block; border-radius:var(--r-m); overflow:hidden}
+.campaign-banner a:focus-visible{outline:3px solid var(--ink); outline-offset:6px}
+.campaign-banner picture, .campaign-banner img{display:block}
+.campaign-banner img{width:100%; height:auto}
+@media (max-width:720px){
+  .campaign-banner a{max-width:360px; margin-inline:auto}
+}
 </style>
 <main id="main">
 <section class="hero" id="top" aria-labelledby="h1">
@@ -1285,6 +1293,14 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     <div class="pf-foot col" aria-hidden="true"><span class="pf-steps"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="pf-steps-l"><span>Ön A1</span><span>C1</span></span></div>
   </li>
 </ul>
+<aside class="campaign-banner" aria-label="Emniyet mensupları ve ailelerine özel kampanya">
+  <a href="docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf" target="_blank" rel="noopener noreferrer" aria-label="Emniyet mensupları ve ailelerine özel dil eğitimi kampanyasının detaylarını inceleyin (PDF, yeni sekmede açılır)">
+    <picture>
+      <source media="(max-width:720px)" srcset="img/emniyet-kampanya-mobil.png" width="1024" height="1536">
+      <img src="img/emniyet-kampanya-masaustu.png" width="2170" height="725" loading="lazy" decoding="async" alt="Hurra Lingo: Emniyet mensupları ve ailelerine özel yabancı dil eğitimi. Online derslerde %10 indirim ve yıl sonuna kadar yapay zekâ destekli uygulamaya ücretsiz erişim. Detayları gör.">
+    </picture>
+  </a>
+</aside>
 <script>
 (function(){
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
