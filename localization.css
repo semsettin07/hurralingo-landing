@@ -6,6 +6,11 @@
   overflow-wrap: break-word;
 }
 
+.hero .hero-sub.hero-sub-accent {
+  color: var(--coral);
+  font-size: clamp(19px, 1.7vw, 23px);
+}
+
 html:lang(de), html:lang(az) {
   hyphens: auto;
   overflow-wrap: break-word;
