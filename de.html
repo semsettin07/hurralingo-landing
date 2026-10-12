@@ -2440,7 +2440,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Gesamt</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">eine Zahlung</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">Einmalzahlung</span></span></dd>
         </div>
         <div>
           <dt>Pro Unterrichtseinheit</dt>
@@ -2468,8 +2468,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺24.792', sub:'eine Zahlung', per:'₺1.033', diff:'₺3.960 günstiger als Ratenzahlung',
-              sr:'Einmalzahlung: insgesamt 24.792 Lira, eine Zahlung. 1.033 Lira pro Unterrichtseinheit. Sie sparen 3.960 Lira gegenüber Ratenzahlung.' },
+    pesin:  { total:'₺24.792', sub:'Einmalzahlung', per:'₺1.033', diff:'₺3.960 günstiger als Ratenzahlung',
+              sr:'Einmalzahlung: insgesamt 24.792 Lira, Einmalzahlung. 1.033 Lira pro Unterrichtseinheit. Sie sparen 3.960 Lira gegenüber Ratenzahlung.' },
     taksit: { total:'₺28.752', sub:'Zahlung in Raten', per:'₺1.198', diff:'Insgesamt etwa 16 % mehr als bei Einmalzahlung',
               sr:'Ratenzahlung: insgesamt 28.752 Lira. 1.198 Lira pro Unterrichtseinheit. Insgesamt etwa 16 Prozent mehr als bei Einmalzahlung.' }
   };

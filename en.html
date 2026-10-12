@@ -2440,7 +2440,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Total</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24,792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">one payment</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24,792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">Payment in full</span></span></dd>
         </div>
         <div>
           <dt>Per lesson</dt>
@@ -2468,8 +2468,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺24,792', sub:'one payment', per:'₺1,033', diff:'Save ₺3,960 compared with installments',
-              sr:'Pay in full: 24,792 lira in total, one payment. 1,033 lira per lesson. You save 3,960 lira compared with installments.' },
+    pesin:  { total:'₺24,792', sub:'Payment in full', per:'₺1,033', diff:'Save ₺3,960 compared with installments',
+              sr:'Pay in full: 24,792 lira in total, Payment in full. 1,033 lira per lesson. You save 3,960 lira compared with installments.' },
     taksit: { total:'₺28,752', sub:'payment in installments', per:'₺1,198', diff:'About 16% more in total than paying in full',
               sr:'Installments: 28,752 lira in total. 1,198 lira per lesson. About 16 percent more in total than paying in full.' }
   };

@@ -2451,7 +2451,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Toplam</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">tek ödeme</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">Peşin ödeme</span></span></dd>
         </div>
         <div>
           <dt>Ders başı</dt>
@@ -2479,8 +2479,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺24.792', sub:'tek ödeme', per:'₺1.033', diff:'Taksitliye göre ₺3.960 tasarruf',
-              sr:'Peşin: toplam 24.792 TL, tek ödeme. Ders başı 1.033 TL. Taksitliye göre 3.960 TL tasarruf.' },
+    pesin:  { total:'₺24.792', sub:'Peşin ödeme', per:'₺1.033', diff:'Taksitliye göre ₺3.960 tasarruf',
+              sr:'Peşin: toplam 24.792 TL, Peşin ödeme. Ders başı 1.033 TL. Taksitliye göre 3.960 TL tasarruf.' },
     taksit: { total:'₺28.752', sub:'taksitli ödeme', per:'₺1.198', diff:'Peşine göre toplam yaklaşık %16 daha yüksek',
               sr:'Taksitli: toplam 28.752 TL. Ders başı 1.198 TL. Peşine göre toplam yaklaşık yüzde 16 daha yüksek.' }
   };
