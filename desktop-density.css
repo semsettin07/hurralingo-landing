@@ -135,7 +135,7 @@
   .footer { margin-top: var(--space-section); }
   .footer .kap-f-in { padding-top: 42px; padding-bottom: 32px; }
   .footer .kap-f-top { gap: 28px; }
-  .footer .kap-brand img { height: 47px; }
+  .footer .kap-brand img { width: 279px; height: auto; }
   .footer .kap-social { gap: 8px; }
   .footer .kap-links { gap: 8px; }
   .footer .kap-sister { margin-top: 36px; padding: 14px 20px 14px 14px; }
