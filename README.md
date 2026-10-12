@@ -190,6 +190,14 @@ Yerelleştirme, kadro/fiyat eşliği, dil seçici, SEO ve doğrulama sonuçları
 
 Production TODO: Integrate approved Hurra Lingo chatbots after provider, embed script, consent/privacy requirements and deployment scope are confirmed.
 
+## Blog
+
+Dört dilde blog sayfası ve menü bağlantıları eklendi: `blog/`, `en/blog/`,
+`de/blog/`, `az/blog/`. hurraegitim.com arşivlerinden 49 yazı (TR 34, EN 6,
+DE 6, AZ 3) ve 70 görsel aktarıldı. AZ kaynak yazıları İngilizcedir ve bu dilde
+korundu. Üretim, içerik modeli ve doğrulama için
+[blog içerik notlarına](content/blog/README.md) bakın.
+
 ## 👥 Hazırlayan
 
 **İnfomedya** — Hurra Lingo için ana sayfa tasarım önerisi.

@@ -1,0 +1,674 @@
+{
+  "retrievedAt": "2026-10-12T08:59:45.768Z",
+  "sources": [
+    {
+      "language": "az",
+      "archive": "https://hurraegitim.com/az/blog/",
+      "endpoint": "https://hurraegitim.com/az/wp-json/wp/v2/posts",
+      "status": 200,
+      "total": 3,
+      "pages": 1
+    },
+    {
+      "language": "de",
+      "archive": "https://hurraegitim.com/de/blog/",
+      "endpoint": "https://hurraegitim.com/de/wp-json/wp/v2/posts",
+      "status": 200,
+      "total": 6,
+      "pages": 1
+    },
+    {
+      "language": "en",
+      "archive": "https://hurraegitim.com/blog/",
+      "endpoint": "https://hurraegitim.com/wp-json/wp/v2/posts",
+      "status": 200,
+      "total": 6,
+      "pages": 1
+    },
+    {
+      "language": "tr",
+      "archive": "https://hurraegitim.com/tr/blog/",
+      "endpoint": "https://hurraegitim.com/tr/wp-json/wp/v2/posts",
+      "status": 200,
+      "total": 34,
+      "pages": 1
+    }
+  ],
+  "total": 49,
+  "images": [
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-18-at-11.07.57-4-819x1024.jpeg",
+      "local": "img/blog/3803dc8273207258.webp",
+      "sourceBytes": 98371,
+      "bytes": 56104,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-18-at-11.07.26-3.jpeg",
+      "local": "img/blog/172d4e1778b4541d.webp",
+      "sourceBytes": 320886,
+      "bytes": 65236,
+      "width": 1600,
+      "height": 679,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/HL-INg-819x1024.jpg",
+      "local": "img/blog/047a4ac4c82de522.webp",
+      "sourceBytes": 143413,
+      "bytes": 93848,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/banner__.jpg",
+      "local": "img/blog/27a01d037a425819.webp",
+      "sourceBytes": 134176,
+      "bytes": 68482,
+      "width": 1052,
+      "height": 658,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/Resimsss1-820x1024.png",
+      "local": "img/blog/070f579dede9769e.webp",
+      "sourceBytes": 1081665,
+      "bytes": 70680,
+      "width": 820,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/06/Resimsss1.png",
+      "local": "img/blog/27c096a80fdd8a0b.webp",
+      "sourceBytes": 1664754,
+      "bytes": 88642,
+      "width": 908,
+      "height": 1134,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-06-at-08.51.07-819x1024.jpeg",
+      "local": "img/blog/c4c3b6acb01fab48.webp",
+      "sourceBytes": 91023,
+      "bytes": 53586,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2026/02/Ekran-Resmi-2026-02-06-09.13.19.png",
+      "local": "img/blog/1c1307a531be8535.webp",
+      "sourceBytes": 2143498,
+      "bytes": 68410,
+      "width": 1574,
+      "height": 1094,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-18-at-11.07.57-7-819x1024.jpeg",
+      "local": "img/blog/a5c12f7be548d6db.webp",
+      "sourceBytes": 102361,
+      "bytes": 59140,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-18-at-11.07.26-4.jpeg",
+      "local": "img/blog/3ed987ec608af70a.webp",
+      "sourceBytes": 316569,
+      "bytes": 62264,
+      "width": 1600,
+      "height": 679,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/sssResim1-820x1024.jpg",
+      "local": "img/blog/dd72f0d5bca59d1a.webp",
+      "sourceBytes": 136472,
+      "bytes": 88754,
+      "width": 820,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/Resim1_de2.jpg",
+      "local": "img/blog/9b763873e4b7de15.webp",
+      "sourceBytes": 107495,
+      "bytes": 55860,
+      "width": 875,
+      "height": 638,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/Resimss1-819x1024.jpg",
+      "local": "img/blog/8d5c5abeccd91b63.webp",
+      "sourceBytes": 116276,
+      "bytes": 71710,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/06/Resimss1.jpg",
+      "local": "img/blog/e54934718a4cbaa0.webp",
+      "sourceBytes": 389533,
+      "bytes": 135056,
+      "width": 1390,
+      "height": 1738,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/05/WhatsApp_-Image-2026-05-18-at-14.44.21-2-825x1024.jpg",
+      "local": "img/blog/f303439110affabf.webp",
+      "sourceBytes": 157471,
+      "bytes": 108248,
+      "width": 825,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/05/kapak.jpg",
+      "local": "img/blog/f0fd87b21ace2607.webp",
+      "sourceBytes": 368213,
+      "bytes": 140918,
+      "width": 1600,
+      "height": 880,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/05/Ekran-Resmi-2026-05-04-15.18.41.png",
+      "local": "img/blog/b71b09474f492488.webp",
+      "sourceBytes": 1980925,
+      "bytes": 75240,
+      "width": 1528,
+      "height": 956,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-14.16.42.jpeg",
+      "local": "img/blog/e46e813ef8beef9f.webp",
+      "sourceBytes": 277004,
+      "bytes": 109706,
+      "width": 1104,
+      "height": 1360,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/de/wp-content/uploads/2026/04/Ekran-Resmi-2026-04-28-15.11.58.png",
+      "local": "img/blog/e4d6ae4538c19b44.webp",
+      "sourceBytes": 2129908,
+      "bytes": 95278,
+      "width": 1590,
+      "height": 934,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/az/wp-content/uploads/2026/02/Ekran-Resmi-2026-02-06-09.13.19.png",
+      "local": "img/blog/763a507ee2385785.webp",
+      "sourceBytes": 2143498,
+      "bytes": 68410,
+      "width": 1574,
+      "height": 1094,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/06/Resim_1-820x1024.jpg",
+      "local": "img/blog/d5cd2b5e601188ba.webp",
+      "sourceBytes": 130944,
+      "bytes": 82802,
+      "width": 820,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/06/ssssss.jpg",
+      "local": "img/blog/9b82a0b490c45f89.webp",
+      "sourceBytes": 93942,
+      "bytes": 48552,
+      "width": 852,
+      "height": 541,
+      "status": 200
+    },
+    {
+      "source": "https://www.hurraturkiye.com/wp-content/uploads/2026/06/Resim1sss-820x1024.jpg",
+      "local": "img/blog/7c2a9c5c0ecbaa87.webp",
+      "sourceBytes": 105542,
+      "bytes": 65092,
+      "width": 820,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/06/Resim1sss.jpg",
+      "local": "img/blog/c58dbdbd0abf6a5b.webp",
+      "sourceBytes": 203058,
+      "bytes": 80670,
+      "width": 908,
+      "height": 1134,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-13-at-13.50.39-819x1024.jpeg",
+      "local": "img/blog/9bae7e8af1cb4923.webp",
+      "sourceBytes": 113636,
+      "bytes": 68938,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/Ekran-Resmi-2026-05-15-10.12.29-980x510-1.png",
+      "local": "img/blog/1e0bebf4ffe8d026.webp",
+      "sourceBytes": 665085,
+      "bytes": 30234,
+      "width": 980,
+      "height": 510,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/19.05.2026-2-819x1024.jpeg",
+      "local": "img/blog/5743e6f2bd48bb9e.webp",
+      "sourceBytes": 104433,
+      "bytes": 66354,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/Ekran-Resmi-2026-05-18-13.47.02.jpg",
+      "local": "img/blog/0beb33f8d8246764.webp",
+      "sourceBytes": 79584,
+      "bytes": 31634,
+      "width": 1512,
+      "height": 830,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-08-at-12.31.44-819x1024.jpeg",
+      "local": "img/blog/5d979a10ca48e24c.webp",
+      "sourceBytes": 204500,
+      "bytes": 161226,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/Ekran-Resmi-2026-05-08-13.08.12-1.jpg",
+      "local": "img/blog/6c558081847366bc.webp",
+      "sourceBytes": 422233,
+      "bytes": 152968,
+      "width": 1600,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/HL-1-1024x414.jpeg",
+      "local": "img/blog/b3e60c61d73abbf3.webp",
+      "sourceBytes": 101047,
+      "bytes": 75098,
+      "width": 1024,
+      "height": 414,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/05/HL-scaled.jpeg",
+      "local": "img/blog/d92afa406ff35006.webp",
+      "sourceBytes": 409542,
+      "bytes": 141110,
+      "width": 1600,
+      "height": 647,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-22-at-12.30.14-1.jpeg",
+      "local": "img/blog/74071c394be7a629.webp",
+      "sourceBytes": 830220,
+      "bytes": 148786,
+      "width": 1600,
+      "height": 1600,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/03/1nisan-saka-gunu_Calisma-Yuzeyi-1-kopya-8-copy-2.jpg",
+      "local": "img/blog/7f4a5a23e7a71675.webp",
+      "sourceBytes": 516898,
+      "bytes": 71808,
+      "width": 1080,
+      "height": 1080,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.57.59-1-819x1024.jpeg",
+      "local": "img/blog/93a34eef61aee931.webp",
+      "sourceBytes": 99781,
+      "bytes": 59160,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.57.59-scaled.jpeg",
+      "local": "img/blog/377a7061f036acb9.webp",
+      "sourceBytes": 403397,
+      "bytes": 140236,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-13-at-09.59.23-819x1024.jpeg",
+      "local": "img/blog/ac01ce60aaa6aec8.webp",
+      "sourceBytes": 119063,
+      "bytes": 67668,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-13-at-09.59.23-scaled.jpeg",
+      "local": "img/blog/67a6e1a1d1d1186f.webp",
+      "sourceBytes": 454930,
+      "bytes": 150212,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-06-at-08.34.20-819x1024.jpeg",
+      "local": "img/blog/606785f637b124cf.webp",
+      "sourceBytes": 83591,
+      "bytes": 45562,
+      "width": 819,
+      "height": 1024,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/02/Ekran-Resmi-2026-02-06-08.42.58.png",
+      "local": "img/blog/34ab71cfa1fe3f9e.webp",
+      "sourceBytes": 2115212,
+      "bytes": 62722,
+      "width": 1466,
+      "height": 1078,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2026/01/Resim1_.png",
+      "local": "img/blog/e2cf8031df93321f.webp",
+      "sourceBytes": 1542020,
+      "bytes": 96446,
+      "width": 1390,
+      "height": 1738,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-10.15.40-1.jpeg",
+      "local": "img/blog/569039038b78e734.webp",
+      "sourceBytes": 288227,
+      "bytes": 131626,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-18-at-11.37.35.jpeg",
+      "local": "img/blog/a5c77bce5e714f5a.webp",
+      "sourceBytes": 319647,
+      "bytes": 147220,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-11-at-15.22.10-scaled.jpeg",
+      "local": "img/blog/726634fc5563e959.webp",
+      "sourceBytes": 370900,
+      "bytes": 136844,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/12/Blog-3-scaled.png",
+      "local": "img/blog/197bea89f70da211.webp",
+      "sourceBytes": 1209265,
+      "bytes": 125904,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/11/Almanca-Ogrenen-Cocuklar-scaled.jpg",
+      "local": "img/blog/082cc973e1d130a4.webp",
+      "sourceBytes": 509769,
+      "bytes": 144078,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/11/e-mail.png",
+      "local": "img/blog/7df65f3ea59be6ea.webp",
+      "sourceBytes": 214001,
+      "bytes": 54202,
+      "width": 1080,
+      "height": 1080,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/10/Cumhuriyet-Bayramina-Ozel-Dunya-Cocuklarindan-Turkiyeye-Selam_Cumhuriyet-Bayramina-Ozel-Dunya-Cocuklarindan-Turkiyeye-Selam-scaled.jpg",
+      "local": "img/blog/48234e8fe0d9cd95.webp",
+      "sourceBytes": 431500,
+      "bytes": 152762,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/10/Korkutmayan-Dil-Ogrenimi-Cocuklarda-Dil-Kaygisini-Yenme-Yollari_Korkutmayan-Dil-Ogrenimi-Cocuklarda-Dil-Kaygisini-Yenme-Yollari-240x300.jpg",
+      "local": "img/blog/9302f1c8d3b0c7c5.webp",
+      "sourceBytes": 58378,
+      "bytes": 10976,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/10/Korkutmayan-Dil-Ogrenimi-Cocuklarda-Dil-Kaygisini-Yenme-Yollari_Korkutmayan-Dil-Ogrenimi-Cocuklarda-Dil-Kaygisini-Yenme-Yollari-scaled.jpg",
+      "local": "img/blog/6004000f53ed4c4d.webp",
+      "sourceBytes": 404224,
+      "bytes": 137650,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/10/rusca-240x300.jpeg",
+      "local": "img/blog/4d1a9b776731da7a.webp",
+      "sourceBytes": 16073,
+      "bytes": 11838,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/10/rusca.jpeg",
+      "local": "img/blog/0e8b05e732119b0b.webp",
+      "sourceBytes": 640369,
+      "bytes": 163828,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/10/Evde-Ingilizce-Pratik-Yapmanin-En-Eglenceli-Yolu-Aile-Oyunlariyla-Ogrenin-240x300.jpeg",
+      "local": "img/blog/86c6f016f0763054.webp",
+      "sourceBytes": 15842,
+      "bytes": 12056,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/10/Evde-Ingilizce-Pratik-Yapmanin-En-Eglenceli-Yolu-Aile-Oyunlariyla-Ogrenin.jpeg",
+      "local": "img/blog/5f8724a297c6e419.webp",
+      "sourceBytes": 193267,
+      "bytes": 119192,
+      "width": 1280,
+      "height": 1600,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-29-at-14.11.21-240x300.jpeg",
+      "local": "img/blog/c5c8e944731e3e8b.webp",
+      "sourceBytes": 15379,
+      "bytes": 11030,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-29-at-14.11.21.jpeg",
+      "local": "img/blog/68bd5adb0bc8cb32.webp",
+      "sourceBytes": 546450,
+      "bytes": 132698,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/09/dbef6fa3-08eb-4680-9cc7-c6b4b90cfa5a-240x300.jpg",
+      "local": "img/blog/6947dd747df0de14.webp",
+      "sourceBytes": 15824,
+      "bytes": 11414,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/09/dbef6fa3-08eb-4680-9cc7-c6b4b90cfa5a.jpg",
+      "local": "img/blog/43133a4c95b00513.webp",
+      "sourceBytes": 567086,
+      "bytes": 139520,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-22-at-10.31.18-240x300.jpeg",
+      "local": "img/blog/5311f9a84f49c7d0.webp",
+      "sourceBytes": 16522,
+      "bytes": 12744,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-22-at-10.31.18.jpeg",
+      "local": "img/blog/4f362a0e7d2734f5.webp",
+      "sourceBytes": 122810,
+      "bytes": 88160,
+      "width": 1024,
+      "height": 1280,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-11-at-17.03.14-240x300.jpeg",
+      "local": "img/blog/5a237b6ae880ca4b.webp",
+      "sourceBytes": 18339,
+      "bytes": 13972,
+      "width": 240,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-11-at-17.03.14.jpeg",
+      "local": "img/blog/4695cf8da8a0c603.webp",
+      "sourceBytes": 672427,
+      "bytes": 163710,
+      "width": 1600,
+      "height": 2000,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/04/211_blog_hl-dil-edinimi-300x300.jpg",
+      "local": "img/blog/f4a63ff5c21049a9.webp",
+      "sourceBytes": 18440,
+      "bytes": 13202,
+      "width": 300,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/04/211_blog_hl-dil-edinimi.jpg",
+      "local": "img/blog/d4b34410024a96fb.webp",
+      "sourceBytes": 202694,
+      "bytes": 75960,
+      "width": 1080,
+      "height": 1080,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/04/227_blog_whatsapp-gorsel-2024-07-19-saat-10.43.32_ec7eba4d-300x300.jpg",
+      "local": "img/blog/762d596466e87014.webp",
+      "sourceBytes": 18529,
+      "bytes": 13468,
+      "width": 300,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/04/227_blog_whatsapp-gorsel-2024-07-19-saat-10.43.32_ec7eba4d-scaled.jpg",
+      "local": "img/blog/5d4b1a606708ae9a.webp",
+      "sourceBytes": 406431,
+      "bytes": 116682,
+      "width": 1600,
+      "height": 1600,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/04/225_blog_ht--300x300.jpg",
+      "local": "img/blog/ce5cd7b0d49b87f1.webp",
+      "sourceBytes": 20095,
+      "bytes": 15114,
+      "width": 300,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/04/225_blog_ht-.jpg",
+      "local": "img/blog/b0be8b312f932933.webp",
+      "sourceBytes": 148762,
+      "bytes": 104746,
+      "width": 1280,
+      "height": 1280,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/wp-content/uploads/2025/04/220_blog_hhhhllllll-300x300.jpg",
+      "local": "img/blog/c5f396fa877dd198.webp",
+      "sourceBytes": 18484,
+      "bytes": 13330,
+      "width": 300,
+      "height": 300,
+      "status": 200
+    },
+    {
+      "source": "https://hurraegitim.com/tr/wp-content/uploads/2025/04/220_blog_hhhhllllll.jpg",
+      "local": "img/blog/5f3a30842cde5350.webp",
+      "sourceBytes": 125564,
+      "bytes": 76640,
+      "width": 1080,
+      "height": 1080,
+      "status": 200
+    }
+  ],
+  "notes": [
+    "AZ source articles are in English; preserved verbatim with English content language.",
+    "Original publication dates and historical campaign text are preserved."
+  ]
+}

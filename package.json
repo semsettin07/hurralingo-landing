@@ -1,0 +1,13 @@
+{
+  "name": "hurralingo-landing",
+  "private": true,
+  "scripts": {
+    "blog:import": "node scripts/import-blog.cjs",
+    "blog:build": "node scripts/build-blog.cjs",
+    "blog:check": "node scripts/check-blog.cjs"
+  },
+  "devDependencies": {
+    "cheerio": "1.2.0",
+    "sharp": "0.35.5"
+  }
+}
