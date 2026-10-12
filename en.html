@@ -2160,7 +2160,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 /* ===== Fiyatlar (#fiyatlar) — tüm seçiciler bölüm köküne kapsanmıştır =====
    Renk dozu (sadeleştirme turu): kartlar beyaz + nötr çerçeve; tek vurgu Özel ders (cyan-50).
    Renk yalnızca küçük öğelerde: sınıf figürleri, damga (güneş), çubuklar (cyan / lacivert + mercan fark). */
-#fiyatlar{--fy-pesin-w:89.989889%; /* 85.440 / 94.944 */ position:relative}
+#fiyatlar{--fy-pesin-w:86.227045%; /* 24.792 / 28.752 */ position:relative}
 #fiyatlar .num{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Plan kartları ---------- */
@@ -2428,8 +2428,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     </div>
     <div class="calc-in">
       <span class="stamp calc-k">Example</span>
-      <h3 class="calc-t">Private lesson, 2 lessons a&nbsp;week, 12&nbsp;months</h3>
-      <p class="calc-s">96 lessons in total. You can pay for the same package in two ways; see the difference below.</p>
+      <h3 class="calc-t">Private lessons, 1 lesson a&nbsp;week, 24&nbsp;weeks</h3>
+      <p class="calc-s">24 lessons in total. You can pay for the same package in two ways; see the difference below.</p>
       <div class="fy-seg" role="group" aria-label="Payment method" data-state="pesin">
         <span class="fy-thumb" aria-hidden="true"></span>
         <button type="button" data-pay="pesin" aria-pressed="true">Pay in full</button>
@@ -2440,18 +2440,18 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Total</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺85,440</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">one payment</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24,792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">one payment</span></span></dd>
         </div>
         <div>
           <dt>Per lesson</dt>
-          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺890</span></span><span class="cap">based on 96 lessons</span></dd>
+          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺1,033</span></span><span class="cap">based on 24 lessons</span></dd>
         </div>
       </dl>
-      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">Save ₺9,504 compared with installments</span></span></p>
-      <div class="fy-bars" role="img" aria-label="Comparison: paying in full, 85,440 lira in total; installments, 94,944 lira in total; a difference of 9,504 lira.">
-        <div class="fy-bar is-pesin"><span class="fy-bl">In full</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺85,440</span></div>
-        <div class="fy-bar is-taksit"><span class="fy-bl">Installments</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺94,944</span></div>
-        <p class="fy-leg"><i></i><span>Extra cost: <span class="num">₺9,504</span></span></p>
+      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">Save ₺3,960 compared with installments</span></span></p>
+      <div class="fy-bars" role="img" aria-label="Comparison: paying in full, 24,792 lira in total; installments, 28,752 lira in total; a difference of 3,960 lira.">
+        <div class="fy-bar is-pesin"><span class="fy-bl">In full</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺24,792</span></div>
+        <div class="fy-bar is-taksit"><span class="fy-bl">Installments</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺28,752</span></div>
+        <p class="fy-leg"><i></i><span>Extra cost: <span class="num">₺3,960</span></span></p>
       </div>
     </div>
     <p class="sr-only" id="calc-live" aria-live="polite"></p>
@@ -2468,10 +2468,10 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺85,440', sub:'one payment', per:'₺890', diff:'Save ₺9,504 compared with installments',
-              sr:'Pay in full: 85,440 lira in total, one payment. 890 lira per lesson. You save 9,504 lira compared with installments.' },
-    taksit: { total:'₺94,944', sub:'12 × ₺7,912 a month', per:'₺989', diff:'About 11% more in total than paying in full',
-              sr:'Installments: 7,912 lira a month for 12 months, 94,944 lira in total. 989 lira per lesson. About 11 percent more in total than paying in full.' }
+    pesin:  { total:'₺24,792', sub:'one payment', per:'₺1,033', diff:'Save ₺3,960 compared with installments',
+              sr:'Pay in full: 24,792 lira in total, one payment. 1,033 lira per lesson. You save 3,960 lira compared with installments.' },
+    taksit: { total:'₺28,752', sub:'payment in installments', per:'₺1,198', diff:'About 16% more in total than paying in full',
+              sr:'Installments: 28,752 lira in total. 1,198 lira per lesson. About 16 percent more in total than paying in full.' }
   };
   var state = 'pesin';
 

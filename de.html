@@ -2160,7 +2160,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 /* ===== Fiyatlar (#fiyatlar) — tüm seçiciler bölüm köküne kapsanmıştır =====
    Renk dozu (sadeleştirme turu): kartlar beyaz + nötr çerçeve; tek vurgu Özel ders (cyan-50).
    Renk yalnızca küçük öğelerde: sınıf figürleri, damga (güneş), çubuklar (cyan / lacivert + mercan fark). */
-#fiyatlar{--fy-pesin-w:89.989889%; /* 85.440 / 94.944 */ position:relative}
+#fiyatlar{--fy-pesin-w:86.227045%; /* 24.792 / 28.752 */ position:relative}
 #fiyatlar .num{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Plan kartları ---------- */
@@ -2428,8 +2428,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     </div>
     <div class="calc-in">
       <span class="stamp calc-k">Beispiel</span>
-      <h3 class="calc-t">Einzelunterricht, 2 Unterrichtseinheiten pro&nbsp;Woche, 12&nbsp;Monate</h3>
-      <p class="calc-s">Insgesamt 96 Unterrichtseinheiten. Für dasselbe Paket stehen zwei Zahlungsarten zur Wahl; den Unterschied sehen Sie unten.</p>
+      <h3 class="calc-t">Einzelunterricht, 1 Unterrichtseinheit pro&nbsp;Woche, 24&nbsp;Wochen</h3>
+      <p class="calc-s">Insgesamt 24 Unterrichtseinheiten. Für dasselbe Paket stehen zwei Zahlungsarten zur Wahl; den Unterschied sehen Sie unten.</p>
       <div class="fy-seg" role="group" aria-label="Zahlungsart" data-state="pesin">
         <span class="fy-thumb" aria-hidden="true"></span>
         <button type="button" data-pay="pesin" aria-pressed="true">Einmalzahlung</button>
@@ -2440,18 +2440,18 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Gesamt</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺85.440</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">eine Zahlung</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">eine Zahlung</span></span></dd>
         </div>
         <div>
           <dt>Pro Unterrichtseinheit</dt>
-          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺890</span></span><span class="cap">bei 96 Unterrichtseinheiten</span></dd>
+          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺1.033</span></span><span class="cap">bei 24 Unterrichtseinheiten</span></dd>
         </div>
       </dl>
-      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">₺9.504 günstiger als Ratenzahlung</span></span></p>
-      <div class="fy-bars" role="img" aria-label="Vergleich: Einmalzahlung insgesamt 85.440 Lira; Ratenzahlung insgesamt 94.944 Lira; Unterschied 9.504 Lira.">
-        <div class="fy-bar is-pesin"><span class="fy-bl">Einmalzahlung</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺85.440</span></div>
-        <div class="fy-bar is-taksit"><span class="fy-bl">Ratenzahlung</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺94.944</span></div>
-        <p class="fy-leg"><i></i><span>Mehrkosten: <span class="num">₺9.504</span></span></p>
+      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">₺3.960 günstiger als Ratenzahlung</span></span></p>
+      <div class="fy-bars" role="img" aria-label="Vergleich: Einmalzahlung insgesamt 24.792 Lira; Ratenzahlung insgesamt 28.752 Lira; Unterschied 3.960 Lira.">
+        <div class="fy-bar is-pesin"><span class="fy-bl">Einmalzahlung</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺24.792</span></div>
+        <div class="fy-bar is-taksit"><span class="fy-bl">Ratenzahlung</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺28.752</span></div>
+        <p class="fy-leg"><i></i><span>Mehrkosten: <span class="num">₺3.960</span></span></p>
       </div>
     </div>
     <p class="sr-only" id="calc-live" aria-live="polite"></p>
@@ -2468,10 +2468,10 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺85.440', sub:'eine Zahlung', per:'₺890', diff:'₺9.504 günstiger als Ratenzahlung',
-              sr:'Einmalzahlung: insgesamt 85.440 Lira, eine Zahlung. 890 Lira pro Unterrichtseinheit. Sie sparen 9.504 Lira gegenüber Ratenzahlung.' },
-    taksit: { total:'₺94.944', sub:'12 × ₺7.912 monatlich', per:'₺989', diff:'Insgesamt etwa 11 % mehr als bei Einmalzahlung',
-              sr:'Ratenzahlung: 12 Monate lang 7.912 Lira monatlich, insgesamt 94.944 Lira. 989 Lira pro Unterrichtseinheit. Insgesamt etwa 11 Prozent mehr als bei Einmalzahlung.' }
+    pesin:  { total:'₺24.792', sub:'eine Zahlung', per:'₺1.033', diff:'₺3.960 günstiger als Ratenzahlung',
+              sr:'Einmalzahlung: insgesamt 24.792 Lira, eine Zahlung. 1.033 Lira pro Unterrichtseinheit. Sie sparen 3.960 Lira gegenüber Ratenzahlung.' },
+    taksit: { total:'₺28.752', sub:'Zahlung in Raten', per:'₺1.198', diff:'Insgesamt etwa 16 % mehr als bei Einmalzahlung',
+              sr:'Ratenzahlung: insgesamt 28.752 Lira. 1.198 Lira pro Unterrichtseinheit. Insgesamt etwa 16 Prozent mehr als bei Einmalzahlung.' }
   };
   var state = 'pesin';
 

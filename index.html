@@ -2172,7 +2172,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 /* ===== Fiyatlar (#fiyatlar) — tüm seçiciler bölüm köküne kapsanmıştır =====
    Renk dozu (sadeleştirme turu): kartlar beyaz + nötr çerçeve; tek vurgu Özel ders (cyan-50).
    Renk yalnızca küçük öğelerde: sınıf figürleri, damga (güneş), çubuklar (cyan / lacivert + mercan fark). */
-#fiyatlar{--fy-pesin-w:89.989889%; /* 85.440 / 94.944 */ position:relative}
+#fiyatlar{--fy-pesin-w:86.227045%; /* 24.792 / 28.752 */ position:relative}
 #fiyatlar .num{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Plan kartları ---------- */
@@ -2439,8 +2439,8 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     </div>
     <div class="calc-in">
       <span class="stamp calc-k">Örnek hesap</span>
-      <h3 class="calc-t">Özel ders, haftada 2 ders, 12 ay</h3>
-      <p class="calc-s">Toplam 96 ders. Aynı paketi iki şekilde ödeyebilirsiniz; farkı aşağıda görün.</p>
+      <h3 class="calc-t">Özel ders, haftada 1 ders, 24 hafta</h3>
+      <p class="calc-s">Toplam 24 ders. Aynı paketi iki şekilde ödeyebilirsiniz; farkı aşağıda görün.</p>
       <div class="fy-seg" role="group" aria-label="Ödeme şekli" data-state="pesin">
         <span class="fy-thumb" aria-hidden="true"></span>
         <button type="button" data-pay="pesin" aria-pressed="true">Peşin</button>
@@ -2451,18 +2451,18 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       <dl class="calc-m">
         <div>
           <dt>Toplam</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺85.440</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">tek ödeme</span></span></dd>
+          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">tek ödeme</span></span></dd>
         </div>
         <div>
           <dt>Ders başı</dt>
-          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺890</span></span><span class="cap">96 ders üzerinden</span></dd>
+          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺1.033</span></span><span class="cap">24 ders üzerinden</span></dd>
         </div>
       </dl>
-      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">Taksitliye göre ₺9.504 tasarruf</span></span></p>
-      <div class="fy-bars" role="img" aria-label="Karşılaştırma: peşin toplam 85.440 TL, taksitli toplam 94.944 TL; fark 9.504 TL.">
-        <div class="fy-bar is-pesin"><span class="fy-bl">Peşin</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺85.440</span></div>
-        <div class="fy-bar is-taksit"><span class="fy-bl">Taksitli</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺94.944</span></div>
-        <p class="fy-leg"><i></i><span>Taksit farkı: <span class="num">₺9.504</span></span></p>
+      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">Taksitliye göre ₺3.960 tasarruf</span></span></p>
+      <div class="fy-bars" role="img" aria-label="Karşılaştırma: peşin toplam 24.792 TL, taksitli toplam 28.752 TL; fark 3.960 TL.">
+        <div class="fy-bar is-pesin"><span class="fy-bl">Peşin</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺24.792</span></div>
+        <div class="fy-bar is-taksit"><span class="fy-bl">Taksitli</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺28.752</span></div>
+        <p class="fy-leg"><i></i><span>Taksit farkı: <span class="num">₺3.960</span></span></p>
       </div>
     </div>
     <p class="sr-only" id="calc-live" aria-live="polite"></p>
@@ -2479,10 +2479,10 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   var EASE = 'cubic-bezier(.2,.8,.2,1)';
   var PAY = {
-    pesin:  { total:'₺85.440', sub:'tek ödeme', per:'₺890', diff:'Taksitliye göre ₺9.504 tasarruf',
-              sr:'Peşin: toplam 85.440 TL, tek ödeme. Ders başı 890 TL. Taksitliye göre 9.504 TL tasarruf.' },
-    taksit: { total:'₺94.944', sub:'12 × ₺7.912 aylık taksit', per:'₺989', diff:'Peşine göre toplam yaklaşık %11 daha yüksek',
-              sr:'Taksitli: 12 ay boyunca aylık 7.912 TL, toplam 94.944 TL. Ders başı 989 TL. Peşine göre toplam yaklaşık yüzde 11 daha yüksek.' }
+    pesin:  { total:'₺24.792', sub:'tek ödeme', per:'₺1.033', diff:'Taksitliye göre ₺3.960 tasarruf',
+              sr:'Peşin: toplam 24.792 TL, tek ödeme. Ders başı 1.033 TL. Taksitliye göre 3.960 TL tasarruf.' },
+    taksit: { total:'₺28.752', sub:'taksitli ödeme', per:'₺1.198', diff:'Peşine göre toplam yaklaşık %16 daha yüksek',
+              sr:'Taksitli: toplam 28.752 TL. Ders başı 1.198 TL. Peşine göre toplam yaklaşık yüzde 16 daha yüksek.' }
   };
   var state = 'pesin';
 
