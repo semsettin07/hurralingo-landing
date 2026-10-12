@@ -25,4 +25,17 @@
   select.addEventListener('change', filter);
   form.addEventListener('reset', () => setTimeout(filter, 0));
   filter();
+  cards.forEach(card => {
+    let timer;
+    const smile = () => {
+      clearTimeout(timer);
+      card.classList.add('is-smiling');
+      timer = setTimeout(() => card.classList.remove('is-smiling'), 1400);
+    };
+    card.addEventListener('pointerdown', smile);
+    card.addEventListener('click', smile);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') smile();
+    });
+  });
 })();

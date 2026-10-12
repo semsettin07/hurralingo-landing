@@ -26,6 +26,11 @@ dili `en` olarak işaretlendi. AZ sayfasının menüleri Azerbaycancadır.
 Kaynak tarihleri ve geçmiş kampanya metinleri korundu. Alternatif alan adından
 içerik alınmadı. Kaynak cevapları ve görsel eşleştirmeleri `docs/blog-source/`
 altında, aktarım raporu `import-report.json` dosyasında tutulur.
+Yazıların altındaki görünür “Kaynak” bağlantıları kaldırıldı; kaynak adresleri
+yalnızca içerik kayıtlarında izlenebilirlik için tutulur. Blog kartları referans
+projedeki gibi sırayla −1,25° / +1,25° eğilir ve gülen maskotu gösterir.
+Klavye odağı ve dokunma da maskotu gösterir; azaltılmış hareket tercihinde
+eğilme ve geçişler kapatılır.
 
 ## İçerik ve üretim
 

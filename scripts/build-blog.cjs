@@ -72,7 +72,7 @@ for(const [lang,l] of Object.entries(locales)) {
   write(route+'index.html',shell(lang,route,l.name,l.intro,content,alternates));
   for(const p of articles) {
     const r=route+p.slug+'/';
-    const body=`<article class="blog-article"><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${p.author?`<span>${esc(p.author)}</span>`:''}</div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><p class="blog-source">${l.source}: <a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${esc(new URL(p.source).hostname)}</a></p><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a></article>`;
+    const body=`<article class="blog-article"><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${p.author?`<span>${esc(p.author)}</span>`:''}</div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a></article>`;
     write(r+'index.html',shell(lang,r,p.title,p.summary,body,{[lang]:r}));
   }
   console.log(lang+': '+articles.length+' articles → '+route);

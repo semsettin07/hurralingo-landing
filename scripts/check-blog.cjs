@@ -38,6 +38,20 @@ const build=()=>execFileSync(process.execPath,[path.join(__dirname,'build-blog.c
     if(width===390){await page.locator('#hd-menu').click();assert.equal(await page.locator('#drawer').isVisible(),true);await page.keyboard.press('Escape');await page.locator('#drawer').waitFor({state:'hidden'});}
     const language=route==='blog/'?'tr':route.split('/')[0];
     assert.equal(await page.locator('[data-post-card]').count(),JSON.parse(original).filter(p=>p.language===language).length);
+    if(width===1440){
+      for(const [index,sign] of [[0,-1],[1,1]]){
+        const card=page.locator('[data-post-card]').nth(index);
+        await card.hover();
+        await page.waitForFunction(i=>getComputedStyle(document.querySelectorAll('[data-post-card]')[i],'::after').opacity==='1',index);
+        await page.waitForFunction(({i,sign})=>{const t=getComputedStyle(document.querySelectorAll('[data-post-card]')[i]).transform;return t!=='none'&&new DOMMatrix(t).b*sign>.02;},{i:index,sign});
+        const mascot=await card.evaluate(c=>getComputedStyle(c,'::after').backgroundImage);
+        assert.ok(mascot.includes('maskot-sevinc.svg'));
+      }
+      await page.emulateMedia({reducedMotion:'reduce'});
+      assert.equal(await page.locator('[data-post-card]').nth(1).evaluate(c=>getComputedStyle(c).transform),'none');
+      await page.emulateMedia({reducedMotion:'no-preference'});
+      await page.mouse.move(0,0);
+    }
   }
   const originals=JSON.parse(original);
   const routeByLanguage={tr:'blog/',en:'en/blog/',de:'de/blog/',az:'az/blog/'};
@@ -47,6 +61,7 @@ const build=()=>execFileSync(process.execPath,[path.join(__dirname,'build-blog.c
       await page.setViewportSize({width,height:900});
       await page.goto(base+routeByLanguage[post.language]+post.slug+'/');
       assert.equal(await page.locator('h1').textContent(),post.title);
+      assert.equal(await page.locator('.blog-source').count(),0);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Article overflow '+post.slug+' '+width);
       assert.equal(await page.locator('.blog-prose').getAttribute('lang'),post.contentLanguage||post.language);
       await page.locator('.blog-prose').scrollIntoViewIfNeeded();
