@@ -1,0 +1,154 @@
+{
+  "origin": "https://3a717d81.hurralingo-landing.pages.dev",
+  "pass": true,
+  "widths": [
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false,
+      "logoLeft": 16,
+      "contentLeft": 16,
+      "barWidth": 273,
+      "logoWidth": 225.5625
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "logoLeft": 16,
+      "contentLeft": 16,
+      "barWidth": 343,
+      "logoWidth": 225.5625
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "logoLeft": 23.03125,
+      "contentLeft": 23.03125,
+      "barWidth": 706.9375,
+      "logoWidth": 284.9375
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "logoLeft": 30.71875,
+      "contentLeft": 30.71875,
+      "barWidth": 947.5625,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/",
+      "width": 1181,
+      "overflow": false,
+      "logoLeft": 35.421875,
+      "contentLeft": 35.421875,
+      "barWidth": 1095.15625,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "overflow": false,
+      "logoLeft": 72.5,
+      "contentLeft": 72.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "logoLeft": 152.5,
+      "contentLeft": 152.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/",
+      "width": 1842,
+      "overflow": false,
+      "logoLeft": 353.5,
+      "contentLeft": 353.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/iletisim/",
+      "width": 320,
+      "overflow": false,
+      "logoLeft": 16,
+      "contentLeft": 16,
+      "barWidth": 273,
+      "logoWidth": 225.5625
+    },
+    {
+      "route": "/iletisim/",
+      "width": 390,
+      "overflow": false,
+      "logoLeft": 16,
+      "contentLeft": 16,
+      "barWidth": 343,
+      "logoWidth": 225.5625
+    },
+    {
+      "route": "/iletisim/",
+      "width": 768,
+      "overflow": false,
+      "logoLeft": 23.03125,
+      "contentLeft": 23.03125,
+      "barWidth": 706.9375,
+      "logoWidth": 284.9375
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1024,
+      "overflow": false,
+      "logoLeft": 30.71875,
+      "contentLeft": 30.71875,
+      "barWidth": 947.5625,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1181,
+      "overflow": false,
+      "logoLeft": 35.421875,
+      "contentLeft": 35.421875,
+      "barWidth": 1095.15625,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1280,
+      "overflow": false,
+      "logoLeft": 72.5,
+      "contentLeft": 72.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1440,
+      "overflow": false,
+      "logoLeft": 152.5,
+      "contentLeft": 152.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1842,
+      "overflow": false,
+      "logoLeft": 353.5,
+      "contentLeft": 353.5,
+      "barWidth": 1120,
+      "logoWidth": 255.25
+    }
+  ],
+  "errors": [],
+  "dropdown": true,
+  "announcement": true,
+  "mobileMenu": true
+}

@@ -1,0 +1,1341 @@
+{
+  "origin": "http://127.0.0.1:8021",
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440,
+    1842
+  ],
+  "responsive": [
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/derslerimiz/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/ucretler/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/referanslarimiz/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/kurumsal/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "width": 1842,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "width": 1842,
+      "overflow": false
+    }
+  ],
+  "pageErrors": [],
+  "failedLocalResponses": [],
+  "brokenImages": [],
+  "redirects": 174,
+  "pricingScenarios": 60,
+  "interactions": [
+    "Original drawer on nine fixed pages; Escape/focus restore/Tab trap/navigation",
+    "38 teachers; Chinese/Turkish/all filters, empty-state and FLIP transitions",
+    "FAQ accordion; existing video dialog opens/closes and restores focus",
+    "Blog search/empty result/reset/category with 34 original articles",
+    "60 calculator browser scenarios and model-card focus transfer",
+    "162 exact redirects, UTM preservation, true 404, preview noindex and no-JavaScript fallback"
+  ],
+  "screenshots": [
+    "docs/phase-1c/screenshots/home-320.png",
+    "docs/phase-1c/screenshots/home-390.png",
+    "docs/phase-1c/screenshots/home-768.png",
+    "docs/phase-1c/screenshots/home-1024.png",
+    "docs/phase-1c/screenshots/home-1440.png",
+    "docs/phase-1c/screenshots/home-1842.png",
+    "docs/phase-1c/screenshots/egitimmodelimiz-390.png",
+    "docs/phase-1c/screenshots/egitimmodelimiz-1440.png",
+    "docs/phase-1c/screenshots/derslerimiz-390.png",
+    "docs/phase-1c/screenshots/derslerimiz-1440.png",
+    "docs/phase-1c/screenshots/ogretmenlerimiz-390.png",
+    "docs/phase-1c/screenshots/ogretmenlerimiz-1440.png",
+    "docs/phase-1c/screenshots/referanslarimiz-390.png",
+    "docs/phase-1c/screenshots/referanslarimiz-1440.png",
+    "docs/phase-1c/screenshots/kurumsal-390.png",
+    "docs/phase-1c/screenshots/kurumsal-1440.png",
+    "docs/phase-1c/screenshots/iletisim-390.png",
+    "docs/phase-1c/screenshots/iletisim-1440.png",
+    "docs/phase-1c/screenshots/blog-390.png",
+    "docs/phase-1c/screenshots/blog-1440.png",
+    "docs/phase-1c/screenshots/ucretler-390.png",
+    "docs/phase-1c/screenshots/ucretler-1440.png"
+  ],
+  "pass": true
+}

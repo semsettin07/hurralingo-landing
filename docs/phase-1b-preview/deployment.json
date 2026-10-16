@@ -1,0 +1,16 @@
+{
+  "id": "8817544b-1535-44a8-b2dc-190bd8ec944e",
+  "url": "https://8817544b.hurralingo-landing.pages.dev",
+  "environment": "preview",
+  "branch": "phase-1b-tr-multipage",
+  "commit": "cef3f83d2b72123da5c8561d667a3fa29eb5e3b9",
+  "stage": {
+    "name": "deploy",
+    "started_on": null,
+    "ended_on": "2026-10-16T08:35:12.803139Z",
+    "status": "success"
+  },
+  "aliases": [
+    "https://phase-1b-tr-multipage.hurralingo-landing.pages.dev"
+  ]
+}

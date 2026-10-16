@@ -1,0 +1,31 @@
+{
+  "releaseAllowed": true,
+  "blocking": [],
+  "nonblocking": [
+    {
+      "id": "foreign-seo",
+      "detail": "EN/DE/AZ existing pages.dev canonicals and noindex preserved exactly, per scope."
+    },
+    {
+      "id": "social-access",
+      "detail": "Facebook returned HTTP 400 and LinkedIn HTTP 999 to automated requests. Manual verification required; URLs retained."
+    }
+  ],
+  "production": {
+    "id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+    "url": "https://b61b1c9e.hurralingo-landing.pages.dev",
+    "source": "4750cad420a3d4215a3035c78aa4e2539857a033"
+  },
+  "userScopeUpdate": "User approved only Privacy Policy and Terms and Conditions for now and supplied both original PDFs. No fabricated legal text or placeholder legal headings.",
+  "acceptedUnverifiedItems": [
+    {
+      "id": "campaign",
+      "detail": "Existing media promises 10% discount and free AI access until year end; applicable year and current conditions unconfirmed."
+    },
+    {
+      "id": "award",
+      "detail": "Company primary source specifies Kids Judge Bett – Best Language App, 2026. Organizer confirms event and publishes winners in a carousel; winner-specific organizer record not yet verified. Existing banner retained verbatim."
+    }
+  ],
+  "releaseAuthorization": "User explicitly instructed updating production and main after prior blocker reports. Existing award/campaign content retained; source/date verification remains open."
+}

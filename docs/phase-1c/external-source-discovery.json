@@ -1,0 +1,727 @@
+[
+  {
+    "url": "https://www.hurralingo.app/login?lng=tr",
+    "status": 200,
+    "links": [
+      {
+        "text": "+90 539 516 70 70",
+        "href": "https://api.whatsapp.com/send/?phone=9005395167070&text&app_absent=0"
+      },
+      {
+        "text": "Kayit",
+        "href": "https://www.hurralingo.app/signup?lng=tr"
+      },
+      {
+        "text": "Giriş",
+        "href": "https://www.hurralingo.app/login?lng=tr"
+      },
+      {
+        "text": "Eğitim Paketlerimiz",
+        "href": "https://www.hurralingo.app/egitim-paketleri?lng=tr"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/channel/UCt9VfiDPvvV6vK3jotVbdcg"
+      },
+      {
+        "text": "Türkçe",
+        "href": "https://www.hurralingo.app/login?lng=tr#"
+      },
+      {
+        "text": "Türkçe",
+        "href": "https://www.hurralingo.app/ch?lng=tr"
+      },
+      {
+        "text": "Azərbaycan Dili",
+        "href": "https://www.hurralingo.app/ch?lng=az"
+      },
+      {
+        "text": "English",
+        "href": "https://www.hurralingo.app/ch?lng=en"
+      },
+      {
+        "text": "Deutsch",
+        "href": "https://www.hurralingo.app/ch?lng=de"
+      },
+      {
+        "text": "Français",
+        "href": "https://www.hurralingo.app/ch?lng=fr"
+      },
+      {
+        "text": "Español",
+        "href": "https://www.hurralingo.app/ch?lng=es"
+      },
+      {
+        "text": "عربي",
+        "href": "https://www.hurralingo.app/ch?lng=ar"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurralingo.com/"
+      },
+      {
+        "text": "Hemen Kaydolun",
+        "href": "https://www.hurralingo.app/signup?lng=tr"
+      },
+      {
+        "text": "Parolanızı mı unuttunuz?",
+        "href": "https://www.hurralingo.app/hatirlat?lng=tr"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurraturkiye.com/"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurralingo.com/"
+      },
+      {
+        "text": "+90 539 516 70 70",
+        "href": "https://api.whatsapp.com/send/?phone=9005395167070&text&app_absent=0"
+      },
+      {
+        "text": "hello@hurralingo.com",
+        "href": "mailto:hello@hurralingo.com"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/channel/UCt9VfiDPvvV6vK3jotVbdcg"
+      },
+      {
+        "text": "",
+        "href": "https://twitter.com/turkiyehurra"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/company/hurraglobal"
+      },
+      {
+        "text": "Koşulları ve Şartları okudum, kabul ediyorum.",
+        "href": "https://www.hurralingo.app/img/Hurra_Lingo_Terms_and_Conditions_tr.pdf"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.hurralingo.app/img/Hurra_Lingo_privacy_tr.pdf"
+      },
+      {
+        "text": "ICO Data Protection Registration Certificate",
+        "href": "https://www.hurralingo.app/img/ICO_Registration_Certificate_ZB490029.pdf"
+      },
+      {
+        "text": "© 2026 Hurra Lingo",
+        "href": "https://www.hurralingo.app/"
+      }
+    ],
+    "legalText": [
+      "Koşulları ve Şartları okudum, kabul ediyorum.",
+      "Privacy Policy"
+    ]
+  },
+  {
+    "url": "https://www.hurralingo.app/trial-request",
+    "status": 200,
+    "links": [
+      {
+        "text": "+90 539 516 70 70",
+        "href": "https://api.whatsapp.com/send/?phone=9005395167070&text&app_absent=0"
+      },
+      {
+        "text": "Kayit",
+        "href": "https://www.hurralingo.app/signup?lng=tr"
+      },
+      {
+        "text": "Giriş",
+        "href": "https://www.hurralingo.app/login?lng=tr"
+      },
+      {
+        "text": "Eğitim Paketlerimiz",
+        "href": "https://www.hurralingo.app/egitim-paketleri?lng=tr"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/channel/UCt9VfiDPvvV6vK3jotVbdcg"
+      },
+      {
+        "text": "Türkçe",
+        "href": "https://www.hurralingo.app/trial-request#"
+      },
+      {
+        "text": "Türkçe",
+        "href": "https://www.hurralingo.app/ch?lng=tr"
+      },
+      {
+        "text": "Azərbaycan Dili",
+        "href": "https://www.hurralingo.app/ch?lng=az"
+      },
+      {
+        "text": "English",
+        "href": "https://www.hurralingo.app/ch?lng=en"
+      },
+      {
+        "text": "Deutsch",
+        "href": "https://www.hurralingo.app/ch?lng=de"
+      },
+      {
+        "text": "Français",
+        "href": "https://www.hurralingo.app/ch?lng=fr"
+      },
+      {
+        "text": "Español",
+        "href": "https://www.hurralingo.app/ch?lng=es"
+      },
+      {
+        "text": "عربي",
+        "href": "https://www.hurralingo.app/ch?lng=ar"
+      },
+      {
+        "text": "Dersi hemen planlamak ister misiniz?",
+        "href": "https://www.hurralingo.app/trial-planning"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurraturkiye.com/"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurralingo.com/"
+      },
+      {
+        "text": "+90 539 516 70 70",
+        "href": "https://api.whatsapp.com/send/?phone=9005395167070&text&app_absent=0"
+      },
+      {
+        "text": "hello@hurralingo.com",
+        "href": "mailto:hello@hurralingo.com"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/channel/UCt9VfiDPvvV6vK3jotVbdcg"
+      },
+      {
+        "text": "",
+        "href": "https://twitter.com/turkiyehurra"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/company/hurraglobal"
+      },
+      {
+        "text": "Koşulları ve Şartları okudum, kabul ediyorum.",
+        "href": "https://www.hurralingo.app/img/Hurra_Lingo_Terms_and_Conditions_tr.pdf"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.hurralingo.app/img/Hurra_Lingo_privacy_tr.pdf"
+      },
+      {
+        "text": "ICO Data Protection Registration Certificate",
+        "href": "https://www.hurralingo.app/img/ICO_Registration_Certificate_ZB490029.pdf"
+      },
+      {
+        "text": "© 2026 Hurra Lingo",
+        "href": "https://www.hurralingo.app/"
+      }
+    ],
+    "legalText": [
+      "Koşulları ve Şartları okudum, kabul ediyorum.",
+      "Privacy Policy"
+    ]
+  },
+  {
+    "url": "https://hurraegitim.com/tr/",
+    "status": 200,
+    "links": [
+      {
+        "text": "+90 539 516 70 70",
+        "href": "tel:tel: +90 539 516 70 70"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/@hurralingo1796"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/company/hurraglobal"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/"
+      },
+      {
+        "text": "Eğitim",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "Dersler",
+        "href": "https://hurraegitim.com/tr/derslerimiz/"
+      },
+      {
+        "text": "Öğretmenler",
+        "href": "https://hurraegitim.com/tr/ogretmenlerimiz/"
+      },
+      {
+        "text": "Blog",
+        "href": "https://hurraegitim.com/tr/blog/"
+      },
+      {
+        "text": "Ücretler",
+        "href": "https://hurraegitim.com/tr/ucretler/"
+      },
+      {
+        "text": "Referanslar",
+        "href": "https://hurraegitim.com/tr/referanslarimiz/"
+      },
+      {
+        "text": "Kurumsal",
+        "href": "https://hurraegitim.com/tr/kurumsal/"
+      },
+      {
+        "text": "Sertifikasyon",
+        "href": "https://hurraegitim.com/tr/takipvesertifikasyon/"
+      },
+      {
+        "text": "S.S.S",
+        "href": "https://hurraegitim.com/tr/sikcasorulansorular/"
+      },
+      {
+        "text": "İletişim",
+        "href": "https://hurraegitim.com/tr/iletisim/"
+      },
+      {
+        "text": "Kayıt",
+        "href": "https://www.hurralingo.app/signup?lng=tr"
+      },
+      {
+        "text": "Giriş",
+        "href": "https://www.hurralingo.app/login?lng=tr"
+      },
+      {
+        "text": "TR",
+        "href": "https://hurraegitim.com/tr"
+      },
+      {
+        "text": "TR",
+        "href": "https://hurraegitim.com/tr"
+      },
+      {
+        "text": "EN",
+        "href": "https://hurraegitim.com/"
+      },
+      {
+        "text": "DE",
+        "href": "https://hurraegitim.com/de/"
+      },
+      {
+        "text": "AZ",
+        "href": "https://hurraegitim.com/az/"
+      },
+      {
+        "text": ".",
+        "href": "https://wa.me/905395167070"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/de"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/az"
+      },
+      {
+        "text": "",
+        "href": "https://www.hurralingo.app/trial-request"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/ucretler/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2026/09/Polis-Teskilati-Tanitim-PDF-scaled.jpg"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/egitimmodelimiz/"
+      },
+      {
+        "text": "Ücretsiz Deneyin",
+        "href": "https://www.hurralingo.app/trial-request"
+      },
+      {
+        "text": "Başlangıç Düzeyi Ön A1",
+        "href": ""
+      },
+      {
+        "text": "Temel Düzey A1",
+        "href": ""
+      },
+      {
+        "text": "Temel Düzey A2",
+        "href": ""
+      },
+      {
+        "text": "Orta Düzey B1",
+        "href": ""
+      },
+      {
+        "text": "Orta Düzey B2",
+        "href": ""
+      },
+      {
+        "text": "İleri Düzey C1",
+        "href": ""
+      },
+      {
+        "text": "",
+        "href": "https://www.youtube.com/watch?v=vxULU51Vj_8"
+      },
+      {
+        "text": "Ücretsiz Deneyin",
+        "href": "https://www.hurralingo.app/trial-request"
+      },
+      {
+        "text": "Adeniyi Peace",
+        "href": "https://hurraegitim.com/ogretmenlerimiz/"
+      },
+      {
+        "text": "Büşra Ağca",
+        "href": "https://hurraegitim.com/ogretmenlerimiz/"
+      },
+      {
+        "text": "Sibel Bulut",
+        "href": "https://hurraegitim.com/ogretmenlerimiz/"
+      },
+      {
+        "text": "Öğretmenlerimizle Tanışın",
+        "href": "https://hurraegitim.com/tr/ogretmenlerimiz/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramı ve Dil Öğrenmenin Önemi",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Eğitimin Kalbindeki İlk Durak: Bir Anne Bir Öğretmen ✨",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "6 Ayda Yeni Bir Dil: Bir Serüvenin Anatomisi",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "Karne Sonrası Online Dil Kursu: Çocuklar İçin Yabancı Dil Öğrenme Rehberi",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "Yoğun Tempoda Yabancı Dil Öğrenme için 5 Adım",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "Kurban Bayramı Tatilinde Çocukların İngilizce Gelişimi Nasıl Desteklenebilir?",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramı ve Dil Öğrenmenin Önemi",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Eğitimin Kalbindeki İlk Durak: Bir Anne Bir Öğretmen ✨",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "6 Ayda Yeni Bir Dil: Bir Serüvenin Anatomisi",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "Karne Sonrası Online Dil Kursu: Çocuklar İçin Yabancı Dil Öğrenme Rehberi",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "Yoğun Tempoda Yabancı Dil Öğrenme için 5 Adım",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "Kurban Bayramı Tatilinde Çocukların İngilizce Gelişimi Nasıl Desteklenebilir?",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramı ve Dil Öğrenmenin Önemi",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Eğitimin Kalbindeki İlk Durak: Bir Anne Bir Öğretmen ✨",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "6 Ayda Yeni Bir Dil: Bir Serüvenin Anatomisi",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "Tıklayınız",
+        "href": "https://hurraegitim.com/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/"
+      },
+      {
+        "text": "+",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2020/08/Basliksiz-2-04.jpg"
+      },
+      {
+        "text": "+",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2020/08/Basliksiz-2-03.jpg"
+      },
+      {
+        "text": "+",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2020/08/Basliksiz-2-02.jpg"
+      },
+      {
+        "text": "+",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2020/08/Basliksiz-2-01.jpg"
+      },
+      {
+        "text": "ÜCRETSİZ TANIŞMA DERSİ",
+        "href": "https://www.hurralingo.app/trial-request"
+      },
+      {
+        "text": "www.hurraturkiye.com |",
+        "href": "http://www.hurraturkiye.com/"
+      },
+      {
+        "text": "www.hurralingo.com |",
+        "href": "http://www.hurralingo.com/"
+      },
+      {
+        "text": "www.hurralingo.app",
+        "href": "https://www.hurralingo.app/"
+      },
+      {
+        "text": "Şartlar ve Koşullar",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2026/06/Hurra_Lingo_Terms_and_Conditions_tr-1.pdf"
+      },
+      {
+        "text": "Gizlilik Politikası",
+        "href": "https://hurraegitim.com/tr/wp-content/uploads/2026/06/Hurra_Lingo_privacy_tr-1.pdf"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/HurraLingo/"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/HurraLingo/"
+      },
+      {
+        "text": "Youtube",
+        "href": "https://www.youtube.com/@hurralingo1796"
+      },
+      {
+        "text": "Tiktok",
+        "href": "https://www.tiktok.com/@hurra_lingo"
+      },
+      {
+        "text": "Linkedin",
+        "href": "https://www.linkedin.com/company/hurraglobal"
+      },
+      {
+        "text": "",
+        "href": "https://hurraegitim.com/tr/#"
+      }
+    ],
+    "legalText": [
+      "Şartlar ve Koşullar | Gizlilik Politikası"
+    ]
+  }
+]

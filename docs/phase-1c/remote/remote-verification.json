@@ -1,0 +1,1435 @@
+{
+  "origin": "https://a9226113.hurralingo-landing.pages.dev",
+  "transport": "Chromium",
+  "canonical": [
+    {
+      "route": "/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/egitimmodelimiz/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/derslerimiz/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/ogretmenlerimiz/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/ucretler/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/referanslarimiz/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/kurumsal/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/iletisim/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/almanca-ogrenmek-neden-onemli/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/evde-pratik-ingilizce/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/online-dil-dersleri/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    },
+    {
+      "route": "/blog/dil-egitiminde-film-ve-dizi/",
+      "status": 200,
+      "noindex": true,
+      "headerNoindex": true
+    }
+  ],
+  "foreign": [
+    {
+      "route": "/en/",
+      "language": "en",
+      "status": 200
+    },
+    {
+      "route": "/de/",
+      "language": "de",
+      "status": 200
+    },
+    {
+      "route": "/az/",
+      "language": "az",
+      "status": 200
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/tr/",
+      "to": "/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/egitimmodelimiz/",
+      "to": "/egitimmodelimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/derslerimiz/",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ogretmenlerimiz/",
+      "to": "/ogretmenlerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ucretler/",
+      "to": "/ucretler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/referanslarimiz/",
+      "to": "/referanslarimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/kurumsal/",
+      "to": "/kurumsal/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/iletisim/",
+      "to": "/iletisim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/takipvesertifikasyon/",
+      "to": "/egitimmodelimiz/#sertifikasyon",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/sikcasorulansorular/",
+      "to": "/egitimmodelimiz/#sss",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/icerik-ornekleri/",
+      "to": "/egitimmodelimiz/#icerik-ornekleri",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-4-columns/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-right-sidebar/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-sdb/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/bireysel-derslerimiz/",
+      "to": "/derslerimiz/#bire-bir",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/mini-grup-derslerimiz/",
+      "to": "/derslerimiz/#mini-grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/grup-derslerimiz/",
+      "to": "/derslerimiz/#grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "to": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "to": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/04/22/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "to": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/03/30/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "to": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/29/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "to": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/09/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "to": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri/",
+      "to": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/19/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "to": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/05/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "to": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli/",
+      "to": "/blog/almanca-ogrenmek-neden-onemli/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/06/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "to": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%f0%9f%87%b9%f0%9f%87%b7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/17/cocuklar-icin-rusca/",
+      "to": "/blog/cocuklar-icin-rusca/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/08/evde-pratik-ingilizce/",
+      "to": "/blog/evde-pratik-ingilizce/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/29/online-dil-dersleri/",
+      "to": "/blog/online-dil-dersleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi/",
+      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun/",
+      "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitimi-teorileri/",
+      "to": "/blog/dil-egitimi-teorileri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef/",
+      "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/yaz-tatilinde-online-yabanci-dil/",
+      "to": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/",
+      "to": "/blog/dil-egitiminde-film-ve-dizi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-✨/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/🇹🇷-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr",
+      "to": "/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/index.html",
+      "to": "/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/egitimmodelimiz",
+      "to": "/egitimmodelimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/egitimmodelimiz/index.html",
+      "to": "/egitimmodelimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/derslerimiz",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/derslerimiz/index.html",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ogretmenlerimiz",
+      "to": "/ogretmenlerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ogretmenlerimiz/index.html",
+      "to": "/ogretmenlerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ucretler",
+      "to": "/ucretler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/ucretler/index.html",
+      "to": "/ucretler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/referanslarimiz",
+      "to": "/referanslarimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/referanslarimiz/index.html",
+      "to": "/referanslarimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/kurumsal",
+      "to": "/kurumsal/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/kurumsal/index.html",
+      "to": "/kurumsal/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/iletisim",
+      "to": "/iletisim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/iletisim/index.html",
+      "to": "/iletisim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/takipvesertifikasyon",
+      "to": "/egitimmodelimiz/#sertifikasyon",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/takipvesertifikasyon/index.html",
+      "to": "/egitimmodelimiz/#sertifikasyon",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/sikcasorulansorular",
+      "to": "/egitimmodelimiz/#sss",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/sikcasorulansorular/index.html",
+      "to": "/egitimmodelimiz/#sss",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/icerik-ornekleri",
+      "to": "/egitimmodelimiz/#icerik-ornekleri",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/icerik-ornekleri/index.html",
+      "to": "/egitimmodelimiz/#icerik-ornekleri",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-4-columns",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-4-columns/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-right-sidebar",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-right-sidebar/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-sdb",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-sdb/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/index.html",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/bireysel-derslerimiz",
+      "to": "/derslerimiz/#bire-bir",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/bireysel-derslerimiz/index.html",
+      "to": "/derslerimiz/#bire-bir",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/mini-grup-derslerimiz",
+      "to": "/derslerimiz/#mini-grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/mini-grup-derslerimiz/index.html",
+      "to": "/derslerimiz/#mini-grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/grup-derslerimiz",
+      "to": "/derslerimiz/#grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/classes/grup-derslerimiz/index.html",
+      "to": "/derslerimiz/#grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi",
+      "to": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/index.html",
+      "to": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim",
+      "to": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/index.html",
+      "to": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir",
+      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/index.html",
+      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi",
+      "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/index.html",
+      "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi",
+      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/index.html",
+      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/04/22/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu",
+      "to": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/04/22/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/index.html",
+      "to": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/03/30/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var",
+      "to": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/03/30/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/index.html",
+      "to": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil",
+      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/index.html",
+      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu",
+      "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/index.html",
+      "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi",
+      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/index.html",
+      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/29/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir",
+      "to": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/29/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/index.html",
+      "to": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler",
+      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/index.html",
+      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin",
+      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/index.html",
+      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/09/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur",
+      "to": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/09/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/index.html",
+      "to": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar",
+      "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/index.html",
+      "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri",
+      "to": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri/index.html",
+      "to": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/19/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu",
+      "to": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/19/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/index.html",
+      "to": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem",
+      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/index.html",
+      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/05/dijital-cag-cocuklarinin-yabanci-dil-konforu",
+      "to": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/05/dijital-cag-cocuklarinin-yabanci-dil-konforu/index.html",
+      "to": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli",
+      "to": "/blog/almanca-ogrenmek-neden-onemli/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli/index.html",
+      "to": "/blog/almanca-ogrenmek-neden-onemli/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/06/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari",
+      "to": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/11/06/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/index.html",
+      "to": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%f0%9f%87%b9%f0%9f%87%b7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%f0%9f%87%b9%f0%9f%87%b7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler",
+      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/index.html",
+      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/17/cocuklar-icin-rusca",
+      "to": "/blog/cocuklar-icin-rusca/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/17/cocuklar-icin-rusca/index.html",
+      "to": "/blog/cocuklar-icin-rusca/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/08/evde-pratik-ingilizce",
+      "to": "/blog/evde-pratik-ingilizce/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/08/evde-pratik-ingilizce/index.html",
+      "to": "/blog/evde-pratik-ingilizce/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/29/online-dil-dersleri",
+      "to": "/blog/online-dil-dersleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/29/online-dil-dersleri/index.html",
+      "to": "/blog/online-dil-dersleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi",
+      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi/index.html",
+      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi",
+      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi/index.html",
+      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun",
+      "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun/index.html",
+      "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitimi-teorileri",
+      "to": "/blog/dil-egitimi-teorileri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitimi-teorileri/index.html",
+      "to": "/blog/dil-egitimi-teorileri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef",
+      "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef/index.html",
+      "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/yaz-tatilinde-online-yabanci-dil",
+      "to": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/yaz-tatilinde-online-yabanci-dil/index.html",
+      "to": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi",
+      "to": "/blog/dil-egitiminde-film-ve-dizi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/index.html",
+      "to": "/blog/dil-egitiminde-film-ve-dizi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-✨",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-✨/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/🇹🇷-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/🇹🇷-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-phase1c-fallback-check/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-phase1c-fallback-check",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-phase1c-fallback-check/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/phase1c-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/phase1c-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/phase1c-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1842,
+      "overflow": false
+    }
+  ],
+  "pricingScenarios": 60,
+  "teacherFilters": [
+    {
+      "language": "İngilizce",
+      "count": 28
+    },
+    {
+      "language": "Almanca",
+      "count": 5
+    },
+    {
+      "language": "Fransızca",
+      "count": 1
+    },
+    {
+      "language": "İspanyolca",
+      "count": 2
+    },
+    {
+      "language": "Rusça",
+      "count": 1
+    },
+    {
+      "language": "Çince",
+      "count": 1
+    },
+    {
+      "language": "Türkçe",
+      "count": 0
+    },
+    {
+      "language": "all",
+      "count": 38
+    }
+  ],
+  "blogSearch": true,
+  "mobileMenu": true,
+  "pageErrors": [],
+  "failedLocalResponses": [],
+  "networkRetries": [],
+  "pass": true,
+  "robotsBlocked": true,
+  "sitemapUrls": 43,
+  "explicitRedirects": 174,
+  "helperRedirects": 6,
+  "unknown404": true
+}

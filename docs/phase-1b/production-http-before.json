@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "final": "https://www.hurralingo.com/",
+    "sha256": "1d5a9ef5ca2dec39b366d91ba262d037314771fb5b9b946d99e4898e7a8510ce",
+    "robots": null
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "final": "https://www.hurralingo.com/robots.txt",
+    "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+    "robots": null
+  },
+  {
+    "path": "/en/",
+    "status": 200,
+    "final": "https://www.hurralingo.com/en",
+    "sha256": "84b455ef7cbab075ae244dbcc40bb505881296206f94bf8e7ea05a006810df39",
+    "robots": null
+  },
+  {
+    "path": "/de/",
+    "status": 200,
+    "final": "https://www.hurralingo.com/de",
+    "sha256": "3833f466277373fa7d4b8bb17c1d79cf28f5df1d378239896ac6224bd9aa0a63",
+    "robots": null
+  },
+  {
+    "path": "/az/",
+    "status": 200,
+    "final": "https://www.hurralingo.com/az",
+    "sha256": "69b1cab233a0be99c22e4548093707ce4e301614817cbdb922eff192595275fe",
+    "robots": null
+  }
+]

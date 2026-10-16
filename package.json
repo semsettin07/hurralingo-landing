@@ -2,6 +2,11 @@
   "name": "hurralingo-landing",
   "private": true,
   "scripts": {
+    "site:build": "node scripts/build-site-tr.cjs",
+    "site:check": "node scripts/check-site-tr.cjs",
+    "site:browser": "node scripts/check-site-browser-tr.cjs",
+    "site:package-preview": "node scripts/package-preview.cjs",
+    "site:package-production": "node scripts/package-production.cjs",
     "blog:import": "node scripts/import-blog.cjs",
     "blog:build": "node scripts/build-blog.cjs",
     "blog:check": "node scripts/check-blog.cjs",

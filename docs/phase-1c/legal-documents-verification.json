@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "scope": "Only the two user-approved documents",
+  "pages": 43,
+  "documents": [
+    {
+      "url": "/wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf",
+      "bytes": 488440,
+      "sha256": "7cd75abb757cfee3026438a4c59d396e1a424935354a0be6a75546047ae99015",
+      "matchesUserAttachment": true
+    },
+    {
+      "url": "/wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf",
+      "bytes": 459790,
+      "sha256": "2cdb478235faf7313b48ee856cbd7c700e69eaee927126de39de1208f34d2e35",
+      "matchesUserAttachment": true
+    }
+  ],
+  "oldLiveUrls": "HTTP 200 text/html instead of PDF; no live change made",
+  "productionDeployed": false
+}

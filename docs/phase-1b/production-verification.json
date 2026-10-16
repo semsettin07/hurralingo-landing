@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "deploymentId": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+  "productionBranch": "main",
+  "source": "4750cad",
+  "canonicalAndRobotsAndMainUnchanged": [
+    {
+      "route": "/",
+      "status": 200,
+      "originalContentMatches": true
+    },
+    {
+      "route": "/en/",
+      "status": 200,
+      "originalContentMatches": true
+    },
+    {
+      "route": "/de/",
+      "status": 200,
+      "originalContentMatches": true
+    },
+    {
+      "route": "/az/",
+      "status": 200,
+      "originalContentMatches": true
+    }
+  ],
+  "robotsBodyUnchanged": true,
+  "note": "Cloudflare email obfuscation generates per-response data-cfemail values; these are decoded for semantic comparison. Raw HTML hashes are not stable."
+}

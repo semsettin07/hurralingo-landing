@@ -1,0 +1,49 @@
+{
+  "pass": true,
+  "productionCandidateOnly": true,
+  "sourceSeoUnchanged": true,
+  "canonicalPages": 43,
+  "sitemapPages": 43,
+  "preview": {
+    "meta": "noindex, nofollow",
+    "header": "noindex, nofollow",
+    "robots": "Disallow: /"
+  },
+  "production": {
+    "meta": "index, follow",
+    "header": "No global X-Robots-Tag; 404 remains noindex",
+    "robots": "Allow: /"
+  },
+  "foreign": [
+    {
+      "file": "en.html",
+      "canonical": "https://hurralingo-landing.pages.dev/en.html",
+      "robots": "noindex, nofollow",
+      "byteIdentical": true
+    },
+    {
+      "file": "de.html",
+      "canonical": "https://hurralingo-landing.pages.dev/de.html",
+      "robots": "noindex, nofollow",
+      "byteIdentical": true
+    },
+    {
+      "file": "az.html",
+      "canonical": "https://hurralingo-landing.pages.dev/az.html",
+      "robots": "noindex, nofollow",
+      "byteIdentical": true
+    }
+  ],
+  "releaseBlocked": false,
+  "blockers": [],
+  "acceptedUnverifiedItems": [
+    {
+      "id": "campaign",
+      "detail": "Existing media promises 10% discount and free AI access until year end; applicable year and current conditions unconfirmed."
+    },
+    {
+      "id": "award",
+      "detail": "Company primary source specifies Kids Judge Bett – Best Language App, 2026. Organizer confirms event and publishes winners in a carousel; winner-specific organizer record not yet verified. Existing banner retained verbatim."
+    }
+  ]
+}
