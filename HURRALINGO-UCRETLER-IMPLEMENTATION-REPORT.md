@@ -63,7 +63,7 @@ Referans [Hurra Türkiye canlı ücretler sayfası](https://www.hurraturkiye.com
 
 Üç ders modeli kartı, genel düzen ve “Ders başı fiyatı baştan görün” başlığı korundu. 446 / 623 / 890 TL başlangıçları Excel'deki Türk öğretmen, yıllık peşin ders ücretleriyle eşleşir. Kartlara bu koşul ve KDV hariç bilgisi eklendi; üstteki kısa fiyat tanıtımının koşulu da açıklandı.
 
-Eski 24.792 / 28.752 TL örneği ve JavaScript'i kaldırıldı. Yerine `/ucretler/` bağlantılı **Ders Ücretinizi Hesaplayın** CTA'sı eklendi. Açıklama istenen metinle değiştirildi. Masaüstü / mobil menü ve footer'daki Fiyatlar bağlantıları yeni sayfaya gider. Ana sayfadaki bölüm tanıtım bağlantısı `#fiyatlar` olarak korundu. Türkçe blog sayfaları da aynı yeni fiyat bağlantısını kullanır.
+Eski 24.792 / 28.752 TL örneği ve JavaScript'i kaldırıldı. Yerine `/ucretler/` bağlantılı **Ders Ücretinizi Hesaplayın** CTA'sı eklendi. Açıklama istenen metinle değiştirildi. Kullanıcının son yönlendirmesiyle ana sayfanın masaüstü / mobil menüsündeki Fiyatlar bağlantıları `#fiyatlar` bölümüne gider; kullanıcı bu bölümdeki CTA ile ücretler sayfasına geçer. Ana sayfa dışındaki Türkçe sayfaların masaüstü / mobil menüleri doğrudan `/ucretler/` adresine gider. Footer'daki doğrudan ücretler bağlantısı ve ana sayfadaki `#fiyatlar` bölüm tanıtım bağlantısı korundu. Sayfa üreticileri de bu ayrımı koruyacak şekilde güncellendi.
 
 ## 5. Hesaplayıcı özellikleri
 

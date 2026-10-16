@@ -26,7 +26,7 @@ const styles=[...home.matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m=>m[1]).join
 let header=home.slice(home.indexOf('<div class="announce"'),home.indexOf('<!-- SECTION 02-hero:'));
 let footer=home.match(/<footer class="footer">[\s\S]*?<\/footer>/)[0];
 function rewrite(s) {return s.replace(/(src|poster|href)="((?:img|media)\/[^"#]+)"/g,'$1="/$2"')
-  .replace(/href="#(top|programlar|ogretmenler|fiyatlar|sorular|kurumlar|sss)"/g,(_,id)=>`href="/${id==='top'?'':'#'+id}"`)
+  .replace(/href="#(top|programlar|ogretmenler|fiyatlar|sorular|kurumlar|sss)"/g,(_,id)=>id==='fiyatlar'?'href="/ucretler/"':`href="/${id==='top'?'':'#'+id}"`)
   .replace(/href="blog\/"/g,'href="/blog/"').replace(/ data-spy/g,'')
   .replace(/href="\/ucretler\/"/g,'href="/ucretler/" aria-current="page"');}
 header=rewrite(header);footer=rewrite(footer);

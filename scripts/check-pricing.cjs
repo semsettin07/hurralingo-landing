@@ -41,7 +41,8 @@ for(const change of [{model:'invalid'},{teacher:'unknown'},{membership:'ten'},{f
 assert.equal(api.round(549.5),550);assert.equal(api.round(697.5),698);assert.equal(api.round(-1.5),-2);
 const home=fs.readFileSync('index.html','utf8'),page=fs.readFileSync('ucretler/index.html','utf8'),$=cheerio.load(page),h=cheerio.load(home);
 assert.equal(h('#fiyatlar .plan').length,3);assert.ok(h('#fiyatlar a[href="/ucretler/"]').text().includes('Ders Ücretinizi Hesaplayın'));
-assert.equal(h('.header a[href="/ucretler/"]').length,1);assert.equal(h('#drawer a[href="/ucretler/"]').length,1);assert.equal(h('footer a[href="/ucretler/"]').length,1);
+assert.equal(h('.header a[href="#fiyatlar"]').length,1);assert.equal(h('#drawer a[href="#fiyatlar"]').length,1);assert.equal(h('footer a[href="/ucretler/"]').length,1);
+assert.equal($('.header a[href="/ucretler/"]').length,1);assert.equal($('#drawer a[href="/ucretler/"]').length,1);
 assert.equal(h('#fiyatlar [data-pay]').length,0);assert.ok(!home.includes('24.792'));assert.ok(!home.includes('28.752'));
 assert.equal($('h1').text(),'Hurra Lingo Ders Ücretleri');assert.equal($('.fee-model').length,3);assert.equal($('.fee-cta a').attr('target'),'_blank');
 for(const file of ['en.html','de.html','az.html'])assert.equal(fs.readFileSync(file,'utf8'),execFileSync('git',['show','HEAD:'+file],{encoding:'utf8',maxBuffer:2e6}),file+' unchanged');

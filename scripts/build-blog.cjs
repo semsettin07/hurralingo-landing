@@ -51,7 +51,7 @@ function shell(lang, route, title, description, content, alternateRoutes) {
   let header=home.slice(home.indexOf('<div class="announce"'),home.indexOf('<!-- SECTION 02-hero:'));
   let footer=home.match(/<footer class="footer">[\s\S]*?<\/footer>/)[0];
   const rewrite=s=>s.replace(/(src|poster|href)="(img\/[^"#]+|media\/[^"#]+)"/g,(_,a,b)=>`${a}="${relative(route,b)}"`)
-    .replace(/href="#(top|programlar|ogretmenler|fiyatlar|sorular|kurumlar|sss)"/g,(_,id)=>`href="${relative(route,l.home)}${id==='top'?'':'#'+id}"`)
+    .replace(/href="#(top|programlar|ogretmenler|fiyatlar|sorular|kurumlar|sss)"/g,(_,id)=>lang==='tr'&&id==='fiyatlar'?'href="/ucretler/"':`href="${relative(route,l.home)}${id==='top'?'':'#'+id}"`)
     .replace(/href="\/(?:en\.html|de\.html|az\.html)?"(?= lang=)/g, m=>{ const code=m.includes('en.html')?'en':m.includes('de.html')?'de':m.includes('az.html')?'az':'tr';return `href="${relative(route,(alternateRoutes[code]||locales[code].route)+'index.html')}"`; })
     .replace(/href="(?:blog\/|en\/blog\/|de\/blog\/|az\/blog\/)"/g,`href="${relative(route,l.route+'index.html')}"`)
     .replace(/ data-spy/g,'');

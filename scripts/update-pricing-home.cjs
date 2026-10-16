@@ -11,9 +11,6 @@ home=home.replace(/  <!-- Örnek hesap -->[\s\S]*?(?=<!-- SECTION 07-ogretmenler
 
 `);
 home=home.replace('#fiyatlar{--fy-pesin-w:86.227045%; /* 24.792 / 28.752 */ position:relative}', '#fiyatlar{position:relative}');
-home=home.replace('<a class="nav-a" href="#fiyatlar" data-spy>Fiyatlar</a>','<a class="nav-a" href="/ucretler/">Fiyatlar</a>');
-home=home.replace('<a href="#fiyatlar" data-spy><span>Fiyatlar</span>','<a href="/ucretler/"><span>Fiyatlar</span>');
-home=home.replace('<a href="#fiyatlar">Fiyatlar</a>','<a href="/ucretler/">Fiyatlar</a>');
 const start=home.indexOf('<section class="sec" id="fiyatlar"'), end=home.indexOf('<!-- SECTION 07-ogretmenler',start);
 let section=home.slice(start,end).replace(/<p class="price-note">[\s\S]*?<\/p>/g,'<p class="price-note">ders başı · Türk öğretmen<br>Yıllık üyelik, peşin ödeme · KDV hariç</p>');
 home=home.slice(0,start)+section+home.slice(end);
