@@ -59,6 +59,12 @@ docs/phase-1c/preflight.json
 docs/phase-1c/preview-deployment.json
 docs/phase-1c/production-package-verification.json
 docs/phase-1c/production-unchanged.json
+docs/phase-1c/production/deployment.json
+docs/phase-1c/production/media-legal-foreign.json
+docs/phase-1c/production/remote-home-1440.png
+docs/phase-1c/production/remote-home-390.png
+docs/phase-1c/production/remote-verification.json
+docs/phase-1c/release-authorization.json
 docs/phase-1c/release-blockers.json
 docs/phase-1c/remote/media-verification.json
 docs/phase-1c/remote/remote-home-1440.png
@@ -98,6 +104,7 @@ scripts/build-site-tr.cjs
 scripts/check-header-tr.cjs
 scripts/check-phase1c-content.cjs
 scripts/check-preview-remote.cjs
+scripts/check-production-smoke.cjs
 scripts/check-site-browser-tr.cjs
 scripts/check-site-tr.cjs
 scripts/package-preview.cjs

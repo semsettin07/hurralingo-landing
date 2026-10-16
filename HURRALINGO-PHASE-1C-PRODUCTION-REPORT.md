@@ -1,55 +1,61 @@
-# Hurra Lingo — Faz 1C uygulama ve yayın raporu
+# Hurra Lingo — Faz 1C production raporu
 
-Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
+16 Ekim 2026. **Canlı yayın tamamlandı ve production testleri geçti.**
 
-Son preview: **https://5dbe68c1.hurralingo-landing.pages.dev/**. Preview deployment ID: `5dbe68c1-640e-43d2-9974-37e3ea89c84a`; uygulama commit'i: `63efd30` (sonraki kayıt commit'i test/rapor içindir). Cloudflare ortamı `Preview`, branch `phase-1b-tr-multipage` olarak doğrulandı.
+- Canlı adres: https://www.hurralingo.com/
+- Production uygulama commit SHA: `3c33eb2cd55118c040397f32232c0abfa852cce4`.
+- Cloudflare production deployment ID: `7aa0d6e6-b5b6-40cf-90c4-494e2868f511`.
+- Deployment adresi: https://7aa0d6e6.hurralingo-landing.pages.dev.
+- Ortam/branch: Production / main. Main birleştirildi ve origin/main'e pushlandı. Sonraki rapor commit'i uygulama deployment'ını değiştirmez.
+- Son önizleme: https://5dbe68c1.hurralingo-landing.pages.dev/; preview engelleri korunuyor.
 
-**Son yayın talimatı:** Kullanıcı, engellerin bildirildiği önizleme incelemesinden sonra main ve production güncellemesini açıkça istedi. Mevcut içerikle yayın hazırlanıyor. Bett ve Emniyet kaynak/tarih doğrulaması tamamlanmış sayılmıyor; mevcut metinler korunarak bu açık maddeler raporda tutuluyor. Önceki “yayın yapılmadı” kayıtları önceki önizleme aşamasına aittir; nihai deployment sonucu aşağıya eklenecektir.
+## Onay ve açık kalan kaynaklar
 
-## Tasarım ve içerik
+Kullanıcı önce yasal alanı yalnızca gönderdiği Privacy Policy ve Terms and Conditions PDF'leriyle sınırlandırdı. Ardından açıkça “Production ve Main de güncelleyelim canlıya alalım güncellemeleri” talimatını verdi. Mevcut içerikle yayın bu talimat kapsamında yapıldı. Önceki koşullu yayın durumu bu son talimatla güncellendi; kayıt: `docs/phase-1c/release-authorization.json`.
 
-- Büyük logo küçültülmedi. Ortalanmış, en fazla 1360 px üst alan; sekiz ana bağlantı istenen sırada. Dersler altında dört yaş grubu açılır menüsü korundu. 1440 px altında mobil menü; sekiz bağlantı ve yaş grupları mevcut. Dil seçimi, giriş, tanışma CTA, Bett şeridi, sarı rozet ve duyuru kapatma davranışı korundu.
-- Ana sayfa mimarisi korundu. Boş öğretmen mesajı `hidden` olduğunda kesin olarak gizleniyor. Kapanış çağrısı çocuklar, gençler ve yetişkinleri kapsıyor.
-- Kullanıcının kapsam güncellemesine göre footer yalnızca Gizlilik Politikası ve Şartlar ve Koşullar içeriyor. Gönderilen iki İngilizce PDF, değiştirilmeden eski WordPress yollarında barındırılıyor. Bağlantılarda PDF ve İngilizce bilgisi var. Diğer üç yasal başlık kaldırıldı; yeni metin yazılmadı.
-- 34 blog gövdesi, 38 öğretmen, yedi dil, 2027 fiyat motoru/verisi, 184 Excel formülü, mevcut medya ve yabancı dil dosyaları korundu. Değişen 43 HTML dosyasında ortak navigasyon/footer güncellendi; blog içerikleri yeniden yazılmadı.
+Bett iddiasının şirket kaynağı Kids Judge Bett / Best Language App 2026 kapsamını belirtiyor; organizatörün kazananlar duyurusu bulundu, ancak Hurra Lingo'yu gösteren kazanan kaydı ayrıca doğrulanmadı. Emniyet medyasındaki %10 indirim ve yıl sonuna kadar AI erişiminin uygulanacağı yıl/koşullar ayrıca doğrulanmalı. Bu maddeler doğrulanmış kabul edilmedi, mevcut metinler değiştirilmedi. Kayıt: `docs/phase-1c/release-blockers.json` içindeki `acceptedUnverifiedItems`.
 
-## Testler ve kanıtlar
+Şirket ödül kaynağı: https://tr.linkedin.com/posts/hurraglobal_hurra-lingo-olarak-bett-uk-2026da-en-activity-7422171756485873664-bvKS
+Organizatör kapsamı: https://uk.bettshow.com/visit
+Organizatör duyurusu: https://www.linkedin.com/posts/bettshow_kidsjudgebett2026-activity-7427755054872580097-mEfI
 
-- Statik: 43 canonical, 34 blog, 38 öğretmen, 166 korunan dosya SHA256, 2625 yerel bağlantı ve 609 medya referansı geçti. 184 formül ve 60 hesaplama senaryosu bağımsız doğrulandı.
-- Tarayıcı: 43 sayfa × 320/390/768/1024/1440/1842 px = 258 kombinasyon; taşma yok. 60 ücret senaryosu, filtre/boş sonuç, blog arama/sıfırlama, mobil Escape/odak döndürme/Tab tuzağı, FAQ ve video diyalogu geçti. 22 ekran görüntüsü; JS hatası, bozuk görsel veya yerel HTTP hatası yok.
-- Üst alan: iki sayfa × sekiz genişlik = 16 kontrol; büyük logo, duyuru sürekliliği, klavye açılır menüsü ve dört yaş grubu geçti.
-- Fiyatlar mevcut 2027 TL değerleri ve “KDV hariç” koşuluyla gösteriliyor; fiyat/veri/ödeme politikası değiştirilmedi.
-- Yerel 174 eski URL yönlendirmesi geçti. Uzak preview'da 43 Türkçe URL HTTP 200; tüm canonical/meta noindex/HTTP X-Robots-Tag, robots engeli ve 43 URL sitemap doğrulandı. `/en/`, `/de/`, `/az/` HTTP 200. 60 hesaplama senaryosu, 38 öğretmen/sekiz filtre, blog arama/sıfırlama, altı ekran genişliği ve mobil menü geçti. 174 eski URL ve altı yardımcı kuralın tamamı 301 → aynı preview origin'inde HTTP 200; bilinmeyen URL 404. Uzak JS/HTTP hata listeleri boş. Üst alan için aynı 16 kombinasyon ve klavye testleri uzak ortamda da geçti.
-- Uzak paketteki 149 çalışma/medya dosyasının tamamı HTTP 200 (HEAD). Üç veli yorumu ve metinleri aynı; altı soru videosu erişilebilir. Kampanya PDF'si ve iki banner görseli Faz 1C öncesi Git referansıyla SHA256 eşleşiyor. WhatsApp HTTP 200 ile doğru numaraya yönleniyor; telefon/e-posta hedefleri kaydedildi.
-- Kanıtlar: `docs/phase-1c/static-verification.json`, `browser-verification.json`, `header/`, `screenshots/`, `remote/remote-verification.json`, `remote/media-verification.json`, `content-preservation.json`, `external-links.json`, `preflight.json`, `preview-deployment.json`, `production-unchanged.json`, `production-package-verification.json`, `release-blockers.json`.
+## Yayındaki değişiklikler
 
-## Yayın öncesi engeller ve kaynaklar
+- Büyük logo ve ortalanmış üst alan, Bett şeridi/sarı rozet ve mevcut animasyonlar korundu. Sekiz ana bağlantı istenen sırada; Dersler altında dört yaş grubu. 1440 px altında mobil menüde sekiz bağlantı ve programlar var. Dil seçimi, giriş ve tanışma CTA korundu.
+- Sade ana sayfa korundu; öğretmen boş sonuç mesajı yalnızca sonuçsuz filtrede görünür. Kapanış CTA çocuklar/gençler/yetişkinleri kapsar.
+- 43 Türkçe sayfa, 34 blog gövdesi, 38 öğretmen, yedi dil, üç mevcut yorum ve altı soru videosu korundu. 2027 TL ücret motoru/verisi/ödeme politikası değiştirilmedi; fiyatlarda KDV hariç koşulu korunur.
+- Footer'da yalnızca kullanıcının verdiği iki İngilizce PDF var; tür/dil bağlantı etiketlerinde belirtilir. Dosyalar eski WordPress URL yollarında gerçek PDF olarak sunulur. Canlı PDF'ler gönderilen eklerle SHA256 eşleşir. KVKK/mesafeli satış başlığı veya yeni yasal metin üretilmedi.
+- EN/DE/AZ kaynakları değiştirilmedi; kampanya PDF ve iki banner görseli Faz 1C öncesi referansla SHA256 eşleşir.
 
-1. **Yasal belgeler — kullanıcı kapsam güncellemesiyle çözüldü:** Kullanıcı şimdilik yalnızca [Privacy Policy](https://www.hurralingo.com/wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf) ve [Terms and Conditions](https://www.hurralingo.com/wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf) kullanılmasını istedi; iki orijinal PDF dosyasını sağladı. Eski canlı URL’ler HTTP 200 olsa da `text/html` / ana sayfa döndürüyor. Bu nedenle eklenen PDF’ler aynı `/wp-content/uploads/2026/03/` yollarında, preview ve production adayında gerçek dosya olarak yer alıyor. 43 footer’da iki bağlantı doğrulandı; kaynak ve iki paket kopyası eklerle bayt düzeyinde aynı. Bu geçici kapsam kullanıcının açık talimatıdır; KVKK/mesafeli satış uygunluğu hakkında hukuki yeterlilik sonucu çıkarılmadı. Canlı dosyalar henüz yüklenmedi.
-2. **Emniyet kampanyası:** Mevcut görseller/PDF korundu. Görsel %10 indirim ve yıl sonuna kadar ücretsiz AI erişimi vaat ediyor; hangi yıl, başvuru/geçerlilik süresi ve güncel koşullar onaylanmalı. Yeni tarih/koşul türetilmedi.
-3. **Bett:** [Şirketin açıklaması](https://tr.linkedin.com/posts/hurraglobal_hurra-lingo-olarak-bett-uk-2026da-en-activity-7422171756485873664-bvKS) kapsamı Kids Judge Bett / Best Language App olarak belirtiyor. [Organizatör](https://uk.bettshow.com/visit), Kids Judge Bett ile Bett Awards etkinliklerini ayrı tanımlıyor. [Organizatörün 2026 kazananlar duyurusu](https://www.linkedin.com/posts/bettshow_kidsjudgebett2026-activity-7427755054872580097-mEfI) bulundu; erişilen metin şirket bazlı kazanan listesini göstermiyor. Hurra Lingo'yu ve kategoriyi açıkça gösteren organizatör kaydı/sertifika veya mevcut kısa banner ifadesinin kapsam onayı bekleniyor. Banner birebir korundu; yeni iddia eklenmedi.
-4. Sosyal bağlantılar: Instagram/YouTube/TikTok/uygulama/kurumsal site HTTP 200; Facebook otomatik istekte 400, LinkedIn 999 döndü. Bu iki hesap elle doğrulanmalı; engelleme nedeniyle kırık oldukları kesinleştirilemedi. Telefon, e-posta ve WhatsApp hedefleri yerel bağlantı envanterinde korunuyor; ileti gönderilmedi.
+## Test sonuçları
 
-## SEO ve ayrı paketler
+- Statik: 43 canonical, 34 blog, 38 öğretmen, 166 korunan dosya SHA256; 2625 yerel bağlantı ve 609 medya referansı geçti.
+- Bağımsız hesaplama: 184 Excel formülü ve 60 ücret senaryosu geçti.
+- Yerel tarayıcı: 43 sayfa × 320/390/768/1024/1440/1842 px = 258 kombinasyon; taşma yok. Video, FAQ, blog arama/sıfırlama/kategori, öğretmen filtreleri ve boş sonuç, mobil Escape/odak/Tab tuzağı geçti. 22 ekran görüntüsü; JS, yerel HTTP veya bozuk görsel hatası yok. Üst alan için ayrıca iki sayfa × sekiz genişlik ve klavye açılır menüsü geçti.
+- **Canlı production:** 43 Türkçe URL HTTP 200; canonical'lar www alanında doğru, meta index/follow ve HTTP başlıklarında yanlış noindex yok. Sitemap 43 URL; robots Allow: / ve doğru sitemap içeriyor.
+- **Canlı işlevler:** 60 hesaplama senaryosu, 38 öğretmen/sekiz filtre, blog arama/sıfırlama, altı ekran genişliğinde ana sayfa ve mobil menü geçti. 174 eski URL ve altı yardımcı 301 kuralı aynı canlı origin'de HTTP 200 hedeflere gidiyor. Bilinmeyen URL gerçek 404. JS/HTTP hata listeleri boş.
+- **Canlı medya/yasal:** 149 çalışma/medya dosyası HTTP 200. İki yasal dosya application/pdf HTTP 200 ve orijinal eklerle aynı SHA256. Eksik medya bulunmadı.
+- **Yabancı diller:** /en/, /de/, /az/ HTTP 200; canonical/noindex değerleri önceki dosyalarla aynı. Mevcut pages.dev canonical'ları ve noindex bu fazın kapsamı gereği korunmuştur; ayrı SEO çalışması gerektirir.
+- Harici uygulama/Instagram/YouTube/TikTok/kurumsal site ve WhatsApp kontrolleri geçti. Facebook otomatik istekte 400, LinkedIn 999 verdi; hesaplar elle doğrulanmalı. E-posta/telefon hedefleri doğru biçimde korundu; ileti gönderilmedi.
 
-- Preview: `dist/phase-1b-preview`; 43 Türkçe meta `noindex, nofollow`, genel `X-Robots-Tag: noindex, nofollow`, `robots.txt Disallow: /`.
-- Production adayı: `dist/phase-1c-production`; yalnızca kopyalanan 43 Türkçe dosyada `index, follow`, doğru www canonical/OG adresleri; 43 URL sitemap; genel noindex başlığı yok; robots `Allow: /` ve sitemap. 404 sayfası noindex. 174 açık kural ve altı dar Unicode yardımcı 301 kuralı; `/tr/ → /` mevcut. Kaynak robots dosyası değiştirilmedi.
-- EN/DE/AZ HTML/verileri bayt düzeyinde aynı. Bu sayfaların mevcut canonical'ları `hurralingo-landing.pages.dev/{en,de,az}.html`, meta robots değerleri `noindex, nofollow`. Kullanıcının talimatı gereği düzeltilmedi; ayrı onay/kapsam gerekir.
-- Paket üretimi deployment yapmaz. Production adayı engeller çözülene kadar yayımlanmamalı; yayın öncesi yeniden build/test gerekir.
+Kanıtlar: `docs/phase-1c/static-verification.json`, `browser-verification.json`, `header/`, `content-preservation.json`, `legal-documents-verification.json`, `legal-preview-remote.json`, `production-package-verification.json`, `production/deployment.json`, `production/remote-verification.json`, `production/media-legal-foreign.json` ve ekran görüntüleri.
 
-## Git, production ve rollback
+## Paketler ve SEO
 
-- Değişiklik öncesi referans: `1adc7683919c7184561b8b844076ee584af215ae`.
-- Main / origin main: `4750cad420a3d4215a3035c78aa4e2539857a033`.
-- Son çalışan production ID: `b61b1c9e-4744-4956-b9d0-441dac1d39f1`; kaynak SHA yukarıdaki main. Faz 1C production commit/deployment ID: **yok**.
-- Salt okunur canlı kontrollerde `/`, `/en/`, `/de/`, `/az/` HTTP 200; ana içerik, canonical, meta robots, robots gövdesi ve aktif deployment önceki main ile aynı.
-- Gelecekte yayın sorunu olursa Cloudflare Pages → hurralingo-landing → Deployments içinden yukarıdaki başarılı production sürümüne rollback; canlı ana/alt sayfa, hesaplama, blog, 301 ve SEO smoke testleri tekrar. Gerekirse yayımlanan merge commit'i main üzerinde `git revert` ile geri alınır; force push yapılmaz. Bu fazda rollback gerekmedi ve çalıştırılmadı.
-- Cloudflare build/root/output alanları boş; Git otomatik build repo kökünü kullanıyor. Geliştirme commit'leri `[CF-Pages-Skip]` ile gönderilip yalnızca hazırlanmış preview paketi açıkça feature branch'e yüklenir. Production proje yapılandırması değiştirilmedi.
+- Preview: `dist/phase-1b-preview`; meta noindex/nofollow, genel X-Robots-Tag noindex/nofollow, robots Disallow: /.
+- Production: `dist/phase-1c-production`; yalnızca kopyalanan 43 Türkçe sayfa index/follow; doğru canonical/OG/meta açıklamaları, 43 URL sitemap, robots Allow: /; genel noindex başlığı yok, 404 noindex. 174 açık + altı dar Unicode yardımcı yönlendirme; /tr/ → / mevcut.
+- Yabancı dil dosyaları iki pakette aynı; kaynak robots/noindex önizleme için korunur. Canlıya yalnızca ayrı production paketi yüklenmiştir.
+- Cloudflare Git build/output/root yapılandırması değiştirilmedi (boş). Kaynak kök dizini preview SEO içerdiğinden gelecekte repo kökünü doğrudan production'a yayımlamayın: önce site:build, site:check, site:package-preview, site:package-production; release durumu ve paket SEO'sunu doğrulayıp dist/phase-1c-production yükleyin. Bu yayında main merge/rapor commit'lerinde [CF-Pages-Skip] kullanılarak otomatik kök build önlendi.
+- DNS değişmedi. Türkçe production indeksleme ayarları kullanıcının canlı yayın talimatıyla etkinleştirildi.
+
+## Önceki sürüm ve rollback
+
+- Faz 1C öncesi geliştirme referansı: `1adc7683919c7184561b8b844076ee584af215ae`.
+- Yayın öncesi main SHA: `4750cad420a3d4215a3035c78aa4e2539857a033`.
+- Önceki çalışan production ID: `b61b1c9e-4744-4956-b9d0-441dac1d39f1`.
+- Gerekirse Cloudflare Pages → hurralingo-landing → Deployments → bu önceki başarılı production sürümüne rollback. Ardından ana/alt sayfalar, hesaplama, blog, 301, canonical/robots için smoke test tekrarlanır. Git geri dönüşü gerekirse yayın merge'i main üzerinde git revert ile geri alınır; force push yapılmaz.
+- Yayın ve testler başarılı; rollback yapılmadı.
 
 ## Değişen dosyalar
 
-43 Türkçe HTML; `assets/site-tr.css`, `assets/site-tr.js`; `scripts/site-tr.cjs`, `build-site-tr.cjs`, `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `check-header-tr.cjs`, `check-preview-remote.cjs`; yeni `scripts/package-production.cjs`, `check-phase1c-content.cjs`; `scripts/package-preview.cjs`; iki `wp-content/uploads/2026/03/*.pdf`; `package.json`; bu rapor ve `docs/phase-1c/` test/ekran görüntüsü kayıtları. Tam liste `docs/phase-1c/changed-files.txt` içinde.
-
-Son kapsam güncellemesi: yalnızca kullanıcının verdiği iki yasal PDF. Kanıt: `docs/phase-1c/legal-documents-verification.json`. Önceki tam tasarım/işlev testleri korunuyor; bu revizyonda footer, belge erişimi, PDF içerik türü ve eklerle SHA256 eşleşmesi ayrıca test edildi.
-
-İki PDF revizyonunun uzak kontrolü: son preview üzerinde 43 footer, iki `application/pdf` yanıtı ve eklerle SHA256 eşleşmesi geçti; PDF yanıtlarında da `X-Robots-Tag: noindex, nofollow` var. `/en/`, `/de/`, `/az/` HTTP 200; robots engeli devam ediyor. Kanıt: `docs/phase-1c/legal-preview-remote.json`. Önceki kapsamlı uzak işlev testleri `a9226113` preview’ında yapılmıştır; bu revizyon ortak footer ve PDF dosyalarını değiştirir. Production deployment ID tekrar kontrol edildi ve aynı kaldı.
+43 Türkçe HTML; assets/site-tr.css ve site-tr.js; Türkçe shell/build ve QA script'leri; preview/production paketleyiciler; package.json; iki wp-content/uploads/2026/03 PDF; production smoke script'i, raporlar ve docs/phase-1c kanıtları. Fiyat motoru/verisi ve yabancı dil kaynakları değiştirilmedi. Tam liste: `docs/phase-1c/changed-files.txt`.

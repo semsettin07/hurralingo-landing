@@ -1,0 +1,10 @@
+{
+  "Id": "7aa0d6e6-b5b6-40cf-90c4-494e2868f511",
+  "Environment": "Production",
+  "Branch": "main",
+  "Source": "3c33eb2",
+  "Deployment": "https://7aa0d6e6.hurralingo-landing.pages.dev",
+  "Status": "22 seconds ago",
+  "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/7aa0d6e6-b5b6-40cf-90c4-494e2868f511",
+  "commit": "3c33eb2cd55118c040397f32232c0abfa852cce4"
+}

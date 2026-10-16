@@ -1,0 +1,636 @@
+{
+  "pass": true,
+  "origin": "https://www.hurralingo.com",
+  "documents": [
+    {
+      "url": "/wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "sha256": "7cd75abb757cfee3026438a4c59d396e1a424935354a0be6a75546047ae99015",
+      "attachmentMatches": true
+    },
+    {
+      "url": "/wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "sha256": "2cdb478235faf7313b48ee856cbd7c700e69eaee927126de39de1208f34d2e35",
+      "attachmentMatches": true
+    }
+  ],
+  "mediaFiles": 149,
+  "media": [
+    {
+      "file": "/assets/blog.css",
+      "status": 200
+    },
+    {
+      "file": "/assets/pricing-tr.js",
+      "status": 200
+    },
+    {
+      "file": "/assets/pricing-engine.js",
+      "status": 200
+    },
+    {
+      "file": "/assets/blog.js",
+      "status": 200
+    },
+    {
+      "file": "/assets/pricing-data.js",
+      "status": 200
+    },
+    {
+      "file": "/assets/pricing-ui.js",
+      "status": 200
+    },
+    {
+      "file": "/assets/pricing.css",
+      "status": 200
+    },
+    {
+      "file": "/assets/site-tr.css",
+      "status": 200
+    },
+    {
+      "file": "/assets/site-theme-tr.css",
+      "status": 200
+    },
+    {
+      "file": "/assets/site-tr.js",
+      "status": 200
+    },
+    {
+      "file": "/img/emniyet-kampanya-masaustu.png",
+      "status": 200
+    },
+    {
+      "file": "/img/favicon.png",
+      "status": 200
+    },
+    {
+      "file": "/img/emniyet-kampanya-mobil.png",
+      "status": 200
+    },
+    {
+      "file": "/img/hurralingo-og.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/logo-hurra-lingo.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/logo-clay.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/maskot-goz-kirp.svg",
+      "status": 200
+    },
+    {
+      "file": "/img/maskot-merakli.svg",
+      "status": 200
+    },
+    {
+      "file": "/img/maskot-mutlu-beyaz.svg",
+      "status": 200
+    },
+    {
+      "file": "/img/maskot-mutlu.svg",
+      "status": 200
+    },
+    {
+      "file": "/img/maskot-sevinc.svg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-adam.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-adeniyi.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-alexandra.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-aysegul-eskikurt.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-ayberk-savas.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-aysegul-santur.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-aysin-yasa.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-bengu.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-ayzade.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-betul-beyza.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-burak-santur.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-busra-surekci.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-ceyda-sonmez.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-busra.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-deniz-ozlu.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-deniz-okumus.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-duru-melek.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-elif-gizem-kaya.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-fusun-kose.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-ezgi-dinc.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-ghazaleh-ghazalifard.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-gizem-kenez.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-j-luis-fernandez-salazar.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-hatice-onar.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-kayra-agir.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-kubra-toral.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-muge-tinaz.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-mehtap.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-mustafa-hakan.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-neslihan-kizilbayir.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-nesrin.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/t-saskia-douglas.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-parisa-khalegni.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-sedef-sen.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-sultan-ecem-kolluoglu.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-sibel-bulut.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-yagmur-irmak-ozarslan.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-yasemin-urer.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-yanshan-lin.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-yolandi-bezuidenhout.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/t-zeynep-akgul.png",
+      "status": 200
+    },
+    {
+      "file": "/img/t-zeynep-sariibrahimoglu.jpg",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/070f579dede9769e.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/047a4ac4c82de522.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/082cc973e1d130a4.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/0beb33f8d8246764.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/172d4e1778b4541d.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/0e8b05e732119b0b.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/1c1307a531be8535.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/197bea89f70da211.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/1e0bebf4ffe8d026.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/27a01d037a425819.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/34ab71cfa1fe3f9e.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/27c096a80fdd8a0b.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/377a7061f036acb9.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/3ed987ec608af70a.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/43133a4c95b00513.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/3803dc8273207258.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/4695cf8da8a0c603.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/4f362a0e7d2734f5.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/4d1a9b776731da7a.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5311f9a84f49c7d0.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/48234e8fe0d9cd95.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/569039038b78e734.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5743e6f2bd48bb9e.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5d4b1a606708ae9a.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5a237b6ae880ca4b.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5d979a10ca48e24c.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5f3a30842cde5350.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/5f8724a297c6e419.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/6004000f53ed4c4d.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/606785f637b124cf.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/67a6e1a1d1d1186f.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/6947dd747df0de14.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/68bd5adb0bc8cb32.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/6c558081847366bc.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/726634fc5563e959.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/74071c394be7a629.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/762d596466e87014.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/763a507ee2385785.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/7c2a9c5c0ecbaa87.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/7df65f3ea59be6ea.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/7f4a5a23e7a71675.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/86c6f016f0763054.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/8d5c5abeccd91b63.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/9302f1c8d3b0c7c5.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/93a34eef61aee931.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/9b82a0b490c45f89.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/9b763873e4b7de15.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/9bae7e8af1cb4923.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/a5c12f7be548d6db.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/a5c77bce5e714f5a.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/ac01ce60aaa6aec8.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/b0be8b312f932933.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/b3e60c61d73abbf3.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/b71b09474f492488.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/c4c3b6acb01fab48.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/c58dbdbd0abf6a5b.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/c5c8e944731e3e8b.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/c5f396fa877dd198.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/d4b34410024a96fb.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/ce5cd7b0d49b87f1.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/d5cd2b5e601188ba.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/d92afa406ff35006.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/e2cf8031df93321f.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/dd72f0d5bca59d1a.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/e46e813ef8beef9f.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/e4d6ae4538c19b44.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/f303439110affabf.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/f0fd87b21ace2607.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/e54934718a4cbaa0.webp",
+      "status": 200
+    },
+    {
+      "file": "/img/blog/f4a63ff5c21049a9.webp",
+      "status": 200
+    },
+    {
+      "file": "/media/hero-ders.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/neden-ogretmen.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/hero-ders.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-1.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-1.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-2.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-2.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-3.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-3.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-4.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-4.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-5.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-6.jpg",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-5.mp4",
+      "status": 200
+    },
+    {
+      "file": "/docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-6.mp4",
+      "status": 200
+    }
+  ],
+  "foreign": [
+    {
+      "lang": "en",
+      "status": 200,
+      "seoUnchanged": true
+    },
+    {
+      "lang": "de",
+      "status": 200,
+      "seoUnchanged": true
+    },
+    {
+      "lang": "az",
+      "status": 200,
+      "seoUnchanged": true
+    }
+  ]
+}
