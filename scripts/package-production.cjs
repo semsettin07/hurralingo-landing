@@ -6,7 +6,8 @@ const out=path.resolve(root,'dist/phase-1c-production');
 assert.ok(out.startsWith(path.resolve(root,'dist')+path.sep));
 assert.ok(fs.existsSync(source),'Build the preview package first');
 fs.rmSync(out,{recursive:true,force:true});fs.cpSync(source,out,{recursive:true});
-const routes=JSON.parse(read('content/site/canonical-tr.json'));
+const localized=fs.existsSync(path.join(root,'content/i18n/routes.json'));
+const routes=JSON.parse(read(localized?'content/i18n/canonical-all.json':'content/site/canonical-tr.json'));
 for(const route of routes){
  const file=path.join(out,route,'index.html');
  let html=fs.readFileSync(file,'utf8');
@@ -22,10 +23,11 @@ const redirectFile=path.join(out,'_redirects');fs.writeFileSync(redirectFile,fs.
 const protectedFiles=JSON.parse(read('docs/phase-1b/baseline.json')).protectedFiles;
 for(const [file,digest] of Object.entries(protectedFiles)){
  if(file==='robots.txt')continue; // Deliberate package-only production SEO difference.
+ if(localized&&/^(en|de|az)(\.html|\/)/.test(file))continue; // Explicitly superseded by the new localization scope.
  const copied=path.join(out,file);if(fs.existsSync(copied))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(copied)).digest('hex'),digest,file);
 }
 const foreign=[];
-for(const file of ['en.html','de.html','az.html']){
+for(const file of localized?['en/index.html','de/index.html','az/index.html']:['en.html','de.html','az.html']){
  const $=c.load(fs.readFileSync(path.join(out,file),'utf8'));
  foreign.push({file,canonical:$('link[rel=canonical]').attr('href'),robots:$('meta[name=robots]').attr('content'),byteIdentical:fs.readFileSync(path.join(root,file)).equals(fs.readFileSync(path.join(out,file)))});
 }

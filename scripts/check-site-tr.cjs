@@ -4,7 +4,8 @@ const {root,read,headerMenu,teachers,original}=require('./site-tr.cjs');
 const c=require('cheerio');
 const baseline=JSON.parse(read('docs/phase-1b/baseline.json'));
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
-for(const [p,h]of Object.entries(baseline.protectedFiles))assert.equal(hash(fs.readFileSync(path.join(root,p))),h,'Protected file changed: '+p);
+const localized=fs.existsSync(path.join(root,'content/i18n/routes.json'));
+for(const [p,h]of Object.entries(baseline.protectedFiles)){if(localized&&/^(en|de|az)(\.html|\/)/.test(p))continue;assert.equal(hash(fs.readFileSync(path.join(root,p))),h,'Protected file changed: '+p);}
 const routes=JSON.parse(read('content/site/canonical-tr.json'));
 assert.equal(routes.length,43);assert.equal(new Set(routes).size,43);assert.equal(teachers.length,38);
 const expectedHrefs=headerMenu.map(x=>x[1]);let files=0,links=0,assets=0;
@@ -36,7 +37,7 @@ for(const r of cases){const n=engine.calculate(data,r);assert.equal(n.selectedLe
 const pricingCheck=read('scripts/check-pricing.cjs');
 const pure=pricingCheck.slice(0,pricingCheck.indexOf("const home=fs.readFileSync"));
 const isolated={require:require('node:module').createRequire(path.join(root,'scripts/check-pricing.cjs')),console,process,__dirname:path.join(root,'scripts')};vm.createContext(isolated);vm.runInContext(pure+"\nconsole.log('PASS: independently evaluated '+formulas+' Excel formulas and '+verified.length+' pricing scenarios');",isolated);
-const xml=c.load(read('sitemap.xml'),{xmlMode:true});assert.deepEqual(xml('loc').map((i,e)=>xml(e).text()).get(),routes.map(r=>'https://www.hurralingo.com'+r));
+const xml=c.load(read('sitemap.xml'),{xmlMode:true});assert.deepEqual(xml('loc').map((i,e)=>xml(e).text()).get(),(localized?JSON.parse(read('content/i18n/canonical-all.json')):routes).map(r=>'https://www.hurralingo.com'+r));
 const redirect=JSON.parse(read('content/site/redirects-tr.json')).rules;for(const [from,to]of Object.entries(redirect)){assert.ok(from==='/tr'||from.startsWith('/tr/'));assert.notEqual(from,to);localTarget(to,'/');}
 const fallbacks=JSON.parse(read('content/site/redirects-tr.json')).cloudflareUnicodeFallbacks||{};for(const [from,to]of Object.entries(fallbacks)){assert.match(from,/^\/tr\/\d{4}\/\d{2}\/\d{2}\/.*:legacyemoji/);localTarget(to,'/');}
 assert.equal(read('robots.txt'),'User-agent: *\r\nDisallow: /\r\n');

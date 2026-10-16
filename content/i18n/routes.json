@@ -121,9 +121,9 @@
       "az": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/"
     },
     "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/": {
-      "en": "/en/blog/when-does-the-real-gain-start-in-online-language-lessons/",
-      "de": "/de/blog/wann-beginnt-der-wahre-gewinn-im-online-sprachunterricht/",
-      "az": "/az/blog/onlayn-dil-derslerinde-real-qazanc-ne-vaxt-baslayir/"
+      "en": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "de": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "az": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/"
     },
     "/blog/dunyadan-yilbasi-gelenekleri/": {
       "en": "/en/blog/new-year-s-traditions-from-around-the-world/",
@@ -141,9 +141,9 @@
       "az": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/"
     },
     "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/": {
-      "en": "/en/blog/foreign-language-comfort-of-digital-age-children/",
-      "de": "/de/blog/fremdsprachenkomfort-fur-kinder-im-digitalen-zeitalter/",
-      "az": "/az/blog/reqemsal-cag-usaqlarinin-xarici-dil-rahatligi/"
+      "en": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "de": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "az": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/"
     },
     "/blog/almanca-ogrenmek-neden-onemli/": {
       "en": "/en/blog/why-is-learning-german-important/",
@@ -340,9 +340,9 @@
           "legacySource": "https://hurraegitim.com/2026/01/07/motivation-and-goal-setting-in-active-language-learning/"
         },
         {
-          "route": "/en/blog/when-does-the-real-gain-start-in-online-language-lessons/",
+          "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
           "sourceRoute": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
-          "title": "When Does the Real Gain Start in Online Language Lessons?",
+          "title": "When Does Real Progress Begin in Online Language Lessons?",
           "legacySource": null
         },
         {
@@ -364,9 +364,9 @@
           "legacySource": null
         },
         {
-          "route": "/en/blog/foreign-language-comfort-of-digital-age-children/",
+          "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
           "sourceRoute": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
-          "title": "Foreign Language Comfort of Digital Age Children",
+          "title": "Helping Children Feel at Ease with Foreign Languages in the Digital Age",
           "legacySource": null
         },
         {
@@ -482,11 +482,11 @@
         "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
         "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
         "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
-        "/en/blog/when-does-the-real-gain-start-in-online-language-lessons/",
+        "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
         "/en/blog/new-year-s-traditions-from-around-the-world/",
         "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
         "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
-        "/en/blog/foreign-language-comfort-of-digital-age-children/",
+        "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
         "/en/blog/why-is-learning-german-important/",
         "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
         "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
@@ -638,9 +638,9 @@
           "legacySource": null
         },
         {
-          "route": "/de/blog/wann-beginnt-der-wahre-gewinn-im-online-sprachunterricht/",
+          "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
           "sourceRoute": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
-          "title": "Wann beginnt der wahre Gewinn im Online-Sprachunterricht?",
+          "title": "Wann zeigen sich echte Fortschritte im Online-Sprachunterricht?",
           "legacySource": null
         },
         {
@@ -662,9 +662,9 @@
           "legacySource": null
         },
         {
-          "route": "/de/blog/fremdsprachenkomfort-fur-kinder-im-digitalen-zeitalter/",
+          "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
           "sourceRoute": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
-          "title": "Fremdsprachenkomfort für Kinder im digitalen Zeitalter",
+          "title": "Fremdsprachen mit Leichtigkeit: Kinder im digitalen Zeitalter",
           "legacySource": null
         },
         {
@@ -782,11 +782,11 @@
         "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
         "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
         "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
-        "/de/blog/wann-beginnt-der-wahre-gewinn-im-online-sprachunterricht/",
+        "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
         "/de/blog/neujahrstraditionen-aus-aller-welt/",
         "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
         "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
-        "/de/blog/fremdsprachenkomfort-fur-kinder-im-digitalen-zeitalter/",
+        "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
         "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
         "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
         "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
@@ -920,9 +920,9 @@
           "legacySource": "https://hurraegitim.com/az/2026/01/07/motivation-and-goal-setting-in-active-language-learning/"
         },
         {
-          "route": "/az/blog/onlayn-dil-derslerinde-real-qazanc-ne-vaxt-baslayir/",
+          "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
           "sourceRoute": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
-          "title": "Onlayn dil dərslərində real qazanc nə vaxt başlayır?",
+          "title": "Onlayn dil dərslərində əsl irəliləyiş nə vaxt başlayır?",
           "legacySource": null
         },
         {
@@ -944,9 +944,9 @@
           "legacySource": null
         },
         {
-          "route": "/az/blog/reqemsal-cag-usaqlarinin-xarici-dil-rahatligi/",
+          "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
           "sourceRoute": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
-          "title": "Rəqəmsal Çağ Uşaqlarının Xarici Dil Rahatlığı",
+          "title": "Rəqəmsal dövrdə uşaqların xarici dildə rahat ünsiyyəti",
           "legacySource": null
         },
         {
@@ -1061,11 +1061,11 @@
         "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
         "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
         "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
-        "/az/blog/onlayn-dil-derslerinde-real-qazanc-ne-vaxt-baslayir/",
+        "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
         "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
         "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
         "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
-        "/az/blog/reqemsal-cag-usaqlarinin-xarici-dil-rahatligi/",
+        "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
         "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
         "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
         "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",

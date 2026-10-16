@@ -1,6 +1,6 @@
 // Offline, explicitly invoked EN/DE/AZ build. Never regenerates Turkish content.
 const fs=require('node:fs'),path=require('node:path'),c=require('cheerio'),assert=require('node:assert/strict');
-const {fixed,languages,locales,overrides,pricing}=require('./locale-content.cjs');
+const {fixed,languages,locales,overrides,pricing,pageTitles,pageHeadings,extraOverrides}=require('./locale-content.cjs');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const write=(f,s)=>{fs.mkdirSync(path.dirname(path.join(root,f)),{recursive:true});fs.writeFileSync(path.join(root,f),s)};
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -8,7 +8,7 @@ const posts=JSON.parse(read('content/blog/posts.json')),trPosts=posts.filter(p=>
 const sourceRoutes=JSON.parse(read('content/site/canonical-tr.json'));
 const dictionaries=Object.fromEntries(Object.keys(locales).map(l=>[l,JSON.parse(read(`content/i18n/${l}.json`))]));
 const missing=new Set();
-function t(s,lang,sl='tr'){if(!s)return s;const value=sl==='tr'?overrides(lang)[s]:undefined;return value??dictionaries[lang][sl]?.[s]??s;}
+function t(s,lang,sl='tr'){if(!s)return s;const value=sl==='tr'?(extraOverrides[lang][s]??overrides(lang)[s]):undefined;return (value??dictionaries[lang][sl]?.[s]??s).replace(/Hurra Jargon|HURRA JARGON|Hurray Linqo|Hurra Linqo|Hurrah Lingo/g,'Hurra Lingo');}
 const fixedMap=Object.fromEntries(fixed.map((route,i)=>[route,Object.fromEntries(Object.entries(locales).map(([l,v])=>[l,`/${l}/${v.slugs[i]?v.slugs[i]+'/':''}`]))]));
 const existingMatches={
  en:{'karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi':'online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children','yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim':'online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule','sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi':'valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults'},
@@ -19,7 +19,7 @@ function slug(s){return s.toLowerCase().replace(/ß/g,'ss').replace(/ə/g,'e').r
 const routeMap={...fixedMap},articles={};
 for(const [lang,l]of Object.entries(locales)){
  const used=new Set(),list=[];
- for(const p of trPosts){const legacy=posts.find(x=>x.language===lang&&x.slug===existingMatches[lang][p.slug]);const title=legacy?(lang==='az'?t(legacy.title,lang,'en'):legacy.title):t(p.title,lang);const route=`/${lang}/blog/${legacy?.slug||slug(title)}/`;assert.ok(!used.has(route),'Duplicate '+route);used.add(route);routeMap['/blog/'+p.slug+'/']||={};routeMap['/blog/'+p.slug+'/'][lang]=route;list.push({route,title,summary:legacy?(lang==='az'?t(legacy.summary,lang,'en'):legacy.summary):t(p.summary,lang),source:p,legacy,sourceRoute:'/blog/'+p.slug+'/'});}
+ for(const p of trPosts){const legacy=posts.find(x=>x.language===lang&&x.slug===existingMatches[lang][p.slug]);const title=legacy?(lang==='az'?t(legacy.title,lang,'en'):legacy.title):t(p.title,lang);const route=`/${lang}/blog/${legacy?.slug||slug(title)}/`;assert.ok(!used.has(route),'Duplicate '+route);used.add(route);routeMap['/blog/'+p.slug+'/']||={};routeMap['/blog/'+p.slug+'/'][lang]=route;list.push({route,title,summary:legacy?(lang==='az'?t(legacy.summary,lang,'en'):legacy.summary):t(p.summary,lang),source:legacy||p,legacy,sourceRoute:'/blog/'+p.slug+'/'});}
  for(const p of posts.filter(x=>x.language===lang&&!Object.values(existingMatches[lang]).includes(x.slug))){const route=`/${lang}/blog/${p.slug}/`;assert.ok(!used.has(route));used.add(route);list.push({route,title:lang==='az'?t(p.title,lang,'en'):p.title,summary:lang==='az'?t(p.summary,lang,'en'):p.summary,source:p,legacy:p});}
  articles[lang]=list.sort((a,b)=>b.source.date.localeCompare(a.source.date));
 }
@@ -47,6 +47,8 @@ function page(html,lang,route,sourceRoute,options={}){
  $('script[src="/assets/pricing-tr.js"]').attr('src',`/assets/i18n/pricing-${lang}.js`);
  $('script[src="/assets/pricing-ui.js"]').attr('src','/assets/i18n/pricing-ui.js');
  $('head').append('<link rel="stylesheet" href="/assets/site-locales.css">');
+ const fixedIndex=fixed.indexOf(sourceRoute);
+ if(fixedIndex>=0&&!options.title){$('title').text(pageTitles[lang][fixedIndex]+' | Hurra Lingo');$('meta[property="og:title"]').attr('content',pageTitles[lang][fixedIndex]);if(pageHeadings[lang][fixedIndex])$('h1').html(pageHeadings[lang][fixedIndex]);}
  if(sourceRoute==='/'){
   const text={en:['The Most Enjoyable Way to Learn a New ','Language!'],de:['Mit Freude eine neue ','Sprache lernen!'],az:['Yeni dil öyrənməyin ən əyləncəli ','yolu!']}[lang];
   $('#h1').contents().filter((i,n)=>n.type==='text').first().replaceWith(text[0]);$('#h1 .hero-smile').contents().filter((i,n)=>n.type==='text').first().replaceWith(text[1]);
@@ -89,9 +91,13 @@ for(const [lang,l]of Object.entries(locales)){
  write(`assets/i18n/site-${lang}.js`,'window.HurraLocaleLanguages = '+JSON.stringify(Object.fromEntries(languages.map((s,i)=>[s,l.languageNames[i]])))+';\n'+runtime);
 }
 write('assets/i18n/pricing-ui.js',read('assets/pricing-ui.js').replace(' / hafta ·',' / ${t.week} ·'));
+// Add reciprocal language navigation/metadata to TR without rewriting its content.
+for(const sourceRoute of sourceRoutes){const file=sourceRoute.slice(1)+'index.html',$=c.load(read(file));hreflangs($,sourceRoute,sourceRoute,'tr');$('#hd-lang a[lang],#drawer a[lang]').each((i,e)=>{const a=$(e),lang=a.attr('lang');a.attr('href',lang==='tr'?sourceRoute:routeMap[sourceRoute][lang]);});write(file,$.html());}
 const allRoutes=[...sourceRoutes,...Object.values(manifest.locales).flatMap(l=>l.canonical)];
 write('content/i18n/canonical-all.json',JSON.stringify(allRoutes,null,2)+'\n');
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+allRoutes.map(r=>`<url><loc>https://www.hurralingo.com${r}</loc></url>`).join('\n')+'\n</urlset>\n');
 const redirects={};for(const lang of Object.keys(locales)){redirects[`/${lang}.html`]=`/${lang}/`;for(const r of fixed.slice(1))if(r!=='/blog/')redirects[`/${lang}${r}`]=routeMap[r][lang];for(const p of posts.filter(x=>x.language===lang)){const target=`/${lang}/blog/${p.slug}/`;const from=new URL(p.source).pathname;if(from!==target){redirects[from]=target;if(from.endsWith('/'))redirects[from+'index.html']=target;}}}
 write('content/i18n/redirects.json',JSON.stringify(redirects,null,2)+'\n');
-console.log('Built EN/DE/AZ: '+Object.entries(manifest.locales).map(([l,x])=>`${l} ${x.fixed.length} fixed + ${x.articles.length} articles`).join('; ')+'. Total canonical URLs: '+allRoutes.length+'. No Turkish page or pricing engine/data written.');
+// Remove only stale, generated article files within the three explicit locale roots.
+for(const lang of Object.keys(locales)){const base=path.resolve(root,lang,'blog'),keep=new Set(manifest.locales[lang].articles.map(p=>path.resolve(root,p.route.slice(1),'index.html')));for(const f of fs.readdirSync(base,{recursive:true})){const file=path.resolve(base,f);if(path.basename(file)!=='index.html'||file===path.join(base,'index.html')||!fs.statSync(file).isFile()||keep.has(file))continue;assert.ok(file.startsWith(base+path.sep));const legacy=posts.some(p=>p.language===lang&&file===path.join(base,p.slug,'index.html'));assert.ok(!legacy,'Refusing to delete legacy article');fs.unlinkSync(file);}}
+console.log('Built EN/DE/AZ: '+Object.entries(manifest.locales).map(([l,x])=>`${l} ${x.fixed.length} fixed + ${x.articles.length} articles`).join('; ')+'. Total canonical URLs: '+allRoutes.length+'. TR copy and pricing engine/data preserved; reciprocal TR language metadata updated.');
