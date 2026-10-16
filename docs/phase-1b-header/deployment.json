@@ -1,0 +1,9 @@
+{
+  "Id": "3a717d81-0a2f-43ed-b3e0-185b70724248",
+  "Environment": "Preview",
+  "Branch": "phase-1b-tr-multipage",
+  "Source": "7d2ad6e",
+  "Deployment": "https://3a717d81.hurralingo-landing.pages.dev",
+  "Status": "46 seconds ago",
+  "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/3a717d81-0a2f-43ed-b3e0-185b70724248"
+}

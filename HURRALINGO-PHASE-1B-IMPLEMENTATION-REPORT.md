@@ -10,6 +10,8 @@ Logo ve üst menü yeniden içerikle aynı `--wrap` genişliğinde ortalanır; 1
 
 Yerel kontrol: ana sayfa ve İletişim için 320, 390, 768, 1024, 1181, 1280, 1440, 1842 px olmak üzere 16 kombinasyonda yatay taşma yok, logo ve içerik sol çizgileri aynı. Açılır menü, mobil menü, Escape/odak dönüşü ve duyuru kapatma/sonraki sayfada hatırlama geçti. 43 Türkçe sayfanın kaynak doğrulaması ve 166 korunan dosya kontrolü geçti. Kanıt: [local-verification.json](docs/phase-1b-header/local-verification.json).
 
+**Güncel preview: https://3a717d81.hurralingo-landing.pages.dev**. Branch adresi: https://phase-1b-tr-multipage.hurralingo-landing.pages.dev. Ortam `Preview`, uygulama commit’i `7d2ad6e`, deployment kimliği `3a717d81-0a2f-43ed-b3e0-185b70724248`. Aynı 16 hizalama/genişlik kontrolü ve menü/duyuru etkileşimleri uzak adreste de geçti; JavaScript hatası kaydedilmedi. Kanıt: [remote-verification.json](docs/phase-1b-header/remote-verification.json), [deployment.json](docs/phase-1b-header/deployment.json), [masaüstü görüntüsü](docs/phase-1b-header/remote-home-1842.png). Canlı Türkçe/EN/DE/AZ içerikleri, canonical/robots ve production deployment’ı değişmedi.
+
 ## Git referansı ve yayın sınırı
 
 - Değişiklik öncesi `main` / Git referansı: `4750cad420a3d4215a3035c78aa4e2539857a033`.
@@ -18,7 +20,7 @@ Yerel kontrol: ana sayfa ve İletişim için 320, 390, 768, 1024, 1181, 1280, 14
 - Eski ana sayfanın tamamı [home-template.html](content/site/home-template.html) içinde; önceki içerik Git referansında da bulunur. Kaynak şablonlar ve raporlar preview paketine dahil edilmez.
 - Production branch’e merge veya push yapılmadı. Production deployment, DNS ve canlı indeksleme ayarları değiştirilmedi.
 
-## Önizleme
+## Önceki Faz 1B önizlemesi ve kapsamlı testler
 
 Cloudflare Pages preview: **https://8817544b.hurralingo-landing.pages.dev**
 
