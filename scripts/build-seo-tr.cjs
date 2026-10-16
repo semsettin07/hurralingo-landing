@@ -9,6 +9,16 @@ const map={
  '/tr/classes/':'/derslerimiz/', '/tr/classes/bireysel-derslerimiz/':'/derslerimiz/#bire-bir', '/tr/classes/mini-grup-derslerimiz/':'/derslerimiz/#mini-grup', '/tr/classes/grup-derslerimiz/':'/derslerimiz/#grup'
 };
 for(const p of posts)map[new URL(p.source).pathname]='/blog/'+p.slug+'/';
+const unicodeFallbacks={};
+for(const p of posts){
+ const decoded=decodeURI(new URL(p.source).pathname);
+ if(/[^\x00-\x7F]/.test(decoded)){
+  // Pages may not match literal/percent-encoded emoji in static rules. A named
+  // placeholder inside this one legacy title segment handles both encodings.
+  const pattern=decoded.replace(/[^\x00-\x7F]+/g,':legacyemoji'),to='/blog/'+p.slug+'/';
+  unicodeFallbacks[pattern]=to;unicodeFallbacks[pattern.slice(0,-1)]=to;unicodeFallbacks[pattern+'index.html']=to;
+ }
+}
 // WordPress also emitted percent-encoded emoji in one source URL. Keep literal,
 // lower-case source encoding and browser-normalized upper-case encoding aliases.
 for(const [from,to] of Object.entries({...map})){
@@ -16,7 +26,7 @@ for(const [from,to] of Object.entries({...map})){
 }
 // Explicit known variants only. No /tr/* catch-all and no foreign redirect.
 for(const [from,to] of Object.entries({...map})){map[from.slice(0,-1)]=to;map[from+'index.html']=to;}
-write('content/site/redirects-tr.json',JSON.stringify({status:301,hostPolicy:'Preview uses relative targets. Production activation requires separate approval.',rules:map},null,2)+'\n');
+write('content/site/redirects-tr.json',JSON.stringify({status:301,hostPolicy:'Preview uses relative targets. Production activation requires separate approval.',rules:map,cloudflareUnicodeFallbacks:unicodeFallbacks},null,2)+'\n');
 write('content/site/canonical-tr.json',JSON.stringify(canonical,null,2)+'\n');
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+canonical.map(p=>`  <url><loc>https://www.hurralingo.com${p}</loc></url>`).join('\n')+'\n</urlset>\n');
 // Production candidate is documentation only; deployment packager uses preview-only config.

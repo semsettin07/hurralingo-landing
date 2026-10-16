@@ -176,5 +176,13 @@
     "/tr/2025/10/28/🇹🇷-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
     "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
     "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/"
+  },
+  "cloudflareUnicodeFallbacks": {
+    "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-:legacyemoji/": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+    "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-:legacyemoji": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+    "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-:legacyemoji/index.html": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+    "/tr/2025/10/28/:legacyemoji-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+    "/tr/2025/10/28/:legacyemoji-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+    "/tr/2025/10/28/:legacyemoji-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/"
   }
 }
