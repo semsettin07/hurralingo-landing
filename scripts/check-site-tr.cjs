@@ -28,7 +28,7 @@ for(const p of posts){const now=c.load(read('blog/'+p.slug+'/index.html'));const
 assert.equal(c.load(read('blog/index.html'))('[data-post-card]').length,34);
 assert.equal(c.load(read('ogretmenlerimiz/index.html'))('#teachers .teacher').length,38);
 assert.equal(c.load(read('ogretmenlerimiz/index.html'))('[data-filter]').length,8);
-assert.equal(c.load(read('ucretler/index.html'))('#main').html(),read('content/site/pricing-main.html'),'Calculator main changed');
+assert.equal(c.load(read('ucretler/index.html'))('#main').html().replace(/\r\n/g,'\n'),read('content/site/pricing-main.html').replace(/\r\n/g,'\n'),'Calculator main changed');
 const data=require('../assets/pricing-data.js'),engine=require('../assets/pricing-engine.js');
 const cases=JSON.parse(read('docs/pricing-2027/calculation-verification.json')).verified;
 for(const r of cases){const n=engine.calculate(data,r);assert.equal(n.selectedLesson,r.expectedLesson);assert.equal(n.selectedTotal,r.expectedTotal);}
