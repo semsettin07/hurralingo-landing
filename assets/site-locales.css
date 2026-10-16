@@ -1,0 +1,15 @@
+/* Locale-specific copy lengths; all layouts share the Turkish design system. */
+.locale-media-note{font-size:14px;line-height:1.6;color:var(--muted);margin:16px 0}
+.locale-campaign{display:grid;grid-template-columns:minmax(0,1fr) 150px;align-items:center;gap:28px;padding:32px;background:var(--cyan-50,#e7f6fa);border-radius:28px}
+.locale-campaign h2{font-family:var(--display);font-size:clamp(24px,3vw,36px);line-height:1.2;margin:0 0 16px}
+.locale-campaign p{line-height:1.6}
+.locale-campaign>img{width:150px;height:auto}
+.locale-campaign a.btn{display:inline-flex;box-shadow:none;overflow:visible;border-radius:999px}
+[data-locale] .site-card,[data-locale] .fee-model,[data-locale] .fee-compare-card{overflow-wrap:anywhere}
+[data-locale] .t-cta{font-size:14px}
+[data-locale] #drawer .dr-list a{font-size:20px}
+[data-locale] .hero-card .hc-go{height:auto;min-height:50px;text-align:center}
+[data-locale] .hero-card .who-o b{font-size:15px}
+[data-locale] .fee-model .btn{white-space:normal;text-align:center}
+@media(min-width:1440px){.locale-de .header .nav-a{font-size:14px;padding-inline:5px}}
+@media(max-width:600px){.locale-campaign{grid-template-columns:1fr;padding:24px}.locale-campaign>img{display:none}[data-locale] .page-intro .btn{white-space:normal;text-align:center}}
