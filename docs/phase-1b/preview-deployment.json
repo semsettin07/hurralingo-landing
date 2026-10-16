@@ -1,0 +1,9 @@
+{
+  "Id": "796bd34f-4055-4a0a-acfa-e1dd4ca95856",
+  "Environment": "Preview",
+  "Branch": "phase-1b-tr-multipage",
+  "Source": "cb8650e",
+  "Deployment": "https://796bd34f.hurralingo-landing.pages.dev",
+  "Status": "24 seconds ago",
+  "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/796bd34f-4055-4a0a-acfa-e1dd4ca95856"
+}

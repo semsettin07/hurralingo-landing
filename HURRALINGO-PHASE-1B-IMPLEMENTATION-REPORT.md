@@ -12,7 +12,15 @@ Tarih: 16 Ekim 2026. Çalışma branch’i: `phase-1b-tr-multipage`.
 
 ## Önizleme
 
-Cloudflare Pages preview: **dağıtım ve uzak doğrulama tamamlandığında bu alan güncellenecek.**
+Cloudflare Pages preview: **https://796bd34f.hurralingo-landing.pages.dev**
+
+Branch adresi: https://phase-1b-tr-multipage.hurralingo-landing.pages.dev
+
+Cloudflare kayıtları dağıtımı **Preview**, branch’i `phase-1b-tr-multipage`, kaynak commit’i **`cb8650e`**, deployment kimliğini **`796bd34f-4055-4a0a-acfa-e1dd4ca95856`** olarak doğruladı. Paket 219 dosya içeriyor. Doğrudan CLI ile yalnızca bu preview branch’ine yüklendi; Git remote’una push yapılmadı.
+
+**Uzak doğrulama sınırı:** Bu çalışma ortamından `.pages.dev` bağlantıları sık sık `ECONNRESET` / `ERR_CONNECTION_RESET` veriyor. Bir başarılı HTTP HEAD kontrolünde ana sayfa 200 ve `X-Robots-Tag: noindex, nofollow`; bir başarılı Chromium ziyaretinde yeni Türkçe başlık ve H1 görüldü. Sonraki toplu uzak kontroller TLS bağlantı sıfırlamaları nedeniyle tamamlanamadı. Dolayısıyla 43 canonical ve 174 yönlendirme için aşağıdaki başarılı sonuçlar **yerel preview paketine** aittir; tüm uzak URL’lerin geçtiği iddia edilmez. [deployment-verification.json](docs/phase-1b/deployment-verification.json) bu başarısız uzak denemeyi açıkça saklar. Ağ erişimi düzeldiğinde `node scripts/check-preview-deployment.cjs https://796bd34f.hurralingo-landing.pages.dev` ile tekrar çalıştırılabilir.
+
+Production deployment kimliği önce/sonra **`b61b1c9e-4744-4956-b9d0-441dac1d39f1`**, kaynak `4750cad`, branch `main` olarak aynı kaldı. Canlı Türkçe/EN/DE/AZ sayfaların ana içerikleri, canonical ve robots metaları başlangıç Git referansıyla; canlı `robots.txt` ise dağıtım öncesi yanıtıyla eşleşti. Cloudflare e-posta koruması her yanıtta farklı kod ürettiğinden ham HTML hash’i sabit değildir; içerik karşılaştırmasında bu e-posta kodları çözülür. Kanıtlar: [preview-deployment.json](docs/phase-1b/preview-deployment.json), [production-verification.json](docs/phase-1b/production-verification.json).
 
 Yerel test origin’i: `http://127.0.0.1:8021`. Son teslimde süreç kapatılır; tekrar açmak için aşağıdaki komutlar kullanılabilir.
 
@@ -80,7 +88,7 @@ Ana sayfanın uzun öğretmen listesi ve detay açıklamaları ilgili sayfalara 
 | JavaScript ve HTTP | Tarayıcı testinde JS hatası ve başarısız yerel HTTP yanıtı yok. |
 | Yönlendirmeler | 174 kuralın tamamı 301 ve doğru hedefe 200; UTM koruması ve gerçek 404 kontrolü geçti. |
 | JavaScript kapalı | 38 öğretmen statik HTML’de mevcut; ücret hesaplayıcısının noscript açıklaması görünür. |
-| Görsel kanıt | [browser-verification.json](docs/phase-1b/browser-verification.json) ve [screenshots/](docs/phase-1b/screenshots/). Tam sayfa görüntülerinde lazy görseller yüklenir ve okunaklı kanıt için hareket azaltma kullanılır. |
+| Görsel kanıt | 21 tam sayfa görüntüsü, 505 görsel kullanımında yükleme/decode başarılı. [screenshot-verification.json](docs/phase-1b/screenshot-verification.json), [browser-verification.json](docs/phase-1b/browser-verification.json) ve [screenshots/](docs/phase-1b/screenshots/). Tam sayfa görüntülerinde lazy görseller yüklenir ve okunaklı kanıt için hareket azaltma kullanılır. |
 
 Tarayıcı araçları mevcut komşu projedeki Playwright kurulumunu kullanır; yeni browser/paket kurulmadı. Eski tüm dillerdeki kontrol betiği çalıştırılmadı; Faz 1B kapsamındaki TR testleri çalıştırıldı.
 
@@ -96,10 +104,12 @@ Faz 1A’daki medya API toplamı/dönen kayıt farkı olan **57 arşiv kaydı** 
 - Ortak tasarım/etkileşim: `assets/site-theme-tr.css`, `assets/site-tr.css`, `assets/site-tr.js`. Önceki Türkçe stiller ve etkileşimler ortak varlıklara çıkarıldı; mevcut yabancı sayfaların kullandığı stiller değiştirilmedi.
 - Kaynaklar: `content/site/home-template.html`, `pricing-main.html`, `archive-content-tr.json`, `canonical-tr.json`, `redirects-tr.json`.
 - Üretim: `scripts/site-tr.cjs`, `build-site-tr.cjs`, `build-seo-tr.cjs`, `package-preview.cjs`; TR kapsamı ve ortak kabuk için `build-blog.cjs`, `build-pricing.cjs`, `update-pricing-home.cjs` güncellendi.
-- Kontroller: `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `capture-site-tr.cjs`, `check-preview-deployment.cjs`; yeni menü/TR kapsamı için `check-pricing.cjs` ve `check-blog.cjs` güncellendi.
+- Kontroller: `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `capture-site-tr.cjs`, `check-preview-deployment.cjs`, `check-production-unchanged.cjs`; yeni menü/TR kapsamı için `check-pricing.cjs` ve `check-blog.cjs` güncellendi.
 - Yerel preview sunucusu: `serve-phase1b-preview.cjs`; mevcut sunucu dosyası değiştirilmedi.
 - `package.json`: site build/check/browser/package komutları. Bağımlılık ve lockfile değişikliği yok.
 - Kanıtlar/raporlar: `docs/phase-1b/`, `sitemap.xml`, Faz 1A raporlarının baseline commit’i ve bu rapor.
+
+Başlangıç referansına göre tam dosya listesi: [changed-files.txt](docs/phase-1b/changed-files.txt). Preview’a giren uygulama commit’i `cb8650e`; sonraki rapor/test-transport düzenlemeleri site paketinin içeriğini değiştirmez.
 
 ```powershell
 npm.cmd run site:build

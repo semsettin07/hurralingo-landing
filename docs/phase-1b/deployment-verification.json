@@ -1,0 +1,9 @@
+{
+  "origin": "https://796bd34f.hurralingo-landing.pages.dev",
+  "transport": "Chromium",
+  "canonical": [],
+  "redirects": [],
+  "foreign": [],
+  "pass": false,
+  "failure": "page.goto: net::ERR_CONNECTION_RESET at https://796bd34f.hurralingo-landing.pages.dev/\nCall log:\n\u001b[2m  - navigating to \"https://796bd34f.hurralingo-landing.pages.dev/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-preview-deployment.cjs:9:12"
+}
