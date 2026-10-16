@@ -2,6 +2,8 @@
 
 Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
 
+Son preview: **https://a9226113.hurralingo-landing.pages.dev/**. Preview deployment ID: `a9226113-b39c-45e3-a60f-a4b0ce19f3f5`; uygulama commit'i: `282e92a` (sonraki kayıt commit'i test/rapor içindir). Cloudflare ortamı `Preview`, branch `phase-1b-tr-multipage` olarak doğrulandı.
+
 **Production yayını yapılmadı.** Talimatın 4 ve 8. maddelerine göre eksik yasal kaynaklar, kampanya geçerliliği ve ödül kapsamının tamamlanmamış doğrulaması yayın engelidir. Main merge, production deployment, canlı DNS/SEO/robots değişikliği yapılmadı. Mevcut koşullu canlı yayın onayı kaydedildi; eksikler çözülmeden kullanılamaz.
 
 ## Tasarım ve içerik
@@ -17,8 +19,9 @@ Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
 - Tarayıcı: 43 sayfa × 320/390/768/1024/1440/1842 px = 258 kombinasyon; taşma yok. 60 ücret senaryosu, filtre/boş sonuç, blog arama/sıfırlama, mobil Escape/odak döndürme/Tab tuzağı, FAQ ve video diyalogu geçti. 22 ekran görüntüsü; JS hatası, bozuk görsel veya yerel HTTP hatası yok.
 - Üst alan: iki sayfa × sekiz genişlik = 16 kontrol; büyük logo, duyuru sürekliliği, klavye açılır menüsü ve dört yaş grubu geçti.
 - Fiyatlar mevcut 2027 TL değerleri ve “KDV hariç” koşuluyla gösteriliyor; fiyat/veri/ödeme politikası değiştirilmedi.
-- Yerel 174 eski URL yönlendirmesi geçti. Uzak preview test sonucu ve adresi deployment sonrası eklenecek.
-- Kanıtlar: `docs/phase-1c/static-verification.json`, `browser-verification.json`, `header/`, `screenshots/`, `external-links.json`, `preflight.json`, `production-package-verification.json`, `release-blockers.json`.
+- Yerel 174 eski URL yönlendirmesi geçti. Uzak preview'da 43 Türkçe URL HTTP 200; tüm canonical/meta noindex/HTTP X-Robots-Tag, robots engeli ve 43 URL sitemap doğrulandı. `/en/`, `/de/`, `/az/` HTTP 200. 60 hesaplama senaryosu, 38 öğretmen/sekiz filtre, blog arama/sıfırlama, altı ekran genişliği ve mobil menü geçti. 174 eski URL ve altı yardımcı kuralın tamamı 301 → aynı preview origin'inde HTTP 200; bilinmeyen URL 404. Uzak JS/HTTP hata listeleri boş. Üst alan için aynı 16 kombinasyon ve klavye testleri uzak ortamda da geçti.
+- Uzak paketteki 149 çalışma/medya dosyasının tamamı HTTP 200 (HEAD). Üç veli yorumu ve metinleri aynı; altı soru videosu erişilebilir. Kampanya PDF'si ve iki banner görseli Faz 1C öncesi Git referansıyla SHA256 eşleşiyor. WhatsApp HTTP 200 ile doğru numaraya yönleniyor; telefon/e-posta hedefleri kaydedildi.
+- Kanıtlar: `docs/phase-1c/static-verification.json`, `browser-verification.json`, `header/`, `screenshots/`, `remote/remote-verification.json`, `remote/media-verification.json`, `content-preservation.json`, `external-links.json`, `preflight.json`, `preview-deployment.json`, `production-unchanged.json`, `production-package-verification.json`, `release-blockers.json`.
 
 ## Yayın öncesi engeller ve kaynaklar
 
@@ -45,4 +48,4 @@ Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
 
 ## Değişen dosyalar
 
-43 Türkçe HTML; `assets/site-tr.css`, `assets/site-tr.js`; `scripts/site-tr.cjs`, `build-site-tr.cjs`, `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `check-header-tr.cjs`, `check-preview-remote.cjs`; yeni `scripts/package-production.cjs`; `package.json`; bu rapor ve `docs/phase-1c/` test/ekran görüntüsü kayıtları. Tam liste `docs/phase-1c/changed-files.txt` içinde kaydedilecek.
+43 Türkçe HTML; `assets/site-tr.css`, `assets/site-tr.js`; `scripts/site-tr.cjs`, `build-site-tr.cjs`, `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `check-header-tr.cjs`, `check-preview-remote.cjs`; yeni `scripts/package-production.cjs`, `check-phase1c-content.cjs`; `package.json`; bu rapor ve `docs/phase-1c/` test/ekran görüntüsü kayıtları. Tam liste `docs/phase-1c/changed-files.txt` içinde.

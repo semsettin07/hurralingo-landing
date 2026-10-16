@@ -39,6 +39,7 @@ blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/index.html
 derslerimiz/index.html
 docs/phase-1c/browser-verification.json
 docs/phase-1c/changed-files.txt
+docs/phase-1c/content-preservation.json
 docs/phase-1c/external-links.json
 docs/phase-1c/external-source-discovery.json
 docs/phase-1c/header/local-contact-1842.png
@@ -46,9 +47,20 @@ docs/phase-1c/header/local-contact-390.png
 docs/phase-1c/header/local-home-1842.png
 docs/phase-1c/header/local-home-390.png
 docs/phase-1c/header/local-verification.json
+docs/phase-1c/header/remote-contact-1842.png
+docs/phase-1c/header/remote-contact-390.png
+docs/phase-1c/header/remote-home-1842.png
+docs/phase-1c/header/remote-home-390.png
+docs/phase-1c/header/remote-verification.json
 docs/phase-1c/preflight.json
+docs/phase-1c/preview-deployment.json
 docs/phase-1c/production-package-verification.json
+docs/phase-1c/production-unchanged.json
 docs/phase-1c/release-blockers.json
+docs/phase-1c/remote/media-verification.json
+docs/phase-1c/remote/remote-home-1440.png
+docs/phase-1c/remote/remote-home-390.png
+docs/phase-1c/remote/remote-verification.json
 docs/phase-1c/screenshots/blog-1440.png
 docs/phase-1c/screenshots/blog-390.png
 docs/phase-1c/screenshots/derslerimiz-1440.png
@@ -81,6 +93,7 @@ package.json
 referanslarimiz/index.html
 scripts/build-site-tr.cjs
 scripts/check-header-tr.cjs
+scripts/check-phase1c-content.cjs
 scripts/check-preview-remote.cjs
 scripts/check-site-browser-tr.cjs
 scripts/check-site-tr.cjs

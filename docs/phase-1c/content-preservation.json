@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "testimonials": 3,
+  "testimonialTextUnchanged": true,
+  "questionVideos": 6,
+  "videoResponses": [
+    {
+      "file": "/media/soru-1.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-2.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-3.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-4.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-5.mp4",
+      "status": 200
+    },
+    {
+      "file": "/media/soru-6.mp4",
+      "status": 200
+    }
+  ],
+  "campaignMedia": [
+    {
+      "file": "docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf",
+      "sha256": "d0eb767f00f31936cf0834969b27a21a903cbf1790137b76680ec47fd44d5ab5",
+      "unchanged": true
+    },
+    {
+      "file": "img/emniyet-kampanya-masaustu.png",
+      "sha256": "dba77f6bf856b7fc7062888cbc349f2be0136f7ab30e9f3daef04b4fd332725f",
+      "unchanged": true
+    },
+    {
+      "file": "img/emniyet-kampanya-mobil.png",
+      "sha256": "e5b5ad596f937b3e580129bce23a878658a3c41ac9e08764ca9e02cd8d491cba",
+      "unchanged": true
+    }
+  ],
+  "contactLinks": [
+    "https://wa.me/905395167070",
+    "tel:+905395167070",
+    "mailto:hello@hurralingo.com"
+  ],
+  "whatsapp": {
+    "status": 200,
+    "url": "https://api.whatsapp.com/send/?phone=905395167070&text&type=phone_number&app_absent=0"
+  }
+}

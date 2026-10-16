@@ -1,0 +1,9 @@
+{
+  "Id": "a9226113-b39c-45e3-a60f-a4b0ce19f3f5",
+  "Environment": "Preview",
+  "Branch": "phase-1b-tr-multipage",
+  "Source": "282e92a",
+  "Deployment": "https://a9226113.hurralingo-landing.pages.dev",
+  "Status": "2 minutes ago",
+  "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/a9226113-b39c-45e3-a60f-a4b0ce19f3f5"
+}
