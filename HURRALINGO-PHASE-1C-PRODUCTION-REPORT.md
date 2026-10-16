@@ -2,7 +2,7 @@
 
 Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
 
-Son preview: **https://a9226113.hurralingo-landing.pages.dev/**. Preview deployment ID: `a9226113-b39c-45e3-a60f-a4b0ce19f3f5`; uygulama commit'i: `282e92a` (sonraki kayıt commit'i test/rapor içindir). Cloudflare ortamı `Preview`, branch `phase-1b-tr-multipage` olarak doğrulandı.
+Son preview: **https://5dbe68c1.hurralingo-landing.pages.dev/**. Preview deployment ID: `5dbe68c1-640e-43d2-9974-37e3ea89c84a`; uygulama commit'i: `63efd30` (sonraki kayıt commit'i test/rapor içindir). Cloudflare ortamı `Preview`, branch `phase-1b-tr-multipage` olarak doğrulandı.
 
 **Production yayını yapılmadı.** Talimatın 4 ve 8. maddelerine göre kampanya geçerliliği ve ödül kapsamının tamamlanmamış doğrulaması yayın engelidir. Main merge, production deployment, canlı DNS/SEO/robots değişikliği yapılmadı. Mevcut koşullu canlı yayın onayı kaydedildi; eksikler çözülmeden kullanılamaz.
 
@@ -51,3 +51,5 @@ Son preview: **https://a9226113.hurralingo-landing.pages.dev/**. Preview deploym
 43 Türkçe HTML; `assets/site-tr.css`, `assets/site-tr.js`; `scripts/site-tr.cjs`, `build-site-tr.cjs`, `check-site-tr.cjs`, `check-site-browser-tr.cjs`, `check-header-tr.cjs`, `check-preview-remote.cjs`; yeni `scripts/package-production.cjs`, `check-phase1c-content.cjs`; `scripts/package-preview.cjs`; iki `wp-content/uploads/2026/03/*.pdf`; `package.json`; bu rapor ve `docs/phase-1c/` test/ekran görüntüsü kayıtları. Tam liste `docs/phase-1c/changed-files.txt` içinde.
 
 Son kapsam güncellemesi: yalnızca kullanıcının verdiği iki yasal PDF. Kanıt: `docs/phase-1c/legal-documents-verification.json`. Önceki tam tasarım/işlev testleri korunuyor; bu revizyonda footer, belge erişimi, PDF içerik türü ve eklerle SHA256 eşleşmesi ayrıca test edildi.
+
+İki PDF revizyonunun uzak kontrolü: son preview üzerinde 43 footer, iki `application/pdf` yanıtı ve eklerle SHA256 eşleşmesi geçti; PDF yanıtlarında da `X-Robots-Tag: noindex, nofollow` var. `/en/`, `/de/`, `/az/` HTTP 200; robots engeli devam ediyor. Kanıt: `docs/phase-1c/legal-preview-remote.json`. Önceki kapsamlı uzak işlev testleri `a9226113` preview’ında yapılmıştır; bu revizyon ortak footer ve PDF dosyalarını değiştirir. Production deployment ID tekrar kontrol edildi ve aynı kaldı.

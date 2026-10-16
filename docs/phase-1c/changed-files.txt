@@ -52,6 +52,9 @@ docs/phase-1c/header/remote-contact-390.png
 docs/phase-1c/header/remote-home-1842.png
 docs/phase-1c/header/remote-home-390.png
 docs/phase-1c/header/remote-verification.json
+docs/phase-1c/legal-documents-verification.json
+docs/phase-1c/legal-footer-browser.json
+docs/phase-1c/legal-preview-remote.json
 docs/phase-1c/preflight.json
 docs/phase-1c/preview-deployment.json
 docs/phase-1c/production-package-verification.json
@@ -97,6 +100,9 @@ scripts/check-phase1c-content.cjs
 scripts/check-preview-remote.cjs
 scripts/check-site-browser-tr.cjs
 scripts/check-site-tr.cjs
+scripts/package-preview.cjs
 scripts/package-production.cjs
 scripts/site-tr.cjs
 ucretler/index.html
+wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf
+wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf
