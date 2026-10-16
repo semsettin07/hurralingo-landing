@@ -1,6 +1,9 @@
 /* Turkish multipage additions. Original tokens, section styles and interactions remain intact. */
 /* Restore the original centered header, logo sizing and announcement styling. */
-.site-tr .header .bar{max-width:var(--wrap);margin-inline:auto}
+.site-tr .header .bar{max-width:1360px;margin-inline:auto}
+.site-tr #ogretmenler .t-empty[hidden]{display:none!important}
+@media(min-width:1181px) and (max-width:1439px){.site-tr .header .nav{display:none}.site-tr .header .menu-btn{display:inline-block}.site-tr #drawer:not([hidden]){display:flex!important}.site-tr .header .brand img{height:43px}}
+@media(min-width:1440px){.site-tr .header .bar{gap:16px}.site-tr .header .nav{gap:0}.site-tr .header .nav-a{padding-inline:7px;font-size:14px}.site-tr .header .hd-cta{margin-left:0}}
 .site-tr .header .nav-a[aria-current=page]{color:var(--cyan)}
 .site-tr .header .nav-a[aria-current=page]::after{clip-path:inset(0)}
 .site-tr .dr-list a[aria-current=page]{color:var(--cyan)}

@@ -11,7 +11,9 @@ function cards(items){return `<div class="site-grid">${items.map((x,i)=>`<articl
 function band(title,text,href,label){return `<section class="site-strip"><div><h2>${title}</h2><p>${text}</p></div><a class="btn btn-dark" href="${href}">${label} →</a></section>`;}
 const languages=['İngilizce','Almanca','Fransızca','İspanyolca','Rusça','Çince','Türkçe'];
 const languageList=`<ul class="language-list" aria-label="Ders dilleri">${languages.map(l=>`<li>${l}</li>`).join('')}</ul>`;
-const close=section('son');
+const closing=cheerio.load(section('son'),null,false);
+closing('p').first().text('Çocuklar, gençler ve yetişkinler için: öğretmeninizle tanışın, seviyenizi birlikte belirleyelim. Size en uygun programı sonra rahatça seçebilirsiniz.');
+const close=closing.html();
 const intro=(k,t,d,m)=>hero(k,t,d,m);
 const educational=archive.items.filter(x=>x.id.startsWith('education-'));
 const examples=archive.items.filter(x=>x.id.startsWith('example-'));

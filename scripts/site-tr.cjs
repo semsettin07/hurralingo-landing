@@ -9,7 +9,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt
 const source = read('content/site/home-template.html');
 const original = cheerio.load(source);
 const menu = [ ['Eğitim','/egitimmodelimiz/'], ['Dersler','/derslerimiz/'], ['Öğretmenler','/ogretmenlerimiz/'], ['Blog','/blog/'], ['Ücretler','/ucretler/'], ['Referanslar','/referanslarimiz/'], ['Kurumsal','/kurumsal/'], ['İletişim','/iletisim/'] ];
-const headerMenu=[['Programlar','/derslerimiz/#programlar'],['Öğretmenler','/ogretmenlerimiz/'],['Fiyatlar','/ucretler/'],['Veli soruları','/egitimmodelimiz/#sorular'],['Kurumlar','/kurumsal/'],['Blog','/blog/']];
+const headerMenu=menu;
 const trial = 'https://www.hurralingo.app/trial-request';
 const teachers = JSON.parse(source.match(/var T = (\[\[.*?\]\]);/)[1]);
 function absolute(markup) {
@@ -33,6 +33,15 @@ function header(route) {
   const anchors={top:'/',programlar:'/derslerimiz/#programlar',ogretmenler:'/ogretmenlerimiz/',fiyatlar:'/ucretler/',sorular:'/egitimmodelimiz/#sorular',kurumlar:'/kurumsal/'};
   $('.brand').attr('href','/');
   $('a[href]').each((i,e)=>{const a=$(e),href=a.attr('href');if(href?.startsWith('#')&&anchors[href.slice(1)])a.attr('href',anchors[href.slice(1)]);else if(href==='blog/')a.attr('href','/blog/');});
+  const programs=$('.nav > .nav-dd').first().clone();
+  programs.find('> .dd-trig').attr('href','/derslerimiz/').contents().filter((i,n)=>n.type==='text').first().replaceWith('Dersler');
+  $('.nav').empty();
+  for(const [label,href] of headerMenu){
+    if(label==='Dersler')$('.nav').append(programs);
+    else $('.nav').append(`<a class="nav-a" href="${href}">${label}</a>`);
+  }
+  $('#drawer .dr-list').html(headerMenu.map(([label,href])=>`<li><a href="${href}"><span>${label}</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>`).join(''));
+  $('#drawer .dr-sub-links a[href="/blog/"]').remove();
   $('.nav .nav-a,#drawer .dr-list a').each((i,e)=>{const a=$(e),href=a.attr('href').split('#')[0];if(route===href||(href==='/blog/'&&route.startsWith('/blog/')))a.attr('aria-current','page');});
   $('[data-spy]').removeAttr('data-spy');
   return $.html().replace(/[\t ]+$/gm,'');
@@ -41,6 +50,8 @@ function footer() {
   const $=cheerio.load(fragment('footer'),null,false);
   $('#kap-fh-1').next('ul').find('a').attr('href','/derslerimiz/#programlar');
   $('#kap-fh-2').next('ul').html(menu.map(([label,href])=>`<li><a href="${href}">${label}</a></li>`).join(''));
+  // Already published by Hurra Lingo's own application; do not invent missing policies.
+  $('#kap-fh-3').next('ul').find('span').filter((i,e)=>$(e).text().trim()==='Şartlar ve koşullar').replaceWith('<a href="https://www.hurralingo.app/img/Hurra_Lingo_Terms_and_Conditions_tr.pdf" target="_blank" rel="noopener noreferrer">Şartlar ve koşullar</a>');
   $('.kap-top').attr('href','#top');
   return clean($.html());
 }
@@ -58,6 +69,7 @@ function assets() {
   let js=original('script').map((i,e)=>original(e).text()).get().join('\n;\n');
   js=js.replace(/(["'])img\//g,'$1/img/').replace(/(["'])media\//g,'$1/media/');
   js=js.replace('if(!grid) return;','if(!grid) return;\n  if(sec.dataset.limit) T=T.slice(0,Number(sec.dataset.limit));');
+  js=js.replace("matchMedia('(min-width:1181px)')","matchMedia('(min-width:1440px)')");
   write('assets/site-tr.js',js);
 }
 function hero(kicker,title,description,mascot='maskot-mutlu.svg') {

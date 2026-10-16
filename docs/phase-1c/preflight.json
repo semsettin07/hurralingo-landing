@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-10-16T09:07:55.307Z",
+  "branch": "phase-1b-tr-multipage",
+  "beforeCommit": "1adc7683919c7184561b8b844076ee584af215ae",
+  "mainCommit": "4750cad420a3d4215a3035c78aa4e2539857a033",
+  "production": {
+    "id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+    "url": "https://b61b1c9e.hurralingo-landing.pages.dev",
+    "source": "4750cad420a3d4215a3035c78aa4e2539857a033"
+  },
+  "project": {
+    "name": "hurralingo-landing",
+    "productionBranch": "main",
+    "build": {
+      "build_command": "",
+      "destination_dir": "",
+      "root_dir": "",
+      "web_analytics_tag": null,
+      "web_analytics_token": null
+    }
+  },
+  "productionTouched": false
+}

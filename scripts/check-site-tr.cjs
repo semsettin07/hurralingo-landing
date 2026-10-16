@@ -14,7 +14,7 @@ for(const route of routes){const file=route.slice(1)+'index.html',$=c.load(read(
  assert.equal($('link[rel=canonical]').attr('href'),'https://www.hurralingo.com'+route);
  assert.equal($('meta[name=robots]').attr('content'),'noindex, nofollow');
  assert.deepEqual($('header nav.nav .nav-a').map((i,e)=>$(e).attr('href')).get(),expectedHrefs);
- assert.deepEqual($('#drawer .dr-list a').map((i,e)=>$(e).attr('href')).get(),expectedHrefs.slice(1,5));
+ assert.deepEqual($('#drawer .dr-list a').map((i,e)=>$(e).attr('href')).get(),expectedHrefs);
  assert.equal($('#drawer .dr-ages a').length,4);assert.equal($('#hd-prog').length,1);
  assert.equal($('#announce').text(),original('#announce').text(),'Original Bett announcement preserved');
  const ids=new Set();$('[id]').each((i,e)=>{const id=$(e).attr('id');assert.ok(!ids.has(id),`Duplicate ${id} on ${route}`);ids.add(id);});
@@ -41,4 +41,4 @@ const redirect=JSON.parse(read('content/site/redirects-tr.json')).rules;for(cons
 const fallbacks=JSON.parse(read('content/site/redirects-tr.json')).cloudflareUnicodeFallbacks||{};for(const [from,to]of Object.entries(fallbacks)){assert.match(from,/^\/tr\/\d{4}\/\d{2}\/\d{2}\/.*:legacyemoji/);localTarget(to,'/');}
 assert.equal(read('robots.txt'),'User-agent: *\r\nDisallow: /\r\n');
 const result={pass:true,canonicalPages:files,protectedFiles:Object.keys(baseline.protectedFiles).length,teachers:38,blogDetails:34,pricingScenarios:cases.length,excelFormulas:184,localLinkChecks:links,localAssetChecks:assets,redirectRules:Object.keys(redirect).length};
-fs.writeFileSync(path.join(root,'docs/phase-1b/static-verification.json'),JSON.stringify(result,null,2)+'\n');console.log(result);
+fs.writeFileSync(path.join(root,'docs/phase-1c/static-verification.json'),JSON.stringify(result,null,2)+'\n');console.log(result);

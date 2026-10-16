@@ -149,7 +149,7 @@ try{if(localStorage.getItem('hl-announce-v1'))document.getElementById('announce'
     else if(!e.shiftKey && cur === last){ e.preventDefault(); first.focus(); }
   });
   if(window.matchMedia){
-    var wide = matchMedia('(min-width:1181px)');
+    var wide = matchMedia('(min-width:1440px)');
     var onWide = function(){ if(wide.matches) closeDrawer(false); };
     if(wide.addEventListener) wide.addEventListener('change', onWide); else if(wide.addListener) wide.addListener(onWide);
   }
