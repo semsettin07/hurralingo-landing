@@ -2,9 +2,9 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.HURRA_PLAYWRIGHT_PATH||path.resolve(__dirname,'../../hurralingo/node_modules/playwright-core'));
 const origin=process.argv[2]||'http://127.0.0.1:8021';
-assert.ok(/^http:\/\/127\.0\.0\.1:8021$|^https:\/\/[a-z0-9-]+\.hurralingo-landing\.pages\.dev$/.test(origin));
-const dir='docs/phase-1c/header';fs.mkdirSync(dir,{recursive:true});
-const remote=origin.startsWith('https:'),label=remote?'remote':'local';
+assert.ok(/^http:\/\/127\.0\.0\.1:8021$|^https:\/\/[a-z0-9-]+\.hurralingo-landing\.pages\.dev$|^https:\/\/www\.hurralingo\.com$/.test(origin));
+const dir='docs/header-content-alignment';fs.mkdirSync(dir,{recursive:true});
+const remote=origin.startsWith('https:'),label=origin==='https://www.hurralingo.com'?'production':remote?'remote':'local';
 const result={origin,pass:false,widths:[],errors:[],dropdown:false,announcement:false,mobileMenu:false};
 (async()=>{const browser=await chromium.launch();let context,page;try{
  for(let i=0;i<12;i++){context=await browser.newContext({reducedMotion:'reduce'});await context.addInitScript(()=>localStorage.setItem('hl-ck','reject'));page=await context.newPage();try{await page.goto(origin+'/',{waitUntil:'load',timeout:20000});break}catch(e){await context.close();if(i===11)throw e;}}
@@ -13,9 +13,10 @@ const result={origin,pass:false,widths:[],errors:[],dropdown:false,announcement:
   await page.setViewportSize({width,height:950});await page.goto(origin+route,{waitUntil:'load'});await page.evaluate(()=>document.fonts.ready);
   assert.ok(await page.locator('#announce').isVisible());assert.ok((await page.locator('#announce').textContent()).includes('Bett UK 2026'));
   assert.deepEqual(await page.locator('#hdr .nav .nav-a').allTextContents(),['Eğitim','Dersler','Öğretmenler','Blog','Ücretler','Referanslar','Kurumsal','İletişim']);
-  const layout=await page.evaluate(()=>{const bar=document.querySelector('#hdr .bar').getBoundingClientRect(),logo=document.querySelector('#hdr .brand img').getBoundingClientRect(),content=document.querySelector('.hero-in,.page-intro').getBoundingClientRect();return{overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,logoLeft:logo.left,contentLeft:content.left,barWidth:bar.width,logoWidth:logo.width}});
-  assert.equal(layout.overflow,false);assert.ok(layout.logoLeft>=16);assert.ok(layout.logoWidth>=200);
+  const layout=await page.evaluate(()=>{const bar=document.querySelector('#hdr .bar').getBoundingClientRect(),logo=document.querySelector('#hdr .brand img').getBoundingClientRect(),content=document.querySelector('.hero-in,.page-intro').getBoundingClientRect(),nav=document.querySelector('#hdr .nav').getBoundingClientRect(),end=document.querySelector('#hdr .bar-end').getBoundingClientRect();return{overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth,logoLeft:logo.left,contentLeft:content.left,contentRight:content.right,endRight:end.right,navRight:nav.right,endLeft:end.left,barWidth:bar.width,logoWidth:logo.width}});
+  assert.equal(layout.overflow,false);assert.ok(Math.abs(layout.logoLeft-layout.contentLeft)<1,'Logo must align with main content');assert.ok(layout.logoWidth>=200);
   if(width>=1280)assert.ok(layout.logoLeft>=width*.025,'Header must remain centered');
+  if(width>=1440){assert.ok(Math.abs(layout.endRight-layout.contentRight)<1,'Actions must align with content right edge');assert.ok(layout.navRight<=layout.endLeft,'Menu and actions must not overlap');}
   if(width<1440){await page.locator('#hd-menu').click();await page.locator('#drawer').waitFor({state:'visible'});assert.equal(await page.locator('#drawer .dr-ages a').count(),4);assert.equal(await page.locator('#drawer .dr-list a').count(),8);await page.keyboard.press('Escape');await page.locator('#drawer').waitFor({state:'hidden'});assert.ok(await page.locator('#hd-menu').evaluate(n=>n===document.activeElement));}
   result.widths.push({route,width,...layout});
   if([390,1842].includes(width))await page.screenshot({path:`${dir}/${label}-${route==='/'?'home':'contact'}-${width}.png`,animations:'disabled'});
