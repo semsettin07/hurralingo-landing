@@ -30,6 +30,7 @@ function header(route) {
   // User-approved original header: announcement, larger logo, Programs dropdown
   // and original desktop/mobile composition. Only adapt links to the new pages.
   const $=cheerio.load(fragment('#announce')+fragment('#hdr')+fragment('#drawer'),null,false);
+  $('#hdr .hd-cta').remove();
   const anchors={top:'/',programlar:'/derslerimiz/#programlar',ogretmenler:'/ogretmenlerimiz/',fiyatlar:'/ucretler/',sorular:'/egitimmodelimiz/#sorular',kurumlar:'/kurumsal/'};
   $('.brand').attr('href','/');
   $('a[href]').each((i,e)=>{const a=$(e),href=a.attr('href');if(href?.startsWith('#')&&anchors[href.slice(1)])a.attr('href',anchors[href.slice(1)]);else if(href==='blog/')a.attr('href','/blog/');});
