@@ -1,0 +1,47 @@
+{
+  "name": "hurralingo-landing",
+  "subdomain": "hurralingo-landing.pages.dev",
+  "domains": [
+    "hurralingo-landing.pages.dev",
+    "hurralingo.com",
+    "www.hurralingo.com"
+  ],
+  "productionBranch": "main",
+  "sourceType": "github",
+  "sourceConfig": {
+    "owner": "semsettin07",
+    "repoName": "hurralingo-landing",
+    "productionBranch": "main",
+    "previewDeploymentSetting": "all",
+    "previewBranchIncludes": [
+      "*"
+    ],
+    "previewBranchExcludes": [],
+    "productionDeploymentsEnabled": true
+  },
+  "buildConfig": {
+    "build_command": "",
+    "destination_dir": "",
+    "root_dir": "",
+    "web_analytics_tag": null,
+    "web_analytics_token": null
+  },
+  "latestDeployment": {
+    "id": "796bd34f-4055-4a0a-acfa-e1dd4ca95856",
+    "environment": "preview",
+    "url": "https://796bd34f.hurralingo-landing.pages.dev",
+    "stage": {
+      "name": "deploy",
+      "started_on": null,
+      "ended_on": "2026-10-16T08:24:04.528701Z",
+      "status": "success"
+    }
+  },
+  "canonicalDeployment": {
+    "id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+    "environment": "production",
+    "url": "https://b61b1c9e.hurralingo-landing.pages.dev",
+    "branch": "main",
+    "commit": "4750cad420a3d4215a3035c78aa4e2539857a033"
+  }
+}
