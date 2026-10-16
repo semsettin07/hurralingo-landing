@@ -1,0 +1,21 @@
+{
+  "reviewedAt": "2026-10-16",
+  "language": "tr",
+  "items": [
+    {"id":"education-analysis","source":"https://hurraegitim.com/tr/egitimmodelimiz/","target":"/egitimmodelimiz/","status":"adapted","title":"Hedef ve seviye analizi","text":"Tanışma dersinde seviyeniz ve öğrenme hedefleriniz değerlendirilir. Yaşınıza, ilgi alanlarınıza ve günlük ihtiyaçlarınıza uygun bir öğrenme planı hazırlanır."},
+    {"id":"education-match","source":"https://hurraegitim.com/tr/egitimmodelimiz/","target":"/egitimmodelimiz/","status":"adapted","title":"Öğretmen eşleşmesi","text":"Öğrenme hedefinize uygun öğretmen ve ders modeli birlikte belirlenir. Çocuklar için oyunla öğrenme, yetişkinler için günlük yaşam ve iş hayatında kullanım öne çıkar."},
+    {"id":"education-tracking","source":"https://hurraegitim.com/tr/takipvesertifikasyon/","target":"/egitimmodelimiz/","status":"adapted","title":"Gelişimi birlikte takip edin","text":"Öğretmen geri bildirimleri ve dönem değerlendirmeleri, güçlü yönleri ve gelişim alanlarını görünür kılar. Öğrencinin kendi ilerlemesini değerlendirmesi de öğrenme sürecinin bir parçasıdır."},
+    {"id":"lessons-recordings","source":"https://hurraegitim.com/tr/derslerimiz/","target":"/derslerimiz/","status":"adapted","title":"Dersin ardından da öğrenin","text":"Canlı derslerde çalışılan konuları kayıtlı dersler ve interaktif alıştırmalarla tekrar edin. Kelime, dinleme, okuma ve yazma etkinlikleriyle öğrendiklerinizi günlük pratiğe dönüştürün."},
+    {"id":"example-match","source":"https://hurraegitim.com/tr/icerik-ornekleri/","target":"/egitimmodelimiz/#icerik-ornekleri","status":"adapted","title":"Eşleştirme etkinlikleri","text":"Kelimeler, görseller ve anlamlar arasında bağ kuran oyunlaştırılmış alıştırmalar."},
+    {"id":"example-writing","source":"https://hurraegitim.com/tr/icerik-ornekleri/","target":"/egitimmodelimiz/#icerik-ornekleri","status":"adapted","title":"Yazma etkinlikleri","text":"Kelime tamamlama ve cümle oluşturmayla başlayıp yazılı ifadeyi geliştiren çalışmalar."},
+    {"id":"example-interactive","source":"https://hurraegitim.com/tr/icerik-ornekleri/","target":"/egitimmodelimiz/#icerik-ornekleri","status":"adapted","title":"Etkileşimli içerikler","text":"Ders konularını görseller ve metinlerle pekiştiren, öğrenciyi sürece dahil eden içerikler."}
+  ],
+  "withheld": [
+    {"source":"https://hurraegitim.com/tr/ucretler/","reason":"Eski fiyat, paket ve indirimler mevcut Excel verisiyle çelişiyor."},
+    {"source":"https://hurraegitim.com/tr/takipvesertifikasyon/","reason":"Akreditasyon, sertifika geçerliliği, akademik kabul ve sınav koşulları için onay gerekli."},
+    {"source":"https://hurraegitim.com/tr/kurumsal/","reason":"Bett ödülü, hibe ve fuar iddiaları için güncel belge ve onay gerekli."},
+    {"source":"https://hurraegitim.com/tr/iletisim/","reason":"Ek sabit telefon, Londra ve diğer şube adresleri güncel olarak onaylanmadı."},
+    {"source":"https://hurraegitim.com/tr/referanslarimiz/","reason":"Mevcut üç yorum dışındaki veli yorumları ve video kullanım/güncellik onayı bekliyor."},
+    {"source":"https://hurraegitim.com/tr/ogretmenlerimiz/","reason":"Arşivden ek/çıkarılmış öğretmen veya farklı dil ataması aktarılmadı; mevcut 38 kişi esas."}
+  ]
+}

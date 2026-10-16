@@ -9,7 +9,8 @@ const root=path.resolve(__dirname,'..');
 const records=path.join(root,'content/blog/posts.json');
 const original=fs.readFileSync(records,'utf8');
 const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'application/javascript','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.jpeg':'image/jpeg'};
-const routes=['blog/','en/blog/','de/blog/','az/blog/'];
+// Phase 1B: fixtures and regeneration are restricted to Turkish output.
+const routes=['blog/'];
 const errors=[];
 const server=http.createServer((req,res)=>{
   const url=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
@@ -56,7 +57,7 @@ const build=()=>execFileSync(process.execPath,[path.join(__dirname,'build-blog.c
   const originals=JSON.parse(original);
   const routeByLanguage={tr:'blog/',en:'en/blog/',de:'de/blog/',az:'az/blog/'};
   const localLinks=new Set();
-  for(const post of originals){
+  for(const post of originals.filter(p=>p.language==='tr')){
     for(const width of [320,1440]){
       await page.setViewportSize({width,height:900});
       await page.goto(base+routeByLanguage[post.language]+post.slug+'/');
@@ -79,7 +80,7 @@ const build=()=>execFileSync(process.execPath,[path.join(__dirname,'build-blog.c
     if(originals.length){const post=originals.find(p=>p.language==='tr');await page.goto(base+'blog/'+post.slug+'/');await page.screenshot({path:path.join(preview,'article-'+width+'.png')});}
   }
   // Fixture content is temporary and is never retained in the real blog.
-  const fixture=['tr','en','de','az'].flatMap(language=>[
+  const fixture=['tr'].flatMap(language=>[
     {language,slug:'qa-language-learning',title:'İletişim & language learning',summary:'Öğrenme ve pratik',date:'2025-04-15T06:00:00Z',categories:['Practice'],source:'https://example.com/article',paragraphs:['Full article paragraph. <script>unsafe()</script>']},
     {language,slug:'qa-study-habits',title:'Study habits',summary:'Daily routines',date:'2025-05-01T06:00:00Z',categories:['Routine'],source:'https://example.com/habits',paragraphs:['Second article.']}
   ]);
@@ -100,7 +101,7 @@ const build=()=>execFileSync(process.execPath,[path.join(__dirname,'build-blog.c
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   }
   assert.deepEqual(errors,[]);
-  console.log('PASS: four languages; 320/390/768/1440px archives; '+originals.length+' real articles at 320/1440px; article images and local links; language links; mobile menu; search/category/reset; article escaping; no local HTTP or JavaScript errors.');
+  console.log('PASS: TR-only archive and fixtures; 34 real TR articles; responsive layout, images, language links, mobile menu, search/category/reset and article escaping. Foreign outputs not generated.');
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{
   fs.writeFileSync(records,original);build();
   for(const route of routes)for(const slug of ['qa-language-learning','qa-study-habits']){

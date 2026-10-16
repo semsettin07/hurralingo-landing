@@ -1,0 +1,61 @@
+/* Turkish multipage additions. Original tokens, section styles and interactions remain intact. */
+.site-tr .header .bar{max-width:1500px;gap:14px}
+.site-tr .header .nav{gap:0}
+.site-tr .header .nav-a{font-size:13px;padding-inline:7px;white-space:nowrap}
+.site-tr .header .nav-a[aria-current=page]{color:var(--cyan)}
+.site-tr .header .nav-a[aria-current=page]::after{clip-path:inset(0)}
+.site-tr .header .brand img{max-width:160px;object-fit:contain}
+.site-tr .hd-cta{font-size:12px;padding-inline:12px;white-space:nowrap}
+.site-tr .dr-list{margin-top:0}
+.site-tr .dr-list a{min-height:48px;font-size:20px}
+.site-tr .dr-list a[aria-current=page]{color:var(--cyan)}
+.site-tr .dr-st{animation-delay:calc(var(--i)*25ms)}
+.site-crumb{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px;margin-bottom:40px}
+.site-crumb a{color:var(--ink)}
+.page-intro{padding-top:36px;padding-bottom:56px}
+.page-intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:64px}
+.page-intro h1{font-family:var(--display);font-size:clamp(36px,4.5vw,64px);line-height:1.08;letter-spacing:-.035em;max-width:840px;margin:10px 0 20px;text-wrap:balance}
+.page-intro .lead{max-width:720px;margin:0 0 26px;font-size:19px;line-height:1.6}
+.page-mascot{width:180px;height:auto;justify-self:center;rotate:7deg;filter:drop-shadow(0 16px 0 #00aed010)}
+.site-section{padding:56px 0}
+.site-section h2,.site-strip h2{font-family:var(--display);font-size:clamp(28px,3vw,42px);line-height:1.15;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}
+.site-section>.lead{max-width:760px;margin-bottom:30px}
+.site-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.site-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.site-card{border:1px solid var(--line);border-radius:24px;padding:28px;background:#fff;min-width:0;transition:transform .25s,box-shadow .25s}
+.site-card h3{font-family:var(--display);font-size:24px;line-height:1.18;margin:14px 0 12px}
+.site-card p{font-size:16px;line-height:1.65;color:var(--muted);margin:0}
+.site-card a{color:var(--ink);text-underline-offset:4px}
+.site-card .site-number{font-family:var(--display);color:var(--cyan);font-size:32px;font-weight:700}
+.site-card .site-photo{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;margin-bottom:12px}
+.site-strip{background:var(--bg-2,#e7f6fa);border-radius:28px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:32px;margin-block:40px}
+.site-strip p{line-height:1.6;max-width:650px;color:var(--muted)}
+.site-strip .btn{flex-shrink:0}
+.section-link{margin:28px 0 0;display:flex;justify-content:center}
+.language-list{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:24px 0}
+.language-list li{border:1px solid var(--line);border-radius:999px;padding:10px 18px;background:#fff;font-weight:700}
+.home-ages .site-card{padding:24px}.home-ages .site-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.home-models .site-card{background:var(--bg-2,#e7f6fa);border:0}
+.home-models .site-card:nth-child(2){background:#fff0e8}.home-models .site-card:nth-child(3){background:#f3efff}
+.site-tr .home-teachers #teachers{grid-template-columns:repeat(3,minmax(0,1fr))}
+.home-blog .site-card{padding:14px;display:flex;flex-direction:column}.home-blog .site-card h3{font-size:22px}.home-blog .site-card time{font-size:13px;color:var(--muted)}
+.contact-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+.contact-main{background:var(--ink);color:white;border-radius:28px;padding:40px}
+.contact-main h2{font-family:var(--display);font-size:32px;margin:0 0 18px}
+.contact-main p{line-height:1.7;margin-bottom:24px;color:#d9e5ef}
+.contact-main a{color:#fff;overflow-wrap:anywhere}
+.contact-line{display:block;padding:18px 0;border-bottom:1px solid #ffffff26;text-decoration:none;font-size:clamp(18px,2vw,25px);font-weight:700}
+.contact-note{font-size:14px!important;color:var(--muted);margin-top:16px}
+.editorial-note{padding:18px 22px;border-left:3px solid var(--cyan);background:var(--bg-2,#e7f6fa);border-radius:0 12px 12px 0;font-size:14px;line-height:1.6;margin-bottom:28px}
+.site-tr .campaign-banner{margin-block:32px}
+.site-tr .blog-main,.site-tr .fee-main{padding-top:20px}
+.site-tr #top{scroll-margin-top:110px}
+.site-tr [id]{scroll-margin-top:100px}
+.site-tr #kap-live:empty{position:absolute}
+.site-tr .nd-cert h3{font-size:25px}
+@media(hover:hover) and (pointer:fine){.site-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px -24px var(--ink)}}
+@media(min-width:1181px) and (max-width:1320px){.site-tr .hd-login{display:none}.site-tr .header .brand img{max-width:140px}.site-tr .header .bar{gap:8px}.site-tr .header .nav-a{padding-inline:5px}}
+@media(max-width:1180px){.site-tr .header .nav{display:none}.site-tr .header .hd-cta{font-size:13px}.site-tr .header .bar{justify-content:space-between}}
+@media(max-width:800px){.page-intro-grid{grid-template-columns:minmax(0,1fr) 120px;gap:20px}.page-mascot{width:110px}.site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ages .site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-strip{flex-direction:column;align-items:flex-start;padding:28px}.contact-layout{grid-template-columns:1fr}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.page-intro{padding-top:24px;padding-bottom:28px}.site-crumb{margin-bottom:24px}.page-intro-grid{grid-template-columns:1fr}.page-mascot{display:none}.page-intro .lead{font-size:17px}.site-grid,.site-grid.two,.home-ages .site-grid{grid-template-columns:1fr}.site-section{padding:32px 0}.site-card{padding:23px}.site-strip{padding:24px;margin-block:24px}.site-strip .btn{white-space:normal}.contact-main{padding:26px}.site-tr .header .brand img{max-width:140px}.site-tr .dr-list a{min-height:44px;font-size:19px}.site-tr .dr-hello{margin-bottom:12px}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.site-card,.page-mascot{transition:none;rotate:none}.site-card:hover{transform:none}}

@@ -1,0 +1,9 @@
+{
+  "Id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+  "Environment": "Production",
+  "Branch": "main",
+  "Source": "4750cad",
+  "Deployment": "https://b61b1c9e.hurralingo-landing.pages.dev",
+  "Status": "1 hour ago",
+  "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/b61b1c9e-4744-4956-b9d0-441dac1d39f1"
+}

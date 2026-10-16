@@ -45,6 +45,7 @@ function renderNodes(nodes,route) {
   }).join('');
 }
 function shell(lang, route, title, description, content, alternateRoutes) {
+  if(lang==='tr')return require('./site-tr.cjs').shell('/'+route,title,description,content,{bodyClass:'blog-page',mainClass:'blog-main',styles:['assets/blog.css'],scripts:['assets/blog.js'],article:route!=='blog/'});
   const l=locales[lang], home=read(l.home);
   const styles=[...home.matchAll(/<style>([\s\S]*?)<\/style>/g)].map(m=>m[1]).join('\n');
   // Retain the existing language-specific header, drawer and its keyboard behavior.
@@ -62,6 +63,8 @@ function shell(lang, route, title, description, content, alternateRoutes) {
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${esc(title)} | Hurra Lingo</title><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${pageUrl(route)}">${hreflang}<meta property="og:title" content="${esc(title)} | Hurra Lingo"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${pageUrl(route)}"><meta property="og:image" content="https://hurralingo-landing.pages.dev/img/hurralingo-og.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="${relative(route,'img/favicon.png')}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&family=Poetsen+One&display=swap"><style>${styles}</style><link rel="stylesheet" href="${relative(route,'desktop-density.css')}"><link rel="stylesheet" href="${relative(route,'localization.css')}"><link rel="stylesheet" href="${relative(route,'assets/blog.css')}"></head><body class="blog-page">${icons}<a class="blog-skip" href="#main">${l.skip}</a>${header}<main id="main" class="blog-main">${content}</main>${footer}<script src="${relative(route,'assets/blog.js')}" defer></script></body></html>`;
 }
 for(const [lang,l] of Object.entries(locales)) {
+  // Phase 1B is strictly TR-only. Never regenerate EN/DE/AZ, including via npm blog:build.
+  if(lang!=='tr')continue;
   const route=l.route, articles=posts.filter(p=>p.language===lang).sort((a,b)=>b.date.localeCompare(a.date));
   const cats=[...new Set(articles.flatMap(p=>p.categories||[]))].sort((a,b)=>a.localeCompare(b,l.locale));
   const date=p=>new Intl.DateTimeFormat(l.locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(p.date));
@@ -72,7 +75,8 @@ for(const [lang,l] of Object.entries(locales)) {
   write(route+'index.html',shell(lang,route,l.name,l.intro,content,alternates));
   for(const p of articles) {
     const r=route+p.slug+'/';
-    const body=`<article class="blog-article"><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${p.author?`<span>${esc(p.author)}</span>`:''}</div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a></article>`;
+    const historical=/kampanya|indirim/i.test(p.paragraphs.join(' '))?'<p class="editorial-note">Bu yazı yayımlandığı dönemin bilgilerini içerir. Tarihli kampanya ve indirimler güncel teklif değildir. Güncel seçenekler için <a href="/ucretler/">Ücretler sayfamızı</a> inceleyin.</p>':'';
+    const body=`<article class="blog-article"><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${p.author?`<span>${esc(p.author)}</span>`:''}</div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${historical}${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a></article>`;
     write(r+'index.html',shell(lang,r,p.title,p.summary,body,{[lang]:r}));
   }
   console.log(lang+': '+articles.length+' articles → '+route);

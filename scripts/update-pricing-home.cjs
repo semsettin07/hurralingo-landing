@@ -1,6 +1,8 @@
 // One-time migration. Re-running preserves the already migrated homepage.
 const fs=require('node:fs');
 let home=fs.readFileSync('index.html','utf8');
+// Phase 1B pages are generated from preserved source rather than section comments.
+if(home.includes('/assets/site-tr.js')){require('./build-site-tr.cjs');return;}
 home=home.replace('Çocuğunuza uyan sınıf büyüklüğünü seçin. Ders başı ücreti, toplam tutarı ve taksit farkını burada açıkça görün.','Size uygun ders modelini seçin. Üyelik sürenize ve haftalık ders sayınıza göre ders başı ücretleri, toplam paket tutarını ve ödeme seçeneklerini hesaplayın.');
 home=home.replace(/  <!-- Örnek hesap -->[\s\S]*?(?=<!-- SECTION 07-ogretmenler)/,`  <div class="calc" style="display:block;text-align:center">
     <h3 class="calc-t" style="padding:0">Size uygun ders planı ne kadar?</h3>

@@ -1,0 +1,10 @@
+// Stable full-page evidence: load lazy images, respect reduced motion and wait for decode.
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium}=require(process.env.HURRA_PLAYWRIGHT_PATH||path.resolve(__dirname,'../../hurralingo/node_modules/playwright-core'));
+(async()=>{const browser=await chromium.launch();try{
+ const context=await browser.newContext({reducedMotion:'reduce'});await context.addInitScript(()=>localStorage.setItem('hl-ck','reject'));const page=await context.newPage();
+ const origin='http://127.0.0.1:8021';const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const shots=[...[320,390,768,1024,1440].map(width=>({route:'/',name:'home',width})),...['egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim','blog','ucretler'].flatMap(name=>[390,1440].map(width=>({route:'/'+name+'/',name,width})))];
+ let decoded=0;for(const shot of shots){await page.setViewportSize({width:shot.width,height:1000});await page.goto(origin+shot.route);await page.evaluate(()=>{document.querySelectorAll('img').forEach(i=>i.loading='eager');document.querySelectorAll('.pop-in').forEach(n=>n.classList.add('is-in'));});await page.waitForFunction(()=>[...document.images].every(i=>i.complete),{},{timeout:20000});const images=await page.locator('img').evaluateAll(ns=>ns.map(n=>({src:n.src,width:n.naturalWidth})));assert.ok(images.every(i=>i.width>0),JSON.stringify(images.filter(i=>!i.width)));decoded+=images.length;await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`docs/phase-1b/screenshots/${shot.name}-${shot.width}.png`,fullPage:true,animations:'disabled'});}
+ assert.deepEqual(errors,[]);fs.writeFileSync('docs/phase-1b/screenshot-verification.json',JSON.stringify({pass:true,screenshots:shots.length,decodedImageInstances:decoded,reducedMotion:true,pageErrors:errors},null,2)+'\n');console.log('PASS: '+shots.length+' complete screenshots; '+decoded+' decoded images.');
+}finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});
