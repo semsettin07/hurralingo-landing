@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-16T09:44:46.793Z",
+  "mainBefore": "4750cad420a3d4215a3035c78aa4e2539857a033",
+  "featureBefore": "c2d7c56fe9fe9295aa66dce5b99e47a22fdb9aa1",
+  "productionBefore": {
+    "Id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
+    "Environment": "Production",
+    "Branch": "main",
+    "Source": "4750cad",
+    "Deployment": "https://b61b1c9e.hurralingo-landing.pages.dev",
+    "Status": "2 hours ago",
+    "Build": "https://dash.cloudflare.com/b21fdd3b8f630cbc1856d29e70af7ea1/pages/view/hurralingo-landing/b61b1c9e-4744-4956-b9d0-441dac1d39f1"
+  },
+  "userInstruction": "Production ve Main de güncelleyelim canlıya alalım güncellemeleri",
+  "scope": "Deploy current approved preview content, keep award/campaign wording; unresolved source verification recorded, not asserted resolved."
+}

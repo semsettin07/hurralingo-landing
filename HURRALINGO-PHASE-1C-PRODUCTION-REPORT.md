@@ -4,7 +4,7 @@ Tarih: 16 Ekim 2026. Branch: `phase-1b-tr-multipage`.
 
 Son preview: **https://5dbe68c1.hurralingo-landing.pages.dev/**. Preview deployment ID: `5dbe68c1-640e-43d2-9974-37e3ea89c84a`; uygulama commit'i: `63efd30` (sonraki kayıt commit'i test/rapor içindir). Cloudflare ortamı `Preview`, branch `phase-1b-tr-multipage` olarak doğrulandı.
 
-**Production yayını yapılmadı.** Talimatın 4 ve 8. maddelerine göre kampanya geçerliliği ve ödül kapsamının tamamlanmamış doğrulaması yayın engelidir. Main merge, production deployment, canlı DNS/SEO/robots değişikliği yapılmadı. Mevcut koşullu canlı yayın onayı kaydedildi; eksikler çözülmeden kullanılamaz.
+**Son yayın talimatı:** Kullanıcı, engellerin bildirildiği önizleme incelemesinden sonra main ve production güncellemesini açıkça istedi. Mevcut içerikle yayın hazırlanıyor. Bett ve Emniyet kaynak/tarih doğrulaması tamamlanmış sayılmıyor; mevcut metinler korunarak bu açık maddeler raporda tutuluyor. Önceki “yayın yapılmadı” kayıtları önceki önizleme aşamasına aittir; nihai deployment sonucu aşağıya eklenecektir.
 
 ## Tasarım ve içerik
 

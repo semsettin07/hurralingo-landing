@@ -29,7 +29,8 @@ for(const file of ['en.html','de.html','az.html']){
  const $=c.load(fs.readFileSync(path.join(out,file),'utf8'));
  foreign.push({file,canonical:$('link[rel=canonical]').attr('href'),robots:$('meta[name=robots]').attr('content'),byteIdentical:fs.readFileSync(path.join(root,file)).equals(fs.readFileSync(path.join(out,file)))});
 }
-const result={pass:true,productionCandidateOnly:true,sourceSeoUnchanged:true,canonicalPages:routes.length,sitemapPages:c.load(read('sitemap.xml'),{xmlMode:true})('loc').length,preview:{meta:'noindex, nofollow',header:'noindex, nofollow',robots:'Disallow: /'},production:{meta:'index, follow',header:'No global X-Robots-Tag; 404 remains noindex',robots:'Allow: /'},foreign,releaseBlocked:true,blockers:JSON.parse(read('docs/phase-1c/release-blockers.json')).blocking.map(x=>x.detail)};
+const release=JSON.parse(read('docs/phase-1c/release-blockers.json'));
+const result={pass:true,productionCandidateOnly:true,sourceSeoUnchanged:true,canonicalPages:routes.length,sitemapPages:c.load(read('sitemap.xml'),{xmlMode:true})('loc').length,preview:{meta:'noindex, nofollow',header:'noindex, nofollow',robots:'Disallow: /'},production:{meta:'index, follow',header:'No global X-Robots-Tag; 404 remains noindex',robots:'Allow: /'},foreign,releaseBlocked:!release.releaseAllowed||release.blocking.length>0,blockers:release.blocking.map(x=>x.detail),acceptedUnverifiedItems:release.acceptedUnverifiedItems||[]};
 fs.mkdirSync(path.join(root,'docs/phase-1c'),{recursive:true});
 fs.writeFileSync(path.join(root,'docs/phase-1c/production-package-verification.json'),JSON.stringify(result,null,2)+'\n');
-console.log('PASS: separate production candidate, 43 indexable TR pages; protected assets and foreign files identical. RELEASE BLOCKED pending documented approvals.');
+console.log('PASS: separate production candidate, 43 indexable TR pages; protected assets and foreign files identical. '+(result.releaseBlocked?'RELEASE BLOCKED.':'Release authorized; this script does not deploy.'));
