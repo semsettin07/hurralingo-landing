@@ -709,7 +709,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
         </div>
       </div>
       <a class="nav-a" href="#ogretmenler" data-spy>Öğretmenler</a>
-      <a class="nav-a" href="#fiyatlar" data-spy>Fiyatlar</a>
+      <a class="nav-a" href="/ucretler/">Fiyatlar</a>
       <a class="nav-a" href="#sorular" data-spy>Veli soruları</a>
       <a class="nav-a" href="#kurumlar" data-spy>Kurumlar</a>
       <a class="nav-a nav-blog" href="blog/">Blog</a>
@@ -750,7 +750,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       </ul>
       <ul class="dr-list">
         <li class="dr-st" style="--i:5"><a href="#ogretmenler" data-spy><span>Öğretmenler</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
-        <li class="dr-st" style="--i:6"><a href="#fiyatlar" data-spy><span>Fiyatlar</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="dr-st" style="--i:6"><a href="/ucretler/"><span>Fiyatlar</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="dr-st" style="--i:7"><a href="#sorular" data-spy><span>Veli soruları</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="dr-st" style="--i:8"><a href="#kurumlar" data-spy><span>Kurumlar</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
       </ul>
@@ -1579,7 +1579,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
         <li><span class="nd-pn">Mini grup<small>2–4 kişi · 30 dk</small></span><span class="nd-pv"><b>₺623</b>’ten</span></li>
         <li><span class="nd-pn">Bire bir<small class="nd-fav">En çok tercih edilen</small></span><span class="nd-pv"><b>₺890</b>’dan</span></li>
       </ul>
-      <div class="nd-foot"><span>Ders başı, örnek fiyat</span><a class="nd-link" href="#fiyatlar">Fiyatlar<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+      <div class="nd-foot"><span>Ders başı · yıllık peşin · Türk öğretmen · KDV hariç</span><a class="nd-link" href="#fiyatlar">Fiyatlar<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
     </article>
 
     <!-- 4 · Günlük pratik -->
@@ -2172,7 +2172,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 /* ===== Fiyatlar (#fiyatlar) — tüm seçiciler bölüm köküne kapsanmıştır =====
    Renk dozu (sadeleştirme turu): kartlar beyaz + nötr çerçeve; tek vurgu Özel ders (cyan-50).
    Renk yalnızca küçük öğelerde: sınıf figürleri, damga (güneş), çubuklar (cyan / lacivert + mercan fark). */
-#fiyatlar{--fy-pesin-w:86.227045%; /* 24.792 / 28.752 */ position:relative}
+#fiyatlar{position:relative}
 #fiyatlar .num{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Plan kartları ---------- */
@@ -2341,7 +2341,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   <div class="sec-head">
     <div>
       <h2 id="h-fiyat">Ders başı fiyatı <span class="squiggle">baştan görün</span></h2>
-      <p class="lead">Çocuğunuza uyan sınıf büyüklüğünü seçin. Ders başı ücreti, toplam tutarı ve taksit farkını burada açıkça görün.</p>
+      <p class="lead">Size uygun ders modelini seçin. Üyelik sürenize ve haftalık ders sayınıza göre ders başı ücretleri, toplam paket tutarını ve ödeme seçeneklerini hesaplayın.</p>
     </div>
   </div>
 
@@ -2366,7 +2366,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       </div>
       <div class="plan-price">
         <p class="price"><span class="cur">₺</span><span class="amt">446</span><span class="suf">’dan</span></p>
-        <p class="price-note">ders başı · <span class="num">₺446–550</span> aralığında</p>
+        <p class="price-note">ders başı · Türk öğretmen<br>Yıllık üyelik, peşin ödeme · KDV hariç</p>
       </div>
       <ul class="feat">
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Arkadaşlarıyla eğlenerek konuşur</li>
@@ -2392,7 +2392,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       </div>
       <div class="plan-price">
         <p class="price"><span class="cur">₺</span><span class="amt">623</span><span class="suf">’ten</span></p>
-        <p class="price-note">ders başı</p>
+        <p class="price-note">ders başı · Türk öğretmen<br>Yıllık üyelik, peşin ödeme · KDV hariç</p>
       </div>
       <ul class="feat">
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Her çocuğa daha çok konuşma sırası</li>
@@ -2420,7 +2420,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
       </div>
       <div class="plan-price">
         <p class="price"><span class="cur">₺</span><span class="amt">890</span><span class="suf">’dan</span></p>
-        <p class="price-note">ders başı</p>
+        <p class="price-note">ders başı · Türk öğretmen<br>Yıllık üyelik, peşin ödeme · KDV hariç</p>
       </div>
       <ul class="feat">
         <li><span class="ck"><svg class="icon"><use href="#i-check"/></svg></span>Çocuğunuzun hedefine göre kişisel program</li>
@@ -2431,91 +2431,12 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     </article>
   </div>
 
-  <!-- Örnek hesap -->
-  <div class="calc" data-state="pesin">
-    <div class="fy-mascot" aria-hidden="true">
-      <img class="m-pesin" src="img/maskot-sevinc.svg" alt="" width="88" height="91">
-      <img class="m-taksit" src="img/maskot-merakli.svg" alt="" width="88" height="91">
-    </div>
-    <div class="calc-in">
-      <span class="stamp calc-k">Örnek hesap</span>
-      <h3 class="calc-t">Özel ders, haftada 1 ders, 24 hafta</h3>
-      <p class="calc-s">Toplam 24 ders. Aynı paketi iki şekilde ödeyebilirsiniz; farkı aşağıda görün.</p>
-      <div class="fy-seg" role="group" aria-label="Ödeme şekli" data-state="pesin">
-        <span class="fy-thumb" aria-hidden="true"></span>
-        <button type="button" data-pay="pesin" aria-pressed="true">Peşin</button>
-        <button type="button" data-pay="taksit" aria-pressed="false">Taksitli</button>
-      </div>
-    </div>
-    <div class="calc-out">
-      <dl class="calc-m">
-        <div>
-          <dt>Toplam</dt>
-          <dd><span class="fy-roll big" id="calc-total"><span class="fy-v">₺24.792</span></span><span class="fy-roll cap" id="calc-sub"><span class="fy-v">Peşin ödeme</span></span></dd>
-        </div>
-        <div>
-          <dt>Ders başı</dt>
-          <dd><span class="fy-roll big" id="calc-per"><span class="fy-v">₺1.033</span></span><span class="cap">24 ders üzerinden</span></dd>
-        </div>
-      </dl>
-      <p class="calc-diff"><span class="dot" aria-hidden="true"><svg class="icon ic-p"><use href="#i-check"/></svg><svg class="icon ic-t"><use href="#fy-i-up"/></svg></span><span class="fy-roll" id="calc-diff"><span class="fy-v">Taksitliye göre ₺3.960 tasarruf</span></span></p>
-      <div class="fy-bars" role="img" aria-label="Karşılaştırma: peşin toplam 24.792 TL, taksitli toplam 28.752 TL; fark 3.960 TL.">
-        <div class="fy-bar is-pesin"><span class="fy-bl">Peşin</span><span class="fy-tr"><i class="fy-f"></i></span><span class="fy-bv">₺24.792</span></div>
-        <div class="fy-bar is-taksit"><span class="fy-bl">Taksitli</span><span class="fy-tr"><i class="fy-f"></i><i class="fy-x"></i></span><span class="fy-bv">₺28.752</span></div>
-        <p class="fy-leg"><i></i><span>Taksit farkı: <span class="num">₺3.960</span></span></p>
-      </div>
-    </div>
-    <p class="sr-only" id="calc-live" aria-live="polite"></p>
+  <div class="calc" style="display:block;text-align:center">
+    <h3 class="calc-t" style="padding:0">Size uygun ders planı ne kadar?</h3>
+    <p class="calc-s" style="margin:16px auto 24px;max-width:760px">Öğretmen seçiminize, üyelik sürenize ve haftalık ders sayınıza göre peşin ve taksitli ödeme seçeneklerini karşılaştırın.</p>
+    <a class="btn btn-primary" href="/ucretler/">Ders Ücretinizi Hesaplayın <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
-
-
 </section>
-
-<script>
-(function(){
-  var root = document.getElementById('fiyatlar'); if(!root) return;
-  var calc = root.querySelector('.calc'), seg = root.querySelector('.fy-seg'), live = document.getElementById('calc-live');
-  var btns = root.querySelectorAll('[data-pay]');
-  var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
-  var EASE = 'cubic-bezier(.2,.8,.2,1)';
-  var PAY = {
-    pesin:  { total:'₺24.792', sub:'Peşin ödeme', per:'₺1.033', diff:'Taksitliye göre ₺3.960 tasarruf',
-              sr:'Peşin: toplam 24.792 TL, Peşin ödeme. Ders başı 1.033 TL. Taksitliye göre 3.960 TL tasarruf.' },
-    taksit: { total:'₺28.752', sub:'taksitli ödeme', per:'₺1.198', diff:'Peşine göre toplam yaklaşık %16 daha yüksek',
-              sr:'Taksitli: toplam 28.752 TL. Ders başı 1.198 TL. Peşine göre toplam yaklaşık yüzde 16 daha yüksek.' }
-  };
-  var state = 'pesin';
-
-  // Değer değişimi: eski değer yukarı (ya da aşağı) kayıp kaybolur, yenisi karşı yönden gelir.
-  function roll(id, text, dir, delay){
-    var box = document.getElementById(id); if(!box) return;
-    box.querySelectorAll('.fy-v.out').forEach(function(n){ n.remove(); });
-    var cur = box.querySelector('.fy-v'); if(!cur || cur.textContent === text) return;
-    if((mq && mq.matches) || !cur.animate){ cur.textContent = text; return; }
-    var nu = cur.cloneNode(false); nu.textContent = text;
-    cur.classList.add('out'); cur.setAttribute('aria-hidden', 'true');
-    box.appendChild(nu);
-    var o = cur.animate([{ transform:'translateY(0)', opacity:1 }, { transform:'translateY(' + (-dir * 55) + '%)', opacity:0 }],
-                        { duration:180, delay:delay, easing:EASE, fill:'forwards' });
-    o.onfinish = function(){ cur.remove(); };
-    nu.animate([{ transform:'translateY(' + (dir * 55) + '%)', opacity:0 }, { transform:'translateY(0)', opacity:1 }],
-               { duration:300, delay:delay + 50, easing:EASE, fill:'backwards' });
-  }
-
-  function set(k){
-    if(!PAY[k] || k === state) return;
-    var dir = k === 'taksit' ? 1 : -1, p = PAY[k]; state = k;
-    btns.forEach(function(x){ x.setAttribute('aria-pressed', String(x.dataset.pay === k)); });
-    seg.dataset.state = k; calc.dataset.state = k;
-    roll('calc-total', p.total, dir, 0);
-    roll('calc-per',   p.per,   dir, 40);
-    roll('calc-sub',   p.sub,   dir, 20);
-    roll('calc-diff',  p.diff,  dir, 70);
-    if(live) live.textContent = p.sr;
-  }
-  btns.forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.pay); }); });
-})();
-</script>
 
 <!-- SECTION 07-ogretmenler-yorumlar: bu dosyanın sahibi yalnızca bu bölümün ajanıdır (Ajan 7) -->
 <style>
@@ -3450,7 +3371,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
           </ul>
         </div>
         <nav aria-labelledby="kap-fh-1"><h2 class="kap-fh" id="kap-fh-1">Programlar</h2><ul class="kap-links"><li><a href="#programlar">Minikler (4–6)</a></li><li><a href="#programlar">Çocuklar (7–12)</a></li><li><a href="#programlar">Gençler (13–18)</a></li><li><a href="#programlar">Yetişkinler</a></li></ul></nav>
-        <nav aria-labelledby="kap-fh-2"><h2 class="kap-fh" id="kap-fh-2">Keşfet</h2><ul class="kap-links"><li><a href="blog/">Blog</a></li><li><a href="#sorular">Veli soruları</a></li><li><a href="#ogretmenler">Öğretmenler</a></li><li><a href="#fiyatlar">Fiyatlar</a></li><li><a href="#kurumlar">Kurumlar</a></li><li><a href="#sss">SSS</a></li></ul></nav>
+        <nav aria-labelledby="kap-fh-2"><h2 class="kap-fh" id="kap-fh-2">Keşfet</h2><ul class="kap-links"><li><a href="blog/">Blog</a></li><li><a href="#sorular">Veli soruları</a></li><li><a href="#ogretmenler">Öğretmenler</a></li><li><a href="/ucretler/">Fiyatlar</a></li><li><a href="#kurumlar">Kurumlar</a></li><li><a href="#sss">SSS</a></li></ul></nav>
         <!-- TODO(owner): supply verified URLs for the legal documents below. -->
         <nav aria-labelledby="kap-fh-3"><h2 class="kap-fh" id="kap-fh-3">Yasal</h2><ul class="kap-links"><li><span>KVKK aydınlatma metni</span></li><li><span>Çerez politikası</span></li><li><span>Mesafeli satış sözleşmesi</span></li><li><span>Şartlar ve koşullar</span></li></ul></nav>
         <div><h2 class="kap-fh">İletişim</h2><ul class="kap-contact"><li><b>+90 539 516 70 70</b><span>WhatsApp ve telefon</span></li><li><b>hello@hurralingo.com</b><span>E-posta</span></li><li>Ankara Üniversitesi Teknokent, Gölbaşı / Ankara</li></ul></div>

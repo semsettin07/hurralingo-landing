@@ -2,7 +2,9 @@
 
 Bu depo, **Hurra Lingo** için **İnfomedya** tarafından hazırlanan ana sayfa tasarım önerisini içerir. Sayfanın **Türkçe, İngilizce, Almanca ve Azerbaycanca** dört sürümü vardır. Proje derleme adımı gerektirmeyen statik bir web sitesidir. Mevcut hazırlık önizlemesi Cloudflare Pages üzerindedir; Phase 5 değişiklikleri yereldir ve otomatik dağıtım yapılmamıştır.
 
-> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Güncel fiyatlar önceki aşamalarda onaylanmıştır ve tüm dillerde Türk lirası (TRY) olarak korunur. Paket hesaplama alanı örnek bir ders planını gösterir. Phase 1 sonrasında deneme dersi başvuruları **[resmî başvuru sayfasına](https://www.hurralingo.app/trial-request)** yönlendirilir; bu depoda başvuru formu bulunmaz. Canlı bir ürün olarak kullanılmamalıdır.
+> ⚠️ **Önemli:** Bu çalışma bir **tasarım önerisidir**. Türkçe `/ucretler/` hesaplayıcısı, sağlanan 2027 TL Excel dosyasından üretilmiştir. Ana sayfadaki eski örnek hesap yerine bu araca yönlendirme bulunur. Diğer dil sayfaları bu aşamada değiştirilmemiştir. Deneme dersi başvuruları **[resmî başvuru sayfasına](https://www.hurralingo.app/trial-request)** yönlendirilir; bu depoda başvuru formu bulunmaz.
+
+2027 ücretler çalışması yereldedir; dağıtım yapılmamıştır. `npm.cmd run preview` ile [yerel ücretler önizlemesini](http://127.0.0.1:8017/ucretler/) açabilirsiniz. Veri / sayfa üretimi: `npm.cmd run pricing:build`; Excel karşılaştırması: `npm.cmd run pricing:check`; çalışan önizlemede tarayıcı kontrolü: `npm.cmd run pricing:browser`. Ayrıntılar [uygulama raporundadır](HURRALINGO-UCRETLER-IMPLEMENTATION-REPORT.md).
 
 ---
 

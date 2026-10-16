@@ -1,0 +1,41 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false,
+      "screenshot": "docs/pricing-2027/preview-320.png"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "screenshot": "docs/pricing-2027/preview-390.png"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "screenshot": "docs/pricing-2027/preview-768.png"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "screenshot": "docs/pricing-2027/preview-1024.png"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "screenshot": "docs/pricing-2027/preview-1440.png"
+    }
+  ],
+  "selections": 60,
+  "pageErrors": [],
+  "failedLocalRequests": [],
+  "checks": [
+    "Model buttons update selection and transfer focus",
+    "Monthly/annual transitions stay valid",
+    "Keyboard Tab follows form labels",
+    "Mobile menu opens, contains fees link, closes with Escape",
+    "Homepage CTA navigates to direct /ucretler/ route",
+    "Trial CTA opens official URL in new tab",
+    "No-JavaScript fallback visible"
+  ]
+}

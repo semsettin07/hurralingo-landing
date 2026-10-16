@@ -1,0 +1,40 @@
+.fees-page{padding-bottom:0}
+.fee-main{padding-bottom:80px}
+.fee-breadcrumb{display:flex;gap:12px;padding-block:24px;font-size:14px;color:var(--ink-2)}
+.fee-hero{display:flex;align-items:center;gap:40px;background:var(--sun-50);border-radius:var(--r-xl);padding:clamp(24px,5vw,64px);margin-bottom:32px}
+.fee-hero>div{max-width:850px}.fee-hero h1{font-family:var(--display);font-size:clamp(36px,4.8vw,64px);line-height:1.06;letter-spacing:-.035em;margin-block:14px 24px}
+.fee-hero .lead{max-width:760px;margin-bottom:26px}.fee-hero>img{width:140px;flex-shrink:0;transform:rotate(8deg)}
+.fee-models,.fee-comparison-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.fee-model{display:flex;flex-direction:column;gap:16px;border:2px solid var(--line);border-radius:var(--r-l);padding:28px;background:var(--bg)}
+.fee-model[data-model=group]{--accent:var(--sun);--tint:var(--sun-50)}.fee-model[data-model=mini]{--accent:var(--coral);--tint:var(--coral-50)}.fee-model[data-model=private]{--accent:var(--cyan);--tint:var(--cyan-50)}
+.fee-model.is-selected{border-color:var(--accent);background:var(--tint)}
+.fee-model-top{flex:1}.fee-model h2{font-size:26px;line-height:1.15;margin-block:20px 12px}.fee-model .stamp{background:var(--tint);font-size:14px}
+.fee-model p{font-size:16px}.fee-model .fee-start strong{font-family:var(--display);font-size:clamp(32px,3vw,44px);line-height:1.1;letter-spacing:-.035em}.fee-model .fee-condition{font-size:13px;color:var(--ink-2)}
+.fee-model .btn{width:100%;white-space:normal;min-height:48px}.fee-model button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}
+.fee-section-head{margin-bottom:28px}.fee-section-head h2,.fee-notes h2,.fee-cta h2{font-size:clamp(28px,3vw,40px);line-height:1.12;margin-block:10px 14px}
+.fee-calculator,.fee-payment-comparison,.fee-comparison,.fee-notes{margin-top:64px;scroll-margin-top:110px}
+.fee-calculator{background:var(--bg-2);border-radius:var(--r-xl);padding:clamp(20px,4vw,44px)}
+.fee-calculator-grid{display:grid;grid-template-columns:minmax(240px,.85fr) minmax(0,1.3fr);gap:36px}
+.fee-calculator-grid[hidden]{display:none}
+#pricing-options{display:grid;gap:16px;align-content:start}
+#pricing-options label{display:grid;gap:6px;font-size:15px;font-weight:700}
+#pricing-options select{width:100%;min-height:50px;border:1.5px solid var(--line-2);border-radius:12px;background:white;color:var(--ink);font:inherit;padding:10px 36px 10px 14px;cursor:pointer}
+#pricing-options select:disabled{opacity:1;color:var(--ink-2);background:var(--bg-2);cursor:default}
+.fees-page :is(a,button,select):focus-visible{outline:3px solid var(--cyan-ink);outline-offset:4px}
+.fee-help{font-size:14px;color:var(--ink-2);line-height:1.55}
+.fee-result{border-radius:var(--r-m);background:white;padding:clamp(20px,3vw,32px);box-shadow:var(--shadow-s);min-width:0}
+.fee-result .eyebrow{font-size:15px}.fee-totals{display:grid;gap:20px;margin-block:28px 12px}.fee-totals p{font-size:15px}.fee-totals strong{font-family:var(--display);font-size:clamp(32px,3vw,44px);letter-spacing:-.035em;line-height:1.2;font-variant-numeric:tabular-nums}
+.fee-totals>div:first-child strong{color:var(--cyan-ink)}.fee-tax{font-size:13px;color:var(--ink-2)}
+.fee-result dl,.fee-compare-card dl{margin:20px 0 0}.fee-result dl>div,.fee-compare-card dl>div{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-block:10px;font-size:14px}
+.fee-result dt,.fee-compare-card dt{color:var(--ink-2)}.fee-result dd,.fee-compare-card dd{margin:0;text-align:right;font-weight:700;font-variant-numeric:tabular-nums;flex-shrink:0}
+.fee-bars{padding:28px;border:1px solid var(--line);border-radius:var(--r-m);display:grid;gap:24px}
+.fee-bar{display:grid;grid-template-columns:72px minmax(30px,1fr) minmax(110px,auto);gap:8px 20px;align-items:center;font-variant-numeric:tabular-nums}
+.fee-bar strong{text-align:right}.fee-bar small{grid-column:2 / -1;color:var(--ink-2)}.fee-track{height:22px;border-radius:8px;background:var(--bg-2);overflow:hidden}.fee-track i{display:block;height:100%;border-radius:8px;background:var(--cyan)}.fee-bar:nth-child(2) .fee-track i{background:var(--lilac)}
+.fee-saving{background:var(--green-50);color:var(--green-ink);border-radius:var(--r-s);padding:18px 24px;margin-top:16px;font-weight:700}
+.fee-compare-card{padding:24px;border:1px solid var(--line);border-radius:var(--r-m)}.fee-compare-card h3{font-size:22px;font-family:var(--display)}
+.fee-notes{background:var(--sun-50);border-radius:var(--r-m);padding:clamp(24px,4vw,40px)}.fee-notes ul{list-style:disc;padding-left:22px;display:grid;gap:12px;font-size:15px;line-height:1.7}
+.fee-cta{text-align:center;background:var(--cyan-50);border-radius:var(--r-xl);padding:clamp(28px,5vw,60px);margin-top:64px}.fee-cta>img{margin:0 auto 20px}.fee-cta p{max-width:720px;margin:20px auto 28px}.fee-cta .btn{white-space:normal}
+.fee-notice{padding:24px;border:1px solid var(--line);border-radius:var(--r-s);background:var(--bg-2)}
+.fee-skip{position:fixed;top:-100px;left:16px;z-index:200;background:white;padding:12px;border:2px solid var(--ink);border-radius:10px}.fee-skip:focus{top:12px}
+@media(max-width:1000px){.fee-model{padding:20px}.fee-model h2{font-size:23px}.fee-hero>img{display:none}.fee-comparison-grid{grid-template-columns:1fr}.fee-calculator-grid{gap:24px}}
+@media(max-width:720px){.fee-models{grid-template-columns:1fr}.fee-calculator-grid{grid-template-columns:1fr}.fee-hero{padding:28px 20px}.fee-hero h1{font-size:38px}.fee-bar{grid-template-columns:58px minmax(20px,1fr) auto;gap:8px 10px;font-size:14px}.fee-bars{padding:20px 16px}.fee-result dl>div{gap:12px}.fee-result dd{max-width:52%;overflow-wrap:anywhere}.fee-main{padding-bottom:48px}.fee-calculator,.fee-payment-comparison,.fee-comparison,.fee-notes,.fee-cta{margin-top:44px}}

@@ -4,7 +4,11 @@
   "scripts": {
     "blog:import": "node scripts/import-blog.cjs",
     "blog:build": "node scripts/build-blog.cjs",
-    "blog:check": "node scripts/check-blog.cjs"
+    "blog:check": "node scripts/check-blog.cjs",
+    "pricing:build": "node scripts/build-pricing.cjs",
+    "pricing:check": "node scripts/check-pricing.cjs",
+    "pricing:browser": "node scripts/check-pricing-browser.cjs",
+    "preview": "node scripts/serve-local.cjs"
   },
   "devDependencies": {
     "cheerio": "1.2.0",
