@@ -3,8 +3,8 @@
 16 Ekim 2026. **Canlı yayın tamamlandı ve production testleri geçti.**
 
 - Canlı adres: https://www.hurralingo.com/
-- Production uygulama commit SHA: `3c33eb2cd55118c040397f32232c0abfa852cce4`.
-- Cloudflare production deployment ID: `7aa0d6e6-b5b6-40cf-90c4-494e2868f511`.
+- İlk Faz 1C production uygulama commit SHA: `3c33eb2cd55118c040397f32232c0abfa852cce4`.
+- İlk Faz 1C Cloudflare production deployment ID: `7aa0d6e6-b5b6-40cf-90c4-494e2868f511`.
 - Deployment adresi: https://7aa0d6e6.hurralingo-landing.pages.dev.
 - Ortam/branch: Production / main. Main birleştirildi ve origin/main'e pushlandı. Sonraki rapor commit'i uygulama deployment'ını değiştirmez.
 - Son önizleme: https://5dbe68c1.hurralingo-landing.pages.dev/; preview engelleri korunuyor.
@@ -59,3 +59,9 @@ Kanıtlar: `docs/phase-1c/static-verification.json`, `browser-verification.json`
 ## Değişen dosyalar
 
 43 Türkçe HTML; assets/site-tr.css ve site-tr.js; Türkçe shell/build ve QA script'leri; preview/production paketleyiciler; package.json; iki wp-content/uploads/2026/03 PDF; production smoke script'i, raporlar ve docs/phase-1c kanıtları. Fiyat motoru/verisi ve yabancı dil kaynakları değiştirilmedi. Tam liste: `docs/phase-1c/changed-files.txt`.
+
+## Son revizyon — logo ve menü içerik hizası
+
+16 Ekim 2026: Üst alanın 1360 px sınırı ana içerikle ortak `--wrap` (masaüstü 1120 px) sınırına alındı. Büyük logo korunarak navigasyon aralıkları düzenlendi. Sol logo ve sağ aksiyonlar içerik kenarlarıyla 1 px altında farkla hizalı; menü/aksiyon çakışması yok. Yerel, preview ve canlı ortamda ikişer sayfa × sekiz genişlik = 16 kontrol geçti; Bett, dört yaş grubu, sekiz ana bağlantı, Escape/odak ve duyuru kapatma davranışı korundu. Statik 43 canonical / 166 korunan dosya ve 184 formül / 60 hesaplama kontrolleri tekrar geçti. Windows checkout CRLF farkını normalize eden kontrol düzeltmesi fiyat motorunu/verisini değiştirmez.
+
+**Güncel production deployment:** `6b357eff-941b-45d6-a443-def52b8e4cb5`; uygulama commit: `385dc83dbf21b410e72cb32bf053a70dacec9a21`. Önceki sürüm/rollback hedefi: `7aa0d6e6-b5b6-40cf-90c4-494e2868f511`. Main güncellendi; canlı CSS kaynakla SHA256 eşleşir. Kanıtlar: `docs/header-content-alignment/production-verification.json`, `production-deployment.json` ve ekran görüntüleri. Önizleme: https://7f484ade.hurralingo-landing.pages.dev/
