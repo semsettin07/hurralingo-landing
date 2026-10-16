@@ -48,6 +48,13 @@ content/site/home-template.html
 content/site/pricing-main.html
 content/site/redirects-tr.json
 derslerimiz/index.html
+docs/phase-1b-preview/deployment.json
+docs/phase-1b-preview/package-manifest.json
+docs/phase-1b-preview/project-after.json
+docs/phase-1b-preview/project-before.json
+docs/phase-1b-preview/remote-home-1440.png
+docs/phase-1b-preview/remote-home-390.png
+docs/phase-1b-preview/remote-verification.json
 docs/phase-1b/baseline.json
 docs/phase-1b/browser-verification.json
 docs/phase-1b/changed-files.txt
@@ -95,6 +102,7 @@ scripts/build-site-tr.cjs
 scripts/capture-site-tr.cjs
 scripts/check-blog.cjs
 scripts/check-preview-deployment.cjs
+scripts/check-preview-remote.cjs
 scripts/check-pricing.cjs
 scripts/check-production-unchanged.cjs
 scripts/check-site-browser-tr.cjs

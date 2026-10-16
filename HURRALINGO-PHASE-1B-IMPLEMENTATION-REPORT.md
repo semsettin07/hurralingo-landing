@@ -12,15 +12,43 @@ Tarih: 16 Ekim 2026. Çalışma branch’i: `phase-1b-tr-multipage`.
 
 ## Önizleme
 
-Cloudflare Pages preview: **https://796bd34f.hurralingo-landing.pages.dev**
+Cloudflare Pages preview: **https://8817544b.hurralingo-landing.pages.dev**
 
 Branch adresi: https://phase-1b-tr-multipage.hurralingo-landing.pages.dev
 
-Cloudflare kayıtları dağıtımı **Preview**, branch’i `phase-1b-tr-multipage`, kaynak commit’i **`cb8650e`**, deployment kimliğini **`796bd34f-4055-4a0a-acfa-e1dd4ca95856`** olarak doğruladı. Paket 219 dosya içeriyor. Doğrudan CLI ile yalnızca bu preview branch’ine yüklendi; Git remote’una push yapılmadı.
+Cloudflare kayıtları dağıtımı **Preview**, branch’i `phase-1b-tr-multipage`, uygulama/paket commit’ini **`cef3f83d2b72123da5c8561d667a3fa29eb5e3b9`**, deployment kimliğini **`8817544b-1535-44a8-b2dc-190bd8ec944e`** olarak doğruladı. `dist/phase-1b-preview` paketinde 219 varlık ve `_headers`/`_redirects` dahil toplam 221 dosya var. Yalnızca `phase-1b-tr-multipage` Git branch’ine commit/push yapıldı; production branch’e merge/push yapılmadı. Daha sonraki rapor/test commit’leri yayımlanan site paketini değiştirmez.
 
-**Uzak doğrulama sınırı:** Bu çalışma ortamından `.pages.dev` bağlantıları sık sık `ECONNRESET` / `ERR_CONNECTION_RESET` veriyor. Bir başarılı HTTP HEAD kontrolünde ana sayfa 200 ve `X-Robots-Tag: noindex, nofollow`; bir başarılı Chromium ziyaretinde yeni Türkçe başlık ve H1 görüldü. Sonraki toplu uzak kontroller TLS bağlantı sıfırlamaları nedeniyle tamamlanamadı. Dolayısıyla 43 canonical ve 174 yönlendirme için aşağıdaki başarılı sonuçlar **yerel preview paketine** aittir; tüm uzak URL’lerin geçtiği iddia edilmez. [deployment-verification.json](docs/phase-1b/deployment-verification.json) bu başarısız uzak denemeyi açıkça saklar. Ağ erişimi düzeldiğinde `node scripts/check-preview-deployment.cjs https://796bd34f.hurralingo-landing.pages.dev` ile tekrar çalıştırılabilir.
+**Uzak doğrulama tamamlandı.** Önceki TLS bağlantı sorunları, Chromium’da açık tutulan aynı preview bağlantısı ve sınırlı yeniden denemelerle aşıldı. Uzak ortam testlerinde iki bağlantı yeniden denemesi kaydedildi; tamamlanmamış eski denemeler başarılı gibi sayılmadı. Nihai kanıt: [remote-verification.json](docs/phase-1b-preview/remote-verification.json).
 
-Production deployment kimliği önce/sonra **`b61b1c9e-4744-4956-b9d0-441dac1d39f1`**, kaynak `4750cad`, branch `main` olarak aynı kaldı. Canlı Türkçe/EN/DE/AZ sayfaların ana içerikleri, canonical ve robots metaları başlangıç Git referansıyla; canlı `robots.txt` ise dağıtım öncesi yanıtıyla eşleşti. Cloudflare e-posta koruması her yanıtta farklı kod ürettiğinden ham HTML hash’i sabit değildir; içerik karşılaştırmasında bu e-posta kodları çözülür. Kanıtlar: [preview-deployment.json](docs/phase-1b/preview-deployment.json), [production-verification.json](docs/phase-1b/production-verification.json).
+### Cloudflare proje kontrolü ve branch push
+
+Git çalışma ağacı başlangıçta temizdi; branch `phase-1b-tr-multipage`, commit `2a0ea67` idi. Uzak `main`, `4750cad420a3d4215a3035c78aa4e2539857a033` olarak doğrulandı. Cloudflare projesi `hurralingo-landing`, GitHub kaynağı `semsettin07/hurralingo-landing`, production branch’i `main`. Build komutu/çıktı dizini boş ve otomatik preview ayarı tüm branch’lerdi. Proje yapılandırması değiştirilmedi.
+
+Depo kökünün otomatik preview olarak yayımlanmasını önlemek için feature branch push commit’leri `[CF-Pages-Skip]` önekiyle yapıldı; istenen paket Wrangler CLI ile açıkça aynı preview branch’ine yüklendi. Bu işaret Cloudflare’ın [resmî GitHub entegrasyonu belgesindeki](https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/) mekanizmadır. Eski veya yeni hiçbir commit production branch’e taşınmadı.
+
+Kanıtlar: [project-before.json](docs/phase-1b-preview/project-before.json), [project-after.json](docs/phase-1b-preview/project-after.json), [deployment.json](docs/phase-1b-preview/deployment.json), [package-manifest.json](docs/phase-1b-preview/package-manifest.json).
+
+### Uzak önizleme test sonuçları
+
+| Kontrol | Uzak sonuç |
+| --- | --- |
+| 43 Türkçe canonical URL | 43/43 HTTP 200; canonical hedefleri doğru. |
+| İndeks engeli | 43/43 sayfada `noindex, nofollow` meta ve `X-Robots-Tag`; robots `Disallow: /`. |
+| Sitemap | 43 canonical URL. |
+| Yabancı diller | `/en/`, `/de/`, `/az/` HTTP 200; dil etiketleri ve H1 içerikleri doğru. Yabancı kaynak dosyaları değiştirilmedi. |
+| Ücret hesaplama | 60/60 tarayıcı senaryosu; ders ücreti, toplam ve aylık ödeme seçimi eşleşti. |
+| Öğretmenler | 38 kişi; yedi ders dili + Tümü filtresi, Çince/Yanshan Lin ve Türkçe boş sonuç dahil sekiz seçim geçti. |
+| Blog | 34 yazı, arama, boş sonuç ve sıfırlama geçti. |
+| Mobil menü | Sekiz öğe, aç/kapat, Escape/odak dönüşü ve Dersler sayfasına gerçek geçiş geçti. |
+| Ekran genişlikleri | 320, 390, 768, 1024, 1440 px ana sayfa; yatay taşma yok. |
+| 301 yönlendirmeleri | 174/174 eski URL varyantı HTTP 301; doğru preview hedefi HTTP 200. Canlı domaine kaçış yok. |
+| Hata kontrolü | Uzak etkileşim testlerinde sıfır JavaScript hatası ve sıfır beklenmeyen HTTP hatası. Bilinmeyen URL gerçek 404. |
+
+Uzak testte, iki eski blog başlığındaki emojilerin statik Cloudflare kurallarında eşleşmediği görüldü. Yalnızca bu iki tarih/başlık segmentine özel altı `:legacyemoji` eşleştirmesi eklendi; genel `/tr/*` kuralı kullanılmadı. Toplam 174 açık kural + altı dar kapsamlı yardımcı kural, **180 satır**. İlgili 174 gerçek URL varyantının tamamı yeni preview üzerinde yeniden test edilip geçti. Fiyat motoru, içerik ve yabancı dil dosyaları bu düzeltmede değişmedi.
+
+Uzak görseller: [masaüstü](docs/phase-1b-preview/remote-home-1440.png), [mobil](docs/phase-1b-preview/remote-home-390.png). Tekrar test: `node scripts/check-preview-remote.cjs https://8817544b.hurralingo-landing.pages.dev`.
+
+Production deployment kimliği önce/sonra **`b61b1c9e-4744-4956-b9d0-441dac1d39f1`**, kaynak `4750cad`, branch `main` olarak aynı kaldı. Canlı Türkçe/EN/DE/AZ sayfaların ana içerikleri, canonical ve robots metaları başlangıç Git referansıyla; canlı `robots.txt` ise dağıtım öncesi yanıtıyla eşleşti. Cloudflare e-posta koruması her yanıtta farklı kod ürettiğinden ham HTML hash’i sabit değildir; içerik karşılaştırmasında bu e-posta kodları çözülür. Cloudflare build/branch/domain ayarları da önce/sonra aynı. Kanıtlar: [project-after.json](docs/phase-1b-preview/project-after.json), [production-verification.json](docs/phase-1b/production-verification.json).
 
 Yerel test origin’i: `http://127.0.0.1:8021`. Son teslimde süreç kapatılır; tekrar açmak için aşağıdaki komutlar kullanılabilir.
 
@@ -68,7 +96,7 @@ Ana sayfanın uzun öğretmen listesi ve detay açıklamaları ilgili sayfalara 
 - **43 Türkçe URL** için üretim alan adına kendine canonical: 9 sabit sayfa + 34 yazı. [canonical-tr.json](content/site/canonical-tr.json), [sitemap.xml](sitemap.xml).
 - Başlık, açıklama, H1 ve Open Graph Türkçe kabuk üzerinden üretiliyor. Yeni detay sayfalara doğrulanmamış dil eşdeğerleri eklenmedi; yabancı hreflang dosyaları değişmedi.
 - TR kökte `tr` ve `x-default` kök canonical’a bağlanıyor. Karşılıklı yabancı hreflang üretimi sonraki dil fazına bırakıldı.
-- **174 açık 301 kuralı**: 16 kaynak sayfa, 34 tarihli blog, 4 classes yolu ve kodlama varyantlarının slash/slashsız/index karşılıkları. Emoji içeren kaynak URL’ler için literal/percent-encoded varyantları desteklenir. `/tr/*` genel kuralı yok.
+- **174 açık 301 kuralı + altı dar kapsamlı Unicode yardımcı kuralı**: 16 kaynak sayfa, 34 tarihli blog, 4 classes yolu ve kodlama varyantlarının slash/slashsız/index karşılıkları. Emoji içeren kaynak URL’ler için literal/percent-encoded varyantları uzak Cloudflare üzerinde doğrulandı. `/tr/*` genel kuralı yok.
 - `/tr/` → `/`; özel sayfalar, blog detayları ve sertifikasyon/SSS/içerik örnekleri gerçek hedef/anchor’larına gider. UTM sorguları korunur. Bilinmeyen sayfalar 404 kalır.
 - Preview paketi `_redirects` içinde **göreli hedefler** kullanır; ziyaretçi canlı siteye yönlendirilmez. Yabancı dil yolları bu kurallara dahil değildir.
 - Üretim yönlendirme adayı yalnızca [production-redirects.txt](docs/phase-1b/production-redirects.txt) olarak saklandı; etkinleştirilmedi. Arşiv alan adında hiçbir kural uygulanmadı.
@@ -109,7 +137,7 @@ Faz 1A’daki medya API toplamı/dönen kayıt farkı olan **57 arşiv kaydı** 
 - `package.json`: site build/check/browser/package komutları. Bağımlılık ve lockfile değişikliği yok.
 - Kanıtlar/raporlar: `docs/phase-1b/`, `sitemap.xml`, Faz 1A raporlarının baseline commit’i ve bu rapor.
 
-Başlangıç referansına göre tam dosya listesi: [changed-files.txt](docs/phase-1b/changed-files.txt). Preview’a giren uygulama commit’i `cb8650e`; sonraki rapor/test-transport düzenlemeleri site paketinin içeriğini değiştirmez.
+Başlangıç referansına göre tam dosya listesi: [changed-files.txt](docs/phase-1b/changed-files.txt). Güncel preview paketinin kaynağı `cef3f83`; sonraki rapor/test düzenlemeleri site paketinin içeriğini değiştirmez. Uzak test betiği `scripts/check-preview-remote.cjs`, son kanıtlar `docs/phase-1b-preview/` içindedir.
 
 ```powershell
 npm.cmd run site:build
@@ -127,3 +155,5 @@ Preview paketi `dist/phase-1b-preview` altındadır; kaynak şablon, envanter, �
 ## Production için ayrıca onay gerekenler
 
 Canlı yayın, production merge/deployment ve indeksleme değişikliği bu faza dahil değildir. Önce içerik iddiaları/kampanya güncelliği, mevcut 2027 ücretlerinin yayın takvimi, sertifika kapsamı, ek adresler, arşiv referansları ve yabancı dil SEO eşdeğerleri onaylanmalıdır. Üretim yayınında alan adı/kural katmanı ve canonical/robots/header birleşimi ayrıca kontrol edilmelidir.
+
+**Uzak preview hazırdır; görsel ve içerik onayı bekleniyor. Production’a geçiş yapılmadı.**

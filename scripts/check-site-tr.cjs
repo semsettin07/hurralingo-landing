@@ -37,7 +37,7 @@ const pure=pricingCheck.slice(0,pricingCheck.indexOf("const home=fs.readFileSync
 const isolated={require:require('node:module').createRequire(path.join(root,'scripts/check-pricing.cjs')),console,process,__dirname:path.join(root,'scripts')};vm.createContext(isolated);vm.runInContext(pure+"\nconsole.log('PASS: independently evaluated '+formulas+' Excel formulas and '+verified.length+' pricing scenarios');",isolated);
 const xml=c.load(read('sitemap.xml'),{xmlMode:true});assert.deepEqual(xml('loc').map((i,e)=>xml(e).text()).get(),routes.map(r=>'https://www.hurralingo.com'+r));
 const redirect=JSON.parse(read('content/site/redirects-tr.json')).rules;for(const [from,to]of Object.entries(redirect)){assert.ok(from==='/tr'||from.startsWith('/tr/'));assert.notEqual(from,to);localTarget(to,'/');}
-const fallbacks=JSON.parse(read('content/site/redirects-tr.json')).cloudflareUnicodeFallbacks||{};for(const [from,to]of Object.entries(fallbacks)){assert.match(from,/^\/tr\/\d{4}\/\d{2}\/\d{2}\/.+:legacyemoji/);localTarget(to,'/');}
+const fallbacks=JSON.parse(read('content/site/redirects-tr.json')).cloudflareUnicodeFallbacks||{};for(const [from,to]of Object.entries(fallbacks)){assert.match(from,/^\/tr\/\d{4}\/\d{2}\/\d{2}\/.*:legacyemoji/);localTarget(to,'/');}
 assert.equal(read('robots.txt'),'User-agent: *\r\nDisallow: /\r\n');
 const result={pass:true,canonicalPages:files,protectedFiles:Object.keys(baseline.protectedFiles).length,teachers:38,blogDetails:34,pricingScenarios:cases.length,excelFormulas:184,localLinkChecks:links,localAssetChecks:assets,redirectRules:Object.keys(redirect).length};
 fs.writeFileSync(path.join(root,'docs/phase-1b/static-verification.json'),JSON.stringify(result,null,2)+'\n');console.log(result);

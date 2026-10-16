@@ -1,0 +1,891 @@
+{
+  "directory": "dist/phase-1b-preview",
+  "files": 221,
+  "manifestSha256": "8582011f0f88f850b4825ecc91b63155367685bfdfffd45227a0368154fe1d12",
+  "entries": [
+    {
+      "path": "_headers",
+      "sha256": "9f2cfd61a43436c01931b101832663eb352737b1f9b74a16d4f452e8b58e5f80"
+    },
+    {
+      "path": "_redirects",
+      "sha256": "4471071e98ff70c79cdffe7c3be536c51fc66a0136781b195f31e990891d26a5"
+    },
+    {
+      "path": "404.html",
+      "sha256": "5dce1398839cda6016dc04851e9ec887761e9f302717caab450f0f5ae92aaf93"
+    },
+    {
+      "path": "assets/blog.css",
+      "sha256": "b3b1152dc72e2ddbd1ed2ad3ad4a2cadd7ae86b1a5e149374e8214346d4559ca"
+    },
+    {
+      "path": "assets/blog.js",
+      "sha256": "fec435d63e68522a00d5489b7abfb376986ca754949ef04289171aee13f15da3"
+    },
+    {
+      "path": "assets/pricing-data.js",
+      "sha256": "27cdca3bc30b8b5dc62821c13d553c632a65b2c30f784c1fced995c783e143bc"
+    },
+    {
+      "path": "assets/pricing-engine.js",
+      "sha256": "4a8d7a0da5eed81d1a7c7e017f5e2a68441318950f437bf07214e234ce186e93"
+    },
+    {
+      "path": "assets/pricing-tr.js",
+      "sha256": "948a9ee0959e7cec5b81e0a32e282bf51a54fbec9beeb57d3539e90cf8251108"
+    },
+    {
+      "path": "assets/pricing-ui.js",
+      "sha256": "4e4675162f3fd0c6ea8f1bf5fc34536872643633470183bff153a3623e589c7f"
+    },
+    {
+      "path": "assets/pricing.css",
+      "sha256": "ef66abf777411baee789d3d4a41050ab325247853cd7bc355e55511440e375fd"
+    },
+    {
+      "path": "assets/site-theme-tr.css",
+      "sha256": "ee5a445b377abd0112e7ea59ab41f96b8fe54d5a24ff10585fde6081369b16af"
+    },
+    {
+      "path": "assets/site-tr.css",
+      "sha256": "404c7a483a2ae1bd80c958c06aa4bafe12d11dbf5f33f6466fb3f85e96911d43"
+    },
+    {
+      "path": "assets/site-tr.js",
+      "sha256": "8129a780b0561b2826842691525ccac021c2f6caef3eacbf90fdd06f4b91a870"
+    },
+    {
+      "path": "az.html",
+      "sha256": "1e3dabe63424cb3524a775936f685523e6f7df29bbb9dc2a5a7ee0522d4970a8"
+    },
+    {
+      "path": "az/blog/common-challenges-in-foreign-language-education-and-their-solutions/index.html",
+      "sha256": "ab87d433468fe4ca4253ed737e361b2cb06adfe533994b75e670deaada0125f2"
+    },
+    {
+      "path": "az/blog/index.html",
+      "sha256": "65a9ed4e8002cf3ec1c8ec5e1205af9622959213cdfec1aa8d968259fb94c110"
+    },
+    {
+      "path": "az/blog/motivation-and-goal-setting-in-active-language-learning/index.html",
+      "sha256": "8b655be9e589de00b908e0b9f67713ee500c0979728e454c870f6c24a43b43ef"
+    },
+    {
+      "path": "az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/index.html",
+      "sha256": "53988a6b3be2b015d414dedfd56cd4f3dbe76bc7f9fdf72b8557ca7326460609"
+    },
+    {
+      "path": "blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/index.html",
+      "sha256": "9f1f83278a6ffd22439936c1b1f28eca082e3721cd22b63bd5a7ff27fe05fbb2"
+    },
+    {
+      "path": "blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/index.html",
+      "sha256": "cf2ae761f108724442c7062d23db05611085f98d44a89cda344e8211d30ca726"
+    },
+    {
+      "path": "blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
+      "sha256": "ec6fe3ff74e758d4c2768b0248263e4f8666d56e63845009cb945744a091c814"
+    },
+    {
+      "path": "blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/index.html",
+      "sha256": "139383ec4f6e3b981c9c79f99f28ac7452dc04006bbc64c290ef8ff483982d16"
+    },
+    {
+      "path": "blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/index.html",
+      "sha256": "2ef08e753621fd9d927baee5b7c6460222264ccfc748d93d47ac84defd7f537e"
+    },
+    {
+      "path": "blog/almanca-ogrenmek-neden-onemli/index.html",
+      "sha256": "9c36f2073e270f93b6493bd024dbff1e86e630bab58ccaa3df5e3f6d48701443"
+    },
+    {
+      "path": "blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/index.html",
+      "sha256": "a6a929cc523b8f8da97f6fd83c06481b294e537dee8533a0d1eba9ef5d8842d1"
+    },
+    {
+      "path": "blog/cocuklar-icin-rusca/index.html",
+      "sha256": "dee5090baf06125f273b7805151c5fbd095eb74d9a5bba0aed3cff63e0ea79d9"
+    },
+    {
+      "path": "blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/index.html",
+      "sha256": "9e66bb667e54a45ff53dd007b030580978703c01976c0214fdf8e5d6a9830854"
+    },
+    {
+      "path": "blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/index.html",
+      "sha256": "1d3be47243cb19bfdc949fac8cdac4674d71d3ae8632059ab8348d6aa5b9f03a"
+    },
+    {
+      "path": "blog/cocuklarin-dil-egitiminde-oyun/index.html",
+      "sha256": "81a0306b072dcf70a7eded56aa2aee66c025effac34f864c1df16f83cd293dcf"
+    },
+    {
+      "path": "blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/index.html",
+      "sha256": "7bba3551cd8b7aa1e39a2db2bde28a7ce07b7b6dc25415f2e785433b58cb4892"
+    },
+    {
+      "path": "blog/dil-egitimi-teorileri/index.html",
+      "sha256": "eff87fa2af8fd668730750609c9d563b167a16d5ca5abd0849f8c731b3f8d40e"
+    },
+    {
+      "path": "blog/dil-egitiminde-film-ve-dizi/index.html",
+      "sha256": "b76dc47df5b48bcf1b73c2e4dcb486a49c4cc502b84b89fa7fe796f541ca4563"
+    },
+    {
+      "path": "blog/dil-ogrenmede-motivasyon-ve-hedef/index.html",
+      "sha256": "0506e04ce26d472258c8bd7899318f55bb92d19a6124fad2b351b8e125d3b859"
+    },
+    {
+      "path": "blog/dunyadan-yilbasi-gelenekleri/index.html",
+      "sha256": "6716cf8b29a30a1d33836e098d7782a2af14723c728b6d1c0d10dd1abd2beccc"
+    },
+    {
+      "path": "blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/index.html",
+      "sha256": "3536abd091bb8d7fc44e04fa4a79e5effc7299641ccca54009f0a8749b84143e"
+    },
+    {
+      "path": "blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/index.html",
+      "sha256": "6e97a9030d1d3dc86ac2cbaaed5e008b8774b29d737c5dedaeaa657c38d8311d"
+    },
+    {
+      "path": "blog/evde-pratik-ingilizce/index.html",
+      "sha256": "189c2ee418504c2a968d5ae9e585f0831c7026037ce1f5691f05aab2d5051a3b"
+    },
+    {
+      "path": "blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/index.html",
+      "sha256": "c0da2d824f56f3b34cca33b928af4873daba81b0692d2d3fc47f5b4dd246e86e"
+    },
+    {
+      "path": "blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/index.html",
+      "sha256": "fac1b9adf6a108aac1e085d08d23f83787694ef06b739adde10c0630808510d6"
+    },
+    {
+      "path": "blog/index.html",
+      "sha256": "22111220571a03b50b07bc5fdc99237c9bff3e691cf56cbc1a91a1cbfe61d770"
+    },
+    {
+      "path": "blog/ispanyolca-mi-almanca-mi/index.html",
+      "sha256": "4313fdb2d197c597aca1a40abf40a222e39549741321817e6c58f411172b8932"
+    },
+    {
+      "path": "blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/index.html",
+      "sha256": "91b5f3d5bc738a6e936f39b115caa2f71535ebf00ef378fe6bcb6a9d30b8d873"
+    },
+    {
+      "path": "blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/index.html",
+      "sha256": "3288509f6b7cc4d2752c66bc0cdfd7e5d9a9c67aeeecac733865dd5c214abf64"
+    },
+    {
+      "path": "blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/index.html",
+      "sha256": "164ab85578f9fe2ec2cf00dd23ed84e95dd590919e4014353eff7cf367b546ef"
+    },
+    {
+      "path": "blog/online-dil-dersleri/index.html",
+      "sha256": "fa4adfa8c55b2b104fe4830f935d632ecaa1962d97f61945b0420ecbede2a1d1"
+    },
+    {
+      "path": "blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/index.html",
+      "sha256": "787d4e3b2ddad1470e3c37f8c26e254b4434099b98631b7e951d8299d364a96d"
+    },
+    {
+      "path": "blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/index.html",
+      "sha256": "29f0da0686e0e4d21e3edf93594539580bbd9128764f314bdde729696f5832c2"
+    },
+    {
+      "path": "blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/index.html",
+      "sha256": "f9d0f3f05638aaacfba729ac5793401eeb15bd66dec1dc3dd47410dc0c479a5c"
+    },
+    {
+      "path": "blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/index.html",
+      "sha256": "45ef8c9ccd0beefd0331c63e14fce434dfa954bffa8e38853fcff7e4d42ea516"
+    },
+    {
+      "path": "blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/index.html",
+      "sha256": "2dd8fe7bd519279c806111dd5f3fb55fab03fc24ec5091544c16df1b0f3dab02"
+    },
+    {
+      "path": "blog/yaz-tatilinde-online-yabanci-dil/index.html",
+      "sha256": "5eb402ade8e24eaf92d456eb2b71964df8952700146be20c81cdf81b4c3148c3"
+    },
+    {
+      "path": "blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/index.html",
+      "sha256": "b1fdf3a2cf01eae0432c0cd76a4f27a296bab4738772de4d99f82c0dcfe5c859"
+    },
+    {
+      "path": "blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/index.html",
+      "sha256": "5f7808aaff38d429990a70c03a43ac571cf638093a91c35dd8f181cff4a82c5e"
+    },
+    {
+      "path": "de.html",
+      "sha256": "d865c662231262569a25a4ef421d39c070bb68f8a94fead0f4ebf60d9e6b9a5d"
+    },
+    {
+      "path": "de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/index.html",
+      "sha256": "2556a8fe052f075f4cd88f19921f59f88b00228bcbc2588ce9e8e48225461366"
+    },
+    {
+      "path": "de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/index.html",
+      "sha256": "849a62dfb4ddf769b38c3a5a9577cf63cd29a8fd7737bc50f0d5302b9a0fdc86"
+    },
+    {
+      "path": "de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/index.html",
+      "sha256": "dfb84693a079130af8bc86f773001b31cb95bcf36aeecf193e02e546b380884f"
+    },
+    {
+      "path": "de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/index.html",
+      "sha256": "05109bc845e5fe8dd59cceb23f2417fd4fae1c5d5e5dfccf428f7066c6a0b9b2"
+    },
+    {
+      "path": "de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/index.html",
+      "sha256": "ae623483f609d1a4cbe7495f5007f8ec68335718ef69a381149a89742c1def4f"
+    },
+    {
+      "path": "de/blog/index.html",
+      "sha256": "8c1e62dfbad3da4684492ec63a1ff0d0360a279628ecb4f9136afcf99ad5c6ae"
+    },
+    {
+      "path": "de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/index.html",
+      "sha256": "fe12126be11651da58c15cd03db4048301718e696880852dd0df4e6bd7a66410"
+    },
+    {
+      "path": "derslerimiz/index.html",
+      "sha256": "5533cc5a3fe94bb5ef8576e4ffc3522b9ab60489224b75339e41a16a73a3a8cc"
+    },
+    {
+      "path": "desktop-density.css",
+      "sha256": "4dd8f6d6d71f41c588ed72509914d7a127f7bafae23bfc4f51c247947aef99be"
+    },
+    {
+      "path": "docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf",
+      "sha256": "d0eb767f00f31936cf0834969b27a21a903cbf1790137b76680ec47fd44d5ab5"
+    },
+    {
+      "path": "egitimmodelimiz/index.html",
+      "sha256": "e17ae3b79929b9f074635dfc3fc4db6b51f0984a15272777d3df281851a501ca"
+    },
+    {
+      "path": "en.html",
+      "sha256": "dc8535a9e3eb22bc55a815658ce1079746801d883743503d0a7bc5bb9fab3de3"
+    },
+    {
+      "path": "en/blog/common-challenges-in-foreign-language-education-and-their-solutions/index.html",
+      "sha256": "f4d08194f5456dbd32898d072f4ffe928787fc00273f35ce38f1e325c2e88aef"
+    },
+    {
+      "path": "en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/index.html",
+      "sha256": "4f54114795653338ed878ada8a4337c233157e87b70e34af11e1f740c0f59bdc"
+    },
+    {
+      "path": "en/blog/index.html",
+      "sha256": "fda9a171a0c495055f509645c4eeb3beee8b664c49fbfbf641c19ec02fd8aed8"
+    },
+    {
+      "path": "en/blog/motivation-and-goal-setting-in-active-language-learning/index.html",
+      "sha256": "eb2698673c44fef86479c8a78170a1d0e9e4140b5c2cf28409752051288aabac"
+    },
+    {
+      "path": "en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/index.html",
+      "sha256": "9f936ee63c566344b9e77ce3bc32a102fb55ad734f9e5089345ceec984abd4e0"
+    },
+    {
+      "path": "en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/index.html",
+      "sha256": "bf49fe52a7b565f7fd791153cf8d77b10756f93c069a7bed184b33c0a67b62e8"
+    },
+    {
+      "path": "en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/index.html",
+      "sha256": "589b8cf0caab8fc9efc651fff2e5befb44718d7a38f9913f9f67b21d66bebe75"
+    },
+    {
+      "path": "iletisim/index.html",
+      "sha256": "4e62c0c99370f501af57d94e17b4284391c8674cb69e99f1cfbd4d8d4b73a786"
+    },
+    {
+      "path": "img/blog/047a4ac4c82de522.webp",
+      "sha256": "b8288b26b50c96566fb5b43d5783da526eb5829c940d235f5a640da2c39a600b"
+    },
+    {
+      "path": "img/blog/070f579dede9769e.webp",
+      "sha256": "e2ffccdf06536ce055d8f1b71623c5d4a4089c3146f79269b85c4637d9782bab"
+    },
+    {
+      "path": "img/blog/082cc973e1d130a4.webp",
+      "sha256": "5a9770a5fb91c822edb05cdda395ca7a408f7303b77ab0209389b70e6028a358"
+    },
+    {
+      "path": "img/blog/0beb33f8d8246764.webp",
+      "sha256": "376828985dfcacf6908595773bf74061bb52c0bdec432cf2b5ecece22eb964ed"
+    },
+    {
+      "path": "img/blog/0e8b05e732119b0b.webp",
+      "sha256": "b37c6ee68aa88ab7cf7ee9336883c04e8f4b6fd321db09955ce4e73b408baa8a"
+    },
+    {
+      "path": "img/blog/172d4e1778b4541d.webp",
+      "sha256": "ce91738566d8adcc544af97d4c3ede69f0f70c0e4ef16ebc197bdf8b27e051b3"
+    },
+    {
+      "path": "img/blog/197bea89f70da211.webp",
+      "sha256": "5cd962cbb584c3c768c40a44e795b33cdb31b3bab14dcc78d523dcffb4174645"
+    },
+    {
+      "path": "img/blog/1c1307a531be8535.webp",
+      "sha256": "bbeee74868b60f29cf96bae587d10a853ae8e0653fe92bbb9c1240ef877a4561"
+    },
+    {
+      "path": "img/blog/1e0bebf4ffe8d026.webp",
+      "sha256": "c294a6edf3261237befa389ebd9e6da749d5d62511fc467a9034f77db0c976f4"
+    },
+    {
+      "path": "img/blog/27a01d037a425819.webp",
+      "sha256": "1e1b21de8c19af81c92eed2d67399365791f46559266e1e291137322756d080e"
+    },
+    {
+      "path": "img/blog/27c096a80fdd8a0b.webp",
+      "sha256": "eb8a82e6a0cfa5dbf57c27ae90704310d6ad925b9acf320a66434734669e5dc9"
+    },
+    {
+      "path": "img/blog/34ab71cfa1fe3f9e.webp",
+      "sha256": "56f16786b6491410eff49da3fca647296e265e8fc7040a7815c88b3df1ec2302"
+    },
+    {
+      "path": "img/blog/377a7061f036acb9.webp",
+      "sha256": "47316f2888f2b389540092a9b07b0d2206ee1cf8feb0e21f9c7b6734d0b15d7e"
+    },
+    {
+      "path": "img/blog/3803dc8273207258.webp",
+      "sha256": "580b2c4768f78b8b952dafc2f45c50af4cb6a1bbe285a65f197c0eeb10584056"
+    },
+    {
+      "path": "img/blog/3ed987ec608af70a.webp",
+      "sha256": "52026a3ba2768a7fbada58a487c33ec3dba712922ff8e055b812e4119edd7ddb"
+    },
+    {
+      "path": "img/blog/43133a4c95b00513.webp",
+      "sha256": "7625b2102f095bb740369d0af713cbb6813430d18124dcc4c2f9e8c257f77854"
+    },
+    {
+      "path": "img/blog/4695cf8da8a0c603.webp",
+      "sha256": "fee424d0c7579edb1f7db6a6d32b5993e353a8a2a1f8aad6613d008bfa29b6e8"
+    },
+    {
+      "path": "img/blog/48234e8fe0d9cd95.webp",
+      "sha256": "03707f80fb96bb10101020945006a9ac63a07883da202c9d998117a3611395ef"
+    },
+    {
+      "path": "img/blog/4d1a9b776731da7a.webp",
+      "sha256": "051f39f89372e3a5633015e6f6f19f10493eb3efb836a08d016143de4c8a3c36"
+    },
+    {
+      "path": "img/blog/4f362a0e7d2734f5.webp",
+      "sha256": "b3372b6c9e3be1655e2b957f942e014721723a681567398556251a276735a4ad"
+    },
+    {
+      "path": "img/blog/5311f9a84f49c7d0.webp",
+      "sha256": "5f8d65682979667fb8380f4c43490b84cd0b8d6f40de36df3601acd5fe6274d7"
+    },
+    {
+      "path": "img/blog/569039038b78e734.webp",
+      "sha256": "81373c96b58e976e8289d473c440de61cc5d8cac0d9f10c53f590c0a811fcead"
+    },
+    {
+      "path": "img/blog/5743e6f2bd48bb9e.webp",
+      "sha256": "247b25ca528707d6eac3e2343acb595f5aaf75ef6885e329ea01c6775278dade"
+    },
+    {
+      "path": "img/blog/5a237b6ae880ca4b.webp",
+      "sha256": "74d80232672e45422012404cec9f5f85397a28fdd1bfefe57915951bcc287916"
+    },
+    {
+      "path": "img/blog/5d4b1a606708ae9a.webp",
+      "sha256": "07d3be8d383ae38fc6d0eb04e0c2ae81b733df6e1d16b693fbf8e785eb640edc"
+    },
+    {
+      "path": "img/blog/5d979a10ca48e24c.webp",
+      "sha256": "d3c00c321a5f31b220c7f25d19d1f9d4281d4e250e8499d4d55660298817984b"
+    },
+    {
+      "path": "img/blog/5f3a30842cde5350.webp",
+      "sha256": "faf60dbee2586151599c19b708c652b990d4802432f7610dd54ab171c2251fab"
+    },
+    {
+      "path": "img/blog/5f8724a297c6e419.webp",
+      "sha256": "324cd25ca1e9e23cc0add74760f98791b1763cdcec80ba5a55358035e1ea4907"
+    },
+    {
+      "path": "img/blog/6004000f53ed4c4d.webp",
+      "sha256": "ff40f4dcdb1130cbeb325976ea71991b35f1c51761d65ecdbb38c36a371fb0f3"
+    },
+    {
+      "path": "img/blog/606785f637b124cf.webp",
+      "sha256": "071ef82772402c3f44f366b270351d86e9d67684455f2348e8db34860b71032c"
+    },
+    {
+      "path": "img/blog/67a6e1a1d1d1186f.webp",
+      "sha256": "a77292c1f70be0bab65439e93a032fa9fffdb4c3ffc8473c4c17f91793ee518b"
+    },
+    {
+      "path": "img/blog/68bd5adb0bc8cb32.webp",
+      "sha256": "6047b980031895f82264492b63cb49d90bd325095045eda3a37adf26e18dd8d8"
+    },
+    {
+      "path": "img/blog/6947dd747df0de14.webp",
+      "sha256": "fd60f222ee9c2e3f5e20a5bdeb0d0d91f10ce57546b8acd7c574a976ce819148"
+    },
+    {
+      "path": "img/blog/6c558081847366bc.webp",
+      "sha256": "833860160fd5115c39a4c1b248808feea7da73b78897bea13302f0657cf0c072"
+    },
+    {
+      "path": "img/blog/726634fc5563e959.webp",
+      "sha256": "f00e459c13a59db1f310cdc10a177dda8f1b81d774eb5f9dab97ea2b0a891be2"
+    },
+    {
+      "path": "img/blog/74071c394be7a629.webp",
+      "sha256": "7fca819fb8f83c504792277656004706db31ff345ce67d5f3dfd85ed3b9f6bb1"
+    },
+    {
+      "path": "img/blog/762d596466e87014.webp",
+      "sha256": "b54e869538ffc5d248304ee768dcc11dc0fe7bf064ae860ca6dd0589f1b7c66e"
+    },
+    {
+      "path": "img/blog/763a507ee2385785.webp",
+      "sha256": "bbeee74868b60f29cf96bae587d10a853ae8e0653fe92bbb9c1240ef877a4561"
+    },
+    {
+      "path": "img/blog/7c2a9c5c0ecbaa87.webp",
+      "sha256": "9023bdc287691a60293d5cd6b11cfd6e073f5e37bde3fe19805734df83f5eb6a"
+    },
+    {
+      "path": "img/blog/7df65f3ea59be6ea.webp",
+      "sha256": "f544b1058b692acf230efa0e2f5521a806d72e5e41bfed8525450b689f2817f4"
+    },
+    {
+      "path": "img/blog/7f4a5a23e7a71675.webp",
+      "sha256": "38feac8ac1fa72c1b4b63f08d7aefe9b5de41ef065cdc125326def5152cbc7b4"
+    },
+    {
+      "path": "img/blog/86c6f016f0763054.webp",
+      "sha256": "ad2500ad000a6a54f370782fcaea7f7c30302ea7ec55d87cd44109f6c4243a87"
+    },
+    {
+      "path": "img/blog/8d5c5abeccd91b63.webp",
+      "sha256": "4a126e1bd5d4f727f6e3227040f235270ad5f8361cb69df92a7d77f44ec22954"
+    },
+    {
+      "path": "img/blog/9302f1c8d3b0c7c5.webp",
+      "sha256": "af267acd58b82718e03d858f59aab4d448b4faf1f6af20a97f80d7a1635d9f9d"
+    },
+    {
+      "path": "img/blog/93a34eef61aee931.webp",
+      "sha256": "129160b71df8f4b7874ef4e341503235bd4908946a50b5ee4d3b6f05d0072888"
+    },
+    {
+      "path": "img/blog/9b763873e4b7de15.webp",
+      "sha256": "7783d4e7c5e8d4302fd108da8d488cba336f2e6fa09a46f38b3f41bd6e480199"
+    },
+    {
+      "path": "img/blog/9b82a0b490c45f89.webp",
+      "sha256": "c731e808168476918878e201905326a4468aa373164164d02fd0da9f0891d4a8"
+    },
+    {
+      "path": "img/blog/9bae7e8af1cb4923.webp",
+      "sha256": "dbfb8b24d1c907dc0221a2672ba6490f11f60c8d8be665b385f4b83a0380ed36"
+    },
+    {
+      "path": "img/blog/a5c12f7be548d6db.webp",
+      "sha256": "e13adf764dfa549a2268f19892e6070b12c6382258a329a0b96b11b1da8f8403"
+    },
+    {
+      "path": "img/blog/a5c77bce5e714f5a.webp",
+      "sha256": "3d84bc49ffc4397e0c190534961225de2211c8b8749d79dd78bab7590a314edf"
+    },
+    {
+      "path": "img/blog/ac01ce60aaa6aec8.webp",
+      "sha256": "6a04294e7ec6590e8c779713b3901f46e02113d00aea2904809a4ae18e098fb7"
+    },
+    {
+      "path": "img/blog/b0be8b312f932933.webp",
+      "sha256": "985d83bf59813edf0da67c384b40c017feb5eca9f7259fe33afe8f2df84ba8e5"
+    },
+    {
+      "path": "img/blog/b3e60c61d73abbf3.webp",
+      "sha256": "3dfb35dd88088c8604fada25f8459b45798db4c610ea94876f872c884a6e857a"
+    },
+    {
+      "path": "img/blog/b71b09474f492488.webp",
+      "sha256": "d0aeb6e5d8e6211d08beb28b0bd322b490192e4c0bde4c78427c6dcf76b5b2fc"
+    },
+    {
+      "path": "img/blog/c4c3b6acb01fab48.webp",
+      "sha256": "62a16258217233dc4466bc6500ce3fe5a601ca773acca2fabae6ef2396c07997"
+    },
+    {
+      "path": "img/blog/c58dbdbd0abf6a5b.webp",
+      "sha256": "2d2f0e3286bb204b27ca20fa2a6f796f3668a65b9f2123ecb0f4af0d1ae425dc"
+    },
+    {
+      "path": "img/blog/c5c8e944731e3e8b.webp",
+      "sha256": "1eba0de51cb6adb43d17c2ca2fcf3541368f2e8ae8c2263b7d50c3b36daad997"
+    },
+    {
+      "path": "img/blog/c5f396fa877dd198.webp",
+      "sha256": "50c4a156814e244c66720cced35825746ffc82e243b3844a78e02ec807bfb377"
+    },
+    {
+      "path": "img/blog/ce5cd7b0d49b87f1.webp",
+      "sha256": "fb7729ee211c44f3d434403375552e5b3fa8b1afe816968b874c2c1262b1e66a"
+    },
+    {
+      "path": "img/blog/d4b34410024a96fb.webp",
+      "sha256": "78a3c9c12ee315008024ce4a8dcceba9ffba551397129df3bdc266410097e003"
+    },
+    {
+      "path": "img/blog/d5cd2b5e601188ba.webp",
+      "sha256": "f3b42c7b6446e304def2bd9f8ea3a3d5c7f2fc9014af85f806dd0a8a8264b7cc"
+    },
+    {
+      "path": "img/blog/d92afa406ff35006.webp",
+      "sha256": "e475c728b10de6cdd8557c265ac544fb1adf6dc319573995543d7f0b2fd57e97"
+    },
+    {
+      "path": "img/blog/dd72f0d5bca59d1a.webp",
+      "sha256": "3f4283f5cf6817347b47b64adf78707ed6174dbd2be27b6b716eab9509fdb1bd"
+    },
+    {
+      "path": "img/blog/e2cf8031df93321f.webp",
+      "sha256": "4c21b06d7dd53594b92e78c79bff412e5a08a2c8b0ed4062c13dfbdf5a108525"
+    },
+    {
+      "path": "img/blog/e46e813ef8beef9f.webp",
+      "sha256": "c3cba907f74c684fe17f226bc61ea88b720eda751ab70d96c5931181fc784b3f"
+    },
+    {
+      "path": "img/blog/e4d6ae4538c19b44.webp",
+      "sha256": "64aebbab73aa1e5ecd1bf054608d7000151b3133b441713c03dd1839be4b54d9"
+    },
+    {
+      "path": "img/blog/e54934718a4cbaa0.webp",
+      "sha256": "72fa4cc801eaa3d5baa6c1d8cd7c922b02670b146f5f275ec1e9d083679237db"
+    },
+    {
+      "path": "img/blog/f0fd87b21ace2607.webp",
+      "sha256": "684e5d7430dc6457bc843ea0cd671f07bab14789b016301a458f64b9fb1501f2"
+    },
+    {
+      "path": "img/blog/f303439110affabf.webp",
+      "sha256": "0253c6e911ef16e24232edc66e9ac05ff999311a06766c5db5db0414732102b1"
+    },
+    {
+      "path": "img/blog/f4a63ff5c21049a9.webp",
+      "sha256": "6eabc1d4265ef76c5d1e32e087450dcdd08d1b7bf3ba2a926da23a67a7caa8c7"
+    },
+    {
+      "path": "img/emniyet-kampanya-masaustu.png",
+      "sha256": "dba77f6bf856b7fc7062888cbc349f2be0136f7ab30e9f3daef04b4fd332725f"
+    },
+    {
+      "path": "img/emniyet-kampanya-mobil.png",
+      "sha256": "e5b5ad596f937b3e580129bce23a878658a3c41ac9e08764ca9e02cd8d491cba"
+    },
+    {
+      "path": "img/favicon.png",
+      "sha256": "28e250fab559fcdee4a3090f0c7440bacda5f5c6c885fb89c7fe2c456deadc7c"
+    },
+    {
+      "path": "img/hurralingo-og.jpg",
+      "sha256": "5cac48611eb5d915911eca0b65d9999c178b065990a6f50223cb25ddbb4c6b6f"
+    },
+    {
+      "path": "img/logo-clay.webp",
+      "sha256": "4915ef645656d24a846e4898a7af0e62978f8887cbe3f402c6fa63b7ef441b28"
+    },
+    {
+      "path": "img/logo-hurra-lingo.webp",
+      "sha256": "9ee54f9bd573742a7bc1983d04806933b5845122a734d4e47b8e66ec19482585"
+    },
+    {
+      "path": "img/maskot-goz-kirp.svg",
+      "sha256": "abe85cd47ee2146b87ec05caf49174baace5b66ea10a51c788e15ea29d38264c"
+    },
+    {
+      "path": "img/maskot-merakli.svg",
+      "sha256": "e7077f45b9e8bc818f95bc6ed109bef2ccd6f9f789cd9d236ab5bafddf6a225c"
+    },
+    {
+      "path": "img/maskot-mutlu-beyaz.svg",
+      "sha256": "c9b6bd61b3734d545def1c85584aa57cfceac593c63b2047c1cc789b09f5cf7f"
+    },
+    {
+      "path": "img/maskot-mutlu.svg",
+      "sha256": "566390f4a68b77d90e25a050b9ea639540793ecadfd0972481ec1804bd21d0fc"
+    },
+    {
+      "path": "img/maskot-sevinc.svg",
+      "sha256": "46d02560ede5de41b1f45aa21ea4f53375bceeb101718ac3ca72798a873d8422"
+    },
+    {
+      "path": "img/t-adam.webp",
+      "sha256": "95012d97dd0007c845ecc1043ebb865f6b7474cd6b863c0c58c9e7c653f7985a"
+    },
+    {
+      "path": "img/t-adeniyi.webp",
+      "sha256": "f95be61852a26cd936b7427ea941f93a7642ab8c751cbff274eff31bf258fac8"
+    },
+    {
+      "path": "img/t-alexandra.webp",
+      "sha256": "952eac05411b15bf4f9a4d29d45e51472253d796c13acef14c131e067183a5eb"
+    },
+    {
+      "path": "img/t-ayberk-savas.jpg",
+      "sha256": "9006e4fc690c945202e290332af043bde86791d6f981ac0c477f26889401eba0"
+    },
+    {
+      "path": "img/t-aysegul-eskikurt.jpg",
+      "sha256": "1d43c963ce3267d6f216800a0f6daa03fcc68c92cdaaa3b8298b99b381f2d422"
+    },
+    {
+      "path": "img/t-aysegul-santur.png",
+      "sha256": "67ae1a114cf41ccfe20bbc4fdcf7856081b51cdad838fd0944e7f370cf6499c2"
+    },
+    {
+      "path": "img/t-aysin-yasa.jpg",
+      "sha256": "2fe2a342f7946aa2405bc5577859039140f9e2cf2630771bc5162b0d7d8d1923"
+    },
+    {
+      "path": "img/t-ayzade.webp",
+      "sha256": "98e74b1f80a9c0e3b4709b4cf81051c19e9eee44b3082763bd5081e40d19f152"
+    },
+    {
+      "path": "img/t-bengu.webp",
+      "sha256": "ec50b2ade6c7ab087aa5a224b2842cbbd2d5ad3357f3a2cf606de24dc523238f"
+    },
+    {
+      "path": "img/t-betul-beyza.png",
+      "sha256": "e78271a0d205c8f5ac260625bd27dfcef41a04be7f6ed0d8d3f638c4b2b8a605"
+    },
+    {
+      "path": "img/t-burak-santur.png",
+      "sha256": "9785d729f35c4ea9b2329d90ff1e877e3a7c307dccfde7a0946e820f145974ae"
+    },
+    {
+      "path": "img/t-busra-surekci.png",
+      "sha256": "fa15e608e5878e0c6f39770f21bb80ac0bd5da7a6ac6e0091dc6ba70e83c53b1"
+    },
+    {
+      "path": "img/t-busra.webp",
+      "sha256": "36ad84b33dba063e464b6d100d59d4105a7fd3490b9be902ea045fbf788daa9d"
+    },
+    {
+      "path": "img/t-ceyda-sonmez.jpg",
+      "sha256": "038f694548cddc11a4add2b7e985ec072e668eb0d98d6da95a97c9b012a3e5a5"
+    },
+    {
+      "path": "img/t-deniz-okumus.jpg",
+      "sha256": "6b22c6c196d1f3221df4dd8d22fbaded3d0904456267c0617af77268c66c8dc9"
+    },
+    {
+      "path": "img/t-deniz-ozlu.jpg",
+      "sha256": "60096663bf9efa54c59dad2043c75a2c6f988e73ff6c7eb6bb4d138bd3296d49"
+    },
+    {
+      "path": "img/t-duru-melek.jpg",
+      "sha256": "05162ff373115299d5619063f101194f997f6feb3266f0aada98fead4bac43ec"
+    },
+    {
+      "path": "img/t-elif-gizem-kaya.jpg",
+      "sha256": "5c6f7509c903c53f227cf415dfadefc35c127a966d0782f6876bbe5f0af97f71"
+    },
+    {
+      "path": "img/t-ezgi-dinc.jpg",
+      "sha256": "e224039803075e09c7cfd9242110e7386dfc3f1555ad24013f79a01887aa88cd"
+    },
+    {
+      "path": "img/t-fusun-kose.jpg",
+      "sha256": "90f3569a6920f8e77fbe1930b8b928946c64f4a888e2768de62668dc7a162f13"
+    },
+    {
+      "path": "img/t-ghazaleh-ghazalifard.png",
+      "sha256": "3af8c41f98c3afaa53e0ab33f2bae6b953a9c1e3be5ba714c884a042d2b50874"
+    },
+    {
+      "path": "img/t-gizem-kenez.jpg",
+      "sha256": "fa2efb46555f6900a1801b90db6d9125edb3a981963919b7b3020ee21ba66691"
+    },
+    {
+      "path": "img/t-hatice-onar.jpg",
+      "sha256": "3733bcfbe22d6916457ada348c42eebf57b17b8cbebe21c77c02ac78ac255112"
+    },
+    {
+      "path": "img/t-j-luis-fernandez-salazar.png",
+      "sha256": "1edc2b8bf334d6e84a1395bcf8e30ddc289e28bdd707c73027e34f05ff5fd845"
+    },
+    {
+      "path": "img/t-kayra-agir.jpg",
+      "sha256": "0aa3eb9b54c37eef812e2d1e9db40d037a0c2a538bafc7f9cbceac70af8c1e37"
+    },
+    {
+      "path": "img/t-kubra-toral.jpg",
+      "sha256": "f1e4d9955558431e7567a8727cba0efaf7f39b4d27727da2d34376921f0606a8"
+    },
+    {
+      "path": "img/t-mehtap.webp",
+      "sha256": "ff65ee7880b49408612efcf2151f17874303b42785cdbfe747d78173db90e5d5"
+    },
+    {
+      "path": "img/t-muge-tinaz.jpg",
+      "sha256": "68912b26acabc793202b92e4aad7b4a312f1d6a15653c0944210ccad8ad3f028"
+    },
+    {
+      "path": "img/t-mustafa-hakan.png",
+      "sha256": "3b5fdf403fcb1e78e3e747868d5274de2cecb96ddbd7fa006d70722cb6270d49"
+    },
+    {
+      "path": "img/t-neslihan-kizilbayir.jpg",
+      "sha256": "7c213962226ab99afe5bb8e7538aecd4751fe89804d912b121b4199b6ddf1c08"
+    },
+    {
+      "path": "img/t-nesrin.webp",
+      "sha256": "d6ffe8378864f167896f35c804b9403eff4aeaf8ff4bb40348978c41533f69d0"
+    },
+    {
+      "path": "img/t-parisa-khalegni.jpg",
+      "sha256": "67fc3f7250d6fd9c3959ef398ea398177342aee0f4c5d5dc57e02204b8fd4b84"
+    },
+    {
+      "path": "img/t-saskia-douglas.png",
+      "sha256": "121c73558ce2c0508f6241b7f6dc2726c45b74722598a6d8b96cdfde62188f0a"
+    },
+    {
+      "path": "img/t-sedef-sen.jpg",
+      "sha256": "013ba19770add7ed9ada7c130912cb1a04acd05a7d6a85ef3fb6c1bbef410c80"
+    },
+    {
+      "path": "img/t-sibel-bulut.jpg",
+      "sha256": "9af3a285e195d95c554a02af240ebb8ff38f82a7e84b63101a5597c6b656f3eb"
+    },
+    {
+      "path": "img/t-sultan-ecem-kolluoglu.jpg",
+      "sha256": "6cd1393b58aa0a2b664033cff539cf3e2e0c879b564a8bc6c333d3766c8ca400"
+    },
+    {
+      "path": "img/t-yagmur-irmak-ozarslan.jpg",
+      "sha256": "487c8e0ba5613e8f986123cadd389588173d0721c7a2d6b16b2492a7d8105e9a"
+    },
+    {
+      "path": "img/t-yanshan-lin.jpg",
+      "sha256": "3ffd40cadb9bb5ad0c2f191c238df7cecb645af97a40868d7d7a8309c05f351f"
+    },
+    {
+      "path": "img/t-yasemin-urer.jpg",
+      "sha256": "7155a369c9210aa8e94218a2d58396762773a4c2f3de956eaf8e282994fca20c"
+    },
+    {
+      "path": "img/t-yolandi-bezuidenhout.jpg",
+      "sha256": "d3fcec53e781cdfc61ed4d773cfd54844ae1f06fc4a8b89c441e99cb995aa340"
+    },
+    {
+      "path": "img/t-zeynep-akgul.png",
+      "sha256": "da6700e519e6bf490626310b3026acceea2d54048bd35ff05d960f6f6ac28903"
+    },
+    {
+      "path": "img/t-zeynep-sariibrahimoglu.jpg",
+      "sha256": "48a8b7f001c6081fdb802c89111b126467ef2fe408ac1d15f20ca1537cd8b68e"
+    },
+    {
+      "path": "index.html",
+      "sha256": "db14119e980690b5e57d048a0d5e45740fce1b364072fdce7ff7814276bc4755"
+    },
+    {
+      "path": "kurumsal/index.html",
+      "sha256": "92b4da7688f6143b00ffca1c76fb4ef714d8fef4b268191a9d107dc58dc11003"
+    },
+    {
+      "path": "localization.css",
+      "sha256": "22a9294e6819e07abb43a7c418bfa193f328c79016ad045c9a422fe9698a9260"
+    },
+    {
+      "path": "media/hero-ders.jpg",
+      "sha256": "f9c07143cb0cb3791312d314ef7840d0d6aacbebd91c1c4b1905cbdf9d2a7738"
+    },
+    {
+      "path": "media/hero-ders.mp4",
+      "sha256": "ec11d88b314d4ebe9474c23ec14e57c93b02a5504bddbbd6e46321ddb0afdec7"
+    },
+    {
+      "path": "media/neden-ogretmen.jpg",
+      "sha256": "1eb019ae883d2613eb40cc275796a569e76ade8bf4962508fb6d573e014e261b"
+    },
+    {
+      "path": "media/soru-1.jpg",
+      "sha256": "cc2e86cd9a00837b8a3106d3b6908fde33baf49a7e5c5200131692e9a0c213dd"
+    },
+    {
+      "path": "media/soru-1.mp4",
+      "sha256": "568216adef787a4f2de1e141d2e7032eabccef1b552404eff173ba07c1bf9f36"
+    },
+    {
+      "path": "media/soru-2.jpg",
+      "sha256": "f759b45acf551148f8fc9e924a7d7f79fd6ca0cea185125fd2c3a59b52e17038"
+    },
+    {
+      "path": "media/soru-2.mp4",
+      "sha256": "9769085412dea739e5a6ae55e83a5b8731e37f5cb1838633d3b4d0f5dc809c0f"
+    },
+    {
+      "path": "media/soru-3.jpg",
+      "sha256": "d77029fdc3066a1279f19afb5754fe4e3ffcc8343473b7ccfd7feb808dd905e7"
+    },
+    {
+      "path": "media/soru-3.mp4",
+      "sha256": "de7cf123405470f1d3a0880e25e313802902e5a506ba74d1ddc87fc0ceb820c4"
+    },
+    {
+      "path": "media/soru-4.jpg",
+      "sha256": "d175397a1e23fac7211e2665111019dc3739f0ac963d2aa038d1cb21238ba32c"
+    },
+    {
+      "path": "media/soru-4.mp4",
+      "sha256": "88baa7615e09efa22038e6ef63c087db323df57872f8e0fa660ea49c58e1296e"
+    },
+    {
+      "path": "media/soru-5.jpg",
+      "sha256": "6f4d079fda422611e0a20578631b87eae4d10cbdc963e7f6bde4be3cafdf0215"
+    },
+    {
+      "path": "media/soru-5.mp4",
+      "sha256": "6efa18196f7a8a7f19a91131e535ab05708a2009b5abd789fb67507c99b6465d"
+    },
+    {
+      "path": "media/soru-6.jpg",
+      "sha256": "a63c40ff9675546816459ea9a6015062eff604c7cbf1bec28458e6cfff4c827f"
+    },
+    {
+      "path": "media/soru-6.mp4",
+      "sha256": "4e5499f97c1b29abd25dee78513240aed069ecbe025246e583f44a169dbb9379"
+    },
+    {
+      "path": "og.jpg",
+      "sha256": "5cac48611eb5d915911eca0b65d9999c178b065990a6f50223cb25ddbb4c6b6f"
+    },
+    {
+      "path": "ogretmenlerimiz/index.html",
+      "sha256": "c86092ac0035086ff8489cb47bc271426d744f0d704aeb929de0e2a0dbdd8cc3"
+    },
+    {
+      "path": "referanslarimiz/index.html",
+      "sha256": "d1fe38c3b2f03e7b46f7e678ff57355d149f703fb308c34b33df299e92bc01f3"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "b0b75134e20d662b42f06dd778486d9af1cde24960ad107fac72ae2831530a8c"
+    },
+    {
+      "path": "ucretler/index.html",
+      "sha256": "ef0828b78465876c4bd95b2b6ee20860d6ec3ea066471013be8a6c3588f71f59"
+    }
+  ]
+}
