@@ -1,0 +1,14 @@
+{
+  "productionBefore": {
+    "id": "adaff618-84b1-4bbc-9354-50d8b536961e",
+    "url": "https://adaff618.hurralingo-landing.pages.dev",
+    "commit": "466f9ec540024307de815889ced51e6bc5ab94c7"
+  },
+  "productionBranch": "main",
+  "currentBranch": "work/en-de-az-localization",
+  "sourceRef": "5937cb39153ea04ac810f5667e8a21164ab088ae",
+  "uncommittedFiles": true,
+  "userAuthorization": "Hurra lingo nun yeni sayfa yapılarının çevirileri bitti ise canlıya göndermek istiyorum.",
+  "gitPolicy": "No commit, push, merge or sync by assistant; manual deployment of tested working-tree package.",
+  "timestamp": "2026-10-16T16:50:32.119Z"
+}

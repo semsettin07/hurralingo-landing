@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "productionCommandTested": true,
+  "previewCommandTested": true,
+  "output": "dist/cloudflare-pages",
+  "productionBranch": "main",
+  "previewRobotsBlocked": true,
+  "noGitOperations": true
+}

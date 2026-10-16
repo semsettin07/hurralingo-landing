@@ -1,0 +1,11 @@
+// HTTP redirect verification is independent of browser rendering/extra-header events.
+const fs=require('node:fs'),assert=require('node:assert/strict');
+async function verify(origin){
+ const tr=require('../content/site/redirects-tr.json'),rules={...tr.rules,...require('../content/i18n/redirects.json'),...Object.fromEntries(Object.entries(tr.cloudflareUnicodeFallbacks).map(([from,to])=>[from.replace(':legacyemoji','locale-fallback-check'),to]))};
+ const entries=Object.entries(rules),results=[],targets=new Map();let next=0;
+ async function request(url,method='GET'){for(let n=0;n<3;n++)try{return await fetch(url,{method,redirect:'manual',signal:AbortSignal.timeout(15000)})}catch(e){if(n===2)throw e;}}
+ await Promise.all(Array.from({length:4},async()=>{while(next<entries.length){const [from,to]=entries[next++],r=await request(origin+from);assert.equal(r.status,301,from);const target=new URL(r.headers.get('location'),origin);assert.equal(target.origin,origin);assert.equal(decodeURI(target.pathname+target.hash),decodeURI(to),from);await r.arrayBuffer();if(!targets.has(to))targets.set(to,request(origin+to,'HEAD').then(r=>r.status));assert.equal(await targets.get(to),200,to);results.push({from,to,status:301,targetStatus:200});if(results.length%60===0)console.log('HTTP redirects passed: '+results.length);}}));
+ assert.equal((await request(origin+'/missing-locale-qa/')).status,404);return results;
+}
+module.exports=verify;
+if(require.main===module)(async()=>{const origin='https://www.hurralingo.com',file='docs/localization/production/remote-verification.json',partial=JSON.parse(fs.readFileSync('docs/localization/production/progress.json','utf8'));assert.equal(partial.origin,origin);assert.equal(partial.pages.length,182);assert.equal(partial.pricingCases,180);assert.equal(partial.turkishPricingCases,60);assert.equal(partial.media.length,159);partial.redirects=await verify(origin);assert.deepEqual(partial.errors,[]);partial.unknown404=true;partial.pass=true;partial.redirectTransport='HTTP fetch (rendering and interactions verified separately in Chromium)';fs.writeFileSync(file,JSON.stringify(partial,null,2)+'\n');console.log('PASS: complete production verification; '+partial.redirects.length+' HTTP redirects, 182 pages, 240 pricing cases and 159 assets.');})().catch(e=>{console.error(e);process.exitCode=1});

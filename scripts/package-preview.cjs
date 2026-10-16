@@ -11,7 +11,7 @@ for(const p of [...dirs,'index.html',...(localized?[]:['en.html','de.html','az.h
 fs.mkdirSync(path.join(out,'docs'),{recursive:true});
 fs.copyFileSync(path.join(root,'docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf'),path.join(out,'docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf'));
 const redirectConfig=JSON.parse(read('content/site/redirects-tr.json')),redirects={...redirectConfig.rules,...(localized?JSON.parse(read('content/i18n/redirects.json')):{})};
-fs.writeFileSync(path.join(out,'_redirects'),'# Preview-only relative Turkish redirects. Foreign paths untouched.\n'+Object.entries(redirects).map(([a,b])=>`${a} ${b} 301`).join('\n')+'\n# Narrow legacy title placeholders for Cloudflare Unicode normalization.\n'+Object.entries(redirectConfig.cloudflareUnicodeFallbacks||{}).map(([a,b])=>`${a} ${b} 301`).join('\n')+'\n');
+fs.writeFileSync(path.join(out,'_redirects'),'# Preview-only relative Turkish and approved locale redirects.\n'+Object.entries(redirects).map(([a,b])=>`${a} ${b} 301`).join('\n')+'\n# Narrow legacy title placeholders for Cloudflare Unicode normalization.\n'+Object.entries(redirectConfig.cloudflareUnicodeFallbacks||{}).map(([a,b])=>`${a} ${b} 301`).join('\n')+'\n');
 fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n');
 fs.writeFileSync(path.join(out,'404.html'),'<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><title>Sayfa bulunamadı | Hurra Lingo</title><h1>Bu sayfayı bulamadık.</h1><p><a href="/">Ana sayfaya dönün</a></p></html>');
-console.log('Preview package: '+out+'; '+Object.keys(redirects).length+' explicit TR redirect rules. No production config written.');
+console.log('Preview package: '+out+'; '+Object.keys(redirects).length+' explicit redirect rules. No production config written.');

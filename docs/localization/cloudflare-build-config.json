@@ -1,0 +1,17 @@
+{
+  "before": {
+    "build_command": "",
+    "destination_dir": "",
+    "root_dir": ""
+  },
+  "after": {
+    "build_command": "node -e \"const c=require('node:child_process'),f=require('node:fs'),p=require('node:path');c.execFileSync(process.execPath,['scripts/build-site-tr.cjs'],{stdio:'inherit'});if(f.existsSync('scripts/build-locales.cjs'))c.execFileSync(process.execPath,['scripts/build-locales.cjs'],{stdio:'inherit'});c.execFileSync(process.execPath,['scripts/package-preview.cjs'],{stdio:'inherit'});const prod=process.env.CF_PAGES_BRANCH==='main';if(prod)c.execFileSync(process.execPath,['scripts/package-production.cjs'],{stdio:'inherit'});const src=prod?'dist/phase-1c-production':'dist/phase-1b-preview',out=p.resolve('dist/cloudflare-pages');if(!out.startsWith(p.resolve('dist')+p.sep))throw Error('Unsafe build output');f.rmSync(out,{recursive:true,force:true});f.cpSync(src,out,{recursive:true});\"",
+    "destination_dir": "dist/cloudflare-pages",
+    "root_dir": ""
+  },
+  "productionBranch": "main",
+  "productionDeploymentBefore": "adaff618-84b1-4bbc-9354-50d8b536961e",
+  "productionDeploymentAfter": "adaff618-84b1-4bbc-9354-50d8b536961e",
+  "noGitOperations": true,
+  "dnsChanged": false
+}

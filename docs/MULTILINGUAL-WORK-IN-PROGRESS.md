@@ -1,3 +1,5 @@
+> Güncel durum (16 Ekim 2026): Aşağıdaki taslak aşaması tamamlandı ve çok dilli site yayımlandı. Son durum ve testler için HURRALINGO-MULTILINGUAL-IMPLEMENTATION-REPORT.md dosyasına bakın. Aşağıdaki kayıt önceki checkpoint geçmişidir.
+
 # EN / DE / AZ — çalışma kaydı
 
 16 Ekim 2026. Bu kayıt, limit nedeniyle yarıda kalan yerelleştirme çalışmasının kullanıcı isteğiyle commit edilmesi içindir. Yayına hazır sürüm değildir.

@@ -25,7 +25,7 @@ for(const [lang,l]of Object.entries(locales)){
 }
 const manifest={routes:routeMap,locales:Object.fromEntries(Object.entries(locales).map(([lang,l])=>[lang,{locale:l.locale,fixed:fixed.map(r=>routeMap[r][lang]),articles:articles[lang].map(p=>({route:p.route,sourceRoute:p.sourceRoute||null,title:p.title,legacySource:p.legacy?.source||null})),canonical:[...fixed.map(r=>routeMap[r][lang]),...articles[lang].map(p=>p.route)]}]))};
 write('content/i18n/routes.json',JSON.stringify(manifest,null,2)+'\n');
-function localUrl(href,lang,sourceRoute){if(!href)return href;let u;try{u=new URL(href,'https://www.hurralingo.com'+sourceRoute)}catch{return href}if(!['www.hurralingo.com','hurralingo.com'].includes(u.hostname))return href;const p=u.pathname.replace(/index\.html$/,'');if(routeMap[p]?.[lang])return routeMap[p][lang]+u.search+u.hash;if(p==='/'&&href.startsWith('#'))return href;return href;}
+function localUrl(href,lang,sourceRoute){if(!href)return href;let u;try{u=new URL(href,'https://www.hurralingo.com'+sourceRoute)}catch{return href}if(!['www.hurralingo.com','hurralingo.com'].includes(u.hostname))return href;const p=u.pathname.replace(/index\.html$/,'');if(routeMap[p]?.[lang])return routeMap[p][lang]+u.search+u.hash;if(p==='/'&&href.startsWith('#'))return href;return u.pathname+u.search+u.hash;}
 function translate($,lang,sl='tr'){
  function visit(n){if(['script','style','svg'].includes(n.name)||n.attribs?.['data-content-ready'])return;if(n.type==='text'){const key=n.data.trim();if(key)n.data=n.data.replace(key,t(key,lang,sl));}for(const attr of ['alt','title','aria-label','placeholder','data-count-label'])if(n.attribs?.[attr])n.attribs[attr]=t(n.attribs[attr],lang,sl);if(n.name==='meta'&&['description','og:title','og:description'].includes(n.attribs?.name||n.attribs?.property))n.attribs.content=t(n.attribs.content,lang,sl);for(const ch of n.children||[])visit(ch)}visit($.root()[0]);
 }
@@ -35,10 +35,16 @@ function page(html,lang,route,sourceRoute,options={}){
  $('html').attr('lang',lang);$('body').addClass('locale-'+lang).attr('data-locale',lang);
  $('[lang=tr]').not('a[hreflang]').attr('lang',lang);
  $('a[href]').each((i,e)=>{const a=$(e);a.attr('href',localUrl(a.attr('href'),lang,sourceRoute||'/'));if(a.attr('href')?.includes('/login?lng=tr'))a.attr('href',a.attr('href').replace('lng=tr','lng='+lang));});
+ $('[src],[poster],[data-src],[data-video]').each((i,e)=>{for(const attr of ['src','poster','data-src','data-video']){const value=$(e).attr(attr);if(value&&!/^(?:[a-z]+:|\/\/|#)/i.test(value))$(e).attr(attr,new URL(value,'https://www.hurralingo.com'+(sourceRoute||'/')).pathname);}});
  $('link[rel=canonical]').attr('href','https://www.hurralingo.com'+route);$('meta[property="og:url"]').attr('content','https://www.hurralingo.com'+route);
  const siblings=hreflangs($,route,sourceRoute,lang);
  $('#hd-lang a[lang],#drawer a[lang]').each((i,e)=>{const a=$(e),target=a.attr('lang'),label={tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca'}[target];a.attr('href',siblings[target]||(target==='tr'?'/':`/${target}/`)).removeAttr('aria-current');a.find('.dd-chk').remove();if(target===lang)a.attr('aria-current','page');if(a.find('.dd-code').length){a.find('.dd-code').text(target.toUpperCase());a.find('span').eq(1).text(label);}else a.text(label);});
  $('#hdr .lang-txt').text(lang.toUpperCase());$('#hdr .lang-dd > button').attr('aria-label',`${lang.toUpperCase()}, ${l.name}`);
+ $('#announce .an-txt').first().html('<strong>Bett UK 2026</strong>'+({en:' — we won the “Best Language App” award',de:' – ausgezeichnet als „Beste Sprachlern-App“',az:' – “Ən yaxşı dil tətbiqi” mükafatını qazandıq'}[lang]));
+ $('#announce .an-sm .an-txt').html('<strong>Bett UK 2026</strong> '+({en:'award winner',de:'ausgezeichnet',az:'mükafatlı'}[lang]));
+ $('#announce .an-lg .stamp').contents().filter((i,n)=>n.type==='text').first().replaceWith({en:'New award!',de:'Ausgezeichnet!',az:'Yeni mükafat!'}[lang]);
+ $('#announce .an-sm .stamp').text({en:'Award!',de:'Preis!',az:'Mükafat!'}[lang]);
+ $('#announce .an-lg > span').last().text({en:'Your first trial lesson is free',de:'Die erste Probestunde ist kostenlos',az:'İlk tanışlıq dərsi ödənişsizdir'}[lang]);
  $('#hdr .nav .nav-a,#drawer .dr-list a').removeAttr('aria-current').each((i,e)=>{const a=$(e),href=a.attr('href');if(href===route||(href===fixedMap['/blog/'][lang]&&route.startsWith(href)))a.attr('aria-current','page');});
  const menu=['Eğitim','Dersler','Öğretmenler','Blog','Ücretler','Referanslar','Kurumsal','İletişim'];
  $('#hdr .nav .nav-a').each((i,e)=>{$(e).contents().filter((i,n)=>n.type==='text').first().replaceWith(l.menu[i]);});

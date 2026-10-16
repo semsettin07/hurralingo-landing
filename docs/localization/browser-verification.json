@@ -1,0 +1,3349 @@
+{
+  "origin": "http://127.0.0.1:8017",
+  "pass": true,
+  "responsive": [
+    {
+      "route": "/en/",
+      "width": 768
+    },
+    {
+      "route": "/en/",
+      "width": 320
+    },
+    {
+      "route": "/en/",
+      "width": 1024
+    },
+    {
+      "route": "/en/",
+      "width": 390
+    },
+    {
+      "route": "/en/education/",
+      "width": 390
+    },
+    {
+      "route": "/en/education/",
+      "width": 320
+    },
+    {
+      "route": "/en/",
+      "width": 1440
+    },
+    {
+      "route": "/en/",
+      "width": 1842
+    },
+    {
+      "route": "/en/education/",
+      "width": 768
+    },
+    {
+      "route": "/en/education/",
+      "width": 1024
+    },
+    {
+      "route": "/en/education/",
+      "width": 1842
+    },
+    {
+      "route": "/en/education/",
+      "width": 1440
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 320
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 390
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 1024
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 768
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 1440
+    },
+    {
+      "route": "/en/lessons/",
+      "width": 1842
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 390
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 768
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 320
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 1024
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/",
+      "width": 320
+    },
+    {
+      "route": "/en/teachers/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/",
+      "width": 1440
+    },
+    {
+      "route": "/en/fees/",
+      "width": 320
+    },
+    {
+      "route": "/en/fees/",
+      "width": 768
+    },
+    {
+      "route": "/en/fees/",
+      "width": 390
+    },
+    {
+      "route": "/en/fees/",
+      "width": 1024
+    },
+    {
+      "route": "/en/fees/",
+      "width": 1440
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 320
+    },
+    {
+      "route": "/en/fees/",
+      "width": 1842
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 390
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 1024
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 768
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 1440
+    },
+    {
+      "route": "/en/testimonials/",
+      "width": 1842
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 320
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 390
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 768
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 1024
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 1440
+    },
+    {
+      "route": "/en/contact/",
+      "width": 320
+    },
+    {
+      "route": "/en/corporate/",
+      "width": 1842
+    },
+    {
+      "route": "/en/contact/",
+      "width": 390
+    },
+    {
+      "route": "/en/contact/",
+      "width": 768
+    },
+    {
+      "route": "/en/contact/",
+      "width": 1024
+    },
+    {
+      "route": "/en/contact/",
+      "width": 1440
+    },
+    {
+      "route": "/en/contact/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/new-year-s-traditions-from-around-the-world/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/why-is-learning-german-important/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/russian-for-kids/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/games-in-children-s-language-education/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/language-education-theories/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/motivation-and-goal-in-language-learning/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 320
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 390
+    },
+    {
+      "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+      "width": 1440
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 768
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 1024
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 1842
+    },
+    {
+      "route": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+      "width": 1440
+    },
+    {
+      "route": "/de/",
+      "width": 320
+    },
+    {
+      "route": "/de/",
+      "width": 1024
+    },
+    {
+      "route": "/de/",
+      "width": 390
+    },
+    {
+      "route": "/de/",
+      "width": 768
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 320
+    },
+    {
+      "route": "/de/",
+      "width": 1440
+    },
+    {
+      "route": "/de/",
+      "width": 1842
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 390
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 768
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 1024
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 1440
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 320
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 390
+    },
+    {
+      "route": "/de/lernkonzept/",
+      "width": 1842
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 768
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 1024
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 1842
+    },
+    {
+      "route": "/de/kurse/",
+      "width": 1440
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 320
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 390
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 768
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 1024
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/",
+      "width": 320
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/",
+      "width": 1440
+    },
+    {
+      "route": "/de/preise/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/",
+      "width": 1842
+    },
+    {
+      "route": "/de/preise/",
+      "width": 390
+    },
+    {
+      "route": "/de/preise/",
+      "width": 768
+    },
+    {
+      "route": "/de/preise/",
+      "width": 1440
+    },
+    {
+      "route": "/de/preise/",
+      "width": 1024
+    },
+    {
+      "route": "/de/preise/",
+      "width": 1842
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 768
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 390
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 320
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 320
+    },
+    {
+      "route": "/de/erfahrungen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 390
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 768
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/unternehmen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 320
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 390
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 768
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 1842
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 1024
+    },
+    {
+      "route": "/de/kontakt/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/russisch-fur-kinder/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/sprachpadagogiktheorien/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 1440
+    },
+    {
+      "route": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 320
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 768
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 390
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 1024
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 1842
+    },
+    {
+      "route": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+      "width": 1440
+    },
+    {
+      "route": "/az/",
+      "width": 320
+    },
+    {
+      "route": "/az/",
+      "width": 390
+    },
+    {
+      "route": "/az/",
+      "width": 768
+    },
+    {
+      "route": "/az/",
+      "width": 1024
+    },
+    {
+      "route": "/az/",
+      "width": 1440
+    },
+    {
+      "route": "/az/",
+      "width": 1842
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 390
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 320
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 768
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 1024
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 1440
+    },
+    {
+      "route": "/az/tehsil/",
+      "width": 1842
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 320
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 390
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 1024
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 768
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 1440
+    },
+    {
+      "route": "/az/dersler/",
+      "width": 1842
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 320
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 390
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 768
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 1024
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/",
+      "width": 320
+    },
+    {
+      "route": "/az/muellimler/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/",
+      "width": 1842
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 320
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 390
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 768
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 1024
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 1440
+    },
+    {
+      "route": "/az/qiymetler/",
+      "width": 1842
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 320
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 390
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 768
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 1024
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 320
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 1842
+    },
+    {
+      "route": "/az/reyler/",
+      "width": 1440
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 390
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 768
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 1024
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 1842
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 320
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 768
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 390
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 1024
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 1440
+    },
+    {
+      "route": "/az/elaqe/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 768
+    },
+    {
+      "route": "/az/korporativ/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/rus-dili-usaqlar-ucun/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/dil-tehsili-nezeriyyeleri/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+      "width": 1842
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 320
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 390
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 768
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 1024
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 1440
+    },
+    {
+      "route": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+      "width": 1842
+    }
+  ],
+  "pricingCases": 180,
+  "teacherFilters": 9,
+  "blogSearches": 3,
+  "menus": 9,
+  "errors": [],
+  "brokenImages": [],
+  "responsiveFromPreviousRun": true
+}

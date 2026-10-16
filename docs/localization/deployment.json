@@ -1,0 +1,20 @@
+{
+  "id": "446b4a60-e40d-4d51-a597-e298118d992a",
+  "url": "https://446b4a60.hurralingo-landing.pages.dev",
+  "environment": "production",
+  "sourceRef": "5937cb39153ea04ac810f5667e8a21164ab088ae",
+  "workingTreeDeployment": true,
+  "commitDirty": true,
+  "gitBranch": "work/en-de-az-localization",
+  "commitPushMergeSyncByAssistant": false,
+  "previewUrl": "https://01418119.hurralingo-landing.pages.dev",
+  "productionUrls": [
+    "https://www.hurralingo.com/en/",
+    "https://www.hurralingo.com/de/",
+    "https://www.hurralingo.com/az/"
+  ],
+  "activeBuildDirectory": "dist/cloudflare-pages",
+  "timestamp": "2026-10-16T17:07:20.340Z",
+  "previousMultilingualDeploymentId": "baa19227-b59a-4211-a1e3-0b969955b42c",
+  "productionChecksPassed": true
+}

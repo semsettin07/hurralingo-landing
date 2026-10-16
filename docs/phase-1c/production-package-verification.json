@@ -2,8 +2,8 @@
   "pass": true,
   "productionCandidateOnly": true,
   "sourceSeoUnchanged": true,
-  "canonicalPages": 43,
-  "sitemapPages": 43,
+  "canonicalPages": 182,
+  "sitemapPages": 182,
   "preview": {
     "meta": "noindex, nofollow",
     "header": "noindex, nofollow",
@@ -16,22 +16,22 @@
   },
   "foreign": [
     {
-      "file": "en.html",
-      "canonical": "https://hurralingo-landing.pages.dev/en.html",
-      "robots": "noindex, nofollow",
-      "byteIdentical": true
+      "file": "en/index.html",
+      "canonical": "https://www.hurralingo.com/en/",
+      "robots": "index, follow",
+      "byteIdentical": false
     },
     {
-      "file": "de.html",
-      "canonical": "https://hurralingo-landing.pages.dev/de.html",
-      "robots": "noindex, nofollow",
-      "byteIdentical": true
+      "file": "de/index.html",
+      "canonical": "https://www.hurralingo.com/de/",
+      "robots": "index, follow",
+      "byteIdentical": false
     },
     {
-      "file": "az.html",
-      "canonical": "https://hurralingo-landing.pages.dev/az.html",
-      "robots": "noindex, nofollow",
-      "byteIdentical": true
+      "file": "az/index.html",
+      "canonical": "https://www.hurralingo.com/az/",
+      "robots": "index, follow",
+      "byteIdentical": false
     }
   ],
   "releaseBlocked": false,

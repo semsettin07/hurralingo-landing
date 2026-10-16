@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "canonicalPages": 182,
+  "localLinks": 11275,
+  "assets": 2527,
+  "translatedTRArticlesPerLanguage": 34,
+  "localeArticles": {
+    "en": 37,
+    "de": 39,
+    "az": 36
+  },
+  "turkishCopyUnchanged": true,
+  "pricingAssetsUnchanged": true,
+  "legacyEnglishGermanArticleTextUnchanged": true
+}
