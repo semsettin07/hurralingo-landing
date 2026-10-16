@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "route": "/",
+      "width": 1842,
+      "pass": true
+    },
+    {
+      "route": "/iletisim/",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "route": "/iletisim/",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "route": "/iletisim/",
+      "width": 1842,
+      "pass": true
+    }
+  ]
+}

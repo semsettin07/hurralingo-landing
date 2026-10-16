@@ -5,7 +5,7 @@ const out=path.resolve(root,'dist/phase-1b-preview');
 if(!out.startsWith(path.resolve(root,'dist')+path.sep))throw Error('Unsafe preview output path');
 if(fs.existsSync(out))fs.rmSync(out,{recursive:true});
 fs.mkdirSync(out,{recursive:true});
-const dirs=['assets','img','media','blog','en','de','az','ucretler','egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim'];
+const dirs=['assets','img','media','blog','en','de','az','ucretler','egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim','wp-content'];
 for(const p of [...dirs,'index.html','en.html','de.html','az.html','desktop-density.css','localization.css','og.jpg','sitemap.xml','robots.txt'])fs.cpSync(path.join(root,p),path.join(out,p),{recursive:true});
 fs.mkdirSync(path.join(out,'docs'),{recursive:true});
 fs.copyFileSync(path.join(root,'docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf'),path.join(out,'docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf'));

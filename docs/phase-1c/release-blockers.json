@@ -2,10 +2,6 @@
   "releaseAllowed": false,
   "blocking": [
     {
-      "id": "legal",
-      "detail": "Three required footer items still lack approved, appropriate documents: KVKK, Cookie Policy, Distance Sales Contract. Official application terms PDF linked; privacy PDF available but scope not assumed."
-    },
-    {
       "id": "campaign",
       "detail": "Existing media promises 10% discount and free AI access until year end; applicable year and current conditions unconfirmed."
     },
@@ -28,5 +24,6 @@
     "id": "b61b1c9e-4744-4956-b9d0-441dac1d39f1",
     "url": "https://b61b1c9e.hurralingo-landing.pages.dev",
     "source": "4750cad420a3d4215a3035c78aa4e2539857a033"
-  }
+  },
+  "userScopeUpdate": "User approved only Privacy Policy and Terms and Conditions for now and supplied both original PDFs. No fabricated legal text or placeholder legal headings."
 }

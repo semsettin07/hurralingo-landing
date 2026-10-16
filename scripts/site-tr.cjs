@@ -50,8 +50,8 @@ function footer() {
   const $=cheerio.load(fragment('footer'),null,false);
   $('#kap-fh-1').next('ul').find('a').attr('href','/derslerimiz/#programlar');
   $('#kap-fh-2').next('ul').html(menu.map(([label,href])=>`<li><a href="${href}">${label}</a></li>`).join(''));
-  // Already published by Hurra Lingo's own application; do not invent missing policies.
-  $('#kap-fh-3').next('ul').find('span').filter((i,e)=>$(e).text().trim()==='Şartlar ve koşullar').replaceWith('<a href="https://www.hurralingo.app/img/Hurra_Lingo_Terms_and_Conditions_tr.pdf" target="_blank" rel="noopener noreferrer">Şartlar ve koşullar</a>');
+  // User-approved original PDFs, served unchanged at their former WordPress paths.
+  $('#kap-fh-3').next('ul').html('<li><a href="/wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf" target="_blank" rel="noopener noreferrer" hreflang="en">Gizlilik Politikası (PDF, İngilizce)</a></li><li><a href="/wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf" target="_blank" rel="noopener noreferrer" hreflang="en">Şartlar ve Koşullar (PDF, İngilizce)</a></li>');
   $('.kap-top').attr('href','#top');
   return clean($.html());
 }
