@@ -1,15 +1,9 @@
 /* Turkish multipage additions. Original tokens, section styles and interactions remain intact. */
-.site-tr .header .bar{max-width:1500px;gap:14px}
-.site-tr .header .nav{gap:0}
-.site-tr .header .nav-a{font-size:13px;padding-inline:7px;white-space:nowrap}
+/* Restore the original centered header, logo sizing and announcement styling. */
+.site-tr .header .bar{max-width:var(--wrap);margin-inline:auto}
 .site-tr .header .nav-a[aria-current=page]{color:var(--cyan)}
 .site-tr .header .nav-a[aria-current=page]::after{clip-path:inset(0)}
-.site-tr .header .brand img{max-width:160px;object-fit:contain}
-.site-tr .hd-cta{font-size:12px;padding-inline:12px;white-space:nowrap}
-.site-tr .dr-list{margin-top:0}
-.site-tr .dr-list a{min-height:48px;font-size:20px}
 .site-tr .dr-list a[aria-current=page]{color:var(--cyan)}
-.site-tr .dr-st{animation-delay:calc(var(--i)*25ms)}
 .site-crumb{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px;margin-bottom:40px}
 .site-crumb a{color:var(--ink)}
 .page-intro{padding-top:36px;padding-bottom:56px}
@@ -54,8 +48,6 @@
 .site-tr #kap-live:empty{position:absolute}
 .site-tr .nd-cert h3{font-size:25px}
 @media(hover:hover) and (pointer:fine){.site-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px -24px var(--ink)}}
-@media(min-width:1181px) and (max-width:1320px){.site-tr .hd-login{display:none}.site-tr .header .brand img{max-width:140px}.site-tr .header .bar{gap:8px}.site-tr .header .nav-a{padding-inline:5px}}
-@media(max-width:1180px){.site-tr .header .nav{display:none}.site-tr .header .hd-cta{font-size:13px}.site-tr .header .bar{justify-content:space-between}}
 @media(max-width:800px){.page-intro-grid{grid-template-columns:minmax(0,1fr) 120px;gap:20px}.page-mascot{width:110px}.site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ages .site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-strip{flex-direction:column;align-items:flex-start;padding:28px}.contact-layout{grid-template-columns:1fr}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.page-intro{padding-top:24px;padding-bottom:28px}.site-crumb{margin-bottom:24px}.page-intro-grid{grid-template-columns:1fr}.page-mascot{display:none}.page-intro .lead{font-size:17px}.site-grid,.site-grid.two,.home-ages .site-grid{grid-template-columns:1fr}.site-section{padding:32px 0}.site-card{padding:23px}.site-strip{padding:24px;margin-block:24px}.site-strip .btn{white-space:normal}.contact-main{padding:26px}.site-tr .header .brand img{max-width:140px}.site-tr .dr-list a{min-height:44px;font-size:19px}.site-tr .dr-hello{margin-bottom:12px}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.page-intro{padding-top:24px;padding-bottom:28px}.site-crumb{margin-bottom:24px}.page-intro-grid{grid-template-columns:1fr}.page-mascot{display:none}.page-intro .lead{font-size:17px}.site-grid,.site-grid.two,.home-ages .site-grid{grid-template-columns:1fr}.site-section{padding:32px 0}.site-card{padding:23px}.site-strip{padding:24px;margin-block:24px}.site-strip .btn{white-space:normal}.contact-main{padding:26px}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.site-card,.page-mascot{transition:none;rotate:none}.site-card:hover{transform:none}}

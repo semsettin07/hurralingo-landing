@@ -9,6 +9,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt
 const source = read('content/site/home-template.html');
 const original = cheerio.load(source);
 const menu = [ ['Eğitim','/egitimmodelimiz/'], ['Dersler','/derslerimiz/'], ['Öğretmenler','/ogretmenlerimiz/'], ['Blog','/blog/'], ['Ücretler','/ucretler/'], ['Referanslar','/referanslarimiz/'], ['Kurumsal','/kurumsal/'], ['İletişim','/iletisim/'] ];
+const headerMenu=[['Programlar','/derslerimiz/#programlar'],['Öğretmenler','/ogretmenlerimiz/'],['Fiyatlar','/ucretler/'],['Veli soruları','/egitimmodelimiz/#sorular'],['Kurumlar','/kurumsal/'],['Blog','/blog/']];
 const trial = 'https://www.hurralingo.app/trial-request';
 const teachers = JSON.parse(source.match(/var T = (\[\[.*?\]\]);/)[1]);
 function absolute(markup) {
@@ -26,14 +27,13 @@ function clean(markup) {
   return absolute($.html()).replace(/[\t ]+$/gm,'');
 }
 function header(route) {
-  const $=cheerio.load(fragment('#hdr')+fragment('#drawer'),null,false);
-  const current=href=>route===href||(href==='/blog/'&&route.startsWith('/blog/'));
+  // User-approved original header: announcement, larger logo, Programs dropdown
+  // and original desktop/mobile composition. Only adapt links to the new pages.
+  const $=cheerio.load(fragment('#announce')+fragment('#hdr')+fragment('#drawer'),null,false);
+  const anchors={top:'/',programlar:'/derslerimiz/#programlar',ogretmenler:'/ogretmenlerimiz/',fiyatlar:'/ucretler/',sorular:'/egitimmodelimiz/#sorular',kurumlar:'/kurumsal/'};
   $('.brand').attr('href','/');
-  $('.nav').html(menu.map(([label,href])=>`<a class="nav-a" href="${href}"${current(href)?' aria-current="page"':''}>${label}</a>`).join(''));
-  $('.dr-hello p').html('<b class="dr-hi">Merhaba!</b><span>Dil yolculuğunuzu birlikte planlayalım.</span>');
-  $('.dr-ages').remove();
-  $('.dr-list').attr('data-site-menu','').html(menu.map(([label,href],i)=>`<li class="dr-st" style="--i:${i+1}"><a href="${href}"${current(href)?' aria-current="page"':''}><span>${label}</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>`).join(''));
-  $('.dr-sub-links a').first().remove();
+  $('a[href]').each((i,e)=>{const a=$(e),href=a.attr('href');if(href?.startsWith('#')&&anchors[href.slice(1)])a.attr('href',anchors[href.slice(1)]);else if(href==='blog/')a.attr('href','/blog/');});
+  $('.nav .nav-a,#drawer .dr-list a').each((i,e)=>{const a=$(e),href=a.attr('href').split('#')[0];if(route===href||(href==='/blog/'&&route.startsWith('/blog/')))a.attr('aria-current','page');});
   $('[data-spy]').removeAttr('data-spy');
   return $.html().replace(/[\t ]+$/gm,'');
 }
@@ -73,4 +73,4 @@ function teacherSection(limit) {
   if(limit)$('#ogretmenler').append('<p class="section-link"><a class="btn btn-line" href="/ogretmenlerimiz/">Tüm öğretmenlerimizle tanışın →</a></p>');
   return clean($.html());
 }
-module.exports={root,read,write,esc,source,original,menu,teachers,trial,absolute,fragment,clean,shell,assets,hero,teacherSection};
+module.exports={root,read,write,esc,source,original,menu,headerMenu,teachers,trial,absolute,fragment,clean,shell,assets,hero,teacherSection};

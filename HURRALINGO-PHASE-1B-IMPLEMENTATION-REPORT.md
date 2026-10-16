@@ -2,6 +2,14 @@
 
 Tarih: 16 Ekim 2026. Çalışma branch’i: `phase-1b-tr-multipage`.
 
+## Güncel görsel revizyon — orijinal üst alan
+
+Kullanıcının ekran görüntüleriyle verdiği son talimat üzerine orijinal Bett UK 2026 duyuru şeridi, sarı ödül etiketi, büyük logo, Programlar açılır menüsü ve eski mobil menü yapısı geri getirildi. Üst menü sırası yeniden **Programlar | Öğretmenler | Fiyatlar | Veli soruları | Kurumlar | Blog** oldu. Bu karar, aşağıdaki önceki Faz 1B kayıtlarındaki sekiz öğeli üst menü kararının yerine geçer. Sekiz detay sayfasına alt menüden erişim korunur.
+
+Logo ve üst menü yeniden içerikle aynı `--wrap` genişliğinde ortalanır; 1500 px üst alan ve 160/140 px logo sınırları kaldırıldı. Eski menü bağlantıları yeni Türkçe sayfalara gider. Duyuru kapatma/hatırlama, Programlar klavye etkileşimi ve mobil menünün yaş grupları korunur. Bett duyurusunun geri alınması kullanıcının bu son talimatıyla açıkça onaylanmıştır; diğer bekleyen arşiv iddiaları eklenmedi.
+
+Yerel kontrol: ana sayfa ve İletişim için 320, 390, 768, 1024, 1181, 1280, 1440, 1842 px olmak üzere 16 kombinasyonda yatay taşma yok, logo ve içerik sol çizgileri aynı. Açılır menü, mobil menü, Escape/odak dönüşü ve duyuru kapatma/sonraki sayfada hatırlama geçti. 43 Türkçe sayfanın kaynak doğrulaması ve 166 korunan dosya kontrolü geçti. Kanıt: [local-verification.json](docs/phase-1b-header/local-verification.json).
+
 ## Git referansı ve yayın sınırı
 
 - Değişiklik öncesi `main` / Git referansı: `4750cad420a3d4215a3035c78aa4e2539857a033`.
