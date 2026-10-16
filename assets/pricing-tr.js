@@ -1,6 +1,6 @@
 window.HurraPricingText = {
   locale: 'tr-TR', currency: 'TRY',
-  models: {group:'Grup Dersi', mini:'Mini Grup Dersi', private:'Özel Ders (Bire Bir)'},
+  models: {private:'Özel Ders (Bire Bir)', mini:'Mini Grup Dersi', group:'Grup Dersi'},
   teachers: {turkish:'Türk öğretmen', native:'Native öğretmen'},
   memberships: {monthly:'Aylık Üyelik', six:'6 Aylık Üyelik', annual:'Yıllık Üyelik'},
   payments: {monthly:'Aylık ödeme', installment:'Taksitli', cash:'Peşin'},
