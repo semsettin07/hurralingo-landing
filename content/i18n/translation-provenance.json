@@ -1,0 +1,7 @@
+{
+  "provider": "Google Translate text translation",
+  "preparedAt": "2026-10-16T10:15:54.468Z",
+  "scope": "Existing public site and article copy only",
+  "review": "Editorial overrides in locale-content.cjs take precedence; legal PDFs and teacher names excluded",
+  "offlineBuild": true
+}
