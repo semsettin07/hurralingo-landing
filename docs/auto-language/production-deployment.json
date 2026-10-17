@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "id": "80dc39fe-8752-4f4c-8177-924c30ca2bfb",
+  "url": "https://80dc39fe.hurralingo-landing.pages.dev",
+  "publicUrl": "https://www.hurralingo.com/",
+  "source": "68b772aebbaf7ec4430ca13dc05a1a9f602a266c",
+  "branch": "main",
+  "status": "success",
+  "previousId": "446b4a60-e40d-4d51-a597-e298118d992a",
+  "checkedAt": "2026-10-17T08:04:56.000Z",
+  "build": {
+    "build_command": "node -e \"const c=require('node:child_process'),f=require('node:fs'),p=require('node:path');c.execFileSync(process.execPath,['scripts/build-site-tr.cjs'],{stdio:'inherit'});if(f.existsSync('scripts/build-locales.cjs'))c.execFileSync(process.execPath,['scripts/build-locales.cjs'],{stdio:'inherit'});c.execFileSync(process.execPath,['scripts/package-preview.cjs'],{stdio:'inherit'});const prod=process.env.CF_PAGES_BRANCH==='main';if(prod)c.execFileSync(process.execPath,['scripts/package-production.cjs'],{stdio:'inherit'});const src=prod?'dist/phase-1c-production':'dist/phase-1b-preview',out=p.resolve('dist/cloudflare-pages');if(!out.startsWith(p.resolve('dist')+p.sep))throw Error('Unsafe build output');f.rmSync(out,{recursive:true,force:true});f.cpSync(src,out,{recursive:true});\"",
+    "destination_dir": "dist/cloudflare-pages",
+    "root_dir": "",
+    "web_analytics_tag": null,
+    "web_analytics_token": null
+  },
+  "endpoint": {
+    "status": 200,
+    "body": {
+      "country": "TR"
+    },
+    "cache": "private, no-store, max-age=0"
+  },
+  "languageAssetMatches": true
+}

@@ -1,0 +1,12 @@
+{
+  "origin": "https://www.hurralingo.com",
+  "pass": false,
+  "scenarios": [],
+  "menus": [],
+  "seoPages": 0,
+  "errors": [],
+  "consoleErrors": [],
+  "expectedCountryErrors": [],
+  "countryRequests": 0,
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '96f7a10fa42a9af8687b6bbc5196fa082243859505ed7d4e94771d69c01b57de'\n- '1167a45b9e0ea1d891a2af6ba54569d41146369c06f514794801117c14d64dad'\n\n    at C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:10:9\n    at Object.<anonymous> (C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:107:3)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47"
+}

@@ -1,6 +1,15 @@
 # Hurra Lingo — otomatik dil seçimi
 
-Tarih: 17 Ekim 2026. **Yalnızca preview yayımlandı; production değiştirilmedi.**
+Tarih: 17 Ekim 2026. **Kullanıcının sonraki canlı yayın talimatıyla production yayımlandı.**
+
+## Canlı yayın güncellemesi
+
+- Canlı adres: https://www.hurralingo.com/
+- Production deployment: `80dc39fe-8752-4f4c-8177-924c30ca2bfb`; Cloudflare API durumu `success`.
+- Yayımlanan Git sürümü: `68b772aebbaf7ec4430ca13dc05a1a9f602a266c`. `work/auto-language` dalı `main` dalına fast-forward ile aktarıldı ve `origin/main` gönderildi. Git entegrasyonu tek production yayını oluşturdu; ayrıca doğrudan production yüklemesi yapılmadı.
+- Canlı kontroller: 182 URL HTTP 200/canonical/index-follows, 182 URL sitemap, 240 fiyat senaryosu, 160 medya/varlık, 234 yönlendirme, öğretmen/blog/menü/video etkileşimleri ve altı genişlik geçti; JavaScript hatası yok. Ülke endpoint'i HTTP 200, yalnızca ülke alanı ve no-store ile doğrulandı; yayımlanan dil betiği test edilen kaynakla eşleşiyor.
+- Kanıt: `docs/auto-language/production-deployment.json`, `docs/auto-language/production-language-verification.json`, `docs/localization/production/remote-verification.json`.
+- Geri dönüş hedefi: önceki production `446b4a60-e40d-4d51-a597-e298118d992a`. Aşağıdaki preview kayıtları ilk teslim aşamasına aittir.
 
 ## Teslim
 
@@ -8,7 +17,7 @@ Tarih: 17 Ekim 2026. **Yalnızca preview yayımlandı; production değiştirilme
 - Dal önizlemesi: https://work-auto-language.hurralingo-landing.pages.dev/
 - Preview deployment: `a74f8ff1-8f70-4646-a7b9-8c324b4bca7d`; Cloudflare API durumu `success`, ortam `preview`.
 - Git dalı: `work/auto-language`; başlangıç HEAD: `ecd78919e3b2a27ecb19c975f5ce64b9525002ee`.
-- Commit, push, merge veya production deployment yapılmadı. Preview, test edilen çalışma ağacından doğrudan yüklendi (`commit-dirty=true`); başlangıç SHA'sı yeni değişikliklerin commit edildiği anlamına gelmez.
+- İlk preview aşamasında commit, push, merge veya production deployment yapılmamıştı. Preview, test edilen çalışma ağacından doğrudan yüklendi (`commit-dirty=true`); başlangıç SHA'sı yeni değişikliklerin commit edildiği anlamına gelmez. Daha sonraki canlı yayın yukarıda kaydedilmiştir.
 
 ## Mimari ve davranış
 

@@ -7,8 +7,10 @@ const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const key='hl-language-choice';
 (async()=>{
  const baseline=require('../docs/auto-language/baseline.json');
- assert.equal(hash(fs.readFileSync('sitemap.xml')),baseline.sitemapHash);
- for(const [file,digest] of Object.entries(baseline.assets))assert.equal(hash(fs.readFileSync(file)),digest,file);
+ // Git checkout on Windows can convert tracked text from LF to CRLF.
+ function checkDigest(file,digest){const data=fs.readFileSync(file);if(hash(data)!==digest){assert.equal(hash(data.toString('utf8').replace(/\r\n/g,'\n')),digest,file);(result.lineEndingNormalizations||=[]).push(file)}}
+ checkDigest('sitemap.xml',baseline.sitemapHash);
+ for(const [file,digest] of Object.entries(baseline.assets))checkDigest(file,digest);
  for(const route of routes){const $=c.load(fs.readFileSync(path.join('.',route,'index.html'),'utf8')),before=baseline.source[route];
  assert.equal($('link[rel=canonical]').attr('href'),before.canonical,route);
  assert.deepEqual($('link[rel=alternate][hreflang]').map((i,e)=>$(e).attr('hreflang')+' '+$(e).attr('href')).get(),before.alternates,route);
@@ -104,4 +106,4 @@ const key='hl-language-choice';
  {const ctx=await context({javaScriptEnabled:false});const p=await ctx.newPage();const r=await p.goto(origin+'/');assert.equal(r.status(),200);assert.equal(await p.locator('html').getAttribute('lang'),'tr');assert.ok((await p.locator('main').textContent()).length>1000);assert.equal(await p.locator('link[rel=canonical]').getAttribute('href'),'https://www.hurralingo.com/');await ctx.close();}
  assert.deepEqual(result.errors,[]);assert.deepEqual(result.consoleErrors,[]);result.pass=true;console.log('PASS: '+result.scenarios.length+' scenarios, '+result.menus.length+' actual menu transitions, 182 SEO/content pages, fallback storage/cookies, JS disabled and endpoint privacy.');
  }finally{await browser.close()}
-})().catch(e=>{result.failure=e.stack;console.error(e);process.exitCode=1}).finally(()=>{fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/'+(origin.startsWith('https:')?'preview-verification.json':origin.endsWith(':8018')?'runtime-browser-verification.json':'verification.json'),JSON.stringify(result,null,2)+'\n')});
+})().catch(e=>{result.failure=e.stack;console.error(e);process.exitCode=1}).finally(()=>{fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/'+(origin==='https://www.hurralingo.com'?'production-language-verification.json':origin.startsWith('https:')?'preview-verification.json':origin.endsWith(':8018')?'runtime-browser-verification.json':'verification.json'),JSON.stringify(result,null,2)+'\n')});

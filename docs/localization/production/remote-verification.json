@@ -4,20 +4,20 @@
   "pass": true,
   "pages": [
     {
-      "route": "/derslerimiz/",
+      "route": "/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/derslerimiz/",
+      "canonical": "https://www.hurralingo.com/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/ogretmenlerimiz/",
+      "route": "/derslerimiz/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/ogretmenlerimiz/",
+      "canonical": "https://www.hurralingo.com/derslerimiz/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -34,10 +34,10 @@
       "h1": 1
     },
     {
-      "route": "/",
+      "route": "/ogretmenlerimiz/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/",
+      "canonical": "https://www.hurralingo.com/ogretmenlerimiz/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -48,6 +48,16 @@
       "status": 200,
       "lang": "tr",
       "canonical": "https://www.hurralingo.com/blog/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/kurumsal/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/kurumsal/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -84,10 +94,10 @@
       "h1": 1
     },
     {
-      "route": "/kurumsal/",
+      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/kurumsal/",
+      "canonical": "https://www.hurralingo.com/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -104,20 +114,10 @@
       "h1": 1
     },
     {
-      "route": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "canonical": "https://www.hurralingo.com/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -134,16 +134,6 @@
       "h1": 1
     },
     {
-      "route": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 200,
       "lang": "tr",
@@ -154,10 +144,30 @@
       "h1": 1
     },
     {
+      "route": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
       "status": 200,
       "lang": "tr",
       "canonical": "https://www.hurralingo.com/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -184,16 +194,6 @@
       "h1": 1
     },
     {
-      "route": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
       "status": 200,
       "lang": "tr",
@@ -208,6 +208,16 @@
       "status": 200,
       "lang": "tr",
       "canonical": "https://www.hurralingo.com/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -244,26 +254,6 @@
       "h1": 1
     },
     {
-      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/blog/dunyadan-yilbasi-gelenekleri/",
       "status": 200,
       "lang": "tr",
@@ -274,20 +264,30 @@
       "h1": 1
     },
     {
-      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "canonical": "https://www.hurralingo.com/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "route": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
       "status": 200,
       "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "canonical": "https://www.hurralingo.com/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -314,6 +314,26 @@
       "h1": 1
     },
     {
+      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/blog/cocuklar-icin-rusca/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/cocuklar-icin-rusca/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
       "status": 200,
       "lang": "tr",
@@ -334,30 +354,20 @@
       "h1": 1
     },
     {
-      "route": "/blog/cocuklar-icin-rusca/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/cocuklar-icin-rusca/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/blog/online-dil-dersleri/",
       "status": 200,
       "lang": "tr",
       "canonical": "https://www.hurralingo.com/blog/online-dil-dersleri/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -384,26 +394,6 @@
       "h1": 1
     },
     {
-      "route": "/blog/dil-egitimi-teorileri/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/dil-egitimi-teorileri/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
-      "status": 200,
-      "lang": "tr",
-      "canonical": "https://www.hurralingo.com/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
       "status": 200,
       "lang": "tr",
@@ -424,10 +414,30 @@
       "h1": 1
     },
     {
+      "route": "/blog/dil-egitimi-teorileri/",
+      "status": 200,
+      "lang": "tr",
+      "canonical": "https://www.hurralingo.com/blog/dil-egitimi-teorileri/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/blog/dil-egitiminde-film-ve-dizi/",
       "status": 200,
       "lang": "tr",
       "canonical": "https://www.hurralingo.com/blog/dil-egitiminde-film-ve-dizi/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/en/",
+      "status": 200,
+      "lang": "en",
+      "canonical": "https://www.hurralingo.com/en/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -448,16 +458,6 @@
       "status": 200,
       "lang": "en",
       "canonical": "https://www.hurralingo.com/en/lessons/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/en/",
-      "status": 200,
-      "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -514,10 +514,10 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "route": "/en/contact/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "canonical": "https://www.hurralingo.com/en/contact/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -534,20 +534,20 @@
       "h1": 1
     },
     {
-      "route": "/en/contact/",
+      "route": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/contact/",
+      "canonical": "https://www.hurralingo.com/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "canonical": "https://www.hurralingo.com/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -564,10 +564,20 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "route": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "canonical": "https://www.hurralingo.com/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "status": 200,
+      "lang": "en",
+      "canonical": "https://www.hurralingo.com/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -604,10 +614,10 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+      "canonical": "https://www.hurralingo.com/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -634,16 +644,6 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
-      "status": 200,
-      "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
       "status": 200,
       "lang": "en",
@@ -664,20 +664,20 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+      "canonical": "https://www.hurralingo.com/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "route": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+      "canonical": "https://www.hurralingo.com/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -694,16 +694,6 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
-      "status": 200,
-      "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
       "status": 200,
       "lang": "en",
@@ -714,10 +704,10 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "route": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+      "canonical": "https://www.hurralingo.com/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -734,6 +724,16 @@
       "h1": 1
     },
     {
+      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "status": 200,
+      "lang": "en",
+      "canonical": "https://www.hurralingo.com/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
       "status": 200,
       "lang": "en",
@@ -744,10 +744,10 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "route": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+      "canonical": "https://www.hurralingo.com/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -764,6 +764,16 @@
       "h1": 1
     },
     {
+      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "status": 200,
+      "lang": "en",
+      "canonical": "https://www.hurralingo.com/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
       "status": 200,
       "lang": "en",
@@ -774,10 +784,10 @@
       "h1": 1
     },
     {
-      "route": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "route": "/en/blog/practical-english-at-home-educational-english-games/",
       "status": 200,
       "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+      "canonical": "https://www.hurralingo.com/en/blog/practical-english-at-home-educational-english-games/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -798,16 +808,6 @@
       "status": 200,
       "lang": "en",
       "canonical": "https://www.hurralingo.com/en/blog/russian-for-kids/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/en/blog/practical-english-at-home-educational-english-games/",
-      "status": 200,
-      "lang": "en",
-      "canonical": "https://www.hurralingo.com/en/blog/practical-english-at-home-educational-english-games/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -874,16 +874,6 @@
       "h1": 1
     },
     {
-      "route": "/de/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
       "status": 200,
       "lang": "en",
@@ -904,10 +894,30 @@
       "h1": 1
     },
     {
+      "route": "/de/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/de/lernkonzept/",
       "status": 200,
       "lang": "de",
       "canonical": "https://www.hurralingo.com/de/lernkonzept/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/de/kurse/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/kurse/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -934,30 +944,20 @@
       "h1": 1
     },
     {
-      "route": "/de/lehrkraefte/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/lehrkraefte/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/de/kurse/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/kurse/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/de/erfahrungen/",
       "status": 200,
       "lang": "de",
       "canonical": "https://www.hurralingo.com/de/erfahrungen/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/de/lehrkraefte/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/lehrkraefte/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -974,20 +974,20 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "route": "/de/kontakt/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "canonical": "https://www.hurralingo.com/de/kontakt/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/de/kontakt/",
+      "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/kontakt/",
+      "canonical": "https://www.hurralingo.com/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1014,16 +1014,6 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
       "status": 200,
       "lang": "de",
@@ -1034,10 +1024,30 @@
       "h1": 1
     },
     {
+      "route": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
       "status": 200,
       "lang": "de",
       "canonical": "https://www.hurralingo.com/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1064,26 +1074,6 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
       "status": 200,
       "lang": "de",
@@ -1094,10 +1084,10 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "route": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "canonical": "https://www.hurralingo.com/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1124,6 +1114,16 @@
       "h1": 1
     },
     {
+      "route": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
       "status": 200,
       "lang": "de",
@@ -1134,20 +1134,20 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+      "canonical": "https://www.hurralingo.com/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "route": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+      "canonical": "https://www.hurralingo.com/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1194,20 +1194,20 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/neujahrstraditionen-aus-aller-welt/",
+      "canonical": "https://www.hurralingo.com/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "route": "/de/blog/neujahrstraditionen-aus-aller-welt/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+      "canonical": "https://www.hurralingo.com/de/blog/neujahrstraditionen-aus-aller-welt/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1264,20 +1264,20 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/russisch-fur-kinder/",
+      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/russisch-fur-kinder/",
+      "canonical": "https://www.hurralingo.com/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "route": "/de/blog/russisch-fur-kinder/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+      "canonical": "https://www.hurralingo.com/de/blog/russisch-fur-kinder/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1294,10 +1294,10 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+      "canonical": "https://www.hurralingo.com/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1314,20 +1314,10 @@
       "h1": 1
     },
     {
-      "route": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+      "route": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
       "status": 200,
       "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
-      "status": 200,
-      "lang": "de",
-      "canonical": "https://www.hurralingo.com/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "canonical": "https://www.hurralingo.com/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1348,6 +1338,16 @@
       "status": 200,
       "lang": "de",
       "canonical": "https://www.hurralingo.com/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+      "status": 200,
+      "lang": "de",
+      "canonical": "https://www.hurralingo.com/de/blog/spiele-im-sprachunterricht-von-kindern/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1414,20 +1414,20 @@
       "h1": 1
     },
     {
-      "route": "/az/qiymetler/",
+      "route": "/az/muellimler/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/qiymetler/",
+      "canonical": "https://www.hurralingo.com/az/muellimler/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/az/muellimler/",
+      "route": "/az/qiymetler/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/muellimler/",
+      "canonical": "https://www.hurralingo.com/az/qiymetler/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1484,16 +1484,6 @@
       "h1": 1
     },
     {
-      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
-      "status": 200,
-      "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
       "route": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
       "status": 200,
       "lang": "az",
@@ -1504,10 +1494,10 @@
       "h1": 1
     },
     {
-      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "route": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "canonical": "https://www.hurralingo.com/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1534,6 +1524,26 @@
       "h1": 1
     },
     {
+      "route": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "status": 200,
+      "lang": "az",
+      "canonical": "https://www.hurralingo.com/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
+      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "status": 200,
+      "lang": "az",
+      "canonical": "https://www.hurralingo.com/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
       "status": 200,
       "lang": "az",
@@ -1548,16 +1558,6 @@
       "status": 200,
       "lang": "az",
       "canonical": "https://www.hurralingo.com/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
-      "status": 200,
-      "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1584,20 +1584,20 @@
       "h1": 1
     },
     {
-      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+      "canonical": "https://www.hurralingo.com/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
       "h1": 1
     },
     {
-      "route": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "route": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+      "canonical": "https://www.hurralingo.com/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1654,6 +1654,16 @@
       "h1": 1
     },
     {
+      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "status": 200,
+      "lang": "az",
+      "canonical": "https://www.hurralingo.com/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
       "status": 200,
       "lang": "az",
@@ -1674,10 +1684,10 @@
       "h1": 1
     },
     {
-      "route": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
       "status": 200,
       "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+      "canonical": "https://www.hurralingo.com/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1688,16 +1698,6 @@
       "status": 200,
       "lang": "az",
       "canonical": "https://www.hurralingo.com/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
-    },
-    {
-      "route": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
-      "status": 200,
-      "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
       "meta": "index, follow",
       "header": null,
       "menu": 8,
@@ -1794,6 +1794,16 @@
       "h1": 1
     },
     {
+      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "status": 200,
+      "lang": "az",
+      "canonical": "https://www.hurralingo.com/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+      "meta": "index, follow",
+      "header": null,
+      "menu": 8,
+      "h1": 1
+    },
+    {
       "route": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
       "status": 200,
       "lang": "az",
@@ -1812,16 +1822,6 @@
       "header": null,
       "menu": 8,
       "h1": 1
-    },
-    {
-      "route": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
-      "status": 200,
-      "lang": "az",
-      "canonical": "https://www.hurralingo.com/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
-      "meta": "index, follow",
-      "header": null,
-      "menu": 8,
-      "h1": 1
     }
   ],
   "pricingCases": 180,
@@ -1832,6 +1832,12 @@
     {
       "from": "/tr/ogretmenlerimiz/",
       "to": "/ogretmenlerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/",
+      "to": "/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1848,26 +1854,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/",
-      "to": "/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/tr/blog/",
       "to": "/blog/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/ucretler/",
-      "to": "/ucretler/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/referanslarimiz/",
-      "to": "/referanslarimiz/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1878,8 +1866,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/iletisim/",
-      "to": "/iletisim/",
+      "from": "/tr/referanslarimiz/",
+      "to": "/referanslarimiz/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1890,14 +1878,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid/",
-      "to": "/blog/",
+      "from": "/tr/iletisim/",
+      "to": "/iletisim/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-4-columns/",
-      "to": "/blog/",
+      "from": "/tr/ucretler/",
+      "to": "/ucretler/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1908,7 +1896,19 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-2-columns-sdb/",
+      "from": "/tr/blog-grid/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-right-sidebar/",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-4-columns/",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
@@ -1926,7 +1926,7 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-2-columns-right-sidebar/",
+      "from": "/tr/blog-grid-2-columns-sdb/",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
@@ -1934,12 +1934,6 @@
     {
       "from": "/tr/classes/grup-derslerimiz/",
       "to": "/derslerimiz/#grup",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/classes/bireysel-derslerimiz/",
-      "to": "/derslerimiz/#bire-bir",
       "status": 301,
       "targetStatus": 200
     },
@@ -1956,20 +1950,14 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/classes/bireysel-derslerimiz/",
+      "to": "/derslerimiz/#bire-bir",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/06/11/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
       "to": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/",
-      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
-      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1980,14 +1968,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
-      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
-      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
     },
@@ -1998,8 +1986,20 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/03/30/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
       "to": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2010,8 +2010,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
-      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2022,14 +2022,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
-      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
-      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2046,20 +2040,14 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri/",
       "to": "/blog/dunyadan-yilbasi-gelenekleri/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
-      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/12/05/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
-      "to": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2076,8 +2064,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
-      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "from": "/tr/2025/12/05/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "to": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2094,14 +2088,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/17/cocuklar-icin-rusca/",
-      "to": "/blog/cocuklar-icin-rusca/",
+      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/09/29/online-dil-dersleri/",
-      "to": "/blog/online-dil-dersleri/",
+      "from": "/tr/2025/10/17/cocuklar-icin-rusca/",
+      "to": "/blog/cocuklar-icin-rusca/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2118,14 +2112,26 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun/",
       "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
-      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "from": "/tr/2025/09/29/online-dil-dersleri/",
+      "to": "/blog/online-dil-dersleri/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/",
+      "to": "/blog/dil-egitiminde-film-ve-dizi/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2136,8 +2142,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/",
-      "to": "/blog/dil-egitiminde-film-ve-dizi/",
+      "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef/",
+      "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2154,20 +2160,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef/",
-      "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
     },
     {
       "from": "/tr",
       "to": "/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/",
-      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2184,14 +2184,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/egitimmodelimiz",
-      "to": "/egitimmodelimiz/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/egitimmodelimiz/index.html",
-      "to": "/egitimmodelimiz/",
+      "from": "/tr/index.html",
+      "to": "/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2202,20 +2196,14 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/egitimmodelimiz/index.html",
+      "to": "/egitimmodelimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/derslerimiz/index.html",
       "to": "/derslerimiz/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/ogretmenlerimiz",
-      "to": "/ogretmenlerimiz/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/index.html",
-      "to": "/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2226,13 +2214,25 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog",
-      "to": "/blog/",
+      "from": "/tr/ogretmenlerimiz",
+      "to": "/ogretmenlerimiz/",
       "status": 301,
       "targetStatus": 200
     },
     {
       "from": "/tr/blog/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/egitimmodelimiz",
+      "to": "/egitimmodelimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
@@ -2244,14 +2244,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/referanslarimiz",
-      "to": "/referanslarimiz/",
+      "from": "/tr/ucretler/index.html",
+      "to": "/ucretler/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/ucretler/index.html",
-      "to": "/ucretler/",
+      "from": "/tr/referanslarimiz",
+      "to": "/referanslarimiz/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2274,8 +2274,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/iletisim",
-      "to": "/iletisim/",
+      "from": "/tr/takipvesertifikasyon",
+      "to": "/egitimmodelimiz/#sertifikasyon",
       "status": 301,
       "targetStatus": 200
     },
@@ -2286,7 +2286,13 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/takipvesertifikasyon",
+      "from": "/tr/iletisim",
+      "to": "/iletisim/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/takipvesertifikasyon/index.html",
       "to": "/egitimmodelimiz/#sertifikasyon",
       "status": 301,
       "targetStatus": 200
@@ -2298,26 +2304,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/takipvesertifikasyon/index.html",
-      "to": "/egitimmodelimiz/#sertifikasyon",
+      "from": "/tr/icerik-ornekleri",
+      "to": "/egitimmodelimiz/#icerik-ornekleri",
       "status": 301,
       "targetStatus": 200
     },
     {
       "from": "/tr/sikcasorulansorular",
       "to": "/egitimmodelimiz/#sss",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/icerik-ornekleri/index.html",
-      "to": "/egitimmodelimiz/#icerik-ornekleri",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/icerik-ornekleri",
-      "to": "/egitimmodelimiz/#icerik-ornekleri",
       "status": 301,
       "targetStatus": 200
     },
@@ -2334,19 +2328,25 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-4-columns/index.html",
-      "to": "/blog/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/tr/blog-grid-4-columns",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-2-columns-right-sidebar",
+      "from": "/tr/icerik-ornekleri/index.html",
+      "to": "/egitimmodelimiz/#icerik-ornekleri",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-4-columns/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-sdb",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
@@ -2358,19 +2358,7 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/blog-grid-2-columns-sdb/index.html",
-      "to": "/blog/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/classes",
-      "to": "/derslerimiz/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/blog-grid-2-columns-sdb",
+      "from": "/tr/blog-grid-2-columns-right-sidebar",
       "to": "/blog/",
       "status": 301,
       "targetStatus": 200
@@ -2388,6 +2376,18 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/classes",
+      "to": "/derslerimiz/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/blog-grid-2-columns-sdb/index.html",
+      "to": "/blog/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/classes/bireysel-derslerimiz/index.html",
       "to": "/derslerimiz/#bire-bir",
       "status": 301,
@@ -2400,13 +2400,19 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/classes/grup-derslerimiz",
+      "to": "/derslerimiz/#grup",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/classes/mini-grup-derslerimiz/index.html",
       "to": "/derslerimiz/#mini-grup",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/classes/grup-derslerimiz",
+      "from": "/tr/classes/grup-derslerimiz/index.html",
       "to": "/derslerimiz/#grup",
       "status": 301,
       "targetStatus": 200
@@ -2414,12 +2420,6 @@
     {
       "from": "/tr/2026/06/15/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi",
       "to": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/classes/grup-derslerimiz/index.html",
-      "to": "/derslerimiz/#grup",
       "status": 301,
       "targetStatus": 200
     },
@@ -2448,7 +2448,19 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/index.html",
+      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi",
+      "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/index.html",
       "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
       "status": 301,
       "targetStatus": 200
@@ -2460,20 +2472,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/05/15/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/index.html",
-      "to": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/18/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/index.html",
-      "to": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/index.html",
-      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/index.html",
+      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2484,14 +2484,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/05/05/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/index.html",
-      "to": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/04/22/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu",
-      "to": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%e2%9c%a8/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2508,8 +2502,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil",
-      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "from": "/tr/2026/04/22/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu",
+      "to": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2526,7 +2520,19 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/02/20/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil",
+      "to": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu",
+      "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/index.html",
       "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
       "status": 301,
       "targetStatus": 200
@@ -2538,26 +2544,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/index.html",
-      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/02/13/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/index.html",
-      "to": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/tr/2026/01/29/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir",
       "to": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler",
-      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "from": "/tr/2026/02/06/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/index.html",
+      "to": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2568,20 +2562,20 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin",
+      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/index.html",
       "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/01/09/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/index.html",
-      "to": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/01/16/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin",
-      "to": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "from": "/tr/2026/01/23/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler",
+      "to": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2598,6 +2592,12 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/01/09/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/index.html",
+      "to": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar",
       "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
       "status": 301,
@@ -2610,14 +2610,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri/index.html",
-      "to": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/index.html",
+      "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/01/02/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/index.html",
-      "to": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "from": "/tr/2025/12/26/dunyadan-yilbasi-gelenekleri/index.html",
+      "to": "/blog/dunyadan-yilbasi-gelenekleri/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2628,20 +2628,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/index.html",
-      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "from": "/tr/2025/12/19/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/index.html",
+      "to": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
       "status": 301,
       "targetStatus": 200
     },
     {
       "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem",
       "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/12/19/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/index.html",
-      "to": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2658,13 +2652,13 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli",
-      "to": "/blog/almanca-ogrenmek-neden-onemli/",
+      "from": "/tr/2025/12/12/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/index.html",
+      "to": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli/index.html",
+      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli",
       "to": "/blog/almanca-ogrenmek-neden-onemli/",
       "status": 301,
       "targetStatus": 200
@@ -2676,14 +2670,20 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/28/%f0%9f%87%b9%f0%9f%87%b7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
-      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "from": "/tr/2025/11/06/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/index.html",
+      "to": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/11/06/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/index.html",
-      "to": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "from": "/tr/2025/11/14/almanca-ogrenmek-neden-onemli/index.html",
+      "to": "/blog/almanca-ogrenmek-neden-onemli/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/%f0%9f%87%b9%f0%9f%87%b7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2700,14 +2700,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/17/cocuklar-icin-rusca",
-      "to": "/blog/cocuklar-icin-rusca/",
+      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/index.html",
+      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/24/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/index.html",
-      "to": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "from": "/tr/2025/10/17/cocuklar-icin-rusca",
+      "to": "/blog/cocuklar-icin-rusca/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2718,26 +2718,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/10/08/evde-pratik-ingilizce",
-      "to": "/blog/evde-pratik-ingilizce/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/10/08/evde-pratik-ingilizce/index.html",
-      "to": "/blog/evde-pratik-ingilizce/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/tr/2025/09/29/online-dil-dersleri",
       "to": "/blog/online-dil-dersleri/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi",
-      "to": "/blog/ispanyolca-mi-almanca-mi/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2748,14 +2730,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi",
-      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "from": "/tr/2025/10/08/evde-pratik-ingilizce/index.html",
+      "to": "/blog/evde-pratik-ingilizce/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi/index.html",
-      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "from": "/tr/2025/10/08/evde-pratik-ingilizce",
+      "to": "/blog/evde-pratik-ingilizce/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2766,8 +2748,38 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi",
+      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/26/ispanyolca-mi-almanca-mi/index.html",
+      "to": "/blog/ispanyolca-mi-almanca-mi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/19/cocuklarda-erken-yasta-ikinci-dil-edinimi",
+      "to": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun",
       "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun/index.html",
+      "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/04/15/dil-egitimi-teorileri",
+      "to": "/blog/dil-egitimi-teorileri/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2780,12 +2792,6 @@
     {
       "from": "/tr/2025/04/15/dil-ogrenmede-motivasyon-ve-hedef",
       "to": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/04/15/dil-egitimi-teorileri",
-      "to": "/blog/dil-egitimi-teorileri/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2808,18 +2814,6 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2025/09/11/cocuklarin-dil-egitiminde-oyun/index.html",
-      "to": "/blog/cocuklarin-dil-egitiminde-oyun/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/index.html",
-      "to": "/blog/dil-egitiminde-film-ve-dizi/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi",
       "to": "/blog/dil-egitiminde-film-ve-dizi/",
       "status": 301,
@@ -2832,6 +2826,12 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2025/04/15/dil-egitiminde-film-ve-dizi/index.html",
+      "to": "/blog/dil-egitiminde-film-ve-dizi/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-✨/index.html",
       "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
@@ -2839,12 +2839,6 @@
     },
     {
       "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8",
-      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/index.html",
       "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
@@ -2864,6 +2858,12 @@
     {
       "from": "/tr/2025/10/28/%F0%9F%87%B9%F0%9F%87%B7-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu",
       "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-%E2%9C%A8/index.html",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2934,26 +2934,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/2026/06/16/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
-      "to": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/2026/06/16/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/index.html",
       "to": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/2026/06/11/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
-      "to": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/2026/06/11/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/index.html",
-      "to": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "from": "/2026/06/16/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "to": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2970,20 +2958,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/2026/01/07/motivation-and-goal-setting-in-active-language-learning/index.html",
-      "to": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "from": "/2026/06/11/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+      "to": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/2026/01/07/motivation-and-goal-setting-in-active-language-learning/",
-      "to": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/2026/01/07/common-challenges-in-foreign-language-education-and-their-solutions/index.html",
-      "to": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "from": "/2026/06/11/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/index.html",
+      "to": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
       "status": 301,
       "targetStatus": 200
     },
@@ -2994,20 +2976,38 @@
       "targetStatus": 200
     },
     {
+      "from": "/2026/01/07/common-challenges-in-foreign-language-education-and-their-solutions/index.html",
+      "to": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/2026/01/07/motivation-and-goal-setting-in-active-language-learning/",
+      "to": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/2026/01/07/motivation-and-goal-setting-in-active-language-learning/index.html",
+      "to": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/de/egitimmodelimiz/",
       "to": "/de/lernkonzept/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/derslerimiz/",
-      "to": "/de/kurse/",
+      "from": "/de/ogretmenlerimiz/",
+      "to": "/de/lehrkraefte/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/ogretmenlerimiz/",
-      "to": "/de/lehrkraefte/",
+      "from": "/de/derslerimiz/",
+      "to": "/de/kurse/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3030,26 +3030,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/de/iletisim/",
-      "to": "/de/kontakt/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/de/kurumsal/",
       "to": "/de/unternehmen/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/2026/06/15/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
-      "to": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/de/2026/06/15/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/index.html",
-      "to": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "from": "/de/iletisim/",
+      "to": "/de/kontakt/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3066,38 +3054,26 @@
       "targetStatus": 200
     },
     {
-      "from": "/de/2026/06/11/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
-      "to": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/de/2026/06/11/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/index.html",
       "to": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/2026/05/20/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/index.html",
-      "to": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "from": "/de/2026/06/11/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "to": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/2026/05/20/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
-      "to": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "from": "/de/2026/06/15/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "to": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/de/2026/04/28/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/index.html",
-      "to": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/de/2026/04/28/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
-      "to": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "from": "/de/2026/06/15/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/index.html",
+      "to": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3114,14 +3090,44 @@
       "targetStatus": 200
     },
     {
-      "from": "/az/egitimmodelimiz/",
-      "to": "/az/tehsil/",
+      "from": "/de/2026/05/20/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/index.html",
+      "to": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/de/2026/05/20/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "to": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/de/2026/04/28/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "to": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/de/2026/04/28/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/index.html",
+      "to": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
       "status": 301,
       "targetStatus": 200
     },
     {
       "from": "/az.html",
       "to": "/az/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/az/egitimmodelimiz/",
+      "to": "/az/tehsil/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/az/ucretler/",
+      "to": "/az/qiymetler/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3138,26 +3144,14 @@
       "targetStatus": 200
     },
     {
-      "from": "/az/kurumsal/",
-      "to": "/az/korporativ/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/az/ucretler/",
-      "to": "/az/qiymetler/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
       "from": "/az/iletisim/",
       "to": "/az/elaqe/",
       "status": 301,
       "targetStatus": 200
     },
     {
-      "from": "/az/referanslarimiz/",
-      "to": "/az/reyler/",
+      "from": "/az/kurumsal/",
+      "to": "/az/korporativ/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3174,8 +3168,8 @@
       "targetStatus": 200
     },
     {
-      "from": "/az/2026/01/07/common-challenges-in-foreign-language-education-and-their-solutions/",
-      "to": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "from": "/az/referanslarimiz/",
+      "to": "/az/reyler/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3186,8 +3180,20 @@
       "targetStatus": 200
     },
     {
-      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-locale-fallback-check/",
-      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "from": "/az/2026/01/07/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "to": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/az/2026/01/07/motivation-and-goal-setting-in-active-language-learning/index.html",
+      "to": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/az/2026/01/07/motivation-and-goal-setting-in-active-language-learning/",
+      "to": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
       "status": 301,
       "targetStatus": 200
     },
@@ -3198,7 +3204,19 @@
       "targetStatus": 200
     },
     {
+      "from": "/tr/2026/05/08/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen-locale-fallback-check/",
+      "to": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
       "from": "/tr/2025/10/28/locale-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 301,
+      "targetStatus": 200
+    },
+    {
+      "from": "/tr/2025/10/28/locale-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
       "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
       "status": 301,
       "targetStatus": 200
@@ -3214,27 +3232,14 @@
       "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
       "status": 301,
       "targetStatus": 200
-    },
-    {
-      "from": "/tr/2025/10/28/locale-fallback-check-29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html",
-      "to": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/az/2026/01/07/motivation-and-goal-setting-in-active-language-learning/index.html",
-      "to": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
-      "status": 301,
-      "targetStatus": 200
-    },
-    {
-      "from": "/az/2026/01/07/motivation-and-goal-setting-in-active-language-learning/",
-      "to": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
-      "status": 301,
-      "targetStatus": 200
     }
   ],
   "media": [
+    {
+      "file": "assets/auto-language.js",
+      "status": 200,
+      "type": "application/javascript"
+    },
     {
       "file": "assets/blog.css",
       "status": 200,
@@ -3331,7 +3336,7 @@
       "type": "image/png"
     },
     {
-      "file": "img/emniyet-kampanya-mobil.png",
+      "file": "img/emniyet-kampanya-masaustu.png",
       "status": 200,
       "type": "image/png"
     },
@@ -3354,11 +3359,6 @@
       "file": "img/maskot-mutlu-beyaz.svg",
       "status": 200,
       "type": "image/svg+xml"
-    },
-    {
-      "file": "img/emniyet-kampanya-masaustu.png",
-      "status": 200,
-      "type": "image/png"
     },
     {
       "file": "img/maskot-mutlu.svg",
@@ -3386,6 +3386,11 @@
       "type": "image/webp"
     },
     {
+      "file": "img/emniyet-kampanya-mobil.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
       "file": "img/t-aysegul-eskikurt.jpg",
       "status": 200,
       "type": "image/jpeg"
@@ -3394,6 +3399,11 @@
       "file": "img/t-aysegul-santur.png",
       "status": 200,
       "type": "image/png"
+    },
+    {
+      "file": "img/hurralingo-og.jpg",
+      "status": 200,
+      "type": "image/jpeg"
     },
     {
       "file": "img/t-aysin-yasa.jpg",
@@ -3426,11 +3436,6 @@
       "type": "image/png"
     },
     {
-      "file": "img/hurralingo-og.jpg",
-      "status": 200,
-      "type": "image/jpeg"
-    },
-    {
       "file": "img/t-busra.webp",
       "status": 200,
       "type": "image/webp"
@@ -3446,9 +3451,9 @@
       "type": "image/jpeg"
     },
     {
-      "file": "img/logo-clay.webp",
+      "file": "img/t-ayberk-savas.jpg",
       "status": 200,
-      "type": "image/webp"
+      "type": "image/jpeg"
     },
     {
       "file": "img/t-elif-gizem-kaya.jpg",
@@ -3456,12 +3461,12 @@
       "type": "image/jpeg"
     },
     {
-      "file": "img/t-ayberk-savas.jpg",
+      "file": "img/logo-clay.webp",
       "status": 200,
-      "type": "image/jpeg"
+      "type": "image/webp"
     },
     {
-      "file": "img/t-ezgi-dinc.jpg",
+      "file": "img/t-ceyda-sonmez.jpg",
       "status": 200,
       "type": "image/jpeg"
     },
@@ -3476,7 +3481,7 @@
       "type": "image/jpeg"
     },
     {
-      "file": "img/t-ceyda-sonmez.jpg",
+      "file": "img/t-duru-melek.jpg",
       "status": 200,
       "type": "image/jpeg"
     },
@@ -3491,7 +3496,7 @@
       "type": "image/jpeg"
     },
     {
-      "file": "img/t-duru-melek.jpg",
+      "file": "img/t-hatice-onar.jpg",
       "status": 200,
       "type": "image/jpeg"
     },
@@ -3529,6 +3534,11 @@
       "file": "img/t-saskia-douglas.png",
       "status": 200,
       "type": "image/png"
+    },
+    {
+      "file": "img/t-fusun-kose.jpg",
+      "status": 200,
+      "type": "image/jpeg"
     },
     {
       "file": "img/t-sedef-sen.jpg",
@@ -3576,19 +3586,14 @@
       "type": "image/jpeg"
     },
     {
+      "file": "img/t-ezgi-dinc.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
       "file": "img/t-kubra-toral.jpg",
       "status": 200,
       "type": "image/jpeg"
-    },
-    {
-      "file": "img/t-hatice-onar.jpg",
-      "status": 200,
-      "type": "image/jpeg"
-    },
-    {
-      "file": "img/blog/047a4ac4c82de522.webp",
-      "status": 200,
-      "type": "image/webp"
     },
     {
       "file": "img/blog/0beb33f8d8246764.webp",
@@ -3596,9 +3601,9 @@
       "type": "image/webp"
     },
     {
-      "file": "img/t-fusun-kose.jpg",
+      "file": "img/blog/070f579dede9769e.webp",
       "status": 200,
-      "type": "image/jpeg"
+      "type": "image/webp"
     },
     {
       "file": "img/blog/172d4e1778b4541d.webp",
@@ -3606,7 +3611,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/070f579dede9769e.webp",
+      "file": "img/blog/082cc973e1d130a4.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3631,7 +3636,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/0e8b05e732119b0b.webp",
+      "file": "img/blog/047a4ac4c82de522.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3641,7 +3646,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/082cc973e1d130a4.webp",
+      "file": "img/blog/0e8b05e732119b0b.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3651,7 +3656,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/197bea89f70da211.webp",
+      "file": "img/blog/34ab71cfa1fe3f9e.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3661,7 +3666,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/34ab71cfa1fe3f9e.webp",
+      "file": "img/blog/197bea89f70da211.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3681,7 +3686,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/4f362a0e7d2734f5.webp",
+      "file": "img/blog/4d1a9b776731da7a.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3691,27 +3696,27 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/5743e6f2bd48bb9e.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/4d1a9b776731da7a.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
       "file": "img/blog/569039038b78e734.webp",
       "status": 200,
       "type": "image/webp"
     },
     {
-      "file": "img/blog/5d4b1a606708ae9a.webp",
+      "file": "img/blog/4f362a0e7d2734f5.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/5743e6f2bd48bb9e.webp",
       "status": 200,
       "type": "image/webp"
     },
     {
       "file": "img/blog/5d979a10ca48e24c.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/5d4b1a606708ae9a.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3731,7 +3736,12 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/68bd5adb0bc8cb32.webp",
+      "file": "img/blog/5f8724a297c6e419.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/606785f637b124cf.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3746,17 +3756,12 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/606785f637b124cf.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
       "file": "img/blog/74071c394be7a629.webp",
       "status": 200,
       "type": "image/webp"
     },
     {
-      "file": "img/blog/6947dd747df0de14.webp",
+      "file": "img/blog/68bd5adb0bc8cb32.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3766,7 +3771,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/726634fc5563e959.webp",
+      "file": "img/blog/6947dd747df0de14.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3781,7 +3786,12 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/5f8724a297c6e419.webp",
+      "file": "img/blog/726634fc5563e959.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/7c2a9c5c0ecbaa87.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3791,12 +3801,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/7df65f3ea59be6ea.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/7c2a9c5c0ecbaa87.webp",
+      "file": "img/blog/9302f1c8d3b0c7c5.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3816,12 +3821,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/9302f1c8d3b0c7c5.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/9bae7e8af1cb4923.webp",
+      "file": "img/blog/7df65f3ea59be6ea.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3831,17 +3831,12 @@
       "type": "image/webp"
     },
     {
+      "file": "img/blog/9bae7e8af1cb4923.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
       "file": "img/blog/a5c12f7be548d6db.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/ac01ce60aaa6aec8.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/b71b09474f492488.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3851,17 +3846,17 @@
       "type": "image/webp"
     },
     {
+      "file": "img/blog/b71b09474f492488.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/ac01ce60aaa6aec8.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
       "file": "img/blog/c58dbdbd0abf6a5b.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/b3e60c61d73abbf3.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
-      "file": "img/blog/b0be8b312f932933.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3871,12 +3866,22 @@
       "type": "image/webp"
     },
     {
+      "file": "img/blog/b0be8b312f932933.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "file": "img/blog/b3e60c61d73abbf3.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
       "file": "img/blog/c5c8e944731e3e8b.webp",
       "status": 200,
       "type": "image/webp"
     },
     {
-      "file": "img/blog/c5f396fa877dd198.webp",
+      "file": "img/blog/ce5cd7b0d49b87f1.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3886,7 +3891,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/d5cd2b5e601188ba.webp",
+      "file": "img/blog/c5f396fa877dd198.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3916,7 +3921,7 @@
       "type": "image/webp"
     },
     {
-      "file": "img/blog/ce5cd7b0d49b87f1.webp",
+      "file": "img/blog/d5cd2b5e601188ba.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3929,6 +3934,11 @@
       "file": "media/hero-ders.jpg",
       "status": 200,
       "type": "image/jpeg"
+    },
+    {
+      "file": "img/blog/e46e813ef8beef9f.webp",
+      "status": 200,
+      "type": "image/webp"
     },
     {
       "file": "media/hero-ders.mp4",
@@ -3946,17 +3956,12 @@
       "type": "image/jpeg"
     },
     {
-      "file": "img/blog/f303439110affabf.webp",
-      "status": 200,
-      "type": "image/webp"
-    },
-    {
       "file": "media/soru-2.jpg",
       "status": 200,
       "type": "image/jpeg"
     },
     {
-      "file": "img/blog/e46e813ef8beef9f.webp",
+      "file": "img/blog/f303439110affabf.webp",
       "status": 200,
       "type": "image/webp"
     },
@@ -3976,7 +3981,7 @@
       "type": "image/jpeg"
     },
     {
-      "file": "media/soru-1.mp4",
+      "file": "media/soru-2.mp4",
       "status": 200,
       "type": "video/mp4"
     },
@@ -3986,22 +3991,7 @@
       "type": "video/mp4"
     },
     {
-      "file": "media/soru-2.mp4",
-      "status": 200,
-      "type": "video/mp4"
-    },
-    {
-      "file": "media/soru-5.jpg",
-      "status": 200,
-      "type": "image/jpeg"
-    },
-    {
-      "file": "media/soru-5.mp4",
-      "status": 200,
-      "type": "video/mp4"
-    },
-    {
-      "file": "media/soru-6.mp4",
+      "file": "media/soru-1.mp4",
       "status": 200,
       "type": "video/mp4"
     },
@@ -4011,14 +4001,24 @@
       "type": "video/mp4"
     },
     {
+      "file": "media/soru-5.mp4",
+      "status": 200,
+      "type": "video/mp4"
+    },
+    {
       "file": "media/soru-6.jpg",
       "status": 200,
       "type": "image/jpeg"
     },
     {
-      "file": "wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf",
+      "file": "media/soru-5.jpg",
       "status": 200,
-      "type": "application/pdf"
+      "type": "image/jpeg"
+    },
+    {
+      "file": "media/soru-6.mp4",
+      "status": 200,
+      "type": "video/mp4"
     },
     {
       "file": "wp-content/uploads/2026/03/Hurra-Lingo-Privacy-Policy-2026-02.pdf",
@@ -4029,11 +4029,16 @@
       "file": "docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf",
       "status": 200,
       "type": "application/pdf"
+    },
+    {
+      "file": "wp-content/uploads/2026/03/Hurra-Lingo-Terms-and-Conditions-2026-02.pdf",
+      "status": 200,
+      "type": "application/pdf"
     }
   ],
   "errors": [],
   "sitemapPages": 182,
   "turkishPricingCases": 60,
-  "unknown404": true,
-  "redirectTransport": "HTTP fetch (rendering and interactions verified separately in Chromium)"
+  "redirectTransport": "HTTP fetch",
+  "unknown404": true
 }
