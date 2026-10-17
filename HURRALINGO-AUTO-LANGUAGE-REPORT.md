@@ -5,9 +5,11 @@ Tarih: 17 Ekim 2026. **Kullanıcının sonraki canlı yayın talimatıyla produc
 ## Canlı yayın güncellemesi
 
 - Canlı adres: https://www.hurralingo.com/
-- Production deployment: `80dc39fe-8752-4f4c-8177-924c30ca2bfb`; Cloudflare API durumu `success`.
-- Yayımlanan Git sürümü: `68b772aebbaf7ec4430ca13dc05a1a9f602a266c`. `work/auto-language` dalı `main` dalına fast-forward ile aktarıldı ve `origin/main` gönderildi. Git entegrasyonu tek production yayını oluşturdu; ayrıca doğrudan production yüklemesi yapılmadı.
+- İlk production deployment: `80dc39fe-8752-4f4c-8177-924c30ca2bfb`, Git sürümü `68b772aebbaf7ec4430ca13dc05a1a9f602a266c`. `work/auto-language` dalı `main` dalına fast-forward ile aktarıldı ve `origin/main` gönderildi. Git entegrasyonu production yayınını başlattı; ayrıca doğrudan production yüklemesi yapılmadı.
+- Takip eden rapor/test commitlerinin ardından son doğrulanan production: `ac84ce51-2856-4b9e-b93b-e76319c1297a`, kaynak `b2d545c1d266f1a57b31788591d0dcb1368af502`; Cloudflare API durumu `success`. Uygulama varlığı test edilen kaynakla tekrar karşılaştırıldı.
 - Canlı kontroller: 182 URL HTTP 200/canonical/index-follows, 182 URL sitemap, 240 fiyat senaryosu, 160 medya/varlık, 234 yönlendirme, öğretmen/blog/menü/video etkileşimleri ve altı genişlik geçti; JavaScript hatası yok. Ülke endpoint'i HTTP 200, yalnızca ülke alanı ve no-store ile doğrulandı; yayımlanan dil betiği test edilen kaynakla eşleşiyor.
+- Canlı dil kontrolü de geçti: 34 ana senaryo, altı gerçek masaüstü/mobil menü geçişi ve ek kalıcı tercih/engelli depolama/kota/ülke isteği sırasında seçim testleri; beklenmeyen konsol veya JavaScript hatası yok. Kontrollü ağ hatası senaryosunun beklenen endpoint hatası ayrı kaydedilir.
+- Canlı doğrulamada test altyapısı Windows Git checkout'undaki yalnızca LF/CRLF farklarını normalize edecek şekilde düzeltildi. Bekleyen ülke isteği testi, sabit 700 ms ile canlı ağ/yerleşim hızına yarışmak yerine yanıtı seçim yapılana kadar tutar. Bu düzeltmeler uygulama davranışını değiştirmez.
 - Kanıt: `docs/auto-language/production-deployment.json`, `docs/auto-language/production-language-verification.json`, `docs/localization/production/remote-verification.json`.
 - Geri dönüş hedefi: önceki production `446b4a60-e40d-4d51-a597-e298118d992a`. Aşağıdaki preview kayıtları ilk teslim aşamasına aittir.
 

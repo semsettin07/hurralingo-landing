@@ -93,8 +93,10 @@ const key='hl-language-choice';
  // A real German menu selection overrides a Turkish browser on future entry.
  {const ctx=await context({locale:'tr-TR'});const p=await ctx.newPage();await p.goto(origin+'/');await p.locator('#hdr .lang-dd > button').click();await p.locator('#hd-lang a[lang=de]').click();await p.waitForURL(u=>u.pathname==='/de/');await p.goto(origin+'/');await p.waitForURL(u=>u.pathname==='/de/');await ctx.close();}
  // An in-flight country result cannot undo an explicit Turkish menu choice.
- {const ctx=await context();await ctx.route('**/api/country',async route=>{await new Promise(r=>setTimeout(r,700));try{await route.fulfill({json:{country:'DE'}})}catch(_){}});
- const p=await ctx.newPage();await p.goto(origin+'/');await p.locator('#hdr .lang-dd > button').click();await p.locator('#hd-lang a[lang=tr]').click();await p.waitForTimeout(1100);assert.equal(new URL(p.url()).pathname,'/');assert.equal(await p.evaluate(key=>localStorage.getItem(key).split('.')[0],key),'tr');await ctx.close();}
+ {const ctx=await context();let releaseCountry;const countryGate=new Promise(resolve=>{releaseCountry=resolve});await ctx.route('**/api/country',async route=>{await countryGate;try{await route.fulfill({json:{country:'DE'}})}catch(_){}});
+ const p=await ctx.newPage();await p.goto(origin+'/',{waitUntil:'domcontentloaded'});
+ // Hold the response until selection instead of racing a fixed delay against live TLS/layout.
+ await p.locator('#hd-lang a[lang=tr]').evaluate(link=>link.click());releaseCountry();await p.waitForTimeout(1100);assert.equal(new URL(p.url()).pathname,'/');assert.equal(await p.evaluate(key=>localStorage.getItem(key).split('.')[0],key),'tr');await ctx.close();}
  // A stale record in one backend cannot override a newer choice in the other.
  for(const mode of ['quota','readonly-cookie']){
  const ctx=await context();const p=await ctx.newPage();await p.goto(origin+'/de/');
