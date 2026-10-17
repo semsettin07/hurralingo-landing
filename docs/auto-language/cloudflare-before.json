@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-10-17T07:46:48.299Z",
+  "gitHead": "ecd78919e3b2a27ecb19c975f5ce64b9525002ee",
+  "branch": "work/auto-language",
+  "build": {
+    "build_command": "node -e \"const c=require('node:child_process'),f=require('node:fs'),p=require('node:path');c.execFileSync(process.execPath,['scripts/build-site-tr.cjs'],{stdio:'inherit'});if(f.existsSync('scripts/build-locales.cjs'))c.execFileSync(process.execPath,['scripts/build-locales.cjs'],{stdio:'inherit'});c.execFileSync(process.execPath,['scripts/package-preview.cjs'],{stdio:'inherit'});const prod=process.env.CF_PAGES_BRANCH==='main';if(prod)c.execFileSync(process.execPath,['scripts/package-production.cjs'],{stdio:'inherit'});const src=prod?'dist/phase-1c-production':'dist/phase-1b-preview',out=p.resolve('dist/cloudflare-pages');if(!out.startsWith(p.resolve('dist')+p.sep))throw Error('Unsafe build output');f.rmSync(out,{recursive:true,force:true});f.cpSync(src,out,{recursive:true});\"",
+    "destination_dir": "dist/cloudflare-pages",
+    "root_dir": "",
+    "web_analytics_tag": null,
+    "web_analytics_token": null
+  },
+  "productionBranch": "main",
+  "production": {
+    "id": "446b4a60-e40d-4d51-a597-e298118d992a",
+    "short_id": "446b4a60",
+    "project_id": "d3b820a1-fff1-4e82-b244-f646b23e65c6",
+    "project_name": "hurralingo-landing",
+    "environment": "production",
+    "url": "https://446b4a60.hurralingo-landing.pages.dev",
+    "created_on": "2026-10-16T17:02:25.706906Z",
+    "modified_on": "2026-10-16T17:02:27.398693Z",
+    "latest_stage": {
+      "name": "deploy",
+      "started_on": null,
+      "ended_on": "2026-10-16T17:02:27.398693Z",
+      "status": "success"
+    },
+    "deployment_trigger": {
+      "type": "ad_hoc",
+      "metadata": {
+        "branch": "main",
+        "commit_hash": "5937cb39153ea04ac810f5667e8a21164ab088ae",
+        "commit_message": "Multilingual production with final editorial age labels; user retains Git operations",
+        "commit_dirty": true
+      }
+    },
+    "stages": [
+      {
+        "name": "queued",
+        "started_on": "2026-10-16T17:02:25.706906Z",
+        "ended_on": null,
+        "status": "active"
+      },
+      {
+        "name": "initialize",
+        "started_on": null,
+        "ended_on": null,
+        "status": "idle"
+      },
+      {
+        "name": "clone_repo",
+        "started_on": null,
+        "ended_on": null,
+        "status": "idle"
+      },
+      {
+        "name": "build",
+        "started_on": null,
+        "ended_on": null,
+        "status": "idle"
+      },
+      {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": "2026-10-16T17:02:27.398693Z",
+        "status": "success"
+      }
+    ],
+    "build_config": {
+      "build_command": "node -e \"const c=require('node:child_process'),f=require('node:fs'),p=require('node:path');c.execFileSync(process.execPath,['scripts/build-site-tr.cjs'],{stdio:'inherit'});if(f.existsSync('scripts/build-locales.cjs'))c.execFileSync(process.execPath,['scripts/build-locales.cjs'],{stdio:'inherit'});c.execFileSync(process.execPath,['scripts/package-preview.cjs'],{stdio:'inherit'});const prod=process.env.CF_PAGES_BRANCH==='main';if(prod)c.execFileSync(process.execPath,['scripts/package-production.cjs'],{stdio:'inherit'});const src=prod?'dist/phase-1c-production':'dist/phase-1b-preview',out=p.resolve('dist/cloudflare-pages');if(!out.startsWith(p.resolve('dist')+p.sep))throw Error('Unsafe build output');f.rmSync(out,{recursive:true,force:true});f.cpSync(src,out,{recursive:true});\"",
+      "destination_dir": "dist/cloudflare-pages",
+      "build_caching": null,
+      "root_dir": "",
+      "web_analytics_tag": null,
+      "web_analytics_token": null
+    },
+    "source": {
+      "type": "github",
+      "config": {
+        "owner": "semsettin07",
+        "repo_name": "hurralingo-landing",
+        "production_branch": "main",
+        "pr_comments_enabled": false
+      }
+    },
+    "env_vars": {},
+    "compatibility_date": "2026-10-04",
+    "compatibility_flags": [],
+    "build_image_major_version": 3,
+    "usage_model": null,
+    "aliases": [
+      "https://hurralingo.com",
+      "https://www.hurralingo.com"
+    ],
+    "is_skipped": false,
+    "production_branch": "main",
+    "uses_functions": false
+  },
+  "deployments": [
+    {
+      "id": "098d3036-4b14-40b7-933d-ff038b2d455b",
+      "environment": "preview",
+      "url": "https://098d3036.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "446b4a60-e40d-4d51-a597-e298118d992a",
+      "environment": "production",
+      "url": "https://446b4a60.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "baa19227-b59a-4211-a1e3-0b969955b42c",
+      "environment": "production",
+      "url": "https://baa19227.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "01418119-fe92-47df-b1af-9153d96bb57b",
+      "environment": "preview",
+      "url": "https://01418119.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "40a18d1a-232c-4a90-b40f-103a57ff84c5",
+      "environment": "preview",
+      "url": "https://40a18d1a.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "9701b315-1834-43ec-bbdb-4016f6e34298",
+      "environment": "preview",
+      "url": "https://9701b315.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "adaff618-84b1-4bbc-9354-50d8b536961e",
+      "environment": "production",
+      "url": "https://adaff618.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "0a6e1dab-fb8d-4138-be73-be7cb683d2f7",
+      "environment": "production",
+      "url": "https://0a6e1dab.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "6b357eff-941b-45d6-a443-def52b8e4cb5",
+      "environment": "production",
+      "url": "https://6b357eff.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "67060b90-09ab-4169-a166-382be226a621",
+      "environment": "production",
+      "url": "https://67060b90.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "df8a55f5-cb49-463f-93ef-72dbf14a0714",
+      "environment": "preview",
+      "url": "https://df8a55f5.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "7f484ade-c693-4060-b5c5-f4ad16f42097",
+      "environment": "preview",
+      "url": "https://7f484ade.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "caa344bd-657f-434f-8419-8847dfcb9aa2",
+      "environment": "preview",
+      "url": "https://caa344bd.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "aae64cdb-08a7-49f8-a053-22ec4aef7ed7",
+      "environment": "preview",
+      "url": "https://aae64cdb.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "4466dd35-5c05-497b-9e02-341a777e3669",
+      "environment": "production",
+      "url": "https://4466dd35.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "7aa0d6e6-b5b6-40cf-90c4-494e2868f511",
+      "environment": "production",
+      "url": "https://7aa0d6e6.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "2b44c641-796f-495b-ba69-a6b96ae1659f",
+      "environment": "production",
+      "url": "https://2b44c641.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "9682c230-83da-47cd-97d1-7431895408e1",
+      "environment": "preview",
+      "url": "https://9682c230.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "dffe66d9-a5c8-4e12-b630-ec7a92d10a69",
+      "environment": "preview",
+      "url": "https://dffe66d9.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "5dbe68c1-640e-43d2-9974-37e3ea89c84a",
+      "environment": "preview",
+      "url": "https://5dbe68c1.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "cec7b0a6-4487-4c30-b61e-f6da69201836",
+      "environment": "preview",
+      "url": "https://cec7b0a6.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "80a72cbd-cb20-4638-b61f-b182cffac7a0",
+      "environment": "preview",
+      "url": "https://80a72cbd.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "a9226113-b39c-45e3-a60f-a4b0ce19f3f5",
+      "environment": "preview",
+      "url": "https://a9226113.hurralingo-landing.pages.dev",
+      "status": "success"
+    },
+    {
+      "id": "7344904d-6c6c-429f-840c-2631c743c855",
+      "environment": "preview",
+      "url": "https://7344904d.hurralingo-landing.pages.dev",
+      "status": "idle"
+    },
+    {
+      "id": "ca2ebf84-78ac-4e2d-bcfa-6b57a63a5079",
+      "environment": "preview",
+      "url": "https://ca2ebf84.hurralingo-landing.pages.dev",
+      "status": "idle"
+    }
+  ]
+}

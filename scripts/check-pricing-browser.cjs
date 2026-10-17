@@ -49,13 +49,13 @@ const money=n=>new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',ma
    // Header keeps its existing drawer behavior and controls.
    const toggle=page.locator('[aria-controls="drawer"]');assert.equal(await toggle.count(),1);
    await toggle.click();await page.locator('#drawer').waitFor({state:'visible'});
-   assert.equal(await page.locator('#drawer a[href="/ucretler/"]').count(),1);
+   assert.equal(await page.locator('#drawer .dr-list a[href="/ucretler/"]').count(),1);
    await page.keyboard.press('Escape');await page.locator('#drawer').waitFor({state:'hidden'});
   });
   results.checks.push('Mobile menu opens, contains fees link, closes with Escape');
   const trial=page.locator('.fee-cta a');assert.equal(await trial.getAttribute('href'),'https://www.hurralingo.app/trial-request');assert.equal(await trial.getAttribute('target'),'_blank');
-  await page.goto(origin+'/#fiyatlar');
-  await page.locator('#fiyatlar a[href="/ucretler/"]').click();await page.waitForURL(origin+'/ucretler/');await page.locator('#selected-total').waitFor();
+  await page.goto(origin+'/');
+  await page.locator('main a[href="/ucretler/"]').first().click();await page.waitForURL(origin+'/ucretler/');await page.locator('#selected-total').waitFor();
   results.checks.push('Homepage CTA navigates to direct /ucretler/ route','Trial CTA opens official URL in new tab');
   const nojs=await browser.newContext({javaScriptEnabled:false});const plain=await nojs.newPage();await plain.goto(origin+'/ucretler/');assert.ok(await plain.locator('noscript').isVisible());await nojs.close();results.checks.push('No-JavaScript fallback visible');
   assert.deepEqual(results.pageErrors,[]);assert.deepEqual(results.failedLocalRequests,[]);

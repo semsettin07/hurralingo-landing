@@ -1,0 +1,13 @@
+{
+  "origin": "https://a74f8ff1.hurralingo-landing.pages.dev",
+  "pass": false,
+  "scenarios": [],
+  "menus": [],
+  "seoPages": 182,
+  "errors": [],
+  "consoleErrors": [],
+  "expectedCountryErrors": [],
+  "countryRequests": 0,
+  "networkRetries": 5,
+  "failure": "page.goto: net::ERR_CONNECTION_RESET at https://a74f8ff1.hurralingo-landing.pages.dev/\nCall log:\n\u001b[2m  - navigating to \"https://a74f8ff1.hurralingo-landing.pages.dev/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at p.goto (C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:34:105)\n    at async scenario (C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:47:135)\n    at async C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:67:4"
+}

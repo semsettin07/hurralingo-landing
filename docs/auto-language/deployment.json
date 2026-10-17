@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "preview": {
+    "id": "a74f8ff1-8f70-4646-a7b9-8c324b4bca7d",
+    "url": "https://a74f8ff1.hurralingo-landing.pages.dev",
+    "environment": "preview",
+    "status": "success",
+    "aliases": [
+      "https://work-auto-language.hurralingo-landing.pages.dev"
+    ],
+    "branch": "work-auto-language"
+  },
+  "productionId": "446b4a60-e40d-4d51-a597-e298118d992a",
+  "productionUnchanged": true,
+  "buildUnchanged": true,
+  "checkedAt": "2026-10-17T07:58:05.506Z"
+}

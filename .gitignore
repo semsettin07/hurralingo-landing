@@ -11,6 +11,7 @@
 credentials*
 secrets*
 node_modules/
+.wrangler/
 __pycache__/
 *.pyc
 .venv/

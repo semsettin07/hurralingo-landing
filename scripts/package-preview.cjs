@@ -5,6 +5,8 @@ const out=path.resolve(root,'dist/phase-1b-preview');
 if(!out.startsWith(path.resolve(root,'dist')+path.sep))throw Error('Unsafe preview output path');
 if(fs.existsSync(out))fs.rmSync(out,{recursive:true});
 fs.mkdirSync(out,{recursive:true});
+// Keep Functions invocation limited to the one uncached geography endpoint.
+fs.writeFileSync(path.join(out,'_routes.json'),JSON.stringify({version:1,include:['/api/country'],exclude:[]},null,2)+'\n');
 const dirs=['assets','img','media','blog','en','de','az','ucretler','egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim','wp-content'];
 const localized=fs.existsSync(path.join(root,'content/i18n/routes.json'));
 for(const p of [...dirs,'index.html',...(localized?[]:['en.html','de.html','az.html']),'desktop-density.css','localization.css','og.jpg','sitemap.xml','robots.txt'])fs.cpSync(path.join(root,p),path.join(out,p),{recursive:true});

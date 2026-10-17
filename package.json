@@ -7,6 +7,7 @@
     "site:check": "node scripts/check-site-tr.cjs && node scripts/check-locales.cjs",
     "locales:check": "node scripts/check-locales.cjs",
     "locales:browser": "node scripts/check-locales-browser.cjs",
+    "language:check": "node scripts/check-auto-language.cjs",
     "site:browser": "node scripts/check-site-browser-tr.cjs",
     "site:package-preview": "node scripts/package-preview.cjs",
     "site:package-production": "node scripts/package-production.cjs",

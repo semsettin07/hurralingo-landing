@@ -1,0 +1,252 @@
+{
+  "origin": "http://127.0.0.1:8017",
+  "pass": true,
+  "scenarios": [
+    {
+      "name": "Germany/German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Azerbaijan/Azeri",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "USA/English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France/French",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "France/English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/French",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "USA/Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Ordered preferences",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BCP47 extensions",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Invalid tag skipped",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "No country/browser supported",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "No country/no language",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Austria country",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "GB country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "US country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CA country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AU country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AZ country",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "TR country",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Saved German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Saved Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Unsupported saved choice",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Storage blocked",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Country fails",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Country times out",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Tracking query/hash",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /ucretler/",
+      "expected": "/ucretler/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /en/fees/",
+      "expected": "/en/fees/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "expected": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /blog/",
+      "expected": "/blog/",
+      "countryRequests": 0,
+      "navigations": 1
+    }
+  ],
+  "menus": [
+    {
+      "width": 1440,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    },
+    {
+      "width": 390,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 390,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 390,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    }
+  ],
+  "seoPages": 182,
+  "errors": [],
+  "consoleErrors": [],
+  "expectedCountryErrors": [
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:8017/api/country"
+    }
+  ],
+  "countryRequests": 12
+}

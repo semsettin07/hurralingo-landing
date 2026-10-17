@@ -1,0 +1,10 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),c=require('cheerio');
+const origin=process.env.HURRA_AUTO_PACKAGE_ORIGIN||'http://127.0.0.1:8018',routes=require('../content/i18n/canonical-all.json'),baseline=require('../docs/auto-language/baseline.json');
+const result={origin,pass:false,pages:[],endpoint:null,redirects:[]};
+(async()=>{
+ let next=0;await Promise.all(Array.from({length:4},async()=>{while(next<routes.length){const route=routes[next++],r=await fetch(origin+route),$=c.load(await r.text());assert.equal(r.status,200,route);assert.equal($('link[rel=canonical]').attr('href'),baseline.source[route].canonical);assert.deepEqual($('link[rel=alternate][hreflang]').map((i,e)=>$(e).attr('hreflang')+' '+$(e).attr('href')).get(),baseline.source[route].alternates);assert.equal($('meta[name=robots]').attr('content'),'noindex, nofollow');assert.match(r.headers.get('x-robots-tag'),/noindex/);assert.equal($('script[src="/assets/auto-language.js"]').length,1);result.pages.push(route)}}));
+ const r=await fetch(origin+'/api/country'),body=await r.json();assert.equal(r.status,200);assert.deepEqual(Object.keys(body),['country']);assert.ok(body.country===null||/^[A-Z]{2}$/.test(body.country));assert.match(r.headers.get('cache-control'),/no-store/);assert.match(r.headers.get('x-robots-tag'),/noindex/);result.endpoint={status:r.status,body,cache:r.headers.get('cache-control')};
+ assert.match(await(await fetch(origin+'/robots.txt')).text(),/Disallow: \//);assert.equal(await(await fetch(origin+'/sitemap.xml')).text(),fs.readFileSync('sitemap.xml','utf8'));
+ result.redirects=await require('./check-locales-redirects.cjs')(origin);
+ result.pass=true;console.log('PASS: Cloudflare local runtime, 182 packaged pages/SEO, country endpoint/cache/privacy, robots/sitemap and '+result.redirects.length+' redirects.');
+})().catch(e=>{result.failure=e.stack;console.error(e);process.exitCode=1}).finally(()=>fs.writeFileSync('docs/auto-language/package-verification.json',JSON.stringify(result,null,2)+'\n'));
