@@ -1,12 +1,264 @@
 {
   "origin": "https://www.hurralingo.com",
   "pass": false,
-  "scenarios": [],
-  "menus": [],
-  "seoPages": 0,
+  "scenarios": [
+    {
+      "name": "Germany/German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Azerbaijan/Azeri",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "USA/English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France/French",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "France/English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/French",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "USA/Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Ordered preferences",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BCP47 extensions",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Invalid tag skipped",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "No country/browser supported",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "No country/no language",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Austria country",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "GB country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "US country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CA country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AU country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AZ country",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "TR country",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Saved German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Saved Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Unsupported saved choice",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Storage blocked",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Country fails",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Country times out",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Tracking query/hash",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /ucretler/",
+      "expected": "/ucretler/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /en/fees/",
+      "expected": "/en/fees/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "expected": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /blog/",
+      "expected": "/blog/",
+      "countryRequests": 0,
+      "navigations": 1
+    }
+  ],
+  "menus": [
+    {
+      "width": 1440,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    },
+    {
+      "width": 390,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 390,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 390,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    }
+  ],
+  "seoPages": 182,
   "errors": [],
   "consoleErrors": [],
-  "expectedCountryErrors": [],
-  "countryRequests": 0,
-  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '96f7a10fa42a9af8687b6bbc5196fa082243859505ed7d4e94771d69c01b57de'\n- '1167a45b9e0ea1d891a2af6ba54569d41146369c06f514794801117c14d64dad'\n\n    at C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:10:9\n    at Object.<anonymous> (C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:107:3)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47"
+  "expectedCountryErrors": [
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "https://www.hurralingo.com/api/country"
+    }
+  ],
+  "countryRequests": 12,
+  "lineEndingNormalizations": [
+    "sitemap.xml",
+    "assets/site-locales.css",
+    "assets/i18n/pricing-az.js",
+    "assets/i18n/pricing-de.js",
+    "assets/i18n/pricing-en.js",
+    "assets/i18n/pricing-ui.js",
+    "assets/i18n/site-az.js",
+    "assets/i18n/site-de.js",
+    "assets/i18n/site-en.js"
+  ],
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#hd-lang a[lang=tr]')\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/\" lang=\"tr\" class=\"dd-l\" hreflang=\"tr\" aria-current=\"page\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 100ms\u001b[22m\n\u001b[2m    - waiting for \"https://www.hurralingo.com/de/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.hurralingo.com/de/\"\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/\" lang=\"tr\" class=\"dd-l\" hreflang=\"tr\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    53 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at C:\\Users\\sbese\\Desktop\\WEB-PROJELERİ\\hurralingo-landing\\scripts\\check-auto-language.cjs:97:144"
 }

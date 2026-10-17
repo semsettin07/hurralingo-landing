@@ -57,7 +57,7 @@ Korunan yerel yedekler:
 - `docs/auto-language/baseline.json`: hash/SEO/içerik karşılaştırma kanıtı.
 - `docs/auto-language/cloudflare-before.json`: Cloudflare deployment/build kaydı; kimlik bilgileri içermez.
 
-**Geri dönüş referansı:** `446b4a60-e40d-4d51-a597-e298118d992a`, https://446b4a60.hurralingo-landing.pages.dev/ . Bu deployment hâlâ aktif production'dır. İleride onaylı bir yayından sonra geri dönüş gerekirse Cloudflare Pages deployment ekranından bu ID seçilir. Mevcut eski paket yerel yedekte ayrıca korunur; eski Git SHA'sını yeniden build etmek bu paketin birebir karşılığı sayılmaz.
+**Geri dönüş referansı:** `446b4a60-e40d-4d51-a597-e298118d992a`, https://446b4a60.hurralingo-landing.pages.dev/ . Bu deployment önceki production sürümüdür. Geri dönüş gerekirse Cloudflare Pages deployment ekranından bu ID seçilir. Mevcut eski paket yerel yedekte ayrıca korunur; eski Git SHA'sını yeniden build etmek bu paketin birebir karşılığı sayılmaz.
 
 Production dalı `main`; build çıktı dizini `dist/cloudflare-pages`. Production deployment ID'sinin ve build ayarlarının preview sonrasında değişmediği API ile doğrulandı (`docs/auto-language/deployment.json`). `hurralingo.com/` mevcut durumda HTTP 200 döndürüyor; mevcut olmayan bir www yönlendirmesi eklenmedi, www canonical korundu. DNS/alan adı/production build ayarları değiştirilmedi.
 
@@ -109,7 +109,7 @@ Kanıtlar: `verification.json`, `runtime-browser-verification.json`, `package-ve
 
 ## SEO değerlendirmesi ve açık sınırlar
 
-182 canonical URL, karşılıklı hreflang, x-default ve sitemap içeriği aynıdır. Türkçe kök canonical'ı `https://www.hurralingo.com/` olarak korunur. Ülkeye bağlı HTTP 301/302 ve User-Agent bot ayrımı yoktur; sunucunun Türkçe kök HTML'si herkes için aynıdır. Preview, önceki düzen gibi meta/header noindex ve robots Disallow ile kapalıdır. Production paketleyicisinin index/follow ve robots Allow düzeni değiştirilmedi; bu görevde yeni production paketi yayımlanmadı.
+182 canonical URL, karşılıklı hreflang, x-default ve sitemap içeriği aynıdır. Türkçe kök canonical'ı `https://www.hurralingo.com/` olarak korunur. Ülkeye bağlı HTTP 301/302 ve User-Agent bot ayrımı yoktur; sunucunun Türkçe kök HTML'si herkes için aynıdır. Preview, önceki düzen gibi meta/header noindex ve robots Disallow ile kapalıdır. Production paketleyicisinin index/follow ve robots Allow düzeni değiştirilmedi; kullanıcı onayından sonra main build'i bu düzenle başarıyla yayımlandı.
 
 Google JavaScript yönlendirmelerini işleyebilir. Bu nedenle otomatik yönlendirilen `/` adresinin Türkçe olarak indeksleneceği kesin garanti edilemez; statik canonical/hreflang korunması bu riski tek başına ortadan kaldırmaz. Google dil tahminine göre zorunlu yönlendirme yerine erişilebilir ayrı dil URL'lerini önerir. İstenen otomatik kök davranışı uygulandı; farklı dil URL'leri doğrudan erişilebilir, Türkçe HTML ve JavaScript kapalı erişim korundu. Production öncesi bu SEO sınırlaması dikkate alınmalı; sonrasında Search Console URL Inspection ile render edilen kök ve canonical izlenmelidir. Kaynaklar: [Google çok bölgeli/dilli siteler](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites), [Google locale-adaptive sayfalar](https://developers.google.com/search/docs/specialty/international/locale-adaptive-pages), [Cloudflare Function routing](https://developers.cloudflare.com/pages/functions/routing/).
 
