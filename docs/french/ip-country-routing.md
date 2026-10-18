@@ -2,6 +2,8 @@
 
 19 Ekim 2026. Bu düzenleme, önceki Kanada/Belçika/İsviçre → `/fr/` politikasının yerine geçer.
 
+Son netleştirilen kural: manuel seçim yokken **Fransa IP’si, tarayıcı dili İngilizce, Almanca veya başka bir dil olsa da `/fr/` açar**. Tarayıcıdaki Fransızca desteği kaldırılmadı; mevcut öncelik manuel seçim → IP ülkesi → tarayıcı dili → Türkçe olarak korunur. Bu öncelik zaten uygulamada bulunduğu için son netleştirmede uygulama kodunu değiştirmek gerekmedi; regresyon testleri genişletildi.
+
 | Ülke | Manuel tercih yoksa |
 |---|---|
 | Kanada (CA) | Tarayıcı Fransızca olsa bile `/en/` |
@@ -17,7 +19,7 @@ Değişen uygulama: `assets/auto-language.js`. Test: `scripts/check-auto-languag
 
 Kontroller geçti:
 
-- `npm.cmd run language:check`: 154 senaryo ve 6 gerçek menü geçişi; ülke tablosunun tamamı, 38 Fransızca kod, CA/BE/CH istisnaları, beş manuel dil tercihi, cookie, doğrudan dil/makale URL’leri ve mevcut regresyon kontrolleri.
+- `npm.cmd run language:check`: 165 senaryo ve 6 gerçek menü geçişi; Fransa IP’sinin farklı tarayıcı dillerine üstünlüğü, ülke tablosunun tamamı, 38 Fransızca kod, CA/BE/CH istisnaları, beş manuel dil tercihi, cookie, doğrudan dil/makale URL’leri ve mevcut regresyon kontrolleri.
 - `npm.cmd run french:check`: 182 mevcut sayfa ve korunan varlıklar, 53 Fransızca sayfa, SEO ve yerel bağlantılar.
 - `git diff --check`: boşluk hatası yok.
 

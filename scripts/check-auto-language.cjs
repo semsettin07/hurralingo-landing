@@ -135,6 +135,11 @@ const key='hl-language-choice';
  ['No country/browser supported',['de-AT'],null,'/de/'],['No country/English',['en-US'],null,'/en/'],['No country/no language',['es'],null,'/'],
  ['Empty browser list',[],null,'/fr/'],['Empty language tag',[''],null,'/'],
  ['Other country/German',['de-DE'],'IT','/de/'],['Other country/French',['fr-FR'],'IT','/fr/'],
+ ['No country/French',['fr-FR'],null,'/fr/'],['No country/French generic',['fr'],null,'/fr/'],
+ ['No country/French normalized',['fr_CA'],null,'/fr/'],['No country/French extensions',['fr-FR-u-nu-latn'],null,'/fr/'],
+ ['French then English',['fr-FR','en-GB'],null,'/fr/'],
+ ['France/English first preferences',['en-US','de-DE'],'FR','/fr/'],
+ ['France/Azeri',['az-AZ'],'FR','/fr/'],['France/unsupported browser',['es-ES'],'FR','/fr/'],
  ['Austria country',['fr'],'AT','/de/'],['GB country',['fr'],'GB','/en/'],
  ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/en/'],['AU country/Turkish',['tr'],'AU','/en/'],
  ['AZ country',['en'],'AZ','/az/'],['TR country',['en'],'TR','/']
@@ -161,6 +166,7 @@ const key='hl-language-choice';
  for(const country of policy.browserLanguageCountries){
   for(const [language,target]of [['fr-FR','/fr/'],['de-CH','/de/'],['en-GB','/en/'],['az-AZ','/az/'],['tr-TR','/'],['nl-BE','/'],['it-CH','/']])await scenario(country+' browser '+language,[language],country,target);
   await scenario(country+' ordered browser preferences',['nl-BE','fr-FR','de-DE'],country,'/fr/');
+  await scenario(country+' French then English',['fr-FR','en-GB'],country,'/fr/');
  }
  for(const country of ['CA','BE','CH']){
   for(const [saved,target]of [['tr','/'],['fr','/fr/'],['de','/de/'],['az','/az/']])await scenario(country+' manual '+saved,['en-US'],country,target,{saved});
@@ -193,6 +199,7 @@ const key='hl-language-choice';
  await scenario('Country invalid JSON',['de'],'FR','/de/',{invalidJson:true});
  await scenario('Fetch unavailable',['de'],'FR','/de/',{noFetch:true});
  await scenario('AbortController unavailable',['fr'],'DE','/fr/',{noAbort:true});
+ await scenario('Fetch unavailable/French',['fr'],'FR','/fr/',{noFetch:true});
  await scenario('Tracking query/hash',['en'],'DE','/de/',{query:'?utm_source=test&x=1#main'});
  for(const route of ['/en/','/de/','/az/','/ucretler/','/ogretmenlerimiz/',manifest.locales.en.fixed[5],manifest.locales.de.articles[0].route,Object.keys(manifest.routes).find(r=>r.startsWith('/blog/'))])await scenario('Direct '+route,['en'],'US',route,{path:route,saved:'az'});
  // Actual desktop/mobile activation, preference persistence and mapped blog/pricing routes.

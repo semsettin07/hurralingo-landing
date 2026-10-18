@@ -135,6 +135,54 @@
       "navigations": 2
     },
     {
+      "name": "No country/French",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/French generic",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/French normalized",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/French extensions",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French then English",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/English first preferences",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/Azeri",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/unsupported browser",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
       "name": "Austria country",
       "expected": "/de/",
       "countryRequests": 1,
@@ -495,6 +543,12 @@
       "navigations": 2
     },
     {
+      "name": "BE French then English",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
       "name": "CH browser fr-FR",
       "expected": "/fr/",
       "countryRequests": 1,
@@ -538,6 +592,12 @@
     },
     {
       "name": "CH ordered browser preferences",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH French then English",
       "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
@@ -873,6 +933,12 @@
       "navigations": 2
     },
     {
+      "name": "Fetch unavailable/French",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
       "name": "Tracking query/hash",
       "expected": "/de/",
       "countryRequests": 1,
@@ -984,7 +1050,7 @@
       "url": "http://127.0.0.1:8031/api/country"
     }
   ],
-  "countryRequests": 97,
+  "countryRequests": 107,
   "lineEndingNormalizations": [
     "assets/site-locales.css"
   ],
