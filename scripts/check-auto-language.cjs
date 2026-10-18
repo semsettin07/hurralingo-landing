@@ -136,9 +136,18 @@ const key='hl-language-choice';
  ['Empty browser list',[],null,'/fr/'],['Empty language tag',[''],null,'/'],
  ['Other country/German',['de-DE'],'IT','/de/'],['Other country/French',['fr-FR'],'IT','/fr/'],
  ['Austria country',['fr'],'AT','/de/'],['GB country',['fr'],'GB','/en/'],
- ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/en/'],['AU country/Turkish',['tr'],'AU','/en/'],
+ ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/fr/'],['AU country/Turkish',['tr'],'AU','/en/'],
  ['AZ country',['en'],'AZ','/az/'],['TR country',['en'],'TR','/']
  ])await scenario(name,langs,country,target);
+ // Independent policy fixture: exercise every supported French country/territory.
+ const frenchCountries=require('../docs/french/ip-country-policy.json').countries;
+ for(const {code}of frenchCountries){
+  const response=endpoint.onRequestGet({request:{cf:{country:code}}});
+  assert.deepEqual(await response.json(),{country:code});assert.match(response.headers.get('cache-control'),/no-store/);
+  await scenario('French country '+code,['en-US'],code,'/fr/');
+ }
+ for(const country of ['CA','BE','CH'])await scenario('French country explicit English '+country,['fr-FR'],country,'/en/',{saved:'en'});
+ await scenario('Canada direct English',['fr-FR'],'CA','/en/',{path:'/en/'});
  await scenario('Saved German',['tr'],'TR','/de/',{saved:'de'});
  await scenario('Saved Turkish',['de'],'DE','/',{saved:'tr'});
  await scenario('Saved English',['de'],'DE','/en/',{saved:'en'});

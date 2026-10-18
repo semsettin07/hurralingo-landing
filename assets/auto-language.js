@@ -83,7 +83,18 @@
   }
   // Country wins over browser language. Never block rendering or persist detection.
   if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
-  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'fr', US: 'en', CA: 'en', AU: 'en'};
+  var countries = {
+    TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', US: 'en', AU: 'en',
+    // Country-level French default, including multilingual countries (CA, BE, CH).
+    FR: 'fr', BE: 'fr', CH: 'fr', LU: 'fr', MC: 'fr', CA: 'fr',
+    BJ: 'fr', BF: 'fr', BI: 'fr', CM: 'fr', CF: 'fr', TD: 'fr',
+    KM: 'fr', CG: 'fr', CD: 'fr', CI: 'fr', DJ: 'fr', GQ: 'fr',
+    GA: 'fr', GN: 'fr', MG: 'fr', ML: 'fr', NE: 'fr', RW: 'fr',
+    SN: 'fr', SC: 'fr', TG: 'fr', HT: 'fr', VU: 'fr',
+    // French territories can have their own Cloudflare country code.
+    GF: 'fr', GP: 'fr', MQ: 'fr', RE: 'fr', YT: 'fr', PM: 'fr',
+    BL: 'fr', MF: 'fr', NC: 'fr', PF: 'fr', WF: 'fr', TF: 'fr'
+  };
   var controller = new AbortController();
   var settled = false;
   function finish(country) {

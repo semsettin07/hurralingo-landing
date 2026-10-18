@@ -154,7 +154,7 @@
     },
     {
       "name": "CA country/German",
-      "expected": "/en/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
@@ -174,6 +174,276 @@
       "name": "TR country",
       "expected": "/",
       "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "French country FR",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country BE",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CH",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country LU",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country MC",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CA",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country BJ",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country BF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country BI",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CM",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country TD",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country KM",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CG",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CD",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country CI",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country DJ",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country GQ",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country GA",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country GN",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country MG",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country ML",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country NE",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country RW",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country SN",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country SC",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country TG",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country HT",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country VU",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country GF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country GP",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country MQ",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country RE",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country YT",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country PM",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country BL",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country MF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country NC",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country PF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country WF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country TF",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French country explicit English CA",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French country explicit English BE",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French country explicit English CH",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Canada direct English",
+      "expected": "/en/",
+      "countryRequests": 0,
       "navigations": 1
     },
     {
@@ -438,7 +708,7 @@
       "url": "http://127.0.0.1:8031/api/country"
     }
   ],
-  "countryRequests": 40,
+  "countryRequests": 81,
   "lineEndingNormalizations": [
     "assets/site-locales.css"
   ],
