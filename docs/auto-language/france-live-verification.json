@@ -1,0 +1,73 @@
+{
+  "origin": "https://www.hurralingo.com",
+  "pass": true,
+  "countryResponseControlled": "FR",
+  "physicalFranceVpn": false,
+  "scenarios": [
+    {
+      "locale": "fr-FR",
+      "width": 1440,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "en-GB",
+      "width": 1440,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "de-DE",
+      "width": 1440,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "tr-TR",
+      "width": 1440,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "fr-FR",
+      "width": 390,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "en-GB",
+      "width": 390,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "de-DE",
+      "width": 390,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "locale": "tr-TR",
+      "width": 390,
+      "path": "/",
+      "countryRequests": 1
+    },
+    {
+      "path": "/",
+      "saved": "en.1000",
+      "expected": "/en/",
+      "countryRequests": 0
+    },
+    {
+      "path": "/en/",
+      "expected": "/en/",
+      "countryRequests": 0
+    },
+    {
+      "path": "/de/",
+      "expected": "/de/",
+      "countryRequests": 0
+    }
+  ],
+  "errors": []
+}

@@ -123,7 +123,7 @@ const key='hl-language-choice';
  ['Germany/German',['de-DE'],'DE','/de/'],['Germany/Turkish',['tr-TR'],'DE','/de/'],
  ['Germany/English',['en-US'],'DE','/de/'],
  ['Azerbaijan/Azeri',['az-AZ'],'AZ','/az/'],['Azerbaijan/Turkish',['tr-TR'],'AZ','/az/'],['USA/English',['en-US'],'US','/en/'],
- ['France/French',['fr-FR'],'FR','/'],['France/German',['de-DE'],'FR','/'],['France/English',['en-GB'],'FR','/'],['France/Turkish',['tr-TR'],'FR','/'],
+ ['France/French',['fr-FR'],'FR','/en/'],['France/German',['de-DE'],'FR','/en/'],['France/English',['en-GB'],'FR','/en/'],['France/Turkish',['tr-TR'],'FR','/en/'],
  ['Germany/French',['fr-FR'],'DE','/de/'],['USA/Turkish',['tr'],'US','/en/'],
  ['Ordered preferences',['fr','az-Latn-AZ','de-CH'],'IT','/az/'],
  ['BCP47 extensions',['DE-ch-u-co-phonebk'],null,'/de/'],['Invalid tag skipped',['de-!','en-AU'],null,'/en/'],

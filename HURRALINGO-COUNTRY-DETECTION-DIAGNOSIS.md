@@ -1,6 +1,10 @@
 # Hurra Lingo — Canlı ülke tespiti incelemesi
 
-## Fransa IP düzeltmesi — 18 Ekim 2026
+## Güncel karar: Fransızca içerik hazırlanana kadar Fransa → İngilizce
+
+18 Ekim 2026: Kullanıcı, sitede henüz Fransızca dil seçeneği olmadığını belirterek Fransa IP'sinin `/en/` yönlendirmesinde kalmasını istedi. Bu nedenle kısa süreli `FR: 'tr'` değişikliği geri alındı; güncel eşleştirme `FR: 'en'` biçimindedir. IP önceliği, açık menü tercihlerinin üstünlüğü ve diğer ülkelerin eşleştirmeleri korunur. Fransızca sayfa veya yeni dil URL'si oluşturulmadı; Fransızca içerik ayrıca hazırlanıp yayımlandığında eşleştirme yeniden ele alınacaktır. Aşağıdaki FR→TR bölümü önceki ve geçersiz kılınmış kararın tarihsel kaydıdır.
+
+## Önceki Fransa IP değişikliği — geri alındı
 
 Fransa'dan `/en/` yönlendirmesinin kaynaktaki açık nedeni `FR: 'en'` eşleştirmesiydi. Fransa `FR: 'tr'` olarak düzeltildi. Kullanıcının bu turdaki onayıyla IP ülkesi önceliklidir: açık menü tercihi → bilinen ülke eşleştirmesi → desteklenen tarayıcı dili → Türkçe. Fransa artık tarayıcı dili Fransızca, İngilizce, Almanca veya Türkçe olduğunda `/` açar; kayıtlı İngilizce/Almanca tercihi ve doğrudan `/en/` bağlantısı korunur. Diğer ülke eşleştirmeleri değişmedi.
 
@@ -18,10 +22,10 @@ Yerel doğrulama başarılı: 58 ana senaryo, altı gerçek masaüstü/mobil men
 
 | Ülke | Hedef |
 | --- | --- |
-| TR, FR | `/` |
+| TR | `/` |
 | DE, AT | `/de/` |
 | AZ | `/az/` |
-| GB, US, CA, AU | `/en/` |
+| GB, FR, US, CA, AU | `/en/` |
 | Diğer/bilinmeyen ülke | Desteklenen ilk tarayıcı dili; eşleşme yoksa `/` |
 
 Bu değişiklikte CA/AU İngilizce ülke grubuna eklendi; son fallback İngilizceden Türkçeye çevrildi. Örneğin CA + Almanca tarayıcı artık `/en/`; bilinmeyen ülke + Fransızca tarayıcı artık `/` seçer. İngilizce desteklenen bir tarayıcı dili olduğu için ülke bilinmiyorsa İngilizce tarayıcı yine `/en/` seçer.

@@ -40,27 +40,27 @@
     },
     {
       "name": "France/French",
-      "expected": "/",
+      "expected": "/en/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "France/German",
-      "expected": "/",
+      "expected": "/en/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "France/English",
-      "expected": "/",
+      "expected": "/en/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "France/Turkish",
-      "expected": "/",
+      "expected": "/en/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Germany/French",
