@@ -98,6 +98,7 @@ const key='hl-language-choice';
  }
  async function scenario(name,languages,country,expected,options={}){
   const ctx=await context();let calls=0;
+  if(options.savedCookie)await ctx.addCookies([{name:key,value:options.savedCookie,url:origin}]);
   await ctx.addInitScript(({languages,options,key})=>{
    Object.defineProperty(navigator,'languages',{get:()=>languages});
    try{if(options.saved)localStorage.setItem(key,options.saved)}catch(_){}
@@ -113,38 +114,42 @@ const key='hl-language-choice';
   assert.equal(new URL(p.url()).pathname,expected,name);
   if(options.query)assert.equal(new URL(p.url()).search+new URL(p.url()).hash,options.query);
   if(!options.saved&&!options.blockStorage)assert.equal(await p.evaluate(key=>localStorage.getItem(key),key),null);
-  assert.ok(!(await ctx.cookies()).some(cookie=>cookie.name===key),name+' automatic selection must not write preference cookie');
-  assert.equal(calls,/^(tr|en|de|az)(\.|$)/.test(options.saved||'')||options.path||options.noFetch||options.noAbort?0:1,name+' country priority/request count');
+  const preferenceCookies=(await ctx.cookies()).filter(cookie=>cookie.name===key);
+  assert.deepEqual(preferenceCookies.map(cookie=>cookie.value),options.savedCookie?[options.savedCookie]:[],name+' automatic selection must not change preference cookie');
+  assert.equal(calls,/^(tr|en|de|az)(\.|$)/.test(options.savedCookie||options.saved||'')||options.path||options.noFetch||options.noAbort?0:1,name+' country priority/request count');
   assert.ok(navigations<=2,name+' redirect loop');result.scenarios.push({name,expected,countryRequests:calls,navigations});result.countryRequests+=calls;await ctx.close();
  }
  for(const [name,langs,country,target]of [
  ['Germany/German',['de-DE'],'DE','/de/'],['Germany/Turkish',['tr-TR'],'DE','/de/'],
  ['Germany/English',['en-US'],'DE','/de/'],
- ['Azerbaijan/Azeri',['az-AZ'],'AZ','/az/'],['USA/English',['en-US'],'US','/en/'],
+ ['Azerbaijan/Azeri',['az-AZ'],'AZ','/az/'],['Azerbaijan/Turkish',['tr-TR'],'AZ','/az/'],['USA/English',['en-US'],'US','/en/'],
  ['France/French',['fr-FR'],'FR','/en/'],['France/German',['de-DE'],'FR','/en/'],['France/English',['en-GB'],'FR','/en/'],
  ['Germany/French',['fr-FR'],'DE','/de/'],['USA/Turkish',['tr'],'US','/en/'],
  ['Ordered preferences',['fr','az-Latn-AZ','de-CH'],'IT','/az/'],
  ['BCP47 extensions',['DE-ch-u-co-phonebk'],null,'/de/'],['Invalid tag skipped',['de-!','en-AU'],null,'/en/'],
- ['No country/browser supported',['de-AT'],null,'/de/'],['No country/no language',['fr'],null,'/en/'],
- ['Empty browser list',[],null,'/en/'],['Empty language tag',[''],null,'/en/'],
- ['Other country/German',['de-DE'],'IT','/de/'],
+ ['No country/browser supported',['de-AT'],null,'/de/'],['No country/English',['en-US'],null,'/en/'],['No country/no language',['fr'],null,'/'],
+ ['Empty browser list',[],null,'/'],['Empty language tag',[''],null,'/'],
+ ['Other country/German',['de-DE'],'IT','/de/'],['Other country/French',['fr-FR'],'IT','/'],
  ['Austria country',['fr'],'AT','/de/'],['GB country',['fr'],'GB','/en/'],
- ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/de/'],['AU country/Turkish',['tr'],'AU','/'],
+ ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/en/'],['AU country/Turkish',['tr'],'AU','/en/'],
  ['AZ country',['en'],'AZ','/az/'],['TR country',['en'],'TR','/']
  ])await scenario(name,langs,country,target);
  await scenario('Saved German',['tr'],'TR','/de/',{saved:'de'});
  await scenario('Saved Turkish',['de'],'DE','/',{saved:'tr'});
  await scenario('Saved English',['de'],'DE','/en/',{saved:'en'});
+ await scenario('Cookie-only Turkish',['en'],'DE','/',{savedCookie:'tr.1000'});
+ await scenario('Cookie-only English',['tr'],'DE','/en/',{savedCookie:'en.1000'});
  await scenario('Unsupported saved choice',['en'],'TR','/',{saved:'fr'});
  await scenario('Storage blocked',['de'],'DE','/de/',{blockStorage:true});
  await scenario('Country fails/German',['de'],'FR','/de/',{fail:true});
- await scenario('Country fails/French',['fr'],'DE','/en/',{fail:true});
+ await scenario('Country fails/French',['fr'],'DE','/',{fail:true});
+ await scenario('Country fails/English',['en'],'DE','/en/',{fail:true});
  await scenario('Country times out/German',['de'],'FR','/de/',{delay:1500});
- await scenario('Country times out/French',['fr'],'DE','/en/',{delay:1500});
+ await scenario('Country times out/French',['fr'],'DE','/',{delay:1500});
  await scenario('Country HTTP error',['de'],'FR','/de/',{httpError:true});
  await scenario('Country invalid JSON',['de'],'FR','/de/',{invalidJson:true});
  await scenario('Fetch unavailable',['de'],'FR','/de/',{noFetch:true});
- await scenario('AbortController unavailable',['fr'],'DE','/en/',{noAbort:true});
+ await scenario('AbortController unavailable',['fr'],'DE','/',{noAbort:true});
  await scenario('Tracking query/hash',['en'],'DE','/de/',{query:'?utm_source=test&x=1#main'});
  for(const route of ['/en/','/de/','/az/','/ucretler/','/ogretmenlerimiz/',manifest.locales.en.fixed[5],manifest.locales.de.articles[0].route,Object.keys(manifest.routes).find(r=>r.startsWith('/blog/'))])await scenario('Direct '+route,['en'],'US',route,{path:route,saved:'az'});
  // Actual desktop/mobile activation, preference persistence and mapped blog/pricing routes.

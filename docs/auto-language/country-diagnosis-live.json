@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-10-18T12:56:28.293Z",
+  "checkedAt": "2026-10-18T13:15:40.707Z",
   "origin": "https://www.hurralingo.com",
   "trace": {
     "path": "/cdn-cgi/trace",
     "status": 200,
-    "durationMs": 754,
+    "durationMs": 576,
     "cache": {
       "cache-control": null,
       "cdn-cache-control": null,
@@ -17,7 +17,7 @@
   "endpoint": {
     "path": "/api/country",
     "status": 200,
-    "durationMs": 324,
+    "durationMs": 158,
     "cache": {
       "cache-control": "private, no-store, max-age=0",
       "cdn-cache-control": "no-store",
@@ -28,9 +28,9 @@
     "country": "TR"
   },
   "uniqueQuery": {
-    "path": "/api/country?diagnosis=1792328187007",
+    "path": "/api/country?diagnosis=1792329340033",
     "status": 200,
-    "durationMs": 1003,
+    "durationMs": 336,
     "cache": {
       "cache-control": "private, no-store, max-age=0",
       "cdn-cache-control": "no-store",
@@ -43,16 +43,18 @@
   "asset": {
     "path": "/assets/auto-language.js",
     "status": 200,
-    "durationMs": 282,
+    "durationMs": 337,
     "cache": {
       "cache-control": "public, max-age=14400, must-revalidate",
       "cdn-cache-control": null,
       "cf-cache-status": "REVALIDATED",
       "age": null
     },
-    "matchesWorkingTree": true,
-    "sha256": "74f7ab0f69332ea87924b2eb19d26131606fb045663759628cb4424dfe3e2503"
+    "matchesWorkingTree": false,
+    "sha256": "74f7ab0f69332ea87924b2eb19d26131606fb045663759628cb4424dfe3e2503",
+    "matchesStartingHead": true
   },
   "comparison": "countries-match",
-  "scope": "Same-origin HTTP checks from this process only. No VPN claim, browser preference inspection or production fix is implied."
+  "scope": "Same-origin HTTP checks from this process only. No VPN claim, browser preference inspection or production fix is implied.",
+  "workingTreeChangesUnpublished": true
 }

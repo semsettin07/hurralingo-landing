@@ -27,6 +27,12 @@
       "navigations": 2
     },
     {
+      "name": "Azerbaijan/Turkish",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
       "name": "USA/English",
       "expected": "/en/",
       "countryRequests": 1,
@@ -87,28 +93,40 @@
       "navigations": 2
     },
     {
-      "name": "No country/no language",
+      "name": "No country/English",
       "expected": "/en/",
       "countryRequests": 1,
       "navigations": 2
+    },
+    {
+      "name": "No country/no language",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
     },
     {
       "name": "Empty browser list",
-      "expected": "/en/",
+      "expected": "/",
       "countryRequests": 1,
-      "navigations": 2
+      "navigations": 1
     },
     {
       "name": "Empty language tag",
-      "expected": "/en/",
+      "expected": "/",
       "countryRequests": 1,
-      "navigations": 2
+      "navigations": 1
     },
     {
       "name": "Other country/German",
       "expected": "/de/",
       "countryRequests": 1,
       "navigations": 2
+    },
+    {
+      "name": "Other country/French",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
     },
     {
       "name": "Austria country",
@@ -130,15 +148,15 @@
     },
     {
       "name": "CA country/German",
-      "expected": "/de/",
+      "expected": "/en/",
       "countryRequests": 1,
       "navigations": 2
     },
     {
       "name": "AU country/Turkish",
-      "expected": "/",
+      "expected": "/en/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "AZ country",
@@ -171,6 +189,18 @@
       "navigations": 2
     },
     {
+      "name": "Cookie-only Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Cookie-only English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
       "name": "Unsupported saved choice",
       "expected": "/",
       "countryRequests": 1,
@@ -190,6 +220,12 @@
     },
     {
       "name": "Country fails/French",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Country fails/English",
       "expected": "/en/",
       "countryRequests": 1,
       "navigations": 2
@@ -202,9 +238,9 @@
     },
     {
       "name": "Country times out/French",
-      "expected": "/en/",
+      "expected": "/",
       "countryRequests": 1,
-      "navigations": 2
+      "navigations": 1
     },
     {
       "name": "Country HTTP error",
@@ -226,9 +262,9 @@
     },
     {
       "name": "AbortController unavailable",
-      "expected": "/en/",
+      "expected": "/",
       "countryRequests": 0,
-      "navigations": 2
+      "navigations": 1
     },
     {
       "name": "Tracking query/hash",
@@ -330,6 +366,10 @@
       "url": "http://127.0.0.1:8017/api/country"
     },
     {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:8017/api/country"
+    },
+    {
       "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
       "url": "http://127.0.0.1:8017/api/country"
     },
@@ -338,7 +378,7 @@
       "url": "http://127.0.0.1:8017/api/country"
     }
   ],
-  "countryRequests": 34,
+  "countryRequests": 38,
   "lineEndingNormalizations": [
     "sitemap.xml",
     "assets/site-locales.css",

@@ -1,5 +1,90 @@
 # Hurra Lingo — Canlı ülke tespiti incelemesi
 
+## Güncel uygulama: ilk ziyaret ülke önceliği ve Türkçe fallback
+
+18 Ekim 2026 tarihli son kullanıcı talebi uygulanmıştır. Bu bölüm aşağıdaki önceki incelemenin üzerine gelen güncel durumdur; önceki İngilizce fallback beklentileri artık geçerli değildir. Bu çalışmanın başlangıcında Git çalışma ağacı temizdi, HEAD `fe6cae8bec8c4a4c8fb3932279844d8ca28df152` idi.
+
+### Uygulanan davranış
+
+`assets/auto-language.js` güncellendi. Manuel tercih yoksa ülke, tarayıcı dilinden önce değerlendirilir:
+
+| Ülke | Hedef |
+| --- | --- |
+| TR | `/` |
+| DE, AT | `/de/` |
+| AZ | `/az/` |
+| GB, FR, US, CA, AU | `/en/` |
+| Diğer/bilinmeyen ülke | Desteklenen ilk tarayıcı dili; eşleşme yoksa `/` |
+
+Bu değişiklikte CA/AU İngilizce ülke grubuna eklendi; son fallback İngilizceden Türkçeye çevrildi. Örneğin CA + Almanca tarayıcı artık `/en/`; bilinmeyen ülke + Fransızca tarayıcı artık `/` seçer. İngilizce desteklenen bir tarayıcı dili olduğu için ülke bilinmiyorsa İngilizce tarayıcı yine `/en/` seçer.
+
+Kayıtlı menü seçimi localStorage ve cookie'den okunur, en yeni kayıt kazanır ve ülke isteği yapılmaz. Otomatik sonuçlar kaydedilmez. Menü bağlantılarının mevcut sayfanın dil karşılığına geçişi, masaüstü/mobil ortak davranış, yalnızca `/` üzerinde otomatik seçim, query/hash koruması ve döngü önlemleri korunmuştur. JS kapalıyken Türkçe HTML erişilebilir.
+
+`functions/api/country.js` incelendi ve değiştirilmedi: yalnızca Cloudflare'ın `request.cf.country` metadata'sı okunur. Metadata geçersiz/yoksa `country: null` döner; endpoint Türkiye varsaymaz. Bu durumda istemci desteklenen tarayıcı dilini, ardından Türkçeyi kullanır. Ağ/HTTP/JSON hatası veya mevcut 900 ms sınırının aşılması da aynı fallback'i kullanır. Bekleyen istek sırasında manuel seçim otomatik sonuç tarafından geri alınmaz. Başlık, environment veya query'den ülke uydurma yolu eklenmedi; IP okunmaz/loglanmaz/saklanmaz.
+
+### Canlı ortamı yeniden inceleme
+
+Cloudflare API'sinden salt okunur olarak yeniden doğrulandı:
+
+- Production deployment: `a9447e8c-4924-4b0b-8e79-1c59075fda96`, durum `success`, `uses_functions: true`.
+- Yayındaki commit: `fe6cae8bec8c4a4c8fb3932279844d8ca28df152`; bu çalışmanın başlangıç HEAD'iyle eşleşiyor.
+- Build loglarında `HEAD is now at fe6cae8`, `/functions` yüklemesi, başarılı Worker derlemesi ve `_routes.json` yüklemesi var.
+- Build destination `dist/cloudflare-pages`; kaynak paketleme akışı önceki incelemeyle aynı. Production/preview environment değişkenleri boş.
+- Zone Worker route listesi boş. Page Rules, Rulesets (Cache/Redirect/Transform ayrıntıları) ve DNS ayrıntılarına erişim yine HTTP 403; bunların bulunmadığı iddia edilmiyor.
+- Bu ortamdan **hem apex hem www** kök isteği HTTP 200 verdi; aralarında HTTP yönlendirmesi gözlenmedi. Her iki hostname'in kendi `/cdn-cgi/trace` yanıtı `TR`, `/api/country` yanıtı `TR`; endpoint `DYNAMIC`.
+
+`docs/auto-language/country-diagnosis-live.json` bu çalışmanın www ölçümüyle yenilendi. Kaydın `asset.matchesStartingHead: true` olması yayındaki JavaScript'in başlangıç commit'iyle eşleştiğini gösterir. `asset.matchesWorkingTree: false` ise **bu görevde yapılan yeni CA/AU ve Türkçe fallback değişiklikleri yayımlanmadığı için beklenir**; eski/yanlış bir production sürümünün kanıtı değildir. Tanı komutunun bu karşılaştırma nedeniyle çıkış kodu 1 vermesi raporlanmıştır.
+
+**Almanya VPN'inde Cloudflare trace DE iken endpoint'in TR dönmesinin kesin nedeni hâlâ kanıtlanamadı.** Bu ortamdan gerçek Almanya VPN'iyle test yapılmadı; TR/TR canlı ölçümü DE davranışının doğrulaması değildir. Function doğru ülke kaynağını kullanıyor, fakat kullanıcının Almanya isteğine ulaşan gerçek metadata bu ortamdan gözlenemedi. İstemci güvenilir endpoint'ten TR alırsa bunu DE diye düzeltemez; yeni ülke eşleştirmesi bu ayrı problemi çözmüş sayılmaz.
+
+Apex ve www ayrı origin'lerdir. Mevcut cookie host bazlıdır, localStorage da origin bazlıdır; bir hostname'deki manuel kayıt diğerinde otomatik olarak görünmeyebilir. Bu görevde hostname yönlendirmesi veya cookie domain kapsamı değiştirilmedi. Kullanıcının testlerinde kullanılan tam hostname ve aynı hostname'in trace'i karşılaştırılmalıdır.
+
+### Build/paket doğrulaması
+
+`node scripts/package-preview.cjs` yalnızca **yerel disk üzerinde** çalıştırıldı. Deployment oluşturulmadı. Yeniden oluşturulan `dist/phase-1b-preview` üzerinde şu kontroller geçti:
+
+- Paketlenmiş `assets/auto-language.js`, güncel çalışma dosyasıyla byte düzeyinde aynı.
+- `_routes.json`: `version: 1`, `include: ["/api/country"]`, `exclude: []`.
+- Functions'ı devre dışı bırakan `_worker.js` veya statik `/api/country` override'ı yok.
+- Git tabanlı Pages build'inde Function repo kökündeki `functions` dizininden derlenir; canlı build logları bu adımı doğruluyor. Function'ın statik assets içine kopyalanmaması hata değildir.
+
+Kaynak HTML sayfaları yeniden üretilmedi. Yerel paket oluşturmak preview yayını değildir. Function metadata/routing dayanakları: [Cloudflare Request API](https://developers.cloudflare.com/workers/runtime-apis/request/#incomingrequestcfproperties), [Pages Functions routing](https://developers.cloudflare.com/pages/functions/routing/).
+
+### Son yerel testler
+
+`scripts/check-auto-language.cjs` yeni kurallara göre güncellendi. Chromium üzerinde `/api/country` yanıtları **simüle edilerek** şu istenen senaryolar kontrol edildi:
+
+| Senaryo | Sonuç |
+| --- | --- |
+| DE + İngilizce tarayıcı + temiz tercih | `/de/` |
+| DE + Türkçe tarayıcı + temiz tercih | `/de/` |
+| TR + İngilizce tarayıcı + temiz tercih | `/` |
+| AZ + Türkçe tarayıcı + temiz tercih | `/az/` |
+| FR + Fransızca tarayıcı + temiz tercih | `/en/` |
+| DE + manuel İngilizce | `/en/` |
+| DE + manuel Türkçe | `/` |
+| Ülke yok + Fransızca tarayıcı | `/` |
+
+Cookie'de tek başına saklı Türkçe/İngilizce tercihler, CA/AU'nun tarayıcıdan bağımsız İngilizce seçmesi, diğer ülkelerde tarayıcıya dönüş ve hata durumunda desteklenen İngilizcenin korunması da kapsanır. İlk test denemesinde yeni cookie fixture'ı `about:blank` belgeye yazmaya çalıştığı için test hatası verdi; kurulum Playwright'ın `context.addCookies` API'sine taşındı. Uygulama cookie kodu değiştirilmedi.
+
+Son çalıştırmalar:
+
+- `npm.cmd run language:check`: başarılı, çıkış kodu 0; 53 ana senaryo, 6 masaüstü/mobil menü geçişi, 182 sayfanın içerik/SEO kontrolü; ayrıca 8 metadata/başlık/environment, 7 istek izolasyonu ve 8 tanı komutu fixture'ı. Nihai sonuç `docs/auto-language/fix-verification.json` içinde `pass: true`; sayfa/konsol hatası yok.
+- `npm.cmd run site:check`: başarılı; 182 sayfa, 11.275 bağlantı, 2.709 varlık ve korunmuş içerik/fiyat kontrolleri.
+- `npm.cmd run pricing:check`: başarılı; 184 bağımsız Excel formülü ve 60 fiyat senaryosu.
+- Yerel paket bütünlüğü/routing kontrolleri: başarılı.
+- `git diff --check`: başarılı, çıkış kodu 0; son diff üzerinde whitespace hatası yok.
+
+### Korunan dosyalar ve yayın sınırı
+
+182 sayfa, dört dilde içerik, canonical/hreflang, sitemap/robots, bloglar, öğretmenler, görseller, fiyat motoru/verileri/ödeme koşulları ve tasarım değiştirilmedi. Görev değişiklikleri `assets/auto-language.js`, `scripts/check-auto-language.cjs`, iki mevcut test/tanı JSON'u ve bu raporla sınırlıdır. Genel testlerin içerik değişikliği üretmediği doğrulama JSON'larında özgün satır sonları korunur.
+
+Yeni davranış şu anda **yalnızca çalışma ağacındadır**. Commit, push, sync, merge veya Cloudflare production/preview deployment yapılmadı. Gerçek DE/AT/AZ/TR/FR/GB/US/CA/AU çıkışları, yeni kod kullanıcı tarafından yayımlandıktan sonra aynı hostname'de temiz tercihle ayrıca denenmelidir. Almanya endpoint çelişkisi için önceki bölümdeki aynı-origin tanı ve yetkili Cloudflare kural incelemesi gerekliliği devam eder.
+
+---
+
+## Önceki inceleme kaydı
+
 Tarih: 18 Ekim 2026, Europe/Istanbul. İncelenen başlangıç Git sürümü: `615be4864a839fcb92e91a84424d7eea333a46a7`. Başlangıç çalışma ağacı temizdi.
 
 ## Sonuç ve kesinlik sınırı

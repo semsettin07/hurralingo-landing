@@ -79,11 +79,11 @@
       var lang = tag && tag.split('-')[0].toLowerCase();
       if (supported(lang)) return lang;
     }
-    return 'en';
+    return 'tr';
   }
   // Country wins over browser language. Never block rendering or persist detection.
   if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
-  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'en', US: 'en'};
+  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'en', US: 'en', CA: 'en', AU: 'en'};
   var controller = new AbortController();
   var settled = false;
   function finish(country) {
