@@ -349,14 +349,5 @@
     "assets/i18n/site-az.js",
     "assets/i18n/site-de.js",
     "assets/i18n/site-en.js"
-  ],
-  "localRuntime": {
-    "origin": "http://127.0.0.1:8018",
-    "status": 200,
-    "body": {
-      "country": "TR"
-    },
-    "cache": "private, no-store, max-age=0",
-    "cdnCache": "no-store"
-  }
+  ]
 }

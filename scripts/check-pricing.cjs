@@ -42,10 +42,12 @@ assert.equal(api.round(549.5),550);assert.equal(api.round(697.5),698);assert.equ
 const home=fs.readFileSync('index.html','utf8'),page=fs.readFileSync('ucretler/index.html','utf8'),$=cheerio.load(page),h=cheerio.load(home);
 assert.equal(h('#fiyatlar .plan').length,3);assert.ok(h('#fiyatlar a[href="/ucretler/"]').text().includes('Ders Ücretinizi Hesaplayın'));
 assert.equal(h('.header a[href="/ucretler/"]').length,1);assert.equal(h('#drawer .dr-list a[href="/ucretler/"]').length,1);assert.equal(h('footer a[href="/ucretler/"]').length,1);
-assert.equal($('.header a[href="/ucretler/"]').length,1);assert.equal($('#drawer a[href="/ucretler/"]').length,1);
+// Navigation and the current-language link can share the pricing URL.
+assert.equal($('.header nav.nav a[href="/ucretler/"]').length,1);assert.equal($('#drawer .dr-list a[href="/ucretler/"]').length,1);
 assert.equal(h('#fiyatlar [data-pay]').length,0);assert.ok(!home.includes('24.792'));assert.ok(!home.includes('28.752'));
 assert.equal($('h1').text(),'Hurra Lingo Ders Ücretleri');assert.equal($('.fee-model').length,3);assert.equal($('.fee-cta a').attr('target'),'_blank');
-for(const file of ['en.html','de.html','az.html'])assert.equal(fs.readFileSync(file,'utf8'),execFileSync('git',['show','HEAD:'+file],{encoding:'utf8',maxBuffer:2e6}),file+' unchanged');
+// Windows checkouts may use CRLF while Git stores LF; compare the actual content.
+for(const file of ['en.html','de.html','az.html'])assert.equal(fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n'),execFileSync('git',['show','HEAD:'+file],{encoding:'utf8',maxBuffer:2e6}).replace(/\r\n/g,'\n'),file+' unchanged');
 const ids=new Set();$('[id]').each((_,node)=>{const id=$(node).attr('id');assert.ok(!ids.has(id),'Duplicate id '+id);ids.add(id);});
 $('[src],link[href],a[href]').each((_,node)=>{const url=$(node).attr('src')||$(node).attr('href');if(url.startsWith('/')&&!url.startsWith('//')){const file=url.split('#')[0].split('?')[0]||'/';assert.ok(fs.existsSync('.'+file),'Missing local target '+url);}else if(url.startsWith('#'))assert.ok(ids.has(url.slice(1)),'Missing anchor '+url);});
 fs.writeFileSync('docs/pricing-2027/calculation-verification.json',JSON.stringify({formulaCount:formulas,selectionCount:verified.length,verified},null,2)+'\n');

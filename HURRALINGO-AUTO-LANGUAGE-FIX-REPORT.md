@@ -130,3 +130,43 @@ Son durumda yalnızca aşağıdaki görev dosyaları değişmiş/eklenmiş olmal
 Genel site testlerinin yeniden yazdığı mevcut doğrulama JSON'larında yalnızca satır sonu farkları oluştu; bunlar özgün CRLF biçimine döndürülerek görev dışı farklar kaldırıldı. Hiçbir kaynak dosya Git'teki eski içerikle değiştirilmedi.
 
 Commit/sync kararından önce diff ve bu rapor birlikte değerlendirilmeli; son test JSON'unda `pass: true` görülmeli. `dist` altındaki eski paketler bu düzeltmenin yayın adayı değildir; kullanıcı yayınlayacağı zaman mevcut build akışı güncel `assets/auto-language.js` dosyasını ve `functions/api/country.js` Function'ını içermelidir. Canlı cache kuralları ve gerçek VPN kontrolleri yerel testlerden ayrı tamamlanmalıdır. Tüm değişiklikler commit edilmeden ve stage edilmeden mevcut çalışma ağacında bırakılmıştır.
+
+## Onay sonrası ek kontrol — eski fiyat testinin düzeltilmesi
+
+18 Ekim 2026 tarihinde, kullanıcının onayladığı dil algoritması korunarak yalnızca fiyat testi düzeltildi ve istenen kontroller yeniden çalıştırıldı. Bu bölüm, önceki test hatası ve çalışma ağacı durumuna ilişkin yukarıdaki tarihsel bilgilerin ardından gelen güncel sonucu kaydeder.
+
+Bu ek çalışmanın başlangıcında çalışma ağacı temizdi; mevcut `HEAD` `a1b4465` (`Update production deployment configuration and enhance language selection logic`) idi. Bu oturumda commit veya başka bir Git yazma/yayın işlemi yapılmadı.
+
+### Test düzeltmesi
+
+`scripts/check-pricing.cjs` içindeki ücret sayfası navigasyon kontrolleri mevcut yapıya göre daraltıldı:
+
+- Masaüstü bağlantısı `.header nav.nav a[href="/ucretler/"]` içinde aranır.
+- Mobil bağlantı `#drawer .dr-list a[href="/ucretler/"]` içinde aranır.
+
+Ücret sayfasındaki Türkçe dil seçeneği de `/ucretler/` adresine gider. Önceki geniş seçiciler, navigasyon bağlantısı ile dil seçeneğini birlikte sayıyordu. Yeni seçiciler ilgili navigasyon alanında tam bir bağlantı bulunmasını doğrular; beklenen sayı artırılmadı ve kontrol kaldırılmadı.
+
+Navigasyon kontrolünden sonraki çalıştırmada, `en.html`, `de.html`, `az.html` koruma karşılaştırmasının Windows çalışma dosyalarındaki CRLF ile Git'in LF satır sonlarını farklı içerik saydığı görüldü. Aynı test dosyasında iki tarafın yalnızca CRLF satır sonları LF olarak normalize edildi. HTML dosyaları değiştirilmedi; diğer tüm içerik için tam eşitlik kontrolü korunur.
+
+Ücret hesaplama motoru, fiyat verileri, ödeme koşulları, HTML/navigasyon yapısı ve onaylanmış dil seçimi algoritması değiştirilmedi.
+
+### Yeniden çalıştırılan testlerin nihai sonuçları
+
+| Komut | Sonuç | Doğrulama |
+| --- | --- | --- |
+| `npm.cmd run language:check` | **Başarılı**, çıkış kodu 0 | 47 senaryo, 6 masaüstü/mobil menü geçişi, 182 içerik/SEO sayfası, depolama yedekleri, JavaScript kapalı erişim ve Function kontrolleri. |
+| `npm.cmd run site:check` | **Başarılı**, çıkış kodu 0 | 182 canonical sayfa, 11.275 bağlantı, 2.709 varlık; içerikler, öğretmenler, sitemap ve fiyat koruma kontrolleri. |
+| `npm.cmd run pricing:check` | **Başarılı**, çıkış kodu 0 | Bağımsız değerlendirilen 184 Excel formülü ve 60 fiyat seçeneği; geçersiz seçimler, yuvarlama, navigasyon, varlıklar ve korunan dil dosyaları. |
+| `git diff --check` | **Başarılı**, çıkış kodu 0 | Diff içinde whitespace hatası yok. |
+
+Dil testi kaynak dosyaları `node scripts/serve-local.cjs` ile yerel 8017 portunda sunarak tekrarlandı. Sonuç `docs/auto-language/fix-verification.json` dosyasında `pass: true` olarak güncellendi; sayfa veya konsol hatası yoktur. Bu tekrar çalıştırmada ülke senaryoları simüle edilmiştir. Önceki yerel Wrangler runtime kontrolü tekrar çalıştırılmadığından güncel JSON'da önceki `localRuntime` kaydı bulunmaz; önceki runtime sonucu raporun ilgili bölümünde tarihsel olarak korunur. Gerçek VPN testi ve deployment yapılmadı.
+
+Genel site/fiyat testlerinin yeniden yazdığı doğrulama dosyalarında içerik farkı oluşmadı; dosyaların özgün satır sonu düzeni korundu (site doğrulamaları CRLF, fiyat doğrulaması LF). Ek çalışma sonunda değişiklikler:
+
+```text
+ M HURRALINGO-AUTO-LANGUAGE-FIX-REPORT.md
+ M docs/auto-language/fix-verification.json
+ M scripts/check-pricing.cjs
+```
+
+Üç istenen testin tamamı başarılıdır. Değişiklikler stage edilmeden mevcut çalışma ağacında bırakılmıştır. Git commit, push, sync, merge ve Cloudflare production/preview deployment yapılmamıştır.
