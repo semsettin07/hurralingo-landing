@@ -6,6 +6,10 @@
 
 Güncel FR→EN beklentisiyle 58 senaryo, altı gerçek masaüstü/mobil menü geçişi ve 182 sayfanın içerik/SEO koruması geçti. Fransa yanıtı Fransızca, İngilizce, Almanca ve Türkçe tarayıcılarda `/en/` seçer; açık menü tercihi ve doğrudan dil URL'leri korunur. Kanıt: `docs/auto-language/fix-verification.json`.
 
+FR→EN eşleştirmesi yeniden canlıya yayımlandı: deployment `69bbe947-0735-4f28-9720-b3498169ef8c`, kaynak `88fafb002c4efc21e0999f2d9c53166f73b79c1a`. Cloudflare yayın durumu `success`; canlı dil betiği çalışma ağacıyla eşleşiyor. Güncel yayın kanıtı: `docs/auto-language/france-production-deployment.json`.
+
+Doğrulama sınırı: yerel 58 senaryo başarılıdır; canlı deployment, betik içeriğindeki `FR: 'en'` ve gerçek ülke endpoint'inin HTTP 200/no-store yanıtı ayrıca doğrulandı. Canlı sayfada Fransa yanıtını Playwright ile taklit eden ek test bu ortamda tamamlanamadı: route fulfil işlemi dönmesine rağmen tarayıcı fetch yanıtı tamamlanmadı ve beklenen yönlendirme gözlenmedi. Bu deneme `docs/auto-language/france-live-verification.json` içinde başarısız olarak korunur; gerçek Fransa VPN testi veya başarılı canlı uçtan uca doğrulama sayılmaz. Bu ek test nedeniyle mevcut 900 ms timeout/fallback veya başka uygulama davranışı değiştirilmedi. Uygulama dil betiği, Fransa değişikliğinden önceki `a697572` sürümüyle tekrar aynıdır.
+
 ## Önceki Fransa IP değişikliği — geri alındı
 
 Fransa'dan `/en/` yönlendirmesinin kaynaktaki açık nedeni `FR: 'en'` eşleştirmesiydi. Fransa `FR: 'tr'` olarak düzeltildi. Kullanıcının bu turdaki onayıyla IP ülkesi önceliklidir: açık menü tercihi → bilinen ülke eşleştirmesi → desteklenen tarayıcı dili → Türkçe. Fransa artık tarayıcı dili Fransızca, İngilizce, Almanca veya Türkçe olduğunda `/` açar; kayıtlı İngilizce/Almanca tercihi ve doğrudan `/en/` bağlantısı korunur. Diğer ülke eşleştirmeleri değişmedi.

@@ -1,13 +1,13 @@
 {
   "pass": true,
-  "id": "e7cfdd4c-532c-429e-85c0-d6b20675e0ae",
-  "url": "https://e7cfdd4c.hurralingo-landing.pages.dev",
+  "id": "69bbe947-0735-4f28-9720-b3498169ef8c",
+  "url": "https://69bbe947.hurralingo-landing.pages.dev",
   "publicUrl": "https://www.hurralingo.com/",
-  "source": "5d29be96f55df9066073a669c375fd67f3c56dda",
+  "source": "88fafb002c4efc21e0999f2d9c53166f73b79c1a",
   "branch": "main",
   "status": "success",
-  "previousId": "02681798-d70f-488d-8658-8a2047cc429b",
-  "checkedAt": "2026-10-18T19:33:11.117Z",
+  "previousId": "e7cfdd4c-532c-429e-85c0-d6b20675e0ae",
+  "checkedAt": "2026-10-18T19:37:20.998Z",
   "build": {
     "build_command": "node -e \"const c=require('node:child_process'),f=require('node:fs'),p=require('node:path');c.execFileSync(process.execPath,['scripts/build-site-tr.cjs'],{stdio:'inherit'});if(f.existsSync('scripts/build-locales.cjs'))c.execFileSync(process.execPath,['scripts/build-locales.cjs'],{stdio:'inherit'});c.execFileSync(process.execPath,['scripts/package-preview.cjs'],{stdio:'inherit'});const prod=process.env.CF_PAGES_BRANCH==='main';if(prod)c.execFileSync(process.execPath,['scripts/package-production.cjs'],{stdio:'inherit'});const src=prod?'dist/phase-1c-production':'dist/phase-1b-preview',out=p.resolve('dist/cloudflare-pages');if(!out.startsWith(p.resolve('dist')+p.sep))throw Error('Unsafe build output');f.rmSync(out,{recursive:true,force:true});f.cpSync(src,out,{recursive:true});\"",
     "destination_dir": "dist/cloudflare-pages",
@@ -23,5 +23,6 @@
     "cache": "private, no-store, max-age=0"
   },
   "languageAssetMatches": true,
-  "change": "France IP maps to Turkish; explicit language choices retain priority"
+  "restoresMappingFrom": "02681798-d70f-488d-8658-8a2047cc429b",
+  "change": "User correction: France IP remains English until French content is available"
 }
