@@ -136,11 +136,20 @@ const key='hl-language-choice';
  ['Empty browser list',[],null,'/fr/'],['Empty language tag',[''],null,'/'],
  ['Other country/German',['de-DE'],'IT','/de/'],['Other country/French',['fr-FR'],'IT','/fr/'],
  ['Austria country',['fr'],'AT','/de/'],['GB country',['fr'],'GB','/en/'],
- ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/fr/'],['AU country/Turkish',['tr'],'AU','/en/'],
+ ['US country',['fr'],'US','/en/'],['CA country/German',['de'],'CA','/en/'],['AU country/Turkish',['tr'],'AU','/en/'],
  ['AZ country',['en'],'AZ','/az/'],['TR country',['en'],'TR','/']
  ])await scenario(name,langs,country,target);
  // Independent policy fixture: exercise every supported French country/territory.
- const frenchCountries=require('../docs/french/ip-country-policy.json').countries;
+ const policy=require('../docs/french/ip-country-policy.json'),frenchCountries=policy.countries;
+ assert.equal(new Set(frenchCountries.map(c=>c.code)).size,frenchCountries.length);
+ // Compare the entire runtime table with the independent policy, including exclusions.
+ const tableSource=fs.readFileSync('assets/auto-language.js','utf8').match(/var countries = (\{[\s\S]*?\});/);
+ assert.ok(tableSource,'Country table missing');
+ const actualTable=JSON.parse(JSON.stringify(require('node:vm').runInNewContext('('+tableSource[1]+')')));
+ const expectedTable={TR:'tr',DE:'de',AT:'de',AZ:'az',...Object.fromEntries(policy.englishDefaultCountries.map(code=>[code,'en'])),...Object.fromEntries(frenchCountries.map(({code})=>[code,'fr']))};
+ assert.deepEqual(actualTable,expectedTable,'Unexpected country mapping');
+ assert.deepEqual(policy.browserLanguageCountries,['BE','CH']);
+ for(const country of policy.browserLanguageCountries)assert.ok(!Object.hasOwn(actualTable,country));
  for(const {code}of frenchCountries){
   const response=endpoint.onRequestGet({request:{cf:{country:code}}});
   assert.deepEqual(await response.json(),{country:code});assert.match(response.headers.get('cache-control'),/no-store/);
@@ -148,6 +157,17 @@ const key='hl-language-choice';
  }
  for(const country of ['CA','BE','CH'])await scenario('French country explicit English '+country,['fr-FR'],country,'/en/',{saved:'en'});
  await scenario('Canada direct English',['fr-FR'],'CA','/en/',{path:'/en/'});
+ for(const languages of [['fr-CA'],['en-CA'],['es']])await scenario('Canada default '+languages[0],languages,'CA','/en/');
+ for(const country of policy.browserLanguageCountries){
+  for(const [language,target]of [['fr-FR','/fr/'],['de-CH','/de/'],['en-GB','/en/'],['az-AZ','/az/'],['tr-TR','/'],['nl-BE','/'],['it-CH','/']])await scenario(country+' browser '+language,[language],country,target);
+  await scenario(country+' ordered browser preferences',['nl-BE','fr-FR','de-DE'],country,'/fr/');
+ }
+ for(const country of ['CA','BE','CH']){
+  for(const [saved,target]of [['tr','/'],['fr','/fr/'],['de','/de/'],['az','/az/']])await scenario(country+' manual '+saved,['en-US'],country,target,{saved});
+  await scenario(country+' cookie French',['de-DE'],country,'/fr/',{savedCookie:'fr.1000'});
+  for(const path of ['/en/','/fr/','/de/','/az/',manifest.locales.fr.articles[0].route])await scenario(country+' direct '+path,[path==='/en/'?'fr-FR':'en-US'],country,path,{path});
+ }
+ result.countryPolicy={frenchCountryCodes:frenchCountries.length,englishDefaultCountries:policy.englishDefaultCountries,browserLanguageCountries:policy.browserLanguageCountries,completeTableVerified:true};
  await scenario('Saved German',['tr'],'TR','/de/',{saved:'de'});
  await scenario('Saved Turkish',['de'],'DE','/',{saved:'tr'});
  await scenario('Saved English',['de'],'DE','/en/',{saved:'en'});

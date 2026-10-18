@@ -154,7 +154,7 @@
     },
     {
       "name": "CA country/German",
-      "expected": "/fr/",
+      "expected": "/en/",
       "countryRequests": 1,
       "navigations": 2
     },
@@ -183,18 +183,6 @@
       "navigations": 2
     },
     {
-      "name": "French country BE",
-      "expected": "/fr/",
-      "countryRequests": 1,
-      "navigations": 2
-    },
-    {
-      "name": "French country CH",
-      "expected": "/fr/",
-      "countryRequests": 1,
-      "navigations": 2
-    },
-    {
       "name": "French country LU",
       "expected": "/fr/",
       "countryRequests": 1,
@@ -202,12 +190,6 @@
     },
     {
       "name": "French country MC",
-      "expected": "/fr/",
-      "countryRequests": 1,
-      "navigations": 2
-    },
-    {
-      "name": "French country CA",
       "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
@@ -443,6 +425,300 @@
     {
       "name": "Canada direct English",
       "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Canada default fr-CA",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Canada default en-CA",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Canada default es",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BE browser fr-FR",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BE browser de-CH",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BE browser en-GB",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BE browser az-AZ",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BE browser tr-TR",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "BE browser nl-BE",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "BE browser it-CH",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "BE ordered browser preferences",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH browser fr-FR",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH browser de-CH",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH browser en-GB",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH browser az-AZ",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CH browser tr-TR",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "CH browser nl-BE",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "CH browser it-CH",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "CH ordered browser preferences",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CA manual tr",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CA manual fr",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CA manual de",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CA manual az",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CA cookie French",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CA direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CA direct /fr/",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CA direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CA direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CA direct /fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "expected": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE manual tr",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE manual fr",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BE manual de",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BE manual az",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BE cookie French",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "BE direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE direct /fr/",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "BE direct /fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "expected": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH manual tr",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH manual fr",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CH manual de",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CH manual az",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CH cookie French",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "CH direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH direct /fr/",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "CH direct /fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "expected": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
       "countryRequests": 0,
       "navigations": 1
     },
@@ -708,7 +984,7 @@
       "url": "http://127.0.0.1:8031/api/country"
     }
   ],
-  "countryRequests": 81,
+  "countryRequests": 97,
   "lineEndingNormalizations": [
     "assets/site-locales.css"
   ],
@@ -721,5 +997,19 @@
     "cases": 8,
     "privateTraceOmitted": true,
     "pass": true
+  },
+  "countryPolicy": {
+    "frenchCountryCodes": 38,
+    "englishDefaultCountries": [
+      "GB",
+      "US",
+      "CA",
+      "AU"
+    ],
+    "browserLanguageCountries": [
+      "BE",
+      "CH"
+    ],
+    "completeTableVerified": true
   }
 }

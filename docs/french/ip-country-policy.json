@@ -1,14 +1,13 @@
 {
   "updated": "2026-10-19",
   "target": "/fr/",
+  "englishDefaultCountries": ["GB", "US", "CA", "AU"],
+  "browserLanguageCountries": ["BE", "CH"],
   "scope": "Explicit product policy for French-speaking countries and French territories; not a claim that each visitor speaks French or that every country's legal language status is identical.",
   "countries": [
     {"code":"FR","name":"Fransa"},
-    {"code":"BE","name":"Belçika"},
-    {"code":"CH","name":"İsviçre"},
     {"code":"LU","name":"Lüksemburg"},
     {"code":"MC","name":"Monako"},
-    {"code":"CA","name":"Kanada"},
     {"code":"BJ","name":"Benin"},
     {"code":"BF","name":"Burkina Faso"},
     {"code":"BI","name":"Burundi"},

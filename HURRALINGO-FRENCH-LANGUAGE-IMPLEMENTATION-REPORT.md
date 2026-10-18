@@ -1,6 +1,6 @@
 # Hurra Lingo — Fransızca dil entegrasyonu raporu
 
-19 Ekim 2026 güncellemesi: Fransızca IP kapsamı 29 ülke ve 12 bölgeye genişletildi; Kanada artık `/fr/` kullanır. Aşağıdaki ilk uygulama ülke tablosunun yerine [güncel IP yönlendirme notu](docs/french/ip-country-routing.md) geçerlidir.
+19 Ekim 2026 güncellemesi: Kanada `/en/` varsayılanını korur; Belçika ve İsviçre desteklenen tarayıcı dilini kullanır. Diğer 38 Fransızca ülke/bölge eşleştirmesi korunur. Aşağıdaki ilk uygulama ülke tablosunun yerine [güncel IP yönlendirme notu](docs/french/ip-country-routing.md) geçerlidir.
 
 Tarih: 18 Ekim 2026. Çalışma dalı: main. HEAD: 64a00d50da34e8c0b32a1915d8d2d7d68c89bb63.
 

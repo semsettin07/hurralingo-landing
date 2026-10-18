@@ -84,9 +84,9 @@
   // Country wins over browser language. Never block rendering or persist detection.
   if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
   var countries = {
-    TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', US: 'en', AU: 'en',
-    // Country-level French default, including multilingual countries (CA, BE, CH).
-    FR: 'fr', BE: 'fr', CH: 'fr', LU: 'fr', MC: 'fr', CA: 'fr',
+    TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', US: 'en', CA: 'en', AU: 'en',
+    // BE/CH deliberately have no country default: use browserLanguage() below.
+    FR: 'fr', LU: 'fr', MC: 'fr',
     BJ: 'fr', BF: 'fr', BI: 'fr', CM: 'fr', CF: 'fr', TD: 'fr',
     KM: 'fr', CG: 'fr', CD: 'fr', CI: 'fr', DJ: 'fr', GQ: 'fr',
     GA: 'fr', GN: 'fr', MG: 'fr', ML: 'fr', NE: 'fr', RW: 'fr',
