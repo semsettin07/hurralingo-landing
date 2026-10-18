@@ -123,7 +123,7 @@ const key='hl-language-choice';
  ['Germany/German',['de-DE'],'DE','/de/'],['Germany/Turkish',['tr-TR'],'DE','/de/'],
  ['Germany/English',['en-US'],'DE','/de/'],
  ['Azerbaijan/Azeri',['az-AZ'],'AZ','/az/'],['Azerbaijan/Turkish',['tr-TR'],'AZ','/az/'],['USA/English',['en-US'],'US','/en/'],
- ['France/French',['fr-FR'],'FR','/en/'],['France/German',['de-DE'],'FR','/en/'],['France/English',['en-GB'],'FR','/en/'],
+ ['France/French',['fr-FR'],'FR','/'],['France/German',['de-DE'],'FR','/'],['France/English',['en-GB'],'FR','/'],['France/Turkish',['tr-TR'],'FR','/'],
  ['Germany/French',['fr-FR'],'DE','/de/'],['USA/Turkish',['tr'],'US','/en/'],
  ['Ordered preferences',['fr','az-Latn-AZ','de-CH'],'IT','/az/'],
  ['BCP47 extensions',['DE-ch-u-co-phonebk'],null,'/de/'],['Invalid tag skipped',['de-!','en-AU'],null,'/en/'],
@@ -137,6 +137,10 @@ const key='hl-language-choice';
  await scenario('Saved German',['tr'],'TR','/de/',{saved:'de'});
  await scenario('Saved Turkish',['de'],'DE','/',{saved:'tr'});
  await scenario('Saved English',['de'],'DE','/en/',{saved:'en'});
+ await scenario('France explicit English',['fr'],'FR','/en/',{saved:'en'});
+ await scenario('France cookie-only English',['fr'],'FR','/en/',{savedCookie:'en.1000'});
+ await scenario('France explicit German',['fr'],'FR','/de/',{saved:'de'});
+ await scenario('France direct English',['fr'],'FR','/en/',{path:'/en/'});
  await scenario('Cookie-only Turkish',['en'],'DE','/',{savedCookie:'tr.1000'});
  await scenario('Cookie-only English',['tr'],'DE','/en/',{savedCookie:'en.1000'});
  await scenario('Unsupported saved choice',['en'],'TR','/',{saved:'fr'});

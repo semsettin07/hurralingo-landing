@@ -83,7 +83,7 @@
   }
   // Country wins over browser language. Never block rendering or persist detection.
   if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
-  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'en', US: 'en', CA: 'en', AU: 'en'};
+  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'tr', US: 'en', CA: 'en', AU: 'en'};
   var controller = new AbortController();
   var settled = false;
   function finish(country) {

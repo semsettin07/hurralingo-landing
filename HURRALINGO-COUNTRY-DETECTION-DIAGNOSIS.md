@@ -1,5 +1,13 @@
 # Hurra Lingo — Canlı ülke tespiti incelemesi
 
+## Fransa IP düzeltmesi — 18 Ekim 2026
+
+Fransa'dan `/en/` yönlendirmesinin kaynaktaki açık nedeni `FR: 'en'` eşleştirmesiydi. Fransa `FR: 'tr'` olarak düzeltildi. Kullanıcının bu turdaki onayıyla IP ülkesi önceliklidir: açık menü tercihi → bilinen ülke eşleştirmesi → desteklenen tarayıcı dili → Türkçe. Fransa artık tarayıcı dili Fransızca, İngilizce, Almanca veya Türkçe olduğunda `/` açar; kayıtlı İngilizce/Almanca tercihi ve doğrudan `/en/` bağlantısı korunur. Diğer ülke eşleştirmeleri değişmedi.
+
+Regresyon testinde Fransa'nın üç eski İngilizce beklentisi Türkçeye çevrildi; Türkçe tarayıcı, Fransa'da kayıtlı İngilizce/Almanca, cookie üzerinden İngilizce ve doğrudan İngilizce URL senaryoları eklendi. Yeni beklenti eski kodla başarısız oldu; düzeltilen kodun doğrulama sonucu `docs/auto-language/fix-verification.json` dosyasındadır. Fransa yanıtları testte kontrollü olarak üretilir; bu ortamdan fiziksel Fransa VPN testi yapıldığı iddia edilmez.
+
+Yerel doğrulama başarılı: 58 ana senaryo, altı gerçek masaüstü/mobil menü geçişi, 182 sayfada içerik/canonical/hreflang koruması; beklenmeyen konsol veya JavaScript hatası yok. Ülke endpoint'i ve diğer ülke eşleştirmeleri değiştirilmedi. Yayın öncesi geri dönüş sürümü `02681798-d70f-488d-8658-8a2047cc429b`, kaynak `a69757200827e95b86435f3b661668138f207eef` olarak Cloudflare API'sinden kaydedildi. Eski bölümlerdeki yalnızca yerel çalışma ve FR→EN ifadeleri tarihsel kayıttır; bu bölümdeki FR→TR kuralı günceldir.
+
 ## Güncel uygulama: ilk ziyaret ülke önceliği ve Türkçe fallback
 
 18 Ekim 2026 tarihli son kullanıcı talebi uygulanmıştır. Bu bölüm aşağıdaki önceki incelemenin üzerine gelen güncel durumdur; önceki İngilizce fallback beklentileri artık geçerli değildir. Bu çalışmanın başlangıcında Git çalışma ağacı temizdi, HEAD `fe6cae8bec8c4a4c8fb3932279844d8ca28df152` idi.
@@ -10,10 +18,10 @@
 
 | Ülke | Hedef |
 | --- | --- |
-| TR | `/` |
+| TR, FR | `/` |
 | DE, AT | `/de/` |
 | AZ | `/az/` |
-| GB, FR, US, CA, AU | `/en/` |
+| GB, US, CA, AU | `/en/` |
 | Diğer/bilinmeyen ülke | Desteklenen ilk tarayıcı dili; eşleşme yoksa `/` |
 
 Bu değişiklikte CA/AU İngilizce ülke grubuna eklendi; son fallback İngilizceden Türkçeye çevrildi. Örneğin CA + Almanca tarayıcı artık `/en/`; bilinmeyen ülke + Fransızca tarayıcı artık `/` seçer. İngilizce desteklenen bir tarayıcı dili olduğu için ülke bilinmiyorsa İngilizce tarayıcı yine `/en/` seçer.
