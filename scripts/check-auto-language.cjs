@@ -25,6 +25,54 @@ const key='hl-language-choice';
  assert.deepEqual(await response.json(),{country:['DE','AT','AZ','US','TR','GB','FR','CA','AU'].includes(country)?country:null});
  }
  assert.deepEqual(await endpoint.onRequestGet({request:{}}).json(),{country:null});
+ // Only Cloudflare metadata may decide the country; headers/env must never be a fallback.
+ const trustCases=[
+  {cf:undefined,header:'TR',expected:null},
+  {cf:null,header:'DE',expected:null},
+  {cf:{},header:'TR',expected:null},
+  {cf:{country:'XX'},header:'TR',expected:null},
+  {cf:{country:'T1'},header:'TR',expected:null},
+  {cf:{country:'de'},header:'DE',expected:null},
+  {cf:{country:'DE'},header:'TR',expected:'DE'},
+  {cf:{country:'TR'},header:'DE',expected:'TR'}
+ ];
+ for(const test of trustCases){
+  const request={cf:test.cf,headers:new Headers({'CF-IPCountry':test.header})};
+  assert.deepEqual(await endpoint.onRequestGet({request,env:{COUNTRY:'TR',CF_IPCOUNTRY:'TR'}}).json(),{country:test.expected});
+ }
+ // A shared isolate must not retain a preceding request's country.
+ for(const country of ['TR','DE','FR','GB','AZ',undefined,'DE']){
+  const response=endpoint.onRequestGet({request:{cf:{country}}});
+  assert.deepEqual(await response.json(),{country:country||null});assert.equal(response.headers.get('cloudflare-cdn-cache-control'),'no-store');
+ }
+ result.countryTrustChecks={headerAndEnvironmentCases:trustCases.length,perRequestIsolationCases:7,pass:true};
+ // Exercise the operator's live diagnosis command without network access or private trace output.
+ const diagnosticSource=fs.readFileSync('scripts/diagnose-country.cjs','utf8');
+ const diagnosticCases=[
+  {name:'matching DE',trace:'DE',country:'DE',unique:'DE',comparison:'countries-match',exit:0},
+  {name:'reported DE/TR mismatch',trace:'DE',country:'TR',unique:'TR',comparison:'country-mismatch',exit:1},
+  {name:'query differs',trace:'DE',country:'DE',unique:'TR',comparison:'country-mismatch',exit:1},
+  {name:'missing trace',trace:null,country:'DE',unique:'DE',comparison:'inconclusive',exit:1},
+  {name:'unavailable metadata',trace:'DE',country:null,unique:null,comparison:'country-mismatch',exit:1},
+  {name:'invalid endpoint payload',trace:'DE',country:'PRIVATE_TRACE_SENTINEL',unique:'DE',comparison:'inconclusive',exit:1},
+  {name:'stale asset',trace:'DE',country:'DE',unique:'DE',stale:true,comparison:'countries-match',exit:1},
+  {name:'network failure',networkFailure:true,comparison:'inconclusive',exit:1}
+ ];
+ for(const test of diagnosticCases){
+  const logs=[],fixtureAsset='/* diagnosis fixture */\n',fixtureProcess={argv:['node','diagnose-country.cjs'],exitCode:0};
+  await require('node:vm').runInNewContext(diagnosticSource,{
+   __dirname:path.resolve('scripts'),process:fixtureProcess,AbortSignal,performance,console:{log:s=>logs.push(s),error:s=>logs.push(s)},
+   require:name=>name==='node:fs'?{readFileSync:()=>fixtureAsset}:require(name),
+   fetch:async url=>{
+    if(test.networkFailure)throw Error('PRIVATE_TRACE_SENTINEL');
+    const pathname=new URL(url).pathname;
+    const body=pathname==='/cdn-cgi/trace'?'ip=PRIVATE_TRACE_SENTINEL\nloc='+(test.trace||'')+'\ncolo=FRA\n':pathname==='/assets/auto-language.js'?(test.stale?'old asset':fixtureAsset):JSON.stringify({country:url.includes('?')?test.unique:test.country});
+    return new Response(body,{headers:{'Cache-Control':'private, no-store','CF-Cache-Status':'DYNAMIC'}});
+   }
+  });
+  const output=JSON.parse(logs[0]);assert.equal(output.comparison,test.comparison,test.name);assert.equal(fixtureProcess.exitCode,test.exit,test.name);assert.ok(!logs.join('').includes('PRIVATE_TRACE_SENTINEL'),test.name+' private trace leakage');
+ }
+ result.diagnosisCommandChecks={cases:diagnosticCases.length,privateTraceOmitted:true,pass:true};
  if(process.env.HURRA_COUNTRY_RUNTIME_ORIGIN){
   const response=await fetch(process.env.HURRA_COUNTRY_RUNTIME_ORIGIN+'/api/country');
   assert.equal(response.status,200);const body=await response.json();

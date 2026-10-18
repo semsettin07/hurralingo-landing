@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-18T12:56:28.293Z",
+  "origin": "https://www.hurralingo.com",
+  "trace": {
+    "path": "/cdn-cgi/trace",
+    "status": 200,
+    "durationMs": 754,
+    "cache": {
+      "cache-control": null,
+      "cdn-cache-control": null,
+      "cf-cache-status": null,
+      "age": null
+    },
+    "country": "TR",
+    "colo": "AMS"
+  },
+  "endpoint": {
+    "path": "/api/country",
+    "status": 200,
+    "durationMs": 324,
+    "cache": {
+      "cache-control": "private, no-store, max-age=0",
+      "cdn-cache-control": "no-store",
+      "cf-cache-status": "DYNAMIC",
+      "age": null
+    },
+    "validCountryResponse": true,
+    "country": "TR"
+  },
+  "uniqueQuery": {
+    "path": "/api/country?diagnosis=1792328187007",
+    "status": 200,
+    "durationMs": 1003,
+    "cache": {
+      "cache-control": "private, no-store, max-age=0",
+      "cdn-cache-control": "no-store",
+      "cf-cache-status": "DYNAMIC",
+      "age": null
+    },
+    "validCountryResponse": true,
+    "country": "TR"
+  },
+  "asset": {
+    "path": "/assets/auto-language.js",
+    "status": 200,
+    "durationMs": 282,
+    "cache": {
+      "cache-control": "public, max-age=14400, must-revalidate",
+      "cdn-cache-control": null,
+      "cf-cache-status": "REVALIDATED",
+      "age": null
+    },
+    "matchesWorkingTree": true,
+    "sha256": "74f7ab0f69332ea87924b2eb19d26131606fb045663759628cb4424dfe3e2503"
+  },
+  "comparison": "countries-match",
+  "scope": "Same-origin HTTP checks from this process only. No VPN claim, browser preference inspection or production fix is implied."
+}

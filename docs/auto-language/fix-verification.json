@@ -349,5 +349,15 @@
     "assets/i18n/site-az.js",
     "assets/i18n/site-de.js",
     "assets/i18n/site-en.js"
-  ]
+  ],
+  "countryTrustChecks": {
+    "headerAndEnvironmentCases": 8,
+    "perRequestIsolationCases": 7,
+    "pass": true
+  },
+  "diagnosisCommandChecks": {
+    "cases": 8,
+    "privateTraceOmitted": true,
+    "pass": true
+  }
 }
