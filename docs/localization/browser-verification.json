@@ -1,5 +1,5 @@
 {
-  "origin": "http://127.0.0.1:8017",
+  "origin": "http://127.0.0.1:8031",
   "pass": true,
   "responsive": [
     {
@@ -3339,10 +3339,10 @@
       "width": 1842
     }
   ],
-  "pricingCases": 180,
-  "teacherFilters": 9,
-  "blogSearches": 3,
-  "menus": 9,
+  "pricingCases": 240,
+  "teacherFilters": 12,
+  "blogSearches": 4,
+  "menus": 12,
   "errors": [],
   "brokenImages": [],
   "responsiveFromPreviousRun": true

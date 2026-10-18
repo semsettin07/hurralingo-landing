@@ -1,15 +1,17 @@
 // Offline, explicitly invoked EN/DE/AZ build. Never regenerates Turkish content.
 const fs=require('node:fs'),path=require('node:path'),c=require('cheerio'),assert=require('node:assert/strict');
 const {fixed,languages,locales,overrides,pricing,pageTitles,pageHeadings,extraOverrides}=require('./locale-content.cjs');
+// Preserve the approved generators for the first four languages; FR is appended below.
+const existingLocales=Object.fromEntries(Object.entries(locales).filter(([lang])=>lang!=='fr'));
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const write=(f,s)=>{fs.mkdirSync(path.dirname(path.join(root,f)),{recursive:true});fs.writeFileSync(path.join(root,f),s)};
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const posts=JSON.parse(read('content/blog/posts.json')),trPosts=posts.filter(p=>p.language==='tr');
 const sourceRoutes=JSON.parse(read('content/site/canonical-tr.json'));
-const dictionaries=Object.fromEntries(Object.keys(locales).map(l=>[l,JSON.parse(read(`content/i18n/${l}.json`))]));
+const dictionaries=Object.fromEntries(Object.keys(existingLocales).map(l=>[l,JSON.parse(read(`content/i18n/${l}.json`))]));
 const missing=new Set();
 function t(s,lang,sl='tr'){if(!s)return s;const value=sl==='tr'?(extraOverrides[lang][s]??overrides(lang)[s]):undefined;return (value??dictionaries[lang][sl]?.[s]??s).replace(/Hurra Jargon|HURRA JARGON|Hurray Linqo|Hurra Linqo|Hurrah Lingo/g,'Hurra Lingo');}
-const fixedMap=Object.fromEntries(fixed.map((route,i)=>[route,Object.fromEntries(Object.entries(locales).map(([l,v])=>[l,`/${l}/${v.slugs[i]?v.slugs[i]+'/':''}`]))]));
+const fixedMap=Object.fromEntries(fixed.map((route,i)=>[route,Object.fromEntries(Object.entries(existingLocales).map(([l,v])=>[l,`/${l}/${v.slugs[i]?v.slugs[i]+'/':''}`]))]));
 const existingMatches={
  en:{'karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi':'online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children','yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim':'online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule','sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi':'valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults'},
  de:{'6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi':'eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers'},
@@ -17,13 +19,13 @@ const existingMatches={
 };
 function slug(s){return s.toLowerCase().replace(/ß/g,'ss').replace(/ə/g,'e').replace(/ı/g,'i').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,160).replace(/-$/,'');}
 const routeMap={...fixedMap},articles={};
-for(const [lang,l]of Object.entries(locales)){
+for(const [lang,l]of Object.entries(existingLocales)){
  const used=new Set(),list=[];
  for(const p of trPosts){const legacy=posts.find(x=>x.language===lang&&x.slug===existingMatches[lang][p.slug]);const title=legacy?(lang==='az'?t(legacy.title,lang,'en'):legacy.title):t(p.title,lang);const route=`/${lang}/blog/${legacy?.slug||slug(title)}/`;assert.ok(!used.has(route),'Duplicate '+route);used.add(route);routeMap['/blog/'+p.slug+'/']||={};routeMap['/blog/'+p.slug+'/'][lang]=route;list.push({route,title,summary:legacy?(lang==='az'?t(legacy.summary,lang,'en'):legacy.summary):t(p.summary,lang),source:legacy||p,legacy,sourceRoute:'/blog/'+p.slug+'/'});}
  for(const p of posts.filter(x=>x.language===lang&&!Object.values(existingMatches[lang]).includes(x.slug))){const route=`/${lang}/blog/${p.slug}/`;assert.ok(!used.has(route));used.add(route);list.push({route,title:lang==='az'?t(p.title,lang,'en'):p.title,summary:lang==='az'?t(p.summary,lang,'en'):p.summary,source:p,legacy:p});}
  articles[lang]=list.sort((a,b)=>b.source.date.localeCompare(a.source.date));
 }
-const manifest={routes:routeMap,locales:Object.fromEntries(Object.entries(locales).map(([lang,l])=>[lang,{locale:l.locale,fixed:fixed.map(r=>routeMap[r][lang]),articles:articles[lang].map(p=>({route:p.route,sourceRoute:p.sourceRoute||null,title:p.title,legacySource:p.legacy?.source||null})),canonical:[...fixed.map(r=>routeMap[r][lang]),...articles[lang].map(p=>p.route)]}]))};
+const manifest={routes:routeMap,locales:Object.fromEntries(Object.entries(existingLocales).map(([lang,l])=>[lang,{locale:l.locale,fixed:fixed.map(r=>routeMap[r][lang]),articles:articles[lang].map(p=>({route:p.route,sourceRoute:p.sourceRoute||null,title:p.title,legacySource:p.legacy?.source||null})),canonical:[...fixed.map(r=>routeMap[r][lang]),...articles[lang].map(p=>p.route)]}]))};
 write('content/i18n/routes.json',JSON.stringify(manifest,null,2)+'\n');
 function localUrl(href,lang,sourceRoute){if(!href)return href;let u;try{u=new URL(href,'https://www.hurralingo.com'+sourceRoute)}catch{return href}if(!['www.hurralingo.com','hurralingo.com'].includes(u.hostname))return href;const p=u.pathname.replace(/index\.html$/,'');if(routeMap[p]?.[lang])return routeMap[p][lang]+u.search+u.hash;if(p==='/'&&href.startsWith('#'))return href;return u.pathname+u.search+u.hash;}
 function translate($,lang,sl='tr'){
@@ -68,7 +70,7 @@ function page(html,lang,route,sourceRoute,options={}){
 }
 function render(nodes,lang){return nodes.map(n=>{if(typeof n.text==='string')return esc(n.text);if(['br','hr'].includes(n.tag))return `<${n.tag}>`;if(n.tag==='img')return `<img src="/${n.src}" alt="${esc(n.alt||'')}" loading="lazy">`;let attr='';if(n.tag==='a'&&n.href){let href=n.href;try{const url=new URL(href);const match=posts.find(p=>new URL(p.source).pathname===url.pathname&&p.language===lang);if(match)href=`/${lang}/blog/${match.slug}/`;}catch{}attr=` href="${esc(href)}"${/^https?:/.test(href)?' target="_blank" rel="noopener noreferrer"':''}`;}return `<${n.tag}${attr}>${render(n.children||[],lang)}</${n.tag}>`}).join('');}
 function cover(p,lang){return `<img class="blog-cover" src="/${p.source.image||'img/maskot-merakli.svg'}" alt="${esc(p.title)}" width="640" height="400" loading="lazy">`;}
-for(const [lang,l]of Object.entries(locales)){
+for(const [lang,l]of Object.entries(existingLocales)){
  for(const sourceRoute of fixed.filter(r=>r!=='/blog/')){const route=routeMap[sourceRoute][lang];write(route.slice(1)+'index.html',page(read(sourceRoute.slice(1)+'index.html'),lang,route,sourceRoute));}
  // Backwards-compatible file aliases remain usable; deployment redirects are explicit.
  write(lang+'.html',read(lang+'/index.html'));
@@ -102,9 +104,10 @@ for(const sourceRoute of sourceRoutes){const file=sourceRoute.slice(1)+'index.ht
 const allRoutes=[...sourceRoutes,...Object.values(manifest.locales).flatMap(l=>l.canonical)];
 write('content/i18n/canonical-all.json',JSON.stringify(allRoutes,null,2)+'\n');
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+allRoutes.map(r=>`<url><loc>https://www.hurralingo.com${r}</loc></url>`).join('\n')+'\n</urlset>\n');
-const redirects={};for(const lang of Object.keys(locales)){redirects[`/${lang}.html`]=`/${lang}/`;for(const r of fixed.slice(1))if(r!=='/blog/')redirects[`/${lang}${r}`]=routeMap[r][lang];for(const p of posts.filter(x=>x.language===lang)){const target=`/${lang}/blog/${p.slug}/`;const from=new URL(p.source).pathname;if(from!==target){redirects[from]=target;if(from.endsWith('/'))redirects[from+'index.html']=target;}}}
+const redirects={};for(const lang of Object.keys(existingLocales)){redirects[`/${lang}.html`]=`/${lang}/`;for(const r of fixed.slice(1))if(r!=='/blog/')redirects[`/${lang}${r}`]=routeMap[r][lang];for(const p of posts.filter(x=>x.language===lang)){const target=`/${lang}/blog/${p.slug}/`;const from=new URL(p.source).pathname;if(from!==target){redirects[from]=target;if(from.endsWith('/'))redirects[from+'index.html']=target;}}}
 write('content/i18n/redirects.json',JSON.stringify(redirects,null,2)+'\n');
 // Remove only stale, generated article files within the three explicit locale roots.
-for(const lang of Object.keys(locales)){const base=path.resolve(root,lang,'blog'),keep=new Set(manifest.locales[lang].articles.map(p=>path.resolve(root,p.route.slice(1),'index.html')));for(const f of fs.readdirSync(base,{recursive:true})){const file=path.resolve(base,f);if(path.basename(file)!=='index.html'||file===path.join(base,'index.html')||!fs.statSync(file).isFile()||keep.has(file))continue;assert.ok(file.startsWith(base+path.sep));const legacy=posts.some(p=>p.language===lang&&file===path.join(base,p.slug,'index.html'));assert.ok(!legacy,'Refusing to delete legacy article');fs.unlinkSync(file);}}
+for(const lang of Object.keys(existingLocales)){const base=path.resolve(root,lang,'blog'),keep=new Set(manifest.locales[lang].articles.map(p=>path.resolve(root,p.route.slice(1),'index.html')));for(const f of fs.readdirSync(base,{recursive:true})){const file=path.resolve(base,f);if(path.basename(file)!=='index.html'||file===path.join(base,'index.html')||!fs.statSync(file).isFile()||keep.has(file))continue;assert.ok(file.startsWith(base+path.sep));const legacy=posts.some(p=>p.language===lang&&file===path.join(base,p.slug,'index.html'));assert.ok(!legacy,'Refusing to delete legacy article');fs.unlinkSync(file);}}
+require('./build-french.cjs');
 require('./install-auto-language.cjs');
-console.log('Built EN/DE/AZ: '+Object.entries(manifest.locales).map(([l,x])=>`${l} ${x.fixed.length} fixed + ${x.articles.length} articles`).join('; ')+'. Total canonical URLs: '+allRoutes.length+'. TR copy and pricing engine/data preserved; reciprocal TR language metadata updated.');
+console.log('Built EN/DE/AZ and French extension. Existing TR copy and pricing engine/data preserved; reciprocal language metadata updated.');

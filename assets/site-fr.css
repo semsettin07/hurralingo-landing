@@ -1,0 +1,11 @@
+/* French text follows the existing layout, spacing, fonts and motion system. */
+@media(min-width:1440px){.locale-fr .header .nav-a{font-size:14px;padding-inline:5px}}
+.locale-fr .hero-in>*,.locale-fr .fee-hero>*,.locale-fr .site-grid>*{min-width:0}
+.locale-fr .legal-article{max-width:900px;margin-inline:auto}
+.locale-fr .legal-page{margin-block:2rem;padding-top:1rem;border-top:1px solid var(--line,#e6e8eb)}
+.locale-fr .legal-page p{overflow-wrap:anywhere;white-space:normal}
+.locale-fr .blog-prose table{max-width:100%;display:block;overflow-x:auto}
+.locale-fr .blog-prose h2,.locale-fr .blog-prose h3{overflow-wrap:anywhere}
+.locale-fr .dr-langs a{min-width:42px}
+@media(max-width:420px){.locale-fr .dr-langs{gap:6px;flex-wrap:wrap}}
+@media(max-width:767px){.locale-fr #neden .nd-nw{white-space:normal}.locale-fr #neden .nd-head>*{min-width:0}}

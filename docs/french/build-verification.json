@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "existing": 182,
+  "french": 53,
+  "articles": 42,
+  "fixed": 9,
+  "legal": 2,
+  "totalCanonical": 235,
+  "sourceRouteCoverage": 182
+}

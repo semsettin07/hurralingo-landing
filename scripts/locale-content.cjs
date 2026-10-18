@@ -34,4 +34,6 @@ const extraOverrides={
 Object.assign(extraOverrides.en,{'yaş':'years','Yetişkin':'Adults','Yetişkinler':'Adults','4 yaştan yetişkine':'Ages 4 to adults','Canlı online dil okulu':'Live online language school'});
 Object.assign(extraOverrides.de,{'yaş':'Jahre','Yetişkin':'Erwachsene','Yetişkinler':'Erwachsene','4 yaştan yetişkine':'Ab 4 Jahren bis ins Erwachsenenalter','Canlı online dil okulu':'Live-Online-Sprachschule'});
 Object.assign(extraOverrides.az,{'yaş':'yaş','Yetişkin':'Böyüklər','Yetişkinler':'Böyüklər','4 yaştan yetişkine':'4 yaşdan böyüklərə qədər','Canlı online dil okulu':'Canlı onlayn dil məktəbi'});
+const french=require('./french-content.cjs');
+locales.fr=french.locale;pricing.fr=french.pricing;pageTitles.fr=french.pageTitles;pageHeadings.fr=french.headings;extraOverrides.fr=french.overrides;
 module.exports={fixed,languages,locales,overrides,pricing,pageTitles,pageHeadings,extraOverrides};

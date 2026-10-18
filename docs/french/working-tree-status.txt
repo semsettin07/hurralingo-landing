@@ -1,0 +1,308 @@
+ M assets/auto-language.js
+ M assets/i18n/pricing-az.js
+ M assets/i18n/pricing-de.js
+ M assets/i18n/pricing-en.js
+ M assets/i18n/pricing-ui.js
+ M assets/i18n/site-az.js
+ M assets/i18n/site-de.js
+ M assets/i18n/site-en.js
+ M az.html
+ M az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/index.html
+ M az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/index.html
+ M az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/index.html
+ M az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/index.html
+ M az/blog/6-ayda-yeni-dil-macera-anatomiyasi/index.html
+ M az/blog/alman-dilini-oyrenmek-niye-vacibdir/index.html
+ M az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/index.html
+ M az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/index.html
+ M az/blog/common-challenges-in-foreign-language-education-and-their-solutions/index.html
+ M az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/index.html
+ M az/blog/dil-tehsili-nezeriyyeleri/index.html
+ M az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/index.html
+ M az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/index.html
+ M az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/index.html
+ M az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/index.html
+ M az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/index.html
+ M az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/index.html
+ M az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/index.html
+ M az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/index.html
+ M az/blog/index.html
+ M az/blog/motivation-and-goal-setting-in-active-language-learning/index.html
+ M az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/index.html
+ M az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/index.html
+ M az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/index.html
+ M az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/index.html
+ M az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/index.html
+ M az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/index.html
+ M az/blog/rus-dili-usaqlar-ucun/index.html
+ M az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/index.html
+ M az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/index.html
+ M az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/index.html
+ M az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/index.html
+ M az/blog/usaqlarin-dil-tehsilinde-oyunlar/index.html
+ M az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/index.html
+ M az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/index.html
+ M az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/index.html
+ M az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/index.html
+ M az/dersler/index.html
+ M az/elaqe/index.html
+ M az/index.html
+ M az/korporativ/index.html
+ M az/muellimler/index.html
+ M az/qiymetler/index.html
+ M az/reyler/index.html
+ M az/tehsil/index.html
+ M blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/index.html
+ M blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/index.html
+ M blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/index.html
+ M blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/index.html
+ M blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/index.html
+ M blog/almanca-ogrenmek-neden-onemli/index.html
+ M blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/index.html
+ M blog/cocuklar-icin-rusca/index.html
+ M blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/index.html
+ M blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/index.html
+ M blog/cocuklarin-dil-egitiminde-oyun/index.html
+ M blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/index.html
+ M blog/dil-egitimi-teorileri/index.html
+ M blog/dil-egitiminde-film-ve-dizi/index.html
+ M blog/dil-ogrenmede-motivasyon-ve-hedef/index.html
+ M blog/dunyadan-yilbasi-gelenekleri/index.html
+ M blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/index.html
+ M blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/index.html
+ M blog/evde-pratik-ingilizce/index.html
+ M blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/index.html
+ M blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/index.html
+ M blog/index.html
+ M blog/ispanyolca-mi-almanca-mi/index.html
+ M blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/index.html
+ M blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/index.html
+ M blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/index.html
+ M blog/online-dil-dersleri/index.html
+ M blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/index.html
+ M blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/index.html
+ M blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/index.html
+ M blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/index.html
+ M blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/index.html
+ M blog/yaz-tatilinde-online-yabanci-dil/index.html
+ M blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/index.html
+ M blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/index.html
+ M content/i18n/canonical-all.json
+ M content/i18n/redirects.json
+ M content/i18n/routes.json
+ M de.html
+ M de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/index.html
+ M de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/index.html
+ M de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/index.html
+ M de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/index.html
+ M de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/index.html
+ M de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/index.html
+ M de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/index.html
+ M de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/index.html
+ M de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/index.html
+ M de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/index.html
+ M de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/index.html
+ M de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/index.html
+ M de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/index.html
+ M de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/index.html
+ M de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/index.html
+ M de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/index.html
+ M de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/index.html
+ M de/blog/index.html
+ M de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/index.html
+ M de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/index.html
+ M de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/index.html
+ M de/blog/motivation-und-ziel-beim-sprachenlernen/index.html
+ M de/blog/neujahrstraditionen-aus-aller-welt/index.html
+ M de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/index.html
+ M de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/index.html
+ M de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/index.html
+ M de/blog/praktisches-englisch-zu-hause-englische-lernspiele/index.html
+ M de/blog/russisch-fur-kinder/index.html
+ M de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/index.html
+ M de/blog/spiele-im-sprachunterricht-von-kindern/index.html
+ M de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/index.html
+ M de/blog/sprachpadagogiktheorien/index.html
+ M de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/index.html
+ M de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/index.html
+ M de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/index.html
+ M de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/index.html
+ M de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/index.html
+ M de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/index.html
+ M de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/index.html
+ M de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/index.html
+ M de/erfahrungen/index.html
+ M de/index.html
+ M de/kontakt/index.html
+ M de/kurse/index.html
+ M de/lehrkraefte/index.html
+ M de/lernkonzept/index.html
+ M de/preise/index.html
+ M de/unternehmen/index.html
+ M derslerimiz/index.html
+ M docs/auto-language/fix-verification.json
+ M docs/localization/az-home-1440.png
+ M docs/localization/az-home-390.png
+ M docs/localization/browser-verification.json
+ M docs/localization/de-home-1440.png
+ M docs/localization/de-home-390.png
+ M docs/localization/en-home-1440.png
+ M docs/localization/en-home-390.png
+ M docs/localization/static-verification.json
+ M docs/phase-1c/production-package-verification.json
+ M docs/phase-1c/static-verification.json
+ M egitimmodelimiz/index.html
+ M en.html
+ M en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/index.html
+ M en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/index.html
+ M en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/index.html
+ M en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/index.html
+ M en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/index.html
+ M en/blog/common-challenges-in-foreign-language-education-and-their-solutions/index.html
+ M en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/index.html
+ M en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/index.html
+ M en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/index.html
+ M en/blog/games-in-children-s-language-education/index.html
+ M en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/index.html
+ M en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/index.html
+ M en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/index.html
+ M en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/index.html
+ M en/blog/index.html
+ M en/blog/is-it-possible-to-speak-english-in-3-minutes/index.html
+ M en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/index.html
+ M en/blog/language-education-theories/index.html
+ M en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/index.html
+ M en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/index.html
+ M en/blog/motivation-and-goal-in-language-learning/index.html
+ M en/blog/motivation-and-goal-setting-in-active-language-learning/index.html
+ M en/blog/new-year-s-traditions-from-around-the-world/index.html
+ M en/blog/online-foreign-language-for-children-during-summer-vacation/index.html
+ M en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/index.html
+ M en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/index.html
+ M en/blog/practical-english-at-home-educational-english-games/index.html
+ M en/blog/russian-for-kids/index.html
+ M en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/index.html
+ M en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/index.html
+ M en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/index.html
+ M en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/index.html
+ M en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/index.html
+ M en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/index.html
+ M en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/index.html
+ M en/blog/when-does-real-progress-begin-in-online-language-lessons/index.html
+ M en/blog/which-language-to-choose-for-your-child-spanish-or-german/index.html
+ M en/blog/why-is-learning-german-important/index.html
+ M en/contact/index.html
+ M en/corporate/index.html
+ M en/education/index.html
+ M en/fees/index.html
+ M en/index.html
+ M en/lessons/index.html
+ M en/teachers/index.html
+ M en/testimonials/index.html
+ M iletisim/index.html
+ M index.html
+ M kurumsal/index.html
+ M ogretmenlerimiz/index.html
+ M package.json
+ M referanslarimiz/index.html
+ M scripts/build-locales.cjs
+ M scripts/check-auto-language.cjs
+ M scripts/check-pricing.cjs
+ M scripts/locale-content.cjs
+ M scripts/package-preview.cjs
+ M sitemap.xml
+ M ucretler/index.html
+?? HURRALINGO-FRENCH-LANGUAGE-IMPLEMENTATION-REPORT.md
+?? assets/i18n/pricing-fr.js
+?? assets/i18n/pricing-ui-fr.js
+?? assets/i18n/site-fr.js
+?? assets/site-fr.css
+?? content/i18n/fr-blocks.json
+?? content/i18n/fr-editorial.json
+?? content/i18n/fr.json
+?? content/i18n/french-catalog.json
+?? content/i18n/french-legal-sources.json
+?? content/i18n/french-routes.json
+?? docs/french/baseline.json
+?? docs/french/browser-verification.json
+?? docs/french/build-verification.json
+?? docs/french/completion-verification.json
+?? docs/french/editorial-recheck.json
+?? docs/french/inventory.json
+?? docs/french/language-verification.json
+?? docs/french/missing-translations.json
+?? docs/french/package-verification.json
+?? docs/french/screenshots/home-1440.png
+?? docs/french/screenshots/home-390-viewport.png
+?? docs/french/screenshots/home-390.png
+?? docs/french/screenshots/pricing-1440-viewport.png
+?? docs/french/static-verification.json
+?? docs/french/translation-block-issues.json
+?? docs/french/translation-copy-audit.json
+?? docs/french/translation-preparation.json
+?? docs/french/working-tree-status.txt
+?? docs/localization/fr-home-1440.png
+?? docs/localization/fr-home-390.png
+?? fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/index.html
+?? fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/index.html
+?? fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/index.html
+?? fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/index.html
+?? fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/index.html
+?? fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/index.html
+?? fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/index.html
+?? fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/index.html
+?? fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/index.html
+?? fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/index.html
+?? fr/blog/apprendre-une-langue-motivation-et-objectifs/index.html
+?? fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/index.html
+?? fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/index.html
+?? fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/index.html
+?? fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/index.html
+?? fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/index.html
+?? fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/index.html
+?? fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/index.html
+?? fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/index.html
+?? fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/index.html
+?? fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/index.html
+?? fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/index.html
+?? fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/index.html
+?? fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/index.html
+?? fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/index.html
+?? fr/blog/index.html
+?? fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/index.html
+?? fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/index.html
+?? fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/index.html
+?? fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/index.html
+?? fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/index.html
+?? fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/index.html
+?? fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/index.html
+?? fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/index.html
+?? fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/index.html
+?? fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/index.html
+?? fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/index.html
+?? fr/blog/pourquoi-apprendre-l-allemand/index.html
+?? fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/index.html
+?? fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/index.html
+?? fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/index.html
+?? fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/index.html
+?? fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/index.html
+?? fr/conditions-generales/index.html
+?? fr/confidentialite/index.html
+?? fr/contact/index.html
+?? fr/cours/index.html
+?? fr/enseignants/index.html
+?? fr/entreprises/index.html
+?? fr/index.html
+?? fr/pedagogie/index.html
+?? fr/tarifs/index.html
+?? fr/temoignages/index.html
+?? scripts/build-french.cjs
+?? scripts/check-french-browser.cjs
+?? scripts/check-french-packages.cjs
+?? scripts/check-french.cjs
+?? scripts/french-blocks.cjs
+?? scripts/french-content.cjs
+?? scripts/french-segments.cjs
+?? scripts/prepare-french-blocks.cjs
+?? scripts/prepare-french-translations.cjs
+?? scripts/prepare-french.cjs

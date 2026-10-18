@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "minimumSourceSegmentLength": 25,
+  "unchangedSourceText": [
+    {
+      "route": "/fr/enseignants/",
+      "text": "J. Luis Fernandez Salazar",
+      "allowed": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "text": "Alles Gute zum Vatertag, Papa!",
+      "allowed": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "text": "¡Feliz Día del Padre, papá!",
+      "allowed": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "text": "Thank you for everything.",
+      "allowed": true
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "text": "Johann Wolfgang von Goethe",
+      "allowed": true
+    }
+  ],
+  "limitations": "Exact text comparison; not a substitute for independent native French proofreading."
+}

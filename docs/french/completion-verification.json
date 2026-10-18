@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "head": "64a00d50da34e8c0b32a1915d8d2d7d68c89bb63",
+  "branch": "main",
+  "staged": [],
+  "canonicalPages": 235,
+  "frenchPages": 53,
+  "deploymentPerformed": false,
+  "checks": {
+    "static": {
+      "pass": true,
+      "file": "docs/french/static-verification.json"
+    },
+    "browser": {
+      "pass": true,
+      "file": "docs/french/browser-verification.json"
+    },
+    "language": {
+      "pass": true,
+      "file": "docs/french/language-verification.json"
+    },
+    "package": {
+      "pass": true,
+      "file": "docs/french/package-verification.json"
+    }
+  }
+}

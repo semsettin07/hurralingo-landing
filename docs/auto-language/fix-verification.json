@@ -1,5 +1,5 @@
 {
-  "origin": "http://127.0.0.1:8029",
+  "origin": "http://127.0.0.1:8031",
   "pass": true,
   "scenarios": [
     {
@@ -40,25 +40,25 @@
     },
     {
       "name": "France/French",
-      "expected": "/en/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
     {
       "name": "France/German",
-      "expected": "/en/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
     {
       "name": "France/English",
-      "expected": "/en/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
     {
       "name": "France/Turkish",
-      "expected": "/en/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
@@ -76,7 +76,7 @@
     },
     {
       "name": "Ordered preferences",
-      "expected": "/az/",
+      "expected": "/fr/",
       "countryRequests": 1,
       "navigations": 2
     },
@@ -112,9 +112,9 @@
     },
     {
       "name": "Empty browser list",
-      "expected": "/",
+      "expected": "/fr/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Empty language tag",
@@ -130,9 +130,9 @@
     },
     {
       "name": "Other country/French",
-      "expected": "/",
+      "expected": "/fr/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Austria country",
@@ -201,6 +201,36 @@
       "navigations": 2
     },
     {
+      "name": "France explicit Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Saved French overrides Germany",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French cookie overrides Germany",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French Canadian browser/unknown country",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French explicit URL",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
       "name": "France cookie-only English",
       "expected": "/en/",
       "countryRequests": 0,
@@ -250,9 +280,9 @@
     },
     {
       "name": "Country fails/French",
-      "expected": "/",
+      "expected": "/fr/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Country fails/English",
@@ -268,9 +298,9 @@
     },
     {
       "name": "Country times out/French",
-      "expected": "/",
+      "expected": "/fr/",
       "countryRequests": 1,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Country HTTP error",
@@ -292,9 +322,9 @@
     },
     {
       "name": "AbortController unavailable",
-      "expected": "/",
+      "expected": "/fr/",
       "countryRequests": 0,
-      "navigations": 1
+      "navigations": 2
     },
     {
       "name": "Tracking query/hash",
@@ -389,36 +419,28 @@
   "expectedCountryErrors": [
     {
       "text": "Failed to load resource: net::ERR_FAILED",
-      "url": "http://127.0.0.1:8029/api/country"
+      "url": "http://127.0.0.1:8031/api/country"
     },
     {
       "text": "Failed to load resource: net::ERR_FAILED",
-      "url": "http://127.0.0.1:8029/api/country"
+      "url": "http://127.0.0.1:8031/api/country"
     },
     {
       "text": "Failed to load resource: net::ERR_FAILED",
-      "url": "http://127.0.0.1:8029/api/country"
+      "url": "http://127.0.0.1:8031/api/country"
     },
     {
       "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
-      "url": "http://127.0.0.1:8029/api/country"
+      "url": "http://127.0.0.1:8031/api/country"
     },
     {
       "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
-      "url": "http://127.0.0.1:8029/api/country"
+      "url": "http://127.0.0.1:8031/api/country"
     }
   ],
-  "countryRequests": 39,
+  "countryRequests": 40,
   "lineEndingNormalizations": [
-    "sitemap.xml",
-    "assets/site-locales.css",
-    "assets/i18n/pricing-az.js",
-    "assets/i18n/pricing-de.js",
-    "assets/i18n/pricing-en.js",
-    "assets/i18n/pricing-ui.js",
-    "assets/i18n/site-az.js",
-    "assets/i18n/site-de.js",
-    "assets/i18n/site-en.js"
+    "assets/site-locales.css"
   ],
   "countryTrustChecks": {
     "headerAndEnvironmentCases": 8,

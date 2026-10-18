@@ -1,0 +1,455 @@
+{
+  "origin": "http://127.0.0.1:8031",
+  "pass": true,
+  "scenarios": [
+    {
+      "name": "Germany/German",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/Turkish",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/English",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Azerbaijan/Azeri",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Azerbaijan/Turkish",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "USA/English",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/French",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/German",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/English",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "France/Turkish",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Germany/French",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "USA/Turkish",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Ordered preferences",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "BCP47 extensions",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Invalid tag skipped",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/browser supported",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/English",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "No country/no language",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Empty browser list",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Empty language tag",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Other country/German",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Other country/French",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Austria country",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "GB country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "US country",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "CA country/German",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AU country/Turkish",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "AZ country",
+      "expected": "/az/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "TR country",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Saved German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Saved Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Saved English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France explicit English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France explicit Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Saved French overrides Germany",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French cookie overrides Germany",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "French Canadian browser/unknown country",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "French explicit URL",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "France cookie-only English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France explicit German",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "France direct English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Cookie-only Turkish",
+      "expected": "/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Cookie-only English",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Unsupported saved choice",
+      "expected": "/",
+      "countryRequests": 1,
+      "navigations": 1
+    },
+    {
+      "name": "Storage blocked",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country fails/German",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country fails/French",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country fails/English",
+      "expected": "/en/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country times out/German",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country times out/French",
+      "expected": "/fr/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country HTTP error",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Country invalid JSON",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Fetch unavailable",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "AbortController unavailable",
+      "expected": "/fr/",
+      "countryRequests": 0,
+      "navigations": 2
+    },
+    {
+      "name": "Tracking query/hash",
+      "expected": "/de/",
+      "countryRequests": 1,
+      "navigations": 2
+    },
+    {
+      "name": "Direct /en/",
+      "expected": "/en/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/",
+      "expected": "/de/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /az/",
+      "expected": "/az/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /ucretler/",
+      "expected": "/ucretler/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /ogretmenlerimiz/",
+      "expected": "/ogretmenlerimiz/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /en/fees/",
+      "expected": "/en/fees/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "expected": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "countryRequests": 0,
+      "navigations": 1
+    },
+    {
+      "name": "Direct /blog/",
+      "expected": "/blog/",
+      "countryRequests": 0,
+      "navigations": 1
+    }
+  ],
+  "menus": [
+    {
+      "width": 1440,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 1440,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    },
+    {
+      "width": 390,
+      "source": "/de/",
+      "target": "/"
+    },
+    {
+      "width": 390,
+      "source": "/de/preise/",
+      "target": "/ucretler/"
+    },
+    {
+      "width": 390,
+      "source": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+      "target": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/"
+    }
+  ],
+  "seoPages": 182,
+  "errors": [],
+  "consoleErrors": [],
+  "expectedCountryErrors": [
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:8031/api/country"
+    },
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:8031/api/country"
+    },
+    {
+      "text": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:8031/api/country"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:8031/api/country"
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://127.0.0.1:8031/api/country"
+    }
+  ],
+  "countryRequests": 40,
+  "lineEndingNormalizations": [
+    "assets/site-locales.css"
+  ],
+  "countryTrustChecks": {
+    "headerAndEnvironmentCases": 8,
+    "perRequestIsolationCases": 7,
+    "pass": true
+  },
+  "diagnosisCommandChecks": {
+    "cases": 8,
+    "privateTraceOmitted": true,
+    "pass": true
+  }
+}

@@ -1,0 +1,812 @@
+{
+  "groups": [
+    {
+      "id": "/",
+      "kind": "fixed",
+      "sourceRoute": "/en/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/",
+        "en": "/en/",
+        "de": "/de/",
+        "az": "/az/",
+        "fr": "/fr/"
+      },
+      "route": "/fr/",
+      "title": "École de langues en ligne",
+      "description": "Des cours de langues en ligne pour les enfants, les adolescents et les adultes. Rencontrez votre enseignant lors d’un cours d’essai gratuit."
+    },
+    {
+      "id": "/egitimmodelimiz/",
+      "kind": "fixed",
+      "sourceRoute": "/en/education/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/egitimmodelimiz/",
+        "en": "/en/education/",
+        "de": "/de/lernkonzept/",
+        "az": "/az/tehsil/",
+        "fr": "/fr/pedagogie/"
+      },
+      "route": "/fr/pedagogie/",
+      "title": "Notre pédagogie",
+      "description": "Découvrez la pédagogie Hurra Lingo : des cours en direct, une pratique régulière et un accompagnement adapté à l’âge et au niveau de chaque apprenant."
+    },
+    {
+      "id": "/derslerimiz/",
+      "kind": "fixed",
+      "sourceRoute": "/en/lessons/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/derslerimiz/",
+        "en": "/en/lessons/",
+        "de": "/de/kurse/",
+        "az": "/az/dersler/",
+        "fr": "/fr/cours/"
+      },
+      "route": "/fr/cours/",
+      "title": "Nos cours de langues",
+      "description": "Découvrez nos cours de langues pour les enfants dès 4 ans, les adolescents et les adultes, en individuel ou en groupe."
+    },
+    {
+      "id": "/ogretmenlerimiz/",
+      "kind": "fixed",
+      "sourceRoute": "/en/teachers/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/ogretmenlerimiz/",
+        "en": "/en/teachers/",
+        "de": "/de/lehrkraefte/",
+        "az": "/az/muellimler/",
+        "fr": "/fr/enseignants/"
+      },
+      "route": "/fr/enseignants/",
+      "title": "Nos enseignants",
+      "description": "Faites connaissance avec les enseignants Hurra Lingo et explorez les langues qu’ils enseignent. Réservez votre cours d’essai gratuit."
+    },
+    {
+      "id": "/blog/",
+      "kind": "fixed",
+      "sourceRoute": "/en/blog/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/blog/",
+        "en": "/en/blog/",
+        "de": "/de/blog/",
+        "az": "/az/blog/",
+        "fr": "/fr/blog/"
+      },
+      "route": "/fr/blog/",
+      "title": "Le blog Hurra Lingo",
+      "description": "Conseils, activités et articles pour accompagner l’apprentissage des langues à tout âge, à la maison et en cours."
+    },
+    {
+      "id": "/ucretler/",
+      "kind": "fixed",
+      "sourceRoute": "/en/fees/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/ucretler/",
+        "en": "/en/fees/",
+        "de": "/de/preise/",
+        "az": "/az/qiymetler/",
+        "fr": "/fr/tarifs/"
+      },
+      "route": "/fr/tarifs/",
+      "title": "Tarifs des cours 2027",
+      "description": "Comparez les formules et calculez le tarif de vos cours en livres turques. Retrouvez les modalités d’abonnement et de paiement pour 2027."
+    },
+    {
+      "id": "/referanslarimiz/",
+      "kind": "fixed",
+      "sourceRoute": "/en/testimonials/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/referanslarimiz/",
+        "en": "/en/testimonials/",
+        "de": "/de/erfahrungen/",
+        "az": "/az/reyler/",
+        "fr": "/fr/temoignages/"
+      },
+      "route": "/fr/temoignages/",
+      "title": "Témoignages des familles",
+      "description": "Découvrez les témoignages de parents et de familles qui apprennent avec Hurra Lingo."
+    },
+    {
+      "id": "/kurumsal/",
+      "kind": "fixed",
+      "sourceRoute": "/en/corporate/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/kurumsal/",
+        "en": "/en/corporate/",
+        "de": "/de/unternehmen/",
+        "az": "/az/korporativ/",
+        "fr": "/fr/entreprises/"
+      },
+      "route": "/fr/entreprises/",
+      "title": "Formations linguistiques en entreprise",
+      "description": "Des formations linguistiques adaptées aux objectifs des équipes, des entreprises, des établissements scolaires et des familles."
+    },
+    {
+      "id": "/iletisim/",
+      "kind": "fixed",
+      "sourceRoute": "/en/contact/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "tr": "/iletisim/",
+        "en": "/en/contact/",
+        "de": "/de/kontakt/",
+        "az": "/az/elaqe/",
+        "fr": "/fr/contact/"
+      },
+      "route": "/fr/contact/",
+      "title": "Nous contacter",
+      "description": "Contactez Hurra Lingo pour en savoir plus sur les cours, les programmes et le cours d’essai gratuit."
+    },
+    {
+      "id": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "kind": "article",
+      "sourceRoute": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
+        "en": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+        "de": "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
+        "az": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
+        "fr": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/"
+      },
+      "title": "Cours de langues après les bulletins : un guide pour accompagner votre enfant",
+      "description": "Comment profiter de la période des bulletins pour choisir un cours de langues en ligne adapté à l’âge, au niveau et aux besoins de votre enfant.",
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/"
+    },
+    {
+      "id": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "kind": "article",
+      "sourceRoute": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/",
+        "en": "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
+        "de": "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/",
+        "az": "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
+        "fr": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/"
+      },
+      "title": "Apprendre une langue avec un emploi du temps chargé : 5 étapes",
+      "description": "Des habitudes simples et des cours flexibles pour intégrer l’apprentissage d’une langue à un quotidien déjà bien rempli.",
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/"
+    },
+    {
+      "id": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "kind": "article",
+      "sourceRoute": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/",
+        "en": "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/",
+        "de": "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/",
+        "az": "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
+        "fr": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/"
+      },
+      "title": "Aïd al-Adha : comment entretenir l’anglais de votre enfant pendant les vacances ?",
+      "description": "Des idées pour préserver les habitudes d’apprentissage de l’anglais pendant les vacances de l’Aïd al-Adha, tout en laissant place au repos.",
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/"
+    },
+    {
+      "id": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "kind": "article",
+      "sourceRoute": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/",
+        "en": "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/",
+        "de": "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/",
+        "az": "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/",
+        "fr": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/"
+      },
+      "title": "Le 19 mai, la jeunesse et l’importance de l’apprentissage des langues",
+      "description": "À l’occasion du 19 mai, explorez les liens entre jeunesse, ouverture au monde et apprentissage des langues.",
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/"
+    },
+    {
+      "id": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "kind": "article",
+      "sourceRoute": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/",
+        "en": "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/",
+        "de": "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/",
+        "az": "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/",
+        "fr": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/"
+      },
+      "title": "Au cœur de l’éducation : une mère, une première enseignante ✨",
+      "description": "Pour la fête des Mères, découvrons comment les premiers mots et les échanges en famille accompagnent l’apprentissage des enfants.",
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/"
+    },
+    {
+      "id": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "kind": "article",
+      "sourceRoute": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/",
+        "en": "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/",
+        "de": "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/",
+        "az": "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/",
+        "fr": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/"
+      },
+      "title": "Une nouvelle langue en 6 mois : les étapes d’une aventure",
+      "description": "Comment se construit l’apprentissage d’une langue au fil des mois ? Découvrez le rôle de la pratique, de la régularité et de l’accompagnement.",
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/"
+    },
+    {
+      "id": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "kind": "article",
+      "sourceRoute": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/",
+        "en": "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/",
+        "de": "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/",
+        "az": "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/",
+        "fr": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/"
+      },
+      "title": "Le 23 avril : célébrer les enfants et leur ouverture aux langues",
+      "description": "La Journée de la souveraineté nationale et des enfants invite à découvrir le rôle des langues dans la créativité et l’ouverture au monde.",
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/"
+    },
+    {
+      "id": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "kind": "article",
+      "sourceRoute": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/",
+        "en": "/en/blog/is-it-possible-to-speak-english-in-3-minutes/",
+        "de": "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/",
+        "az": "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/",
+        "fr": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/"
+      },
+      "title": "Peut-on vraiment parler anglais en 3 minutes ?",
+      "description": "Un clin d’œil au 1er avril pour rappeler ce qui permet réellement de progresser en anglais : une pratique régulière et des méthodes adaptées.",
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/"
+    },
+    {
+      "id": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "kind": "article",
+      "sourceRoute": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/",
+        "en": "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/",
+        "de": "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/",
+        "az": "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/",
+        "fr": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/"
+      },
+      "title": "Apprendre une langue à l’âge adulte : il n’est jamais trop tard",
+      "description": "Objectifs réalistes, motivation et régularité : des pistes pour apprendre une langue à l’âge adulte, malgré les contraintes du quotidien.",
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/"
+    },
+    {
+      "id": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "kind": "article",
+      "sourceRoute": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/",
+        "en": "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/",
+        "de": "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/",
+        "az": "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/",
+        "fr": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/"
+      },
+      "title": "L’histoire de la Saint-Valentin : pourquoi le 14 février célèbre-t-il l’amour ?",
+      "description": "Un voyage dans l’histoire de la Saint-Valentin, de ses origines à la place qu’elle occupe aujourd’hui dans différentes cultures.",
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/"
+    },
+    {
+      "id": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "kind": "article",
+      "sourceRoute": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/",
+        "en": "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+        "de": "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/",
+        "az": "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/",
+        "fr": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/"
+      },
+      "title": "« Love Languages » : une campagne de la Saint-Valentin pour petits et grands",
+      "description": "Retrouvez la présentation de cette campagne datée et les principes des cours de langues en ligne pour les enfants et les adultes.",
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/"
+    },
+    {
+      "id": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "kind": "article",
+      "sourceRoute": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/",
+        "en": "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/",
+        "de": "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/",
+        "az": "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/",
+        "fr": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/"
+      },
+      "title": "Apprendre tôt : chaque langue révèle de nouvelles aptitudes",
+      "description": "Comment l’apprentissage précoce des langues peut accompagner la curiosité, l’expression et le développement des compétences des enfants.",
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/"
+    },
+    {
+      "id": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "kind": "article",
+      "sourceRoute": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/",
+        "en": "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/",
+        "de": "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/",
+        "az": "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/",
+        "fr": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/"
+      },
+      "title": "Imaginer l’avenir : la science-fiction au service des langues",
+      "description": "Planètes, robots et récits d’aventure : découvrez comment les histoires de science-fiction peuvent nourrir l’imagination et la pratique des langues.",
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/"
+    },
+    {
+      "id": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "kind": "article",
+      "sourceRoute": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/",
+        "en": "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/",
+        "de": "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/",
+        "az": "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/",
+        "fr": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/"
+      },
+      "title": "Vacances de mi-année : accompagner votre enfant dans une nouvelle langue",
+      "description": "Des idées pour associer repos et apprentissage des langues pendant les vacances de mi-année, avec des cours en ligne adaptés aux enfants.",
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/"
+    },
+    {
+      "id": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "kind": "article",
+      "sourceRoute": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/",
+        "en": "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/",
+        "de": "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/",
+        "az": "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/",
+        "fr": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/"
+      },
+      "title": "Apprendre avec les contes d’hiver : quelle langue parlent les flocons ?",
+      "description": "Les contes d’hiver offrent un point de départ créatif pour découvrir du vocabulaire et éveiller la curiosité des enfants pour les langues.",
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/"
+    },
+    {
+      "id": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "kind": "article",
+      "sourceRoute": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/",
+        "en": "/en/blog/when-does-real-progress-begin-in-online-language-lessons/",
+        "de": "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/",
+        "az": "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/",
+        "fr": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/"
+      },
+      "title": "Cours de langues en ligne : quand les progrès deviennent-ils visibles ?",
+      "description": "Comprendre les premiers acquis, la répétition et le temps nécessaire pour accompagner durablement les progrès de votre enfant.",
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/"
+    },
+    {
+      "id": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "kind": "article",
+      "sourceRoute": "/blog/dunyadan-yilbasi-gelenekleri/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/dunyadan-yilbasi-gelenekleri/",
+        "en": "/en/blog/new-year-s-traditions-from-around-the-world/",
+        "de": "/de/blog/neujahrstraditionen-aus-aller-welt/",
+        "az": "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/",
+        "fr": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/"
+      },
+      "title": "Les traditions du Nouvel An à travers le monde",
+      "description": "Découvrez en famille les traditions du Nouvel An en Angleterre, en Allemagne, en France, en Espagne et en Russie.",
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/"
+    },
+    {
+      "id": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "kind": "article",
+      "sourceRoute": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/",
+        "en": "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/",
+        "de": "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/",
+        "az": "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/",
+        "fr": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/"
+      },
+      "title": "7 façons d’accompagner l’apprentissage des langues à la maison",
+      "description": "Jeux, échanges et habitudes quotidiennes : sept pistes pour soutenir votre enfant dans l’apprentissage d’une langue à la maison.",
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/"
+    },
+    {
+      "id": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "kind": "article",
+      "sourceRoute": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/",
+        "en": "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/",
+        "de": "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/",
+        "az": "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/",
+        "fr": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/"
+      },
+      "title": "Apprendre en jouant : la place du jeu dans les cours en ligne",
+      "description": "Découvrez comment le jeu, la participation et les échanges donnent du sens à l’apprentissage des langues chez les enfants.",
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/"
+    },
+    {
+      "id": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "kind": "article",
+      "sourceRoute": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/",
+        "en": "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
+        "de": "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
+        "az": "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
+        "fr": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/"
+      },
+      "title": "Grandir à l’ère numérique et prendre confiance dans une autre langue",
+      "description": "Comment accompagner les enfants du numérique pour qu’ils se sentent plus à l’aise lorsqu’ils découvrent et pratiquent une langue étrangère.",
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/"
+    },
+    {
+      "id": "/blog/almanca-ogrenmek-neden-onemli/",
+      "kind": "article",
+      "sourceRoute": "/blog/almanca-ogrenmek-neden-onemli/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/almanca-ogrenmek-neden-onemli/",
+        "en": "/en/blog/why-is-learning-german-important/",
+        "de": "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
+        "az": "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
+        "fr": "/fr/blog/pourquoi-apprendre-l-allemand/"
+      },
+      "title": "Pourquoi apprendre l’allemand ?",
+      "description": "Découvrez les raisons de s’intéresser à l’allemand et des pistes pour accompagner son apprentissage dès l’enfance.",
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/"
+    },
+    {
+      "id": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "kind": "article",
+      "sourceRoute": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/",
+        "en": "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
+        "de": "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
+        "az": "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
+        "fr": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/"
+      },
+      "title": "Petites habitudes, grands progrès pendant les vacances scolaires",
+      "description": "Comment de courts moments de pratique pendant les vacances scolaires peuvent entretenir les acquis et le plaisir d’apprendre une langue.",
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/"
+    },
+    {
+      "id": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "kind": "article",
+      "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+        "en": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+        "de": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+        "az": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+        "fr": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/"
+      },
+      "title": "🇹🇷 Le 29 octobre : éducation, liberté et envie d’apprendre des langues",
+      "description": "À l’occasion de la fête de la République turque, un regard sur l’éducation, la curiosité et l’ouverture à de nouvelles langues.",
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/"
+    },
+    {
+      "id": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "kind": "article",
+      "sourceRoute": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
+        "en": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
+        "de": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
+        "az": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
+        "fr": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/"
+      },
+      "title": "Hurra Lingo : apprendre une langue sans crainte et avec plaisir",
+      "description": "Créer un cadre rassurant, encourager les essais et faire place au jeu : des clés pour aider les enfants à oser parler une autre langue.",
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/"
+    },
+    {
+      "id": "/blog/cocuklar-icin-rusca/",
+      "kind": "article",
+      "sourceRoute": "/blog/cocuklar-icin-rusca/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/cocuklar-icin-rusca/",
+        "en": "/en/blog/russian-for-kids/",
+        "de": "/de/blog/russisch-fur-kinder/",
+        "az": "/az/blog/rus-dili-usaqlar-ucun/",
+        "fr": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/"
+      },
+      "title": "Le russe pour les enfants : une langue, un nouvel univers",
+      "description": "Un aperçu de l’apprentissage du russe à travers les jeux, la découverte culturelle et les échanges adaptés aux enfants.",
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/"
+    },
+    {
+      "id": "/blog/evde-pratik-ingilizce/",
+      "kind": "article",
+      "sourceRoute": "/blog/evde-pratik-ingilizce/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/evde-pratik-ingilizce/",
+        "en": "/en/blog/practical-english-at-home-educational-english-games/",
+        "de": "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
+        "az": "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
+        "fr": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/"
+      },
+      "title": "Pratiquer l’anglais à la maison : des jeux pour apprendre autrement",
+      "description": "Quatre jeux simples à partager à la maison pour enrichir le vocabulaire et encourager votre enfant à pratiquer l’anglais.",
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/"
+    },
+    {
+      "id": "/blog/online-dil-dersleri/",
+      "kind": "article",
+      "sourceRoute": "/blog/online-dil-dersleri/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/online-dil-dersleri/",
+        "en": "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/",
+        "de": "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/",
+        "az": "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/",
+        "fr": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/"
+      },
+      "title": "Comment les cours de langues en ligne peuvent-ils soutenir la réussite scolaire ?",
+      "description": "Découvrez les liens présentés entre l’apprentissage des langues, les habitudes de travail et les compétences mobilisées à l’école.",
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/"
+    },
+    {
+      "id": "/blog/ispanyolca-mi-almanca-mi/",
+      "kind": "article",
+      "sourceRoute": "/blog/ispanyolca-mi-almanca-mi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/ispanyolca-mi-almanca-mi/",
+        "en": "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/",
+        "de": "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/",
+        "az": "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/",
+        "fr": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/"
+      },
+      "title": "Espagnol ou allemand : quelle langue choisir pour votre enfant ?",
+      "description": "Des repères pour réfléchir au choix d’une langue en tenant compte des intérêts, des projets et du parcours de votre enfant.",
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/"
+    },
+    {
+      "id": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "kind": "article",
+      "sourceRoute": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/",
+        "en": "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/",
+        "de": "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/",
+        "az": "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/",
+        "fr": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/"
+      },
+      "title": "Apprendre une deuxième langue dès l’enfance : 5 bénéfices",
+      "description": "Découvrez cinq dimensions du développement des enfants que l’apprentissage précoce d’une deuxième langue peut accompagner.",
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/"
+    },
+    {
+      "id": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "kind": "article",
+      "sourceRoute": "/blog/cocuklarin-dil-egitiminde-oyun/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/cocuklarin-dil-egitiminde-oyun/",
+        "en": "/en/blog/games-in-children-s-language-education/",
+        "de": "/de/blog/spiele-im-sprachunterricht-von-kindern/",
+        "az": "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/",
+        "fr": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/"
+      },
+      "title": "Le rôle du jeu dans l’apprentissage des langues chez l’enfant",
+      "description": "Pourquoi les jeux, les histoires et les interactions offrent-ils aux enfants des occasions naturelles de découvrir et d’utiliser une langue ?",
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/"
+    },
+    {
+      "id": "/blog/dil-egitimi-teorileri/",
+      "kind": "article",
+      "sourceRoute": "/blog/dil-egitimi-teorileri/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/dil-egitimi-teorileri/",
+        "en": "/en/blog/language-education-theories/",
+        "de": "/de/blog/sprachpadagogiktheorien/",
+        "az": "/az/blog/dil-tehsili-nezeriyyeleri/",
+        "fr": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/"
+      },
+      "title": "Comprendre les théories de l’apprentissage des langues",
+      "description": "Un aperçu des approches qui expliquent l’acquisition des langues et de la place de l’environnement, de la pratique et de la motivation.",
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/"
+    },
+    {
+      "id": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "kind": "article",
+      "sourceRoute": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/dil-ogrenmede-motivasyon-ve-hedef/",
+        "en": "/en/blog/motivation-and-goal-in-language-learning/",
+        "de": "/de/blog/motivation-und-ziel-beim-sprachenlernen/",
+        "az": "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/",
+        "fr": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/"
+      },
+      "title": "Apprendre une langue : motivation et objectifs",
+      "description": "Des pistes pour clarifier vos motivations, fixer des objectifs et suivre vos progrès dans l’apprentissage d’une langue.",
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/"
+    },
+    {
+      "id": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "kind": "article",
+      "sourceRoute": "/blog/yaz-tatilinde-online-yabanci-dil/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/yaz-tatilinde-online-yabanci-dil/",
+        "en": "/en/blog/online-foreign-language-for-children-during-summer-vacation/",
+        "de": "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/",
+        "az": "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/",
+        "fr": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/"
+      },
+      "title": "Vacances d’été : apprendre une langue en ligne quand on est enfant",
+      "description": "Comment profiter des vacances d’été pour découvrir une langue et entretenir une pratique régulière, depuis la maison.",
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/"
+    },
+    {
+      "id": "/blog/dil-egitiminde-film-ve-dizi/",
+      "kind": "article",
+      "sourceRoute": "/blog/dil-egitiminde-film-ve-dizi/",
+      "sourceLanguage": "tr",
+      "siblings": {
+        "tr": "/blog/dil-egitiminde-film-ve-dizi/",
+        "en": "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/",
+        "de": "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/",
+        "az": "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/",
+        "fr": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/"
+      },
+      "title": "Films et séries : quelle place dans l’apprentissage des langues ?",
+      "description": "Langue du quotidien, contexte culturel et compréhension orale : découvrez ce que les films et séries peuvent apporter à votre apprentissage.",
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/"
+    },
+    {
+      "id": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "kind": "article",
+      "sourceRoute": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "en": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
+        "fr": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/"
+      },
+      "title": "Fête des Pères : de petits messages dans différentes langues",
+      "description": "Des messages courts et une activité de carte pour découvrir plusieurs langues tout en exprimant son affection à l’occasion de la fête des Pères.",
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/"
+    },
+    {
+      "id": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "kind": "article",
+      "sourceRoute": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "en": "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+        "az": "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/",
+        "fr": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/"
+      },
+      "title": "Apprendre une langue : les difficultés courantes et comment les surmonter",
+      "description": "Motivation, pratique et organisation : des pistes pour identifier les difficultés de l’apprentissage des langues et avancer pas à pas.",
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/"
+    },
+    {
+      "id": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "kind": "article",
+      "sourceRoute": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+      "sourceLanguage": "en",
+      "siblings": {
+        "en": "/en/blog/motivation-and-goal-setting-in-active-language-learning/",
+        "az": "/az/blog/motivation-and-goal-setting-in-active-language-learning/",
+        "fr": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/"
+      },
+      "title": "Apprendre activement une langue : motivation et objectifs",
+      "description": "Des stratégies pour entretenir votre motivation, définir des objectifs et apprécier vos progrès dans un apprentissage actif des langues.",
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/"
+    },
+    {
+      "id": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "kind": "article",
+      "sourceRoute": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+      "sourceLanguage": "de",
+      "siblings": {
+        "de": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
+        "fr": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/"
+      },
+      "title": "Fête des Pères : de petits messages en anglais pour de grands souvenirs",
+      "description": "Des phrases simples en anglais et une idée de carte pour aider les enfants à utiliser la langue dans un moment qui compte pour eux.",
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/"
+    },
+    {
+      "id": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "kind": "article",
+      "sourceRoute": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+      "sourceLanguage": "de",
+      "siblings": {
+        "de": "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
+        "fr": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/"
+      },
+      "title": "Cours de langues pendant les vacances : un guide pour les familles",
+      "description": "Comment préparer la suite de l’année et choisir des cours en ligne qui accompagnent les progrès de votre enfant pendant les vacances.",
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/"
+    },
+    {
+      "id": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "kind": "article",
+      "sourceRoute": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+      "sourceLanguage": "de",
+      "siblings": {
+        "de": "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/",
+        "fr": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/"
+      },
+      "title": "Une routine linguistique en 5 étapes pour les professionnels très occupés",
+      "description": "Une routine pensée pour concilier responsabilités professionnelles, vie de famille et pratique régulière d’une langue.",
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/"
+    },
+    {
+      "id": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "kind": "article",
+      "sourceRoute": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+      "sourceLanguage": "de",
+      "siblings": {
+        "de": "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/",
+        "fr": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/"
+      },
+      "title": "Des ponts entre les cultures : comment les langues élargissent notre horizon",
+      "description": "À l’occasion de la Journée mondiale de la diversité culturelle, découvrez comment les langues encouragent le dialogue et la rencontre.",
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/"
+    },
+    {
+      "id": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "kind": "article",
+      "sourceRoute": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+      "sourceLanguage": "de",
+      "siblings": {
+        "de": "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/",
+        "fr": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/"
+      },
+      "title": "Pour la fête des Mères, ouvrir à votre enfant le monde des langues",
+      "description": "Une réflexion sur les langues, les découvertes et les possibilités que les parents souhaitent transmettre à leurs enfants.",
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/"
+    }
+  ],
+  "legal": [
+    {
+      "route": "/fr/confidentialite/",
+      "title": "Politique de confidentialité",
+      "description": "Traduction française de la politique de confidentialité Hurra Lingo du 16 février 2026, avec accès au document anglais original.",
+      "source": 0
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "title": "Conditions générales",
+      "description": "Traduction française des conditions générales Hurra Lingo du 16 février 2026, avec accès au document anglais original.",
+      "source": 1
+    }
+  ]
+}

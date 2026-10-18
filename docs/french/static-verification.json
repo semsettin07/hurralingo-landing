@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "existingPages": 182,
+  "frenchPages": 53,
+  "articleBlocks": 1059,
+  "reciprocalAlternates": 1119,
+  "internalLinks": 4140,
+  "assetsPreserved": 158,
+  "preservedSourceText": [
+    {
+      "route": "/fr/enseignants/",
+      "text": "J. Luis Fernandez Salazar"
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "text": "Alles Gute zum Vatertag, Papa!"
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "text": "¡Feliz Día del Padre, papá!"
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "text": "Thank you for everything."
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "text": "Johann Wolfgang von Goethe"
+    }
+  ]
+}

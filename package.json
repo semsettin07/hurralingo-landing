@@ -4,7 +4,7 @@
   "scripts": {
     "site:build": "node scripts/build-site-tr.cjs && node scripts/build-locales.cjs",
     "locales:build": "node scripts/build-locales.cjs",
-    "site:check": "node scripts/check-site-tr.cjs && node scripts/check-locales.cjs",
+    "site:check": "node scripts/check-site-tr.cjs && node scripts/check-locales.cjs && node scripts/check-french.cjs",
     "locales:check": "node scripts/check-locales.cjs",
     "locales:browser": "node scripts/check-locales-browser.cjs",
     "language:check": "node scripts/check-auto-language.cjs",
@@ -17,7 +17,11 @@
     "pricing:build": "node scripts/build-pricing.cjs",
     "pricing:check": "node scripts/check-pricing.cjs",
     "pricing:browser": "node scripts/check-pricing-browser.cjs",
-    "preview": "node scripts/serve-local.cjs"
+    "preview": "node scripts/serve-local.cjs",
+    "french:build": "node scripts/build-french.cjs && node scripts/install-auto-language.cjs",
+    "french:check": "node scripts/check-french.cjs",
+    "french:browser": "node scripts/check-french-browser.cjs",
+    "french:package-check": "node scripts/check-french-packages.cjs"
   },
   "devDependencies": {
     "cheerio": "1.2.0",

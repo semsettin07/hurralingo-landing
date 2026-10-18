@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "reason": "Five viewport checks after final editorial correction of German-source Father’s Day article.",
+  "checks": [
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 360,
+      "pass": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 1024,
+      "pass": true
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 1440,
+      "pass": true
+    }
+  ]
+}

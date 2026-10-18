@@ -1,0 +1,1108 @@
+{
+  "pass": true,
+  "origin": "http://127.0.0.1:8031",
+  "responsive": [
+    {
+      "route": "/fr/",
+      "width": 360
+    },
+    {
+      "route": "/fr/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/",
+      "width": 390
+    },
+    {
+      "route": "/fr/",
+      "width": 768
+    },
+    {
+      "route": "/fr/pedagogie/",
+      "width": 768
+    },
+    {
+      "route": "/fr/pedagogie/",
+      "width": 390
+    },
+    {
+      "route": "/fr/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/pedagogie/",
+      "width": 360
+    },
+    {
+      "route": "/fr/pedagogie/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/cours/",
+      "width": 360
+    },
+    {
+      "route": "/fr/cours/",
+      "width": 390
+    },
+    {
+      "route": "/fr/pedagogie/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/cours/",
+      "width": 768
+    },
+    {
+      "route": "/fr/cours/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/cours/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/enseignants/",
+      "width": 360
+    },
+    {
+      "route": "/fr/enseignants/",
+      "width": 390
+    },
+    {
+      "route": "/fr/enseignants/",
+      "width": 768
+    },
+    {
+      "route": "/fr/enseignants/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/enseignants/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/tarifs/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/tarifs/",
+      "width": 768
+    },
+    {
+      "route": "/fr/tarifs/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/temoignages/",
+      "width": 360
+    },
+    {
+      "route": "/fr/tarifs/",
+      "width": 390
+    },
+    {
+      "route": "/fr/tarifs/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/temoignages/",
+      "width": 390
+    },
+    {
+      "route": "/fr/temoignages/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/entreprises/",
+      "width": 360
+    },
+    {
+      "route": "/fr/temoignages/",
+      "width": 768
+    },
+    {
+      "route": "/fr/entreprises/",
+      "width": 390
+    },
+    {
+      "route": "/fr/entreprises/",
+      "width": 768
+    },
+    {
+      "route": "/fr/entreprises/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/contact/",
+      "width": 360
+    },
+    {
+      "route": "/fr/contact/",
+      "width": 390
+    },
+    {
+      "route": "/fr/contact/",
+      "width": 768
+    },
+    {
+      "route": "/fr/temoignages/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/entreprises/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/contact/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "width": 360
+    },
+    {
+      "route": "/fr/contact/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/pourquoi-apprendre-l-allemand/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-motivation-et-objectifs/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/",
+      "width": 360
+    },
+    {
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/",
+      "width": 390
+    },
+    {
+      "route": "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/",
+      "width": 768
+    },
+    {
+      "route": "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/",
+      "width": 360
+    },
+    {
+      "route": "/fr/confidentialite/",
+      "width": 390
+    },
+    {
+      "route": "/fr/confidentialite/",
+      "width": 768
+    },
+    {
+      "route": "/fr/confidentialite/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "width": 360
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "width": 390
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "width": 768
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "width": 1024
+    },
+    {
+      "route": "/fr/confidentialite/",
+      "width": 360
+    },
+    {
+      "route": "/fr/conditions-generales/",
+      "width": 1440
+    },
+    {
+      "route": "/fr/confidentialite/",
+      "width": 1440
+    }
+  ],
+  "pricingCases": 300,
+  "menus": [
+    {
+      "width": 390,
+      "source": "/en/",
+      "target": "/fr/"
+    },
+    {
+      "width": 390,
+      "source": "/en/fees/",
+      "target": "/fr/tarifs/"
+    },
+    {
+      "width": 390,
+      "source": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "target": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/"
+    },
+    {
+      "width": 1440,
+      "source": "/en/",
+      "target": "/fr/"
+    },
+    {
+      "width": 1440,
+      "source": "/en/fees/",
+      "target": "/fr/tarifs/"
+    },
+    {
+      "width": 1440,
+      "source": "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
+      "target": "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/"
+    }
+  ],
+  "teacherFilters": 8,
+  "errors": [],
+  "brokenImages": [],
+  "responsiveFromPreviousRun": true,
+  "blogSearchAndFilter": true,
+  "videoModal": true,
+  "cookieSettings": true,
+  "copyFeedback": true,
+  "noJavaScriptRoot": true
+}

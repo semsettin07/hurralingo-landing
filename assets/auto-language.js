@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var key = 'hl-language-choice', chosen = false;
-  var homes = {tr: '/', en: '/en/', de: '/de/', az: '/az/'};
+  var homes = {tr: '/', en: '/en/', de: '/de/', az: '/az/', fr: '/fr/'};
   function supported(value) {
     return typeof value === 'string' && Object.prototype.hasOwnProperty.call(homes, value);
   }
@@ -83,7 +83,7 @@
   }
   // Country wins over browser language. Never block rendering or persist detection.
   if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
-  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'en', US: 'en', CA: 'en', AU: 'en'};
+  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'fr', US: 'en', CA: 'en', AU: 'en'};
   var controller = new AbortController();
   var settled = false;
   function finish(country) {
