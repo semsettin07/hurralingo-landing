@@ -67,28 +67,37 @@
   if (supported(explicit)) { redirect(explicit); return; }
   var saved = preference();
   if (saved) { redirect(saved); return; }
-  var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
-  for (var i = 0; i < languages.length; i++) {
-    if (typeof languages[i] !== 'string') continue;
-    var tag = languages[i].trim().replace(/_/g, '-');
-    try {
-      if (typeof Intl.getCanonicalLocales === 'function') tag = Intl.getCanonicalLocales(tag)[0];
-      else if (!/^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(tag)) continue;
-    } catch (_) { continue; }
-    var lang = tag && tag.split('-')[0].toLowerCase();
-    if (supported(lang)) { redirect(lang); return; }
+  function browserLanguage() {
+    var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < languages.length; i++) {
+      if (typeof languages[i] !== 'string') continue;
+      var tag = languages[i].trim().replace(/_/g, '-');
+      try {
+        if (typeof Intl.getCanonicalLocales === 'function') tag = Intl.getCanonicalLocales(tag)[0];
+        else if (!/^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(tag)) continue;
+      } catch (_) { continue; }
+      var lang = tag && tag.split('-')[0].toLowerCase();
+      if (supported(lang)) return lang;
+    }
+    return 'en';
   }
-  // Only unsupported browser languages need an edge request. Never delay the HTML.
-  if (!window.fetch || !window.AbortController) return;
+  // Country wins over browser language. Never block rendering or persist detection.
+  if (!window.fetch || !window.AbortController) { redirect(browserLanguage()); return; }
+  var countries = {TR: 'tr', DE: 'de', AT: 'de', AZ: 'az', GB: 'en', FR: 'en', US: 'en'};
   var controller = new AbortController();
-  var timeout = setTimeout(function () { controller.abort(); }, 900);
+  var settled = false;
+  function finish(country) {
+    if (settled) return;
+    settled = true;
+    clearTimeout(timeout);
+    // A choice made while the request was in flight takes precedence.
+    redirect(preference() || (Object.prototype.hasOwnProperty.call(countries, country) ? countries[country] : browserLanguage()));
+  }
+  var timeout = setTimeout(function () { finish(null); controller.abort(); }, 900);
   fetch('/api/country', {signal: controller.signal, cache: 'no-store', credentials: 'omit'})
     .then(function (response) { if (!response.ok) throw new Error('Country unavailable'); return response.json(); })
     .then(function (data) {
-      var countries = {TR: 'tr', AZ: 'az', DE: 'de', AT: 'de', GB: 'en', US: 'en', CA: 'en', AU: 'en'};
-      // A choice made while the request was in flight takes precedence.
-      redirect(preference() || countries[data && data.country] || 'tr');
+      finish(data && data.country);
     })
-    .catch(function () { /* Keep the usable Turkish page. */ })
-    .finally(function () { clearTimeout(timeout); });
+    .catch(function () { finish(null); });
 })();

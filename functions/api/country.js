@@ -6,6 +6,8 @@ export function onRequestGet({request}) {
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
       'Cache-Control': 'private, no-store, max-age=0',
+      'CDN-Cache-Control': 'no-store',
+      'Cloudflare-CDN-Cache-Control': 'no-store',
       'X-Robots-Tag': 'noindex, nofollow',
       'X-Content-Type-Options': 'nosniff'
     }
