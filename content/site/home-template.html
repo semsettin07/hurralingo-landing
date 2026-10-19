@@ -606,9 +606,6 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 #drawer .dr-sub{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:16px}
 #drawer .dr-sub-links{display:flex; gap:2px; margin-left:-10px}
 #drawer .dr-sub-links a{padding:8px 10px; border-radius:999px; font-size:15.5px; font-weight:600; color:var(--ink-2); text-decoration:none; transition:background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out)}
-#drawer .dr-langs{display:flex; gap:6px}
-#drawer .dr-langs a{min-width:42px; height:34px; display:grid; place-items:center; padding:0 10px; border-radius:999px; box-shadow:inset 0 0 0 1.5px var(--line); font-size:13px; font-weight:800; letter-spacing:.04em; color:var(--ink-2); text-decoration:none; transition:box-shadow var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), transform var(--dur) var(--ease-spring)}
-#drawer .dr-langs a[aria-current]{background:var(--ink); color:#fff; box-shadow:none}
 #drawer .dr-foot{position:sticky; bottom:0; padding:14px clamp(16px,3vw,40px) calc(14px + env(safe-area-inset-bottom,0px)); background:var(--bg); border-top:1px solid var(--line); box-shadow:0 -12px 24px -20px rgba(8,45,86,.25)}
 #drawer .dr-foot .dr-wrap{display:grid; justify-items:center; gap:10px}
 #drawer .dr-cta{width:100%}
@@ -616,7 +613,6 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
 #drawer .dr-wa .icon{width:19px; height:19px; color:#0B7A3E}
 #drawer .dr-wa .num{color:var(--ink); font-weight:800; font-variant-numeric:tabular-nums; white-space:nowrap}
 #drawer .dr-age:active{transform:scale(.97)}
-#drawer .dr-langs a:active{transform:scale(.97)}
 #drawer .dr-age:focus-visible{outline-offset:3px; border-radius:18px; box-shadow:inset 0 0 0 1.5px var(--c)}
 @media (hover:hover) and (pointer:fine){
   #drawer .dr-age:hover{box-shadow:inset 0 0 0 1.5px var(--c)}
@@ -625,7 +621,6 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   #drawer .dr-list a:hover span::after{clip-path:inset(0 0 0 0)}
   #drawer .dr-list a:hover .icon{color:var(--ink)}
   #drawer .dr-sub-links a:hover{color:var(--ink); background:var(--bg-2)}
-  #drawer .dr-langs a:not([aria-current]):hover{box-shadow:inset 0 0 0 1.5px var(--ink); color:var(--ink); transform:translateY(-2px)}
 }
 /* açılışta kademeli giriş (yalnızca açılırken; kapanışta panel bütün olarak söner) */
 @keyframes hd-rise{from{opacity:0; transform:translateY(10px)}}

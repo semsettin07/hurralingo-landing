@@ -6,7 +6,8 @@ function mobileLanguages($){
   $('#drawer .dr-list').before(row);
   for(const [lang,name]of Object.entries(names)){
     const link=row.find(`a[lang="${lang}"]`);
-    link.text(lang.toUpperCase()).attr('aria-label',name);
+    const country=lang==='en'?'gb':lang;
+    link.html(`<span class="language-flag"><img src="/img/flags/${country}.svg" alt="" width="36" height="27" aria-hidden="true"></span>`).attr('aria-label',name);
     row.append(link);
   }
 }

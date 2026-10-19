@@ -3,182 +3,242 @@
   "layouts": [
     {
       "lang": "tr",
+      "width": 320,
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "buttonWidth": 49.796875,
+      "educationGap": 22
+    },
+    {
+      "lang": "tr",
       "width": 360,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 54.59375,
+      "buttonWidth": 57.796875,
       "educationGap": 22
     },
     {
       "lang": "tr",
       "width": 390,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 60.59375,
+      "buttonWidth": 63.796875,
       "educationGap": 22
     },
     {
       "lang": "tr",
       "width": 430,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 68.59375,
+      "buttonWidth": 71.796875,
+      "educationGap": 22
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "buttonWidth": 49.796875,
       "educationGap": 22
     },
     {
       "lang": "en",
       "width": 360,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 54.59375,
+      "buttonWidth": 57.796875,
       "educationGap": 22
     },
     {
       "lang": "en",
       "width": 390,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 60.59375,
+      "buttonWidth": 63.796875,
       "educationGap": 22
     },
     {
       "lang": "en",
       "width": 430,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 68.59375,
+      "buttonWidth": 71.796875,
+      "educationGap": 22
+    },
+    {
+      "lang": "de",
+      "width": 320,
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "buttonWidth": 49.796875,
       "educationGap": 22
     },
     {
       "lang": "de",
       "width": 360,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 54.59375,
+      "buttonWidth": 57.796875,
       "educationGap": 22
     },
     {
       "lang": "de",
       "width": 390,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 60.59375,
+      "buttonWidth": 63.796875,
       "educationGap": 22
     },
     {
       "lang": "de",
       "width": 430,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 68.59375,
+      "buttonWidth": 71.796875,
+      "educationGap": 22
+    },
+    {
+      "lang": "fr",
+      "width": 320,
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "buttonWidth": 49.796875,
       "educationGap": 22
     },
     {
       "lang": "fr",
       "width": 360,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 54.59375,
+      "buttonWidth": 57.796875,
       "educationGap": 22
     },
     {
       "lang": "fr",
       "width": 390,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 60.59375,
+      "buttonWidth": 63.796875,
       "educationGap": 22
     },
     {
       "lang": "fr",
       "width": 430,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 68.59375,
+      "buttonWidth": 71.796875,
+      "educationGap": 22
+    },
+    {
+      "lang": "az",
+      "width": 320,
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "buttonWidth": 49.796875,
       "educationGap": 22
     },
     {
       "lang": "az",
       "width": 360,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 54.59375,
+      "buttonWidth": 57.796875,
       "educationGap": 22
     },
     {
       "lang": "az",
       "width": 390,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 60.59375,
+      "buttonWidth": 63.796875,
       "educationGap": 22
     },
     {
       "lang": "az",
       "width": 430,
       "gaps": [
-        10,
-        10,
-        10,
-        10
+        6,
+        6,
+        6,
+        6
       ],
-      "buttonWidth": 68.59375,
+      "buttonWidth": 71.796875,
       "educationGap": 22
     }
   ],
