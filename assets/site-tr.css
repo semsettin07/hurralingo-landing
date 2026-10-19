@@ -1,14 +1,15 @@
 /* Turkish multipage additions. Original tokens, section styles and interactions remain intact. */
 /* Local flag assets centered in five equal mobile navigation cells. */
-#drawer .dr-langs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;width:100%;max-width:none;margin:0 0 22px}
+#drawer .dr-langs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));justify-items:stretch;gap:0;width:100%;min-width:0;max-width:none;box-sizing:border-box;padding:0;margin:0 0 22px}
 #drawer .dr-langs a{display:grid;place-items:center;min-width:44px;min-height:44px;height:44px;width:100%;padding:0;border:0;border-radius:9px;background:transparent;box-shadow:none;text-decoration:none}
 #drawer .dr-langs a[aria-current]{background:transparent;box-shadow:none}
-#drawer .dr-langs .language-flag{display:inline-flex;padding:4px;border:2px solid transparent;border-radius:11px}
-#drawer .dr-langs img{display:block;width:36px;height:27px;max-width:none;border-radius:5px;object-fit:cover}
+#drawer .dr-langs .language-flag{display:grid;place-items:center;padding:5px;border:2px solid transparent;border-radius:10px}
+#drawer .dr-langs img{display:block;width:24px;height:16px;max-width:none;border-radius:3px;overflow:hidden;clip-path:inset(0 round 3px);object-fit:cover}
 #drawer .dr-langs a[aria-current] .language-flag{border-color:var(--ink)}
 #drawer .dr-langs a:not([aria-current]):hover{background:transparent;box-shadow:none;transform:none}
 #drawer .dr-langs a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
 #drawer .dr-langs + .dr-list{margin-top:0}
+@media(min-width:721px){#drawer .dr-ages + .dr-langs{margin-top:16px}}
 @media(max-width:720px){#drawer .dr-hello,#drawer .dr-ages{display:none}}
 /* Restore the original centered header, logo sizing and announcement styling. */
 .site-tr .header .bar{max-width:var(--wrap);margin-inline:auto}

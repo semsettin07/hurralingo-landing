@@ -7,7 +7,7 @@ function mobileLanguages($){
   for(const [lang,name]of Object.entries(names)){
     const link=row.find(`a[lang="${lang}"]`);
     const country=lang==='en'?'gb':lang;
-    link.html(`<span class="language-flag"><img src="/img/flags/${country}.svg" alt="" width="36" height="27" aria-hidden="true"></span>`).attr('aria-label',name);
+    link.html(`<span class="language-flag"><img src="/img/flags/${country}.svg" alt="" width="24" height="16" aria-hidden="true"></span>`).attr('aria-label',name);
     row.append(link);
   }
 }

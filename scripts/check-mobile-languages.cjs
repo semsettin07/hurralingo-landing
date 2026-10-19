@@ -20,7 +20,7 @@ for(const route of routes){
 (async()=>{
  const browser=await chromium.launch();
  try{
-  const context=await browser.newContext({reducedMotion:'reduce'});
+  const context=await browser.newContext({reducedMotion:'reduce',isMobile:true,hasTouch:true,deviceScaleFactor:2});
   await context.addInitScript(()=>localStorage.setItem('hl-ck','reject'));
   const page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));
   await page.route('**/api/country',r=>r.fulfill({json:{country:'TR'}}));
@@ -30,17 +30,29 @@ for(const route of routes){
    assert.equal(await row.locator('a[aria-current=page]').getAttribute('lang'),lang);
    const geometry=await row.evaluate(row=>{
     const rect=e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}};
-    return{row:rect(row),links:[...row.querySelectorAll('a')].map(rect),flags:[...row.querySelectorAll('img')].map(img=>({...rect(img),loaded:img.complete&&img.naturalWidth>0})),list:rect(row.nextElementSibling),wrap:rect(row.parentElement),overflow:document.documentElement.scrollWidth>innerWidth,colors:[...row.querySelectorAll('a')].map(a=>{const frame=getComputedStyle(a.querySelector('.language-flag'));return{active:a.hasAttribute('aria-current'),background:getComputedStyle(a).backgroundColor,border:frame.borderTopColor,borderWidth:frame.borderTopWidth,padding:frame.paddingTop}})};
+    const content=row.closest('.dr-in'),padding=getComputedStyle(content),grid=getComputedStyle(row);
+    return{row:rect(row),gridDisplay:grid.display,columns:grid.gridTemplateColumns,content:rect(content),paddingLeft:parseFloat(padding.paddingLeft),paddingRight:parseFloat(padding.paddingRight),links:[...row.querySelectorAll('a')].map(rect),flags:[...row.querySelectorAll('img')].map(img=>({...rect(img),loaded:img.complete&&img.naturalWidth>0,radius:getComputedStyle(img).borderRadius,clip:getComputedStyle(img).clipPath})),list:rect(row.nextElementSibling),wrap:rect(row.parentElement),overflow:document.documentElement.scrollWidth>innerWidth,colors:[...row.querySelectorAll('a')].map(a=>{const frame=getComputedStyle(a.querySelector('.language-flag'));return{active:a.hasAttribute('aria-current'),background:getComputedStyle(a).backgroundColor,border:frame.borderTopColor,borderWidth:frame.borderTopWidth,padding:frame.paddingTop}})};
    });
    assert.equal(geometry.overflow,false);assert.ok(await row.evaluate(e=>e.nextElementSibling.classList.contains('dr-list')));
    const links=geometry.links;assert.equal(links.length,5);
+   assert.equal(geometry.gridDisplay,'grid');assert.equal(geometry.columns.split(' ').length,5);
+   assert.ok(Math.abs(geometry.row.left-geometry.content.left-geometry.paddingLeft)<1);
+   assert.ok(Math.abs(geometry.content.right-geometry.paddingRight-geometry.row.right)<1);
    for(const link of links){assert.ok(Math.abs(link.top-links[0].top)<1);assert.ok(Math.abs(link.width-links[0].width)<1);assert.ok(link.width>=44);assert.ok(link.height>=44);}
-   for(const [i,flag]of geometry.flags.entries()){assert.equal(flag.width,36);assert.equal(flag.height,27);assert.equal(flag.loaded,true);assert.ok(Math.abs((flag.left+flag.right)/2-(links[i].left+links[i].right)/2)<1);assert.ok(Math.abs(flag.top-geometry.flags[0].top)<1);}
-   const gaps=links.slice(1).map((r,i)=>r.left-links[i].right);for(const gap of gaps)assert.ok(Math.abs(gap-6)<1);
+   const centers=geometry.flags.map((flag,i)=>{
+    const actual=(flag.left+flag.right)/2,expected=geometry.row.left+geometry.row.width*(i+.5)/5;
+    assert.equal(flag.width,24);assert.equal(flag.height,16);assert.equal(flag.loaded,true);assert.equal(flag.radius,'3px');assert.notEqual(flag.clip,'none');
+    assert.ok(Math.abs(actual-expected)<.5,'Flag must center on its equal fifth of the complete row');
+    assert.ok(Math.abs(actual-(links[i].left+links[i].right)/2)<.5);
+    assert.ok(Math.abs((flag.top+flag.bottom)/2-(links[i].top+links[i].bottom)/2)<.5);
+    assert.ok(Math.abs(flag.top-geometry.flags[0].top)<.5);
+    return{lang:codes[i],actual,expected,error:Math.abs(actual-expected),width:flag.width,height:flag.height};
+   });
+   const gaps=links.slice(1).map((r,i)=>r.left-links[i].right);for(const gap of gaps)assert.ok(Math.abs(gap)<1);
    assert.ok(Math.abs((links[0].left-geometry.wrap.left)-(geometry.wrap.right-links[4].right))<1);
    assert.ok(Math.abs(geometry.list.top-geometry.row.bottom-22)<1);
-   const active=geometry.colors.find(a=>a.active);assert.equal(active.border,'rgb(8, 45, 86)');assert.equal(active.borderWidth,'2px');assert.equal(active.padding,'4px');assert.ok(geometry.colors.every(a=>a.background==='rgba(0, 0, 0, 0)'));assert.ok(geometry.colors.filter(a=>!a.active).every(a=>a.border==='rgba(0, 0, 0, 0)'));
-   report.layouts.push({lang,width,gaps,buttonWidth:links[0].width,educationGap:geometry.list.top-geometry.row.bottom});
+   const active=geometry.colors.find(a=>a.active);assert.equal(active.border,'rgb(8, 45, 86)');assert.equal(active.borderWidth,'2px');assert.equal(active.padding,'5px');assert.ok(geometry.colors.every(a=>a.background==='rgba(0, 0, 0, 0)'&&a.borderWidth==='2px'&&a.padding==='5px'));assert.ok(geometry.colors.filter(a=>!a.active).every(a=>a.border==='rgba(0, 0, 0, 0)'));
+   report.layouts.push({lang,width,gaps,buttonWidth:links[0].width,educationGap:geometry.list.top-geometry.row.bottom,row:geometry.row,centers,overflow:geometry.overflow});
    if(lang==='tr')await page.screenshot({path:`docs/mobile-language-row-${width}.png`});
    await page.keyboard.press('Escape');
   }
