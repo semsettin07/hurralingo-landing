@@ -1,0 +1,209 @@
+{
+  "pages": 235,
+  "layouts": [
+    {
+      "lang": "tr",
+      "width": 360,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 54.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "tr",
+      "width": 390,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 60.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "tr",
+      "width": 430,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 68.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "en",
+      "width": 360,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 54.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 60.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "en",
+      "width": 430,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 68.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "de",
+      "width": 360,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 54.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 60.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "de",
+      "width": 430,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 68.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "fr",
+      "width": 360,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 54.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "fr",
+      "width": 390,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 60.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "fr",
+      "width": 430,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 68.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "az",
+      "width": 360,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 54.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "az",
+      "width": 390,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 60.59375,
+      "educationGap": 22
+    },
+    {
+      "lang": "az",
+      "width": 430,
+      "gaps": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "buttonWidth": 68.59375,
+      "educationGap": 22
+    }
+  ],
+  "transitions": [
+    {
+      "lang": "tr",
+      "target": "/derslerimiz/"
+    },
+    {
+      "lang": "en",
+      "target": "/en/lessons/"
+    },
+    {
+      "lang": "de",
+      "target": "/de/kurse/"
+    },
+    {
+      "lang": "fr",
+      "target": "/fr/cours/"
+    },
+    {
+      "lang": "az",
+      "target": "/az/dersler/"
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

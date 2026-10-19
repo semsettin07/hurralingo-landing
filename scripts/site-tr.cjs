@@ -31,9 +31,7 @@ function header(route) {
   // and original desktop/mobile composition. Only adapt links to the new pages.
   const $=cheerio.load(fragment('#announce')+fragment('#hdr')+fragment('#drawer'),null,false);
   $('#hdr .hd-cta').remove();
-  $('#drawer .dr-list').before($('.dr-langs'));
-  $('.dr-langs').wrap('<details class="dr-language"></details>').before('<summary><span class="dr-language-label">Türkçe</span></summary>');
-  $('.dr-langs a[lang]').each((i,e)=>$(e).text(({tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca',fr:'Français'})[$(e).attr('lang')]));
+  require('./mobile-languages.cjs')($);
   const anchors={top:'/',programlar:'/derslerimiz/#programlar',ogretmenler:'/ogretmenlerimiz/',fiyatlar:'/ucretler/',sorular:'/egitimmodelimiz/#sorular',kurumlar:'/kurumsal/'};
   $('.brand').attr('href','/');
   $('a[href]').each((i,e)=>{const a=$(e),href=a.attr('href');if(href?.startsWith('#')&&anchors[href.slice(1)])a.attr('href',anchors[href.slice(1)]);else if(href==='blog/')a.attr('href','/blog/');});

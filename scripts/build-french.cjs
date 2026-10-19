@@ -56,12 +56,12 @@ function localUrl(href,source){let u;try{u=new URL(href,'https://www.hurralingo.
 }
 function menus($,siblings,lang){
  const labels={tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca',fr:'Français'};
- $('.dr-language-label').text(labels[lang]);
  if(!$('#hd-lang a[lang=fr]').length)$('#hd-lang ul').append('<li><a class="dd-l" lang="fr" hreflang="fr"><span class="dd-code">FR</span><span>Français</span></a></li>');
  if(!$('.dr-langs a[lang=fr]').length)$('.dr-langs').append('<a lang="fr" hreflang="fr" aria-label="Français">FR</a>');
  $('#hd-lang a[lang],.dr-langs a[lang]').each((i,node)=>{const a=$(node),language=a.attr('lang');a.attr('href',siblings[language]||(language==='tr'?'/':`/${language}/`));
   if(lang==='fr'){a.removeAttr('aria-current');a.find('.dd-chk').remove();if(language==='fr')a.attr('aria-current','page');if(a.find('.dd-code').length){a.find('.dd-code').text(language.toUpperCase());a.find('span').eq(1).text(labels[language])}else{a.text(labels[language]).attr('aria-label',labels[language])}}
  });
+ require('./mobile-languages.cjs')($);
  if(lang==='fr'){$('#hdr .lang-txt').text('FR');$('#hdr .lang-dd > button').attr('aria-label','FR, choisir la langue');$('.dr-langs').attr('aria-label','Choisir la langue')}
 }
 function alternates($,siblings){$('link[rel=alternate][hreflang]').remove();for(const [lang,route]of Object.entries(siblings))$('head').append(`<link rel="alternate" hreflang="${lang}" href="https://www.hurralingo.com${route}">`);if(siblings.tr)$('head').append(`<link rel="alternate" hreflang="x-default" href="https://www.hurralingo.com${siblings.tr}">`)}

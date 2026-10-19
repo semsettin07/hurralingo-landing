@@ -41,7 +41,7 @@ function page(html,lang,route,sourceRoute,options={}){
  $('link[rel=canonical]').attr('href','https://www.hurralingo.com'+route);$('meta[property="og:url"]').attr('content','https://www.hurralingo.com'+route);
  const siblings=hreflangs($,route,sourceRoute,lang);
  $('#hd-lang a[lang],.dr-langs a[lang]').each((i,e)=>{const a=$(e),target=a.attr('lang'),label={tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca',fr:'Français'}[target];a.attr('href',siblings[target]||(target==='tr'?'/':`/${target}/`)).removeAttr('aria-current');a.find('.dd-chk').remove();if(target===lang)a.attr('aria-current','page');if(a.find('.dd-code').length){a.find('.dd-code').text(target.toUpperCase());a.find('span').eq(1).text(label);}else a.text(label).attr('aria-label',label);});
- $('.dr-language-label').text(({tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca',fr:'Français'})[lang]);
+ require('./mobile-languages.cjs')($);
  $('#hdr .lang-txt').text(lang.toUpperCase());$('#hdr .lang-dd > button').attr('aria-label',`${lang.toUpperCase()}, ${l.name}`);
  $('#announce .an-txt').first().html('<strong>Bett UK 2026</strong>'+({en:' — we won the “Best Language App” award',de:' – ausgezeichnet als „Beste Sprachlern-App“',az:' – “Ən yaxşı dil tətbiqi” mükafatını qazandıq'}[lang]));
  $('#announce .an-sm .an-txt').html('<strong>Bett UK 2026</strong> '+({en:'award winner',de:'ausgezeichnet',az:'mükafatlı'}[lang]));
