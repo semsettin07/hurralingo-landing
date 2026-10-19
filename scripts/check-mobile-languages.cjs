@@ -35,6 +35,10 @@ for(const route of routes){
   for(const lang of codes)for(const width of [320,360,390,430]){
    await page.setViewportSize({width,height:900});await page.goto(origin+(lang==='tr'?'/':`/${lang}/`));
    const row=page.locator('#drawer .dr-langs');assert.ok(await row.isHidden());await page.locator('#hd-menu').click();assert.ok(await row.isVisible());
+   assert.ok(await page.locator('#drawer .dr-hello').isVisible());
+   assert.ok(await page.locator('#drawer .dr-ages').isVisible());
+   assert.equal(await page.locator('#drawer .dr-ages a').count(),4);
+   assert.ok(await row.evaluate(row=>row.previousElementSibling.classList.contains('dr-ages')&&row.getBoundingClientRect().top>=row.previousElementSibling.getBoundingClientRect().bottom));
    assert.equal(await row.locator('a[aria-current=page]').getAttribute('lang'),lang);
    const geometry=await row.evaluate(row=>{
     const rect=e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}};

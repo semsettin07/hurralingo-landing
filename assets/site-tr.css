@@ -10,7 +10,6 @@
 #drawer .dr-langs a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
 #drawer .dr-langs + .dr-list{margin-top:0}
 @media(min-width:721px){#drawer .dr-ages + .dr-langs{margin-top:16px}}
-@media(max-width:720px){#drawer .dr-hello,#drawer .dr-ages{display:none}}
 /* Restore the original centered header, logo sizing and announcement styling. */
 .site-tr .header .bar{max-width:var(--wrap);margin-inline:auto}
 .site-tr #ogretmenler .t-empty[hidden]{display:none!important}
