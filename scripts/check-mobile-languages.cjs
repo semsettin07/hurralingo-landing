@@ -18,6 +18,14 @@ for(const route of routes){
   report.pages++;
 }
 (async()=>{
+ const sharp=require('sharp');report.roundedAssets=[];
+ for(const country of ['tr','gb','de','fr','az']){
+  const {data,info}=await sharp(`img/flags/${country}.svg`).resize(24,16,{fit:'fill'}).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+  const alpha=(x,y)=>data[(y*info.width+x)*info.channels+3];
+  const corners=[alpha(0,0),alpha(23,0),alpha(0,15),alpha(23,15)];
+  assert.ok(corners.every(a=>a<20),'SVG itself must have transparent rounded corners: '+country);
+  assert.ok(alpha(12,8)>240);report.roundedAssets.push({country,corners});
+ }
  const browser=await chromium.launch();
  try{
   const context=await browser.newContext({reducedMotion:'reduce',isMobile:true,hasTouch:true,deviceScaleFactor:2});
@@ -41,7 +49,7 @@ for(const route of routes){
    for(const link of links){assert.ok(Math.abs(link.top-links[0].top)<1);assert.ok(Math.abs(link.width-links[0].width)<1);assert.ok(link.width>=44);assert.ok(link.height>=44);}
    const centers=geometry.flags.map((flag,i)=>{
     const actual=(flag.left+flag.right)/2,expected=geometry.row.left+geometry.row.width*(i+.5)/5;
-    assert.equal(flag.width,24);assert.equal(flag.height,16);assert.equal(flag.loaded,true);assert.equal(flag.radius,'3px');assert.notEqual(flag.clip,'none');
+    assert.equal(flag.width,24);assert.equal(flag.height,16);assert.equal(flag.loaded,true);assert.equal(flag.radius,'4px');assert.notEqual(flag.clip,'none');
     assert.ok(Math.abs(actual-expected)<.5,'Flag must center on its equal fifth of the complete row');
     assert.ok(Math.abs(actual-(links[i].left+links[i].right)/2)<.5);
     assert.ok(Math.abs((flag.top+flag.bottom)/2-(links[i].top+links[i].bottom)/2)<.5);
@@ -49,6 +57,7 @@ for(const route of routes){
     return{lang:codes[i],actual,expected,error:Math.abs(actual-expected),width:flag.width,height:flag.height};
    });
    const gaps=links.slice(1).map((r,i)=>r.left-links[i].right);for(const gap of gaps)assert.ok(Math.abs(gap)<1);
+   assert.ok(Math.abs((geometry.flags[0].left+geometry.flags[4].right)/2-(geometry.row.left+geometry.row.right)/2)<.5,'Visible flag group must be centered');
    assert.ok(Math.abs((links[0].left-geometry.wrap.left)-(geometry.wrap.right-links[4].right))<1);
    assert.ok(Math.abs(geometry.list.top-geometry.row.bottom-22)<1);
    const active=geometry.colors.find(a=>a.active);assert.equal(active.border,'rgb(8, 45, 86)');assert.equal(active.borderWidth,'2px');assert.equal(active.padding,'5px');assert.ok(geometry.colors.every(a=>a.background==='rgba(0, 0, 0, 0)'&&a.borderWidth==='2px'&&a.padding==='5px'));assert.ok(geometry.colors.filter(a=>!a.active).every(a=>a.border==='rgba(0, 0, 0, 0)'));

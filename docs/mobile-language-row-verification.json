@@ -1285,5 +1285,52 @@
     }
   ],
   "errors": [],
+  "roundedAssets": [
+    {
+      "country": "tr",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "country": "gb",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "country": "de",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "country": "fr",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "country": "az",
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
   "pass": true
 }
