@@ -207,7 +207,7 @@ const key='hl-language-choice';
   const ctx=await context({viewport:{width,height:950}});await ctx.addInitScript(()=>Object.defineProperty(navigator,'languages',{get:()=>['de-DE']}));
   const p=await ctx.newPage();await p.goto(origin+source);const tr=new URL(await p.locator('#hd-lang a[lang=tr]').getAttribute('href'),origin).pathname;
   await p.locator(width===390?'#hd-menu':'#hdr .lang-dd > button').click();
-  await p.locator((width===390?'#drawer .dr-langs':'#hd-lang')+' a[lang=tr]').click();await p.waitForURL(u=>u.pathname===tr);
+  if(width===390)await p.locator('#drawer .dr-language summary').click();await p.locator((width===390?'#drawer .dr-langs':'#hd-lang')+' a[lang=tr]').click();await p.waitForURL(u=>u.pathname===tr);
   assert.equal(await p.evaluate(key=>localStorage.getItem(key).split('.')[0],key),'tr');await p.goto(origin+'/');await p.waitForTimeout(1000);assert.equal(new URL(p.url()).pathname,'/');
   result.menus.push({width,source,target:tr});await ctx.close();
  }
