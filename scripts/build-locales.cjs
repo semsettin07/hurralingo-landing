@@ -40,7 +40,7 @@ function page(html,lang,route,sourceRoute,options={}){
  $('[src],[poster],[data-src],[data-video]').each((i,e)=>{for(const attr of ['src','poster','data-src','data-video']){const value=$(e).attr(attr);if(value&&!/^(?:[a-z]+:|\/\/|#)/i.test(value))$(e).attr(attr,new URL(value,'https://www.hurralingo.com'+(sourceRoute||'/')).pathname);}});
  $('link[rel=canonical]').attr('href','https://www.hurralingo.com'+route);$('meta[property="og:url"]').attr('content','https://www.hurralingo.com'+route);
  const siblings=hreflangs($,route,sourceRoute,lang);
- $('#hd-lang a[lang],#drawer a[lang]').each((i,e)=>{const a=$(e),target=a.attr('lang'),label={tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca'}[target];a.attr('href',siblings[target]||(target==='tr'?'/':`/${target}/`)).removeAttr('aria-current');a.find('.dd-chk').remove();if(target===lang)a.attr('aria-current','page');if(a.find('.dd-code').length){a.find('.dd-code').text(target.toUpperCase());a.find('span').eq(1).text(label);}else a.text(label);});
+ $('#hd-lang a[lang],.dr-langs a[lang]').each((i,e)=>{const a=$(e),target=a.attr('lang'),label={tr:'Türkçe',en:'English',de:'Deutsch',az:'Azərbaycanca'}[target];a.attr('href',siblings[target]||(target==='tr'?'/':`/${target}/`)).removeAttr('aria-current');a.find('.dd-chk').remove();if(target===lang)a.attr('aria-current','page');if(a.find('.dd-code').length){a.find('.dd-code').text(target.toUpperCase());a.find('span').eq(1).text(label);}else a.text(target.toUpperCase()).attr('aria-label',label);});
  $('#hdr .lang-txt').text(lang.toUpperCase());$('#hdr .lang-dd > button').attr('aria-label',`${lang.toUpperCase()}, ${l.name}`);
  $('#announce .an-txt').first().html('<strong>Bett UK 2026</strong>'+({en:' — we won the “Best Language App” award',de:' – ausgezeichnet als „Beste Sprachlern-App“',az:' – “Ən yaxşı dil tətbiqi” mükafatını qazandıq'}[lang]));
  $('#announce .an-sm .an-txt').html('<strong>Bett UK 2026</strong> '+({en:'award winner',de:'ausgezeichnet',az:'mükafatlı'}[lang]));
@@ -100,7 +100,7 @@ for(const [lang,l]of Object.entries(existingLocales)){
 }
 write('assets/i18n/pricing-ui.js',read('assets/pricing-ui.js').replace(' / hafta ·',' / ${t.week} ·'));
 // Add reciprocal language navigation/metadata to TR without rewriting its content.
-for(const sourceRoute of sourceRoutes){const file=sourceRoute.slice(1)+'index.html',$=c.load(read(file));hreflangs($,sourceRoute,sourceRoute,'tr');$('#hd-lang a[lang],#drawer a[lang]').each((i,e)=>{const a=$(e),lang=a.attr('lang');a.attr('href',lang==='tr'?sourceRoute:routeMap[sourceRoute][lang]);});write(file,$.html());}
+for(const sourceRoute of sourceRoutes){const file=sourceRoute.slice(1)+'index.html',$=c.load(read(file));hreflangs($,sourceRoute,sourceRoute,'tr');$('#hd-lang a[lang],.dr-langs a[lang]').each((i,e)=>{const a=$(e),lang=a.attr('lang');a.attr('href',lang==='tr'?sourceRoute:routeMap[sourceRoute][lang]);});write(file,$.html());}
 const allRoutes=[...sourceRoutes,...Object.values(manifest.locales).flatMap(l=>l.canonical)];
 write('content/i18n/canonical-all.json',JSON.stringify(allRoutes,null,2)+'\n');
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+allRoutes.map(r=>`<url><loc>https://www.hurralingo.com${r}</loc></url>`).join('\n')+'\n</urlset>\n');

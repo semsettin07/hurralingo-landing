@@ -40,7 +40,7 @@
   // Capture also covers keyboard activation and middle-click; retain the real route mapping.
   function menuChoice(event) {
     if (event.type === 'auxclick' && event.button !== 1) return;
-    var link = event.target.closest && event.target.closest('#hd-lang a[lang], #drawer a[lang]');
+    var link = event.target.closest && event.target.closest('#hd-lang a[lang], .dr-langs a[lang]');
     if (!link || event.defaultPrevented) return;
     var lang = link.getAttribute('lang');
     if (!supported(lang)) return;

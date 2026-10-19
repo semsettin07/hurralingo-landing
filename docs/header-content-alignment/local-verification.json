@@ -35,9 +35,9 @@
       "logoLeft": 23.03125,
       "contentLeft": 23.03125,
       "contentRight": 729.96875,
-      "endRight": 730.953125,
+      "endRight": 729.96875,
       "navRight": 0,
-      "endLeft": 323.96875,
+      "endLeft": 547.53125,
       "barWidth": 706.9375,
       "logoWidth": 284.9375
     },
@@ -50,7 +50,7 @@
       "contentRight": 978.28125,
       "endRight": 978.28125,
       "navRight": 0,
-      "endLeft": 595.546875,
+      "endLeft": 804.71875,
       "barWidth": 947.5625,
       "logoWidth": 255.25
     },
@@ -63,7 +63,7 @@
       "contentRight": 1130.578125,
       "endRight": 1130.578125,
       "navRight": 0,
-      "endLeft": 751.84375,
+      "endLeft": 957.015625,
       "barWidth": 1095.15625,
       "logoWidth": 255.25
     },
@@ -76,7 +76,7 @@
       "contentRight": 1192.5,
       "endRight": 1192.5,
       "navRight": 0,
-      "endLeft": 813.765625,
+      "endLeft": 1018.9375,
       "barWidth": 1120,
       "logoWidth": 255.25
     },
@@ -88,8 +88,8 @@
       "contentLeft": 152.5,
       "contentRight": 1272.5,
       "endRight": 1272.5,
-      "navRight": 938.734375,
-      "endLeft": 959.765625,
+      "navRight": 1134.0625,
+      "endLeft": 1146.0625,
       "barWidth": 1120,
       "logoWidth": 255.25
     },
@@ -101,8 +101,8 @@
       "contentLeft": 353.5,
       "contentRight": 1473.5,
       "endRight": 1473.5,
-      "navRight": 1139.734375,
-      "endLeft": 1160.765625,
+      "navRight": 1335.0625,
+      "endLeft": 1347.0625,
       "barWidth": 1120,
       "logoWidth": 255.25
     },
@@ -139,9 +139,9 @@
       "logoLeft": 23.03125,
       "contentLeft": 23.03125,
       "contentRight": 729.96875,
-      "endRight": 730.953125,
+      "endRight": 729.96875,
       "navRight": 0,
-      "endLeft": 323.96875,
+      "endLeft": 547.53125,
       "barWidth": 706.9375,
       "logoWidth": 284.9375
     },
@@ -154,7 +154,7 @@
       "contentRight": 978.28125,
       "endRight": 978.28125,
       "navRight": 0,
-      "endLeft": 595.546875,
+      "endLeft": 804.71875,
       "barWidth": 947.5625,
       "logoWidth": 255.25
     },
@@ -167,7 +167,7 @@
       "contentRight": 1130.578125,
       "endRight": 1130.578125,
       "navRight": 0,
-      "endLeft": 751.84375,
+      "endLeft": 957.015625,
       "barWidth": 1095.15625,
       "logoWidth": 255.25
     },
@@ -180,7 +180,7 @@
       "contentRight": 1192.5,
       "endRight": 1192.5,
       "navRight": 0,
-      "endLeft": 813.765625,
+      "endLeft": 1018.9375,
       "barWidth": 1120,
       "logoWidth": 255.25
     },
@@ -192,8 +192,8 @@
       "contentLeft": 152.5,
       "contentRight": 1272.5,
       "endRight": 1272.5,
-      "navRight": 938.734375,
-      "endLeft": 959.765625,
+      "navRight": 1134.0625,
+      "endLeft": 1146.0625,
       "barWidth": 1120,
       "logoWidth": 255.25
     },
@@ -205,8 +205,8 @@
       "contentLeft": 353.5,
       "contentRight": 1473.5,
       "endRight": 1473.5,
-      "navRight": 1139.734375,
-      "endLeft": 1160.765625,
+      "navRight": 1335.0625,
+      "endLeft": 1347.0625,
       "barWidth": 1120,
       "logoWidth": 255.25
     }
