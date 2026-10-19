@@ -1,14 +1,8 @@
 /* Turkish multipage additions. Original tokens, section styles and interactions remain intact. */
-/* Mobile languages sit between the announcement and logo. */
-.header > .dr-langs{display:none}
-@media(max-width:720px){
-  .header > .dr-langs{display:flex;justify-content:center;gap:8px;padding:6px 16px;border-bottom:1px solid var(--line);background:#fff}
-  .header > .dr-langs a{display:grid;place-items:center;min-width:44px;min-height:36px;padding:0 10px;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--line);color:var(--ink-2);font-size:13px;font-weight:800;letter-spacing:.04em;text-decoration:none}
-  .header > .dr-langs a[aria-current]{background:var(--ink);color:#fff;box-shadow:none}
-  .header > .dr-langs a:hover{background:var(--bg-2)}
-  .header > .dr-langs a[aria-current]:hover{background:var(--ink)}
-  .header > .dr-langs a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
-}
+/* Compact language buttons above the mobile navigation links. */
+#drawer .dr-langs{gap:8px;padding:0 0 12px;flex-wrap:wrap}
+#drawer .dr-langs a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+@media(max-width:720px){#drawer .dr-hello,#drawer .dr-ages{display:none}}
 /* Restore the original centered header, logo sizing and announcement styling. */
 .site-tr .header .bar{max-width:var(--wrap);margin-inline:auto}
 .site-tr #ogretmenler .t-empty[hidden]{display:none!important}

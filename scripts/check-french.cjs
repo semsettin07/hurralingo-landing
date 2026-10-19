@@ -21,7 +21,7 @@ try{
   const bytes=fs.readFileSync(file),lf=bytes.toString('utf8').replace(/\r\n/g,'\n');assert.ok(hash(bytes)===digest||hash(lf)===digest||hash(lf.replace(/\n/g,'\r\n'))===digest,'Protected asset changed: '+file);result.assetsPreserved++;
  }
  for(const route of routes){const $=docs.get(route),isFrench=route.startsWith('/fr/');
-  assert.equal($('#hd-lang a[lang]').length,5,'Desktop language count '+route);assert.equal($('#hdr > .dr-langs a[lang]').length,5,'Mobile language count '+route);
+  assert.equal($('#hd-lang a[lang]').length,5,'Desktop language count '+route);assert.equal($('#drawer .dr-langs a[lang]').length,5,'Mobile language count '+route);
   const siblings=manifest.translations[route]||{fr:route};
   for(const [lang,target]of Object.entries(siblings)){
    assert.ok(docs.has(target),'Missing counterpart '+target);
