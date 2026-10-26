@@ -14,6 +14,10 @@ $('.privacy-policy br').replaceWith(' ');
 $('.privacy-policy li').append(' ');
 assert.deepEqual($('.privacy-policy').children().map((i,node)=>norm($(node).text())).get(),source);
 const labels={tr:'Gizlilik Politikası (İngilizce)',en:'Privacy Policy',de:'Datenschutzerklärung (Englisch)',az:'Məxfilik siyasəti (ingiliscə)',fr:'Politique de confidentialité (anglais)'};
+// Footer labels must survive the TR -> EN/DE/AZ -> FR build chain.
+const localeContent=require('./locale-content.cjs');
+for(const lang of ['en','de','az'])assert.equal(localeContent.overrides(lang)[labels.tr],labels[lang]);
+assert.equal(require('./french-content.cjs').overrides[labels.en],labels.fr);
 let checked=0;
 for(const page of JSON.parse(read('content/i18n/canonical-all.json'))){
  const doc=c.load(read(page.slice(1)+'index.html')),lang=doc('html').attr('lang');
