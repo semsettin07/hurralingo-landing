@@ -173,3 +173,5 @@ write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http
 
 write('docs/french/build-verification.json',JSON.stringify({pass:true,existing:oldRoutes.length,french:pages.size,articles:articleGroups.length,fixed:9,legal:2,totalCanonical:all.length,sourceRouteCoverage:Object.keys(manifest.translations).filter(r=>!r.startsWith('/fr/')).length},null,2)+'\n');
 console.log('Built French: 9 fixed, 42 full articles, 2 legal translations; '+all.length+' canonical URLs. Existing mains/pricing sources preserved.');
+
+require('./build-privacy.cjs');

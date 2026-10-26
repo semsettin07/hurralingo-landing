@@ -1,0 +1,347 @@
+PRIVACY POLICY FOR HURRA LINGO
+
+Last updated: October 26, 2026
+
+This Privacy Policy explains how Hurra Education International Ltd collects, uses, stores, shares and protects personal information when you use the Hurra Lingo mobile application, our website, learning platform and related educational services.
+
+It also explains your privacy rights, the choices available to you and how parents or legal guardians can make requests concerning their children’s information.
+
+This Privacy Policy provides information about our practices. It does not replace any separate notice or consent required for a particular activity, such as recording a lesson or using personal information for promotional purposes.
+
+1. INTERPRETATION AND DEFINITIONS
+
+For this Privacy Policy:
+
+“Account” means an account used to access or manage our Services, including any associated learner profiles.
+
+“Application” means the Hurra Lingo mobile application.
+
+“Company”, “we”, “us” and “our” mean Hurra Education International Ltd, company number 14126405, at 152–160 Capital Office Ltd, Kemp House, City Road, London, United Kingdom, EC1V 2NX.
+
+“Child Learner” means a learner under 18 whose participation is arranged and managed by a parent or legal guardian.
+
+“Device” means a computer, mobile phone, tablet or another device used to access the Services.
+
+“Personal Data” means information relating to an identified or identifiable individual.
+
+“Services” means the Application, our website, learning platform, online lessons and related educational services.
+
+“Service Provider” means a person or organisation processing Personal Data on our behalf to help us provide or support the Services.
+
+“Usage Data” means technical and interaction information generated through use of the Services.
+
+“You” means an adult learner, an account holder, or a parent or legal guardian acting for a Child Learner. References to your information include a child’s information where relevant.
+
+2. WHO IS RESPONSIBLE FOR YOUR INFORMATION?
+
+Hurra Education International Ltd acts as the controller of Personal Data where we determine why and how it is processed.
+
+For privacy questions or requests, contact:
+
+Email: hello@hurralingo.com
+
+Where we provide services to a school or another institution and process student information on its instructions, that institution may act as the controller. The institution’s privacy information and our separate contractual arrangements explain those responsibilities.
+
+3. COLLECTING YOUR PERSONAL DATA
+
+The information we process depends on the features you use and whether you are an adult learner, a Child Learner or a parent or guardian.
+
+Information You Provide
+
+Account and contact information may include:
+
+• Full name and username or profile identifier.
+• Email address and telephone number.
+• Age or age range.
+• Country of residence.
+• The relationship between a parent or guardian and a Child Learner.
+
+Educational information may include:
+
+• Language level and learning objectives.
+• Lesson bookings and attendance.
+• Homework and other submitted learning materials.
+• Learning progress, assessments and teacher feedback.
+• Information exchanged during lessons and support requests.
+
+Payment and transaction information may include:
+
+• Purchased packages or subscription details.
+• Payment status and transaction references.
+• Invoices and related accounting records.
+
+Payment-card details are processed by the relevant payment provider. Hurra Lingo does not store full payment-card details.
+
+Audio and Visual Information
+
+Live lessons involve the transmission of participants’ voices and, when enabled, camera images. We may also process materials shared during a lesson.
+
+Where lessons are recorded, we process the resulting audio and video recordings as described in Section 5. Participating in a live lesson and storing a recording are separate processing activities.
+
+Usage and Technical Information
+
+When you access the Services, we may process information such as:
+
+• IP address.
+• Device type and operating system.
+• Browser type and version.
+• Service access times and activity timestamps.
+• Feature interactions and usage information.
+• Technical logs and diagnostic information.
+• Device or application identifiers used for service operation and diagnostics, subject to applicable restrictions for children.
+
+This information helps us operate the Services, diagnose problems, maintain security and understand how features perform.
+
+Information From Other Sources
+
+We may receive information from teachers, parents or guardians, payment providers and technical providers where necessary to deliver and administer the Services.
+
+4. HOW WE USE YOUR PERSONAL DATA
+
+We use Personal Data for the following purposes:
+
+Providing the Services
+
+To create and manage accounts and learner profiles, arrange lessons, deliver educational materials and provide access to purchased services.
+
+Supporting Learning
+
+To assess language proficiency, track progress, provide teacher feedback and adapt educational support to the learner’s needs.
+
+Communicating With You
+
+To respond to requests and send lesson information, booking updates, account notices and other necessary service communications.
+
+Managing Payments
+
+To confirm payments, administer purchased packages, process refunds and maintain accounting records.
+
+Maintaining Safety and Security
+
+To protect learners and staff, investigate misuse, prevent fraud and maintain the security of accounts and systems.
+
+Improving the Services
+
+To diagnose technical problems, evaluate service quality and improve platform reliability and educational delivery.
+
+Meeting Legal Obligations
+
+To comply with applicable laws, respond to lawful requests and establish, exercise or defend legal claims.
+
+We do not sell Personal Data. We do not use children’s learning information or lesson recordings for unrelated advertising or commercial profiling.
+
+5. CAMERA, MICROPHONE AND LESSON RECORDING
+
+Camera and microphone access support participation in live lessons. Where the Application requires device permissions, those permissions are requested before access. You can manage permissions through your device settings, although disabling them may affect the relevant lesson features.
+
+Granting a camera or microphone permission does not itself authorise us to record a lesson or use its contents for another purpose.
+
+Lessons may be recorded for specified purposes such as:
+
+• Educational review and feedback.
+• Teaching quality assurance.
+• Teacher training.
+• Learner safety.
+• Investigating complaints or resolving disputes.
+
+Before recording, we provide the relevant information about its purpose and handling and obtain separate consent where required by applicable law.
+
+Access to recordings is limited to authorised personnel and Service Providers who need access for the disclosed purposes. Recordings are subject to the retention and deletion principles in this Privacy Policy.
+
+Accepting our Terms and Conditions does not grant permission to publish a learner’s image, voice or work for advertising. Such promotional use requires separate, specific permission from the appropriate adult learner or parent or guardian.
+
+6. AI-SUPPORTED LEARNING
+
+Hurra Lingo uses AI-supported tools to assist with learning progress analysis, personalised educational recommendations, lesson summaries and platform improvement.
+
+Personal Data used for these features is limited to what is necessary for the relevant purpose. Where an external provider processes information for an AI feature, that processing is subject to appropriate contractual and data protection safeguards.
+
+AI-supported tools operate under human oversight. They do not replace teachers or make solely automated decisions producing legal or similarly significant effects on learners.
+
+Where a feature requires additional information or consent, we provide this before the relevant processing begins.
+
+Adult learners and parents or guardians may contact hello@hurralingo.com to ask about AI-supported processing and exercise applicable rights concerning personalisation.
+
+7. LEGAL BASES FOR PROCESSING
+
+Where UK or EU data protection law applies, we rely on an appropriate lawful basis for each processing activity. Depending on the activity, this may include:
+
+Performance of a Contract
+
+Processing necessary to provide services under our agreement with an adult account holder, including purchase administration and service delivery.
+
+Legal Obligation
+
+Processing necessary to meet binding legal requirements, including relevant accounting and regulatory duties.
+
+Legitimate Interests
+
+Proportionate processing necessary for interests such as service security, fraud prevention and reliability, after considering the rights and interests of affected individuals, particularly children.
+
+Consent
+
+Processing based on a separate, informed choice where consent is appropriate or required.
+
+A parent’s agreement to purchase lessons does not automatically provide the lawful basis for every use of a child’s information. We consider children’s information separately and obtain parental authorisation where required.
+
+Where processing relies on consent, you may withdraw it by contacting us. Withdrawal does not affect processing that was lawful before withdrawal.
+
+8. SHARING YOUR PERSONAL DATA
+
+We share Personal Data only where necessary for a disclosed purpose and permitted by applicable law.
+
+Teachers and Authorised Personnel
+
+Teachers and relevant staff access information needed to deliver lessons, support learners, administer accounts and maintain safety.
+
+Service Providers
+
+Providers may process information on our behalf for hosting, storage, technical infrastructure, live lessons, recordings, analytics, customer support, payment processing and AI-supported features.
+
+Providers acting on our instructions are subject to appropriate confidentiality, security and data protection obligations.
+
+Professional Advisers and Authorities
+
+We may disclose necessary information to legal or accounting advisers, courts, regulators or public authorities where legally required or otherwise lawfully justified.
+
+Business Transactions
+
+If our business undergoes a merger, acquisition or transfer, relevant Personal Data may be transferred subject to applicable law and appropriate safeguards. We provide notice where required, including information about any change in the responsible controller.
+
+Other Disclosures
+
+Where a separate disclosure requires your consent, we request it before proceeding.
+
+We do not grant business partners unrestricted permission to use children’s information for their own marketing.
+
+9. INTERNATIONAL TRANSFERS
+
+Personal Data may be processed in countries where we or our Service Providers operate.
+
+Where information is transferred outside the UK or European Economic Area, we use an applicable lawful transfer mechanism and appropriate safeguards. Depending on the transfer, these may include adequacy decisions, the European Commission’s Standard Contractual Clauses, the UK International Data Transfer Agreement or the UK Addendum.
+
+You may contact hello@hurralingo.com for information about safeguards relevant to your information.
+
+Using the Services does not, by itself, constitute consent to an international transfer that requires a separate legal mechanism.
+
+10. RETENTION OF YOUR PERSONAL DATA
+
+We retain Personal Data only for as long as necessary for the purpose for which it was collected or to meet a lawful retention requirement.
+
+In deciding the retention period, we consider:
+
+• Whether the account or educational relationship remains active.
+• Whether information remains necessary to provide lessons, progress reporting or support.
+• The specific purpose of a lesson recording and whether it remains necessary for that purpose.
+• Applicable accounting, tax and other legal requirements.
+• Any relevant safety concern, fraud investigation or legal dispute.
+• The sensitivity of the information, especially information about children.
+
+We do not retain lesson recordings indefinitely merely because storage is available.
+
+When information is no longer needed, we delete it securely or irreversibly anonymise it.
+
+Where limited information must be retained after a deletion request, we explain the relevant categories, reasons and applicable period or criteria. Retained information is restricted to the purpose justifying its continued retention.
+
+Backup copies are removed through the applicable backup retention cycle and protected against ordinary use in the meantime.
+
+11. ACCOUNT AND PERSONAL DATA DELETION
+
+You may request deletion of your Hurra Lingo account and associated Personal Data. Parents or authorised guardians may also request deletion of associated child profiles.
+
+Requesting Deletion Through Our Website
+
+You may request deletion through our contact page:
+
+https://www.hurralingo.com/iletisim/
+
+Requesting Deletion by Email
+
+You may also email hello@hurralingo.com with the subject “Hurra Lingo – Account Deletion”.
+
+Include the email address associated with the account and identify any child profiles included in your request. Do not send your password or full payment-card details.
+
+You do not need to reinstall the Application to submit a request through our website or by email.
+
+We may take proportionate steps to verify account ownership or parental authority. Once verified, we delete the account and associated Personal Data unless limited retention is necessary and lawful. Where relevant, we also instruct Service Providers to delete information processed on our behalf.
+
+We explain the expected handling time and any necessary retention exceptions when processing your request. Temporary suspension or deactivation is not treated as account deletion.
+
+Account deletion, subscription cancellation and refund requests are separate processes. We explain any relevant effect on remaining lessons or billing and provide support with necessary steps.
+
+12. YOUR PRIVACY RIGHTS
+
+Depending on the law applicable to you, your rights may include:
+
+• Access to your Personal Data.
+• Correction of inaccurate or incomplete information.
+• Deletion of your information.
+• Restriction of processing.
+• Objection to certain processing.
+• Data portability.
+• Withdrawal of consent.
+
+Parents or guardians may exercise rights for children where permitted by law, taking account of the child’s own rights and maturity.
+
+Contact hello@hurralingo.com to submit a request. We respond within applicable statutory time limits and explain any lawful restrictions.
+
+You may also complain to the UK Information Commissioner’s Office at ico.org.uk or the competent data protection authority in your country.
+
+13. CHILDREN’S PRIVACY
+
+Hurra Lingo provides educational services for learners aged four and above, including children.
+
+A child’s contractual account must be created and managed by a parent or legal guardian. We provide relevant privacy information to the responsible adult and use age-appropriate explanations where appropriate.
+
+We obtain and verify parental authorisation where required, limit collection to relevant purposes and restrict access to children’s information.
+
+If you believe a child’s information has been collected or used without the required authorisation, contact hello@hurralingo.com. We investigate and take appropriate steps, including deletion where necessary.
+
+14. COOKIES AND SIMILAR TECHNOLOGIES
+
+Our website and learning platform use cookies and similar technologies for functions such as secure sessions, service operation and usage analysis.
+
+Where required by law, non-essential cookies or tracking technologies are used only after consent. Browser settings and any available privacy preference controls allow you to manage relevant choices.
+
+Mobile application technologies and SDKs may process information differently from website cookies. Their processing remains subject to the information and safeguards described in this Privacy Policy.
+
+Disabling certain technologies may affect the relevant service features.
+
+15. SECURITY OF YOUR PERSONAL DATA
+
+We use appropriate technical and organisational measures to protect Personal Data, including access controls, secure storage, staff training and system monitoring.
+
+Personal Data transmitted through the Services is protected using modern transport encryption, such as HTTPS/TLS.
+
+No method of transmission or storage is completely secure. We review our safeguards and respond to security incidents in accordance with applicable obligations.
+
+16. LINKS TO OTHER WEBSITES
+
+The Services may contain links to independently operated websites or services. Their own privacy policies govern information they collect when you use them.
+
+Please review those policies before providing information. This does not remove our responsibility for providers processing Personal Data on our behalf.
+
+17. CHANGES TO THIS PRIVACY POLICY
+
+We may update this Privacy Policy to reflect changes to our Services, data practices or legal obligations.
+
+We publish the revised policy on this page and update the date above. Where appropriate or legally required, we provide additional notice of material changes.
+
+If a change requires new consent, we obtain that consent before beginning the relevant processing.
+
+18. CONTACT US
+
+For privacy questions, complaints, account-deletion requests or other data protection requests, contact:
+
+Hurra Education International Ltd
+Company number: 14126405
+
+Email: hello@hurralingo.com
+
+Contact page: https://www.hurralingo.com/iletisim/
+
+Address:
+152–160 Capital Office Ltd
+Kemp House, City Road
+London, United Kingdom
+EC1V 2NX

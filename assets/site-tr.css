@@ -47,9 +47,15 @@
 .home-models .site-card:nth-child(2){background:#fff0e8}.home-models .site-card:nth-child(3){background:#f3efff}
 .site-tr .home-teachers #teachers{grid-template-columns:repeat(3,minmax(0,1fr))}
 .home-blog .site-card{padding:14px;display:flex;flex-direction:column}.home-blog .site-card h3{font-size:22px}.home-blog .site-card time{font-size:13px;color:var(--muted)}
+.contact-intro{padding-top:36px}
+.contact-intro .site-crumb{margin-bottom:0}
+.contact-intro + .wrap > .contact-layout{padding-top:28px}
+.contact-address-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.contact-address-heading > div{min-width:0}
+.contact-mascot{display:block;width:clamp(80px,12vw,150px);height:auto;flex-shrink:0;rotate:7deg;filter:drop-shadow(0 12px 0 #00aed010)}
 .contact-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
 .contact-main{background:var(--ink);color:white;border-radius:28px;padding:40px}
-.contact-main h2{font-family:var(--display);font-size:32px;margin:0 0 18px}
+.contact-main h1,.contact-main h2{font-family:var(--display);font-size:32px;margin:0 0 18px}
 .contact-main p{line-height:1.7;margin-bottom:24px;color:#d9e5ef}
 .contact-main a{color:#fff;overflow-wrap:anywhere}
 .contact-line{display:block;padding:18px 0;border-bottom:1px solid #ffffff26;text-decoration:none;font-size:clamp(18px,2vw,25px);font-weight:700}
@@ -65,3 +71,5 @@
 @media(max-width:800px){.page-intro-grid{grid-template-columns:minmax(0,1fr) 120px;gap:20px}.page-mascot{width:110px}.site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ages .site-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-strip{flex-direction:column;align-items:flex-start;padding:28px}.contact-layout{grid-template-columns:1fr}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.page-intro{padding-top:24px;padding-bottom:28px}.site-crumb{margin-bottom:24px}.page-intro-grid{grid-template-columns:1fr}.page-mascot{display:none}.page-intro .lead{font-size:17px}.site-grid,.site-grid.two,.home-ages .site-grid{grid-template-columns:1fr}.site-section{padding:32px 0}.site-card{padding:23px}.site-strip{padding:24px;margin-block:24px}.site-strip .btn{white-space:normal}.contact-main{padding:26px}.site-tr .home-teachers #teachers{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.site-card,.page-mascot{transition:none;rotate:none}.site-card:hover{transform:none}}
+
+@media(max-width:520px){.contact-intro{padding-top:24px}.contact-address-heading{gap:8px}.contact-address-heading h2{font-size:clamp(28px,8vw,40px)}.contact-mascot{width:clamp(72px,22vw,110px)}}
