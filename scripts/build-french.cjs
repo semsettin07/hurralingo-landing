@@ -80,7 +80,7 @@ function finish($,group,source){
  if(!$('link[href="/assets/site-locales.css"]').length)$('head').append('<link rel="stylesheet" href="/assets/site-locales.css">');
  if(!$('link[href="/assets/site-fr.css"]').length)$('head').append('<link rel="stylesheet" href="/assets/site-fr.css">');
  $('footer a[href*="Hurra-Lingo-Privacy-Policy"],footer a[href="/fr/confidentialite/"],footer a[href="/en/privacy-policy/"]').attr('href','/en/privacy-policy/').removeAttr('target rel').attr('hreflang','en').text('Politique de confidentialité (anglais)');
- $('a[href*="Hurra-Lingo-Terms-and-Conditions"]').attr('href','/fr/conditions-generales/').removeAttr('target rel').attr('hreflang','fr').text('Conditions générales');
+ $('footer a[href*="Hurra-Lingo-Terms-and-Conditions"],footer a[href="/fr/conditions-generales/"],footer a[href="/en/terms-and-conditions/"]').attr('href','/en/terms-and-conditions/').removeAttr('target rel').attr('hreflang','en').text('Conditions générales (anglais)');
  menus($,group.siblings||{fr:group.route},'fr');alternates($,group.siblings||{fr:group.route});
  $('script[type="application/ld+json"]').remove();
  const crumbs=[{name:'Accueil',url:'/fr/'}];if(group.kind==='article')crumbs.push({name:'Blog',url:'/fr/blog/'});if(group.route!=='/fr/')crumbs.push({name:group.title,url:group.route});

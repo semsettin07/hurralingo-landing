@@ -12,6 +12,7 @@ function overrides(lang){const l=locales[lang];return Object.fromEntries([
  ['Ücretsiz Tanışma Dersi',l.trial],['Ana sayfa',l.home],['HURRA LINGO BLOG',lang==='az'?'HURRA LINGO BLOQ':'HURRA LINGO BLOG'],
  ['Gizlilik Politikası (PDF, İngilizce)',l.pdf],['Şartlar ve Koşullar (PDF, İngilizce)',l.terms],
  ['Gizlilik Politikası (İngilizce)',{en:'Privacy Policy',de:'Datenschutzerklärung (Englisch)',az:'Məxfilik siyasəti (ingiliscə)'}[lang]],
+ ['Şartlar ve Koşullar (İngilizce)',{en:'Terms and Conditions',de:'Allgemeine Geschäftsbedingungen (Englisch)',az:'Şərtlər və qaydalar (ingiliscə)'}[lang]],
  ['TR, dil seçimi',`${lang.toUpperCase()}, ${lang==='de'?'Sprache wählen':lang==='az'?'dil seçimi':'select language'}`],
  ['Videolar Türkçe ses içerir.',l.videoNote],['hafta',l.week],
  ['Çocuklar, gençler ve yetişkinler için: öğretmeninizle tanışın, seviyenizi birlikte belirleyelim. Size en uygun programı sonra rahatça seçebilirsiniz.',lang==='en'?'For children, teenagers and adults: meet your teacher and discover your level together. Then choose the programme that suits you best.':lang==='de'?'Für Kinder, Jugendliche und Erwachsene: Lernen Sie Ihre Lehrkraft kennen und finden Sie gemeinsam Ihr Sprachniveau heraus. Wählen Sie anschließend in Ruhe das passende Programm.':'Uşaqlar, yeniyetmələr və böyüklər üçün: müəlliminizlə tanış olun, səviyyənizi birlikdə müəyyən edək. Sonra sizə ən uyğun proqramı rahatlıqla seçə bilərsiniz.']

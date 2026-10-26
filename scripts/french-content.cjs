@@ -63,6 +63,7 @@ const overrides={
  'Search articles':locale.search,'Enter a topic or keyword':locale.placeholder,'Category':locale.category,'All categories':locale.allCategories,'Clear':locale.clear,'No articles match your search.':locale.noResults,'articles shown':locale.articleCount,
  'English':'Anglais','German':'Allemand','French':'Français','Spanish':'Espagnol','Russian':'Russe','Chinese':'Chinois','Turkish':'Turc',
  'Privacy Policy':'Politique de confidentialité (anglais)',
+ 'Terms and Conditions':'Conditions générales (anglais)',
  'Privacy Policy (PDF, English)':'Politique de confidentialité','Terms and Conditions (PDF, English)':'Conditions générales',
  'Close menu':'Fermer le menu','Open menu':'Ouvrir le menu','Play video':'Lire la vidéo','Pause video':'Mettre la vidéo en pause','Copied':'Copié','Selected':'Sélectionné','Number copied to clipboard.':'Numéro copié dans le presse-papiers.','Number selected; use Ctrl+C or Cmd+C to copy.':'Numéro sélectionné ; utilisez Ctrl+C ou Cmd+C pour le copier.','Copy':'Copier','Save':'Enregistrer',
  'teachers shown':locale.teacherCount,'week':'semaine','years':'ans','Adults':'Adultes','Online':'En ligne','Live online language school':'École de langues en ligne, en direct',
