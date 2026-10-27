@@ -11,7 +11,8 @@ const locales = {
   de: { home:'de.html', route:'de/blog/', name:'Blog', homeLabel:'Startseite', title:'Entdecken Sie neue Welten beim Sprachenlernen.', intro:'Beiträge über Sprachenlernen, Kinder und Sprachpraxis im Alltag.', search:'Beiträge durchsuchen', placeholder:'Thema oder Suchbegriff eingeben', category:'Kategorie', all:'Alle Kategorien', reset:'Zurücksetzen', count:'Beiträge angezeigt', empty:'Keine Beiträge für Ihre Suche gefunden.', pending:'Unsere Blogbeiträge sind in Vorbereitung.', read:'Beitrag lesen', back:'Zurück zu allen Beiträgen', skip:'Zum Inhalt springen', source:'Quelle', locale:'de-DE' },
   az: { home:'az.html', route:'az/blog/', name:'Bloq', homeLabel:'Ana səhifə', title:'Dil öyrənərkən yeni dünyalar kəşf edin.', intro:'Dil öyrənmə, uşaqlar və gündəlik dil praktikası haqqında yazılar.', search:'Yazılarda axtar', placeholder:'Mövzu və ya açar söz yazın', category:'Kateqoriya', all:'Bütün kateqoriyalar', reset:'Təmizlə', count:'yazı göstərilir', empty:'Axtarışınıza uyğun yazı tapılmadı.', pending:'Bloq yazılarımız hazırlanır.', read:'Yazını oxu', back:'Bütün yazılara qayıt', skip:'Məzmuna keç', source:'Mənbə', locale:'az-Latn-AZ' }
 };
-const posts = JSON.parse(read('content/blog/posts.json'));
+const posts = require('./republic-day.cjs').update(JSON.parse(read('content/blog/posts.json')));
+write('content/blog/posts.json',JSON.stringify(posts,null,2)+'\n');
 if (!Array.isArray(posts)) throw Error('Blog records must be an array');
 const keys = new Set();
 for (const p of posts) {

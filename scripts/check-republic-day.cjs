@@ -1,0 +1,39 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium}=require(process.env.HURRA_PLAYWRIGHT_PATH||path.resolve(__dirname,'../../hurralingo/node_modules/playwright-core'));
+const r=require('./republic-day.cjs'),manifest=require('../content/i18n/routes.json');
+const origin=process.env.HURRA_PREVIEW_URL||'http://127.0.0.1:8017';
+const routes={tr:r.route,...manifest.routes[r.route]};
+(async()=>{const browser=await chromium.launch({headless:true});const errors=[],checks=[];
+ try{const context=await browser.newContext({reducedMotion:'reduce'});await context.addInitScript(()=>{localStorage.setItem('hl-ck','reject')});const page=await context.newPage();page.setDefaultTimeout(15000);page.setDefaultNavigationTimeout(20000);
+ await page.route('**/*',route=>{const url=new URL(route.request().url());if(url.pathname==='/api/country')return route.fulfill({contentType:'application/json',body:'{"country":null}'});return route.request().resourceType()==='media'||(!url.href.startsWith(origin)&&!url.hostname.endsWith('googleapis.com')&&!url.hostname.endsWith('gstatic.com'))?route.abort():route.continue()});
+ page.on('pageerror',e=>errors.push(e.message));page.on('response',res=>{if(res.url().startsWith(origin)&&res.status()>=400)errors.push(res.status()+' '+res.url())});
+ fs.mkdirSync('docs/republic-day',{recursive:true});
+ for(const lang of Object.keys(routes))for(const width of [320,390,768,1440]){
+  await page.setViewportSize({width,height:1000});const home=lang==='tr'?'/':`/${lang}/`;
+  console.log('Checking',lang,width);await page.goto(origin+home,{waitUntil:'domcontentloaded'});await page.locator('.republic-feature img').evaluate(img=>img.decode());
+  assert.equal(await page.locator('.republic-feature').count(),1);assert.equal(await page.locator('main > :first-child').getAttribute('class'),'republic-feature');
+  assert.equal(await page.locator('#republic-title').textContent(),r.data[lang][0]);
+  assert.deepEqual(await page.locator('.republic-feature-copy p').allTextContents(),r.data[lang].slice(1,3));
+  assert.equal(await page.locator('.republic-feature-copy a').getAttribute('href'),routes[lang]);
+  assert.ok((await page.locator('.republic-feature-copy a').textContent()).includes(r.labels[lang]));
+  assert.equal(await page.locator('.republic-feature img').getAttribute('alt'),r.alts[lang]);
+  assert.equal(await page.locator('.republic-feature-image').evaluate(el=>getComputedStyle(el).borderRadius),'28px');
+  const layout=await page.locator('.republic-feature').evaluate(el=>{const a=el.querySelector('.republic-feature-copy').getBoundingClientRect(),b=el.querySelector('img').getBoundingClientRect();return {copy:a.x,right:b.x,imageTop:b.y,copyBottom:a.bottom,loaded:el.querySelector('img').naturalWidth>0}});
+  assert.ok(layout.loaded);if(width>=768)assert.ok(layout.right>layout.copy);else assert.ok(layout.imageTop>=layout.copyBottom);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Home overflow '+lang+' '+width);
+  if(['tr','de','fr'].includes(lang)&&[390,1440].includes(width))await page.screenshot({path:`docs/republic-day/${lang}-home-${width}.png`});
+  await page.locator('.republic-feature-copy a').click();await page.waitForLoadState('domcontentloaded');
+  assert.equal(new URL(page.url()).pathname,routes[lang]);assert.equal(await page.locator('h1').textContent(),r.data[lang][0]);
+  assert.equal(await page.locator('.blog-prose h2').count(),4);assert.equal(await page.locator('.blog-prose li').count(),9);
+  const body=(await page.locator('.blog-prose').textContent()).replace(/\s+/g,' ');
+  for(const text of r.data[lang].slice(1))assert.ok(body.includes(text.replace(/\s+/g,' ')),'Missing article paragraph '+lang+': '+text.slice(0,35));
+  assert.ok(!body.includes('102.'));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Article overflow '+lang+' '+width);
+  for(const target of Object.keys(routes))assert.equal(await page.locator(`#hd-lang a[lang="${target}"]`).getAttribute('href'),routes[target]);
+  await page.goto(origin+(lang==='tr'?'/blog/':`/${lang}/blog/`),{waitUntil:'domcontentloaded'});
+  const card=page.locator('.blog-card').first();assert.equal(await card.locator('h2 a').getAttribute('href'),lang==='tr'?r.slug+'/index.html':routes[lang]);
+  assert.equal(await card.locator('p').textContent(),r.data[lang][1]);
+  checks.push({lang,width,home:true,article:true,archive:true});
+ }
+ assert.deepEqual(errors,[]);fs.writeFileSync('docs/republic-day/verification.json',JSON.stringify({pass:true,origin,checks,errors},null,2)+'\n');console.log('PASS: 60 page/viewport checks; all five translations, complete text, links, poster and responsive layout.');
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

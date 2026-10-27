@@ -2,6 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),c=require('cheerio'),assert=require('node:assert/strict');
 const {collect,shouldTranslate,attrs,legalBlocks}=require('./french-segments.cjs');
 const config=require('./french-content.cjs'),l=config.locale;
+const republic=require('./republic-day.cjs');
 const fullBlocks=require('./french-blocks.cjs');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const write=(file,text)=>{const full=path.join(root,file);fs.mkdirSync(path.dirname(full),{recursive:true});fs.writeFileSync(full,text)};
@@ -22,6 +23,7 @@ for(const group of groups){const $=sourceDocs.get(group.id);if(group.kind==='fix
  group.route=saved.find(g=>g.id===group.id)?.route||'/fr/blog/'+slug(group.title)+'/';
  titleOverrides[group.sourceLanguage+'\0'+$('h1').text().trim()]=group.title;
  }
+ if(group.id===republic.route){group.title=republic.data.fr[0];group.description=republic.data.fr[1];}
  group.siblings.fr=group.route;
 }
 assert.equal(articleIndex,42);assert.equal(new Set(groups.map(g=>g.route)).size,groups.length);
@@ -31,6 +33,8 @@ const redirects={...JSON.parse(read('content/site/redirects-tr.json')).rules,...
 const missing=new Set(),deExamples={'Alles Gute zum Vatertag, Papa!':'Bonne fête des Pères, papa !','Ich liebe dich, Papa.':'Je t’aime, papa.','Lieber Papa,':'Cher papa,','alles Gute zum Vatertag!':'Bonne fête des Pères !','Ich liebe dich sehr.':'Je t’aime très fort.','Du bist mein Held.':'Tu es mon héros.'};
 function t(text,language='en'){
  if(!text)return text;
+ if(['27 October 2026','27 Ekim 2026'].includes(text))return '27 octobre 2026';
+ const republicText=republic.translate(text,'fr',language);if(republicText!==undefined)return republicText;
  if(language==='de'&&deExamples[text])return deExamples[text];
  if(titleOverrides[language+'\0'+text])return titleOverrides[language+'\0'+text];
  if(Object.hasOwn(config.overrides,text))return config.overrides[text];
@@ -107,7 +111,8 @@ const articleGroups=groups.filter(g=>g.kind==='article');
 for(const group of articleGroups){
  const source=sourceDocs.get(group.id),main=c.load(source('main').prop('outerHTML'),null,false);
  for(const node of fullBlocks.blocks(main)){
-  const item=fullBlocks.encode(main,node),translated=blockDictionary[item.key];
+  const item=fullBlocks.encode(main,node),reviewedText=group.id===republic.route?republic.translate(item.text,'fr',group.sourceLanguage):undefined;
+  const translated=reviewedText!==undefined?{source:item.text,fr:reviewedText}:blockDictionary[item.key];
   assert.ok(translated&&translated.source===item.text,'Missing complete French paragraph: '+group.id+' '+item.key);
   let text=translated.fr;
   if(main(node).text().trim()===source('h1').text().trim()&&item.markup.length===2)text='[FT00000] '+group.title+' [FT00001]';

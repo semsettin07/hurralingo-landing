@@ -2,10 +2,10 @@
   "pass": true,
   "deploymentPerformed": false,
   "frenchPagesPerPackage": 53,
-  "totalCanonicalPages": 235,
+  "totalCanonicalPages": 237,
   "phase-1b-preview": {
     "robots": "noindex, nofollow",
-    "canonicalPages": 235,
+    "canonicalPages": 237,
     "countryFunctionRoutes": {
       "version": 1,
       "include": [
@@ -16,7 +16,7 @@
   },
   "phase-1c-production": {
     "robots": "index, follow",
-    "canonicalPages": 235,
+    "canonicalPages": 237,
     "countryFunctionRoutes": {
       "version": 1,
       "include": [

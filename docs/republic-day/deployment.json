@@ -1,0 +1,97 @@
+{
+  "pass": true,
+  "deployment": "https://37a27e43.hurralingo-landing.pages.dev",
+  "production": "https://www.hurralingo.com",
+  "checks": [
+    {
+      "lang": "tr",
+      "kind": "home",
+      "route": "/",
+      "status": 200
+    },
+    {
+      "lang": "tr",
+      "kind": "article",
+      "route": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+      "status": 200
+    },
+    {
+      "lang": "tr",
+      "kind": "archive",
+      "route": "/blog/",
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "kind": "home",
+      "route": "/en/",
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "kind": "article",
+      "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+      "status": 200
+    },
+    {
+      "lang": "en",
+      "kind": "archive",
+      "route": "/en/blog/",
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "kind": "home",
+      "route": "/de/",
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "kind": "article",
+      "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+      "status": 200
+    },
+    {
+      "lang": "de",
+      "kind": "archive",
+      "route": "/de/blog/",
+      "status": 200
+    },
+    {
+      "lang": "az",
+      "kind": "home",
+      "route": "/az/",
+      "status": 200
+    },
+    {
+      "lang": "az",
+      "kind": "article",
+      "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+      "status": 200
+    },
+    {
+      "lang": "az",
+      "kind": "archive",
+      "route": "/az/blog/",
+      "status": 200
+    },
+    {
+      "lang": "fr",
+      "kind": "home",
+      "route": "/fr/",
+      "status": 200
+    },
+    {
+      "lang": "fr",
+      "kind": "article",
+      "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
+      "status": 200
+    },
+    {
+      "lang": "fr",
+      "kind": "archive",
+      "route": "/fr/blog/",
+      "status": 200
+    }
+  ]
+}

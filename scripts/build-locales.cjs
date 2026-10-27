@@ -10,7 +10,8 @@ const posts=JSON.parse(read('content/blog/posts.json')),trPosts=posts.filter(p=>
 const sourceRoutes=JSON.parse(read('content/site/canonical-tr.json'));
 const dictionaries=Object.fromEntries(Object.keys(existingLocales).map(l=>[l,JSON.parse(read(`content/i18n/${l}.json`))]));
 const missing=new Set();
-function t(s,lang,sl='tr'){if(!s)return s;const value=sl==='tr'?(extraOverrides[lang][s]??overrides(lang)[s]):undefined;return (value??dictionaries[lang][sl]?.[s]??s).replace(/Hurra Jargon|HURRA JARGON|Hurray Linqo|Hurra Linqo|Hurrah Lingo/g,'Hurra Lingo');}
+const republic=require('./republic-day.cjs');
+function t(s,lang,sl='tr'){if(!s)return s;const value=republic.translate(s,lang,sl)??(sl==='tr'?(extraOverrides[lang][s]??overrides(lang)[s]):undefined);return (value??dictionaries[lang][sl]?.[s]??s).replace(/Hurra Jargon|HURRA JARGON|Hurray Linqo|Hurra Linqo|Hurrah Lingo/g,'Hurra Lingo');}
 const fixedMap=Object.fromEntries(fixed.map((route,i)=>[route,Object.fromEntries(Object.entries(existingLocales).map(([l,v])=>[l,`/${l}/${v.slugs[i]?v.slugs[i]+'/':''}`]))]));
 const existingMatches={
  en:{'karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi':'online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children','yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim':'online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule','sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi':'valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults'},

@@ -275,6 +275,12 @@
       ],
       "articles": [
         {
+          "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
+          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+          "title": "29 October Republic Day: Education, Freedom and the Spirit of Learning New Languages",
+          "legacySource": null
+        },
+        {
           "route": "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
           "sourceRoute": null,
           "title": "Father’s Day Messages in Different Languages: A Small Step into a New Language",
@@ -425,12 +431,6 @@
           "legacySource": null
         },
         {
-          "route": "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
-          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
-          "title": "🇹🇷 29 October Republic Day: Education, Freedom and the Spirit of Learning New Languages",
-          "legacySource": null
-        },
-        {
           "route": "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
           "sourceRoute": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
           "title": "Hurra Lingo: Making Language Learning Fearless and Fun for Kids",
@@ -507,6 +507,7 @@
         "/en/testimonials/",
         "/en/corporate/",
         "/en/contact/",
+        "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
         "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/",
         "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/",
         "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/",
@@ -532,7 +533,6 @@
         "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/",
         "/en/blog/why-is-learning-german-important/",
         "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/",
-        "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/",
         "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/",
         "/en/blog/russian-for-kids/",
         "/en/blog/practical-english-at-home-educational-english-games/",
@@ -560,6 +560,12 @@
         "/de/kontakt/"
       ],
       "articles": [
+        {
+          "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
+          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+          "title": "29. Oktober Tag der Republik: Bildung, Freiheit und der Geist des Erlernens neuer Sprachen",
+          "legacySource": null
+        },
         {
           "route": "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
           "sourceRoute": null,
@@ -723,12 +729,6 @@
           "legacySource": null
         },
         {
-          "route": "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
-          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
-          "title": "🇹🇷 29. Oktober Tag der Republik: Bildung, Freiheit und der Geist des Erlernens neuer Sprachen",
-          "legacySource": null
-        },
-        {
           "route": "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
           "sourceRoute": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
           "title": "Hurra Lingo: Sprachenlernen furchtlos und unterhaltsam für Kinder",
@@ -805,6 +805,7 @@
         "/de/erfahrungen/",
         "/de/unternehmen/",
         "/de/kontakt/",
+        "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
         "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/",
         "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/",
         "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/",
@@ -832,7 +833,6 @@
         "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/",
         "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/",
         "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/",
-        "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/",
         "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/",
         "/de/blog/russisch-fur-kinder/",
         "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/",
@@ -860,6 +860,12 @@
         "/az/elaqe/"
       ],
       "articles": [
+        {
+          "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
+          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
+          "title": "29 Oktyabr Respublika Günü: Təhsil, Azadlıq və Yeni Dilləri Öyrənmə Ruhu",
+          "legacySource": null
+        },
         {
           "route": "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
           "sourceRoute": "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/",
@@ -1005,12 +1011,6 @@
           "legacySource": null
         },
         {
-          "route": "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
-          "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
-          "title": "🇹🇷 29 Oktyabr Respublika Günü: Təhsil, Azadlıq və Yeni Dilləri Öyrənmə Ruhu",
-          "legacySource": null
-        },
-        {
           "route": "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
           "sourceRoute": "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/",
           "title": "Hurra Lingo: Dil Öyrənməni Uşaqlar üçün Qorxmaz və Əyləncəli Edin",
@@ -1087,6 +1087,7 @@
         "/az/reyler/",
         "/az/korporativ/",
         "/az/elaqe/",
+        "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
         "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/",
         "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/",
         "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/",
@@ -1111,7 +1112,6 @@
         "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/",
         "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/",
         "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/",
-        "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/",
         "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/",
         "/az/blog/rus-dili-usaqlar-ucun/",
         "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/",
@@ -1278,7 +1278,7 @@
         {
           "route": "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/",
           "sourceRoute": "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/",
-          "title": "🇹🇷 Le 29 octobre : éducation, liberté et envie d’apprendre des langues",
+          "title": "Le 29 octobre : éducation, liberté et envie d’apprendre des langues",
           "legacySource": null
         },
         {
