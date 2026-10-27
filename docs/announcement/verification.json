@@ -1,0 +1,68 @@
+{
+  "pass": true,
+  "origin": "http://127.0.0.1:8017",
+  "staticPages": 237,
+  "checks": [
+    {
+      "lang": "tr",
+      "width": 390,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "tr",
+      "width": 1440,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "de",
+      "width": 390,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "de",
+      "width": 1440,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "az",
+      "width": 390,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "az",
+      "width": 1440,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "fr",
+      "width": 390,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    },
+    {
+      "lang": "fr",
+      "width": 1440,
+      "previouslyDismissed": true,
+      "visibleAfterReloadAndNavigation": true
+    }
+  ],
+  "errors": []
+}

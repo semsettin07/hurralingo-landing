@@ -1,5 +1,5 @@
 window.HurraLocaleLanguages = {"İngilizce":"English","Almanca":"German","Fransızca":"French","İspanyolca":"Spanish","Rusça":"Russian","Çince":"Chinese","Türkçe":"Turkish"};
-try{if(localStorage.getItem('hl-announce-v1'))document.getElementById('announce').hidden=true}catch(e){}
+
 ;
 
 (function(){
@@ -9,16 +9,7 @@ try{if(localStorage.getItem('hl-announce-v1'))document.getElementById('announce'
   var menuBtn = document.getElementById('hd-menu'), drawer = document.getElementById('drawer');
   var slice = function(l){ return Array.prototype.slice.call(l); };
 
-  /* ── Duyuru: kapat ve hatırla ── */
-  var an = document.getElementById('announce');
-  if(an){
-    an.querySelector('.an-x').addEventListener('click', function(){
-      try{ localStorage.setItem('hl-announce-v1', '1'); }catch(_){}
-      an.classList.add('is-leaving');
-      var brand = hdr.querySelector('.brand'); if(brand) brand.focus({preventScroll:true});
-      setTimeout(function(){ an.hidden = true; requestFrame(); }, reduce ? 0 : 150);
-    });
-  }
+  // The BETT announcement is always visible; previous dismissal choices are ignored.
 
   /* ── Kaydırınca sıkışma: yapışkan konuma oturunca .scrolled ── */
   var stickTop = 0, ticking = false;

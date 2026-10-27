@@ -79,7 +79,7 @@ function finish($,group,source){
  $('a[href]').each((i,node)=>{const a=$(node);if(a.closest('#hd-lang,.dr-langs').length)return;a.attr('href',localUrl(a.attr('href'),source))});
  $('[src]').each((i,node)=>{const value=$(node).attr('src');if(value&&!/^(?:[a-z]+:|\/)/i.test(value))$(node).attr('src',new URL(value,'https://www.hurralingo.com'+source).pathname)});
  $('time[datetime]').each((i,node)=>{const value=$(node).attr('datetime');if(!Number.isNaN(Date.parse(value)))$(node).text(new Intl.DateTimeFormat('fr-FR',{dateStyle:'long',timeZone:'UTC'}).format(new Date(value)))});
- $('script[src="/assets/site-tr.js"],script[src="/assets/i18n/site-en.js"],script[src="/assets/i18n/site-de.js"],script[src="/assets/i18n/site-az.js"]').attr('src','/assets/i18n/site-fr.js');
+ $('script[src^="/assets/site-tr.js"],script[src^="/assets/i18n/site-en.js"],script[src^="/assets/i18n/site-de.js"],script[src^="/assets/i18n/site-az.js"]').attr('src','/assets/i18n/site-fr.js?v=20261027-bett');
  $('script[src="/assets/i18n/pricing-en.js"]').attr('src','/assets/i18n/pricing-fr.js');$('script[src="/assets/i18n/pricing-ui.js"]').attr('src','/assets/i18n/pricing-ui-fr.js');
  if(!$('link[href="/assets/site-locales.css"]').length)$('head').append('<link rel="stylesheet" href="/assets/site-locales.css">');
  if(!$('link[href="/assets/site-fr.css"]').length)$('head').append('<link rel="stylesheet" href="/assets/site-fr.css">');

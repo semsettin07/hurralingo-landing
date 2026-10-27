@@ -677,9 +677,9 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
     <span class="an-dot" aria-hidden="true"></span>
     <a class="an-link" href="https://www.hurralingo.app/trial-request" target="_blank" rel="noopener noreferrer"><span>Ücretsiz Tanışma Dersi</span><svg class="icon arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </p>
-  <button class="an-x" type="button" aria-label="Duyuruyu kapat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  
 </div>
-<script>try{if(localStorage.getItem('hl-announce-v1'))document.getElementById('announce').hidden=true}catch(e){}</script>
+<script></script>
 
 <header class="header" id="hdr">
   <div class="bar">
@@ -772,16 +772,7 @@ dialog[open]::backdrop{opacity:1; transition-duration:var(--dur)}
   var menuBtn = document.getElementById('hd-menu'), drawer = document.getElementById('drawer');
   var slice = function(l){ return Array.prototype.slice.call(l); };
 
-  /* ── Duyuru: kapat ve hatırla ── */
-  var an = document.getElementById('announce');
-  if(an){
-    an.querySelector('.an-x').addEventListener('click', function(){
-      try{ localStorage.setItem('hl-announce-v1', '1'); }catch(_){}
-      an.classList.add('is-leaving');
-      var brand = hdr.querySelector('.brand'); if(brand) brand.focus({preventScroll:true});
-      setTimeout(function(){ an.hidden = true; requestFrame(); }, reduce ? 0 : 150);
-    });
-  }
+  // The BETT announcement is always visible; previous dismissal choices are ignored.
 
   /* ── Kaydırınca sıkışma: yapışkan konuma oturunca .scrolled ── */
   var stickTop = 0, ticking = false;

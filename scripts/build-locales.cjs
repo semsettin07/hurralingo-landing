@@ -53,7 +53,7 @@ function page(html,lang,route,sourceRoute,options={}){
  const menu=['Eğitim','Dersler','Öğretmenler','Blog','Ücretler','Referanslar','Kurumsal','İletişim'];
  $('#hdr .nav .nav-a').each((i,e)=>{$(e).contents().filter((i,n)=>n.type==='text').first().replaceWith(l.menu[i]);});
  $('#drawer .dr-list a span').each((i,e)=>$(e).text(l.menu[i]));
- $('script[src="/assets/site-tr.js"]').attr('src',`/assets/i18n/site-${lang}.js`);
+ $('script[src^="/assets/site-tr.js"]').attr('src',`/assets/i18n/site-${lang}.js?v=20261027-bett`);
  $('script[src="/assets/pricing-tr.js"]').attr('src',`/assets/i18n/pricing-${lang}.js`);
  $('script[src="/assets/pricing-ui.js"]').attr('src','/assets/i18n/pricing-ui.js');
  $('head').append('<link rel="stylesheet" href="/assets/site-locales.css">');
