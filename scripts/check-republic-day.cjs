@@ -13,6 +13,8 @@ const routes={tr:r.route,...manifest.routes[r.route]};
   console.log('Checking',lang,width);await page.goto(origin+home,{waitUntil:'domcontentloaded'});await page.locator('.republic-feature img').evaluate(img=>img.decode());
   assert.equal(await page.locator('.republic-feature').count(),1);assert.equal(await page.locator('main > :first-child').getAttribute('class'),'republic-feature');
   assert.equal(await page.locator('link[href="/assets/republic-day-20261027-v3.css"]').count(),1,'Dedicated feature stylesheet must load independently of cached site CSS');
+  assert.equal(await page.locator('.republic-feature').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(255, 255, 255)');
+  assert.equal(await page.locator('.republic-title-accent').evaluate(el=>getComputedStyle(el).color),'rgb(223, 48, 45)');
   assert.equal(await page.locator('#republic-title').textContent(),r.data[lang][0]);
   assert.deepEqual(await page.locator('.republic-feature-copy p').allTextContents(),r.data[lang].slice(1,3));
   assert.equal(await page.locator('.republic-feature-copy a').getAttribute('href'),routes[lang]);
