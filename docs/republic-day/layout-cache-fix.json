@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "simulatedOldStylesheet": true,
+  "layout": {
+    "display": "grid",
+    "textRight": 831.71875,
+    "imageLeft": 907.5625,
+    "imageWidth": 403.4375,
+    "radius": "28px"
+  }
+}
