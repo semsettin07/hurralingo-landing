@@ -98,7 +98,8 @@ function finish($,group,source){
 // Fixed pages use their existing English counterpart, sharing the established design.
 const pages=new Map();
 for(const group of groups.filter(g=>g.kind==='fixed')){
- const $=translate(c.load(read(group.sourceRoute.slice(1)+'index.html')),'en'),index=fixed.indexOf(group.id);
+ const source=c.load(read(group.sourceRoute.slice(1)+'index.html'));if(group.id==='/')source('#republic-title').text(republic.data.en[0]);
+ const $=translate(source,'en'),index=fixed.indexOf(group.id);if(group.id==='/')$('#republic-title').html(republic.title('fr'));
  if(config.headings[index])$('h1').html(config.headings[index]);
  if(group.id==='/ucretler/')$('h1').text('Tarifs des cours Hurra Lingo');
  if(group.id==='/'){

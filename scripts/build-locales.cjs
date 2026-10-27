@@ -34,7 +34,7 @@ function translate($,lang,sl='tr'){
 }
 function hreflangs($,route,sourceRoute,lang){$('link[rel=alternate][hreflang]').remove();const siblings=sourceRoute?{tr:sourceRoute,...routeMap[sourceRoute]}:{[lang]:route};for(const [l,p]of Object.entries(siblings))$('head').append(`<link rel="alternate" hreflang="${l}" href="https://www.hurralingo.com${p}">`);if(siblings.tr)$('head').append(`<link rel="alternate" hreflang="x-default" href="https://www.hurralingo.com${siblings.tr}">`);return siblings;}
 function page(html,lang,route,sourceRoute,options={}){
- const l=locales[lang],$=c.load(html);translate($,lang);
+ const l=locales[lang],$=c.load(html);if(sourceRoute==='/')$('#republic-title').text(republic.data.tr[0]);translate($,lang);if(sourceRoute==='/')$('#republic-title').html(republic.title(lang));
  $('html').attr('lang',lang);$('body').addClass('locale-'+lang).attr('data-locale',lang);
  $('[lang=tr]').not('a[hreflang]').attr('lang',lang);
  $('a[href]').each((i,e)=>{const a=$(e);a.attr('href',localUrl(a.attr('href'),lang,sourceRoute||'/'));if(a.attr('href')?.includes('/login?lng=tr'))a.attr('href',a.attr('href').replace('lng=tr','lng='+lang));});
