@@ -1,6 +1,6 @@
 {
   "pass": true,
-  "origin": "http://127.0.0.1:8017",
+  "origin": "https://www.hurralingo.com",
   "staticPages": 237,
   "checks": [
     {
