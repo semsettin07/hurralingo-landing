@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..'),origin='https://www.hurralingo.com',lang
 const args=process.argv.slice(2),writeBaseline=args.includes('--write-baseline');
 const pkg=path.resolve(args.find(a=>!a.startsWith('--'))||path.join(root,'dist/cloudflare-pages'));
 // Add an item id here once its stage is done so a later change cannot silently undo it.
-const locked=['2.4','2.5','2.6','2.7','8.2','9.5','9.6'];
+const locked=['2.4','2.5','2.6','2.7','5.1','6.1','8.2','9.5','9.6'];
 if(!fs.existsSync(path.join(pkg,'sitemap.xml')))throw Error('No package at '+pkg+'; run npm run site:build-cf');
 const read=file=>fs.readFileSync(path.join(pkg,file),'utf8');
 const sitemap=read('sitemap.xml'),routes=[...sitemap.matchAll(/<loc>https:\/\/www\.hurralingo\.com([^<]*)<\/loc>/g)].map(m=>m[1]);

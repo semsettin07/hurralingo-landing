@@ -2,6 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),c=require('cheerio'),assert=require('node:assert/strict');
 const {fixed,languages,locales,overrides,pricing,pageTitles,pageHeadings,extraOverrides}=require('./locale-content.cjs');
 const {authorName,retiredLink}=require('./blog-content.cjs');
+const {startPrice}=require('./pricing-static.cjs');
 // Preserve the approved generators for the first four languages; FR is appended below.
 const existingLocales=Object.fromEntries(Object.entries(locales).filter(([lang])=>lang!=='fr'));
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
@@ -65,6 +66,7 @@ function page(html,lang,route,sourceRoute,options={}){
   $('#h1').contents().filter((i,n)=>n.type==='text').first().replaceWith(text[0]);$('#h1 .hero-smile').contents().filter((i,n)=>n.type==='text').first().replaceWith(text[1]);
   const latest=articles[lang].slice(0,3);$('.home-blog .site-card').each((i,e)=>{const p=latest[i];if(!p)return;const a=$(e);a.find('h3').text(p.title);a.find('time').attr('datetime',p.source.date.slice(0,10)).text(new Intl.DateTimeFormat(l.locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(p.source.date)));a.find('a').attr('href',p.route);a.find('img').attr('src',p.source.image?'/'+p.source.image:'/img/maskot-merakli.svg').attr('alt',p.title);});
  }
+ if(sourceRoute==='/ucretler/')$('.fee-model[data-model]').each((i,e)=>{$(e).find('[data-start-price]').text(startPrice(e.attribs['data-model'],l.locale));});
  if(sourceRoute==='/egitimmodelimiz/')$('#sorular .sec-head').after(`<p class="locale-media-note">${esc(l.videoNote)}</p>`);
  $('.campaign-banner').each((i,e)=>{const title={en:'Language learning for police personnel and their families',de:'Sprachunterricht für Polizeiangehörige und ihre Familien',az:'Polis əməkdaşları və ailələri üçün dil təhsili'}[lang],benefits={en:'10% off online lessons · Free access to the AI-supported app until the end of the year',de:'10 % Rabatt auf Online-Unterricht · Kostenloser Zugang zur KI-gestützten App bis zum Jahresende',az:'Onlayn dərslərdə 10% endirim · İlin sonunadək süni intellekt dəstəkli tətbiqə ödənişsiz giriş'}[lang];$(e).addClass('locale-campaign').html(`<div><h2>${esc(title)}</h2><p>${esc(benefits)}</p><p class="locale-media-note">${esc(l.campaignNote)}</p><a class="btn btn-line" href="/docs/hurra-lingo-emniyet-mensuplari-kampanya.pdf" hreflang="tr" target="_blank" rel="noopener noreferrer">${lang==='de'?'Originalbroschüre (PDF, Türkisch)':lang==='az'?'Orijinal broşür (PDF, türkcə)':'Original brochure (PDF, Turkish)'}</a></div><img src="/img/maskot-mutlu.svg" width="150" height="155" alt="">`);});
  if(options.title){$('title').text(options.title+' | Hurra Lingo');$('meta[property="og:title"]').attr('content',options.title);$('h1').text(options.title);}
@@ -116,4 +118,5 @@ require('./install-auto-language.cjs');
 console.log('Built EN/DE/AZ and French extension. Existing TR copy and pricing engine/data preserved; reciprocal language metadata updated.');
 
 require('./build-privacy.cjs');
+require('./build-structured-data.cjs');
 require('./build-sitemap.cjs');

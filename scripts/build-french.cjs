@@ -5,6 +5,7 @@ const config=require('./french-content.cjs'),l=config.locale;
 const republic=require('./republic-day.cjs');
 const fullBlocks=require('./french-blocks.cjs');
 const {authorName}=require('./blog-content.cjs');
+const {startPrice}=require('./pricing-static.cjs');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const write=(file,text)=>{const full=path.join(root,file);fs.mkdirSync(path.dirname(full),{recursive:true});fs.writeFileSync(full,text)};
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -100,9 +101,10 @@ function finish($,group,source){
 const pages=new Map();
 for(const group of groups.filter(g=>g.kind==='fixed')){
  const source=c.load(read(group.sourceRoute.slice(1)+'index.html'));if(group.id==='/')source('#republic-title').text(republic.data.en[0]);
+ source('[data-start-price]').text('—'); // Amounts are not translatable text; they are set after translation.
  const $=translate(source,'en'),index=fixed.indexOf(group.id);if(group.id==='/')$('#republic-title').html(republic.title('fr'));
  if(config.headings[index])$('h1').html(config.headings[index]);
- if(group.id==='/ucretler/')$('h1').text('Tarifs des cours Hurra Lingo');
+ if(group.id==='/ucretler/'){$('h1').text('Tarifs des cours Hurra Lingo');$('.fee-model[data-model]').each((i,e)=>{$(e).find('[data-start-price]').text(startPrice(e.attribs['data-model'],l.locale||'fr-FR'));});}
  if(group.id==='/'){
   $('#h1').contents().filter((i,n)=>n.type==='text').first().replaceWith('Le plaisir d’apprendre une nouvelle ');$('#h1 .hero-smile').contents().filter((i,n)=>n.type==='text').first().replaceWith('langue !');
  }
