@@ -4,13 +4,14 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const origin='https://www.hurralingo.com',skip=new Set(['assets','img','media','docs','wp-content','functions']);
 const fonts=['/assets/fonts/figtree-latin.woff2','/assets/fonts/bricolage-latin.woff2'];
 const coverSizes='(max-width: 920px) 100vw, 880px',cardSizes='(max-width: 720px) 100vw, (max-width: 960px) 50vw, 400px';
+const cookieLabels={tr:'Çerez tercihleri',en:'Cookie preferences',de:'Cookie-Einstellungen',az:'Kuki tərcihləri',fr:'Préférences de cookies'};
 const hash=data=>crypto.createHash('sha256').update(data).digest('hex').slice(0,12);
 const pages=(dir,base=dir)=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>{
  const file=path.join(dir,e.name);
  if(e.isDirectory())return dir===base&&skip.has(e.name)?[]:pages(file,base);
  return e.name.endsWith('.html')?[file]:[];
 });
-module.exports=out=>{
+module.exports=(out,{measurementId}={})=>{
  const widths=JSON.parse(fs.readFileSync(path.join(out,'img/blog/widths.json'),'utf8'));
  const versions=new Map(),bundles=new Map();
  const version=pathname=>{if(!versions.has(pathname))versions.set(pathname,hash(fs.readFileSync(path.join(out,pathname))));return pathname+'?v='+versions.get(pathname);};
@@ -44,11 +45,15 @@ module.exports=out=>{
    $('head').prepend(fonts.map(f=>`<link rel="preload" href="${f}" as="font" type="font/woff2" crossorigin>`).join(''));
   }
   $('script[src]').each((i,e)=>{const p=resolve(e.attribs.src);if(p.startsWith('/assets/'))e.attribs.src=version(p);});
+  // Measurement stays off, and pages stay unchanged, until an id is configured.
+  if(measurementId&&$('#cookie').length){
+   $('body').append(`<script src="${version('/assets/analytics.js')}" data-measurement-id="${measurementId}" defer></script>`);
+   $('.footer .kap-links').last().append(`<li><button class="ck-open" type="button" data-ck-open>${cookieLabels[$('html').attr('lang')]}</button></li>`);
+  }
   $('main img').each((i,e)=>{if(!/maskot-/.test(e.attribs.src||'')&&!(e.attribs.alt||'').trim()&&!$(e).closest('[aria-hidden=true]').length)e.attribs.alt=$(e).closest('.blog-card').find('h2').first().text()||$('h1').first().text();});
   $('main img').each((i,e)=>{$(e).data('route',route);});
   $('.blog-card .blog-cover,.site-card img').each((i,e)=>{responsive($,$(e),cardSizes);});
   $('.blog-prose img').each((i,e)=>{responsive($,$(e),coverSizes);});
-  $('.republic-feature-image img').each((i,e)=>{$(e).removeAttr('loading').attr('fetchpriority','high');responsive($,$(e),'(max-width: 767px) 360px, 440px');});
   // The article cover is the largest element of a post, so it must not wait for lazy loading.
   const hero=$('.blog-article > .blog-cover').first();
   const lead=hero.length?hero:$('.blog-article img').first();

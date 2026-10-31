@@ -35,7 +35,7 @@ for(const route of routes){
  m.oldSite+=$('[src*="hurraegitim.com"],[srcset*="hurraegitim.com"],[href*="hurraegitim.com"]').length;
  m.bodyTurkiye+=$('main a[href*="hurraturkiye.com"]').length;
  if(/hurraturkiyewp/.test(html))m.wpAuthor++;
- if(!/googletagmanager\.com\/gtag/.test(html))m.noAnalytics++;
+ if(!$('script[src^="/assets/analytics.js"][data-measurement-id^="G-"]').length)m.noAnalytics++;
  for(const e of $('a[href],link[rel=stylesheet],img[src],script[src],source[src],video[poster]').get()){
   const value=e.attribs.href||e.attribs.src||e.attribs.poster;
   if(/^(mailto:|tel:|#|javascript:|data:)/.test(value))continue;

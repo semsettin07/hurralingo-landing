@@ -241,5 +241,79 @@
         "kb": 741
       }
     ]
+  },
+  "lighthouseAfterStage3": {
+    "tool": "lighthouse",
+    "chrome": true,
+    "measuredAt": "2026-10-31T19:50:35.645Z",
+    "runs": 3,
+    "pages": [
+      {
+        "page": "/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 81,
+        "lcpMs": 3795,
+        "fcpMs": 2206,
+        "cls": 0,
+        "tbtMs": 98,
+        "kb": 472
+      },
+      {
+        "page": "/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 99,
+        "lcpMs": 807,
+        "fcpMs": 559,
+        "cls": 0,
+        "tbtMs": 0,
+        "kb": 1115
+      },
+      {
+        "page": "/ucretler/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 88,
+        "lcpMs": 3029,
+        "fcpMs": 2210,
+        "cls": 0,
+        "tbtMs": 56,
+        "kb": 309
+      },
+      {
+        "page": "/ucretler/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 95,
+        "lcpMs": 1195,
+        "fcpMs": 1084,
+        "cls": 0,
+        "tbtMs": 0,
+        "kb": 310
+      },
+      {
+        "page": "/blog/cocuklar-icin-rusca/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 89,
+        "lcpMs": 3040,
+        "fcpMs": 2061,
+        "cls": 0,
+        "tbtMs": 29,
+        "kb": 341
+      },
+      {
+        "page": "/blog/cocuklar-icin-rusca/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 99,
+        "lcpMs": 821,
+        "fcpMs": 551,
+        "cls": 0,
+        "tbtMs": 0,
+        "kb": 451
+      }
+    ]
   }
 }

@@ -32,7 +32,7 @@ for(const file of localized?['en/index.html','de/index.html','az/index.html']:['
  const $=c.load(fs.readFileSync(path.join(out,file),'utf8'));
  foreign.push({file,canonical:$('link[rel=canonical]').attr('href'),robots:$('meta[name=robots]').attr('content'),byteIdentical:fs.readFileSync(path.join(root,file)).equals(fs.readFileSync(path.join(out,file)))});
 }
-require('./optimize-package.cjs')(out);
+require('./optimize-package.cjs')(out,JSON.parse(read('content/site/analytics.json')));
 const release=JSON.parse(read('docs/phase-1c/release-blockers.json'));
 const result={pass:true,productionCandidateOnly:true,sourceSeoUnchanged:true,canonicalPages:routes.length,sitemapPages:c.load(read('sitemap.xml'),{xmlMode:true})('loc').length,preview:{meta:'noindex, nofollow',header:'noindex, nofollow',robots:'Disallow: /'},production:{meta:'index, follow',header:'No global X-Robots-Tag; 404 remains noindex',robots:'Allow: /'},foreign,releaseBlocked:!release.releaseAllowed||release.blocking.length>0,blockers:release.blocking.map(x=>x.detail),acceptedUnverifiedItems:release.acceptedUnverifiedItems||[]};
 fs.mkdirSync(path.join(root,'docs/phase-1c'),{recursive:true});
