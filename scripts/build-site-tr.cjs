@@ -36,8 +36,8 @@ const pages={
     content:intro('Dersler','Yaşınıza, hedefinize<br>ve ritminize uygun.','Çocuklardan yetişkinlere; bire bir, mini grup ya da grup dersleriyle dil öğrenmenin size uygun yolunu bulun.')+
       `<div class="wrap"><section class="site-section"><h2>Bir okul, yedi dil</h2><p class="lead">Hangi dili öğrenmek istersiniz? Başlangıç seviyeniz tanışma dersinde birlikte belirlenir.</p>${languageList}</section><section class="site-section" id="ders-modelleri"><h2>Nasıl öğrenmek istersiniz?</h2><div class="site-grid">${[
       ['bire-bir','Bire bir ders','1 kişi','Hedeflerinize ve öğrenme hızınıza göre kişisel bir program. Ders planınızı öğretmeninizle birlikte oluşturun.'],
-      ['mini-grup','Mini grup dersi','2–4 kişi · 30 dk','Küçük bir grupta karşılıklı konuşun, etkinliklere katılın ve birlikte ilerleyin.'],
-      ['grup','Grup dersi','5–8 kişi · 30 dk','Sosyal bir öğrenme ortamında farklı bakış açılarıyla pratik yapın.']
+      ['mini-grup','Mini grup dersi','2–4 kişi','Küçük bir grupta karşılıklı konuşun, etkinliklere katılın ve birlikte ilerleyin.'],
+      ['grup','Grup dersi','5–8 kişi','Sosyal bir öğrenme ortamında farklı bakış açılarıyla pratik yapın.']
       ].map(([id,t,b,p])=>`<article class="site-card" id="${id}"><span class="stamp">${b}</span><h3>${t}</h3><p>${p}</p><p class="section-link"><a href="/ucretler/">Ücretleri karşılaştırın →</a></p></article>`).join('')}</div></section></div>`+section('programlar')+
       `<div class="wrap"><section class="site-section"><h2>${esc(archive.items.find(x=>x.id==='lessons-recordings').title)}</h2><p class="lead">${esc(archive.items.find(x=>x.id==='lessons-recordings').text)}</p>${band('Dersler arasında küçük tekrarlar','Uygulama, öğretmen geri bildirimleri ve etkinliklerle öğrenmeye devam edin.','/egitimmodelimiz/','Eğitim modelimizi inceleyin')}</section></div>`+close
   },

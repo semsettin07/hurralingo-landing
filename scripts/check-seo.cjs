@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..'),origin='https://www.hurralingo.com',lang
 const args=process.argv.slice(2),writeBaseline=args.includes('--write-baseline');
 const pkg=path.resolve(args.find(a=>!a.startsWith('--'))||path.join(root,'dist/cloudflare-pages'));
 // Add an item id here once its stage is done so a later change cannot silently undo it.
-const locked=['2.4','2.5','2.6','2.7','5.1','6.1','7.1','7.2','7.3','7.5','7.6','7.7','8.2','9.5','9.6'];
+const locked=['2.4','2.5','2.6','2.7','5.1','5.3','6.1','7.1','7.2','7.3','7.5','7.6','7.7','8.2','9.5','9.6'];
 if(!fs.existsSync(path.join(pkg,'sitemap.xml')))throw Error('No package at '+pkg+'; run npm run site:build-cf');
 const read=file=>fs.readFileSync(path.join(pkg,file),'utf8');
 const sitemap=read('sitemap.xml'),routes=[...sitemap.matchAll(/<loc>https:\/\/www\.hurralingo\.com([^<]*)<\/loc>/g)].map(m=>m[1]);
@@ -22,7 +22,7 @@ const resolves=target=>{
  const file=path.join(pkg,p);
  return fs.existsSync(file)&&(fs.statSync(file).isFile()||fs.existsSync(path.join(file,'index.html')))||fs.existsSync(file+'.html')||redirectSet.has(p.replace(/\/$/,''))||redirectPrefixes.some(r=>p.startsWith(r));
 };
-const m={indexHtml:0,oldSite:0,bodyTurkiye:0,wpAuthor:0,lazyHero:0,noCanonical:[],noIndexFollow:[],broken:new Map(),emptyAlt:0,emptyAltByKind:{},maxStyles:0,noDescription:[],multiH1:[],noOrgHomes:[],noSiteHomes:[],emptyPrices:0,noAnalytics:0};
+const m={indexHtml:0,oldSite:0,bodyTurkiye:0,wpAuthor:0,lazyHero:0,noCanonical:[],noIndexFollow:[],broken:new Map(),emptyAlt:0,emptyAltByKind:{},maxStyles:0,noDescription:[],multiH1:[],noOrgHomes:[],noSiteHomes:[],emptyPrices:0,noFeeTerms:0,noAnalytics:0};
 const alternates=new Map();
 for(const route of routes){
  const html=read(route.slice(1)+'index.html'),$=c.load(html);
@@ -65,7 +65,10 @@ for(const route of routes){
   if(!types.some(t=>['Organization','EducationalOrganization'].includes(t)))m.noOrgHomes.push(route);
   if(!types.includes('WebSite'))m.noSiteHomes.push(route);
  }
- if(isPricing(route))m.emptyPrices+=$('[data-start-price]').filter((i,e)=>/^[—-]?$/.test($(e).text().trim())).length;
+ if(isPricing(route)){
+  m.emptyPrices+=$('[data-start-price]').filter((i,e)=>/^[—-]?$/.test($(e).text().trim())).length;
+  m.noFeeTerms+=$('.fee-model').filter((i,e)=>!$(e).find('.fee-terms').length).length;
+ }
 }
 const hreflangErrors=[];
 for(const [route,alts] of alternates)for(const [lang,href] of alts){
@@ -86,6 +89,7 @@ const items=[
  ['2.7','Marka menüsü olmayan 404 sayfası',missing404,0],
  ['3.2','GA4 olmayan sayfa',m.noAnalytics,0],
  ['5.1','HTML içinde boş fiyat alanı',m.emptyPrices,0],
+ ['5.3','Süre ve iptal koşulu olmayan fiyat kartı',m.noFeeTerms,0],
  ['6.1','Kurum/site kodu eksik ana sayfa',new Set([...m.noOrgHomes,...m.noSiteHomes]).size,0],
  ['7.1','Sayfa başına en fazla stil dosyası',m.maxStyles,3],
  ['7.2','Kapak görseli geç yüklenen yazı',m.lazyHero,0],

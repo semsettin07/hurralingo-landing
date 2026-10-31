@@ -1,15 +1,15 @@
 {
   "/": {
-    "hash": "952ae84e591aafbd",
+    "hash": "210ed4946d66850c",
     "date": "2026-10-31"
   },
   "/egitimmodelimiz/": {
-    "hash": "2853d7f5aaf62325",
-    "date": "2026-10-27"
+    "hash": "34305e4189dcfb28",
+    "date": "2026-10-31"
   },
   "/derslerimiz/": {
-    "hash": "1211f8a92731ec14",
-    "date": "2026-10-27"
+    "hash": "247bba4e771c4820",
+    "date": "2026-10-31"
   },
   "/ogretmenlerimiz/": {
     "hash": "9e5a8ab52eaca0ca",
@@ -20,7 +20,7 @@
     "date": "2026-10-27"
   },
   "/ucretler/": {
-    "hash": "373451c7ad707870",
+    "hash": "0e02c1c97121df4b",
     "date": "2026-10-31"
   },
   "/referanslarimiz/": {
@@ -172,16 +172,16 @@
     "date": "2025-04-15"
   },
   "/en/": {
-    "hash": "fda7df56e8ac99e2",
+    "hash": "d2ddc507d30fc39b",
     "date": "2026-10-31"
   },
   "/en/education/": {
-    "hash": "15e54fd49e4cce89",
-    "date": "2026-10-27"
+    "hash": "fa029a9e77133157",
+    "date": "2026-10-31"
   },
   "/en/lessons/": {
-    "hash": "89bec8392622589f",
-    "date": "2026-10-27"
+    "hash": "2ff321df0d8ca158",
+    "date": "2026-10-31"
   },
   "/en/teachers/": {
     "hash": "dab7b1adfbeddde4",
@@ -192,7 +192,7 @@
     "date": "2026-10-27"
   },
   "/en/fees/": {
-    "hash": "a0ac7b33f4455b7b",
+    "hash": "f8c615b7458ee688",
     "date": "2026-10-31"
   },
   "/en/testimonials/": {
@@ -356,16 +356,16 @@
     "date": "2025-04-15"
   },
   "/de/": {
-    "hash": "cea374f3a1df417f",
+    "hash": "45d428986b68de26",
     "date": "2026-10-31"
   },
   "/de/lernkonzept/": {
-    "hash": "0970170490b23ed3",
-    "date": "2026-10-27"
+    "hash": "faee9c7cd02a66eb",
+    "date": "2026-10-31"
   },
   "/de/kurse/": {
-    "hash": "231fb93bff4fb03d",
-    "date": "2026-10-27"
+    "hash": "cf246dc911b01400",
+    "date": "2026-10-31"
   },
   "/de/lehrkraefte/": {
     "hash": "c35741b1efd08a95",
@@ -376,7 +376,7 @@
     "date": "2026-10-27"
   },
   "/de/preise/": {
-    "hash": "f9ca3e89ec691b2b",
+    "hash": "322f62c166f446f3",
     "date": "2026-10-31"
   },
   "/de/erfahrungen/": {
@@ -548,16 +548,16 @@
     "date": "2025-04-15"
   },
   "/az/": {
-    "hash": "220a67b9a7202954",
+    "hash": "6998b64bca97cceb",
     "date": "2026-10-31"
   },
   "/az/tehsil/": {
-    "hash": "1dda2f0e78f1ed26",
-    "date": "2026-10-27"
+    "hash": "4f762005081ddc5c",
+    "date": "2026-10-31"
   },
   "/az/dersler/": {
-    "hash": "4518688ed72bc544",
-    "date": "2026-10-27"
+    "hash": "125fe11ad6325066",
+    "date": "2026-10-31"
   },
   "/az/muellimler/": {
     "hash": "5de981d8cf0be014",
@@ -568,7 +568,7 @@
     "date": "2026-10-27"
   },
   "/az/qiymetler/": {
-    "hash": "dddf453d5a152001",
+    "hash": "a4d37c41e1b227c4",
     "date": "2026-10-31"
   },
   "/az/reyler/": {
@@ -728,16 +728,16 @@
     "date": "2025-04-15"
   },
   "/fr/": {
-    "hash": "8ee863a0c85df4f4",
+    "hash": "3753293c6504d10d",
     "date": "2026-10-31"
   },
   "/fr/pedagogie/": {
-    "hash": "ab58d074d590c6b6",
-    "date": "2026-10-27"
+    "hash": "970b005e6b5b46d2",
+    "date": "2026-10-31"
   },
   "/fr/cours/": {
-    "hash": "322114f2b8e3642e",
-    "date": "2026-10-27"
+    "hash": "663812c2af4eabec",
+    "date": "2026-10-31"
   },
   "/fr/enseignants/": {
     "hash": "71610d210b1398dd",
@@ -748,7 +748,7 @@
     "date": "2026-10-27"
   },
   "/fr/tarifs/": {
-    "hash": "8cba16e4da57f695",
+    "hash": "ae0782c771cf070b",
     "date": "2026-10-31"
   },
   "/fr/temoignages/": {
