@@ -37,6 +37,10 @@
 .blog-article>.blog-meta{margin-top:32px}
 .blog-article h1{font-family:var(--display);font-size:clamp(32px,4vw,52px);line-height:1.14;margin:16px 0 28px;overflow-wrap:break-word}
 .blog-article>.blog-cover{height:auto;max-height:480px;object-fit:contain;border-radius:32px;margin-bottom:36px}
+.blog-next{max-width:76ch;margin:40px auto 32px;padding-top:28px;border-top:1px solid var(--line)}
+.blog-next h2{font-family:var(--display);font-size:24px;line-height:1.3;margin:0 0 14px}
+.blog-next ul{display:grid;gap:10px;margin:0 0 22px;padding:0;list-style:none}
+.blog-next li a{color:var(--ink);font-weight:600}
 .blog-prose{max-width:76ch;margin-inline:auto;font-size:18px;line-height:1.8;overflow-wrap:anywhere}
 .blog-prose p{margin-bottom:1.2em}
 .blog-prose h2,.blog-prose h3,.blog-prose h4,.blog-prose h5,.blog-prose h6{font-family:var(--display);line-height:1.3;margin:1.6em 0 .7em;overflow-wrap:anywhere}

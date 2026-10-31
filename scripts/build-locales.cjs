@@ -118,5 +118,7 @@ require('./install-auto-language.cjs');
 console.log('Built EN/DE/AZ and French extension. Existing TR copy and pricing engine/data preserved; reciprocal language metadata updated.');
 
 require('./build-privacy.cjs');
+require('./build-landing.cjs');
+require('./build-blog-links.cjs');
 require('./build-structured-data.cjs');
 require('./build-sitemap.cjs');

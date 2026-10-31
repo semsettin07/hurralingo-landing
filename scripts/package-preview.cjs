@@ -8,7 +8,7 @@ fs.mkdirSync(out,{recursive:true});
 // Keep Functions invocation limited to the one uncached geography endpoint.
 fs.writeFileSync(path.join(out,'_routes.json'),JSON.stringify({version:1,include:['/api/country'],exclude:[]},null,2)+'\n');
 require('./build-privacy.cjs');
-const dirs=['assets','img','media','blog','en','de','az','fr','ucretler','egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim','wp-content'];
+const dirs=['assets','img','media','blog','en','de','az','fr','ucretler','egitimmodelimiz','derslerimiz','ogretmenlerimiz','referanslarimiz','kurumsal','iletisim','wp-content',...JSON.parse(read('content/site/landing-pages.json')).map(p=>p.route.slice(1))];
 const localized=fs.existsSync(path.join(root,'content/i18n/routes.json'));
 for(const p of [...dirs,'index.html',...(localized?[]:['en.html','de.html','az.html']),'desktop-density.css','localization.css','og.jpg','sitemap.xml','robots.txt'])fs.cpSync(path.join(root,p),path.join(out,p),{recursive:true});
 fs.mkdirSync(path.join(out,'docs'),{recursive:true});

@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..'),origin='https://www.hurralingo.com',lang
 const args=process.argv.slice(2),writeBaseline=args.includes('--write-baseline');
 const pkg=path.resolve(args.find(a=>!a.startsWith('--'))||path.join(root,'dist/cloudflare-pages'));
 // Add an item id here once its stage is done so a later change cannot silently undo it.
-const locked=['2.4','2.5','2.6','2.7','5.1','5.3','6.1','7.1','7.2','7.3','7.5','7.6','7.7','8.2','9.5','9.6'];
+const locked=['2.4','2.5','2.6','2.7','5.1','5.3','6.1','7.1','7.2','7.3','7.5','7.6','7.7','8.2','9.5','9.5c','9.6'];
 if(!fs.existsSync(path.join(pkg,'sitemap.xml')))throw Error('No package at '+pkg+'; run npm run site:build-cf');
 const read=file=>fs.readFileSync(path.join(pkg,file),'utf8');
 const sitemap=read('sitemap.xml'),routes=[...sitemap.matchAll(/<loc>https:\/\/www\.hurralingo\.com([^<]*)<\/loc>/g)].map(m=>m[1]);
@@ -22,7 +22,7 @@ const resolves=target=>{
  const file=path.join(pkg,p);
  return fs.existsSync(file)&&(fs.statSync(file).isFile()||fs.existsSync(path.join(file,'index.html')))||fs.existsSync(file+'.html')||redirectSet.has(p.replace(/\/$/,''))||redirectPrefixes.some(r=>p.startsWith(r));
 };
-const m={indexHtml:0,oldSite:0,bodyTurkiye:0,wpAuthor:0,lazyHero:0,noCanonical:[],noIndexFollow:[],broken:new Map(),emptyAlt:0,emptyAltByKind:{},maxStyles:0,noDescription:[],multiH1:[],noOrgHomes:[],noSiteHomes:[],emptyPrices:0,noFeeTerms:0,noAnalytics:0};
+const m={indexHtml:0,oldSite:0,bodyTurkiye:0,wpAuthor:0,lazyHero:0,noCanonical:[],noIndexFollow:[],broken:new Map(),emptyAlt:0,emptyAltByKind:{},maxStyles:0,noDescription:[],multiH1:[],noOrgHomes:[],noSiteHomes:[],emptyPrices:0,noFeeTerms:0,noAnalytics:0,noReadingLinks:0};
 const alternates=new Map();
 for(const route of routes){
  const html=read(route.slice(1)+'index.html'),$=c.load(html);
@@ -59,6 +59,7 @@ for(const route of routes){
  }
  if(isPost(route)){
   if($('main img').first().attr('loading')==='lazy')m.lazyHero++;
+  if(!$('.blog-next > a').length)m.noReadingLinks++;
  }
  if(isHome(route)){
   const types=$('script[type="application/ld+json"]').map((i,e)=>{try{const j=JSON.parse($(e).html());return [].concat(j['@graph']||j).map(x=>x['@type'])}catch{return []}}).get();
@@ -99,6 +100,7 @@ const items=[
  ['7.7','Alt metni boş görsel',m.emptyAlt,0],
  ['8.2','Eksik güvenlik başlığı',['Strict-Transport-Security','X-Frame-Options','Permissions-Policy'].filter(h=>!headers.includes(h)).length,0],
  ['9.5','Yazar olarak hurraturkiyewp görünen sayfa',m.wpAuthor,0],
+ ['9.5c','Ders bağlantısı olmayan blog yazısı',m.noReadingLinks,0],
  ['9.6','Metin içi hurraturkiye.com bağlantısı',m.bodyTurkiye,0]
 ].map(([id,label,value,target])=>({id,label,value,target,done:value<=target}));
 const guards=[

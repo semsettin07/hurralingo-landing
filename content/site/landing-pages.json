@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "course",
+    "route": "/online-almanca-kursu/",
+    "language": "Almanca",
+    "title": "Online Almanca Kursu",
+    "description": "Canlı online Almanca dersleri: 4 yaştan yetişkine programlar, Almanca öğretmenleri ve bire bir, mini grup, grup seçenekleri. Ücretsiz tanışma dersiyle başlayın.",
+    "heading": "Online Almanca Kursu",
+    "lead": "Canlı derslerle Almanca konuşmaya başlayın. Öğretmeninizle tanışın, seviyenizi birlikte belirleyin ve yaşınıza uygun programla ilerleyin.",
+    "mascot": "maskot-merakli.svg",
+    "teachersTitle": "Almanca öğretmenlerimiz",
+    "posts": ["almanca-ogrenmek-neden-onemli", "ispanyolca-mi-almanca-mi"]
+  },
+  {
+    "kind": "about",
+    "route": "/hakkimizda/",
+    "title": "Hakkımızda",
+    "description": "Hurra Lingo, çocuklardan yetişkinlere yedi dilde canlı online dersler sunan bir dil okuludur. Kurumsal bilgilerimiz, ofislerimiz ve iletişim kanallarımız.",
+    "heading": "Hakkımızda",
+    "lead": "Hurra Lingo; uzman öğretmenler, canlı online dersler ve interaktif içeriklerle çocuklardan yetişkinlere dil öğrenmeyi günlük hayatın bir parçası haline getirir.",
+    "mascot": "maskot-mutlu.svg"
+  }
+]
