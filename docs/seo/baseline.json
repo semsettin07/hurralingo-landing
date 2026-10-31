@@ -1,0 +1,245 @@
+{
+  "pages": 237,
+  "items": [
+    {
+      "id": "2.4",
+      "label": "index.html ile biten site içi bağlantı",
+      "value": 137,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "2.5",
+      "label": "hurraegitim.com bağlantısı",
+      "value": 112,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "2.6",
+      "label": "Sitemap: lastmod olmayan adres",
+      "value": 237,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "2.7",
+      "label": "Marka menüsü olmayan 404 sayfası",
+      "value": 1,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "3.2",
+      "label": "GA4 olmayan sayfa",
+      "value": 237,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "5.1",
+      "label": "HTML içinde boş fiyat alanı",
+      "value": 15,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "6.1",
+      "label": "Kurum/site kodu eksik ana sayfa",
+      "value": 5,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "7.1",
+      "label": "Sayfa başına en fazla stil dosyası",
+      "value": 8,
+      "target": 3,
+      "done": false
+    },
+    {
+      "id": "7.2",
+      "label": "Kapak görseli geç yüklenen yazı",
+      "value": 180,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "7.3",
+      "label": "Logo dosyası (KB)",
+      "value": 312,
+      "target": 30,
+      "done": false
+    },
+    {
+      "id": "7.5",
+      "label": "Boyutu tanımsız hero video",
+      "value": 1,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "7.6",
+      "label": "1 yıl önbelleği olmayan statik klasör",
+      "value": 3,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "7.7",
+      "label": "Alt metni boş görsel",
+      "value": 100,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "8.2",
+      "label": "Eksik güvenlik başlığı",
+      "value": 3,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "9.5",
+      "label": "Yazar olarak hurraturkiyewp görünen sayfa",
+      "value": 183,
+      "target": 0,
+      "done": false
+    },
+    {
+      "id": "9.6",
+      "label": "Metin içi hurraturkiye.com bağlantısı",
+      "value": 50,
+      "target": 0,
+      "done": false
+    }
+  ],
+  "guards": [
+    {
+      "label": "Sitemap adresleri dizine açık",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "Canonical kendi adresini gösteriyor",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "robots.txt tüm siteye açık, sitemap bildiriyor",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "Genel noindex başlığı yok",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "hreflang karşılıklı",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "Site içi bağlantılar kırık değil",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "Her sayfada açıklama var",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    },
+    {
+      "label": "Her sayfada tek H1 var",
+      "pass": true,
+      "count": 0,
+      "sample": []
+    }
+  ],
+  "emptyAltByKind": {
+    "blog": 100
+  },
+  "source": "12413f0 (237/237 pages match live after undoing Cloudflare edge rewrites)",
+  "lighthouse": {
+    "tool": "lighthouse",
+    "chrome": true,
+    "measuredAt": "2026-10-31T18:54:08.561Z",
+    "runs": 3,
+    "pages": [
+      {
+        "page": "/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 64,
+        "lcpMs": 6772,
+        "fcpMs": 3551,
+        "cls": 0,
+        "tbtMs": 88,
+        "kb": 930
+      },
+      {
+        "page": "/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 88,
+        "lcpMs": 1617,
+        "fcpMs": 1201,
+        "cls": 0.092,
+        "tbtMs": 0,
+        "kb": 1379
+      },
+      {
+        "page": "/ucretler/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 67,
+        "lcpMs": 5521,
+        "fcpMs": 3875,
+        "cls": 0,
+        "tbtMs": 48,
+        "kb": 588
+      },
+      {
+        "page": "/ucretler/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 94,
+        "lcpMs": 1216,
+        "fcpMs": 1136,
+        "cls": 0.004,
+        "tbtMs": 0,
+        "kb": 589
+      },
+      {
+        "page": "/blog/cocuklar-icin-rusca/",
+        "form": "mobile",
+        "samples": 3,
+        "score": 71,
+        "lcpMs": 4884,
+        "fcpMs": 3412,
+        "cls": 0,
+        "tbtMs": 46,
+        "kb": 741
+      },
+      {
+        "page": "/blog/cocuklar-icin-rusca/",
+        "form": "desktop",
+        "samples": 3,
+        "score": 93,
+        "lcpMs": 1426,
+        "fcpMs": 1141,
+        "cls": 0.006,
+        "tbtMs": 0,
+        "kb": 741
+      }
+    ]
+  }
+}
