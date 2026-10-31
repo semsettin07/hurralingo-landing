@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..'),origin='https://www.hurralingo.com',lang
 const args=process.argv.slice(2),writeBaseline=args.includes('--write-baseline');
 const pkg=path.resolve(args.find(a=>!a.startsWith('--'))||path.join(root,'dist/cloudflare-pages'));
 // Add an item id here once its stage is done so a later change cannot silently undo it.
-const locked=[];
+const locked=['2.4','2.5','2.6','2.7','8.2','9.5','9.6'];
 if(!fs.existsSync(path.join(pkg,'sitemap.xml')))throw Error('No package at '+pkg+'; run npm run site:build-cf');
 const read=file=>fs.readFileSync(path.join(pkg,file),'utf8');
 const sitemap=read('sitemap.xml'),routes=[...sitemap.matchAll(/<loc>https:\/\/www\.hurralingo\.com([^<]*)<\/loc>/g)].map(m=>m[1]);
@@ -70,13 +70,14 @@ for(const [route,alts] of alternates)for(const [lang,href] of alts){
  if(!back||![...back.values()].includes(origin+route))hreflangErrors.push(route+' -> '+href);
 }
 const logoSrc=(c.load(read('index.html'))('header img, #hdr img').first().attr('src')||'').split('?')[0];
-const hero=c.load(read('index.html'))('#hero-video'),page404=read('404.html');
+const hero=c.load(read('index.html'))('#hero-video');
+const missing404=['',...languages.map(l=>l+'/')].filter(l=>!fs.existsSync(path.join(pkg,l,'404.html'))||!c.load(read(l+'404.html'))('#hdr .nav').length).length;
 const staticCached=['/assets/','/img/','/media/'].filter(p=>new RegExp('^'+p+'\\*\\n(?:[ \\t].*\\n)*?[ \\t]+Cache-Control:.*max-age=31536000','m').test(headers)).length;
 const items=[
  ['2.4','index.html ile biten site içi bağlantı',m.indexHtml,0],
  ['2.5','hurraegitim.com bağlantısı',m.oldSite,0],
  ['2.6','Sitemap: lastmod olmayan adres',routes.length-(sitemap.match(/<lastmod>/g)||[]).length,0],
- ['2.7','Marka menüsü olmayan 404 sayfası',/<nav/.test(page404)?0:1,0],
+ ['2.7','Marka menüsü olmayan 404 sayfası',missing404,0],
  ['3.2','GA4 olmayan sayfa',m.noAnalytics,0],
  ['5.1','HTML içinde boş fiyat alanı',m.emptyPrices,0],
  ['6.1','Kurum/site kodu eksik ana sayfa',new Set([...m.noOrgHomes,...m.noSiteHomes]).size,0],

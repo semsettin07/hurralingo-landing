@@ -4,6 +4,7 @@ const {collect,shouldTranslate,attrs,legalBlocks}=require('./french-segments.cjs
 const config=require('./french-content.cjs'),l=config.locale;
 const republic=require('./republic-day.cjs');
 const fullBlocks=require('./french-blocks.cjs');
+const {authorName}=require('./blog-content.cjs');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const write=(file,text)=>{const full=path.join(root,file);fs.mkdirSync(path.dirname(full),{recursive:true});fs.writeFileSync(full,text)};
 const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -111,6 +112,7 @@ for(const group of groups.filter(g=>g.kind==='fixed')){
 const articleGroups=groups.filter(g=>g.kind==='article');
 for(const group of articleGroups){
  const source=sourceDocs.get(group.id),main=c.load(source('main').prop('outerHTML'),null,false);
+ main('.blog-article > .blog-meta span').remove();
  for(const node of fullBlocks.blocks(main)){
   const item=fullBlocks.encode(main,node),reviewedText=group.id===republic.route?republic.translate(item.text,'fr',group.sourceLanguage):undefined;
   const translated=reviewedText!==undefined?{source:item.text,fr:reviewedText}:blockDictionary[item.key];
@@ -125,6 +127,7 @@ for(const group of articleGroups){
  main('[data-fr-ready]').removeAttr('data-fr-ready');
  main('.blog-cover').attr('alt',group.title);
  const $=c.load(pages.get('/fr/contact/').html());$('main').replaceWith(main.html());$('main h1').text(group.title);
+ $('.blog-article > .blog-meta').append(`<span>${esc(authorName('','fr'))}</span>`);
  if(!$('link[href="/assets/blog.css"]').length)$('head').append('<link rel="stylesheet" href="/assets/blog.css">');
  $('.blog-prose').attr('lang','fr');$('.blog-article > .link').attr('href','/fr/blog/').text('← Tous les articles');
  $('.editorial-note').each((i,node)=>{$(node).html(esc(l.historic)+' <a href="/fr/tarifs/">Tarifs →</a>')});

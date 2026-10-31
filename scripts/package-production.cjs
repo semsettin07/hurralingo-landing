@@ -18,7 +18,8 @@ for(const route of routes){
  assert.equal($('link[rel=canonical]').attr('href'),'https://www.hurralingo.com'+route);
 }
 fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://www.hurralingo.com/sitemap.xml\n');
-fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n/404.html\n  X-Robots-Tag: noindex, nofollow\n');
+// No includeSubDomains: old-server subdomains are still being retired.
+fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: SAMEORIGIN\n  Strict-Transport-Security: max-age=31536000\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n/404.html\n  X-Robots-Tag: noindex, nofollow\n');
 const redirectFile=path.join(out,'_redirects');fs.writeFileSync(redirectFile,fs.readFileSync(redirectFile,'utf8').replace('Preview-only relative','Production relative'));
 const protectedFiles=JSON.parse(read('docs/phase-1b/baseline.json')).protectedFiles;
 for(const [file,digest] of Object.entries(protectedFiles)){

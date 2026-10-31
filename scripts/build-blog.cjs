@@ -1,6 +1,7 @@
 // Build static blog pages from verified, language-specific source records.
 const fs = require('node:fs');
 const path = require('node:path');
+const {authorName,retiredLink} = require('./blog-content.cjs');
 const root = path.resolve(__dirname, '..');
 const read = p => fs.readFileSync(path.join(root, p), 'utf8');
 const write = (p, s) => { fs.mkdirSync(path.dirname(path.join(root, p)), { recursive: true }); fs.writeFileSync(path.join(root, p), s); };
@@ -24,7 +25,7 @@ const relative = (route, target) => path.posix.relative(route, target) || './';
 const arrow='<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>';
 const pageUrl = route => 'https://hurralingo-landing.pages.dev/'+route;
 const safeTags=new Set(['p','h2','h3','h4','h5','h6','strong','b','em','i','ul','ol','li','blockquote','br','hr','figure','figcaption','table','thead','tbody','tr','th','td','a','img']);
-const sourcePaths=new Map(posts.map(p=>[new URL(p.source).pathname,locales[p.language].route+p.slug+'/index.html']));
+const sourcePaths=new Map(posts.map(p=>[new URL(p.source).pathname,'/'+locales[p.language].route+p.slug+'/']));
 function renderNodes(nodes,route) {
   return nodes.map(n=>{
     if(typeof n.text==='string')return esc(n.text);
@@ -38,9 +39,11 @@ function renderNodes(nodes,route) {
     if(n.tag==='a'){
       if(!n.href)return children;
       const url=new URL(n.href);if(!['https:','http:','mailto:','tel:'].includes(url.protocol))return children;
-      const local=url.hostname==='hurraegitim.com'?sourcePaths.get(url.pathname):null;
-      const href=local?relative(route,local):n.href;
-      return `<a href="${esc(href)}"${local?'':' target="_blank" rel="noopener noreferrer"'}>${children}</a>`;
+      const archived=url.hostname==='hurraegitim.com'?sourcePaths.get(url.pathname):null;
+      const retired=archived?undefined:retiredLink(url);
+      if(retired===null)return children;
+      const local=archived||retired;
+      return `<a href="${esc(local||n.href)}"${local?'':' target="_blank" rel="noopener noreferrer"'}>${children}</a>`;
     }
     return `<${n.tag}>${children}</${n.tag}>`;
   }).join('');
@@ -70,14 +73,14 @@ for(const [lang,l] of Object.entries(locales)) {
   const cats=[...new Set(articles.flatMap(p=>p.categories||[]))].sort((a,b)=>a.localeCompare(b,l.locale));
   const date=p=>new Intl.DateTimeFormat(l.locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(p.date));
   const cover=(p,r)=>p.image?`<img class="blog-cover" src="${relative(r,p.image)}" alt="${esc(p.imageAlt||'')}" width="640" height="400" loading="lazy">`:`<div class="blog-cover blog-cover-empty" aria-hidden="true"><img src="${relative(r,'img/maskot-merakli.svg')}" width="120" height="124" alt=""></div>`;
-  const cards=articles.map(p=>`<article class="blog-card" data-post-card data-search="${esc(p.title+' '+p.summary+' '+(p.categories||[]).join(' '))}" data-category="${esc(JSON.stringify(p.categories||[]))}">${cover(p,route)}<div class="blog-card-body"><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${(p.categories||[]).map(c=>`<span>${esc(c)}</span>`).join('')}</div><h2 lang="${esc(p.contentLanguage||lang)}"><a href="${p.slug}/index.html">${esc(p.title)}</a></h2><p lang="${esc(p.contentLanguage||lang)}">${esc(p.summary)}</p><a class="link" href="${p.slug}/index.html">${l.read}${arrow}</a></div></article>`).join('');
-  const content=`<nav class="blog-breadcrumb" aria-label="${l.homeLabel}"><a href="${relative(route,l.home)}">${l.homeLabel}</a><span aria-hidden="true">›</span><span aria-current="page">${l.name}</span></nav><section class="blog-hero"><div class="wrap"><div><p class="eyebrow">HURRA LINGO · ${l.name.toLocaleUpperCase(l.locale)}</p><h1>${l.title}</h1><p class="lead">${l.intro}</p></div><img src="${relative(route,'img/maskot-merakli.svg')}" alt="" width="180" height="186"></div></section><section class="blog-archive wrap" aria-label="${l.name}">${articles.length?`<form class="blog-search" data-blog-search><label>${l.search}<input type="search" name="q" placeholder="${l.placeholder}" autocomplete="off"></label><label>${l.category}<select name="category"><option value="">${l.all}</option>${cats.map(c=>`<option>${esc(c)}</option>`).join('')}</select></label><button class="btn btn-line" type="reset">${l.reset}</button></form><p class="blog-result" id="blog-result" role="status" aria-live="polite" data-count-label="${l.count}">${articles.length} ${l.count}</p><div class="blog-grid">${cards}</div><p class="blog-empty" id="blog-empty" hidden>${l.empty}</p>`:`<div class="blog-empty"><img src="${relative(route,'img/maskot-mutlu.svg')}" alt="" width="90" height="93"><p>${l.pending}</p></div>`}</section>`;
+  const cards=articles.map(p=>`<article class="blog-card" data-post-card data-search="${esc(p.title+' '+p.summary+' '+(p.categories||[]).join(' '))}" data-category="${esc(JSON.stringify(p.categories||[]))}">${cover(p,route)}<div class="blog-card-body"><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${(p.categories||[]).map(c=>`<span>${esc(c)}</span>`).join('')}</div><h2 lang="${esc(p.contentLanguage||lang)}"><a href="/${route}${p.slug}/">${esc(p.title)}</a></h2><p lang="${esc(p.contentLanguage||lang)}">${esc(p.summary)}</p><a class="link" href="/${route}${p.slug}/">${l.read}${arrow}</a></div></article>`).join('');
+  const content=`<nav class="blog-breadcrumb" aria-label="${l.homeLabel}"><a href="/">${l.homeLabel}</a><span aria-hidden="true">›</span><span aria-current="page">${l.name}</span></nav><section class="blog-hero"><div class="wrap"><div><p class="eyebrow">HURRA LINGO · ${l.name.toLocaleUpperCase(l.locale)}</p><h1>${l.title}</h1><p class="lead">${l.intro}</p></div><img src="${relative(route,'img/maskot-merakli.svg')}" alt="" width="180" height="186"></div></section><section class="blog-archive wrap" aria-label="${l.name}">${articles.length?`<form class="blog-search" data-blog-search><label>${l.search}<input type="search" name="q" placeholder="${l.placeholder}" autocomplete="off"></label><label>${l.category}<select name="category"><option value="">${l.all}</option>${cats.map(c=>`<option>${esc(c)}</option>`).join('')}</select></label><button class="btn btn-line" type="reset">${l.reset}</button></form><p class="blog-result" id="blog-result" role="status" aria-live="polite" data-count-label="${l.count}">${articles.length} ${l.count}</p><div class="blog-grid">${cards}</div><p class="blog-empty" id="blog-empty" hidden>${l.empty}</p>`:`<div class="blog-empty"><img src="${relative(route,'img/maskot-mutlu.svg')}" alt="" width="90" height="93"><p>${l.pending}</p></div>`}</section>`;
   const alternates=Object.fromEntries(Object.entries(locales).map(([k,v])=>[k,v.route]));
   write(route+'index.html',shell(lang,route,l.name,l.intro,content,alternates));
   for(const p of articles) {
     const r=route+p.slug+'/';
     const historical=/kampanya|indirim/i.test(p.paragraphs.join(' '))?'<p class="editorial-note">Bu yazı yayımlandığı dönemin bilgilerini içerir. Tarihli kampanya ve indirimler güncel teklif değildir. Güncel seçenekler için <a href="/ucretler/">Ücretler sayfamızı</a> inceleyin.</p>':'';
-    const body=`<article class="blog-article"><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time>${p.author?`<span>${esc(p.author)}</span>`:''}</div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${historical}${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><a class="link" href="${relative(r,route+'index.html')}">← ${l.back}</a></article>`;
+    const body=`<article class="blog-article"><a class="link" href="/${route}">← ${l.back}</a><div class="blog-meta"><time datetime="${esc(p.date.slice(0,10))}">${date(p)}</time><span>${esc(authorName(p.author,lang))}</span></div><h1 lang="${esc(p.contentLanguage||lang)}">${esc(p.title)}</h1>${historical}${cover(p,r)}<div class="blog-prose" lang="${esc(p.contentLanguage||lang)}">${p.body?renderNodes(p.body,r):p.paragraphs.map(t=>`<p>${esc(t)}</p>`).join('')}</div><a class="link" href="/${route}">← ${l.back}</a></article>`;
     write(r+'index.html',shell(lang,r,p.title,p.summary,body,{[lang]:r}));
   }
   console.log(lang+': '+articles.length+' articles → '+route);

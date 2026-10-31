@@ -1,6 +1,7 @@
 // Offline, explicitly invoked EN/DE/AZ build. Never regenerates Turkish content.
 const fs=require('node:fs'),path=require('node:path'),c=require('cheerio'),assert=require('node:assert/strict');
 const {fixed,languages,locales,overrides,pricing,pageTitles,pageHeadings,extraOverrides}=require('./locale-content.cjs');
+const {authorName,retiredLink}=require('./blog-content.cjs');
 // Preserve the approved generators for the first four languages; FR is appended below.
 const existingLocales=Object.fromEntries(Object.entries(locales).filter(([lang])=>lang!=='fr'));
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
@@ -70,7 +71,7 @@ function page(html,lang,route,sourceRoute,options={}){
  if(options.description)$('meta[name=description],meta[property="og:description"]').attr('content',options.description);
  return $.html();
 }
-function render(nodes,lang){return nodes.map(n=>{if(typeof n.text==='string')return esc(n.text);if(['br','hr'].includes(n.tag))return `<${n.tag}>`;if(n.tag==='img')return `<img src="/${n.src}" alt="${esc(n.alt||'')}" loading="lazy">`;let attr='';if(n.tag==='a'&&n.href){let href=n.href;try{const url=new URL(href);const match=posts.find(p=>new URL(p.source).pathname===url.pathname&&p.language===lang);if(match)href=`/${lang}/blog/${match.slug}/`;}catch{}attr=` href="${esc(href)}"${/^https?:/.test(href)?' target="_blank" rel="noopener noreferrer"':''}`;}return `<${n.tag}${attr}>${render(n.children||[],lang)}</${n.tag}>`}).join('');}
+function render(nodes,lang){return nodes.map(n=>{if(typeof n.text==='string')return esc(n.text);if(['br','hr'].includes(n.tag))return `<${n.tag}>`;if(n.tag==='img')return `<img src="/${n.src}" alt="${esc(n.alt||'')}" loading="lazy">`;let attr='';if(n.tag==='a'&&n.href){let href=n.href;try{const url=new URL(href);const match=posts.find(p=>new URL(p.source).pathname===url.pathname&&p.language===lang);if(match)href=`/${lang}/blog/${match.slug}/`;else{const retired=retiredLink(url);if(retired===null)return render(n.children||[],lang);if(retired)href=routeMap[retired]?.[lang]||retired;}}catch{}attr=` href="${esc(href)}"${/^https?:/.test(href)?' target="_blank" rel="noopener noreferrer"':''}`;}return `<${n.tag}${attr}>${render(n.children||[],lang)}</${n.tag}>`}).join('');}
 function cover(p,lang){return `<img class="blog-cover" src="/${p.source.image||'img/maskot-merakli.svg'}" alt="${esc(p.title)}" width="640" height="400" loading="lazy">`;}
 for(const [lang,l]of Object.entries(existingLocales)){
  for(const sourceRoute of fixed.filter(r=>r!=='/blog/')){const route=routeMap[sourceRoute][lang];write(route.slice(1)+'index.html',page(read(sourceRoute.slice(1)+'index.html'),lang,route,sourceRoute));}
@@ -85,7 +86,7 @@ for(const [lang,l]of Object.entries(existingLocales)){
   const template=p.sourceRoute?read(p.sourceRoute.slice(1)+'index.html'):read('/blog/'+trPosts[0].slug+'/index.html');
   const $=c.load(page(template,lang,p.route,p.sourceRoute,{title:p.title,description:p.summary}));
   if(p.legacy){let body=p.legacy.body?render(p.legacy.body,lang):p.legacy.paragraphs.map(s=>`<p>${esc(s)}</p>`).join('');if(lang==='az'){const prose=c.load(body,null,false);translate(prose,lang,'en');body=prose.html();}$('.blog-prose').html(body).attr('lang',lang);}
-  $('.blog-article > .blog-meta').html(`<time datetime="${p.source.date.slice(0,10)}">${new Intl.DateTimeFormat(l.locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(p.source.date))}</time>${p.source.author?'<span>'+esc(p.source.author)+'</span>':''}`);
+  $('.blog-article > .blog-meta').html(`<time datetime="${p.source.date.slice(0,10)}">${new Intl.DateTimeFormat(l.locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(p.source.date))}</time><span>${esc(authorName(p.source.author,lang))}</span>`);
   $('.blog-article > .link').attr('href',routeMap['/blog/'][lang]).text('← '+l.back);
   $('.blog-article > .blog-cover').replaceWith(cover(p,lang));
   if(p.legacy&&!p.sourceRoute)$('.editorial-note').remove();
@@ -115,3 +116,4 @@ require('./install-auto-language.cjs');
 console.log('Built EN/DE/AZ and French extension. Existing TR copy and pricing engine/data preserved; reciprocal language metadata updated.');
 
 require('./build-privacy.cjs');
+require('./build-sitemap.cjs');

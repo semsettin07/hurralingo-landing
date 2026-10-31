@@ -1,0 +1,950 @@
+{
+  "/": {
+    "hash": "ceee94f4ed207ccf",
+    "date": "2026-10-27"
+  },
+  "/egitimmodelimiz/": {
+    "hash": "2853d7f5aaf62325",
+    "date": "2026-10-27"
+  },
+  "/derslerimiz/": {
+    "hash": "1211f8a92731ec14",
+    "date": "2026-10-27"
+  },
+  "/ogretmenlerimiz/": {
+    "hash": "9e5a8ab52eaca0ca",
+    "date": "2026-10-27"
+  },
+  "/blog/": {
+    "hash": "7258059ff4f8eb71",
+    "date": "2026-10-27"
+  },
+  "/ucretler/": {
+    "hash": "bd5a219a090a57a6",
+    "date": "2026-10-27"
+  },
+  "/referanslarimiz/": {
+    "hash": "1a63add8ccb89de3",
+    "date": "2026-10-27"
+  },
+  "/kurumsal/": {
+    "hash": "8bc65b9c1dd1c96e",
+    "date": "2026-10-27"
+  },
+  "/iletisim/": {
+    "hash": "5fea73e03d445632",
+    "date": "2026-10-27"
+  },
+  "/blog/karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi/": {
+    "hash": "ddbbc207c3d12861",
+    "date": "2026-06-15"
+  },
+  "/blog/yogun-tempoda-yabanci-dil-ogrenme-icin-5-adim/": {
+    "hash": "318fe11b9b29138b",
+    "date": "2026-06-11"
+  },
+  "/blog/kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir/": {
+    "hash": "21dfbf437d91a781",
+    "date": "2026-05-18"
+  },
+  "/blog/19-mayis-ataturku-anma-genclik-ve-spor-bayrami-ve-dil-ogrenmenin-onemi/": {
+    "hash": "eba42c76ca28856b",
+    "date": "2026-05-15"
+  },
+  "/blog/egitimin-kalbindeki-ilk-durak-bir-anne-bir-ogretmen/": {
+    "hash": "839fb4f18d37e746",
+    "date": "2026-05-08"
+  },
+  "/blog/6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi/": {
+    "hash": "93b862dcffffa19f",
+    "date": "2026-05-05"
+  },
+  "/blog/23-nisan-ulusal-egemenlik-ve-cocuk-bayrami-cocuklarin-dunyasi-ve-dil-ogrenmenin-gucu/": {
+    "hash": "97b661b43db19550",
+    "date": "2026-04-22"
+  },
+  "/blog/3-dakikada-ingilizce-konusmak-mumkun-mu-1-nisan-sakasi-ama-icinde-gercek-var/": {
+    "hash": "408e460847870618",
+    "date": "2026-03-30"
+  },
+  "/blog/yetiskinler-icin-dil-egitimi-yabanci-dil-ogrenmek-icin-hicbir-zaman-gec-degil/": {
+    "hash": "4a73ad1bbace7735",
+    "date": "2026-02-20"
+  },
+  "/blog/sevgililer-gununun-hikayesi-14-subat-sevginin-gunu-nasil-oldu/": {
+    "hash": "604a2ac6bc3ba8fa",
+    "date": "2026-02-13"
+  },
+  "/blog/sevgililer-gunune-ozel-love-languages-kampanyasi-cocuklar-ve-yetiskinler-icin-online-dil-egitimi/": {
+    "hash": "90bfd56431e9753b",
+    "date": "2026-02-06"
+  },
+  "/blog/erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir/": {
+    "hash": "5bfc1a06b3491273",
+    "date": "2026-01-29"
+  },
+  "/blog/gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler/": {
+    "hash": "69def338e57490f5",
+    "date": "2026-01-23"
+  },
+  "/blog/yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin/": {
+    "hash": "02bbf667c8d6609f",
+    "date": "2026-01-16"
+  },
+  "/blog/kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur/": {
+    "hash": "986a70012dd0e9a0",
+    "date": "2026-01-09"
+  },
+  "/blog/online-dil-derslerinde-asil-kazanim-ne-zaman-baslar/": {
+    "hash": "2e2d0a64db3206aa",
+    "date": "2026-01-02"
+  },
+  "/blog/dunyadan-yilbasi-gelenekleri/": {
+    "hash": "f00871352dbd7651",
+    "date": "2025-12-26"
+  },
+  "/blog/evde-yabanci-dil-ogrenimini-desteklemenin-7-etkili-yolu/": {
+    "hash": "92aa71fa1b02f6e5",
+    "date": "2025-12-19"
+  },
+  "/blog/oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem/": {
+    "hash": "1235d2640c4373ac",
+    "date": "2025-12-12"
+  },
+  "/blog/dijital-cag-cocuklarinin-yabanci-dil-konforu/": {
+    "hash": "b39278c26d5da79b",
+    "date": "2025-12-05"
+  },
+  "/blog/almanca-ogrenmek-neden-onemli/": {
+    "hash": "7e1257c74c585634",
+    "date": "2025-11-14"
+  },
+  "/blog/ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari/": {
+    "hash": "f6aa7fe33518979f",
+    "date": "2025-11-06"
+  },
+  "/blog/29-ekim-cumhuriyet-bayrami-egitim-ozgurluk-ve-yeni-diller-ogrenme-ruhu/": {
+    "hash": "e94fa9ef6b1407b2",
+    "date": "2026-10-27"
+  },
+  "/blog/cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler/": {
+    "hash": "bf99fbab3017350c",
+    "date": "2025-10-24"
+  },
+  "/blog/cocuklar-icin-rusca/": {
+    "hash": "07a7bda40396cd0f",
+    "date": "2025-10-17"
+  },
+  "/blog/evde-pratik-ingilizce/": {
+    "hash": "d13ea7194cf10853",
+    "date": "2025-10-08"
+  },
+  "/blog/online-dil-dersleri/": {
+    "hash": "31cba141e552b354",
+    "date": "2025-09-29"
+  },
+  "/blog/ispanyolca-mi-almanca-mi/": {
+    "hash": "9595264270fab054",
+    "date": "2025-09-26"
+  },
+  "/blog/cocuklarda-erken-yasta-ikinci-dil-edinimi/": {
+    "hash": "6e59a4b57ed00918",
+    "date": "2025-09-19"
+  },
+  "/blog/cocuklarin-dil-egitiminde-oyun/": {
+    "hash": "b18c3b4fad612010",
+    "date": "2025-09-11"
+  },
+  "/blog/dil-egitimi-teorileri/": {
+    "hash": "c43cdd1cea6d0465",
+    "date": "2025-04-15"
+  },
+  "/blog/dil-ogrenmede-motivasyon-ve-hedef/": {
+    "hash": "74950c88fb9eff5a",
+    "date": "2025-04-15"
+  },
+  "/blog/yaz-tatilinde-online-yabanci-dil/": {
+    "hash": "1e042e52194b2cd1",
+    "date": "2025-04-15"
+  },
+  "/blog/dil-egitiminde-film-ve-dizi/": {
+    "hash": "b0c56b555ec5eca3",
+    "date": "2025-04-15"
+  },
+  "/en/": {
+    "hash": "db4d7716a92ebbd3",
+    "date": "2026-10-27"
+  },
+  "/en/education/": {
+    "hash": "15e54fd49e4cce89",
+    "date": "2026-10-27"
+  },
+  "/en/lessons/": {
+    "hash": "89bec8392622589f",
+    "date": "2026-10-27"
+  },
+  "/en/teachers/": {
+    "hash": "dab7b1adfbeddde4",
+    "date": "2026-10-27"
+  },
+  "/en/blog/": {
+    "hash": "c06fef4b21474d2f",
+    "date": "2026-10-27"
+  },
+  "/en/fees/": {
+    "hash": "44b41bae1af35345",
+    "date": "2026-10-27"
+  },
+  "/en/testimonials/": {
+    "hash": "0001d5709ccaeb6d",
+    "date": "2026-10-27"
+  },
+  "/en/corporate/": {
+    "hash": "5eb6dc324966a149",
+    "date": "2026-10-27"
+  },
+  "/en/contact/": {
+    "hash": "5d29ef29c89ced46",
+    "date": "2026-10-27"
+  },
+  "/en/blog/29-october-republic-day-education-freedom-and-the-spirit-of-learning-new-languages/": {
+    "hash": "df0ee5811bfd6e40",
+    "date": "2026-10-27"
+  },
+  "/en/blog/fathers-day-messages-in-different-languages-a-small-step-into-a-new-language/": {
+    "hash": "79eac0ba048d37b0",
+    "date": "2026-06-19"
+  },
+  "/en/blog/online-language-courses-after-report-cards-a-guide-to-foreign-language-learning-for-children/": {
+    "hash": "422ae37b3c551484",
+    "date": "2026-06-16"
+  },
+  "/en/blog/online-language-course-5-steps-to-learning-a-foreign-language-in-a-busy-schedule/": {
+    "hash": "742830eecf1745eb",
+    "date": "2026-06-11"
+  },
+  "/en/blog/how-can-children-s-english-development-be-supported-during-the-eid-al-adha-holiday/": {
+    "hash": "db6c5b7a63fe0adb",
+    "date": "2026-05-18"
+  },
+  "/en/blog/19-may-commemoration-of-ataturk-youth-and-sports-day-and-the-importance-of-learning-a-language/": {
+    "hash": "934205d76cbb654d",
+    "date": "2026-05-15"
+  },
+  "/en/blog/the-first-stop-at-the-heart-of-education-one-mother-one-teacher/": {
+    "hash": "a1f9e746c68d6412",
+    "date": "2026-05-08"
+  },
+  "/en/blog/a-new-language-in-6-months-anatomy-of-an-adventure/": {
+    "hash": "76e9bd706d7602a4",
+    "date": "2026-05-05"
+  },
+  "/en/blog/april-23-national-sovereignty-and-children-s-day-the-world-of-children-and-the-power-of-learning-languages/": {
+    "hash": "1bb917a1a9bafa7f",
+    "date": "2026-04-22"
+  },
+  "/en/blog/is-it-possible-to-speak-english-in-3-minutes/": {
+    "hash": "ce9d891a936c0899",
+    "date": "2026-03-30"
+  },
+  "/en/blog/language-education-for-adults-it-s-never-too-late-to-learn-a-foreign-language/": {
+    "hash": "5978c24ded4cd5cb",
+    "date": "2026-02-20"
+  },
+  "/en/blog/the-story-of-valentine-s-day-how-did-february-14-become-the-day-of-love/": {
+    "hash": "d9941b3b72b6b38e",
+    "date": "2026-02-13"
+  },
+  "/en/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/": {
+    "hash": "6f2ae16baa1181ac",
+    "date": "2026-02-06"
+  },
+  "/en/blog/language-learning-at-an-early-age-each-language-shines-a-different-talent-in-your-child/": {
+    "hash": "78394d1b3c23aa57",
+    "date": "2026-01-29"
+  },
+  "/en/blog/exploring-the-future-how-science-fiction-stories-support-language-development/": {
+    "hash": "694edd68b2e0de52",
+    "date": "2026-01-23"
+  },
+  "/en/blog/don-t-waste-your-semester-break-start-now-with-online-language-lessons-for-children/": {
+    "hash": "b0f9861f16980316",
+    "date": "2026-01-16"
+  },
+  "/en/blog/learning-a-language-with-winter-fairy-tales-what-language-do-snowflakes-speak/": {
+    "hash": "ec75b0a2a367e8eb",
+    "date": "2026-01-09"
+  },
+  "/en/blog/common-challenges-in-foreign-language-education-and-their-solutions/": {
+    "hash": "8557ab9ddf20eff3",
+    "date": "2026-01-07"
+  },
+  "/en/blog/motivation-and-goal-setting-in-active-language-learning/": {
+    "hash": "8591eab099152091",
+    "date": "2026-01-07"
+  },
+  "/en/blog/when-does-real-progress-begin-in-online-language-lessons/": {
+    "hash": "a91b3d2344c326ed",
+    "date": "2026-01-02"
+  },
+  "/en/blog/new-year-s-traditions-from-around-the-world/": {
+    "hash": "818c17dfec1de583",
+    "date": "2025-12-26"
+  },
+  "/en/blog/7-effective-ways-to-support-foreign-language-learning-at-home/": {
+    "hash": "5c19fafcfc03ae4b",
+    "date": "2025-12-19"
+  },
+  "/en/blog/the-power-of-learning-a-foreign-language-with-games-why-is-online-education-the-most-effective-method-for-children/": {
+    "hash": "87c95ff1477690c0",
+    "date": "2025-12-12"
+  },
+  "/en/blog/helping-children-feel-at-ease-with-foreign-languages-in-the-digital-age/": {
+    "hash": "29639e50276b4d59",
+    "date": "2025-12-05"
+  },
+  "/en/blog/why-is-learning-german-important/": {
+    "hash": "965265642dcc1711",
+    "date": "2025-11-14"
+  },
+  "/en/blog/ways-to-achieve-big-improvement-with-small-touches-during-the-holiday-break/": {
+    "hash": "c91e992e450b9f11",
+    "date": "2025-11-06"
+  },
+  "/en/blog/hurra-lingo-making-language-learning-fearless-and-fun-for-kids/": {
+    "hash": "9832e3318faa077c",
+    "date": "2025-10-24"
+  },
+  "/en/blog/russian-for-kids/": {
+    "hash": "b9fd4c82a3bbedfb",
+    "date": "2025-10-17"
+  },
+  "/en/blog/practical-english-at-home-educational-english-games/": {
+    "hash": "c398cd54cdc3076f",
+    "date": "2025-10-08"
+  },
+  "/en/blog/how-do-online-language-lessons-increase-your-child-s-school-success/": {
+    "hash": "2fe5636deafa81c9",
+    "date": "2025-09-29"
+  },
+  "/en/blog/which-language-to-choose-for-your-child-spanish-or-german/": {
+    "hash": "075cb377fea0f8c9",
+    "date": "2025-09-26"
+  },
+  "/en/blog/second-language-acquisition-at-an-early-age-5-important-benefits/": {
+    "hash": "279ed340caaa4abf",
+    "date": "2025-09-19"
+  },
+  "/en/blog/games-in-children-s-language-education/": {
+    "hash": "27ba288ed681f8b2",
+    "date": "2025-09-11"
+  },
+  "/en/blog/language-education-theories/": {
+    "hash": "91361e26a56cec5e",
+    "date": "2025-04-15"
+  },
+  "/en/blog/motivation-and-goal-in-language-learning/": {
+    "hash": "17e0adf9968e6336",
+    "date": "2025-04-15"
+  },
+  "/en/blog/online-foreign-language-for-children-during-summer-vacation/": {
+    "hash": "388f3daf0532c8f0",
+    "date": "2025-04-15"
+  },
+  "/en/blog/the-role-of-watching-movies-and-tv-series-in-language-education/": {
+    "hash": "edff1b5f178b5cfd",
+    "date": "2025-04-15"
+  },
+  "/de/": {
+    "hash": "92b495cea322df90",
+    "date": "2026-10-27"
+  },
+  "/de/lernkonzept/": {
+    "hash": "0970170490b23ed3",
+    "date": "2026-10-27"
+  },
+  "/de/kurse/": {
+    "hash": "231fb93bff4fb03d",
+    "date": "2026-10-27"
+  },
+  "/de/lehrkraefte/": {
+    "hash": "c35741b1efd08a95",
+    "date": "2026-10-27"
+  },
+  "/de/blog/": {
+    "hash": "13087c695ffc6d96",
+    "date": "2026-10-27"
+  },
+  "/de/preise/": {
+    "hash": "edb83e97b0c3d70e",
+    "date": "2026-10-27"
+  },
+  "/de/erfahrungen/": {
+    "hash": "fe32d8b215fb1745",
+    "date": "2026-10-27"
+  },
+  "/de/unternehmen/": {
+    "hash": "5a37502a1990b673",
+    "date": "2026-10-27"
+  },
+  "/de/kontakt/": {
+    "hash": "2e1fda351bd144c7",
+    "date": "2026-10-27"
+  },
+  "/de/blog/29-oktober-tag-der-republik-bildung-freiheit-und-der-geist-des-erlernens-neuer-sprachen/": {
+    "hash": "35cae8f825739a3c",
+    "date": "2026-10-27"
+  },
+  "/de/blog/englische-vatertagsgruse-von-kindern-kleine-satze-grose-erinnerungen/": {
+    "hash": "c4faf3193bda65cc",
+    "date": "2026-06-19"
+  },
+  "/de/blog/online-turkischkurse-fur-die-ferien-ein-leitfaden-zum-turkischlernen-fur-kinder/": {
+    "hash": "4c489f2be02ebe82",
+    "date": "2026-06-15"
+  },
+  "/de/blog/online-sprachkurs-nach-zeugnis-ein-leitfaden-zum-erlernen-einer-fremdsprache-fur-kinder/": {
+    "hash": "fb8359c3bedbe8b5",
+    "date": "2026-06-15"
+  },
+  "/de/blog/die-5-schritte-sprachroutine-fur-vielbeschaftigte-professionals/": {
+    "hash": "64a64be7288ec414",
+    "date": "2026-06-11"
+  },
+  "/de/blog/5-schritte-zum-intensiven-erlernen-einer-fremdsprache/": {
+    "hash": "eb1286a9a1454ed3",
+    "date": "2026-06-11"
+  },
+  "/de/blog/brucken-aus-worten-wie-das-lernen-neuer-sprachen-unseren-horizont-verandert/": {
+    "hash": "db67e7c708417a77",
+    "date": "2026-05-20"
+  },
+  "/de/blog/wie-kann-die-englischentwicklung-von-kindern-wahrend-der-eid-al-adha-feiertage-gefordert-werden/": {
+    "hash": "7c248b787bdb8726",
+    "date": "2026-05-18"
+  },
+  "/de/blog/19-mai-gedenken-an-ataturk-jugend-und-sporttag-und-die-bedeutung-des-erlernens-einer-sprache/": {
+    "hash": "d174eec5e7c82957",
+    "date": "2026-05-15"
+  },
+  "/de/blog/der-erste-halt-im-herzen-der-bildung-eine-mutter-eine-lehrerin/": {
+    "hash": "f594720352c78bc4",
+    "date": "2026-05-08"
+  },
+  "/de/blog/eine-neue-sprache-in-6-monaten-anatomie-eines-abenteuers/": {
+    "hash": "8c216c29a393c38f",
+    "date": "2026-05-05"
+  },
+  "/de/blog/das-wertvollste-geschenk-zum-muttertag-die-welt-der-sprachen-offnen/": {
+    "hash": "f3344ea4f57ce2d8",
+    "date": "2026-04-28"
+  },
+  "/de/blog/23-april-nationaler-souveranitats-und-kindertag-die-welt-der-kinder-und-die-kraft-des-sprachenlernens/": {
+    "hash": "7aa2ed9e622fe7d1",
+    "date": "2026-04-22"
+  },
+  "/de/blog/ist-es-moglich-in-3-minuten-englisch-zu-sprechen/": {
+    "hash": "18df09ee805804fb",
+    "date": "2026-03-30"
+  },
+  "/de/blog/sprachunterricht-fur-erwachsene-es-ist-nie-zu-spat-eine-fremdsprache-zu-lernen/": {
+    "hash": "df06616a2a85b11f",
+    "date": "2026-02-20"
+  },
+  "/de/blog/die-geschichte-des-valentinstags-wie-wurde-der-14-februar-zum-tag-der-liebe/": {
+    "hash": "5b425df5c7865e91",
+    "date": "2026-02-13"
+  },
+  "/de/blog/sonderaktion-love-languages-zum-valentinstag-online-sprachunterricht-fur-kinder-und-erwachsene/": {
+    "hash": "11579df0e2d8fb77",
+    "date": "2026-02-06"
+  },
+  "/de/blog/sprachen-lernen-im-fruhen-alter-jede-sprache-bringt-bei-ihrem-kind-ein-anderes-talent-zum-vorschein/": {
+    "hash": "68667f9430286cae",
+    "date": "2026-01-29"
+  },
+  "/de/blog/die-zukunft-erkunden-wie-science-fiction-geschichten-die-sprachentwicklung-unterstutzen/": {
+    "hash": "ce2bd4bfbb57c9bc",
+    "date": "2026-01-23"
+  },
+  "/de/blog/verschwenden-sie-ihre-semesterferien-nicht-starten-sie-jetzt-mit-online-sprachunterricht-fur-kinder/": {
+    "hash": "e6b97edf10e1f855",
+    "date": "2026-01-16"
+  },
+  "/de/blog/mit-wintermarchen-eine-sprache-lernen-welche-sprache-sprechen-schneeflocken/": {
+    "hash": "0f6a0c066f12cd62",
+    "date": "2026-01-09"
+  },
+  "/de/blog/wann-zeigen-sich-echte-fortschritte-im-online-sprachunterricht/": {
+    "hash": "ce2fcde3c86dadb0",
+    "date": "2026-01-02"
+  },
+  "/de/blog/neujahrstraditionen-aus-aller-welt/": {
+    "hash": "658fdf6e41f23661",
+    "date": "2025-12-26"
+  },
+  "/de/blog/7-effektive-moglichkeiten-das-erlernen-von-fremdsprachen-zu-hause-zu-unterstutzen/": {
+    "hash": "7defe2fa0da9ce33",
+    "date": "2025-12-19"
+  },
+  "/de/blog/die-kraft-des-erlernens-einer-fremdsprache-mit-spielen-warum-ist-online-unterricht-die-effektivste-methode-fur-kinder/": {
+    "hash": "13b831ed21cfd060",
+    "date": "2025-12-12"
+  },
+  "/de/blog/fremdsprachen-mit-leichtigkeit-kinder-im-digitalen-zeitalter/": {
+    "hash": "05b53392eee277aa",
+    "date": "2025-12-05"
+  },
+  "/de/blog/warum-ist-es-wichtig-deutsch-zu-lernen/": {
+    "hash": "86b4888e8a2c1664",
+    "date": "2025-11-14"
+  },
+  "/de/blog/moglichkeiten-wahrend-der-feiertage-mit-kleinen-handgriffen-grosse-fortschritte-zu-erzielen/": {
+    "hash": "6da078c5baceb895",
+    "date": "2025-11-06"
+  },
+  "/de/blog/hurra-lingo-sprachenlernen-furchtlos-und-unterhaltsam-fur-kinder/": {
+    "hash": "48d179b848ff04da",
+    "date": "2025-10-24"
+  },
+  "/de/blog/russisch-fur-kinder/": {
+    "hash": "2cf61712768f25bc",
+    "date": "2025-10-17"
+  },
+  "/de/blog/praktisches-englisch-zu-hause-englische-lernspiele/": {
+    "hash": "d2b30846f36262db",
+    "date": "2025-10-08"
+  },
+  "/de/blog/wie-steigert-online-sprachunterricht-den-schulerfolg-ihres-kindes/": {
+    "hash": "d156cf97d381307d",
+    "date": "2025-09-29"
+  },
+  "/de/blog/welche-sprache-sollten-sie-fur-ihr-kind-wahlen-spanisch-oder-deutsch/": {
+    "hash": "7e928e04692d47af",
+    "date": "2025-09-26"
+  },
+  "/de/blog/zweitsprachenerwerb-in-jungen-jahren-5-wichtige-vorteile/": {
+    "hash": "e740cd12d2835dee",
+    "date": "2025-09-19"
+  },
+  "/de/blog/spiele-im-sprachunterricht-von-kindern/": {
+    "hash": "3b84cec9b83cc177",
+    "date": "2025-09-11"
+  },
+  "/de/blog/sprachpadagogiktheorien/": {
+    "hash": "9976560f73e2ccf8",
+    "date": "2025-04-15"
+  },
+  "/de/blog/motivation-und-ziel-beim-sprachenlernen/": {
+    "hash": "28ddd6189209c009",
+    "date": "2025-04-15"
+  },
+  "/de/blog/online-fremdsprache-fur-kinder-in-den-sommerferien/": {
+    "hash": "afbcdfbeb8391cb2",
+    "date": "2025-04-15"
+  },
+  "/de/blog/die-rolle-des-ansehens-von-filmen-und-fernsehserien-im-sprachunterricht/": {
+    "hash": "85f39583304a3471",
+    "date": "2025-04-15"
+  },
+  "/az/": {
+    "hash": "a4b8d2aabaa88786",
+    "date": "2026-10-27"
+  },
+  "/az/tehsil/": {
+    "hash": "1dda2f0e78f1ed26",
+    "date": "2026-10-27"
+  },
+  "/az/dersler/": {
+    "hash": "4518688ed72bc544",
+    "date": "2026-10-27"
+  },
+  "/az/muellimler/": {
+    "hash": "5de981d8cf0be014",
+    "date": "2026-10-27"
+  },
+  "/az/blog/": {
+    "hash": "55189bdb17296d21",
+    "date": "2026-10-27"
+  },
+  "/az/qiymetler/": {
+    "hash": "97d862caa90b1941",
+    "date": "2026-10-27"
+  },
+  "/az/reyler/": {
+    "hash": "7b9d16e198bf99ff",
+    "date": "2026-10-27"
+  },
+  "/az/korporativ/": {
+    "hash": "bc8d84b90cf036b2",
+    "date": "2026-10-27"
+  },
+  "/az/elaqe/": {
+    "hash": "e9d04e9582e6f870",
+    "date": "2026-10-27"
+  },
+  "/az/blog/29-oktyabr-respublika-gunu-tehsil-azadliq-ve-yeni-dilleri-oyrenme-ruhu/": {
+    "hash": "178d5534710a6f7b",
+    "date": "2026-10-27"
+  },
+  "/az/blog/hesabat-kartindan-sonra-onlayn-dil-kursu-usaqlar-ucun-xarici-dilin-oyrenilmesi-ucun-beledci/": {
+    "hash": "d0cb198bdcf1c9d9",
+    "date": "2026-06-15"
+  },
+  "/az/blog/xarici-dili-intensiv-suretle-oyrenmek-ucun-5-addim/": {
+    "hash": "dc2309a722117ba4",
+    "date": "2026-06-11"
+  },
+  "/az/blog/qurban-bayraminda-usaqlarin-ingilisce-inkisafina-nece-destek-olmaq-olar/": {
+    "hash": "76e2ec7f3430fc9d",
+    "date": "2026-05-18"
+  },
+  "/az/blog/19-may-ataturku-anma-genclik-ve-idman-bayrami-ve-dil-oyrenmeyin-onemi/": {
+    "hash": "cde568754ea329f6",
+    "date": "2026-05-15"
+  },
+  "/az/blog/tehsilin-qelbinde-ilk-dayanacaq-bir-ana-bir-muellim/": {
+    "hash": "b3b3a655b66bd9e2",
+    "date": "2026-05-08"
+  },
+  "/az/blog/6-ayda-yeni-dil-macera-anatomiyasi/": {
+    "hash": "5e4f92f86dbf64e6",
+    "date": "2026-05-05"
+  },
+  "/az/blog/23-aprel-milli-suverenlik-ve-usaqlar-gunu-usaqlarin-dunyasi-ve-dilleri-oyrenmeyin-gucu/": {
+    "hash": "e19bb21ef43de414",
+    "date": "2026-04-22"
+  },
+  "/az/blog/3-deqiqeye-ingilis-dilinde-danismaq-mumkundurmu/": {
+    "hash": "407f962c02d241e9",
+    "date": "2026-03-30"
+  },
+  "/az/blog/boyukler-ucun-dil-tehsili-xarici-dil-oyrenmek-ucun-hec-vaxt-gec-deyil/": {
+    "hash": "809193c6e0588de5",
+    "date": "2026-02-20"
+  },
+  "/az/blog/sevgililer-gununun-hekayesi-14-fevral-nece-sevgi-gunune-cevrildi/": {
+    "hash": "e52dee44b69a2cd7",
+    "date": "2026-02-13"
+  },
+  "/az/blog/valentines-day-special-love-languages-campaign-online-language-education-for-children-and-adults/": {
+    "hash": "973b92702a794a12",
+    "date": "2026-02-06"
+  },
+  "/az/blog/erken-yasda-dil-oyrenme-her-bir-dil-usaginizda-ferqli-bir-istedadi-isiqlandirir/": {
+    "hash": "0973cb39830860ef",
+    "date": "2026-01-29"
+  },
+  "/az/blog/geleceyi-arasdiririq-elmi-fantastika-hekayeleri-dil-inkisafini-nece-destekleyir/": {
+    "hash": "e06875a6b5f7bd39",
+    "date": "2026-01-23"
+  },
+  "/az/blog/semestr-tetilinizi-bos-yere-serf-etmeyin-usaqlar-ucun-onlayn-dil-dersleri-ile-indi-baslayin/": {
+    "hash": "d476eb52c4243366",
+    "date": "2026-01-16"
+  },
+  "/az/blog/qis-nagillari-ile-dil-oyrenmek-qar-denecikleri-hansi-dilde-danisir/": {
+    "hash": "e9034086f0c36a59",
+    "date": "2026-01-09"
+  },
+  "/az/blog/common-challenges-in-foreign-language-education-and-their-solutions/": {
+    "hash": "3bdeb21033d61b20",
+    "date": "2026-01-07"
+  },
+  "/az/blog/motivation-and-goal-setting-in-active-language-learning/": {
+    "hash": "ff85b7d5861c72b1",
+    "date": "2026-01-07"
+  },
+  "/az/blog/onlayn-dil-derslerinde-esl-irelileyis-ne-vaxt-baslayir/": {
+    "hash": "9aca8a0cc8b2557d",
+    "date": "2026-01-02"
+  },
+  "/az/blog/dunyanin-her-yerinden-gelen-yeni-il-eneneleri/": {
+    "hash": "618e391476c653d6",
+    "date": "2025-12-26"
+  },
+  "/az/blog/xarici-dillerin-evde-oyrenilmesine-komek-etmeyin-7-effektiv-usulu/": {
+    "hash": "e72d86fcfbca9384",
+    "date": "2025-12-19"
+  },
+  "/az/blog/oyunlarla-xarici-dil-oyrenmeyin-gucu-ne-ucun-onlayn-tehsil-usaqlar-ucun-en-effektiv-metoddur/": {
+    "hash": "235e2cdaa3685438",
+    "date": "2025-12-12"
+  },
+  "/az/blog/reqemsal-dovrde-usaqlarin-xarici-dilde-rahat-unsiyyeti/": {
+    "hash": "3b38ad3d45aae586",
+    "date": "2025-12-05"
+  },
+  "/az/blog/alman-dilini-oyrenmek-niye-vacibdir/": {
+    "hash": "4ddf4558391e8768",
+    "date": "2025-11-14"
+  },
+  "/az/blog/bayram-fasilesinde-kicik-toxunuslarla-boyuk-tekmillesmeye-nail-olmagin-yollari/": {
+    "hash": "4aa9c7d8d0eaeae6",
+    "date": "2025-11-06"
+  },
+  "/az/blog/hurra-lingo-dil-oyrenmeni-usaqlar-ucun-qorxmaz-ve-eylenceli-edin/": {
+    "hash": "8408ce3f247dd4fc",
+    "date": "2025-10-24"
+  },
+  "/az/blog/rus-dili-usaqlar-ucun/": {
+    "hash": "84593d1dde69c822",
+    "date": "2025-10-17"
+  },
+  "/az/blog/evde-praktiki-ingilis-dili-maariflendirici-ingilis-oyunlari/": {
+    "hash": "e878e2b7493e35b4",
+    "date": "2025-10-08"
+  },
+  "/az/blog/onlayn-dil-dersleri-usaginizin-mekteb-ugurunu-nece-artirir/": {
+    "hash": "efe8b68654563c6c",
+    "date": "2025-09-29"
+  },
+  "/az/blog/usaginiz-ucun-hansi-dili-secmelisiniz-ispan-ve-ya-alman/": {
+    "hash": "a674bf17c08bc2e1",
+    "date": "2025-09-26"
+  },
+  "/az/blog/erken-yasda-ikinci-dilin-menimsenilmesi-5-muhum-fayda/": {
+    "hash": "333264810a67a1f8",
+    "date": "2025-09-19"
+  },
+  "/az/blog/usaqlarin-dil-tehsilinde-oyunlar/": {
+    "hash": "ca0d87d9117c59dc",
+    "date": "2025-09-11"
+  },
+  "/az/blog/dil-tehsili-nezeriyyeleri/": {
+    "hash": "0f6380cb2b7b549b",
+    "date": "2025-04-15"
+  },
+  "/az/blog/dil-oyrenmesinde-motivasiya-ve-meqsed/": {
+    "hash": "2fda2f6ec17fb87a",
+    "date": "2025-04-15"
+  },
+  "/az/blog/yay-tetilinde-usaqlar-ucun-onlayn-xarici-dil/": {
+    "hash": "4c023610c39197f6",
+    "date": "2025-04-15"
+  },
+  "/az/blog/filmlere-ve-seriallara-baxmagin-dil-tehsilinde-rolu/": {
+    "hash": "93fff4013901606f",
+    "date": "2025-04-15"
+  },
+  "/fr/": {
+    "hash": "e587aaf1381df22e",
+    "date": "2026-10-27"
+  },
+  "/fr/pedagogie/": {
+    "hash": "ab58d074d590c6b6",
+    "date": "2026-10-27"
+  },
+  "/fr/cours/": {
+    "hash": "322114f2b8e3642e",
+    "date": "2026-10-27"
+  },
+  "/fr/enseignants/": {
+    "hash": "71610d210b1398dd",
+    "date": "2026-10-27"
+  },
+  "/fr/blog/": {
+    "hash": "69dd84531252f827",
+    "date": "2026-10-27"
+  },
+  "/fr/tarifs/": {
+    "hash": "59971037f307cf2f",
+    "date": "2026-10-27"
+  },
+  "/fr/temoignages/": {
+    "hash": "0273398d84d5693f",
+    "date": "2026-10-27"
+  },
+  "/fr/entreprises/": {
+    "hash": "c4df6ad5712667bc",
+    "date": "2026-10-27"
+  },
+  "/fr/contact/": {
+    "hash": "4520fbfc0663abdc",
+    "date": "2026-10-27"
+  },
+  "/fr/blog/cours-de-langues-apres-les-bulletins-un-guide-pour-accompagner-votre-enfant/": {
+    "hash": "ff23ab931d729bf1",
+    "date": "2026-06-15"
+  },
+  "/fr/blog/apprendre-une-langue-avec-un-emploi-du-temps-charge-5-etapes/": {
+    "hash": "3976c20589b8446b",
+    "date": "2026-06-11"
+  },
+  "/fr/blog/aid-al-adha-comment-entretenir-l-anglais-de-votre-enfant-pendant-les-vacances/": {
+    "hash": "aad617fad5f7a27a",
+    "date": "2026-05-18"
+  },
+  "/fr/blog/le-19-mai-la-jeunesse-et-l-importance-de-l-apprentissage-des-langues/": {
+    "hash": "09fc57399dfc8a75",
+    "date": "2026-05-15"
+  },
+  "/fr/blog/au-coeur-de-l-education-une-mere-une-premiere-enseignante/": {
+    "hash": "fa4018c9f69f2c3e",
+    "date": "2026-05-08"
+  },
+  "/fr/blog/une-nouvelle-langue-en-6-mois-les-etapes-d-une-aventure/": {
+    "hash": "5b16d9e4411f33dd",
+    "date": "2026-05-05"
+  },
+  "/fr/blog/le-23-avril-celebrer-les-enfants-et-leur-ouverture-aux-langues/": {
+    "hash": "d53458a47f7e9165",
+    "date": "2026-04-22"
+  },
+  "/fr/blog/peut-on-vraiment-parler-anglais-en-3-minutes/": {
+    "hash": "36daa5b76c7c9e13",
+    "date": "2026-03-30"
+  },
+  "/fr/blog/apprendre-une-langue-a-l-age-adulte-il-n-est-jamais-trop-tard/": {
+    "hash": "3dd77b512d83e208",
+    "date": "2026-02-20"
+  },
+  "/fr/blog/l-histoire-de-la-saint-valentin-pourquoi-le-14-fevrier-celebre-t-il-l-amour/": {
+    "hash": "9bf246bafa2b0927",
+    "date": "2026-02-13"
+  },
+  "/fr/blog/love-languages-une-campagne-de-la-saint-valentin-pour-petits-et-grands/": {
+    "hash": "0bbcd07fcd1c8f14",
+    "date": "2026-02-06"
+  },
+  "/fr/blog/apprendre-tot-chaque-langue-revele-de-nouvelles-aptitudes/": {
+    "hash": "c0f5836e5c3c206b",
+    "date": "2026-01-29"
+  },
+  "/fr/blog/imaginer-l-avenir-la-science-fiction-au-service-des-langues/": {
+    "hash": "edd9d0792f6d3e27",
+    "date": "2026-01-23"
+  },
+  "/fr/blog/vacances-de-mi-annee-accompagner-votre-enfant-dans-une-nouvelle-langue/": {
+    "hash": "6e0277f382f8bc3d",
+    "date": "2026-01-16"
+  },
+  "/fr/blog/apprendre-avec-les-contes-d-hiver-quelle-langue-parlent-les-flocons/": {
+    "hash": "d83398d051705dd4",
+    "date": "2026-01-09"
+  },
+  "/fr/blog/cours-de-langues-en-ligne-quand-les-progres-deviennent-ils-visibles/": {
+    "hash": "3bec4abb90fa87e2",
+    "date": "2026-01-02"
+  },
+  "/fr/blog/les-traditions-du-nouvel-an-a-travers-le-monde/": {
+    "hash": "e29239ee75a14eb2",
+    "date": "2025-12-26"
+  },
+  "/fr/blog/7-facons-d-accompagner-l-apprentissage-des-langues-a-la-maison/": {
+    "hash": "59bff7100d56374a",
+    "date": "2025-12-19"
+  },
+  "/fr/blog/apprendre-en-jouant-la-place-du-jeu-dans-les-cours-en-ligne/": {
+    "hash": "0d51c298f5756e95",
+    "date": "2025-12-12"
+  },
+  "/fr/blog/grandir-a-l-ere-numerique-et-prendre-confiance-dans-une-autre-langue/": {
+    "hash": "3108fcffe6919e4e",
+    "date": "2025-12-05"
+  },
+  "/fr/blog/pourquoi-apprendre-l-allemand/": {
+    "hash": "c47459469739ee92",
+    "date": "2025-11-14"
+  },
+  "/fr/blog/petites-habitudes-grands-progres-pendant-les-vacances-scolaires/": {
+    "hash": "b51af54aace41efd",
+    "date": "2025-11-06"
+  },
+  "/fr/blog/le-29-octobre-education-liberte-et-envie-d-apprendre-des-langues/": {
+    "hash": "bfa6155d3aa667b9",
+    "date": "2026-10-27"
+  },
+  "/fr/blog/hurra-lingo-apprendre-une-langue-sans-crainte-et-avec-plaisir/": {
+    "hash": "35c8fdcf66f1bf06",
+    "date": "2025-10-24"
+  },
+  "/fr/blog/le-russe-pour-les-enfants-une-langue-un-nouvel-univers/": {
+    "hash": "181cfddfbc4be52f",
+    "date": "2025-10-17"
+  },
+  "/fr/blog/pratiquer-l-anglais-a-la-maison-des-jeux-pour-apprendre-autrement/": {
+    "hash": "df295bb884455f63",
+    "date": "2025-10-08"
+  },
+  "/fr/blog/comment-les-cours-de-langues-en-ligne-peuvent-ils-soutenir-la-reussite-scolaire/": {
+    "hash": "94db8319a1dba376",
+    "date": "2025-09-29"
+  },
+  "/fr/blog/espagnol-ou-allemand-quelle-langue-choisir-pour-votre-enfant/": {
+    "hash": "1576596bcc7905f5",
+    "date": "2025-09-26"
+  },
+  "/fr/blog/apprendre-une-deuxieme-langue-des-l-enfance-5-benefices/": {
+    "hash": "0545cbe77b366676",
+    "date": "2025-09-19"
+  },
+  "/fr/blog/le-role-du-jeu-dans-l-apprentissage-des-langues-chez-l-enfant/": {
+    "hash": "b7b020a35f7469ba",
+    "date": "2025-09-11"
+  },
+  "/fr/blog/comprendre-les-theories-de-l-apprentissage-des-langues/": {
+    "hash": "7a53636753e73c74",
+    "date": "2025-04-15"
+  },
+  "/fr/blog/apprendre-une-langue-motivation-et-objectifs/": {
+    "hash": "9be6be012968a76f",
+    "date": "2025-04-15"
+  },
+  "/fr/blog/vacances-d-ete-apprendre-une-langue-en-ligne-quand-on-est-enfant/": {
+    "hash": "7f54fbafba6880bc",
+    "date": "2025-04-15"
+  },
+  "/fr/blog/films-et-series-quelle-place-dans-l-apprentissage-des-langues/": {
+    "hash": "de44010cbfd70b25",
+    "date": "2025-04-15"
+  },
+  "/fr/blog/fete-des-peres-de-petits-messages-dans-differentes-langues/": {
+    "hash": "0b923ae5d12efa1e",
+    "date": "2026-06-19"
+  },
+  "/fr/blog/apprendre-une-langue-les-difficultes-courantes-et-comment-les-surmonter/": {
+    "hash": "0b0ea56e5b6f5048",
+    "date": "2026-01-07"
+  },
+  "/fr/blog/apprendre-activement-une-langue-motivation-et-objectifs/": {
+    "hash": "415a4d572c89f3d6",
+    "date": "2026-01-07"
+  },
+  "/fr/blog/fete-des-peres-de-petits-messages-en-anglais-pour-de-grands-souvenirs/": {
+    "hash": "4a90aef2304c47a4",
+    "date": "2026-06-19"
+  },
+  "/fr/blog/cours-de-langues-pendant-les-vacances-un-guide-pour-les-familles/": {
+    "hash": "f3946c83cd0f539d",
+    "date": "2026-06-15"
+  },
+  "/fr/blog/une-routine-linguistique-en-5-etapes-pour-les-professionnels-tres-occupes/": {
+    "hash": "07619ffbd3925e46",
+    "date": "2026-06-11"
+  },
+  "/fr/blog/des-ponts-entre-les-cultures-comment-les-langues-elargissent-notre-horizon/": {
+    "hash": "e0a32988032bfea7",
+    "date": "2026-05-20"
+  },
+  "/fr/blog/pour-la-fete-des-meres-ouvrir-a-votre-enfant-le-monde-des-langues/": {
+    "hash": "a8120659a16ee285",
+    "date": "2026-04-28"
+  },
+  "/fr/confidentialite/": {
+    "hash": "ba281990b3c82838",
+    "date": "2026-10-27"
+  },
+  "/fr/conditions-generales/": {
+    "hash": "8435759eeb62d216",
+    "date": "2026-10-27"
+  },
+  "/en/privacy-policy/": {
+    "hash": "39bb06c4e6abab54",
+    "date": "2026-10-27"
+  },
+  "/en/terms-and-conditions/": {
+    "hash": "8fe5f9c1a530725d",
+    "date": "2026-10-27"
+  }
+}

@@ -43,7 +43,9 @@ eğilme ve geçişler kapatılır.
 - `categories`: kaynak kategori adları dizisi.
 - `source`: yazının özgün HTTPS adresi.
 - `paragraphs`: yazının tam paragraf metinleri dizisi; HTML çalıştırılmaz.
-- `author`: isteğe bağlı, doğrulanmış yazar adı.
+- `author`: isteğe bağlı, doğrulanmış yazar adı. Boşsa ya da `hurraturkiyewp`
+  gibi gerçek bir ad değilse sayfada dilin ekip adı gösterilir
+  (`scripts/blog-content.cjs`).
 - `image`: isteğe bağlı, `img/blog/` altındaki yerel görsel yolu.
 - `imageAlt`: kaynak görselin alternatif metni.
 - `contentLanguage`: yazı metninin dili; kaynak AZ yazıları için `en`.

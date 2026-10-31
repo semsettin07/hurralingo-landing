@@ -24,6 +24,8 @@
   input.addEventListener('input', filter);
   select.addEventListener('change', filter);
   form.addEventListener('reset', () => setTimeout(filter, 0));
+  // The not-found page submits its search here as ?q=.
+  input.value = new URLSearchParams(location.search).get('q') || '';
   filter();
   cards.forEach(card => {
     let timer;
