@@ -19,7 +19,7 @@ for(const route of routes){
 }
 fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://www.hurralingo.com/sitemap.xml\n');
 // No includeSubDomains: old-server subdomains are still being retired.
-fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: SAMEORIGIN\n  Strict-Transport-Security: max-age=31536000\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n/404.html\n  X-Robots-Tag: noindex, nofollow\n');
+fs.writeFileSync(path.join(out,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: SAMEORIGIN\n  Strict-Transport-Security: max-age=31536000\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n/404.html\n  X-Robots-Tag: noindex, nofollow\n'+['/assets/*','/img/*','/media/*'].map(p=>p+'\n  Cache-Control: public, max-age=31536000, immutable\n').join(''));
 const redirectFile=path.join(out,'_redirects');fs.writeFileSync(redirectFile,fs.readFileSync(redirectFile,'utf8').replace('Preview-only relative','Production relative'));
 const protectedFiles=JSON.parse(read('docs/phase-1b/baseline.json')).protectedFiles;
 for(const [file,digest] of Object.entries(protectedFiles)){
@@ -32,6 +32,7 @@ for(const file of localized?['en/index.html','de/index.html','az/index.html']:['
  const $=c.load(fs.readFileSync(path.join(out,file),'utf8'));
  foreign.push({file,canonical:$('link[rel=canonical]').attr('href'),robots:$('meta[name=robots]').attr('content'),byteIdentical:fs.readFileSync(path.join(root,file)).equals(fs.readFileSync(path.join(out,file)))});
 }
+require('./optimize-package.cjs')(out);
 const release=JSON.parse(read('docs/phase-1c/release-blockers.json'));
 const result={pass:true,productionCandidateOnly:true,sourceSeoUnchanged:true,canonicalPages:routes.length,sitemapPages:c.load(read('sitemap.xml'),{xmlMode:true})('loc').length,preview:{meta:'noindex, nofollow',header:'noindex, nofollow',robots:'Disallow: /'},production:{meta:'index, follow',header:'No global X-Robots-Tag; 404 remains noindex',robots:'Allow: /'},foreign,releaseBlocked:!release.releaseAllowed||release.blocking.length>0,blockers:release.blocking.map(x=>x.detail),acceptedUnverifiedItems:release.acceptedUnverifiedItems||[]};
 fs.mkdirSync(path.join(root,'docs/phase-1c'),{recursive:true});

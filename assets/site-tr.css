@@ -29,6 +29,7 @@
 .not-found-search div{display:flex;flex-wrap:wrap;gap:10px}
 .not-found-search input{flex:1 1 200px;min-width:0;min-height:48px;padding:0 16px;border:1px solid var(--line);border-radius:14px;background:#fff;font:inherit;color:inherit}
 .not-found-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0;padding:0;list-style:none}
+@media(max-width:720px){.cookie{left:12px;padding:10px 12px}.cookie .ck-maskot{display:none}.cookie:not(:has(.ck-prefs:not([hidden]))) h2{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.cookie p{margin-top:0;font-size:13px;line-height:1.4}.cookie .row{margin-top:8px}.cookie .row button{min-height:40px;padding-block:6px;font-size:14px}}
 .page-mascot{width:180px;height:auto;justify-self:center;rotate:7deg;filter:drop-shadow(0 16px 0 #00aed010)}
 .site-section{padding:56px 0}
 .site-section h2,.site-strip h2{font-family:var(--display);font-size:clamp(28px,3vw,42px);line-height:1.15;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}

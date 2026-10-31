@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'..'),origin='https://www.hurralingo.com',lang
 const args=process.argv.slice(2),writeBaseline=args.includes('--write-baseline');
 const pkg=path.resolve(args.find(a=>!a.startsWith('--'))||path.join(root,'dist/cloudflare-pages'));
 // Add an item id here once its stage is done so a later change cannot silently undo it.
-const locked=['2.4','2.5','2.6','2.7','5.1','6.1','8.2','9.5','9.6'];
+const locked=['2.4','2.5','2.6','2.7','5.1','6.1','7.1','7.2','7.3','7.5','7.6','7.7','8.2','9.5','9.6'];
 if(!fs.existsSync(path.join(pkg,'sitemap.xml')))throw Error('No package at '+pkg+'; run npm run site:build-cf');
 const read=file=>fs.readFileSync(path.join(pkg,file),'utf8');
 const sitemap=read('sitemap.xml'),routes=[...sitemap.matchAll(/<loc>https:\/\/www\.hurralingo\.com([^<]*)<\/loc>/g)].map(m=>m[1]);
@@ -45,6 +45,10 @@ for(const route of routes){
    if(!resolves(url.pathname))m.broken.set(url.pathname,route);
   }
  }
+ for(const e of $('img[srcset]').get())for(const part of e.attribs.srcset.split(',')){
+  const target=part.trim().split(/\s+/)[0];
+  if(!resolves(target))m.broken.set(target,route);
+ }
  for(const e of $('img').get()){
   const hidden=e.attribs['aria-hidden']==='true'||e.attribs.role==='presentation'||$(e).closest('[aria-hidden=true]').length>0;
   const src=e.attribs.src||'';
@@ -70,7 +74,9 @@ for(const [route,alts] of alternates)for(const [lang,href] of alts){
  if(!back||![...back.values()].includes(origin+route))hreflangErrors.push(route+' -> '+href);
 }
 const logoSrc=(c.load(read('index.html'))('header img, #hdr img').first().attr('src')||'').split('?')[0];
-const hero=c.load(read('index.html'))('#hero-video');
+// The video frame reserves its space with aspect-ratio; size attributes on the video would break that layout.
+const homeDoc=c.load(read('index.html')),homeCss=homeDoc('link[rel=stylesheet]').map((i,e)=>read(e.attribs.href.split('?')[0].slice(1))).get().join('');
+const heroFramed=homeDoc('.hm-frame #hero-video').length>0&&/\.hm-frame\{[^}]*aspect-ratio/.test(homeCss);
 const missing404=['',...languages.map(l=>l+'/')].filter(l=>!fs.existsSync(path.join(pkg,l,'404.html'))||!c.load(read(l+'404.html'))('#hdr .nav').length).length;
 const staticCached=['/assets/','/img/','/media/'].filter(p=>new RegExp('^'+p+'\\*\\n(?:[ \\t].*\\n)*?[ \\t]+Cache-Control:.*max-age=31536000','m').test(headers)).length;
 const items=[
@@ -84,7 +90,7 @@ const items=[
  ['7.1','Sayfa başına en fazla stil dosyası',m.maxStyles,3],
  ['7.2','Kapak görseli geç yüklenen yazı',m.lazyHero,0],
  ['7.3','Logo dosyası (KB)',Math.round(fs.statSync(path.join(pkg,logoSrc)).size/1024),30],
- ['7.5','Boyutu tanımsız hero video',hero.attr('width')&&hero.attr('height')?0:1,0],
+ ['7.5','Sabit oranlı çerçevesi olmayan hero video',heroFramed?0:1,0],
  ['7.6','1 yıl önbelleği olmayan statik klasör',3-staticCached,0],
  ['7.7','Alt metni boş görsel',m.emptyAlt,0],
  ['8.2','Eksik güvenlik başlığı',['Strict-Transport-Security','X-Frame-Options','Permissions-Policy'].filter(h=>!headers.includes(h)).length,0],

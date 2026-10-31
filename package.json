@@ -15,6 +15,7 @@
     "seo:check": "node scripts/check-seo.cjs",
     "blog:import": "node scripts/import-blog.cjs",
     "blog:build": "node scripts/build-blog.cjs",
+    "blog:images": "node scripts/build-blog-images.cjs",
     "blog:check": "node scripts/check-blog.cjs",
     "pricing:build": "node scripts/build-pricing.cjs",
     "pricing:check": "node scripts/check-pricing.cjs",
