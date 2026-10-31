@@ -71,7 +71,7 @@ const overrides={
  'New award!':'Une nouvelle récompense !','Award!':'Récompense !','Your first trial lesson is free':'Votre premier cours d’essai est gratuit',
  'These videos have Turkish audio.':locale.videoNote,'From the Hurra Lingo family':'L’équipe Hurra Lingo','From the Hurra family':'L’équipe Hurra',
  'No package is available for this selection.':pricing.unavailable,
- 'HURRA LINGO BLOG':'LE BLOG HURRA LINGO','I can’t do it':'Je n’y arriverai pas','Alphabet Parade':'La parade de l’alphabet',
+ 'HURRA LINGO BLOG':'LE BLOG HURRA LINGO','I can’t do it':'Je n’y arriverai pas','Hurra Lingo Blog':'Hurra Lingo Blog',
  'Auf Deutsch bedeutet das:':'En français, cela signifie :'
 };
 module.exports={locale,pageTitles,descriptions,headings,pricing,articles,overrides};
