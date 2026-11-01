@@ -54,6 +54,8 @@ Puan veya trafik tahmini üretilmedi.
 
 **31 Ekim notları hakkında:** Önceki çalışmanın notlarında 4.1, 4.3, 4.4, KDV oranı gösterimi, 9.3 ve 9.4 birleştirmesinin sizin kararınızla kapatıldığı, 9.1'in ertelendiği, 8.1'in kapsam dışı bırakıldığı yazıyor. Bunlar yönlendirici karardır, tamamlanma kanıtı değildir. Durumlar yalnızca bugünkü kanıta göre verildi, karar notu tabloda ayrıca belirtildi.
 
+**4.1 için son karar (1 Kasım):** Bett kanıtı gerekmiyor. Madde 29'luk sayımda "Yapılmadı" olarak kayıtlı kalır, ancak öncelik ve iş listelerinden çıkarıldı.
+
 ## 3. Madde tablosu
 
 | Madde | Gereksinim | Durum | Kod/build kanıtı | Davranış/canlı kanıtı | Eksik alt gereksinim | Sonraki adım ve bağımlılık |
@@ -64,7 +66,7 @@ Puan veya trafik tahmini üretilmedi.
 | **2.7** | Markalı 404 sayfası | **Tamamlandı** | `scripts/build-404.cjs:25`, `assets/blog.js:27-29`. 5 dilde ayrı `404.html`, `noindex` | Canlı: `/yok-boyle-bir-sayfa-denetim/`, `/en/not-a-real-page/`, `/de/keine-seite/`, `/az/yoxdur/`, `/fr/inexistant/`, `/blog/yok-boyle-yazi/`, `/en/blog/nope/` hepsi gerçek **HTTP 404**, doğru dilde içerik, menü, 4 geri dönüş bağlantısı. Arama 6 sayfada denendi ve hepsinde doğru yazıyı süzdü (ör. "rusça" → 1 sonuç) | Arama yalnızca bloglarda. `lang` hatası için bkz. Ek bulgu 1 | Yok |
 | **3.1** | Sitemap'in Search Console'a gönderimi | **Doğrulanamadı** | Sitemap hazır ve geçerli | Harici hesap kanıtı yok; hesaba girilmedi | Gönderim durumu | **Doğrulanamadı — harici hesap kontrolü gerekiyor.** `https://www.hurralingo.com/sitemap.xml` için durum "Başarılı", keşfedilen URL sayısı 239 olmalı |
 | **3.2** | Onaya bağlı GA4 ve tıklama olayları | **Kısmen tamamlandı** | `content/site/analytics.json:2` **boş**, bu yüzden `scripts/optimize-package.cjs:49-52` hiçbir sayfaya GA eklemiyor (239/239 sayfada yok). `assets/analytics.js` hazır. `assets/analytics.js:7` yalnızca `trial-request` arıyor; 14 bağlantı `/tanisma-dersi-istek-formu` adresine gidiyor ve sayılmıyor | **Canlı: GA çalışmıyor, ölçüm yok.** Sahte kimlikli yerel test: onay öncesi ve ret sonrası Google isteği 0, GA çerezi 0; kabulde `_ga` + `page_view`; yenilemede tercih kalıcı; geri çekmede `_ga` silindi, `ga-disable` açıldı, tıklama isteği 0, yenileme sonrası istek 0. Tıklamalar: `trial_click`, `whatsapp_click`, `phone_click` ayrı ve **tıklama başına 1 istek**. Parametre yalnızca `link_url`; kişisel veri veya form verisi yok | Ölçüm kimliği; alternatif başvuru adresi; `tel:` bağlantısı yalnızca 5 iletişim sayfasında; ayar bağlantısı `data-ck-open` kimlik girilmeden yayına çıkmıyor | Kimlik girilince yeniden derleme ve yayın. GA4 Realtime'da olay ve dönüşüm ayarı kontrolü. **Tıklama sayısı başvuru sayısı değildir.** Enhanced Measurement açıksa dış bağlantı `click` olayı ayrıca oluşabilir. Bağımlılık: GA4 hesabı |
-| **4.1** | Bett ödülünün kanıtı | **Yapılmadı** | Üst şeritte iddia: `content/site/home-template.html:669,676`, `scripts/build-locales.cjs:49`. Belge veya kanıt bağlantısı yok. Repo notu "kazanan kaydı doğrulanmadı" diyor: `docs/phase-1c/release-blockers.json` (`award`) | Canlı: iddia 244 sayfanın tamamında; şerit bağlantısı deneme formuna gidiyor. [Bett Awards](https://uk.bettshow.com/awards) ve [Kids Judge Bett](https://uk.bettshow.com/kids-judge-bett) sayfalarında "Hurra" veya "Best Language App" bulunamadı. Kids Judge sayfasında 2026 kazanan listesi de yok | Marka + yıl + kategoriyi destekleyen kaynak. İddianın doğruluğu ayrıca **doğrulanamadı** | Belge veya organizatör bağlantısı sağlanıp şeride eklenmeli; sağlanamazsa ifade gözden geçirilmeli. Karar notu: 31 Ekim'de kapatıldı. Bağımlılık: şirket belgesi |
+| **4.1** | Bett ödülünün kanıtı | **Yapılmadı** | Üst şeritte iddia: `content/site/home-template.html:669,676`, `scripts/build-locales.cjs:49`. Belge veya kanıt bağlantısı yok. Repo notu "kazanan kaydı doğrulanmadı" diyor: `docs/phase-1c/release-blockers.json` (`award`) | Canlı: iddia 244 sayfanın tamamında; şerit bağlantısı deneme formuna gidiyor. [Bett Awards](https://uk.bettshow.com/awards) ve [Kids Judge Bett](https://uk.bettshow.com/kids-judge-bett) sayfalarında "Hurra" veya "Best Language App" bulunamadı. Kids Judge sayfasında 2026 kazanan listesi de yok | Marka + yıl + kategoriyi destekleyen kaynak. İddianın doğruluğu ayrıca **doğrulanamadı** | Yok. 1 Kasım'da kullanıcı kararıyla kapatıldı: kanıt gerekmiyor, takip edilmeyecek |
 | **4.2** | Hakkımızda sayfası | **Kısmen tamamlandı** | `scripts/build-landing.cjs:26-30`, `content/site/landing-pages.json:15-22` | Canlı `/hakkimizda/` 200, `index, follow`, canonical doğru. 46 TR sayfasının footer'ından bağlantı var; üst menüde yok. Unvan ve numara [Companies House](https://find-and-update.company-information.service.gov.uk/company/14126405) ile uyumlu: aktif, kuruluş 24 Mayıs 2022 | **Kuruluş yılı yok.** EN, DE, AZ, FR'de eşdeğer sayfa yok ve `/en/corporate/` gibi kurumsal sayfalarda unvan ve adres yok. Ankara ve Londra yalnızca adres satırı, ilişkileri açıklanmıyor. Kayıtlı adres farkı: site ve Şartlar "152–160 … Kemp House, City Road", Companies House "124 City Road" | Kuruluş yılı ve şirket yapısı için onay, adres farkının açıklanması, sonra metin ekleme. Bağımlılık: sizden bilgi |
 | **4.3** | Öğretmen deneyim, sertifika, anadili | **Yapılmadı** | `assets/site-tr.js:286` model: ad, dil, fotoğraf, görsel konumu. Deneyim, sertifika, anadili alanı yok | Canlı: 38 öğretmen. **Deneyim 0/38, sertifika 0/38, anadili 0/38.** Bu yazılım kusurundan çok veri yokluğu; ama alanlar da yok | Üç alan, veri ve görünür kart | Doğrulanmış veri gelirse alanlar eklenir. Karar notu: 31 Ekim'de kapatıldı. Bağımlılık: İK verisi |
 | **4.4** | Yorum tarihi, kaynağı, Google bağlantısı | **Yapılmadı** | `referanslarimiz/index.html:137,147,155` yalnızca alıntı, kısaltılmış ad, öğretmen veya süre bilgisi | Canlı: 3 yorum; `<time>` 0, kaynak bağlantısı 0, Google yorum bağlantısı 0. Sitedeki tek Google bağlantısı genel harita araması (`iletisim/index.html:132`, 5 dil) | Tarih, kaynak, işletme profili. Yorumların özgün metin olup olmadığı kanıtlanamadı | Gerçek kaynak verisi ve işletme profili bağlantısı gerekir. Karar notu: 31 Ekim'de kapatıldı. Bağımlılık: sizden bilgi |
@@ -84,7 +86,7 @@ Puan veya trafik tahmini üretilmedi.
 | **9.1** | Çocuklar için online İngilizce sayfası | **Yapılmadı** | Rota yok. `content/site/landing-pages.json` yalnızca Almanca ve Hakkımızda içeriyor | Canlı: menüdeki 4 yaş grubu bağlantısının hepsi aynı `/derslerimiz/#programlar` adresine gidiyor. Eşdeğer güçlü içerik yok, yalnızca tablo satırı | Sayfa, yaş hedefli bağlantılar, çocuklara özgü içerik | Karar notu: 31 Ekim'de ertelendi. Altyapı `build-landing.cjs` ile hazır. Bağımlılık: içerik onayı |
 | **9.2** | Online Almanca kursu sayfası | **Tamamlandı** | `content/site/landing-pages.json:4`, `scripts/build-landing.cjs:16-25,58` | Canlı `/online-almanca-kursu/` 200, canonical ve indekslenebilir. 5 Almanca öğretmeni, 4 yaş grubu, doğrulanmış başlangıç fiyatları, SSS, ilgili yazılar, Course verisi. Blogdaki "Almanca Dersleri" bağlantıları bu sayfaya gidiyor. `/de/` arayüz sayfasıyla karışmıyor | Yok. Sayfa Türkçe; diğer dillerdeki Almanca yazılar ana sayfaya bağlanıyor (bkz. 9.5). İç bağlantı 3 sayfadan | Yok |
 | **9.3** | Diğer diller ve yaş grupları | **Kısmen tamamlandı** | `assets/site-tr.js:286`, `scripts/build-landing.cjs:10,57` | Bölüm 5 tablosu. Yaş grupları tek ortak tabloda. Yalnızca Almanca'nın özel sayfası var. **Türkçe filtresi 0 öğretmen gösteriyor** ama site yedi dil söylüyor | İspanyolca, Rusça, Fransızca, Çince için program içeriği ve bağlantı yok; bu dillerde 1–2 öğretmen var | Her kombinasyon için sayfa önerilmez. Karar notu: 31 Ekim'de kapatıldı. Türkçe tutarsızlığı için bilgi gerekli |
-| **9.4** | Benzer blogların birleştirilmesi | **Kısmen tamamlandı** | Yaz tatili yazısında Duolingo, Rosetta, Babbel, Preply kaldırılmış (5 dil, yaklaşık %30 kısalmış), lastmod güncel | Birleştirme yok, 34 TR URL duruyor, 301 yok. En yüksek metin benzerliği Jaccard 0,024: **yinelenen içerik kanıtı yok**. Yazıda Quizlet ve genel üçüncü taraf platformlar kalıyor (PenPal Schools, Epic!, YouTube Kids); bunlar destek önerisi, rakip dil kursu değil | Arama niyeti çakışması ölçülmedi; sorgu verisi gerekiyor | Otomatik birleştirme önerilmez. Aday kümeler Bölüm 10, iş 19'da. Karar notu: 31 Ekim'de kapatıldı. Bağımlılık: Search Console |
+| **9.4** | Benzer blogların birleştirilmesi | **Kısmen tamamlandı** | Yaz tatili yazısında Duolingo, Rosetta, Babbel, Preply kaldırılmış (5 dil, yaklaşık %30 kısalmış), lastmod güncel | Birleştirme yok, 34 TR URL duruyor, 301 yok. En yüksek metin benzerliği Jaccard 0,024: **yinelenen içerik kanıtı yok**. Yazıda Quizlet ve genel üçüncü taraf platformlar kalıyor (PenPal Schools, Epic!, YouTube Kids); bunlar destek önerisi, rakip dil kursu değil | Arama niyeti çakışması ölçülmedi; sorgu verisi gerekiyor | Otomatik birleştirme önerilmez. Aday kümeler Bölüm 10, iş 18'de. Karar notu: 31 Ekim'de kapatıldı. Bağımlılık: Search Console |
 | **9.5** | Yazar ve ilgili iç bağlantılar | **Kısmen tamamlandı** | `scripts/blog-content.cjs:2-5`, `scripts/build-blog-links.cjs:5-12,29,37`, `scripts/build-french.cjs:93` | 188/188 yazı kurumsal editör kimliği taşıyor, `hurraturkiyewp` 0, sahte öğretmen yazar 0. 170 yazıda konuya göre 3 ilgili yazı + ders bağlantısı | **Metin içi bağlantı zayıf:** TR yazıların 23/34'ünde metin içinde iç bağlantı yok; hiçbir yazıda metinden fiyata veya başka yazıya bağlantı yok. 18 yazıda ilgili yazı yok. Her yazıdaki ders düğmesi aynı. 48 metin içi bağlantı yeni sekmede ana sayfaya gidiyor (8'i TR'de `http://`, 40'ı diğer dillerde). `BlogPosting` yalnızca FR'de ve yazar alanı yok | Bağlam doğrulanarak metin içi bağlantılar eklenmeli. Kod ve içerik işi |
 | **9.6** | Yanlış hurraturkiye.com bağlantıları | **Tamamlandı** | `scripts/blog-content.cjs:8`, `scripts/build-blog.cjs:43` | 0 metin içi bağlantı. Footer'daki 244 kardeş marka bağlantısı meşru. 10 TR kaynak bağlantı `/derslerimiz/` adresine dönmüş; 5 dilin tamamında dil içi hedefe gidiyor | Yok | Yok |
 
@@ -139,7 +141,6 @@ Aynı kök neden tek satırda toplandı.
 | Öncelik | Eksik | Kullanıcıya etkisi | Kanıt |
 |---|---|---|---|
 | **P1** | GA4 canlıda çalışmıyor | Deneme, WhatsApp ve telefon tıklamaları hiç ölçülmüyor; kod hazır olsa da veri yok | `analytics.json` boş; 239/239 sayfada GA yok |
-| **P1** | Bett iddiası kanıtsız | 244 sayfada kanıtsız bir ödül ifadesi güven ve hukuki risk oluşturur | Kanıt bağlantısı yok; organizatör sayfalarında bulunamadı; repo notu da doğrulanmadığını söylüyor |
 | **P1** | 390 px'te 3 dilde büyük CTA kapanıyor | Yaygın telefon boyutunda ilk ekranda ana CTA çerez kartının altında | 390×844 EN, DE, FR ölçümü, `assets/site-tr.js:560-572` |
 | **P1** | Search Console ve eski panel durumu bilinmiyor | Sitemap gönderimi ve eski giriş yüzeyleri belirsiz | 3.1, 8.1 hesap kanıtı gerekli |
 | **P2** | EN, DE, AZ sayfaları JS sonrası kendini Türkçe ilan ediyor | Ekran okuyucu ve tarayıcı dil algısı yanlış çalışır | Ek bulgu 1 |
@@ -167,13 +168,12 @@ Ayrıca FR yazılarının 42/42'sinde H1 `lang` değeri içerikle uyuşmuyor (`t
 ### Sizden gereken bilgiler
 
 1. GA4 ölçüm kimliği.
-2. Bett için belge veya resmî bağlantı: tam ödül adı, kategori, yıl. Repo notu "Kids Judge Bett" diyor, sitedeki ifade "En İyi Dil Uygulaması".
-3. Kuruluş yılı ve Ankara–Londra şirket yapısı. Companies House kuruluş tarihi 24 Mayıs 2022, ama marka başlangıcı farklı olabilir.
-4. Londra adresi: Kemp House mı, 124 City Road mu? İkisi farklı amaçla da doğru olabilir.
-5. KDV oranı ve uygulaması için mali müşavir görüşü.
-6. Doğrulanmış öğretmen verileri ve yorumların gerçek kaynağı, tarihi, Google işletme profili bağlantısı.
-7. Türkçe dersi öğretmen listesinde 0 görünüyor. Bu ders veriliyor mu?
-8. 9.1 ve 9.4 için güncel karar.
+2. Kuruluş yılı ve Ankara–Londra şirket yapısı. Companies House kuruluş tarihi 24 Mayıs 2022, ama marka başlangıcı farklı olabilir.
+3. Londra adresi: Kemp House mı, 124 City Road mu? İkisi farklı amaçla da doğru olabilir.
+4. KDV oranı ve uygulaması için mali müşavir görüşü.
+5. Doğrulanmış öğretmen verileri ve yorumların gerçek kaynağı, tarihi, Google işletme profili bağlantısı.
+6. Türkçe dersi öğretmen listesinde 0 görünüyor. Bu ders veriliyor mu?
+7. 9.1 ve 9.4 için güncel karar.
 
 ### Harici doğrulamalar
 
@@ -232,16 +232,15 @@ Yalnızca gerçekten eksik bulunan işler. Bu turda hiçbiri uygulanmadı.
 ### Sizden bilgi gelince
 
 9. **3.2:** Ölçüm kimliğini gir, yayına al, GA4'te doğrula.
-10. **4.1:** Bett kanıtını ekle veya ifadeyi güncelle.
-11. **4.2:** Kuruluş yılı ve şirket yapısını ekle; EN, DE, AZ, FR Hakkımızda sayfalarını üret.
-12. **6.1:** Adres onayına göre JSON-LD, Hakkımızda ve gerekiyorsa Şartlar'ı güncelle.
-13. **5.2:** Karar çıkarsa KDV açıklamasını ve toplam gösterimini uygula.
-14. **4.3, 4.4:** Doğrulanmış veriyle öğretmen alanlarını ve yorum kaynaklarını ekle.
+10. **4.2:** Kuruluş yılı ve şirket yapısını ekle; EN, DE, AZ, FR Hakkımızda sayfalarını üret.
+11. **6.1:** Adres onayına göre JSON-LD, Hakkımızda ve gerekiyorsa Şartlar'ı güncelle.
+12. **5.2:** Karar çıkarsa KDV açıklamasını ve toplam gösterimini uygula.
+13. **4.3, 4.4:** Doğrulanmış veriyle öğretmen alanlarını ve yorum kaynaklarını ekle.
 
 ### İçerik emeği ve karar gerektiren
 
-15. **7.7:** Yazı içi görsellerden başlayarak gerçek alt metin yaz; `optimize-package.cjs:53` kopyalama davranışını kaldır.
-16. **9.5:** Doğrulanmış program ve fiyat bağlantılarını metne bağlama uygun ekle; 18 yazıya ilgili yazı grubu oluştur.
-17. **9.1:** Karar alınırsa çocuklar için İngilizce sayfası üret; 4 yaş bağlantısını ayrıştır.
-18. **9.3:** Türkçe dersi tutarsızlığını gider. Yeni sayfa yalnızca talep kanıtı varsa açılmalı.
-19. **9.4:** Search Console verisi çakışma gösterirse tatil (5 yazı), oyunla öğrenme (6) veya online ders (5) kümelerini tek tek değerlendir. Veri yoksa dokunma.
+14. **7.7:** Yazı içi görsellerden başlayarak gerçek alt metin yaz; `optimize-package.cjs:53` kopyalama davranışını kaldır.
+15. **9.5:** Doğrulanmış program ve fiyat bağlantılarını metne bağlama uygun ekle; 18 yazıya ilgili yazı grubu oluştur.
+16. **9.1:** Karar alınırsa çocuklar için İngilizce sayfası üret; 4 yaş bağlantısını ayrıştır.
+17. **9.3:** Türkçe dersi tutarsızlığını gider. Yeni sayfa yalnızca talep kanıtı varsa açılmalı.
+18. **9.4:** Search Console verisi çakışma gösterirse tatil (5 yazı), oyunla öğrenme (6) veya online ders (5) kümelerini tek tek değerlendir. Veri yoksa dokunma.
