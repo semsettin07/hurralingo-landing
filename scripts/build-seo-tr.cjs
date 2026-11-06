@@ -8,7 +8,10 @@ const map={
  '/tr/blog-grid/':'/blog/', '/tr/blog-grid-4-columns/':'/blog/', '/tr/blog-grid-2-columns-right-sidebar/':'/blog/', '/tr/blog-grid-2-columns-sdb/':'/blog/',
  '/tr/classes/':'/derslerimiz/', '/tr/classes/bireysel-derslerimiz/':'/derslerimiz/#bire-bir', '/tr/classes/mini-grup-derslerimiz/':'/derslerimiz/#mini-grup', '/tr/classes/grup-derslerimiz/':'/derslerimiz/#grup'
 };
-for(const p of posts)map[new URL(p.source).pathname]='/blog/'+p.slug+'/';
+for(const p of posts){
+ const from=new URL(p.source).pathname,to='/blog/'+p.slug+'/';
+ if(from!==to)map[from]=to;
+}
 const unicodeFallbacks={};
 for(const p of posts){
  const decoded=decodeURI(new URL(p.source).pathname);

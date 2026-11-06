@@ -1,7 +1,7 @@
 {
   "/": {
-    "hash": "210ed4946d66850c",
-    "date": "2026-10-31"
+    "hash": "3e5b6c16c16474d2",
+    "date": "2026-11-06"
   },
   "/egitimmodelimiz/": {
     "hash": "34305e4189dcfb28",
@@ -16,8 +16,8 @@
     "date": "2026-10-27"
   },
   "/blog/": {
-    "hash": "d8ab3c78bece962e",
-    "date": "2026-10-31"
+    "hash": "56d217cd2e2e1efb",
+    "date": "2026-11-06"
   },
   "/ucretler/": {
     "hash": "0e02c1c97121df4b",
@@ -954,5 +954,9 @@
   "/hakkimizda/": {
     "hash": "fe61abb3b6768c40",
     "date": "2026-10-31"
+  },
+  "/blog/kasim-ara-tatilinde-evde-ingilizce-ogrenmek/": {
+    "hash": "51a833940de6be83",
+    "date": "2026-11-06"
   }
 }

@@ -3,7 +3,7 @@
 const assert=require('node:assert/strict'),c=require('cheerio');
 const {read,write,esc}=require('./site-tr.cjs');
 const groups=[
- ['yaz-tatilinde-online-yabanci-dil','yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin','ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari','karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi','kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir'],
+ ['kasim-ara-tatilinde-evde-ingilizce-ogrenmek','yaz-tatilinde-online-yabanci-dil','yariyil-tatilini-bosa-gecirmeyin-cocuklar-icin-online-dil-dersi-ile-simdi-baslayin','ara-tatilde-kucuk-dokunuslarla-buyuk-gelisim-saglamanin-yollari','karne-sonrasi-online-dil-kursu-cocuklar-icin-yabanci-dil-ogrenme-rehberi','kurban-bayrami-tatilinde-cocuklarin-ingilizce-gelisimi-nasil-desteklenebilir'],
  ['oyunla-yabanci-dil-ogrenmenin-gucu-online-egitim-neden-cocuklar-icin-en-etkili-yontem','cocuklarin-dil-egitiminde-oyun','cocuklarda-dil-ogrenimi-korkusuz-ve-eglenceli-yontemler','dijital-cag-cocuklarinin-yabanci-dil-konforu','kis-masallariyla-dil-ogrenmek-kar-taneleri-hangi-dili-konusur','gelecegi-kesfetmek-bilim-kurgu-hikayeleri-dil-gelisimini-nasil-destekler'],
  ['cocuklarda-erken-yasta-ikinci-dil-edinimi','erken-yasta-dil-ogrenimi-her-dil-cocugunuzda-farkli-bir-yetenegi-parlatir','ispanyolca-mi-almanca-mi','almanca-ogrenmek-neden-onemli','cocuklar-icin-rusca'],
  ['online-dil-dersleri','online-dil-derslerinde-asil-kazanim-ne-zaman-baslar','dil-egitimi-teorileri','dil-ogrenmede-motivasyon-ve-hedef','6-ayda-yeni-bir-dil-bir-seruvenin-anatomisi'],
